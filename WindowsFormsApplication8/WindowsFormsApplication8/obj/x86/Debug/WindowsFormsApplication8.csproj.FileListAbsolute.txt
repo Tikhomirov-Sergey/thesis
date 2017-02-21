@@ -1,0 +1,502 @@
+C:\Documents and Settings\u-113\Рабочий стол\WindowsFormsApplication8\WindowsFormsApplication8\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Documents and Settings\u-113\Рабочий стол\WindowsFormsApplication8\WindowsFormsApplication8\obj\x86\Debug\WindowsFormsApplication8.Form1.resources
+C:\Documents and Settings\u-113\Рабочий стол\WindowsFormsApplication8\WindowsFormsApplication8\obj\x86\Debug\WindowsFormsApplication8.Properties.Resources.resources
+C:\Documents and Settings\u-113\Рабочий стол\WindowsFormsApplication8\WindowsFormsApplication8\obj\x86\Debug\GenerateResource.read.1.tlog
+C:\Documents and Settings\u-113\Рабочий стол\WindowsFormsApplication8\WindowsFormsApplication8\obj\x86\Debug\GenerateResource.write.1.tlog
+C:\Documents and Settings\u-113\Рабочий стол\WindowsFormsApplication8\WindowsFormsApplication8\bin\Debug\WindowsFormsApplication8.exe
+C:\Documents and Settings\u-113\Рабочий стол\WindowsFormsApplication8\WindowsFormsApplication8\bin\Debug\WindowsFormsApplication8.pdb
+C:\Documents and Settings\u-113\Рабочий стол\WindowsFormsApplication8\WindowsFormsApplication8\obj\x86\Debug\WindowsFormsApplication8.exe
+C:\Documents and Settings\u-113\Рабочий стол\WindowsFormsApplication8\WindowsFormsApplication8\obj\x86\Debug\WindowsFormsApplication8.pdb
+C:\Documents and Settings\u-113\Рабочий стол\WindowsFormsApplication8\WindowsFormsApplication8\obj\x86\Debug\WindowsFormsApplication8.Form2.resources
+f:\Работа , только попробуй удали\WindowsFormsApplication8\WindowsFormsApplication8\obj\x86\Debug\WindowsFormsApplication8.exe
+f:\Работа , только попробуй удали\WindowsFormsApplication8\WindowsFormsApplication8\obj\x86\Debug\WindowsFormsApplication8.pdb
+f:\Работа , только попробуй удали\WindowsFormsApplication8\WindowsFormsApplication8\bin\Debug\WindowsFormsApplication8.exe
+f:\Работа , только попробуй удали\WindowsFormsApplication8\WindowsFormsApplication8\bin\Debug\WindowsFormsApplication8.pdb
+f:\Работа , только попробуй удали\WindowsFormsApplication8\WindowsFormsApplication8\obj\x86\Debug\WindowsFormsApplication8.csprojResolveAssemblyReference.cache
+f:\Работа , только попробуй удали\WindowsFormsApplication8\WindowsFormsApplication8\obj\x86\Debug\WindowsFormsApplication8.Form1.resources
+f:\Работа , только попробуй удали\WindowsFormsApplication8\WindowsFormsApplication8\obj\x86\Debug\WindowsFormsApplication8.Form2.resources
+f:\Работа , только попробуй удали\WindowsFormsApplication8\WindowsFormsApplication8\obj\x86\Debug\WindowsFormsApplication8.Properties.Resources.resources
+f:\Работа , только попробуй удали\WindowsFormsApplication8\WindowsFormsApplication8\obj\x86\Debug\WindowsFormsApplication8.csproj.GenerateResource.Cache
+Z:\Тихомиров Сергей\5semestrik\проба2\WindowsFormsApplication8\WindowsFormsApplication8\obj\x86\Debug\WindowsFormsApplication8.exe
+Z:\Тихомиров Сергей\5semestrik\проба2\WindowsFormsApplication8\WindowsFormsApplication8\obj\x86\Debug\WindowsFormsApplication8.pdb
+Z:\Тихомиров Сергей\5semestrik\проба2\WindowsFormsApplication8\WindowsFormsApplication8\bin\Debug\WindowsFormsApplication8.exe
+Z:\Тихомиров Сергей\5semestrik\проба2\WindowsFormsApplication8\WindowsFormsApplication8\bin\Debug\WindowsFormsApplication8.pdb
+Z:\Тихомиров Сергей\5semestrik\проба2\WindowsFormsApplication8\WindowsFormsApplication8\obj\x86\Debug\ResolveAssemblyReference.cache
+Z:\Тихомиров Сергей\5semestrik\проба2\WindowsFormsApplication8\WindowsFormsApplication8\obj\x86\Debug\WindowsFormsApplication8.Form1.resources
+Z:\Тихомиров Сергей\5semestrik\проба2\WindowsFormsApplication8\WindowsFormsApplication8\obj\x86\Debug\WindowsFormsApplication8.Form2.resources
+Z:\Тихомиров Сергей\5semestrik\проба2\WindowsFormsApplication8\WindowsFormsApplication8\obj\x86\Debug\WindowsFormsApplication8.Properties.Resources.resources
+Z:\Тихомиров Сергей\5semestrik\проба2\WindowsFormsApplication8\WindowsFormsApplication8\obj\x86\Debug\GenerateResource.read.1.tlog
+Z:\Тихомиров Сергей\5semestrik\проба2\WindowsFormsApplication8\WindowsFormsApplication8\obj\x86\Debug\GenerateResource.write.1.tlog
+f:\Работа , только попробуй удали\проба3\проба2\WindowsFormsApplication8\WindowsFormsApplication8\obj\x86\Debug\WindowsFormsApplication8.exe
+f:\Работа , только попробуй удали\проба3\проба2\WindowsFormsApplication8\WindowsFormsApplication8\obj\x86\Debug\WindowsFormsApplication8.pdb
+f:\Работа , только попробуй удали\проба3\проба2\WindowsFormsApplication8\WindowsFormsApplication8\bin\Debug\WindowsFormsApplication8.exe
+f:\Работа , только попробуй удали\проба3\проба2\WindowsFormsApplication8\WindowsFormsApplication8\obj\x86\Debug\WindowsFormsApplication8.csprojResolveAssemblyReference.cache
+f:\Работа , только попробуй удали\проба3\проба2\WindowsFormsApplication8\WindowsFormsApplication8\obj\x86\Debug\WindowsFormsApplication8.Form1.resources
+f:\Работа , только попробуй удали\проба3\проба2\WindowsFormsApplication8\WindowsFormsApplication8\obj\x86\Debug\WindowsFormsApplication8.Form2.resources
+f:\Работа , только попробуй удали\проба3\проба2\WindowsFormsApplication8\WindowsFormsApplication8\obj\x86\Debug\WindowsFormsApplication8.Properties.Resources.resources
+f:\Работа , только попробуй удали\проба3\проба2\WindowsFormsApplication8\WindowsFormsApplication8\obj\x86\Debug\WindowsFormsApplication8.csproj.GenerateResource.Cache
+f:\Работа , только попробуй удали\проба3\проба2\WindowsFormsApplication8\WindowsFormsApplication8\bin\Debug\WindowsFormsApplication8.pdb
+Z:\Тихомиров Сергей\5semestrik\проба 4\проба2\WindowsFormsApplication8\WindowsFormsApplication8\obj\x86\Debug\WindowsFormsApplication8.exe
+Z:\Тихомиров Сергей\5semestrik\проба 4\проба2\WindowsFormsApplication8\WindowsFormsApplication8\obj\x86\Debug\WindowsFormsApplication8.pdb
+Z:\Тихомиров Сергей\5semestrik\проба 4\проба2\WindowsFormsApplication8\WindowsFormsApplication8\bin\Debug\WindowsFormsApplication8.exe
+Z:\Тихомиров Сергей\5semestrik\проба 4\проба2\WindowsFormsApplication8\WindowsFormsApplication8\bin\Debug\WindowsFormsApplication8.pdb
+Z:\Тихомиров Сергей\5semestrik\проба 4\проба2\WindowsFormsApplication8\WindowsFormsApplication8\obj\x86\Debug\ResolveAssemblyReference.cache
+Z:\Тихомиров Сергей\5semestrik\проба 4\проба2\WindowsFormsApplication8\WindowsFormsApplication8\obj\x86\Debug\WindowsFormsApplication8.Form1.resources
+Z:\Тихомиров Сергей\5semestrik\проба 4\проба2\WindowsFormsApplication8\WindowsFormsApplication8\obj\x86\Debug\WindowsFormsApplication8.Form2.resources
+Z:\Тихомиров Сергей\5semestrik\проба 4\проба2\WindowsFormsApplication8\WindowsFormsApplication8\obj\x86\Debug\WindowsFormsApplication8.Properties.Resources.resources
+Z:\Тихомиров Сергей\5semestrik\проба 4\проба2\WindowsFormsApplication8\WindowsFormsApplication8\obj\x86\Debug\GenerateResource.read.1.tlog
+Z:\Тихомиров Сергей\5semestrik\проба 4\проба2\WindowsFormsApplication8\WindowsFormsApplication8\obj\x86\Debug\GenerateResource.write.1.tlog
+f:\Работа , только попробуй удали\проба 4\проба 4\проба2\WindowsFormsApplication8\WindowsFormsApplication8\obj\x86\Debug\WindowsFormsApplication8.exe
+f:\Работа , только попробуй удали\проба 4\проба 4\проба2\WindowsFormsApplication8\WindowsFormsApplication8\obj\x86\Debug\WindowsFormsApplication8.pdb
+f:\Работа , только попробуй удали\проба 4\проба 4\проба2\WindowsFormsApplication8\WindowsFormsApplication8\bin\Debug\WindowsFormsApplication8.exe
+f:\Работа , только попробуй удали\проба 4\проба 4\проба2\WindowsFormsApplication8\WindowsFormsApplication8\bin\Debug\WindowsFormsApplication8.pdb
+f:\Работа , только попробуй удали\проба 4\проба 4\проба2\WindowsFormsApplication8\WindowsFormsApplication8\obj\x86\Debug\WindowsFormsApplication8.csprojResolveAssemblyReference.cache
+f:\Работа , только попробуй удали\проба 4\проба 4\проба2\WindowsFormsApplication8\WindowsFormsApplication8\obj\x86\Debug\WindowsFormsApplication8.Form1.resources
+f:\Работа , только попробуй удали\проба 4\проба 4\проба2\WindowsFormsApplication8\WindowsFormsApplication8\obj\x86\Debug\WindowsFormsApplication8.Form2.resources
+f:\Работа , только попробуй удали\проба 4\проба 4\проба2\WindowsFormsApplication8\WindowsFormsApplication8\obj\x86\Debug\WindowsFormsApplication8.Properties.Resources.resources
+f:\Работа , только попробуй удали\проба 4\проба 4\проба2\WindowsFormsApplication8\WindowsFormsApplication8\obj\x86\Debug\WindowsFormsApplication8.csproj.GenerateResource.Cache
+Z:\Тихомиров Сергей\МарьяИвановнаОдобрит\проба2\WindowsFormsApplication8\WindowsFormsApplication8\obj\x86\Debug\WindowsFormsApplication8.exe
+Z:\Тихомиров Сергей\МарьяИвановнаОдобрит\проба2\WindowsFormsApplication8\WindowsFormsApplication8\obj\x86\Debug\WindowsFormsApplication8.pdb
+Z:\Тихомиров Сергей\МарьяИвановнаОдобрит\проба2\WindowsFormsApplication8\WindowsFormsApplication8\bin\Debug\WindowsFormsApplication8.exe
+Z:\Тихомиров Сергей\МарьяИвановнаОдобрит\проба2\WindowsFormsApplication8\WindowsFormsApplication8\bin\Debug\WindowsFormsApplication8.pdb
+Z:\Тихомиров Сергей\МарьяИвановнаОдобрит\проба2\WindowsFormsApplication8\WindowsFormsApplication8\obj\x86\Debug\ResolveAssemblyReference.cache
+Z:\Тихомиров Сергей\МарьяИвановнаОдобрит\проба2\WindowsFormsApplication8\WindowsFormsApplication8\obj\x86\Debug\WindowsFormsApplication8.Form1.resources
+Z:\Тихомиров Сергей\МарьяИвановнаОдобрит\проба2\WindowsFormsApplication8\WindowsFormsApplication8\obj\x86\Debug\WindowsFormsApplication8.Form2.resources
+Z:\Тихомиров Сергей\МарьяИвановнаОдобрит\проба2\WindowsFormsApplication8\WindowsFormsApplication8\obj\x86\Debug\WindowsFormsApplication8.Properties.Resources.resources
+Z:\Тихомиров Сергей\МарьяИвановнаОдобрит\проба2\WindowsFormsApplication8\WindowsFormsApplication8\obj\x86\Debug\GenerateResource.read.1.tlog
+Z:\Тихомиров Сергей\МарьяИвановнаОдобрит\проба2\WindowsFormsApplication8\WindowsFormsApplication8\obj\x86\Debug\GenerateResource.write.1.tlog
+f:\Работа , только попробуй удали\проба 4\WindowsFormsApplication8\WindowsFormsApplication8\obj\x86\Debug\WindowsFormsApplication8.exe
+f:\Работа , только попробуй удали\проба 4\WindowsFormsApplication8\WindowsFormsApplication8\obj\x86\Debug\WindowsFormsApplication8.pdb
+f:\Работа , только попробуй удали\проба 4\WindowsFormsApplication8\WindowsFormsApplication8\bin\Debug\WindowsFormsApplication8.exe
+f:\Работа , только попробуй удали\проба 4\WindowsFormsApplication8\WindowsFormsApplication8\bin\Debug\WindowsFormsApplication8.pdb
+f:\Работа , только попробуй удали\проба 4\WindowsFormsApplication8\WindowsFormsApplication8\obj\x86\Debug\WindowsFormsApplication8.csprojResolveAssemblyReference.cache
+f:\Работа , только попробуй удали\проба 4\WindowsFormsApplication8\WindowsFormsApplication8\obj\x86\Debug\WindowsFormsApplication8.Form1.resources
+f:\Работа , только попробуй удали\проба 4\WindowsFormsApplication8\WindowsFormsApplication8\obj\x86\Debug\WindowsFormsApplication8.Form2.resources
+f:\Работа , только попробуй удали\проба 4\WindowsFormsApplication8\WindowsFormsApplication8\obj\x86\Debug\WindowsFormsApplication8.Properties.Resources.resources
+f:\Работа , только попробуй удали\проба 4\WindowsFormsApplication8\WindowsFormsApplication8\obj\x86\Debug\WindowsFormsApplication8.csproj.GenerateResource.Cache
+i:\МарьяИвановнаОдобрит\WindowsFormsApplication8\WindowsFormsApplication8\obj\x86\Debug\WindowsFormsApplication8.exe
+i:\МарьяИвановнаОдобрит\WindowsFormsApplication8\WindowsFormsApplication8\obj\x86\Debug\WindowsFormsApplication8.pdb
+i:\МарьяИвановнаОдобрит\WindowsFormsApplication8\WindowsFormsApplication8\bin\Debug\WindowsFormsApplication8.exe
+i:\МарьяИвановнаОдобрит\WindowsFormsApplication8\WindowsFormsApplication8\bin\Debug\WindowsFormsApplication8.pdb
+i:\МарьяИвановнаОдобрит\WindowsFormsApplication8\WindowsFormsApplication8\obj\x86\Debug\WindowsFormsApplication8.csprojResolveAssemblyReference.cache
+i:\МарьяИвановнаОдобрит\WindowsFormsApplication8\WindowsFormsApplication8\obj\x86\Debug\WindowsFormsApplication8.Form1.resources
+i:\МарьяИвановнаОдобрит\WindowsFormsApplication8\WindowsFormsApplication8\obj\x86\Debug\WindowsFormsApplication8.Form2.resources
+i:\МарьяИвановнаОдобрит\WindowsFormsApplication8\WindowsFormsApplication8\obj\x86\Debug\WindowsFormsApplication8.Properties.Resources.resources
+i:\МарьяИвановнаОдобрит\WindowsFormsApplication8\WindowsFormsApplication8\obj\x86\Debug\WindowsFormsApplication8.csproj.GenerateResource.Cache
+Z:\Тихомиров Сергей\5semestrik\МарьяИвановнаОдобрит\WindowsFormsApplication8\WindowsFormsApplication8\obj\x86\Debug\WindowsFormsApplication8.exe
+Z:\Тихомиров Сергей\5semestrik\МарьяИвановнаОдобрит\WindowsFormsApplication8\WindowsFormsApplication8\obj\x86\Debug\WindowsFormsApplication8.pdb
+Z:\Тихомиров Сергей\5semestrik\МарьяИвановнаОдобрит\WindowsFormsApplication8\WindowsFormsApplication8\bin\Debug\WindowsFormsApplication8.exe
+Z:\Тихомиров Сергей\5semestrik\МарьяИвановнаОдобрит\WindowsFormsApplication8\WindowsFormsApplication8\bin\Debug\WindowsFormsApplication8.pdb
+Z:\Тихомиров Сергей\5semestrik\МарьяИвановнаОдобрит\WindowsFormsApplication8\WindowsFormsApplication8\obj\x86\Debug\ResolveAssemblyReference.cache
+Z:\Тихомиров Сергей\5semestrik\МарьяИвановнаОдобрит\WindowsFormsApplication8\WindowsFormsApplication8\obj\x86\Debug\WindowsFormsApplication8.Form1.resources
+Z:\Тихомиров Сергей\5semestrik\МарьяИвановнаОдобрит\WindowsFormsApplication8\WindowsFormsApplication8\obj\x86\Debug\WindowsFormsApplication8.Form2.resources
+Z:\Тихомиров Сергей\5semestrik\МарьяИвановнаОдобрит\WindowsFormsApplication8\WindowsFormsApplication8\obj\x86\Debug\WindowsFormsApplication8.Properties.Resources.resources
+Z:\Тихомиров Сергей\5semestrik\МарьяИвановнаОдобрит\WindowsFormsApplication8\WindowsFormsApplication8\obj\x86\Debug\GenerateResource.read.1.tlog
+Z:\Тихомиров Сергей\5semestrik\МарьяИвановнаОдобрит\WindowsFormsApplication8\WindowsFormsApplication8\obj\x86\Debug\GenerateResource.write.1.tlog
+i:\МарьяИвановнаОдобрит\альфа 0.1\WindowsFormsApplication8\WindowsFormsApplication8\obj\x86\Debug\WindowsFormsApplication8.exe
+i:\МарьяИвановнаОдобрит\альфа 0.1\WindowsFormsApplication8\WindowsFormsApplication8\obj\x86\Debug\WindowsFormsApplication8.pdb
+f:\Работа , только попробуй удали\альфа 0.1\WindowsFormsApplication8\WindowsFormsApplication8\obj\x86\Debug\WindowsFormsApplication8.exe
+f:\Работа , только попробуй удали\альфа 0.1\WindowsFormsApplication8\WindowsFormsApplication8\obj\x86\Debug\WindowsFormsApplication8.pdb
+f:\Работа , только попробуй удали\альфа 0.1\WindowsFormsApplication8\WindowsFormsApplication8\bin\Debug\WindowsFormsApplication8.exe
+f:\Работа , только попробуй удали\альфа 0.1\WindowsFormsApplication8\WindowsFormsApplication8\bin\Debug\WindowsFormsApplication8.pdb
+f:\Работа , только попробуй удали\альфа 0.1\WindowsFormsApplication8\WindowsFormsApplication8\obj\x86\Debug\WindowsFormsApplication8.csprojResolveAssemblyReference.cache
+f:\Работа , только попробуй удали\альфа 0.1\WindowsFormsApplication8\WindowsFormsApplication8\obj\x86\Debug\WindowsFormsApplication8.Form1.resources
+f:\Работа , только попробуй удали\альфа 0.1\WindowsFormsApplication8\WindowsFormsApplication8\obj\x86\Debug\WindowsFormsApplication8.Form2.resources
+f:\Работа , только попробуй удали\альфа 0.1\WindowsFormsApplication8\WindowsFormsApplication8\obj\x86\Debug\WindowsFormsApplication8.Properties.Resources.resources
+f:\Работа , только попробуй удали\альфа 0.1\WindowsFormsApplication8\WindowsFormsApplication8\obj\x86\Debug\WindowsFormsApplication8.csproj.GenerateResource.Cache
+C:\Documents and Settings\Ser\Рабочий стол\Курсовая\WindowsFormsApplication8\WindowsFormsApplication8\obj\x86\Debug\WindowsFormsApplication8.exe
+C:\Documents and Settings\Ser\Рабочий стол\Курсовая\WindowsFormsApplication8\WindowsFormsApplication8\obj\x86\Debug\WindowsFormsApplication8.pdb
+C:\Documents and Settings\Ser\Рабочий стол\Курсовая\WindowsFormsApplication8\WindowsFormsApplication8\bin\Debug\WindowsFormsApplication8.exe
+C:\Documents and Settings\Ser\Рабочий стол\Курсовая\WindowsFormsApplication8\WindowsFormsApplication8\bin\Debug\WindowsFormsApplication8.pdb
+C:\Documents and Settings\Ser\Рабочий стол\Курсовая\WindowsFormsApplication8\WindowsFormsApplication8\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Documents and Settings\Ser\Рабочий стол\Курсовая\WindowsFormsApplication8\WindowsFormsApplication8\obj\x86\Debug\WindowsFormsApplication8.Form1.resources
+C:\Documents and Settings\Ser\Рабочий стол\Курсовая\WindowsFormsApplication8\WindowsFormsApplication8\obj\x86\Debug\WindowsFormsApplication8.Form2.resources
+C:\Documents and Settings\Ser\Рабочий стол\Курсовая\WindowsFormsApplication8\WindowsFormsApplication8\obj\x86\Debug\WindowsFormsApplication8.Properties.Resources.resources
+C:\Documents and Settings\Ser\Рабочий стол\Курсовая\WindowsFormsApplication8\WindowsFormsApplication8\obj\x86\Debug\GenerateResource.read.1.tlog
+C:\Documents and Settings\Ser\Рабочий стол\Курсовая\WindowsFormsApplication8\WindowsFormsApplication8\obj\x86\Debug\GenerateResource.write.1.tlog
+C:\Documents and Settings\Ser\Рабочий стол\Курсовая\WindowsFormsApplication8\WindowsFormsApplication8\obj\x86\Debug\WindowsFormsApplication8.Form3.resources
+f:\Работа , только попробуй удали\альфа 0.1.1\WindowsFormsApplication8\WindowsFormsApplication8\obj\x86\Debug\WindowsFormsApplication8.exe
+f:\Работа , только попробуй удали\альфа 0.1.1\WindowsFormsApplication8\WindowsFormsApplication8\obj\x86\Debug\WindowsFormsApplication8.pdb
+f:\Работа , только попробуй удали\альфа 0.1.1\WindowsFormsApplication8\WindowsFormsApplication8\bin\Debug\WindowsFormsApplication8.exe
+f:\Работа , только попробуй удали\альфа 0.1.1\WindowsFormsApplication8\WindowsFormsApplication8\bin\Debug\WindowsFormsApplication8.pdb
+f:\Работа , только попробуй удали\альфа 0.1.1\WindowsFormsApplication8\WindowsFormsApplication8\obj\x86\Debug\WindowsFormsApplication8.csprojResolveAssemblyReference.cache
+f:\Работа , только попробуй удали\альфа 0.1.1\WindowsFormsApplication8\WindowsFormsApplication8\obj\x86\Debug\WindowsFormsApplication8.Form1.resources
+f:\Работа , только попробуй удали\альфа 0.1.1\WindowsFormsApplication8\WindowsFormsApplication8\obj\x86\Debug\WindowsFormsApplication8.Form2.resources
+f:\Работа , только попробуй удали\альфа 0.1.1\WindowsFormsApplication8\WindowsFormsApplication8\obj\x86\Debug\WindowsFormsApplication8.Form3.resources
+f:\Работа , только попробуй удали\альфа 0.1.1\WindowsFormsApplication8\WindowsFormsApplication8\obj\x86\Debug\WindowsFormsApplication8.Properties.Resources.resources
+f:\Работа , только попробуй удали\альфа 0.1.1\WindowsFormsApplication8\WindowsFormsApplication8\obj\x86\Debug\WindowsFormsApplication8.csproj.GenerateResource.Cache
+f:\Работа , только попробуй удали\Программа\WindowsFormsApplication8\WindowsFormsApplication8\obj\x86\Debug\WindowsFormsApplication8.exe
+f:\Работа , только попробуй удали\Программа\WindowsFormsApplication8\WindowsFormsApplication8\obj\x86\Debug\WindowsFormsApplication8.pdb
+f:\Работа , только попробуй удали\Программа\WindowsFormsApplication8\WindowsFormsApplication8\bin\Debug\WindowsFormsApplication8.exe
+f:\Работа , только попробуй удали\Программа\WindowsFormsApplication8\WindowsFormsApplication8\bin\Debug\WindowsFormsApplication8.pdb
+f:\Работа , только попробуй удали\Программа\WindowsFormsApplication8\WindowsFormsApplication8\obj\x86\Debug\WindowsFormsApplication8.csprojResolveAssemblyReference.cache
+f:\Работа , только попробуй удали\Программа\WindowsFormsApplication8\WindowsFormsApplication8\obj\x86\Debug\WindowsFormsApplication8.Form1.resources
+f:\Работа , только попробуй удали\Программа\WindowsFormsApplication8\WindowsFormsApplication8\obj\x86\Debug\WindowsFormsApplication8.Form2.resources
+f:\Работа , только попробуй удали\Программа\WindowsFormsApplication8\WindowsFormsApplication8\obj\x86\Debug\WindowsFormsApplication8.Form3.resources
+f:\Работа , только попробуй удали\Программа\WindowsFormsApplication8\WindowsFormsApplication8\obj\x86\Debug\WindowsFormsApplication8.Properties.Resources.resources
+f:\Работа , только попробуй удали\Программа\WindowsFormsApplication8\WindowsFormsApplication8\obj\x86\Debug\WindowsFormsApplication8.csproj.GenerateResource.Cache
+F:\Программа\WindowsFormsApplication8\WindowsFormsApplication8\obj\x86\Debug\WindowsFormsApplication8.exe
+F:\Программа\WindowsFormsApplication8\WindowsFormsApplication8\obj\x86\Debug\WindowsFormsApplication8.pdb
+Z:\Тихомиров Сергей\6семестр\Программа\WindowsFormsApplication8\WindowsFormsApplication8\obj\x86\Debug\WindowsFormsApplication8.exe
+Z:\Тихомиров Сергей\6семестр\Программа\WindowsFormsApplication8\WindowsFormsApplication8\obj\x86\Debug\WindowsFormsApplication8.pdb
+Z:\Тихомиров Сергей\6семестр\Программа\WindowsFormsApplication8\WindowsFormsApplication8\bin\Debug\WindowsFormsApplication8.exe
+Z:\Тихомиров Сергей\6семестр\Программа\WindowsFormsApplication8\WindowsFormsApplication8\bin\Debug\WindowsFormsApplication8.pdb
+Z:\Тихомиров Сергей\6семестр\Программа\WindowsFormsApplication8\WindowsFormsApplication8\obj\x86\Debug\ResolveAssemblyReference.cache
+Z:\Тихомиров Сергей\6семестр\Программа\WindowsFormsApplication8\WindowsFormsApplication8\obj\x86\Debug\WindowsFormsApplication8.Form1.resources
+Z:\Тихомиров Сергей\6семестр\Программа\WindowsFormsApplication8\WindowsFormsApplication8\obj\x86\Debug\WindowsFormsApplication8.Form2.resources
+Z:\Тихомиров Сергей\6семестр\Программа\WindowsFormsApplication8\WindowsFormsApplication8\obj\x86\Debug\WindowsFormsApplication8.Form3.resources
+Z:\Тихомиров Сергей\6семестр\Программа\WindowsFormsApplication8\WindowsFormsApplication8\obj\x86\Debug\WindowsFormsApplication8.Properties.Resources.resources
+Z:\Тихомиров Сергей\6семестр\Программа\WindowsFormsApplication8\WindowsFormsApplication8\obj\x86\Debug\GenerateResource.read.1.tlog
+Z:\Тихомиров Сергей\6семестр\Программа\WindowsFormsApplication8\WindowsFormsApplication8\obj\x86\Debug\GenerateResource.write.1.tlog
+g:\Работа , только попробуй удали\Программа1\Программа\Программа\WindowsFormsApplication8\WindowsFormsApplication8\obj\x86\Debug\WindowsFormsApplication8.exe
+g:\Работа , только попробуй удали\Программа1\Программа\Программа\WindowsFormsApplication8\WindowsFormsApplication8\obj\x86\Debug\WindowsFormsApplication8.pdb
+g:\Работа , только попробуй удали\Программа1\Программа\Программа\WindowsFormsApplication8\WindowsFormsApplication8\bin\Debug\WindowsFormsApplication8.exe
+g:\Работа , только попробуй удали\Программа1\Программа\Программа\WindowsFormsApplication8\WindowsFormsApplication8\bin\Debug\WindowsFormsApplication8.pdb
+g:\Работа , только попробуй удали\Программа1\Программа\Программа\WindowsFormsApplication8\WindowsFormsApplication8\obj\x86\Debug\WindowsFormsApplication8.csprojResolveAssemblyReference.cache
+g:\Работа , только попробуй удали\Программа1\Программа\Программа\WindowsFormsApplication8\WindowsFormsApplication8\obj\x86\Debug\WindowsFormsApplication8.Form1.resources
+g:\Работа , только попробуй удали\Программа1\Программа\Программа\WindowsFormsApplication8\WindowsFormsApplication8\obj\x86\Debug\WindowsFormsApplication8.Form2.resources
+g:\Работа , только попробуй удали\Программа1\Программа\Программа\WindowsFormsApplication8\WindowsFormsApplication8\obj\x86\Debug\WindowsFormsApplication8.Form3.resources
+g:\Работа , только попробуй удали\Программа1\Программа\Программа\WindowsFormsApplication8\WindowsFormsApplication8\obj\x86\Debug\WindowsFormsApplication8.Properties.Resources.resources
+g:\Работа , только попробуй удали\Программа1\Программа\Программа\WindowsFormsApplication8\WindowsFormsApplication8\obj\x86\Debug\WindowsFormsApplication8.csproj.GenerateResource.Cache
+g:\Работа , только попробуй удали\альфа 0.1.2\WindowsFormsApplication8\WindowsFormsApplication8\obj\x86\Debug\WindowsFormsApplication8.exe
+g:\Работа , только попробуй удали\альфа 0.1.2\WindowsFormsApplication8\WindowsFormsApplication8\obj\x86\Debug\WindowsFormsApplication8.pdb
+g:\Работа , только попробуй удали\альфа 0.1.2\WindowsFormsApplication8\WindowsFormsApplication8\bin\Debug\WindowsFormsApplication8.exe
+g:\Работа , только попробуй удали\альфа 0.1.2\WindowsFormsApplication8\WindowsFormsApplication8\bin\Debug\WindowsFormsApplication8.pdb
+g:\Работа , только попробуй удали\альфа 0.1.2\WindowsFormsApplication8\WindowsFormsApplication8\obj\x86\Debug\WindowsFormsApplication8.csprojResolveAssemblyReference.cache
+g:\Работа , только попробуй удали\альфа 0.1.2\WindowsFormsApplication8\WindowsFormsApplication8\obj\x86\Debug\WindowsFormsApplication8.Form1.resources
+g:\Работа , только попробуй удали\альфа 0.1.2\WindowsFormsApplication8\WindowsFormsApplication8\obj\x86\Debug\WindowsFormsApplication8.Form2.resources
+g:\Работа , только попробуй удали\альфа 0.1.2\WindowsFormsApplication8\WindowsFormsApplication8\obj\x86\Debug\WindowsFormsApplication8.Form3.resources
+g:\Работа , только попробуй удали\альфа 0.1.2\WindowsFormsApplication8\WindowsFormsApplication8\obj\x86\Debug\WindowsFormsApplication8.Properties.Resources.resources
+g:\Работа , только попробуй удали\альфа 0.1.2\WindowsFormsApplication8\WindowsFormsApplication8\obj\x86\Debug\WindowsFormsApplication8.csproj.GenerateResource.Cache
+C:\Documents and Settings\Ser\Рабочий стол\Курсовая\альфа 0.1.2\WindowsFormsApplication8\WindowsFormsApplication8\obj\x86\Debug\WindowsFormsApplication8.exe
+C:\Documents and Settings\Ser\Рабочий стол\Курсовая\альфа 0.1.2\WindowsFormsApplication8\WindowsFormsApplication8\obj\x86\Debug\WindowsFormsApplication8.pdb
+C:\Documents and Settings\Ser\Рабочий стол\Курсовая\альфа 0.1.2\WindowsFormsApplication8\WindowsFormsApplication8\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Documents and Settings\Ser\Рабочий стол\Курсовая\альфа 0.1.2\WindowsFormsApplication8\WindowsFormsApplication8\obj\x86\Debug\WindowsFormsApplication8.Form1.resources
+C:\Documents and Settings\Ser\Рабочий стол\Курсовая\альфа 0.1.2\WindowsFormsApplication8\WindowsFormsApplication8\obj\x86\Debug\WindowsFormsApplication8.Form2.resources
+C:\Documents and Settings\Ser\Рабочий стол\Курсовая\альфа 0.1.2\WindowsFormsApplication8\WindowsFormsApplication8\obj\x86\Debug\WindowsFormsApplication8.Form3.resources
+C:\Documents and Settings\Ser\Рабочий стол\Курсовая\альфа 0.1.2\WindowsFormsApplication8\WindowsFormsApplication8\obj\x86\Debug\WindowsFormsApplication8.Properties.Resources.resources
+C:\Documents and Settings\Ser\Рабочий стол\Курсовая\альфа 0.1.2\WindowsFormsApplication8\WindowsFormsApplication8\obj\x86\Debug\GenerateResource.read.1.tlog
+C:\Documents and Settings\Ser\Рабочий стол\Курсовая\альфа 0.1.2\WindowsFormsApplication8\WindowsFormsApplication8\obj\x86\Debug\GenerateResource.write.1.tlog
+C:\Documents and Settings\Ser\Рабочий стол\Курсовая\альфа 0.1.2\WindowsFormsApplication8\WindowsFormsApplication8\bin\Debug\WindowsFormsApplication8.exe
+C:\Documents and Settings\Ser\Рабочий стол\Курсовая\альфа 0.1.2\WindowsFormsApplication8\WindowsFormsApplication8\bin\Debug\WindowsFormsApplication8.pdb
+g:\Работа , только попробуй удали\альфа 0.1.2\альфа 0.1.2\WindowsFormsApplication8\WindowsFormsApplication8\obj\x86\Debug\WindowsFormsApplication8.exe
+g:\Работа , только попробуй удали\альфа 0.1.2\альфа 0.1.2\WindowsFormsApplication8\WindowsFormsApplication8\obj\x86\Debug\WindowsFormsApplication8.pdb
+f:\альфа 0.1.2\альфа 0.1.2\WindowsFormsApplication8\WindowsFormsApplication8\obj\x86\Debug\WindowsFormsApplication8.exe
+f:\альфа 0.1.2\альфа 0.1.2\WindowsFormsApplication8\WindowsFormsApplication8\obj\x86\Debug\WindowsFormsApplication8.pdb
+f:\альфа 0.1.2\альфа 0.1.2\WindowsFormsApplication8\WindowsFormsApplication8\bin\Debug\WindowsFormsApplication8.exe
+f:\альфа 0.1.2\альфа 0.1.2\WindowsFormsApplication8\WindowsFormsApplication8\bin\Debug\WindowsFormsApplication8.pdb
+f:\альфа 0.1.2\альфа 0.1.2\WindowsFormsApplication8\WindowsFormsApplication8\obj\x86\Debug\WindowsFormsApplication8.csprojResolveAssemblyReference.cache
+f:\альфа 0.1.2\альфа 0.1.2\WindowsFormsApplication8\WindowsFormsApplication8\obj\x86\Debug\WindowsFormsApplication8.Form1.resources
+f:\альфа 0.1.2\альфа 0.1.2\WindowsFormsApplication8\WindowsFormsApplication8\obj\x86\Debug\WindowsFormsApplication8.Form2.resources
+f:\альфа 0.1.2\альфа 0.1.2\WindowsFormsApplication8\WindowsFormsApplication8\obj\x86\Debug\WindowsFormsApplication8.Form3.resources
+f:\альфа 0.1.2\альфа 0.1.2\WindowsFormsApplication8\WindowsFormsApplication8\obj\x86\Debug\WindowsFormsApplication8.Properties.Resources.resources
+f:\альфа 0.1.2\альфа 0.1.2\WindowsFormsApplication8\WindowsFormsApplication8\obj\x86\Debug\WindowsFormsApplication8.csproj.GenerateResource.Cache
+Z:\Тихомиров Сергей\6семестр\альфа 0.1.2\WindowsFormsApplication8\WindowsFormsApplication8\obj\x86\Debug\WindowsFormsApplication8.exe
+Z:\Тихомиров Сергей\6семестр\альфа 0.1.2\WindowsFormsApplication8\WindowsFormsApplication8\obj\x86\Debug\WindowsFormsApplication8.pdb
+Z:\Тихомиров Сергей\6семестр\альфа 0.1.2\WindowsFormsApplication8\WindowsFormsApplication8\bin\Debug\WindowsFormsApplication8.exe
+Z:\Тихомиров Сергей\6семестр\альфа 0.1.2\WindowsFormsApplication8\WindowsFormsApplication8\bin\Debug\WindowsFormsApplication8.pdb
+Z:\Тихомиров Сергей\6семестр\альфа 0.1.2\WindowsFormsApplication8\WindowsFormsApplication8\obj\x86\Debug\ResolveAssemblyReference.cache
+Z:\Тихомиров Сергей\6семестр\альфа 0.1.2\WindowsFormsApplication8\WindowsFormsApplication8\obj\x86\Debug\WindowsFormsApplication8.Form1.resources
+Z:\Тихомиров Сергей\6семестр\альфа 0.1.2\WindowsFormsApplication8\WindowsFormsApplication8\obj\x86\Debug\WindowsFormsApplication8.Form2.resources
+Z:\Тихомиров Сергей\6семестр\альфа 0.1.2\WindowsFormsApplication8\WindowsFormsApplication8\obj\x86\Debug\WindowsFormsApplication8.Form3.resources
+Z:\Тихомиров Сергей\6семестр\альфа 0.1.2\WindowsFormsApplication8\WindowsFormsApplication8\obj\x86\Debug\WindowsFormsApplication8.Properties.Resources.resources
+Z:\Тихомиров Сергей\6семестр\альфа 0.1.2\WindowsFormsApplication8\WindowsFormsApplication8\obj\x86\Debug\GenerateResource.read.1.tlog
+Z:\Тихомиров Сергей\6семестр\альфа 0.1.2\WindowsFormsApplication8\WindowsFormsApplication8\obj\x86\Debug\GenerateResource.write.1.tlog
+f:\альфа 0.1.2\WindowsFormsApplication8\WindowsFormsApplication8\obj\x86\Debug\WindowsFormsApplication8.exe
+f:\альфа 0.1.2\WindowsFormsApplication8\WindowsFormsApplication8\obj\x86\Debug\WindowsFormsApplication8.pdb
+f:\альфа 0.1.2\WindowsFormsApplication8\WindowsFormsApplication8\bin\Debug\WindowsFormsApplication8.exe
+f:\альфа 0.1.2\WindowsFormsApplication8\WindowsFormsApplication8\bin\Debug\WindowsFormsApplication8.pdb
+f:\альфа 0.1.2\WindowsFormsApplication8\WindowsFormsApplication8\obj\x86\Debug\WindowsFormsApplication8.csprojResolveAssemblyReference.cache
+f:\альфа 0.1.2\WindowsFormsApplication8\WindowsFormsApplication8\obj\x86\Debug\WindowsFormsApplication8.Form1.resources
+f:\альфа 0.1.2\WindowsFormsApplication8\WindowsFormsApplication8\obj\x86\Debug\WindowsFormsApplication8.Form2.resources
+f:\альфа 0.1.2\WindowsFormsApplication8\WindowsFormsApplication8\obj\x86\Debug\WindowsFormsApplication8.Form3.resources
+f:\альфа 0.1.2\WindowsFormsApplication8\WindowsFormsApplication8\obj\x86\Debug\WindowsFormsApplication8.Properties.Resources.resources
+f:\альфа 0.1.2\WindowsFormsApplication8\WindowsFormsApplication8\obj\x86\Debug\WindowsFormsApplication8.csproj.GenerateResource.Cache
+E:\диск\YandexDisk\Новая папка (2)\WindowsFormsApplication8\WindowsFormsApplication8\obj\x86\Debug\WindowsFormsApplication8.exe
+E:\диск\YandexDisk\Новая папка (2)\WindowsFormsApplication8\WindowsFormsApplication8\obj\x86\Debug\WindowsFormsApplication8.pdb
+g:\Инф 2013\Новая папка (2)\WindowsFormsApplication8\WindowsFormsApplication8\obj\x86\Debug\WindowsFormsApplication8.exe
+g:\Инф 2013\Новая папка (2)\WindowsFormsApplication8\WindowsFormsApplication8\obj\x86\Debug\WindowsFormsApplication8.pdb
+g:\Инф 2013\Новая папка (2)\WindowsFormsApplication8\WindowsFormsApplication8\bin\Debug\WindowsFormsApplication8.exe
+g:\Инф 2013\Новая папка (2)\WindowsFormsApplication8\WindowsFormsApplication8\bin\Debug\WindowsFormsApplication8.pdb
+g:\Инф 2013\Новая папка (2)\WindowsFormsApplication8\WindowsFormsApplication8\obj\x86\Debug\WindowsFormsApplication8.csprojResolveAssemblyReference.cache
+g:\Инф 2013\Новая папка (2)\WindowsFormsApplication8\WindowsFormsApplication8\obj\x86\Debug\WindowsFormsApplication8.Form1.resources
+g:\Инф 2013\Новая папка (2)\WindowsFormsApplication8\WindowsFormsApplication8\obj\x86\Debug\WindowsFormsApplication8.Form2.resources
+g:\Инф 2013\Новая папка (2)\WindowsFormsApplication8\WindowsFormsApplication8\obj\x86\Debug\WindowsFormsApplication8.Form3.resources
+g:\Инф 2013\Новая папка (2)\WindowsFormsApplication8\WindowsFormsApplication8\obj\x86\Debug\WindowsFormsApplication8.Properties.Resources.resources
+g:\Инф 2013\Новая папка (2)\WindowsFormsApplication8\WindowsFormsApplication8\obj\x86\Debug\WindowsFormsApplication8.csproj.GenerateResource.Cache
+g:\Работа , только попробуй удали\альфа 0.1.3\омг 2 попытка\Новая папка (2)\WindowsFormsApplication8\WindowsFormsApplication8\obj\x86\Debug\WindowsFormsApplication8.exe
+g:\Работа , только попробуй удали\альфа 0.1.3\омг 2 попытка\Новая папка (2)\WindowsFormsApplication8\WindowsFormsApplication8\obj\x86\Debug\WindowsFormsApplication8.pdb
+g:\Работа , только попробуй удали\альфа 0.1.3\омг 2 попытка\Новая папка (2)\WindowsFormsApplication8\WindowsFormsApplication8\obj\x86\Debug\WindowsFormsApplication8.csprojResolveAssemblyReference.cache
+g:\Работа , только попробуй удали\альфа 0.1.3\омг 2 попытка\Новая папка (2)\WindowsFormsApplication8\WindowsFormsApplication8\obj\x86\Debug\WindowsFormsApplication8.Form1.resources
+g:\Работа , только попробуй удали\альфа 0.1.3\омг 2 попытка\Новая папка (2)\WindowsFormsApplication8\WindowsFormsApplication8\obj\x86\Debug\WindowsFormsApplication8.Form2.resources
+g:\Работа , только попробуй удали\альфа 0.1.3\омг 2 попытка\Новая папка (2)\WindowsFormsApplication8\WindowsFormsApplication8\obj\x86\Debug\WindowsFormsApplication8.Form3.resources
+g:\Работа , только попробуй удали\альфа 0.1.3\омг 2 попытка\Новая папка (2)\WindowsFormsApplication8\WindowsFormsApplication8\obj\x86\Debug\WindowsFormsApplication8.Properties.Resources.resources
+g:\Работа , только попробуй удали\альфа 0.1.3\омг 2 попытка\Новая папка (2)\WindowsFormsApplication8\WindowsFormsApplication8\obj\x86\Debug\WindowsFormsApplication8.csproj.GenerateResource.Cache
+g:\Работа , только попробуй удали\альфа 0.1.3\омг 2 попытка\Новая папка (2)\WindowsFormsApplication8\WindowsFormsApplication8\bin\Debug\WindowsFormsApplication8.exe
+g:\Работа , только попробуй удали\альфа 0.1.3\омг 2 попытка\Новая папка (2)\WindowsFormsApplication8\WindowsFormsApplication8\bin\Debug\WindowsFormsApplication8.pdb
+G:\омг 2 попытка\Новая папка (2)\WindowsFormsApplication8\WindowsFormsApplication8\obj\x86\Debug\WindowsFormsApplication8.exe
+G:\омг 2 попытка\Новая папка (2)\WindowsFormsApplication8\WindowsFormsApplication8\obj\x86\Debug\WindowsFormsApplication8.pdb
+G:\омг 2 попытка\Новая папка (2)\WindowsFormsApplication8\WindowsFormsApplication8\bin\Debug\WindowsFormsApplication8.exe
+G:\омг 2 попытка\Новая папка (2)\WindowsFormsApplication8\WindowsFormsApplication8\bin\Debug\WindowsFormsApplication8.pdb
+G:\омг 2 попытка\Новая папка (2)\WindowsFormsApplication8\WindowsFormsApplication8\obj\x86\Debug\ResolveAssemblyReference.cache
+G:\омг 2 попытка\Новая папка (2)\WindowsFormsApplication8\WindowsFormsApplication8\obj\x86\Debug\WindowsFormsApplication8.Form1.resources
+G:\омг 2 попытка\Новая папка (2)\WindowsFormsApplication8\WindowsFormsApplication8\obj\x86\Debug\WindowsFormsApplication8.Form2.resources
+G:\омг 2 попытка\Новая папка (2)\WindowsFormsApplication8\WindowsFormsApplication8\obj\x86\Debug\WindowsFormsApplication8.Form3.resources
+G:\омг 2 попытка\Новая папка (2)\WindowsFormsApplication8\WindowsFormsApplication8\obj\x86\Debug\WindowsFormsApplication8.Properties.Resources.resources
+G:\омг 2 попытка\Новая папка (2)\WindowsFormsApplication8\WindowsFormsApplication8\obj\x86\Debug\GenerateResource.read.1.tlog
+G:\омг 2 попытка\Новая папка (2)\WindowsFormsApplication8\WindowsFormsApplication8\obj\x86\Debug\GenerateResource.write.1.tlog
+g:\Работа , только попробуй удали\альфа 0.1.4\Новая папка (2)\WindowsFormsApplication8\WindowsFormsApplication8\obj\x86\Debug\WindowsFormsApplication8.exe
+g:\Работа , только попробуй удали\альфа 0.1.4\Новая папка (2)\WindowsFormsApplication8\WindowsFormsApplication8\obj\x86\Debug\WindowsFormsApplication8.pdb
+g:\Работа , только попробуй удали\альфа 0.1.4\Новая папка (2)\WindowsFormsApplication8\WindowsFormsApplication8\bin\Debug\WindowsFormsApplication8.exe
+g:\Работа , только попробуй удали\альфа 0.1.4\Новая папка (2)\WindowsFormsApplication8\WindowsFormsApplication8\bin\Debug\WindowsFormsApplication8.pdb
+g:\Работа , только попробуй удали\альфа 0.1.4\Новая папка (2)\WindowsFormsApplication8\WindowsFormsApplication8\obj\x86\Debug\WindowsFormsApplication8.csprojResolveAssemblyReference.cache
+g:\Работа , только попробуй удали\альфа 0.1.4\Новая папка (2)\WindowsFormsApplication8\WindowsFormsApplication8\obj\x86\Debug\WindowsFormsApplication8.Form1.resources
+g:\Работа , только попробуй удали\альфа 0.1.4\Новая папка (2)\WindowsFormsApplication8\WindowsFormsApplication8\obj\x86\Debug\WindowsFormsApplication8.Form2.resources
+g:\Работа , только попробуй удали\альфа 0.1.4\Новая папка (2)\WindowsFormsApplication8\WindowsFormsApplication8\obj\x86\Debug\WindowsFormsApplication8.Form3.resources
+g:\Работа , только попробуй удали\альфа 0.1.4\Новая папка (2)\WindowsFormsApplication8\WindowsFormsApplication8\obj\x86\Debug\WindowsFormsApplication8.Properties.Resources.resources
+g:\Работа , только попробуй удали\альфа 0.1.4\Новая папка (2)\WindowsFormsApplication8\WindowsFormsApplication8\obj\x86\Debug\WindowsFormsApplication8.csproj.GenerateResource.Cache
+E:\диск\YandexDisk\Новая папка (3)\WindowsFormsApplication8\WindowsFormsApplication8\obj\x86\Debug\WindowsFormsApplication8.exe
+E:\диск\YandexDisk\Новая папка (3)\WindowsFormsApplication8\WindowsFormsApplication8\obj\x86\Debug\WindowsFormsApplication8.pdb
+C:\Users\Julia\Desktop\Новая папка (3)\Новая папка (3)\WindowsFormsApplication8\WindowsFormsApplication8\obj\x86\Debug\WindowsFormsApplication8.exe
+C:\Users\Julia\Desktop\Новая папка (3)\Новая папка (3)\WindowsFormsApplication8\WindowsFormsApplication8\obj\x86\Debug\WindowsFormsApplication8.pdb
+C:\Users\Julia\Desktop\Новая папка (3)\Новая папка (3)\WindowsFormsApplication8\WindowsFormsApplication8\bin\Debug\WindowsFormsApplication8.exe.config
+C:\Users\Julia\Desktop\Новая папка (3)\Новая папка (3)\WindowsFormsApplication8\WindowsFormsApplication8\bin\Debug\WindowsFormsApplication8.exe
+C:\Users\Julia\Desktop\Новая папка (3)\Новая папка (3)\WindowsFormsApplication8\WindowsFormsApplication8\bin\Debug\WindowsFormsApplication8.pdb
+C:\Users\Julia\Desktop\Новая папка (3)\Новая папка (3)\WindowsFormsApplication8\WindowsFormsApplication8\obj\x86\Debug\WindowsFormsApplication8.csprojResolveAssemblyReference.cache
+C:\Users\Julia\Desktop\Новая папка (3)\Новая папка (3)\WindowsFormsApplication8\WindowsFormsApplication8\obj\x86\Debug\WindowsFormsApplication8.Form1.resources
+C:\Users\Julia\Desktop\Новая папка (3)\Новая папка (3)\WindowsFormsApplication8\WindowsFormsApplication8\obj\x86\Debug\WindowsFormsApplication8.Form2.resources
+C:\Users\Julia\Desktop\Новая папка (3)\Новая папка (3)\WindowsFormsApplication8\WindowsFormsApplication8\obj\x86\Debug\WindowsFormsApplication8.Form3.resources
+C:\Users\Julia\Desktop\Новая папка (3)\Новая папка (3)\WindowsFormsApplication8\WindowsFormsApplication8\obj\x86\Debug\WindowsFormsApplication8.Form4.resources
+C:\Users\Julia\Desktop\Новая папка (3)\Новая папка (3)\WindowsFormsApplication8\WindowsFormsApplication8\obj\x86\Debug\WindowsFormsApplication8.Properties.Resources.resources
+C:\Users\Julia\Desktop\Новая папка (3)\Новая папка (3)\WindowsFormsApplication8\WindowsFormsApplication8\obj\x86\Debug\WindowsFormsApplication8.csproj.GenerateResource.Cache
+C:\Users\Julia\Desktop\Новая папка (3)\Новая папка (3)\WindowsFormsApplication8\WindowsFormsApplication8\bin\Debug\_1DataSet.Designer.cs
+C:\Users\Julia\Desktop\Новая папка (3)\Новая папка (3)\WindowsFormsApplication8\WindowsFormsApplication8\bin\Debug\_1DataSet.xsc
+C:\Users\Julia\Desktop\Новая папка (3)\Новая папка (3)\WindowsFormsApplication8\WindowsFormsApplication8\bin\Debug\_1DataSet.xsd
+C:\Users\Julia\Desktop\Новая папка (3)\Новая папка (3)\WindowsFormsApplication8\WindowsFormsApplication8\bin\Debug\_1DataSet.xss
+f:\Новая папка (3)\WindowsFormsApplication8\WindowsFormsApplication8\bin\Debug\WindowsFormsApplication8.exe.config
+f:\Новая папка (3)\WindowsFormsApplication8\WindowsFormsApplication8\obj\x86\Debug\WindowsFormsApplication8.exe
+f:\Новая папка (3)\WindowsFormsApplication8\WindowsFormsApplication8\obj\x86\Debug\WindowsFormsApplication8.pdb
+f:\Новая папка (3)\WindowsFormsApplication8\WindowsFormsApplication8\obj\x86\Debug\WindowsFormsApplication8.csprojResolveAssemblyReference.cache
+f:\Новая папка (3)\WindowsFormsApplication8\WindowsFormsApplication8\obj\x86\Debug\WindowsFormsApplication8.Form1.resources
+f:\Новая папка (3)\WindowsFormsApplication8\WindowsFormsApplication8\obj\x86\Debug\WindowsFormsApplication8.Form2.resources
+f:\Новая папка (3)\WindowsFormsApplication8\WindowsFormsApplication8\obj\x86\Debug\WindowsFormsApplication8.Form3.resources
+f:\Новая папка (3)\WindowsFormsApplication8\WindowsFormsApplication8\obj\x86\Debug\WindowsFormsApplication8.Form4.resources
+f:\Новая папка (3)\WindowsFormsApplication8\WindowsFormsApplication8\obj\x86\Debug\WindowsFormsApplication8.Properties.Resources.resources
+f:\Новая папка (3)\WindowsFormsApplication8\WindowsFormsApplication8\obj\x86\Debug\WindowsFormsApplication8.csproj.GenerateResource.Cache
+f:\Новая папка (3)\WindowsFormsApplication8\WindowsFormsApplication8\bin\Debug\_1DataSet.Designer.cs
+f:\Новая папка (3)\WindowsFormsApplication8\WindowsFormsApplication8\bin\Debug\_1DataSet.xsc
+f:\Новая папка (3)\WindowsFormsApplication8\WindowsFormsApplication8\bin\Debug\_1DataSet.xsd
+f:\Новая папка (3)\WindowsFormsApplication8\WindowsFormsApplication8\bin\Debug\_1DataSet.xss
+f:\Новая папка (3)\WindowsFormsApplication8\WindowsFormsApplication8\bin\Debug\WindowsFormsApplication8.exe
+f:\Новая папка (3)\WindowsFormsApplication8\WindowsFormsApplication8\bin\Debug\WindowsFormsApplication8.pdb
+C:\Users\tixom\Desktop\Новая папка (3)\WindowsFormsApplication8\WindowsFormsApplication8\bin\Debug\WindowsFormsApplication8.exe.config
+C:\Users\tixom\Desktop\Новая папка (3)\WindowsFormsApplication8\WindowsFormsApplication8\obj\x86\Debug\WindowsFormsApplication8.exe
+C:\Users\tixom\Desktop\Новая папка (3)\WindowsFormsApplication8\WindowsFormsApplication8\obj\x86\Debug\WindowsFormsApplication8.pdb
+C:\Users\tixom\Desktop\Новая папка (3)\WindowsFormsApplication8\WindowsFormsApplication8\obj\x86\Debug\WindowsFormsApplication8.csprojResolveAssemblyReference.cache
+C:\Users\tixom\Desktop\Новая папка (3)\WindowsFormsApplication8\WindowsFormsApplication8\obj\x86\Debug\WindowsFormsApplication8.Form1.resources
+C:\Users\tixom\Desktop\Новая папка (3)\WindowsFormsApplication8\WindowsFormsApplication8\obj\x86\Debug\WindowsFormsApplication8.Form2.resources
+C:\Users\tixom\Desktop\Новая папка (3)\WindowsFormsApplication8\WindowsFormsApplication8\obj\x86\Debug\WindowsFormsApplication8.Form3.resources
+C:\Users\tixom\Desktop\Новая папка (3)\WindowsFormsApplication8\WindowsFormsApplication8\obj\x86\Debug\WindowsFormsApplication8.Form4.resources
+C:\Users\tixom\Desktop\Новая папка (3)\WindowsFormsApplication8\WindowsFormsApplication8\obj\x86\Debug\WindowsFormsApplication8.Form5.resources
+C:\Users\tixom\Desktop\Новая папка (3)\WindowsFormsApplication8\WindowsFormsApplication8\obj\x86\Debug\WindowsFormsApplication8.Properties.Resources.resources
+C:\Users\tixom\Desktop\Новая папка (3)\WindowsFormsApplication8\WindowsFormsApplication8\obj\x86\Debug\WindowsFormsApplication8.csproj.GenerateResource.Cache
+C:\Users\tixom\Desktop\Новая папка (3)\WindowsFormsApplication8\WindowsFormsApplication8\bin\Debug\_1DataSet.Designer.cs
+C:\Users\tixom\Desktop\Новая папка (3)\WindowsFormsApplication8\WindowsFormsApplication8\bin\Debug\_1DataSet.xsc
+C:\Users\tixom\Desktop\Новая папка (3)\WindowsFormsApplication8\WindowsFormsApplication8\bin\Debug\_1DataSet.xsd
+C:\Users\tixom\Desktop\Новая папка (3)\WindowsFormsApplication8\WindowsFormsApplication8\bin\Debug\_1DataSet.xss
+C:\Users\tixom\Desktop\Новая папка (3)\WindowsFormsApplication8\WindowsFormsApplication8\bin\Debug\WindowsFormsApplication8.exe
+C:\Users\tixom\Desktop\Новая папка (3)\WindowsFormsApplication8\WindowsFormsApplication8\bin\Debug\WindowsFormsApplication8.pdb
+C:\Documents and Settings\Ser\Рабочий стол\Прога_почти готова\Новая папка (3)\WindowsFormsApplication8\WindowsFormsApplication8\bin\Debug\WindowsFormsApplication8.exe.config
+C:\Documents and Settings\Ser\Рабочий стол\Прога_почти готова\Новая папка (3)\WindowsFormsApplication8\WindowsFormsApplication8\obj\x86\Debug\WindowsFormsApplication8.exe
+C:\Documents and Settings\Ser\Рабочий стол\Прога_почти готова\Новая папка (3)\WindowsFormsApplication8\WindowsFormsApplication8\obj\x86\Debug\WindowsFormsApplication8.pdb
+C:\Documents and Settings\Ser\Рабочий стол\Прога_почти готова\Новая папка (3)\WindowsFormsApplication8\WindowsFormsApplication8\bin\Debug\_1DataSet.Designer.cs
+C:\Documents and Settings\Ser\Рабочий стол\Прога_почти готова\Новая папка (3)\WindowsFormsApplication8\WindowsFormsApplication8\bin\Debug\_1DataSet.xsc
+C:\Documents and Settings\Ser\Рабочий стол\Прога_почти готова\Новая папка (3)\WindowsFormsApplication8\WindowsFormsApplication8\bin\Debug\_1DataSet.xsd
+C:\Documents and Settings\Ser\Рабочий стол\Прога_почти готова\Новая папка (3)\WindowsFormsApplication8\WindowsFormsApplication8\bin\Debug\_1DataSet.xss
+C:\Documents and Settings\Ser\Рабочий стол\Прога_почти готова\Новая папка (3)\WindowsFormsApplication8\WindowsFormsApplication8\bin\Debug\WindowsFormsApplication8.exe
+C:\Documents and Settings\Ser\Рабочий стол\Прога_почти готова\Новая папка (3)\WindowsFormsApplication8\WindowsFormsApplication8\bin\Debug\WindowsFormsApplication8.pdb
+C:\Documents and Settings\Ser\Рабочий стол\Прога_почти готова\Новая папка (3)\WindowsFormsApplication8\WindowsFormsApplication8\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Documents and Settings\Ser\Рабочий стол\Прога_почти готова\Новая папка (3)\WindowsFormsApplication8\WindowsFormsApplication8\obj\x86\Debug\WindowsFormsApplication8.Form1.resources
+C:\Documents and Settings\Ser\Рабочий стол\Прога_почти готова\Новая папка (3)\WindowsFormsApplication8\WindowsFormsApplication8\obj\x86\Debug\WindowsFormsApplication8.Form2.resources
+C:\Documents and Settings\Ser\Рабочий стол\Прога_почти готова\Новая папка (3)\WindowsFormsApplication8\WindowsFormsApplication8\obj\x86\Debug\WindowsFormsApplication8.Form3.resources
+C:\Documents and Settings\Ser\Рабочий стол\Прога_почти готова\Новая папка (3)\WindowsFormsApplication8\WindowsFormsApplication8\obj\x86\Debug\WindowsFormsApplication8.Form4.resources
+C:\Documents and Settings\Ser\Рабочий стол\Прога_почти готова\Новая папка (3)\WindowsFormsApplication8\WindowsFormsApplication8\obj\x86\Debug\WindowsFormsApplication8.Form5.resources
+C:\Documents and Settings\Ser\Рабочий стол\Прога_почти готова\Новая папка (3)\WindowsFormsApplication8\WindowsFormsApplication8\obj\x86\Debug\WindowsFormsApplication8.Properties.Resources.resources
+C:\Documents and Settings\Ser\Рабочий стол\Прога_почти готова\Новая папка (3)\WindowsFormsApplication8\WindowsFormsApplication8\obj\x86\Debug\GenerateResource.read.1.tlog
+C:\Documents and Settings\Ser\Рабочий стол\Прога_почти готова\Новая папка (3)\WindowsFormsApplication8\WindowsFormsApplication8\obj\x86\Debug\GenerateResource.write.1.tlog
+C:\Users\Julia\Desktop\Прога_почти готова\Прога_почти готова\Новая папка (3)\WindowsFormsApplication8\WindowsFormsApplication8\bin\Debug\WindowsFormsApplication8.exe.config
+C:\Users\Julia\Desktop\Прога_почти готова\Прога_почти готова\Новая папка (3)\WindowsFormsApplication8\WindowsFormsApplication8\obj\x86\Debug\WindowsFormsApplication8.exe
+C:\Users\Julia\Desktop\Прога_почти готова\Прога_почти готова\Новая папка (3)\WindowsFormsApplication8\WindowsFormsApplication8\obj\x86\Debug\WindowsFormsApplication8.pdb
+C:\Users\Julia\Desktop\Прога_почти готова\Прога_почти готова\Новая папка (3)\WindowsFormsApplication8\WindowsFormsApplication8\bin\Debug\_1DataSet.Designer.cs
+C:\Users\Julia\Desktop\Прога_почти готова\Прога_почти готова\Новая папка (3)\WindowsFormsApplication8\WindowsFormsApplication8\bin\Debug\_1DataSet.xsc
+C:\Users\Julia\Desktop\Прога_почти готова\Прога_почти готова\Новая папка (3)\WindowsFormsApplication8\WindowsFormsApplication8\bin\Debug\_1DataSet.xsd
+C:\Users\Julia\Desktop\Прога_почти готова\Прога_почти готова\Новая папка (3)\WindowsFormsApplication8\WindowsFormsApplication8\bin\Debug\_1DataSet.xss
+C:\Users\Julia\Desktop\Прога_почти готова\Прога_почти готова\Новая папка (3)\WindowsFormsApplication8\WindowsFormsApplication8\bin\Debug\WindowsFormsApplication8.exe
+C:\Users\Julia\Desktop\Прога_почти готова\Прога_почти готова\Новая папка (3)\WindowsFormsApplication8\WindowsFormsApplication8\bin\Debug\WindowsFormsApplication8.pdb
+C:\Users\Julia\Desktop\Прога_почти готова\Прога_почти готова\Новая папка (3)\WindowsFormsApplication8\WindowsFormsApplication8\obj\x86\Debug\WindowsFormsApplication8.csprojResolveAssemblyReference.cache
+C:\Users\Julia\Desktop\Прога_почти готова\Прога_почти готова\Новая папка (3)\WindowsFormsApplication8\WindowsFormsApplication8\obj\x86\Debug\WindowsFormsApplication8.Form1.resources
+C:\Users\Julia\Desktop\Прога_почти готова\Прога_почти готова\Новая папка (3)\WindowsFormsApplication8\WindowsFormsApplication8\obj\x86\Debug\WindowsFormsApplication8.Form2.resources
+C:\Users\Julia\Desktop\Прога_почти готова\Прога_почти готова\Новая папка (3)\WindowsFormsApplication8\WindowsFormsApplication8\obj\x86\Debug\WindowsFormsApplication8.Form3.resources
+C:\Users\Julia\Desktop\Прога_почти готова\Прога_почти готова\Новая папка (3)\WindowsFormsApplication8\WindowsFormsApplication8\obj\x86\Debug\WindowsFormsApplication8.Form4.resources
+C:\Users\Julia\Desktop\Прога_почти готова\Прога_почти готова\Новая папка (3)\WindowsFormsApplication8\WindowsFormsApplication8\obj\x86\Debug\WindowsFormsApplication8.Form5.resources
+C:\Users\Julia\Desktop\Прога_почти готова\Прога_почти готова\Новая папка (3)\WindowsFormsApplication8\WindowsFormsApplication8\obj\x86\Debug\WindowsFormsApplication8.Properties.Resources.resources
+C:\Users\Julia\Desktop\Прога_почти готова\Прога_почти готова\Новая папка (3)\WindowsFormsApplication8\WindowsFormsApplication8\obj\x86\Debug\WindowsFormsApplication8.csproj.GenerateResource.Cache
+D:\учеба\куросовая по бд\Прога_почти готова\Прога_почти готова\Новая папка (3)\WindowsFormsApplication8\WindowsFormsApplication8\bin\Debug\WindowsFormsApplication8.exe.config
+D:\учеба\куросовая по бд\Прога_почти готова\Прога_почти готова\Новая папка (3)\WindowsFormsApplication8\WindowsFormsApplication8\obj\x86\Debug\WindowsFormsApplication8.exe
+D:\учеба\куросовая по бд\Прога_почти готова\Прога_почти готова\Новая папка (3)\WindowsFormsApplication8\WindowsFormsApplication8\obj\x86\Debug\WindowsFormsApplication8.pdb
+D:\учеба\куросовая по бд\Прога_почти готова\Прога_почти готова\Новая папка (3)\WindowsFormsApplication8\WindowsFormsApplication8\bin\Debug\_1DataSet.Designer.cs
+D:\учеба\куросовая по бд\Прога_почти готова\Прога_почти готова\Новая папка (3)\WindowsFormsApplication8\WindowsFormsApplication8\bin\Debug\_1DataSet.xsc
+D:\учеба\куросовая по бд\Прога_почти готова\Прога_почти готова\Новая папка (3)\WindowsFormsApplication8\WindowsFormsApplication8\bin\Debug\_1DataSet.xsd
+D:\учеба\куросовая по бд\Прога_почти готова\Прога_почти готова\Новая папка (3)\WindowsFormsApplication8\WindowsFormsApplication8\bin\Debug\_1DataSet.xss
+D:\учеба\куросовая по бд\Прога_почти готова\Прога_почти готова\Новая папка (3)\WindowsFormsApplication8\WindowsFormsApplication8\bin\Debug\WindowsFormsApplication8.exe
+D:\учеба\куросовая по бд\Прога_почти готова\Прога_почти готова\Новая папка (3)\WindowsFormsApplication8\WindowsFormsApplication8\bin\Debug\WindowsFormsApplication8.pdb
+D:\учеба\куросовая по бд\Прога_почти готова\Прога_почти готова\Новая папка (3)\WindowsFormsApplication8\WindowsFormsApplication8\obj\x86\Debug\WindowsFormsApplication8.csprojResolveAssemblyReference.cache
+D:\учеба\куросовая по бд\Прога_почти готова\Прога_почти готова\Новая папка (3)\WindowsFormsApplication8\WindowsFormsApplication8\obj\x86\Debug\WindowsFormsApplication8.Form1.resources
+D:\учеба\куросовая по бд\Прога_почти готова\Прога_почти готова\Новая папка (3)\WindowsFormsApplication8\WindowsFormsApplication8\obj\x86\Debug\WindowsFormsApplication8.Form2.resources
+D:\учеба\куросовая по бд\Прога_почти готова\Прога_почти готова\Новая папка (3)\WindowsFormsApplication8\WindowsFormsApplication8\obj\x86\Debug\WindowsFormsApplication8.Form3.resources
+D:\учеба\куросовая по бд\Прога_почти готова\Прога_почти готова\Новая папка (3)\WindowsFormsApplication8\WindowsFormsApplication8\obj\x86\Debug\WindowsFormsApplication8.Form4.resources
+D:\учеба\куросовая по бд\Прога_почти готова\Прога_почти готова\Новая папка (3)\WindowsFormsApplication8\WindowsFormsApplication8\obj\x86\Debug\WindowsFormsApplication8.Form5.resources
+D:\учеба\куросовая по бд\Прога_почти готова\Прога_почти готова\Новая папка (3)\WindowsFormsApplication8\WindowsFormsApplication8\obj\x86\Debug\WindowsFormsApplication8.Properties.Resources.resources
+D:\учеба\куросовая по бд\Прога_почти готова\Прога_почти готова\Новая папка (3)\WindowsFormsApplication8\WindowsFormsApplication8\obj\x86\Debug\WindowsFormsApplication8.csproj.GenerateResource.Cache
+C:\Documents and Settings\Ser\Рабочий стол\для сереги\Прога_почти готова\Новая папка (3)\WindowsFormsApplication8\WindowsFormsApplication8\bin\Debug\WindowsFormsApplication8.exe.config
+C:\Documents and Settings\Ser\Рабочий стол\для сереги\Прога_почти готова\Новая папка (3)\WindowsFormsApplication8\WindowsFormsApplication8\obj\x86\Debug\WindowsFormsApplication8.exe
+C:\Documents and Settings\Ser\Рабочий стол\для сереги\Прога_почти готова\Новая папка (3)\WindowsFormsApplication8\WindowsFormsApplication8\obj\x86\Debug\WindowsFormsApplication8.pdb
+C:\Documents and Settings\Ser\Рабочий стол\для сереги\Прога_почти готова\Новая папка (3)\WindowsFormsApplication8\WindowsFormsApplication8\bin\Debug\_1DataSet.Designer.cs
+C:\Documents and Settings\Ser\Рабочий стол\для сереги\Прога_почти готова\Новая папка (3)\WindowsFormsApplication8\WindowsFormsApplication8\bin\Debug\_1DataSet.xsc
+C:\Documents and Settings\Ser\Рабочий стол\для сереги\Прога_почти готова\Новая папка (3)\WindowsFormsApplication8\WindowsFormsApplication8\bin\Debug\_1DataSet.xsd
+C:\Documents and Settings\Ser\Рабочий стол\для сереги\Прога_почти готова\Новая папка (3)\WindowsFormsApplication8\WindowsFormsApplication8\bin\Debug\_1DataSet.xss
+C:\Documents and Settings\Ser\Рабочий стол\для сереги\Прога_почти готова\Новая папка (3)\WindowsFormsApplication8\WindowsFormsApplication8\bin\Debug\WindowsFormsApplication8.exe
+C:\Documents and Settings\Ser\Рабочий стол\для сереги\Прога_почти готова\Новая папка (3)\WindowsFormsApplication8\WindowsFormsApplication8\bin\Debug\WindowsFormsApplication8.pdb
+C:\Documents and Settings\Ser\Рабочий стол\для сереги\Прога_почти готова\Новая папка (3)\WindowsFormsApplication8\WindowsFormsApplication8\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Documents and Settings\Ser\Рабочий стол\для сереги\Прога_почти готова\Новая папка (3)\WindowsFormsApplication8\WindowsFormsApplication8\obj\x86\Debug\WindowsFormsApplication8.Form1.resources
+C:\Documents and Settings\Ser\Рабочий стол\для сереги\Прога_почти готова\Новая папка (3)\WindowsFormsApplication8\WindowsFormsApplication8\obj\x86\Debug\WindowsFormsApplication8.Form2.resources
+C:\Documents and Settings\Ser\Рабочий стол\для сереги\Прога_почти готова\Новая папка (3)\WindowsFormsApplication8\WindowsFormsApplication8\obj\x86\Debug\WindowsFormsApplication8.Form3.resources
+C:\Documents and Settings\Ser\Рабочий стол\для сереги\Прога_почти готова\Новая папка (3)\WindowsFormsApplication8\WindowsFormsApplication8\obj\x86\Debug\WindowsFormsApplication8.Form4.resources
+C:\Documents and Settings\Ser\Рабочий стол\для сереги\Прога_почти готова\Новая папка (3)\WindowsFormsApplication8\WindowsFormsApplication8\obj\x86\Debug\WindowsFormsApplication8.Form5.resources
+C:\Documents and Settings\Ser\Рабочий стол\для сереги\Прога_почти готова\Новая папка (3)\WindowsFormsApplication8\WindowsFormsApplication8\obj\x86\Debug\WindowsFormsApplication8.Properties.Resources.resources
+C:\Documents and Settings\Ser\Рабочий стол\для сереги\Прога_почти готова\Новая папка (3)\WindowsFormsApplication8\WindowsFormsApplication8\obj\x86\Debug\GenerateResource.read.1.tlog
+C:\Documents and Settings\Ser\Рабочий стол\для сереги\Прога_почти готова\Новая папка (3)\WindowsFormsApplication8\WindowsFormsApplication8\obj\x86\Debug\GenerateResource.write.1.tlog
+C:\Users\Julia\Desktop\от сереги\для сереги\Прога_почти готова\Новая папка (3)\WindowsFormsApplication8\WindowsFormsApplication8\bin\Debug\WindowsFormsApplication8.exe.config
+C:\Users\Julia\Desktop\от сереги\для сереги\Прога_почти готова\Новая папка (3)\WindowsFormsApplication8\WindowsFormsApplication8\obj\x86\Debug\WindowsFormsApplication8.exe
+C:\Users\Julia\Desktop\от сереги\для сереги\Прога_почти готова\Новая папка (3)\WindowsFormsApplication8\WindowsFormsApplication8\obj\x86\Debug\WindowsFormsApplication8.pdb
+C:\Users\Julia\Desktop\от сереги\для сереги\Прога_почти готова\Новая папка (3)\WindowsFormsApplication8\WindowsFormsApplication8\bin\Debug\WindowsFormsApplication8.exe
+C:\Users\Julia\Desktop\от сереги\для сереги\Прога_почти готова\Новая папка (3)\WindowsFormsApplication8\WindowsFormsApplication8\bin\Debug\WindowsFormsApplication8.pdb
+C:\Users\Julia\Desktop\от сереги\для сереги\Прога_почти готова\Новая папка (3)\WindowsFormsApplication8\WindowsFormsApplication8\obj\x86\Debug\WindowsFormsApplication8.csprojResolveAssemblyReference.cache
+C:\Users\Julia\Desktop\от сереги\для сереги\Прога_почти готова\Новая папка (3)\WindowsFormsApplication8\WindowsFormsApplication8\obj\x86\Debug\WindowsFormsApplication8.Form1.resources
+C:\Users\Julia\Desktop\от сереги\для сереги\Прога_почти готова\Новая папка (3)\WindowsFormsApplication8\WindowsFormsApplication8\obj\x86\Debug\WindowsFormsApplication8.Form2.resources
+C:\Users\Julia\Desktop\от сереги\для сереги\Прога_почти готова\Новая папка (3)\WindowsFormsApplication8\WindowsFormsApplication8\obj\x86\Debug\WindowsFormsApplication8.Form3.resources
+C:\Users\Julia\Desktop\от сереги\для сереги\Прога_почти готова\Новая папка (3)\WindowsFormsApplication8\WindowsFormsApplication8\obj\x86\Debug\WindowsFormsApplication8.Form4.resources
+C:\Users\Julia\Desktop\от сереги\для сереги\Прога_почти готова\Новая папка (3)\WindowsFormsApplication8\WindowsFormsApplication8\obj\x86\Debug\WindowsFormsApplication8.Form5.resources
+C:\Users\Julia\Desktop\от сереги\для сереги\Прога_почти готова\Новая папка (3)\WindowsFormsApplication8\WindowsFormsApplication8\obj\x86\Debug\WindowsFormsApplication8.Properties.Resources.resources
+C:\Users\Julia\Desktop\от сереги\для сереги\Прога_почти готова\Новая папка (3)\WindowsFormsApplication8\WindowsFormsApplication8\obj\x86\Debug\WindowsFormsApplication8.csproj.GenerateResource.Cache
+C:\Users\Julia\Desktop\от сереги\для сереги\Прога_почти готова\Новая папка (3)\WindowsFormsApplication8\WindowsFormsApplication8\bin\Debug\juliaDataSet.Designer.cs
+C:\Users\Julia\Desktop\от сереги\для сереги\Прога_почти готова\Новая папка (3)\WindowsFormsApplication8\WindowsFormsApplication8\bin\Debug\juliaDataSet.xsc
+C:\Users\Julia\Desktop\от сереги\для сереги\Прога_почти готова\Новая папка (3)\WindowsFormsApplication8\WindowsFormsApplication8\bin\Debug\juliaDataSet.xsd
+C:\Users\Julia\Desktop\от сереги\для сереги\Прога_почти готова\Новая папка (3)\WindowsFormsApplication8\WindowsFormsApplication8\bin\Debug\juliaDataSet.xss
+C:\Documents and Settings\Ser\Рабочий стол\от сереги\для сереги\Прога_почти готова\Новая папка (3)\WindowsFormsApplication8\WindowsFormsApplication8\bin\Debug\WindowsFormsApplication8.exe.config
+C:\Documents and Settings\Ser\Рабочий стол\от сереги\для сереги\Прога_почти готова\Новая папка (3)\WindowsFormsApplication8\WindowsFormsApplication8\obj\x86\Debug\WindowsFormsApplication8.exe
+C:\Documents and Settings\Ser\Рабочий стол\от сереги\для сереги\Прога_почти готова\Новая папка (3)\WindowsFormsApplication8\WindowsFormsApplication8\obj\x86\Debug\WindowsFormsApplication8.pdb
+C:\Documents and Settings\Ser\Рабочий стол\от сереги\для сереги\Прога_почти готова\Новая папка (3)\WindowsFormsApplication8\WindowsFormsApplication8\bin\Debug\juliaDataSet.Designer.cs
+C:\Documents and Settings\Ser\Рабочий стол\от сереги\для сереги\Прога_почти готова\Новая папка (3)\WindowsFormsApplication8\WindowsFormsApplication8\bin\Debug\juliaDataSet.xsc
+C:\Documents and Settings\Ser\Рабочий стол\от сереги\для сереги\Прога_почти готова\Новая папка (3)\WindowsFormsApplication8\WindowsFormsApplication8\bin\Debug\juliaDataSet.xsd
+C:\Documents and Settings\Ser\Рабочий стол\от сереги\для сереги\Прога_почти готова\Новая папка (3)\WindowsFormsApplication8\WindowsFormsApplication8\bin\Debug\juliaDataSet.xss
+C:\Documents and Settings\Ser\Рабочий стол\от сереги\для сереги\Прога_почти готова\Новая папка (3)\WindowsFormsApplication8\WindowsFormsApplication8\bin\Debug\WindowsFormsApplication8.exe
+C:\Documents and Settings\Ser\Рабочий стол\от сереги\для сереги\Прога_почти готова\Новая папка (3)\WindowsFormsApplication8\WindowsFormsApplication8\bin\Debug\WindowsFormsApplication8.pdb
+C:\Documents and Settings\Ser\Рабочий стол\от сереги\для сереги\Прога_почти готова\Новая папка (3)\WindowsFormsApplication8\WindowsFormsApplication8\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Documents and Settings\Ser\Рабочий стол\от сереги\для сереги\Прога_почти готова\Новая папка (3)\WindowsFormsApplication8\WindowsFormsApplication8\obj\x86\Debug\WindowsFormsApplication8.Form1.resources
+C:\Documents and Settings\Ser\Рабочий стол\от сереги\для сереги\Прога_почти готова\Новая папка (3)\WindowsFormsApplication8\WindowsFormsApplication8\obj\x86\Debug\WindowsFormsApplication8.Form2.resources
+C:\Documents and Settings\Ser\Рабочий стол\от сереги\для сереги\Прога_почти готова\Новая папка (3)\WindowsFormsApplication8\WindowsFormsApplication8\obj\x86\Debug\WindowsFormsApplication8.Form3.resources
+C:\Documents and Settings\Ser\Рабочий стол\от сереги\для сереги\Прога_почти готова\Новая папка (3)\WindowsFormsApplication8\WindowsFormsApplication8\obj\x86\Debug\WindowsFormsApplication8.Form4.resources
+C:\Documents and Settings\Ser\Рабочий стол\от сереги\для сереги\Прога_почти готова\Новая папка (3)\WindowsFormsApplication8\WindowsFormsApplication8\obj\x86\Debug\WindowsFormsApplication8.Form5.resources
+C:\Documents and Settings\Ser\Рабочий стол\от сереги\для сереги\Прога_почти готова\Новая папка (3)\WindowsFormsApplication8\WindowsFormsApplication8\obj\x86\Debug\WindowsFormsApplication8.Properties.Resources.resources
+C:\Documents and Settings\Ser\Рабочий стол\от сереги\для сереги\Прога_почти готова\Новая папка (3)\WindowsFormsApplication8\WindowsFormsApplication8\obj\x86\Debug\GenerateResource.read.1.tlog
+C:\Documents and Settings\Ser\Рабочий стол\от сереги\для сереги\Прога_почти готова\Новая папка (3)\WindowsFormsApplication8\WindowsFormsApplication8\obj\x86\Debug\GenerateResource.write.1.tlog
+C:\Users\Julia\Desktop\от сереги1\WindowsFormsApplication8\WindowsFormsApplication8\bin\Debug\WindowsFormsApplication8.exe.config
+C:\Users\Julia\Desktop\от сереги1\WindowsFormsApplication8\WindowsFormsApplication8\obj\x86\Debug\WindowsFormsApplication8.exe
+C:\Users\Julia\Desktop\от сереги1\WindowsFormsApplication8\WindowsFormsApplication8\obj\x86\Debug\WindowsFormsApplication8.pdb
+C:\Users\Julia\Desktop\от сереги1\WindowsFormsApplication8\WindowsFormsApplication8\bin\Debug\juliaDataSet.Designer.cs
+C:\Users\Julia\Desktop\от сереги1\WindowsFormsApplication8\WindowsFormsApplication8\bin\Debug\juliaDataSet.xsc
+C:\Users\Julia\Desktop\от сереги1\WindowsFormsApplication8\WindowsFormsApplication8\bin\Debug\juliaDataSet.xsd
+C:\Users\Julia\Desktop\от сереги1\WindowsFormsApplication8\WindowsFormsApplication8\bin\Debug\juliaDataSet.xss
+C:\Users\Julia\Desktop\от сереги1\WindowsFormsApplication8\WindowsFormsApplication8\bin\Debug\WindowsFormsApplication8.exe
+C:\Users\Julia\Desktop\от сереги1\WindowsFormsApplication8\WindowsFormsApplication8\bin\Debug\WindowsFormsApplication8.pdb
+C:\Users\Julia\Desktop\от сереги1\WindowsFormsApplication8\WindowsFormsApplication8\obj\x86\Debug\WindowsFormsApplication8.Form1.resources
+C:\Users\Julia\Desktop\от сереги1\WindowsFormsApplication8\WindowsFormsApplication8\obj\x86\Debug\WindowsFormsApplication8.Form2.resources
+C:\Users\Julia\Desktop\от сереги1\WindowsFormsApplication8\WindowsFormsApplication8\obj\x86\Debug\WindowsFormsApplication8.Form3.resources
+C:\Users\Julia\Desktop\от сереги1\WindowsFormsApplication8\WindowsFormsApplication8\obj\x86\Debug\WindowsFormsApplication8.Form4.resources
+C:\Users\Julia\Desktop\от сереги1\WindowsFormsApplication8\WindowsFormsApplication8\obj\x86\Debug\WindowsFormsApplication8.Form5.resources
+C:\Users\Julia\Desktop\от сереги1\WindowsFormsApplication8\WindowsFormsApplication8\obj\x86\Debug\WindowsFormsApplication8.Properties.Resources.resources
+C:\Users\Julia\Desktop\от сереги1\WindowsFormsApplication8\WindowsFormsApplication8\obj\x86\Debug\WindowsFormsApplication8.csproj.GenerateResource.Cache
+C:\Users\Julia\Desktop\от сереги1\WindowsFormsApplication8\WindowsFormsApplication8\obj\x86\Debug\WindowsFormsApplication8.csprojResolveAssemblyReference.cache
+g:\Работа , только попробуй удали\версия 1\от сереги1\WindowsFormsApplication8\WindowsFormsApplication8\bin\Debug\WindowsFormsApplication8.exe.config
+g:\Работа , только попробуй удали\версия 1\от сереги1\WindowsFormsApplication8\WindowsFormsApplication8\obj\x86\Debug\WindowsFormsApplication8.exe
+g:\Работа , только попробуй удали\версия 1\от сереги1\WindowsFormsApplication8\WindowsFormsApplication8\obj\x86\Debug\WindowsFormsApplication8.pdb
+g:\Работа , только попробуй удали\версия 1\от сереги1\WindowsFormsApplication8\WindowsFormsApplication8\bin\Debug\juliaDataSet.Designer.cs
+g:\Работа , только попробуй удали\версия 1\от сереги1\WindowsFormsApplication8\WindowsFormsApplication8\bin\Debug\juliaDataSet.xsc
+g:\Работа , только попробуй удали\версия 1\от сереги1\WindowsFormsApplication8\WindowsFormsApplication8\bin\Debug\juliaDataSet.xsd
+g:\Работа , только попробуй удали\версия 1\от сереги1\WindowsFormsApplication8\WindowsFormsApplication8\bin\Debug\juliaDataSet.xss
+g:\Работа , только попробуй удали\версия 1\от сереги1\WindowsFormsApplication8\WindowsFormsApplication8\bin\Debug\WindowsFormsApplication8.exe
+g:\Работа , только попробуй удали\версия 1\от сереги1\WindowsFormsApplication8\WindowsFormsApplication8\bin\Debug\WindowsFormsApplication8.pdb
+g:\Работа , только попробуй удали\версия 1\от сереги1\WindowsFormsApplication8\WindowsFormsApplication8\obj\x86\Debug\WindowsFormsApplication8.csprojResolveAssemblyReference.cache
+g:\Работа , только попробуй удали\версия 1\от сереги1\WindowsFormsApplication8\WindowsFormsApplication8\obj\x86\Debug\WindowsFormsApplication8.Form1.resources
+g:\Работа , только попробуй удали\версия 1\от сереги1\WindowsFormsApplication8\WindowsFormsApplication8\obj\x86\Debug\WindowsFormsApplication8.Form2.resources
+g:\Работа , только попробуй удали\версия 1\от сереги1\WindowsFormsApplication8\WindowsFormsApplication8\obj\x86\Debug\WindowsFormsApplication8.Form3.resources
+g:\Работа , только попробуй удали\версия 1\от сереги1\WindowsFormsApplication8\WindowsFormsApplication8\obj\x86\Debug\WindowsFormsApplication8.Form4.resources
+g:\Работа , только попробуй удали\версия 1\от сереги1\WindowsFormsApplication8\WindowsFormsApplication8\obj\x86\Debug\WindowsFormsApplication8.Form5.resources
+g:\Работа , только попробуй удали\версия 1\от сереги1\WindowsFormsApplication8\WindowsFormsApplication8\obj\x86\Debug\WindowsFormsApplication8.Properties.Resources.resources
+g:\Работа , только попробуй удали\версия 1\от сереги1\WindowsFormsApplication8\WindowsFormsApplication8\obj\x86\Debug\WindowsFormsApplication8.csproj.GenerateResource.Cache
+C:\Documents and Settings\Ser\Рабочий стол\от08.06\WindowsFormsApplication8\WindowsFormsApplication8\bin\Debug\WindowsFormsApplication8.exe.config
+C:\Documents and Settings\Ser\Рабочий стол\от08.06\WindowsFormsApplication8\WindowsFormsApplication8\obj\x86\Debug\WindowsFormsApplication8.exe
+C:\Documents and Settings\Ser\Рабочий стол\от08.06\WindowsFormsApplication8\WindowsFormsApplication8\obj\x86\Debug\WindowsFormsApplication8.pdb
+C:\Documents and Settings\Ser\Рабочий стол\от08.06\WindowsFormsApplication8\WindowsFormsApplication8\bin\Debug\juliaDataSet.Designer.cs
+C:\Documents and Settings\Ser\Рабочий стол\от08.06\WindowsFormsApplication8\WindowsFormsApplication8\bin\Debug\juliaDataSet.xsc
+C:\Documents and Settings\Ser\Рабочий стол\от08.06\WindowsFormsApplication8\WindowsFormsApplication8\bin\Debug\juliaDataSet.xsd
+C:\Documents and Settings\Ser\Рабочий стол\от08.06\WindowsFormsApplication8\WindowsFormsApplication8\bin\Debug\juliaDataSet.xss
+C:\Documents and Settings\Ser\Рабочий стол\от08.06\WindowsFormsApplication8\WindowsFormsApplication8\bin\Debug\WindowsFormsApplication8.exe
+C:\Documents and Settings\Ser\Рабочий стол\от08.06\WindowsFormsApplication8\WindowsFormsApplication8\bin\Debug\WindowsFormsApplication8.pdb
+C:\Documents and Settings\Ser\Рабочий стол\от08.06\WindowsFormsApplication8\WindowsFormsApplication8\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Documents and Settings\Ser\Рабочий стол\от08.06\WindowsFormsApplication8\WindowsFormsApplication8\obj\x86\Debug\WindowsFormsApplication8.Form1.resources
+C:\Documents and Settings\Ser\Рабочий стол\от08.06\WindowsFormsApplication8\WindowsFormsApplication8\obj\x86\Debug\WindowsFormsApplication8.Form2.resources
+C:\Documents and Settings\Ser\Рабочий стол\от08.06\WindowsFormsApplication8\WindowsFormsApplication8\obj\x86\Debug\WindowsFormsApplication8.Form3.resources
+C:\Documents and Settings\Ser\Рабочий стол\от08.06\WindowsFormsApplication8\WindowsFormsApplication8\obj\x86\Debug\WindowsFormsApplication8.Form4.resources
+C:\Documents and Settings\Ser\Рабочий стол\от08.06\WindowsFormsApplication8\WindowsFormsApplication8\obj\x86\Debug\WindowsFormsApplication8.Form5.resources
+C:\Documents and Settings\Ser\Рабочий стол\от08.06\WindowsFormsApplication8\WindowsFormsApplication8\obj\x86\Debug\WindowsFormsApplication8.Properties.Resources.resources
+C:\Documents and Settings\Ser\Рабочий стол\от08.06\WindowsFormsApplication8\WindowsFormsApplication8\obj\x86\Debug\GenerateResource.read.1.tlog
+C:\Documents and Settings\Ser\Рабочий стол\от08.06\WindowsFormsApplication8\WindowsFormsApplication8\obj\x86\Debug\GenerateResource.write.1.tlog
+C:\Users\Julia\Desktop\от08.06\от08.06\WindowsFormsApplication8\WindowsFormsApplication8\bin\Debug\WindowsFormsApplication8.exe.config
+C:\Users\Julia\Desktop\от08.06\от08.06\WindowsFormsApplication8\WindowsFormsApplication8\obj\x86\Debug\WindowsFormsApplication8.exe
+C:\Users\Julia\Desktop\от08.06\от08.06\WindowsFormsApplication8\WindowsFormsApplication8\obj\x86\Debug\WindowsFormsApplication8.pdb
+C:\Users\Julia\Desktop\от08.06\от08.06\WindowsFormsApplication8\WindowsFormsApplication8\bin\Debug\juliaDataSet.Designer.cs
+C:\Users\Julia\Desktop\от08.06\от08.06\WindowsFormsApplication8\WindowsFormsApplication8\bin\Debug\juliaDataSet.xsc
+C:\Users\Julia\Desktop\от08.06\от08.06\WindowsFormsApplication8\WindowsFormsApplication8\bin\Debug\juliaDataSet.xsd
+C:\Users\Julia\Desktop\от08.06\от08.06\WindowsFormsApplication8\WindowsFormsApplication8\bin\Debug\juliaDataSet.xss
+C:\Users\Julia\Desktop\от08.06\от08.06\WindowsFormsApplication8\WindowsFormsApplication8\bin\Debug\WindowsFormsApplication8.exe
+C:\Users\Julia\Desktop\от08.06\от08.06\WindowsFormsApplication8\WindowsFormsApplication8\bin\Debug\WindowsFormsApplication8.pdb
+C:\Users\Julia\Desktop\от08.06\от08.06\WindowsFormsApplication8\WindowsFormsApplication8\obj\x86\Debug\WindowsFormsApplication8.Form1.resources
+C:\Users\Julia\Desktop\от08.06\от08.06\WindowsFormsApplication8\WindowsFormsApplication8\obj\x86\Debug\WindowsFormsApplication8.Form2.resources
+C:\Users\Julia\Desktop\от08.06\от08.06\WindowsFormsApplication8\WindowsFormsApplication8\obj\x86\Debug\WindowsFormsApplication8.Form3.resources
+C:\Users\Julia\Desktop\от08.06\от08.06\WindowsFormsApplication8\WindowsFormsApplication8\obj\x86\Debug\WindowsFormsApplication8.Form4.resources
+C:\Users\Julia\Desktop\от08.06\от08.06\WindowsFormsApplication8\WindowsFormsApplication8\obj\x86\Debug\WindowsFormsApplication8.Form5.resources
+C:\Users\Julia\Desktop\от08.06\от08.06\WindowsFormsApplication8\WindowsFormsApplication8\obj\x86\Debug\WindowsFormsApplication8.Properties.Resources.resources
+C:\Users\Julia\Desktop\от08.06\от08.06\WindowsFormsApplication8\WindowsFormsApplication8\obj\x86\Debug\WindowsFormsApplication8.csproj.GenerateResource.Cache
+C:\Users\Julia\Desktop\от08.06\от08.06\WindowsFormsApplication8\WindowsFormsApplication8\obj\x86\Debug\WindowsFormsApplication8.csprojResolveAssemblyReference.cache
+C:\Users\admin\Desktop\для Ольги Витальевны\WindowsFormsApplication8\WindowsFormsApplication8\bin\Debug\WindowsFormsApplication8.exe.config
+C:\Users\admin\Desktop\для Ольги Витальевны\WindowsFormsApplication8\WindowsFormsApplication8\obj\x86\Debug\WindowsFormsApplication8.exe
+C:\Users\admin\Desktop\для Ольги Витальевны\WindowsFormsApplication8\WindowsFormsApplication8\obj\x86\Debug\WindowsFormsApplication8.pdb
+C:\Users\admin\Desktop\для Ольги Витальевны\WindowsFormsApplication8\WindowsFormsApplication8\bin\Debug\juliaDataSet.Designer.cs
+C:\Users\admin\Desktop\для Ольги Витальевны\WindowsFormsApplication8\WindowsFormsApplication8\bin\Debug\juliaDataSet.xsc
+C:\Users\admin\Desktop\для Ольги Витальевны\WindowsFormsApplication8\WindowsFormsApplication8\bin\Debug\juliaDataSet.xsd
+C:\Users\admin\Desktop\для Ольги Витальевны\WindowsFormsApplication8\WindowsFormsApplication8\bin\Debug\juliaDataSet.xss
+C:\Users\admin\Desktop\для Ольги Витальевны\WindowsFormsApplication8\WindowsFormsApplication8\bin\Debug\WindowsFormsApplication8.exe
+C:\Users\admin\Desktop\для Ольги Витальевны\WindowsFormsApplication8\WindowsFormsApplication8\bin\Debug\WindowsFormsApplication8.pdb
+C:\Users\admin\Desktop\для Ольги Витальевны\WindowsFormsApplication8\WindowsFormsApplication8\obj\x86\Debug\WindowsFormsApplication8.csprojResolveAssemblyReference.cache
+C:\Users\admin\Desktop\для Ольги Витальевны\WindowsFormsApplication8\WindowsFormsApplication8\obj\x86\Debug\WindowsFormsApplication8.Form1.resources
+C:\Users\admin\Desktop\для Ольги Витальевны\WindowsFormsApplication8\WindowsFormsApplication8\obj\x86\Debug\WindowsFormsApplication8.Form2.resources
+C:\Users\admin\Desktop\для Ольги Витальевны\WindowsFormsApplication8\WindowsFormsApplication8\obj\x86\Debug\WindowsFormsApplication8.Form3.resources
+C:\Users\admin\Desktop\для Ольги Витальевны\WindowsFormsApplication8\WindowsFormsApplication8\obj\x86\Debug\WindowsFormsApplication8.Form4.resources
+C:\Users\admin\Desktop\для Ольги Витальевны\WindowsFormsApplication8\WindowsFormsApplication8\obj\x86\Debug\WindowsFormsApplication8.Form5.resources
+C:\Users\admin\Desktop\для Ольги Витальевны\WindowsFormsApplication8\WindowsFormsApplication8\obj\x86\Debug\WindowsFormsApplication8.Properties.Resources.resources
+C:\Users\admin\Desktop\для Ольги Витальевны\WindowsFormsApplication8\WindowsFormsApplication8\obj\x86\Debug\WindowsFormsApplication8.csproj.GenerateResource.Cache
+G:\Программирование\Программа для завода тест\для Ольги Витальевны\WindowsFormsApplication8\WindowsFormsApplication8\bin\Debug\WindowsFormsApplication8.exe.config
+G:\Программирование\Программа для завода тест\для Ольги Витальевны\WindowsFormsApplication8\WindowsFormsApplication8\obj\x86\Debug\WindowsFormsApplication8.exe
+G:\Программирование\Программа для завода тест\для Ольги Витальевны\WindowsFormsApplication8\WindowsFormsApplication8\obj\x86\Debug\WindowsFormsApplication8.pdb
