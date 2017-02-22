@@ -497,6 +497,3 @@ C:\Users\admin\Desktop\для Ольги Витальевны\WindowsFormsApplic
 C:\Users\admin\Desktop\для Ольги Витальевны\WindowsFormsApplication8\WindowsFormsApplication8\obj\x86\Debug\WindowsFormsApplication8.Form5.resources
 C:\Users\admin\Desktop\для Ольги Витальевны\WindowsFormsApplication8\WindowsFormsApplication8\obj\x86\Debug\WindowsFormsApplication8.Properties.Resources.resources
 C:\Users\admin\Desktop\для Ольги Витальевны\WindowsFormsApplication8\WindowsFormsApplication8\obj\x86\Debug\WindowsFormsApplication8.csproj.GenerateResource.Cache
-G:\Программирование\Программа для завода тест\для Ольги Витальевны\WindowsFormsApplication8\WindowsFormsApplication8\bin\Debug\WindowsFormsApplication8.exe.config
-G:\Программирование\Программа для завода тест\для Ольги Витальевны\WindowsFormsApplication8\WindowsFormsApplication8\obj\x86\Debug\WindowsFormsApplication8.exe
-G:\Программирование\Программа для завода тест\для Ольги Витальевны\WindowsFormsApplication8\WindowsFormsApplication8\obj\x86\Debug\WindowsFormsApplication8.pdb
