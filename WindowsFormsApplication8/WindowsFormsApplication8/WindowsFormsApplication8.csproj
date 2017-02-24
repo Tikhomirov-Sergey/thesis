@@ -62,8 +62,9 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="CheckCommas.cs" />
-    <Compile Include="Classes\XMLtoTreeView\XMLtoTreeView.cs" />
+    <Compile Include="Classes\CheckString.cs" />
+    <Compile Include="Classes\EventKeyPressForTextBox.cs" />
+    <Compile Include="Classes\XMLtoTreeView.cs" />
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>

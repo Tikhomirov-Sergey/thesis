@@ -36,7 +36,7 @@ namespace WindowsFormsApplication8
                     string[] S = new string[2];
                     
                     S = e.Node.FirstNode.NextNode.FirstNode.Text.Split(new Char[] { '_' });
-                     surfaceRoughnessRz.Text = S[0];
+                     SurfaceRoughnessRz.Text = S[0];
                     S = S[1].Split(new Char[] { '-' });
                     Ra_max = Convert.ToDouble(S[1]);Ra_min = Convert.ToDouble(S[0]);
                    
@@ -48,11 +48,11 @@ namespace WindowsFormsApplication8
             }
             catch { }
         }
-
+        
         private void button1_Click(object sender, EventArgs e)
         {
             
-            h = NameOfWorkpiece.Text + "|" + surfaceRoughnessRz.Text + "|" + ThicknessOfDefectiveCoating.Text + "|" + Kvalitet.Text+"|"+l+"|"+Convert.ToString(ValidOffsetSurface.Text);
+            h = NameOfWorkpiece.Text + "|" + SurfaceRoughnessRz.Text + "|" + ThicknessOfDefectiveCoating.Text + "|" + Kvalitet.Text+"|"+l+"|"+Convert.ToString(ValidOffsetSurface.Text);
             Close();
         }
         public string Data
@@ -64,39 +64,30 @@ namespace WindowsFormsApplication8
         }
         private void textBox1_TextChanged(object sender, EventArgs e)
         {
-            CheckCommas.checkCommas(surfaceRoughnessRz);
+            
             try
             {
-                if (surfaceRoughnessRz.Text == "") { surfaceRoughnessRz.Text = "0"; };
-                surfaceRoughnessRa.Text = Convert.ToString((Convert.ToDouble(surfaceRoughnessRz.Text)) / 4 * 1000);
+                if (SurfaceRoughnessRz.Text == "") { SurfaceRoughnessRz.Text = "0"; };
+                SurfaceRoughnessRa.Text = Convert.ToString((Convert.ToDouble(SurfaceRoughnessRz.Text)) / 4 * 1000);
             }
             catch { }
-        }
-
-        private void textBox2_TextChanged(object sender, EventArgs e)
-        {
-            CheckCommas.checkCommas(ThicknessOfDefectiveCoating);
-        }
-
-        private void textBox4_TextChanged(object sender, EventArgs e)
-        {
-            CheckCommas.checkCommas(Kvalitet);
-        }
-        private void textBox5_TextChanged_1(object sender, EventArgs e)
-        {
-            CheckCommas.checkCommas(ValidOffsetSurface);
         }
 
         private void textBox6_TextChanged(object sender, EventArgs e)
         {
-            CheckCommas.checkCommas(surfaceRoughnessRa);
+            
             // Для Rz 
             try
             {
-                if (surfaceRoughnessRa.Text == "") { surfaceRoughnessRa.Text = "0"; };
-                surfaceRoughnessRz.Text = Convert.ToString((Convert.ToDouble(surfaceRoughnessRa.Text)) * 4 / 1000);
+                if (SurfaceRoughnessRa.Text == "") { SurfaceRoughnessRa.Text = "0"; };
+                SurfaceRoughnessRz.Text = Convert.ToString((Convert.ToDouble(SurfaceRoughnessRa.Text)) * 4 / 1000);
             }
             catch { }
+        }
+
+        private void KeyPressForTextBoxWithDouble(object sender, KeyPressEventArgs e)
+        {
+            EventKeyPressForTextBox.keyPressForTextBoxWithDouble(sender, e);
         }
     }
 

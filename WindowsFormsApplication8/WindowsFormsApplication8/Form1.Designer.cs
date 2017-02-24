@@ -40,12 +40,12 @@
             this.TypeOfAllowance = new System.Windows.Forms.ComboBox();
             this.TreeOfOperations = new System.Windows.Forms.TreeView();
             this.ChoiceOfOperation = new System.Windows.Forms.Button();
-            this.surfaceRoughnessRz = new System.Windows.Forms.TextBox();
+            this.SurfaceRoughnessRz = new System.Windows.Forms.TextBox();
             this.ThicknessOfDefectiveCoating = new System.Windows.Forms.TextBox();
             this.Kvalitet = new System.Windows.Forms.TextBox();
             this.richTextBox1 = new System.Windows.Forms.RichTextBox();
             this.ChoiceOfWorkpiece = new System.Windows.Forms.Button();
-            this.precisionOfMachining = new System.Windows.Forms.TextBox();
+            this.PrecisionOfMachining = new System.Windows.Forms.TextBox();
             this.TypeOfMachining = new System.Windows.Forms.TextBox();
             this.NameOfWorkpiece = new System.Windows.Forms.TextBox();
             this.label9 = new System.Windows.Forms.Label();
@@ -69,7 +69,7 @@
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.открытьБДToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.toolTip1 = new System.Windows.Forms.ToolTip(this.components);
-            this.surfaceRoughnessRa = new System.Windows.Forms.TextBox();
+            this.SurfaceRoughnessRa = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
             this.textBox2 = new System.Windows.Forms.TextBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
@@ -97,8 +97,7 @@
             this.DiameterOfPart.Size = new System.Drawing.Size(62, 20);
             this.DiameterOfPart.TabIndex = 1;
             this.DiameterOfPart.Click += new System.EventHandler(this.textBox1_Click);
-            this.DiameterOfPart.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
-            this.DiameterOfPart.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.Form1_KeyPress);
+            this.DiameterOfPart.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.KeyPressForTextBoxWithDouble);
             // 
             // TypeOfPart
             // 
@@ -183,15 +182,16 @@
             this.ChoiceOfOperation.UseVisualStyleBackColor = true;
             this.ChoiceOfOperation.Click += new System.EventHandler(this.button1_Click);
             // 
-            // surfaceRoughnessRz
+            // SurfaceRoughnessRz
             // 
-            this.surfaceRoughnessRz.Enabled = false;
-            this.surfaceRoughnessRz.Location = new System.Drawing.Point(635, 195);
-            this.surfaceRoughnessRz.Name = "surfaceRoughnessRz";
-            this.surfaceRoughnessRz.Size = new System.Drawing.Size(85, 20);
-            this.surfaceRoughnessRz.TabIndex = 18;
-            this.surfaceRoughnessRz.Click += new System.EventHandler(this.textBox5_Click);
-            this.surfaceRoughnessRz.TextChanged += new System.EventHandler(this.textBox5_TextChanged);
+            this.SurfaceRoughnessRz.Enabled = false;
+            this.SurfaceRoughnessRz.Location = new System.Drawing.Point(635, 195);
+            this.SurfaceRoughnessRz.Name = "SurfaceRoughnessRz";
+            this.SurfaceRoughnessRz.Size = new System.Drawing.Size(85, 20);
+            this.SurfaceRoughnessRz.TabIndex = 18;
+            this.SurfaceRoughnessRz.Click += new System.EventHandler(this.textBox5_Click);
+            this.SurfaceRoughnessRz.TextChanged += new System.EventHandler(this.textBox5_TextChanged);
+            this.SurfaceRoughnessRz.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.KeyPressForTextBoxWithDouble);
             // 
             // ThicknessOfDefectiveCoating
             // 
@@ -200,7 +200,7 @@
             this.ThicknessOfDefectiveCoating.Name = "ThicknessOfDefectiveCoating";
             this.ThicknessOfDefectiveCoating.Size = new System.Drawing.Size(234, 20);
             this.ThicknessOfDefectiveCoating.TabIndex = 19;
-            this.ThicknessOfDefectiveCoating.TextChanged += new System.EventHandler(this.textBox6_TextChanged);
+            this.ThicknessOfDefectiveCoating.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.KeyPressForTextBoxWithDouble);
             // 
             // Kvalitet
             // 
@@ -210,7 +210,7 @@
             this.Kvalitet.Size = new System.Drawing.Size(234, 20);
             this.Kvalitet.TabIndex = 20;
             this.Kvalitet.MouseClick += new System.Windows.Forms.MouseEventHandler(this.textBox7_MouseClick);
-            this.Kvalitet.TextChanged += new System.EventHandler(this.textBox7_TextChanged);
+            this.Kvalitet.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.KeyPressForTextBoxWithDouble);
             // 
             // richTextBox1
             // 
@@ -231,13 +231,13 @@
             this.ChoiceOfWorkpiece.UseVisualStyleBackColor = true;
             this.ChoiceOfWorkpiece.Click += new System.EventHandler(this.button2_Click);
             // 
-            // precisionOfMachining
+            // PrecisionOfMachining
             // 
-            this.precisionOfMachining.Enabled = false;
-            this.precisionOfMachining.Location = new System.Drawing.Point(635, 169);
-            this.precisionOfMachining.Name = "precisionOfMachining";
-            this.precisionOfMachining.Size = new System.Drawing.Size(234, 20);
-            this.precisionOfMachining.TabIndex = 23;
+            this.PrecisionOfMachining.Enabled = false;
+            this.PrecisionOfMachining.Location = new System.Drawing.Point(635, 169);
+            this.PrecisionOfMachining.Name = "PrecisionOfMachining";
+            this.PrecisionOfMachining.Size = new System.Drawing.Size(234, 20);
+            this.PrecisionOfMachining.TabIndex = 23;
             // 
             // TypeOfMachining
             // 
@@ -310,7 +310,7 @@
             this.CoefficientOfRefinement.Name = "CoefficientOfRefinement";
             this.CoefficientOfRefinement.Size = new System.Drawing.Size(234, 20);
             this.CoefficientOfRefinement.TabIndex = 31;
-            this.CoefficientOfRefinement.TextChanged += new System.EventHandler(this.textBox11_TextChanged);
+            this.CoefficientOfRefinement.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.KeyPressForTextBoxWithDouble);
             // 
             // label8
             // 
@@ -337,7 +337,7 @@
             this.LengthOfPart.Size = new System.Drawing.Size(59, 20);
             this.LengthOfPart.TabIndex = 37;
             this.LengthOfPart.Click += new System.EventHandler(this.textBox12_Click);
-            this.LengthOfPart.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.Form1_KeyPress);
+            this.LengthOfPart.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.KeyPressForTextBoxWithDouble);
             // 
             // TypeOfInstrument
             // 
@@ -385,7 +385,7 @@
             this.HoleDepth.Name = "HoleDepth";
             this.HoleDepth.Size = new System.Drawing.Size(158, 20);
             this.HoleDepth.TabIndex = 44;
-            this.HoleDepth.TextChanged += new System.EventHandler(this.textBox14_TextChanged);
+            this.HoleDepth.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.KeyPressForTextBoxWithDouble);
             // 
             // buttontext
             // 
@@ -445,15 +445,16 @@
             this.открытьБДToolStripMenuItem.Text = "Открыть БД";
             this.открытьБДToolStripMenuItem.Click += new System.EventHandler(this.открытьБДToolStripMenuItem_Click);
             // 
-            // surfaceRoughnessRa
+            // SurfaceRoughnessRa
             // 
-            this.surfaceRoughnessRa.Enabled = false;
-            this.surfaceRoughnessRa.Location = new System.Drawing.Point(779, 195);
-            this.surfaceRoughnessRa.Name = "surfaceRoughnessRa";
-            this.surfaceRoughnessRa.Size = new System.Drawing.Size(90, 20);
-            this.surfaceRoughnessRa.TabIndex = 51;
-            this.surfaceRoughnessRa.Click += new System.EventHandler(this.textRa_Click);
-            this.surfaceRoughnessRa.TextChanged += new System.EventHandler(this.textRa_TextChanged);
+            this.SurfaceRoughnessRa.Enabled = false;
+            this.SurfaceRoughnessRa.Location = new System.Drawing.Point(779, 195);
+            this.SurfaceRoughnessRa.Name = "SurfaceRoughnessRa";
+            this.SurfaceRoughnessRa.Size = new System.Drawing.Size(90, 20);
+            this.SurfaceRoughnessRa.TabIndex = 51;
+            this.SurfaceRoughnessRa.Click += new System.EventHandler(this.textRa_Click);
+            this.SurfaceRoughnessRa.TextChanged += new System.EventHandler(this.textRa_TextChanged);
+            this.SurfaceRoughnessRa.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.KeyPressForTextBoxWithDouble);
             // 
             // label4
             // 
@@ -513,6 +514,7 @@
             this.Allowance.Size = new System.Drawing.Size(76, 20);
             this.Allowance.TabIndex = 57;
             this.Allowance.TextChanged += new System.EventHandler(this.textBox3_TextChanged);
+            this.Allowance.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.KeyPressForTextBoxWithDouble);
             // 
             // Form1
             // 
@@ -525,7 +527,7 @@
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.textBox2);
             this.Controls.Add(this.label4);
-            this.Controls.Add(this.surfaceRoughnessRa);
+            this.Controls.Add(this.SurfaceRoughnessRa);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.richTextBoxtoForm2);
@@ -546,12 +548,12 @@
             this.Controls.Add(this.label9);
             this.Controls.Add(this.NameOfWorkpiece);
             this.Controls.Add(this.TypeOfMachining);
-            this.Controls.Add(this.precisionOfMachining);
+            this.Controls.Add(this.PrecisionOfMachining);
             this.Controls.Add(this.ChoiceOfWorkpiece);
             this.Controls.Add(this.richTextBox1);
             this.Controls.Add(this.Kvalitet);
             this.Controls.Add(this.ThicknessOfDefectiveCoating);
-            this.Controls.Add(this.surfaceRoughnessRz);
+            this.Controls.Add(this.SurfaceRoughnessRz);
             this.Controls.Add(this.ChoiceOfOperation);
             this.Controls.Add(this.TreeOfOperations);
             this.Controls.Add(this.TypeOfAllowance);
@@ -585,7 +587,7 @@
         private System.Windows.Forms.TextBox ThicknessOfDefectiveCoating;
         private System.Windows.Forms.TextBox Kvalitet;
         private System.Windows.Forms.Button ChoiceOfWorkpiece;
-        private System.Windows.Forms.TextBox precisionOfMachining;
+        private System.Windows.Forms.TextBox PrecisionOfMachining;
         private System.Windows.Forms.TextBox NameOfWorkpiece;
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.Label label10;
@@ -611,11 +613,11 @@
         public System.Windows.Forms.ComboBox TypeOfPart;
         public System.Windows.Forms.ComboBox TypeOfProcessedSurface;
         public System.Windows.Forms.TextBox TypeOfMachining;
-        public System.Windows.Forms.TextBox surfaceRoughnessRz;
+        public System.Windows.Forms.TextBox SurfaceRoughnessRz;
         private System.Windows.Forms.MenuStrip menuStrip1;
         private System.Windows.Forms.ToolStripMenuItem открытьБДToolStripMenuItem;
         private System.Windows.Forms.ToolTip toolTip1;
-        public System.Windows.Forms.TextBox surfaceRoughnessRa;
+        public System.Windows.Forms.TextBox SurfaceRoughnessRa;
         private System.Windows.Forms.Label label4;
         protected internal System.Windows.Forms.RichTextBox richTextBox1;
         public System.Windows.Forms.TextBox textBox2;

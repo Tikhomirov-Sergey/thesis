@@ -30,7 +30,7 @@
         {
             this.TreeOfWorkpiece = new System.Windows.Forms.TreeView();
             this.ChoiceOfWorkpiece = new System.Windows.Forms.Button();
-            this.surfaceRoughnessRz = new System.Windows.Forms.TextBox();
+            this.SurfaceRoughnessRz = new System.Windows.Forms.TextBox();
             this.ThicknessOfDefectiveCoating = new System.Windows.Forms.TextBox();
             this.NameOfWorkpiece = new System.Windows.Forms.TextBox();
             this.Kvalitet = new System.Windows.Forms.TextBox();
@@ -42,7 +42,7 @@
             this.label5 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
-            this.surfaceRoughnessRa = new System.Windows.Forms.TextBox();
+            this.SurfaceRoughnessRa = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
             // TreeOfWorkpiece
@@ -66,13 +66,14 @@
             this.ChoiceOfWorkpiece.UseVisualStyleBackColor = true;
             this.ChoiceOfWorkpiece.Click += new System.EventHandler(this.button1_Click);
             // 
-            // surfaceRoughnessRz
+            // SurfaceRoughnessRz
             // 
-            this.surfaceRoughnessRz.Location = new System.Drawing.Point(502, 38);
-            this.surfaceRoughnessRz.Name = "surfaceRoughnessRz";
-            this.surfaceRoughnessRz.Size = new System.Drawing.Size(91, 20);
-            this.surfaceRoughnessRz.TabIndex = 2;
-            this.surfaceRoughnessRz.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
+            this.SurfaceRoughnessRz.Location = new System.Drawing.Point(502, 38);
+            this.SurfaceRoughnessRz.Name = "SurfaceRoughnessRz";
+            this.SurfaceRoughnessRz.Size = new System.Drawing.Size(91, 20);
+            this.SurfaceRoughnessRz.TabIndex = 2;
+            this.SurfaceRoughnessRz.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
+            this.SurfaceRoughnessRz.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.KeyPressForTextBoxWithDouble);
             // 
             // ThicknessOfDefectiveCoating
             // 
@@ -80,7 +81,7 @@
             this.ThicknessOfDefectiveCoating.Name = "ThicknessOfDefectiveCoating";
             this.ThicknessOfDefectiveCoating.Size = new System.Drawing.Size(91, 20);
             this.ThicknessOfDefectiveCoating.TabIndex = 3;
-            this.ThicknessOfDefectiveCoating.TextChanged += new System.EventHandler(this.textBox2_TextChanged);
+            this.ThicknessOfDefectiveCoating.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.KeyPressForTextBoxWithDouble);
             // 
             // NameOfWorkpiece
             // 
@@ -95,7 +96,7 @@
             this.Kvalitet.Name = "Kvalitet";
             this.Kvalitet.Size = new System.Drawing.Size(91, 20);
             this.Kvalitet.TabIndex = 6;
-            this.Kvalitet.TextChanged += new System.EventHandler(this.textBox4_TextChanged);
+            this.Kvalitet.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.KeyPressForTextBoxWithDouble);
             // 
             // label1
             // 
@@ -140,7 +141,7 @@
             this.ValidOffsetSurface.Name = "ValidOffsetSurface";
             this.ValidOffsetSurface.Size = new System.Drawing.Size(91, 20);
             this.ValidOffsetSurface.TabIndex = 11;
-            this.ValidOffsetSurface.TextChanged += new System.EventHandler(this.textBox5_TextChanged_1);
+            this.ValidOffsetSurface.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.KeyPressForTextBoxWithDouble);
             // 
             // label5
             // 
@@ -169,13 +170,14 @@
             this.label7.TabIndex = 15;
             this.label7.Text = "Достигаемая шероховатость, Ra, мкм";
             // 
-            // surfaceRoughnessRa
+            // SurfaceRoughnessRa
             // 
-            this.surfaceRoughnessRa.Location = new System.Drawing.Point(502, 62);
-            this.surfaceRoughnessRa.Name = "surfaceRoughnessRa";
-            this.surfaceRoughnessRa.Size = new System.Drawing.Size(91, 20);
-            this.surfaceRoughnessRa.TabIndex = 14;
-            this.surfaceRoughnessRa.TextChanged += new System.EventHandler(this.textBox6_TextChanged);
+            this.SurfaceRoughnessRa.Location = new System.Drawing.Point(502, 62);
+            this.SurfaceRoughnessRa.Name = "SurfaceRoughnessRa";
+            this.SurfaceRoughnessRa.Size = new System.Drawing.Size(91, 20);
+            this.SurfaceRoughnessRa.TabIndex = 14;
+            this.SurfaceRoughnessRa.TextChanged += new System.EventHandler(this.textBox6_TextChanged);
+            this.SurfaceRoughnessRa.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.KeyPressForTextBoxWithDouble);
             // 
             // Form2
             // 
@@ -183,7 +185,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(602, 480);
             this.Controls.Add(this.label7);
-            this.Controls.Add(this.surfaceRoughnessRa);
+            this.Controls.Add(this.SurfaceRoughnessRa);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.ValidOffsetSurface);
@@ -194,7 +196,7 @@
             this.Controls.Add(this.Kvalitet);
             this.Controls.Add(this.NameOfWorkpiece);
             this.Controls.Add(this.ThicknessOfDefectiveCoating);
-            this.Controls.Add(this.surfaceRoughnessRz);
+            this.Controls.Add(this.SurfaceRoughnessRz);
             this.Controls.Add(this.ChoiceOfWorkpiece);
             this.Controls.Add(this.TreeOfWorkpiece);
             this.Name = "Form2";
@@ -209,7 +211,7 @@
 
         private System.Windows.Forms.TreeView TreeOfWorkpiece;
         private System.Windows.Forms.Button ChoiceOfWorkpiece;
-        private System.Windows.Forms.TextBox surfaceRoughnessRz;
+        private System.Windows.Forms.TextBox SurfaceRoughnessRz;
         private System.Windows.Forms.TextBox ThicknessOfDefectiveCoating;
         private System.Windows.Forms.TextBox NameOfWorkpiece;
         private System.Windows.Forms.TextBox Kvalitet;
@@ -221,6 +223,6 @@
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.TextBox surfaceRoughnessRa;
+        private System.Windows.Forms.TextBox SurfaceRoughnessRa;
     }
 }

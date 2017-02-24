@@ -104,6 +104,7 @@ namespace WindowsFormsApplication8
             TypeOfPart.SelectedIndex = 0; TypeOfProcessedSurface.SelectedIndex = 0; TypeOfAllowance.SelectedIndex = 0;
             HoleDepth.Text = "0";
             
+            
         }
 
         private void Form1_Load(object sender, EventArgs e)
@@ -128,8 +129,8 @@ namespace WindowsFormsApplication8
                         Array.Resize(ref Rz, i); Array.Resize(ref h, i); Array.Resize(ref T, i); Array.Resize(ref CombInd, i); Array.Resize(ref K, i); Array.Resize(ref E1, i); Array.Resize(ref E, i); Array.Resize(ref prib, i); Array.Resize(ref per, i); Array.Resize(ref id, i); Array.Resize(ref id_per, i);
                         id[i - 1] = sid[0]; Array.Resize(ref Epr, i);
                         id_per[i - 1] = Convert.ToInt32(sid_per);
-                        per[i - 1] = Convert.ToString(i - 1) + " - " + TypeOfMachining.Text + "(" + precisionOfMachining.Text + "," + TypeOfInstrument.Text + ")";
-                        Rz[i - 1] = Convert.ToDouble(surfaceRoughnessRz.Text);
+                        per[i - 1] = Convert.ToString(i - 1) + " - " + TypeOfMachining.Text + "(" + PrecisionOfMachining.Text + "," + TypeOfInstrument.Text + ")";
+                        Rz[i - 1] = Convert.ToDouble(SurfaceRoughnessRz.Text);
                         h[i - 1] = Convert.ToDouble(ThicknessOfDefectiveCoating.Text);
                         T[i - 1] = Convert.ToDouble(Kvalitet.Text);
                         K[i - 1] = Convert.ToDouble(CoefficientOfRefinement.Text);
@@ -232,15 +233,15 @@ namespace WindowsFormsApplication8
                 { e.Node.Toggle(); }
                 if (e.Node.Level == 2)
                 {
-                    surfaceRoughnessRz.Text = "0";
+                    SurfaceRoughnessRz.Text = "0";
                     ThicknessOfDefectiveCoating.Text = "0";//Не забыть посмотреть 0 или 1 для формулы
                     Kvalitet.Text = "0";
                     TypeOfMachining.Text = Convert.ToString(e.Node.Parent.Text);
-                    precisionOfMachining.Text = Convert.ToString(e.Node.Text);
+                    PrecisionOfMachining.Text = Convert.ToString(e.Node.Text);
                     Kvalitet.Text = Convert.ToString(e.Node.FirstNode.FirstNode.Text);
                     string[] S = new string[2];
                         S = e.Node.FirstNode.NextNode.FirstNode.Text.Split(new Char[] { '_' });
-                    surfaceRoughnessRz.Text = S[0];
+                    SurfaceRoughnessRz.Text = S[0];
                     S=S[1].Split(new Char[] { '-' });
                   
                    
@@ -331,10 +332,10 @@ namespace WindowsFormsApplication8
                
                 TreeOfOperations.Enabled = true;
                 richTextBox1.Enabled = true;
-                surfaceRoughnessRz.Enabled = true;
-                surfaceRoughnessRa.Enabled = true;
+                SurfaceRoughnessRz.Enabled = true;
+                SurfaceRoughnessRa.Enabled = true;
                
-                precisionOfMachining.Enabled = true;
+                PrecisionOfMachining.Enabled = true;
                 TypeOfMachining.Enabled = true;
                 ChoiceOfOperation.Enabled = true;
                 Backspace.Enabled = true;
@@ -813,46 +814,18 @@ namespace WindowsFormsApplication8
            
         }
 
-        private void textBox1_TextChanged(object sender, EventArgs e)
-        {
-            CheckCommas.checkCommas(DiameterOfPart);
-        }
-      
-
         private void textBox5_TextChanged(object sender, EventArgs e)
         {
 
-            CheckCommas.checkCommas(surfaceRoughnessRz);
+          
 
             // Для Ra 
             try
             {
-                if (surfaceRoughnessRz.Text == "") { surfaceRoughnessRz.Text = "0"; };
-                surfaceRoughnessRa.Text = Convert.ToString((Convert.ToDouble(surfaceRoughnessRz.Text)) / 4 * 1000);
+                if (SurfaceRoughnessRz.Text == "") { SurfaceRoughnessRz.Text = "0"; };
+                SurfaceRoughnessRa.Text = Convert.ToString((Convert.ToDouble(SurfaceRoughnessRz.Text)) / 4 * 1000);
             }
             catch { }
-        }
-
-        private void textBox6_TextChanged(object sender, EventArgs e)
-        {
-            CheckCommas.checkCommas(ThicknessOfDefectiveCoating);
-        }
-
-        private void textBox7_TextChanged(object sender, EventArgs e)
-        {
-            CheckCommas.checkCommas(Kvalitet);
-        }
-
-        private void textBox11_TextChanged(object sender, EventArgs e)
-        {
-            CheckCommas.checkCommas(CoefficientOfRefinement);
-        }
-
-       
-
-        private void textBox14_TextChanged(object sender, EventArgs e)
-        {
-            CheckCommas.checkCommas(HoleDepth);
         }
 
         private void buttontext_Click(object sender, EventArgs e)
@@ -885,10 +858,10 @@ namespace WindowsFormsApplication8
             z.ShowDialog();
             TreeOfOperations.Enabled = true;
             richTextBox1.Enabled = true;
-            surfaceRoughnessRz.Enabled = true;
+            SurfaceRoughnessRz.Enabled = true;
             ThicknessOfDefectiveCoating.Enabled = true;
             Kvalitet.Enabled = true;
-            precisionOfMachining.Enabled = true;
+            PrecisionOfMachining.Enabled = true;
             TypeOfMachining.Enabled = true;
             CoefficientOfRefinement.Enabled = true;
             ChoiceOfOperation.Enabled = true;
@@ -992,16 +965,16 @@ namespace WindowsFormsApplication8
                 z.ShowDialog();
                 TreeOfOperations.Enabled = true;
                 richTextBox1.Enabled = true;
-                surfaceRoughnessRz.Enabled = true;
+                SurfaceRoughnessRz.Enabled = true;
         
-                precisionOfMachining.Enabled = true;
+                PrecisionOfMachining.Enabled = true;
                 TypeOfMachining.Enabled = true;
                 ChoiceOfOperation.Enabled = true;
                 Backspace.Enabled = true;
                 CalculationOfSchema.Enabled = true;
                 TypeOfInstrument.Enabled = true;
                 richTextBox2.Enabled = true;
-                surfaceRoughnessRa.Enabled = true;
+                SurfaceRoughnessRa.Enabled = true;
                 buttontext.Enabled = true;
                 stroka = z.Data;
 
@@ -1097,10 +1070,10 @@ namespace WindowsFormsApplication8
             {
                 TreeOfOperations.Enabled = false;
                 richTextBox1.Enabled = false;
-                surfaceRoughnessRz.Enabled = false;
+                SurfaceRoughnessRz.Enabled = false;
                 ThicknessOfDefectiveCoating.Enabled = false;
                 Kvalitet.Enabled = false;
-                precisionOfMachining.Enabled = false;
+                PrecisionOfMachining.Enabled = false;
                 TypeOfMachining.Enabled = false;
                 CoefficientOfRefinement.Enabled = false;
                 ChoiceOfOperation.Enabled = false;
@@ -1108,7 +1081,7 @@ namespace WindowsFormsApplication8
                 CalculationOfSchema.Enabled = false;
                 TypeOfInstrument.Enabled = false;
                 richTextBox2.Enabled = false;
-                surfaceRoughnessRa.Enabled = false;
+                SurfaceRoughnessRa.Enabled = false;
                 buttontext.Enabled = false;
             }
             
@@ -1177,27 +1150,22 @@ namespace WindowsFormsApplication8
             catch { }
         }
 
-        private void textBox12_KeyPress(object sender, KeyPressEventArgs e)
+        private void KeyPressForTextBoxWithDouble(object sender, KeyPressEventArgs e)
         {
-            CheckCommas.checkString(e);
-        }
-
-        private void Form1_KeyPress(object sender, KeyPressEventArgs e)
-        {
-            CheckCommas.checkString(e);
+            EventKeyPressForTextBox.keyPressForTextBoxWithDouble(sender, e);
         }
 
         private void textRa_TextChanged(object sender, EventArgs e)
         {
-            CheckCommas.checkCommas(surfaceRoughnessRa);
+            
             // Для Rz 
             try
             {
-                if (surfaceRoughnessRa.Text == "")
+                if (SurfaceRoughnessRa.Text == "")
                 {
-                    surfaceRoughnessRa.Text = "0";
+                    SurfaceRoughnessRa.Text = "0";
                 };
-                surfaceRoughnessRz.Text = Convert.ToString((Convert.ToDouble(surfaceRoughnessRa.Text)) * 4 / 1000);
+                SurfaceRoughnessRz.Text = Convert.ToString((Convert.ToDouble(SurfaceRoughnessRa.Text)) * 4 / 1000);
             }
             catch { }
 
@@ -1230,7 +1198,7 @@ namespace WindowsFormsApplication8
              toolTip1.ToolTipIcon = ToolTipIcon.Warning;
             toolTip1.IsBalloon = true;
             toolTip1.ToolTipTitle = "Достигаемая шероховатость, Rz, мм";
-            toolTip1.SetToolTip(surfaceRoughnessRz, "Интервал для данной операции: " + Convert.ToString(Rz_min) + "..." + Convert.ToString(Rz_max));
+            toolTip1.SetToolTip(SurfaceRoughnessRz, "Интервал для данной операции: " + Convert.ToString(Rz_min) + "..." + Convert.ToString(Rz_max));
         }
 
         private void textRa_Click(object sender, EventArgs e)
@@ -1238,7 +1206,7 @@ namespace WindowsFormsApplication8
             toolTip1.ToolTipIcon = ToolTipIcon.Warning;
             toolTip1.IsBalloon = true;
             toolTip1.ToolTipTitle = "Достигаемая шероховатость, Ra, мкм";
-            toolTip1.SetToolTip(surfaceRoughnessRa, "Интервал для данной операции: " + Convert.ToString(Ra_min) + "..." + Convert.ToString(Ra_max));
+            toolTip1.SetToolTip(SurfaceRoughnessRa, "Интервал для данной операции: " + Convert.ToString(Ra_min) + "..." + Convert.ToString(Ra_max));
         }
     }
                
