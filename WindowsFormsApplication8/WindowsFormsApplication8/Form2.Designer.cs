@@ -28,74 +28,74 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.treeView1 = new System.Windows.Forms.TreeView();
-            this.button1 = new System.Windows.Forms.Button();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.textBox4 = new System.Windows.Forms.TextBox();
+            this.TreeOfWorkpiece = new System.Windows.Forms.TreeView();
+            this.ChoiceOfWorkpiece = new System.Windows.Forms.Button();
+            this.surfaceRoughnessRz = new System.Windows.Forms.TextBox();
+            this.ThicknessOfDefectiveCoating = new System.Windows.Forms.TextBox();
+            this.NameOfWorkpiece = new System.Windows.Forms.TextBox();
+            this.Kvalitet = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
-            this.textBox5 = new System.Windows.Forms.TextBox();
+            this.ValidOffsetSurface = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
-            this.textBox6 = new System.Windows.Forms.TextBox();
+            this.surfaceRoughnessRa = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
-            // treeView1
+            // TreeOfWorkpiece
             // 
-            this.treeView1.Location = new System.Drawing.Point(12, 167);
-            this.treeView1.Name = "treeView1";
-            this.treeView1.ShowLines = false;
-            this.treeView1.ShowPlusMinus = false;
-            this.treeView1.ShowRootLines = false;
-            this.treeView1.Size = new System.Drawing.Size(483, 301);
-            this.treeView1.TabIndex = 0;
-            this.treeView1.NodeMouseClick += new System.Windows.Forms.TreeNodeMouseClickEventHandler(this.treeView1_NodeMouseClick);
+            this.TreeOfWorkpiece.Location = new System.Drawing.Point(12, 167);
+            this.TreeOfWorkpiece.Name = "TreeOfWorkpiece";
+            this.TreeOfWorkpiece.ShowLines = false;
+            this.TreeOfWorkpiece.ShowPlusMinus = false;
+            this.TreeOfWorkpiece.ShowRootLines = false;
+            this.TreeOfWorkpiece.Size = new System.Drawing.Size(483, 301);
+            this.TreeOfWorkpiece.TabIndex = 0;
+            this.TreeOfWorkpiece.NodeMouseClick += new System.Windows.Forms.TreeNodeMouseClickEventHandler(this.treeView1_NodeMouseClick);
             // 
-            // button1
+            // ChoiceOfWorkpiece
             // 
-            this.button1.Location = new System.Drawing.Point(501, 167);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(92, 300);
-            this.button1.TabIndex = 1;
-            this.button1.Text = "Выбрать заготовку";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.ChoiceOfWorkpiece.Location = new System.Drawing.Point(501, 167);
+            this.ChoiceOfWorkpiece.Name = "ChoiceOfWorkpiece";
+            this.ChoiceOfWorkpiece.Size = new System.Drawing.Size(92, 300);
+            this.ChoiceOfWorkpiece.TabIndex = 1;
+            this.ChoiceOfWorkpiece.Text = "Выбрать заготовку";
+            this.ChoiceOfWorkpiece.UseVisualStyleBackColor = true;
+            this.ChoiceOfWorkpiece.Click += new System.EventHandler(this.button1_Click);
             // 
-            // textBox1
+            // surfaceRoughnessRz
             // 
-            this.textBox1.Location = new System.Drawing.Point(502, 38);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(91, 20);
-            this.textBox1.TabIndex = 2;
-            this.textBox1.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
+            this.surfaceRoughnessRz.Location = new System.Drawing.Point(502, 38);
+            this.surfaceRoughnessRz.Name = "surfaceRoughnessRz";
+            this.surfaceRoughnessRz.Size = new System.Drawing.Size(91, 20);
+            this.surfaceRoughnessRz.TabIndex = 2;
+            this.surfaceRoughnessRz.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 
-            // textBox2
+            // ThicknessOfDefectiveCoating
             // 
-            this.textBox2.Location = new System.Drawing.Point(502, 87);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(91, 20);
-            this.textBox2.TabIndex = 3;
-            this.textBox2.TextChanged += new System.EventHandler(this.textBox2_TextChanged);
+            this.ThicknessOfDefectiveCoating.Location = new System.Drawing.Point(502, 87);
+            this.ThicknessOfDefectiveCoating.Name = "ThicknessOfDefectiveCoating";
+            this.ThicknessOfDefectiveCoating.Size = new System.Drawing.Size(91, 20);
+            this.ThicknessOfDefectiveCoating.TabIndex = 3;
+            this.ThicknessOfDefectiveCoating.TextChanged += new System.EventHandler(this.textBox2_TextChanged);
             // 
-            // textBox3
+            // NameOfWorkpiece
             // 
-            this.textBox3.Location = new System.Drawing.Point(302, 12);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(291, 20);
-            this.textBox3.TabIndex = 4;
+            this.NameOfWorkpiece.Location = new System.Drawing.Point(302, 12);
+            this.NameOfWorkpiece.Name = "NameOfWorkpiece";
+            this.NameOfWorkpiece.Size = new System.Drawing.Size(291, 20);
+            this.NameOfWorkpiece.TabIndex = 4;
             // 
-            // textBox4
+            // Kvalitet
             // 
-            this.textBox4.Location = new System.Drawing.Point(502, 114);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(91, 20);
-            this.textBox4.TabIndex = 6;
-            this.textBox4.TextChanged += new System.EventHandler(this.textBox4_TextChanged);
+            this.Kvalitet.Location = new System.Drawing.Point(502, 114);
+            this.Kvalitet.Name = "Kvalitet";
+            this.Kvalitet.Size = new System.Drawing.Size(91, 20);
+            this.Kvalitet.TabIndex = 6;
+            this.Kvalitet.TextChanged += new System.EventHandler(this.textBox4_TextChanged);
             // 
             // label1
             // 
@@ -134,13 +134,13 @@
             this.label4.TabIndex = 10;
             this.label4.Text = "ρ";
             // 
-            // textBox5
+            // ValidOffsetSurface
             // 
-            this.textBox5.Location = new System.Drawing.Point(502, 140);
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(91, 20);
-            this.textBox5.TabIndex = 11;
-            this.textBox5.TextChanged += new System.EventHandler(this.textBox5_TextChanged_1);
+            this.ValidOffsetSurface.Location = new System.Drawing.Point(502, 140);
+            this.ValidOffsetSurface.Name = "ValidOffsetSurface";
+            this.ValidOffsetSurface.Size = new System.Drawing.Size(91, 20);
+            this.ValidOffsetSurface.TabIndex = 11;
+            this.ValidOffsetSurface.TextChanged += new System.EventHandler(this.textBox5_TextChanged_1);
             // 
             // label5
             // 
@@ -169,13 +169,13 @@
             this.label7.TabIndex = 15;
             this.label7.Text = "Достигаемая шероховатость, Ra, мкм";
             // 
-            // textBox6
+            // surfaceRoughnessRa
             // 
-            this.textBox6.Location = new System.Drawing.Point(502, 62);
-            this.textBox6.Name = "textBox6";
-            this.textBox6.Size = new System.Drawing.Size(91, 20);
-            this.textBox6.TabIndex = 14;
-            this.textBox6.TextChanged += new System.EventHandler(this.textBox6_TextChanged);
+            this.surfaceRoughnessRa.Location = new System.Drawing.Point(502, 62);
+            this.surfaceRoughnessRa.Name = "surfaceRoughnessRa";
+            this.surfaceRoughnessRa.Size = new System.Drawing.Size(91, 20);
+            this.surfaceRoughnessRa.TabIndex = 14;
+            this.surfaceRoughnessRa.TextChanged += new System.EventHandler(this.textBox6_TextChanged);
             // 
             // Form2
             // 
@@ -183,20 +183,20 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(602, 480);
             this.Controls.Add(this.label7);
-            this.Controls.Add(this.textBox6);
+            this.Controls.Add(this.surfaceRoughnessRa);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.label5);
-            this.Controls.Add(this.textBox5);
+            this.Controls.Add(this.ValidOffsetSurface);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.textBox4);
-            this.Controls.Add(this.textBox3);
-            this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.textBox1);
-            this.Controls.Add(this.button1);
-            this.Controls.Add(this.treeView1);
+            this.Controls.Add(this.Kvalitet);
+            this.Controls.Add(this.NameOfWorkpiece);
+            this.Controls.Add(this.ThicknessOfDefectiveCoating);
+            this.Controls.Add(this.surfaceRoughnessRz);
+            this.Controls.Add(this.ChoiceOfWorkpiece);
+            this.Controls.Add(this.TreeOfWorkpiece);
             this.Name = "Form2";
             this.Text = "Выбор заготовки";
             this.Load += new System.EventHandler(this.Form2_Load);
@@ -207,20 +207,20 @@
 
         #endregion
 
-        private System.Windows.Forms.TreeView treeView1;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.TextBox textBox4;
+        private System.Windows.Forms.TreeView TreeOfWorkpiece;
+        private System.Windows.Forms.Button ChoiceOfWorkpiece;
+        private System.Windows.Forms.TextBox surfaceRoughnessRz;
+        private System.Windows.Forms.TextBox ThicknessOfDefectiveCoating;
+        private System.Windows.Forms.TextBox NameOfWorkpiece;
+        private System.Windows.Forms.TextBox Kvalitet;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.TextBox textBox5;
+        private System.Windows.Forms.TextBox ValidOffsetSurface;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.TextBox textBox6;
+        private System.Windows.Forms.TextBox surfaceRoughnessRa;
     }
 }

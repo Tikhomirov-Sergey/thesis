@@ -14,13 +14,13 @@ namespace WindowsFormsApplication8
 {
     public partial class Form1 : Form
     {
-        XmlDocument xmlDoc;
-        string xmlpath = @"table2.xml"; Form2 f = new Form2(); Form4 z = new Form4("");//Form5 z = new Form5();
+      
+        Form2 f = new Form2(); Form4 z = new Form4("");//Form5 z = new Form5();
 
-        int tip_det, tip_obr_pov, tip_prip, vid_zag, tip; int i = 1; int level; string[] split_data; string[] split_data1,split_data2; string[] per = new string[1];
+        int tip; int i = 1; int level;bool per_0 = false;string[] split_data; string[] split_data1,split_data2; string[] per = new string[1];
         double[] Rz = new double[1]; double[] h = new double[1]; double[] T = new double[1]; double[] K = new double[1];int[] E1 = new int[1]; 
         double[] P = new double[1]; double[] E = new double[1]; char[] id = new char[1]; int[] id_per = new int[1]; string sid; string sid_per; string[] hh = new string[1]; int[] mas1 = new int[1]; bool[] Epr = new bool[1];
-        bool per_0 = false; string[] prib = new string[1]; public double[] Zmin = new double[1]; double[] Znom = new double[1]; double[] Zag = new double[1]; double[] L = new double[1]; int[] CombInd = new int[1]; double[] Ti = new double[1]; string l = ""; string l2 = ""; string l3; double Pcm = 0; string stroka;
+        string[] prib = new string[1]; public double[] Zmin = new double[1]; double[] Znom = new double[1]; double[] Zag = new double[1]; double[] L = new double[1]; int[] CombInd = new int[1]; double[] Ti = new double[1]; string l = ""; string l2 = ""; string l3; double Pcm = 0; string stroka;
         double Ra_max, Ra_min;
         double Rz_max, Rz_min;
         public string Zmi2n;
@@ -49,13 +49,7 @@ namespace WindowsFormsApplication8
                                {"1111"," 0","0","0","0","0","0","0","0","0","0","0"}
 
                              };
-       
-        string[,] t2 = new string[,]{{"С винтовыми или эксцентриковыми зажимами","123","0,09","0,10","0,110","0,120","0,135","0,15","0,175","0,2","0,24","0,28"},
-                               {" ","4","0,040","0,050","0,060","0,070","0,08","0,090","0,1","0,11","0,12","0,13"},
-                               {" ","5","0,03","0,040","0,050","0,060","0,070","0,08","0,09","0,1","0,11","0,12"},
-                               {"С пневматическим зажимом","321","0,07","0,08","0,09","0,1","0,110","0,12","0,14","0,16","0,19","0,22"},
-                               {" ","48","0,030","0,040","0,050","0,060","0,070","0,08","0,09","0,1","0,11","0,12"},
-                               {" ","5","0,010","0,020","0,030","0,040","0,050","0,06","0,07","0,08","0,09","0,1"}};
+
         int[,] t1_diam = new int[,] { { 6, 10, 18, 30, 50, 80, 120, 180, 260, 360 }, { 10, 18, 30, 50, 80, 120, 180, 260, 360, 500 } };
 
 
@@ -104,101 +98,28 @@ namespace WindowsFormsApplication8
                
             
             InitializeComponent();
-            comboBox1.Items.AddRange(new string[] { "вал", "отверстие" });
-            comboBox2.Items.AddRange(new string[] { "цилиндрическая", "плоская" });
-            comboBox3.Items.AddRange(new string[] { "двухсторонний", "односторонний" });
-            comboBox1.SelectedIndex = 0; comboBox2.SelectedIndex = 0; comboBox3.SelectedIndex = 0;
-             textBox14.Text = "0";
-            tip_det = 1; tip_prip = 1;
-            tip_obr_pov = 1; vid_zag = 1;
+            TypeOfPart.Items.AddRange(new string[] { "вал", "отверстие" });
+            TypeOfProcessedSurface.Items.AddRange(new string[] { "цилиндрическая", "плоская" });
+            TypeOfAllowance.Items.AddRange(new string[] { "двухсторонний", "односторонний" });
+            TypeOfPart.SelectedIndex = 0; TypeOfProcessedSurface.SelectedIndex = 0; TypeOfAllowance.SelectedIndex = 0;
+            HoleDepth.Text = "0";
             
-
-
         }
 
         private void Form1_Load(object sender, EventArgs e)
         {
-            //textBox1.Text = "";textBox12.Text = "";
-  string lo = "nte20";
-
-            textBox2.Text = Convert.ToString(lo);
-
-    
-            xmlDoc = new XmlDocument();
-            xmlDoc.Load(xmlpath);
-
-            treeView1.Nodes.Clear();
-            treeView1.Nodes.Add(new TreeNode(xmlDoc.DocumentElement.Name));
-
-            TreeNode rootNode = new TreeNode();
-            rootNode = treeView1.Nodes[0];
-
-            AddNode(xmlDoc.DocumentElement, rootNode);
-            
-            
-            treeView1.CollapseAll();
-            rootNode.Toggle();
-
-            int g = rootNode.FirstNode.Index; int r = rootNode.LastNode.Index;
-            rootNode = rootNode.FirstNode;
-            /*for (int f = g; f <= r; f++)
-            { rootNode.Toggle();
-                rootNode = rootNode.NextNode;
-            }*/
-            rootNode = treeView1.Nodes[0];
-            
-       }
-
-        private void comboBox3_SelectedIndexChanged(object sender, EventArgs e)
-        {
-
-            if (comboBox1.Text == "односторонний") { tip_prip = 2; pictureBox1.Visible = false; pictureBox2.Visible = true; }
-            if (comboBox1.Text == "двухсторонний") { tip_prip = 1; pictureBox1.Visible = true; pictureBox2.Visible = false; }
+            string xmlpath = @"XMLFiles/ParametersOfSurfacesAfterVariousOperations.xml";
+            XMLtoTreeView.formationTreeView(xmlpath, TreeOfOperations);
         }
-
-        private void comboBox2_SelectedIndexChanged(object sender, EventArgs e)
-        {
-            if (comboBox2.Text == "плоская") { tip_obr_pov = 2; }
-            if (comboBox2.Text == "цилиндрическая") { tip_obr_pov = 1; }
-
-        }
-        private void AddNode(XmlNode inXmlNode, TreeNode inTreeNode)
-        {
-            XmlNode xNode;
-            TreeNode tNode;
-            XmlNodeList nodeList;
-            int i;
-
-            if (inXmlNode.HasChildNodes)
-            {
-                nodeList = inXmlNode.ChildNodes;
-                for (i = 0; i <= nodeList.Count - 1; i++)
-                {
-                    xNode = inXmlNode.ChildNodes[i];
-                    inTreeNode.Nodes.Add(new TreeNode(xNode.Name));
-                    tNode = inTreeNode.Nodes[i];
-                    AddNode(xNode, tNode);
-                }
-            }
-
-            else
-            {
-                inTreeNode.Text = (inXmlNode.OuterXml).Trim();
-            }
-        }
-
+       
         private void button3_Click(object sender, EventArgs e)
         {
-            textBox10.Text = f.Data;
+            NameOfWorkpiece.Text = f.Data;
         }
 
         private void button1_Click(object sender, EventArgs e)
         {
-          
-                
-                
-
-               try
+            try
                {
                     bool pribor = true;
                     if (level == 2)
@@ -207,27 +128,27 @@ namespace WindowsFormsApplication8
                         Array.Resize(ref Rz, i); Array.Resize(ref h, i); Array.Resize(ref T, i); Array.Resize(ref CombInd, i); Array.Resize(ref K, i); Array.Resize(ref E1, i); Array.Resize(ref E, i); Array.Resize(ref prib, i); Array.Resize(ref per, i); Array.Resize(ref id, i); Array.Resize(ref id_per, i);
                         id[i - 1] = sid[0]; Array.Resize(ref Epr, i);
                         id_per[i - 1] = Convert.ToInt32(sid_per);
-                        per[i - 1] = Convert.ToString(i - 1) + " - " + textBox9.Text + "(" + textBox8.Text + "," + comboBox5.Text + ")";
-                        Rz[i - 1] = Convert.ToDouble(textBox5.Text);
-                        h[i - 1] = Convert.ToDouble(textBox6.Text);
-                        T[i - 1] = Convert.ToDouble(textBox7.Text);
-                        K[i - 1] = Convert.ToDouble(textBox11.Text);
+                        per[i - 1] = Convert.ToString(i - 1) + " - " + TypeOfMachining.Text + "(" + precisionOfMachining.Text + "," + TypeOfInstrument.Text + ")";
+                        Rz[i - 1] = Convert.ToDouble(surfaceRoughnessRz.Text);
+                        h[i - 1] = Convert.ToDouble(ThicknessOfDefectiveCoating.Text);
+                        T[i - 1] = Convert.ToDouble(Kvalitet.Text);
+                        K[i - 1] = Convert.ToDouble(CoefficientOfRefinement.Text);
                         richTextBox1.Text = richTextBox1.Text + "," + "\n" + per[i - 1];
                         l = l + "," + "\r\n" + per[i - 1];
                         // textBox1.Text = Convert.ToString(t1[0, 0].Equals(comboBox5.Text));
 
 
-                        CombInd[i-1] = comboBox5.SelectedIndex;
+                        CombInd[i-1] = TypeOfInstrument.SelectedIndex;
                         int hh_dlin = hh.Length; int vid_pr = 0; 
                         if (id_per[i - 1] == 0)
                         { prib[i - 1] = " "; }
                         else
                         {
-                            prib[i - 1] = comboBox5.Text;
+                            prib[i - 1] = TypeOfInstrument.Text;
                             try { if (prib[i - 2].Contains(prib[i - 1])) { pribor = false; } else { pribor = true; } }
                             catch { }
                         }
-                        if (comboBox5.Text == "не выбрано") { prib[i - 1] = prib[i - 2]; }
+                        if (TypeOfInstrument.Text == "не выбрано") { prib[i - 1] = prib[i - 2]; }
                        if (pribor)
                         {
                             switch (Convert.ToInt32(id_per[i - 1]))
@@ -235,7 +156,7 @@ namespace WindowsFormsApplication8
                                 case 1:
                                     {
 
-                                        for (int nom1 = mas1[comboBox5.SelectedIndex]; nom1 < mas1[comboBox5.SelectedIndex + 1]; nom1++)
+                                        for (int nom1 = mas1[TypeOfInstrument.SelectedIndex]; nom1 < mas1[TypeOfInstrument.SelectedIndex + 1]; nom1++)
                                         {
                                             hh_dlin = t1[nom1, 1].Length;
                                             for (int nom2 = 0; nom2 < hh_dlin; nom2++)
@@ -260,7 +181,7 @@ namespace WindowsFormsApplication8
 
                                 case 2:
                                     {
-                                        for (int nom1 = mas1[comboBox5.SelectedIndex]; nom1 < mas1[comboBox5.SelectedIndex + 1]; nom1++)
+                                        for (int nom1 = mas1[TypeOfInstrument.SelectedIndex]; nom1 < mas1[TypeOfInstrument.SelectedIndex + 1]; nom1++)
                                         {
                                             hh_dlin = t1[nom1, 1].Length;
                                             for (int nom2 = 0; nom2 < hh_dlin; nom2++)
@@ -304,22 +225,22 @@ namespace WindowsFormsApplication8
         private void treeView1_NodeMouseClick(object sender, TreeNodeMouseClickEventArgs e)
         {
             level = e.Node.Level;
-            comboBox5.Items.Clear(); comboBox5.Text = "";
+            TypeOfInstrument.Items.Clear(); TypeOfInstrument.Text = "";
             try
             {
                 if (level == 1)
                 { e.Node.Toggle(); }
                 if (e.Node.Level == 2)
                 {
-                    textBox5.Text = "0";
-                    textBox6.Text = "0";//Не забыть посмотреть 0 или 1 для формулы
-                    textBox7.Text = "0";
-                    textBox9.Text = Convert.ToString(e.Node.Parent.Text);
-                    textBox8.Text = Convert.ToString(e.Node.Text);
-                    textBox7.Text = Convert.ToString(e.Node.FirstNode.FirstNode.Text);
+                    surfaceRoughnessRz.Text = "0";
+                    ThicknessOfDefectiveCoating.Text = "0";//Не забыть посмотреть 0 или 1 для формулы
+                    Kvalitet.Text = "0";
+                    TypeOfMachining.Text = Convert.ToString(e.Node.Parent.Text);
+                    precisionOfMachining.Text = Convert.ToString(e.Node.Text);
+                    Kvalitet.Text = Convert.ToString(e.Node.FirstNode.FirstNode.Text);
                     string[] S = new string[2];
                         S = e.Node.FirstNode.NextNode.FirstNode.Text.Split(new Char[] { '_' });
-                    textBox5.Text = S[0];
+                    surfaceRoughnessRz.Text = S[0];
                     S=S[1].Split(new Char[] { '-' });
                   
                    
@@ -329,20 +250,20 @@ namespace WindowsFormsApplication8
                     Rz_max = Ra_max * 4 / 1000;
 
 
-                    textBox6.Text = Convert.ToString(e.Node.FirstNode.NextNode.NextNode.FirstNode.Text);
-                    textBox11.Text = Convert.ToString(e.Node.FirstNode.NextNode.NextNode.NextNode.FirstNode.Text);
+                    ThicknessOfDefectiveCoating.Text = Convert.ToString(e.Node.FirstNode.NextNode.NextNode.FirstNode.Text);
+                    CoefficientOfRefinement.Text = Convert.ToString(e.Node.FirstNode.NextNode.NextNode.NextNode.FirstNode.Text);
                     sid = Convert.ToString(e.Node.FirstNode.NextNode.NextNode.NextNode.NextNode.FirstNode.Text);
                     sid_per = Convert.ToString(e.Node.FirstNode.NextNode.NextNode.NextNode.NextNode.NextNode.FirstNode.Text);
-                    comboBox5.Items.Clear();int hhn=0;
+                    TypeOfInstrument.Items.Clear();int hhn=0;
                     switch (Convert.ToInt32(sid_per))
                     { case 1: { int nom1 = t1.Length / 12;
                                 for(int yu=0;yu< nom1;yu++)
                                 { if(t1[yu,0][0]!=' ') {
                                         hhn++; Array.Resize(ref hh, hhn); Array.Resize(ref mas1, hhn);
                                         hh[hhn - 1] = t1[yu, 0]; mas1[hhn - 1] = yu;
-                                        comboBox5.Items.Add(t1[yu, 0]); }
+                                        TypeOfInstrument.Items.Add(t1[yu, 0]); }
                                       }
-                                Array.Resize(ref mas1, hhn + 1); mas1[hhn] = nom1+1; comboBox5.Items.RemoveAt(hh.Length-1);
+                                Array.Resize(ref mas1, hhn + 1); mas1[hhn] = nom1+1; TypeOfInstrument.Items.RemoveAt(hh.Length-1);
                             } break;
                         case 2:
                             {
@@ -353,9 +274,9 @@ namespace WindowsFormsApplication8
                                     {
                                         hhn++; Array.Resize(ref hh, hhn); Array.Resize(ref mas1, hhn);
                                         hh[hhn - 1] = t1[yu, 0];mas1[hhn - 1] = yu;
-                                        comboBox5.Items.Add(t1[yu, 0]); }
+                                        TypeOfInstrument.Items.Add(t1[yu, 0]); }
                                 }
-                                Array.Resize(ref mas1, hhn+1);mas1[hhn] = nom1+1;comboBox5.Items.RemoveAt(hh.Length-1);
+                                Array.Resize(ref mas1, hhn+1);mas1[hhn] = nom1+1;TypeOfInstrument.Items.RemoveAt(hh.Length-1);
                             }
                             break;
                        case 0: { per_0 = true; break; }
@@ -363,7 +284,7 @@ namespace WindowsFormsApplication8
                           
 
                     }
-                    try { comboBox5.SelectedIndex = 0;  } catch { }
+                    try { TypeOfInstrument.SelectedIndex = 0;  } catch { }
 
                     /* while(1<2)
                      {
@@ -406,19 +327,19 @@ namespace WindowsFormsApplication8
                 string j = f.Data;
 
                 split_data = j.Split(new Char[] { '|' });
-                this.textBox10.Text = split_data[0];
+                this.NameOfWorkpiece.Text = split_data[0];
                
-                treeView1.Enabled = true;
+                TreeOfOperations.Enabled = true;
                 richTextBox1.Enabled = true;
-                textBox5.Enabled = true;
-                textRa.Enabled = true;
+                surfaceRoughnessRz.Enabled = true;
+                surfaceRoughnessRa.Enabled = true;
                
-                textBox8.Enabled = true;
-                textBox9.Enabled = true;
-                button1.Enabled = true;
-                button3.Enabled = true;
-                button4.Enabled = true;
-                comboBox5.Enabled = true;
+                precisionOfMachining.Enabled = true;
+                TypeOfMachining.Enabled = true;
+                ChoiceOfOperation.Enabled = true;
+                Backspace.Enabled = true;
+                CalculationOfSchema.Enabled = true;
+                TypeOfInstrument.Enabled = true;
                 richTextBox2.Enabled = true;
                 buttontext.Enabled = true;
                 per[0] = "0 - " + split_data[0];
@@ -484,12 +405,12 @@ namespace WindowsFormsApplication8
         private void button4_Click(object sender, EventArgs e)
         {
             bool osh = true;
-            try { double u; u = Convert.ToDouble(textBox1.Text); u = Convert.ToDouble(textBox12.Text); }
+            try { double u; u = Convert.ToDouble(DiameterOfPart.Text); u = Convert.ToDouble(LengthOfPart.Text); }
             catch { osh = false; }
             try
             {
-                if ((Convert.ToDouble(textBox12.Text) <= 0) || (Convert.ToDouble(textBox12.Text) >= 3150)) { osh = false; }
-                if ((Convert.ToDouble(textBox1.Text) <= 0) || (Convert.ToDouble(textBox1.Text) >= 3150)) { osh = false; }
+                if ((Convert.ToDouble(LengthOfPart.Text) <= 0) || (Convert.ToDouble(LengthOfPart.Text) >= 3150)) { osh = false; }
+                if ((Convert.ToDouble(DiameterOfPart.Text) <= 0) || (Convert.ToDouble(DiameterOfPart.Text) >= 3150)) { osh = false; }
             }
             catch { }
             if (osh)
@@ -501,8 +422,8 @@ namespace WindowsFormsApplication8
                         {
                             if (Epr[nom2])
                             {
-                                double perd = Convert.ToDouble(textBox1.Text);
-                                if ((CombInd[nom2] == 5) || (CombInd[nom2] == 4)) { perd = Convert.ToDouble(textBox12.Text);  }
+                                double perd = Convert.ToDouble(DiameterOfPart.Text);
+                                if ((CombInd[nom2] == 5) || (CombInd[nom2] == 4)) { perd = Convert.ToDouble(LengthOfPart.Text);  }
 
                                 for (int nom1 = 0; nom1 < 10; nom1++)
                                 {
@@ -523,7 +444,7 @@ namespace WindowsFormsApplication8
 
 
 
-                        Array.Resize(ref L, i); L[i - 1] = Convert.ToDouble(textBox1.Text); int str = 0; Array.Resize(ref Ti, i); Array.Resize(ref Zag, i);
+                        Array.Resize(ref L, i); L[i - 1] = Convert.ToDouble(DiameterOfPart.Text); int str = 0; Array.Resize(ref Ti, i); Array.Resize(ref Zag, i);
                         for (int nom2 = 0; nom2 < 21; nom2++)
                         {
                             if ((table3_1[nom2, 0] <= L[i - 1]) && (table3_1[nom2, 1] > L[i - 1])) { str = nom2; }
@@ -536,31 +457,31 @@ namespace WindowsFormsApplication8
                       double delt = 1; double Py = 0; double sverl = 1;
 
                         for (int nom1 = 0; nom1 < 5; nom1++)
-                        { if ((t4[0, nom1] <= Convert.ToDouble(textBox1.Text)) && (t4[1, nom1] > Convert.ToDouble(textBox1.Text))) { sverl = t4[2, nom1]; break; } }
+                        { if ((t4[0, nom1] <= Convert.ToDouble(DiameterOfPart.Text)) && (t4[1, nom1] > Convert.ToDouble(DiameterOfPart.Text))) { sverl = t4[2, nom1]; break; } }
 
                         for (int nom1 = 0; nom1 < 5; nom1++)
-                        { if ((t3[0, nom1] <= Convert.ToDouble(textBox1.Text)) && (t3[1, nom1] > Convert.ToDouble(textBox1.Text))) { delt = t3[2, nom1]; break; } }
+                        { if ((t3[0, nom1] <= Convert.ToDouble(DiameterOfPart.Text)) && (t3[1, nom1] > Convert.ToDouble(DiameterOfPart.Text))) { delt = t3[2, nom1]; break; } }
 
                         try
                         {
-                            if (comboBox1.SelectedIndex == 1)
-                            { Py = Convert.ToDouble(textBox14.Text) * sverl; }
+                            if (TypeOfPart.SelectedIndex == 1)
+                            { Py = Convert.ToDouble(HoleDepth.Text) * sverl; }
 
                         }
                         catch { }
 
                         //// округления чисел
 
-                        double LdDouble = Convert.ToDouble(textBox1.Text);
+                        double LdDouble = Convert.ToDouble(DiameterOfPart.Text);
                         Math.Round(LdDouble, 4);
-                        textBox1.Text = Convert.ToString(LdDouble);
+                        DiameterOfPart.Text = Convert.ToString(LdDouble);
 
 
 
 
 
-                        richTextBox2.Text = "Исходные данные: L(d)=" + Convert.ToString(textBox1.Text) + " l=" + Convert.ToString(textBox12.Text) + "\n" + "Параметры: " + comboBox1.Text + ", " + comboBox2.Text + ", " + comboBox3.Text + "." + "\n";
-                        l2 = "Исходные данные: L(d)=" + Convert.ToString(textBox1.Text) + " l=" + Convert.ToString(textBox12.Text) + "\r\n" + "Параметры: " + comboBox1.Text + ", " + comboBox2.Text + ", " + comboBox3.Text + "." + "\r\n";
+                        richTextBox2.Text = "Исходные данные: L(d)=" + Convert.ToString(DiameterOfPart.Text) + " l=" + Convert.ToString(LengthOfPart.Text) + "\n" + "Параметры: " + TypeOfPart.Text + ", " + TypeOfProcessedSurface.Text + ", " + TypeOfAllowance.Text + "." + "\n";
+                        l2 = "Исходные данные: L(d)=" + Convert.ToString(DiameterOfPart.Text) + " l=" + Convert.ToString(LengthOfPart.Text) + "\r\n" + "Параметры: " + TypeOfPart.Text + ", " + TypeOfProcessedSurface.Text + ", " + TypeOfAllowance.Text + "." + "\r\n";
                         for (int nom1 = 0; nom1 < i-1; nom1++)
                         {
                             Array.Resize(ref Td, i);
@@ -571,14 +492,14 @@ namespace WindowsFormsApplication8
                         }
                     try
                     {
-                        if (textBox3.Text == "")
+                        if (Allowance.Text == "")
                         {
                             richTextBox2.Text = richTextBox2.Text + per[i-1] + ":\r\n Rz" + Convert.ToString(i - 1) + " = " + Convert.ToString(Rz[i - 1]) + " h" + Convert.ToString(i - 1) + " = " + Convert.ToString(h[i - 1]) + " T" + Convert.ToString(i - 1) + " = " + Convert.ToString(Ti[i - 1]) + "\r\n";
                             l2 = l2 + per[i - 1] + ":\r\n Rz" + Convert.ToString(i - 1) + " = " + Convert.ToString(Rz[i - 1]) + " h" + Convert.ToString(i - 1) + " = " + Convert.ToString(h[i - 1]) + " T" + Convert.ToString(i - 1) + " = " + Convert.ToString(Ti[i - 1]) + "\r\n";
                         }
                         else
                         {
-                            Ti[i - 1] = Convert.ToDouble(textBox3.Text);
+                            Ti[i - 1] = Convert.ToDouble(Allowance.Text);
                             richTextBox2.Text = richTextBox2.Text + per[i - 1] + ":\r\n Rz" + Convert.ToString(i - 1) + " = " + Convert.ToString(Rz[i - 1]) + " h" + Convert.ToString(i - 1) + " = " + Convert.ToString(h[i - 1]) + " T" + Convert.ToString(i - 1) + " = " + Convert.ToString(Ti[i - 1]) + "\r\n";
                             l2 = l2 + per[i - 1] + ":\r\n Rz" + Convert.ToString(i - 1) + " = " + Convert.ToString(Rz[i - 1]) + " h" + Convert.ToString(i - 1) + " = " + Convert.ToString(h[i - 1]) + " T" + Convert.ToString(i - 1) + " = " + Convert.ToString(Ti[i - 1]) + "\r\n";
                         }
@@ -594,12 +515,12 @@ namespace WindowsFormsApplication8
 
                         bool sv = false; for (int nom1 = 1; nom1 < i; nom1++) { if (id[nom1].Equals('8')) { sv = true; break; } }
 
-                        if (sv) { P[0] = Convert.ToDouble(textBox14.Text) * sverl; }
+                        if (sv) { P[0] = Convert.ToDouble(HoleDepth.Text) * sverl; }
                         else
                         {
                             if ((id[0].Equals('1') || (id[0].Equals('6')) || (id[0].Equals('7'))))
-                            { P[0] = Convert.ToDouble(textBox12.Text) * 0.005; }
-                            else { P[0] = Math.Sqrt((Math.Pow((Convert.ToDouble(textBox12.Text) * delt), 2) + Math.Pow(Pcm, 2))); }
+                            { P[0] = Convert.ToDouble(LengthOfPart.Text) * 0.005; }
+                            else { P[0] = Math.Sqrt((Math.Pow((Convert.ToDouble(LengthOfPart.Text) * delt), 2) + Math.Pow(Pcm, 2))); }
                         }
 
 
@@ -637,7 +558,7 @@ namespace WindowsFormsApplication8
 
                         for (int nom1 = 1; nom1 < i; nom1++)
                         {
-                            if (comboBox2.SelectedIndex == 1) { Zmin[nom1] = Rz[nom1 - 1] + h[nom1 - 1] + P[nom1 - 1] + E[nom1]; } else { Zmin[nom1] = Rz[nom1 - 1] + h[nom1 - 1] + Math.Sqrt((Math.Pow(P[nom1 - 1], 2) + Math.Pow(E[nom1], 2))); }
+                            if (TypeOfProcessedSurface.SelectedIndex == 1) { Zmin[nom1] = Rz[nom1 - 1] + h[nom1 - 1] + P[nom1 - 1] + E[nom1]; } else { Zmin[nom1] = Rz[nom1 - 1] + h[nom1 - 1] + Math.Sqrt((Math.Pow(P[nom1 - 1], 2) + Math.Pow(E[nom1], 2))); }
 
 
                             // Округление 
@@ -653,7 +574,7 @@ namespace WindowsFormsApplication8
                         l2 = l2 + "\r\n" + "Величины номинального припуска для каждого перехода:";
                         for (int nom1 = 1; nom1 < i; nom1++)
                         {
-                            if (comboBox3.SelectedIndex == 0)
+                            if (TypeOfAllowance.SelectedIndex == 0)
                             {
                                 Znom[nom1] = 2 * Zmin[nom1] + Ti[nom1 - 1];
 
@@ -679,7 +600,7 @@ namespace WindowsFormsApplication8
                         int fivv = 0;
 
                     
-                        if (comboBox1.SelectedIndex == 0)
+                        if (TypeOfPart.SelectedIndex == 0)
                         {
                             for (int nom1 = i - 1; nom1 > 0; nom1--)
                             {
@@ -773,8 +694,8 @@ namespace WindowsFormsApplication8
                          richTextBox2.Text = richTextBox2.Text + Environment.NewLine + "Размер заготовки " + "L" + Convert.ToString(0) + " = " + Convert.ToString(zagot) + "\r\n";
                          l2=l2+ Environment.NewLine + "Размер заготовки " + "L" + Convert.ToString(0) + " = " + Convert.ToString(zagot) + "\r\n";*/
 
-                        if (comboBox1.SelectedIndex == 0) { tip = 0; };
-                        if (comboBox1.SelectedIndex == 1) { tip = 1; };
+                        if (TypeOfPart.SelectedIndex == 0) { tip = 0; };
+                        if (TypeOfPart.SelectedIndex == 1) { tip = 1; };
 
 
                         richTextBoxtoForm2.Text = richTextBox2.Text + "|" + i + "|" + l2 + "|" + tip + "|" + Convert.ToString(L[0]);
@@ -800,7 +721,7 @@ namespace WindowsFormsApplication8
                         }
                         richTextBoxtoForm2.Text = richTextBoxtoForm2.Text + "#";
 
-                        richTextBoxtoForm2.Text = richTextBoxtoForm2.Text + Convert.ToString(i) +"$"+ Convert.ToString(textBox12.Text) +"$"+ Convert.ToString(textBox1.Text) + "$" + "" + "$" + "" + "$" + "" + "$" + Convert.ToString(comboBox1.Text) + "$" + Convert.ToString(comboBox2.Text) + "$" + Convert.ToString(comboBox3.Text) + "$" + per[0] ;
+                        richTextBoxtoForm2.Text = richTextBoxtoForm2.Text + Convert.ToString(i) +"$"+ Convert.ToString(LengthOfPart.Text) +"$"+ Convert.ToString(DiameterOfPart.Text) + "$" + "" + "$" + "" + "$" + "" + "$" + Convert.ToString(TypeOfPart.Text) + "$" + Convert.ToString(TypeOfProcessedSurface.Text) + "$" + Convert.ToString(TypeOfAllowance.Text) + "$" + per[0] ;
                        // textBox2.Text = per[2];
 
                         for (int nom1 = 1; nom1 < i; nom1++)
@@ -864,7 +785,7 @@ namespace WindowsFormsApplication8
                                           {
                                               richTextBoxtoForm2.Text = richTextBoxtoForm2.Text + "$" + Convert.ToString(CombInd[nom1]);
                                           }
-                                          richTextBoxtoForm2.Text = richTextBoxtoForm2.Text + "$" + textBox14.Text; 
+                                          richTextBoxtoForm2.Text = richTextBoxtoForm2.Text + "$" + HoleDepth.Text; 
 
                         /// квалитет - Т
                       //  textBox2.Text = Convert.ToString(i);
@@ -894,44 +815,44 @@ namespace WindowsFormsApplication8
 
         private void textBox1_TextChanged(object sender, EventArgs e)
         {
-            CheckCommas.checkCommas(textBox1);
+            CheckCommas.checkCommas(DiameterOfPart);
         }
       
 
         private void textBox5_TextChanged(object sender, EventArgs e)
         {
 
-            CheckCommas.checkCommas(textBox5);
+            CheckCommas.checkCommas(surfaceRoughnessRz);
 
             // Для Ra 
             try
             {
-                if (textBox5.Text == "") { textBox5.Text = "0"; };
-                textRa.Text = Convert.ToString((Convert.ToDouble(textBox5.Text)) / 4 * 1000);
+                if (surfaceRoughnessRz.Text == "") { surfaceRoughnessRz.Text = "0"; };
+                surfaceRoughnessRa.Text = Convert.ToString((Convert.ToDouble(surfaceRoughnessRz.Text)) / 4 * 1000);
             }
             catch { }
         }
 
         private void textBox6_TextChanged(object sender, EventArgs e)
         {
-            CheckCommas.checkCommas(textBox6);
+            CheckCommas.checkCommas(ThicknessOfDefectiveCoating);
         }
 
         private void textBox7_TextChanged(object sender, EventArgs e)
         {
-            CheckCommas.checkCommas(textBox7);
+            CheckCommas.checkCommas(Kvalitet);
         }
 
         private void textBox11_TextChanged(object sender, EventArgs e)
         {
-            CheckCommas.checkCommas(textBox11);
+            CheckCommas.checkCommas(CoefficientOfRefinement);
         }
 
        
 
         private void textBox14_TextChanged(object sender, EventArgs e)
         {
-            CheckCommas.checkCommas(textBox14);
+            CheckCommas.checkCommas(HoleDepth);
         }
 
         private void buttontext_Click(object sender, EventArgs e)
@@ -955,25 +876,25 @@ namespace WindowsFormsApplication8
 
         private void comboBox1_TextChanged(object sender, EventArgs e)
         {
-            if (comboBox1.SelectedIndex == 0) { textBox14.Visible = false; label17.Visible = false; } else { label17.Visible = true; textBox14.Visible = true; }
+            if (TypeOfPart.SelectedIndex == 0) { HoleDepth.Visible = false; label17.Visible = false; } else { label17.Visible = true; HoleDepth.Visible = true; }
         }
         
         private void button5_Click(object sender, EventArgs e)
         {
             //  Hide();
             z.ShowDialog();
-            treeView1.Enabled = true;
+            TreeOfOperations.Enabled = true;
             richTextBox1.Enabled = true;
-            textBox5.Enabled = true;
-            textBox6.Enabled = true;
-            textBox7.Enabled = true;
-            textBox8.Enabled = true;
-            textBox9.Enabled = true;
-            textBox11.Enabled = true;
-            button1.Enabled = true;
-            button3.Enabled = true;
-            button4.Enabled = true;
-            comboBox5.Enabled = true;
+            surfaceRoughnessRz.Enabled = true;
+            ThicknessOfDefectiveCoating.Enabled = true;
+            Kvalitet.Enabled = true;
+            precisionOfMachining.Enabled = true;
+            TypeOfMachining.Enabled = true;
+            CoefficientOfRefinement.Enabled = true;
+            ChoiceOfOperation.Enabled = true;
+            Backspace.Enabled = true;
+            CalculationOfSchema.Enabled = true;
+            TypeOfInstrument.Enabled = true;
             richTextBox2.Enabled = true;
             buttontext.Enabled = true;
             stroka = z.Data;
@@ -981,7 +902,7 @@ namespace WindowsFormsApplication8
             split_data1 = stroka.Split(new Char[] { '-' });
            
 
-            textBox1.Text = split_data1[1]; textBox12.Text = split_data1[0];
+            DiameterOfPart.Text = split_data1[1]; LengthOfPart.Text = split_data1[0];
             per[0] = "0 - " + split_data1[2];
             Rz[0] = Convert.ToDouble(split_data1[3]); h[0] = Convert.ToDouble(split_data1[4]); T[0] = Convert.ToDouble(split_data1[5]);
             id[0] = split_data1[7][0];
@@ -1069,26 +990,26 @@ namespace WindowsFormsApplication8
             {
                 //  Hide();
                 z.ShowDialog();
-                treeView1.Enabled = true;
+                TreeOfOperations.Enabled = true;
                 richTextBox1.Enabled = true;
-                textBox5.Enabled = true;
+                surfaceRoughnessRz.Enabled = true;
         
-                textBox8.Enabled = true;
-                textBox9.Enabled = true;
-                button1.Enabled = true;
-                button3.Enabled = true;
-                button4.Enabled = true;
-                comboBox5.Enabled = true;
+                precisionOfMachining.Enabled = true;
+                TypeOfMachining.Enabled = true;
+                ChoiceOfOperation.Enabled = true;
+                Backspace.Enabled = true;
+                CalculationOfSchema.Enabled = true;
+                TypeOfInstrument.Enabled = true;
                 richTextBox2.Enabled = true;
-                textRa.Enabled = true;
+                surfaceRoughnessRa.Enabled = true;
                 buttontext.Enabled = true;
                 stroka = z.Data;
 
                 split_data1 = stroka.Split(new Char[] { '-' });
 
 
-                textBox1.Text = split_data1[1]; textBox12.Text = split_data1[0];
-                per[0] = "0 - " + split_data1[2]; textBox10.Text = split_data1[2];
+                DiameterOfPart.Text = split_data1[1]; LengthOfPart.Text = split_data1[0];
+                per[0] = "0 - " + split_data1[2]; NameOfWorkpiece.Text = split_data1[2];
                 Rz[0] = Convert.ToDouble(split_data1[3]); h[0] = Convert.ToDouble(split_data1[4]); T[0] = Convert.ToDouble(split_data1[5]);
                 id[0] = split_data1[7][0];
                 Pcm = Convert.ToDouble(split_data1[6]);
@@ -1136,23 +1057,23 @@ namespace WindowsFormsApplication8
                 string tip_det = split_data1[11 + (7 * (i - 1))];
 
                 if (tip_det.Contains("двухсторонний"))
-                { comboBox3.SelectedIndex = 0;      }
+                { TypeOfAllowance.SelectedIndex = 0;      }
 
-                else { comboBox3.SelectedIndex = 1;           }
+                else { TypeOfAllowance.SelectedIndex = 1;           }
                 tip_det = split_data1[10 + (7 * (i - 1))];
 
 
 
                 if (tip_det.Contains("цилиндрическая"))
-                { comboBox2.SelectedIndex = 0; }
-                else { comboBox2.SelectedIndex = 1; }
+                { TypeOfProcessedSurface.SelectedIndex = 0; }
+                else { TypeOfProcessedSurface.SelectedIndex = 1; }
                 tip_det = split_data1[9 + (7 * (i - 1))];
 
 
                 if (tip_det.Contains("вал"))
-                { comboBox1.SelectedIndex = 0; }
-                else { comboBox1.SelectedIndex = 1; }
-                textBox14.Text = split_data1[12 + (7 * (i - 1))];
+                { TypeOfPart.SelectedIndex = 0; }
+                else { TypeOfPart.SelectedIndex = 1; }
+                HoleDepth.Text = split_data1[12 + (7 * (i - 1))];
                 for (int u = 1; u < i; u++)
                 {
                     for (nom1 = mas1[CombInd[u]]; nom1 < mas1[CombInd[u] + 1]; nom1++)
@@ -1174,20 +1095,20 @@ namespace WindowsFormsApplication8
             }
             catch
             {
-                treeView1.Enabled = false;
+                TreeOfOperations.Enabled = false;
                 richTextBox1.Enabled = false;
-                textBox5.Enabled = false;
-                textBox6.Enabled = false;
-                textBox7.Enabled = false;
-                textBox8.Enabled = false;
-                textBox9.Enabled = false;
-                textBox11.Enabled = false;
-                button1.Enabled = false;
-                button3.Enabled = false;
-                button4.Enabled = false;
-                comboBox5.Enabled = false;
+                surfaceRoughnessRz.Enabled = false;
+                ThicknessOfDefectiveCoating.Enabled = false;
+                Kvalitet.Enabled = false;
+                precisionOfMachining.Enabled = false;
+                TypeOfMachining.Enabled = false;
+                CoefficientOfRefinement.Enabled = false;
+                ChoiceOfOperation.Enabled = false;
+                Backspace.Enabled = false;
+                CalculationOfSchema.Enabled = false;
+                TypeOfInstrument.Enabled = false;
                 richTextBox2.Enabled = false;
-                textRa.Enabled = false;
+                surfaceRoughnessRa.Enabled = false;
                 buttontext.Enabled = false;
             }
             
@@ -1198,7 +1119,7 @@ namespace WindowsFormsApplication8
             toolTip1.ToolTipIcon = ToolTipIcon.Warning;
             toolTip1.IsBalloon = true;
             toolTip1.ToolTipTitle = "Длина детали";
-            toolTip1.SetToolTip(textBox12, "Введите длину детали");
+            toolTip1.SetToolTip(LengthOfPart, "Введите длину детали");
         }
 
         private void textBox1_Click(object sender, EventArgs e)
@@ -1206,7 +1127,7 @@ namespace WindowsFormsApplication8
             toolTip1.ToolTipIcon = ToolTipIcon.Warning;
             toolTip1.IsBalloon = true;
             toolTip1.ToolTipTitle = "Размер Диаметр";
-            toolTip1.SetToolTip(textBox1, "Размер Диаметр");
+            toolTip1.SetToolTip(DiameterOfPart, "Размер Диаметр");
         }
 
         private void comboBox1_Click(object sender, EventArgs e)
@@ -1214,7 +1135,7 @@ namespace WindowsFormsApplication8
             toolTip1.ToolTipIcon = ToolTipIcon.Warning;
             toolTip1.IsBalloon = true;
             toolTip1.ToolTipTitle = "Тип размера";
-            toolTip1.SetToolTip(comboBox1, "Тип размера");
+            toolTip1.SetToolTip(TypeOfPart, "Тип размера");
         }
 
         private void comboBox3_Click(object sender, EventArgs e)
@@ -1222,7 +1143,7 @@ namespace WindowsFormsApplication8
             toolTip1.ToolTipIcon = ToolTipIcon.Warning;
             toolTip1.IsBalloon = true;
             toolTip1.ToolTipTitle = "Тип припуска";
-            toolTip1.SetToolTip(comboBox3, "Двухсторонний: обрабатываются вал, отверстие, противолежащие поверхности. \nОдносторонний: получаемый размер задаётся от необрабатываемой поверхности.");
+            toolTip1.SetToolTip(TypeOfAllowance, "Двухсторонний: обрабатываются вал, отверстие, противолежащие поверхности. \nОдносторонний: получаемый размер задаётся от необрабатываемой поверхности.");
         }
 
         private void comboBox2_Click(object sender, EventArgs e)
@@ -1231,7 +1152,7 @@ namespace WindowsFormsApplication8
             toolTip1.IsBalloon = true;
 
             toolTip1.ToolTipTitle = "Тип обрабатываемой поверхности";
-            toolTip1.SetToolTip(comboBox2, "Фасонные замкнутые поверхности следует рассматривать как цилиндрические, фасонные незамкнутые – как плоские.");
+            toolTip1.SetToolTip(TypeOfProcessedSurface, "Фасонные замкнутые поверхности следует рассматривать как цилиндрические, фасонные незамкнутые – как плоские.");
         }
 
         private void comboBox5_Click(object sender, EventArgs e)
@@ -1239,15 +1160,15 @@ namespace WindowsFormsApplication8
             toolTip1.ToolTipIcon = ToolTipIcon.Warning;
             toolTip1.IsBalloon = true;
             toolTip1.ToolTipTitle = "Тип приспособления";
-            toolTip1.SetToolTip(comboBox5, "Тип приспособления");
+            toolTip1.SetToolTip(TypeOfInstrument, "Тип приспособления");
         }
 
         private void textBox3_TextChanged(object sender, EventArgs e)
         {
             try
             {
-                int nom = textBox3.Text.Length;
-                if (textBox3.Text[nom - 1].Equals('.')) { textBox3.Text = textBox3.Text.Replace('.', ','); textBox3.SelectionStart = nom; }
+                int nom = Allowance.Text.Length;
+                if (Allowance.Text[nom - 1].Equals('.')) { Allowance.Text = Allowance.Text.Replace('.', ','); Allowance.SelectionStart = nom; }
            //     if (textBox3.Text[nom - 1].Equals('-')) { textBox3.Text = textBox3.Text.Replace('-', '' ); textBox3.SelectionStart = nom; }
             //    if (textBox3.Text[nom - 1].Equals('+')) { textBox3.Text = textBox3.Text.Replace('+', '' ); textBox3.SelectionStart = nom; }
 
@@ -1268,15 +1189,15 @@ namespace WindowsFormsApplication8
 
         private void textRa_TextChanged(object sender, EventArgs e)
         {
-            CheckCommas.checkCommas(textRa);
+            CheckCommas.checkCommas(surfaceRoughnessRa);
             // Для Rz 
             try
             {
-                if (textRa.Text == "")
+                if (surfaceRoughnessRa.Text == "")
                 {
-                    textRa.Text = "0";
+                    surfaceRoughnessRa.Text = "0";
                 };
-                textBox5.Text = Convert.ToString((Convert.ToDouble(textRa.Text)) * 4 / 1000);
+                surfaceRoughnessRz.Text = Convert.ToString((Convert.ToDouble(surfaceRoughnessRa.Text)) * 4 / 1000);
             }
             catch { }
 
@@ -1300,8 +1221,8 @@ namespace WindowsFormsApplication8
 
         private void comboBox3_TextChanged(object sender, EventArgs e)
         {
-            if (comboBox3.Text == "двухсторонний") { pictureBox1.Visible = true; pictureBox2.Visible = false; };
-            if (comboBox3.Text == "односторонний") { pictureBox1.Visible = false; pictureBox2.Visible = true; };
+            if (TypeOfAllowance.Text == "двухсторонний") { pictureBox1.Visible = true; pictureBox2.Visible = false; };
+            if (TypeOfAllowance.Text == "односторонний") { pictureBox1.Visible = false; pictureBox2.Visible = true; };
         }
 
         private void textBox5_Click(object sender, EventArgs e)
@@ -1309,7 +1230,7 @@ namespace WindowsFormsApplication8
              toolTip1.ToolTipIcon = ToolTipIcon.Warning;
             toolTip1.IsBalloon = true;
             toolTip1.ToolTipTitle = "Достигаемая шероховатость, Rz, мм";
-            toolTip1.SetToolTip(textBox5, "Интервал для данной операции: " + Convert.ToString(Rz_min) + "..." + Convert.ToString(Rz_max));
+            toolTip1.SetToolTip(surfaceRoughnessRz, "Интервал для данной операции: " + Convert.ToString(Rz_min) + "..." + Convert.ToString(Rz_max));
         }
 
         private void textRa_Click(object sender, EventArgs e)
@@ -1317,7 +1238,7 @@ namespace WindowsFormsApplication8
             toolTip1.ToolTipIcon = ToolTipIcon.Warning;
             toolTip1.IsBalloon = true;
             toolTip1.ToolTipTitle = "Достигаемая шероховатость, Ra, мкм";
-            toolTip1.SetToolTip(textRa, "Интервал для данной операции: " + Convert.ToString(Ra_min) + "..." + Convert.ToString(Ra_max));
+            toolTip1.SetToolTip(surfaceRoughnessRa, "Интервал для данной операции: " + Convert.ToString(Ra_min) + "..." + Convert.ToString(Ra_max));
         }
     }
                

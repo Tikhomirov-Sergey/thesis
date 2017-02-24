@@ -31,37 +31,37 @@
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.label1 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.DiameterOfPart = new System.Windows.Forms.TextBox();
+            this.TypeOfPart = new System.Windows.Forms.ComboBox();
             this.label5 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
-            this.comboBox2 = new System.Windows.Forms.ComboBox();
+            this.TypeOfProcessedSurface = new System.Windows.Forms.ComboBox();
             this.label7 = new System.Windows.Forms.Label();
-            this.comboBox3 = new System.Windows.Forms.ComboBox();
-            this.treeView1 = new System.Windows.Forms.TreeView();
-            this.button1 = new System.Windows.Forms.Button();
-            this.textBox5 = new System.Windows.Forms.TextBox();
-            this.textBox6 = new System.Windows.Forms.TextBox();
-            this.textBox7 = new System.Windows.Forms.TextBox();
+            this.TypeOfAllowance = new System.Windows.Forms.ComboBox();
+            this.TreeOfOperations = new System.Windows.Forms.TreeView();
+            this.ChoiceOfOperation = new System.Windows.Forms.Button();
+            this.surfaceRoughnessRz = new System.Windows.Forms.TextBox();
+            this.ThicknessOfDefectiveCoating = new System.Windows.Forms.TextBox();
+            this.Kvalitet = new System.Windows.Forms.TextBox();
             this.richTextBox1 = new System.Windows.Forms.RichTextBox();
-            this.button2 = new System.Windows.Forms.Button();
-            this.textBox8 = new System.Windows.Forms.TextBox();
-            this.textBox9 = new System.Windows.Forms.TextBox();
-            this.textBox10 = new System.Windows.Forms.TextBox();
+            this.ChoiceOfWorkpiece = new System.Windows.Forms.Button();
+            this.precisionOfMachining = new System.Windows.Forms.TextBox();
+            this.TypeOfMachining = new System.Windows.Forms.TextBox();
+            this.NameOfWorkpiece = new System.Windows.Forms.TextBox();
             this.label9 = new System.Windows.Forms.Label();
             this.label10 = new System.Windows.Forms.Label();
             this.Ra = new System.Windows.Forms.Label();
             this.label12 = new System.Windows.Forms.Label();
-            this.button3 = new System.Windows.Forms.Button();
-            this.textBox11 = new System.Windows.Forms.TextBox();
+            this.Backspace = new System.Windows.Forms.Button();
+            this.CoefficientOfRefinement = new System.Windows.Forms.TextBox();
             this.label8 = new System.Windows.Forms.Label();
             this.label15 = new System.Windows.Forms.Label();
-            this.textBox12 = new System.Windows.Forms.TextBox();
-            this.comboBox5 = new System.Windows.Forms.ComboBox();
-            this.button4 = new System.Windows.Forms.Button();
+            this.LengthOfPart = new System.Windows.Forms.TextBox();
+            this.TypeOfInstrument = new System.Windows.Forms.ComboBox();
+            this.CalculationOfSchema = new System.Windows.Forms.Button();
             this.richTextBox2 = new System.Windows.Forms.RichTextBox();
             this.label17 = new System.Windows.Forms.Label();
-            this.textBox14 = new System.Windows.Forms.TextBox();
+            this.HoleDepth = new System.Windows.Forms.TextBox();
             this.buttontext = new System.Windows.Forms.Button();
             this.richTextBoxtoForm2 = new System.Windows.Forms.RichTextBox();
             this.label2 = new System.Windows.Forms.Label();
@@ -69,13 +69,13 @@
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.открытьБДToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.toolTip1 = new System.Windows.Forms.ToolTip(this.components);
-            this.textRa = new System.Windows.Forms.TextBox();
+            this.surfaceRoughnessRa = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
             this.textBox2 = new System.Windows.Forms.TextBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.label11 = new System.Windows.Forms.Label();
-            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.Allowance = new System.Windows.Forms.TextBox();
             this.menuStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
@@ -90,25 +90,25 @@
             this.label1.TabIndex = 0;
             this.label1.Text = "Обрабатываемый размер/Диаметр (L/d,мм):";
             // 
-            // textBox1
+            // DiameterOfPart
             // 
-            this.textBox1.Location = new System.Drawing.Point(247, 60);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(62, 20);
-            this.textBox1.TabIndex = 1;
-            this.textBox1.Click += new System.EventHandler(this.textBox1_Click);
-            this.textBox1.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
-            this.textBox1.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.Form1_KeyPress);
+            this.DiameterOfPart.Location = new System.Drawing.Point(247, 60);
+            this.DiameterOfPart.Name = "DiameterOfPart";
+            this.DiameterOfPart.Size = new System.Drawing.Size(62, 20);
+            this.DiameterOfPart.TabIndex = 1;
+            this.DiameterOfPart.Click += new System.EventHandler(this.textBox1_Click);
+            this.DiameterOfPart.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
+            this.DiameterOfPart.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.Form1_KeyPress);
             // 
-            // comboBox1
+            // TypeOfPart
             // 
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(88, 89);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(143, 21);
-            this.comboBox1.TabIndex = 8;
-            this.comboBox1.TextChanged += new System.EventHandler(this.comboBox1_TextChanged);
-            this.comboBox1.Click += new System.EventHandler(this.comboBox1_Click);
+            this.TypeOfPart.FormattingEnabled = true;
+            this.TypeOfPart.Location = new System.Drawing.Point(88, 89);
+            this.TypeOfPart.Name = "TypeOfPart";
+            this.TypeOfPart.Size = new System.Drawing.Size(143, 21);
+            this.TypeOfPart.TabIndex = 8;
+            this.TypeOfPart.TextChanged += new System.EventHandler(this.comboBox1_TextChanged);
+            this.TypeOfPart.Click += new System.EventHandler(this.comboBox1_Click);
             // 
             // label5
             // 
@@ -128,14 +128,14 @@
             this.label6.TabIndex = 10;
             this.label6.Text = "Тип обрабатываемой  поверхности:";
             // 
-            // comboBox2
+            // TypeOfProcessedSurface
             // 
-            this.comboBox2.FormattingEnabled = true;
-            this.comboBox2.Location = new System.Drawing.Point(199, 147);
-            this.comboBox2.Name = "comboBox2";
-            this.comboBox2.Size = new System.Drawing.Size(110, 21);
-            this.comboBox2.TabIndex = 11;
-            this.comboBox2.Click += new System.EventHandler(this.comboBox2_Click);
+            this.TypeOfProcessedSurface.FormattingEnabled = true;
+            this.TypeOfProcessedSurface.Location = new System.Drawing.Point(199, 147);
+            this.TypeOfProcessedSurface.Name = "TypeOfProcessedSurface";
+            this.TypeOfProcessedSurface.Size = new System.Drawing.Size(110, 21);
+            this.TypeOfProcessedSurface.TabIndex = 11;
+            this.TypeOfProcessedSurface.Click += new System.EventHandler(this.comboBox2_Click);
             // 
             // label7
             // 
@@ -146,71 +146,71 @@
             this.label7.TabIndex = 12;
             this.label7.Text = "Тип припуска:";
             // 
-            // comboBox3
+            // TypeOfAllowance
             // 
-            this.comboBox3.FormattingEnabled = true;
-            this.comboBox3.Location = new System.Drawing.Point(88, 116);
-            this.comboBox3.Name = "comboBox3";
-            this.comboBox3.Size = new System.Drawing.Size(143, 21);
-            this.comboBox3.TabIndex = 13;
-            this.comboBox3.SelectedIndexChanged += new System.EventHandler(this.comboBox3_SelectedIndexChanged_1);
-            this.comboBox3.TextChanged += new System.EventHandler(this.comboBox3_TextChanged);
-            this.comboBox3.Click += new System.EventHandler(this.comboBox3_Click);
+            this.TypeOfAllowance.FormattingEnabled = true;
+            this.TypeOfAllowance.Location = new System.Drawing.Point(88, 116);
+            this.TypeOfAllowance.Name = "TypeOfAllowance";
+            this.TypeOfAllowance.Size = new System.Drawing.Size(143, 21);
+            this.TypeOfAllowance.TabIndex = 13;
+            this.TypeOfAllowance.SelectedIndexChanged += new System.EventHandler(this.comboBox3_SelectedIndexChanged_1);
+            this.TypeOfAllowance.TextChanged += new System.EventHandler(this.comboBox3_TextChanged);
+            this.TypeOfAllowance.Click += new System.EventHandler(this.comboBox3_Click);
             // 
-            // treeView1
+            // TreeOfOperations
             // 
-            this.treeView1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.treeView1.Enabled = false;
-            this.treeView1.Location = new System.Drawing.Point(9, 225);
-            this.treeView1.Name = "treeView1";
-            this.treeView1.ShowLines = false;
-            this.treeView1.ShowPlusMinus = false;
-            this.treeView1.ShowRootLines = false;
-            this.treeView1.Size = new System.Drawing.Size(398, 289);
-            this.treeView1.TabIndex = 16;
-            this.treeView1.AfterSelect += new System.Windows.Forms.TreeViewEventHandler(this.treeView1_AfterSelect);
-            this.treeView1.NodeMouseClick += new System.Windows.Forms.TreeNodeMouseClickEventHandler(this.treeView1_NodeMouseClick);
-            this.treeView1.NodeMouseDoubleClick += new System.Windows.Forms.TreeNodeMouseClickEventHandler(this.treeView1_NodeMouseDoubleClick);
+            this.TreeOfOperations.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.TreeOfOperations.Enabled = false;
+            this.TreeOfOperations.Location = new System.Drawing.Point(9, 225);
+            this.TreeOfOperations.Name = "TreeOfOperations";
+            this.TreeOfOperations.ShowLines = false;
+            this.TreeOfOperations.ShowPlusMinus = false;
+            this.TreeOfOperations.ShowRootLines = false;
+            this.TreeOfOperations.Size = new System.Drawing.Size(398, 289);
+            this.TreeOfOperations.TabIndex = 16;
+            this.TreeOfOperations.AfterSelect += new System.Windows.Forms.TreeViewEventHandler(this.treeView1_AfterSelect);
+            this.TreeOfOperations.NodeMouseClick += new System.Windows.Forms.TreeNodeMouseClickEventHandler(this.treeView1_NodeMouseClick);
+            this.TreeOfOperations.NodeMouseDoubleClick += new System.Windows.Forms.TreeNodeMouseClickEventHandler(this.treeView1_NodeMouseDoubleClick);
             // 
-            // button1
+            // ChoiceOfOperation
             // 
-            this.button1.Enabled = false;
-            this.button1.Location = new System.Drawing.Point(875, 143);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(146, 181);
-            this.button1.TabIndex = 17;
-            this.button1.Text = "Выбор переходов";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.ChoiceOfOperation.Enabled = false;
+            this.ChoiceOfOperation.Location = new System.Drawing.Point(875, 143);
+            this.ChoiceOfOperation.Name = "ChoiceOfOperation";
+            this.ChoiceOfOperation.Size = new System.Drawing.Size(146, 181);
+            this.ChoiceOfOperation.TabIndex = 17;
+            this.ChoiceOfOperation.Text = "Выбор переходов";
+            this.ChoiceOfOperation.UseVisualStyleBackColor = true;
+            this.ChoiceOfOperation.Click += new System.EventHandler(this.button1_Click);
             // 
-            // textBox5
+            // surfaceRoughnessRz
             // 
-            this.textBox5.Enabled = false;
-            this.textBox5.Location = new System.Drawing.Point(635, 195);
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(85, 20);
-            this.textBox5.TabIndex = 18;
-            this.textBox5.Click += new System.EventHandler(this.textBox5_Click);
-            this.textBox5.TextChanged += new System.EventHandler(this.textBox5_TextChanged);
+            this.surfaceRoughnessRz.Enabled = false;
+            this.surfaceRoughnessRz.Location = new System.Drawing.Point(635, 195);
+            this.surfaceRoughnessRz.Name = "surfaceRoughnessRz";
+            this.surfaceRoughnessRz.Size = new System.Drawing.Size(85, 20);
+            this.surfaceRoughnessRz.TabIndex = 18;
+            this.surfaceRoughnessRz.Click += new System.EventHandler(this.textBox5_Click);
+            this.surfaceRoughnessRz.TextChanged += new System.EventHandler(this.textBox5_TextChanged);
             // 
-            // textBox6
+            // ThicknessOfDefectiveCoating
             // 
-            this.textBox6.Enabled = false;
-            this.textBox6.Location = new System.Drawing.Point(635, 225);
-            this.textBox6.Name = "textBox6";
-            this.textBox6.Size = new System.Drawing.Size(234, 20);
-            this.textBox6.TabIndex = 19;
-            this.textBox6.TextChanged += new System.EventHandler(this.textBox6_TextChanged);
+            this.ThicknessOfDefectiveCoating.Enabled = false;
+            this.ThicknessOfDefectiveCoating.Location = new System.Drawing.Point(635, 225);
+            this.ThicknessOfDefectiveCoating.Name = "ThicknessOfDefectiveCoating";
+            this.ThicknessOfDefectiveCoating.Size = new System.Drawing.Size(234, 20);
+            this.ThicknessOfDefectiveCoating.TabIndex = 19;
+            this.ThicknessOfDefectiveCoating.TextChanged += new System.EventHandler(this.textBox6_TextChanged);
             // 
-            // textBox7
+            // Kvalitet
             // 
-            this.textBox7.Enabled = false;
-            this.textBox7.Location = new System.Drawing.Point(635, 251);
-            this.textBox7.Name = "textBox7";
-            this.textBox7.Size = new System.Drawing.Size(234, 20);
-            this.textBox7.TabIndex = 20;
-            this.textBox7.MouseClick += new System.Windows.Forms.MouseEventHandler(this.textBox7_MouseClick);
-            this.textBox7.TextChanged += new System.EventHandler(this.textBox7_TextChanged);
+            this.Kvalitet.Enabled = false;
+            this.Kvalitet.Location = new System.Drawing.Point(635, 251);
+            this.Kvalitet.Name = "Kvalitet";
+            this.Kvalitet.Size = new System.Drawing.Size(234, 20);
+            this.Kvalitet.TabIndex = 20;
+            this.Kvalitet.MouseClick += new System.Windows.Forms.MouseEventHandler(this.textBox7_MouseClick);
+            this.Kvalitet.TextChanged += new System.EventHandler(this.textBox7_TextChanged);
             // 
             // richTextBox1
             // 
@@ -221,39 +221,39 @@
             this.richTextBox1.TabIndex = 21;
             this.richTextBox1.Text = "";
             // 
-            // button2
+            // ChoiceOfWorkpiece
             // 
-            this.button2.Location = new System.Drawing.Point(635, 50);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(464, 84);
-            this.button2.TabIndex = 22;
-            this.button2.Text = "Выбор заготовки";
-            this.button2.UseVisualStyleBackColor = true;
-            this.button2.Click += new System.EventHandler(this.button2_Click);
+            this.ChoiceOfWorkpiece.Location = new System.Drawing.Point(635, 50);
+            this.ChoiceOfWorkpiece.Name = "ChoiceOfWorkpiece";
+            this.ChoiceOfWorkpiece.Size = new System.Drawing.Size(464, 84);
+            this.ChoiceOfWorkpiece.TabIndex = 22;
+            this.ChoiceOfWorkpiece.Text = "Выбор заготовки";
+            this.ChoiceOfWorkpiece.UseVisualStyleBackColor = true;
+            this.ChoiceOfWorkpiece.Click += new System.EventHandler(this.button2_Click);
             // 
-            // textBox8
+            // precisionOfMachining
             // 
-            this.textBox8.Enabled = false;
-            this.textBox8.Location = new System.Drawing.Point(635, 169);
-            this.textBox8.Name = "textBox8";
-            this.textBox8.Size = new System.Drawing.Size(234, 20);
-            this.textBox8.TabIndex = 23;
+            this.precisionOfMachining.Enabled = false;
+            this.precisionOfMachining.Location = new System.Drawing.Point(635, 169);
+            this.precisionOfMachining.Name = "precisionOfMachining";
+            this.precisionOfMachining.Size = new System.Drawing.Size(234, 20);
+            this.precisionOfMachining.TabIndex = 23;
             // 
-            // textBox9
+            // TypeOfMachining
             // 
-            this.textBox9.Enabled = false;
-            this.textBox9.Location = new System.Drawing.Point(635, 143);
-            this.textBox9.Name = "textBox9";
-            this.textBox9.Size = new System.Drawing.Size(234, 20);
-            this.textBox9.TabIndex = 24;
+            this.TypeOfMachining.Enabled = false;
+            this.TypeOfMachining.Location = new System.Drawing.Point(635, 143);
+            this.TypeOfMachining.Name = "TypeOfMachining";
+            this.TypeOfMachining.Size = new System.Drawing.Size(234, 20);
+            this.TypeOfMachining.TabIndex = 24;
             // 
-            // textBox10
+            // NameOfWorkpiece
             // 
-            this.textBox10.Enabled = false;
-            this.textBox10.Location = new System.Drawing.Point(698, 24);
-            this.textBox10.Name = "textBox10";
-            this.textBox10.Size = new System.Drawing.Size(401, 20);
-            this.textBox10.TabIndex = 25;
+            this.NameOfWorkpiece.Enabled = false;
+            this.NameOfWorkpiece.Location = new System.Drawing.Point(698, 24);
+            this.NameOfWorkpiece.Name = "NameOfWorkpiece";
+            this.NameOfWorkpiece.Size = new System.Drawing.Size(401, 20);
+            this.NameOfWorkpiece.TabIndex = 25;
             // 
             // label9
             // 
@@ -292,25 +292,25 @@
             this.label12.TabIndex = 29;
             this.label12.Text = "Достигаемая точность, IT";
             // 
-            // button3
+            // Backspace
             // 
-            this.button3.Enabled = false;
-            this.button3.Location = new System.Drawing.Point(1027, 143);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(72, 181);
-            this.button3.TabIndex = 30;
-            this.button3.Text = "<==";
-            this.button3.UseVisualStyleBackColor = true;
-            this.button3.Click += new System.EventHandler(this.button3_Click_1);
+            this.Backspace.Enabled = false;
+            this.Backspace.Location = new System.Drawing.Point(1027, 143);
+            this.Backspace.Name = "Backspace";
+            this.Backspace.Size = new System.Drawing.Size(72, 181);
+            this.Backspace.TabIndex = 30;
+            this.Backspace.Text = "<==";
+            this.Backspace.UseVisualStyleBackColor = true;
+            this.Backspace.Click += new System.EventHandler(this.button3_Click_1);
             // 
-            // textBox11
+            // CoefficientOfRefinement
             // 
-            this.textBox11.Enabled = false;
-            this.textBox11.Location = new System.Drawing.Point(635, 277);
-            this.textBox11.Name = "textBox11";
-            this.textBox11.Size = new System.Drawing.Size(234, 20);
-            this.textBox11.TabIndex = 31;
-            this.textBox11.TextChanged += new System.EventHandler(this.textBox11_TextChanged);
+            this.CoefficientOfRefinement.Enabled = false;
+            this.CoefficientOfRefinement.Location = new System.Drawing.Point(635, 277);
+            this.CoefficientOfRefinement.Name = "CoefficientOfRefinement";
+            this.CoefficientOfRefinement.Size = new System.Drawing.Size(234, 20);
+            this.CoefficientOfRefinement.TabIndex = 31;
+            this.CoefficientOfRefinement.TextChanged += new System.EventHandler(this.textBox11_TextChanged);
             // 
             // label8
             // 
@@ -330,35 +330,35 @@
             this.label15.TabIndex = 36;
             this.label15.Text = "Длина детали (l,мм):";
             // 
-            // textBox12
+            // LengthOfPart
             // 
-            this.textBox12.Location = new System.Drawing.Point(120, 37);
-            this.textBox12.Name = "textBox12";
-            this.textBox12.Size = new System.Drawing.Size(59, 20);
-            this.textBox12.TabIndex = 37;
-            this.textBox12.Click += new System.EventHandler(this.textBox12_Click);
-            this.textBox12.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.Form1_KeyPress);
+            this.LengthOfPart.Location = new System.Drawing.Point(120, 37);
+            this.LengthOfPart.Name = "LengthOfPart";
+            this.LengthOfPart.Size = new System.Drawing.Size(59, 20);
+            this.LengthOfPart.TabIndex = 37;
+            this.LengthOfPart.Click += new System.EventHandler(this.textBox12_Click);
+            this.LengthOfPart.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.Form1_KeyPress);
             // 
-            // comboBox5
+            // TypeOfInstrument
             // 
-            this.comboBox5.Enabled = false;
-            this.comboBox5.FormattingEnabled = true;
-            this.comboBox5.Location = new System.Drawing.Point(635, 303);
-            this.comboBox5.Name = "comboBox5";
-            this.comboBox5.Size = new System.Drawing.Size(234, 21);
-            this.comboBox5.TabIndex = 38;
-            this.comboBox5.Click += new System.EventHandler(this.comboBox5_Click);
+            this.TypeOfInstrument.Enabled = false;
+            this.TypeOfInstrument.FormattingEnabled = true;
+            this.TypeOfInstrument.Location = new System.Drawing.Point(635, 303);
+            this.TypeOfInstrument.Name = "TypeOfInstrument";
+            this.TypeOfInstrument.Size = new System.Drawing.Size(234, 21);
+            this.TypeOfInstrument.TabIndex = 38;
+            this.TypeOfInstrument.Click += new System.EventHandler(this.comboBox5_Click);
             // 
-            // button4
+            // CalculationOfSchema
             // 
-            this.button4.Enabled = false;
-            this.button4.Location = new System.Drawing.Point(438, 479);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(661, 35);
-            this.button4.TabIndex = 39;
-            this.button4.Text = "Расчёт размерной цепи";
-            this.button4.UseVisualStyleBackColor = true;
-            this.button4.Click += new System.EventHandler(this.button4_Click);
+            this.CalculationOfSchema.Enabled = false;
+            this.CalculationOfSchema.Location = new System.Drawing.Point(438, 479);
+            this.CalculationOfSchema.Name = "CalculationOfSchema";
+            this.CalculationOfSchema.Size = new System.Drawing.Size(661, 35);
+            this.CalculationOfSchema.TabIndex = 39;
+            this.CalculationOfSchema.Text = "Расчёт размерной цепи";
+            this.CalculationOfSchema.UseVisualStyleBackColor = true;
+            this.CalculationOfSchema.Click += new System.EventHandler(this.button4_Click);
             // 
             // richTextBox2
             // 
@@ -379,13 +379,13 @@
             this.label17.TabIndex = 43;
             this.label17.Text = "Глубина отверстия (lo,мм):";
             // 
-            // textBox14
+            // HoleDepth
             // 
-            this.textBox14.Location = new System.Drawing.Point(151, 174);
-            this.textBox14.Name = "textBox14";
-            this.textBox14.Size = new System.Drawing.Size(158, 20);
-            this.textBox14.TabIndex = 44;
-            this.textBox14.TextChanged += new System.EventHandler(this.textBox14_TextChanged);
+            this.HoleDepth.Location = new System.Drawing.Point(151, 174);
+            this.HoleDepth.Name = "HoleDepth";
+            this.HoleDepth.Size = new System.Drawing.Size(158, 20);
+            this.HoleDepth.TabIndex = 44;
+            this.HoleDepth.TextChanged += new System.EventHandler(this.textBox14_TextChanged);
             // 
             // buttontext
             // 
@@ -433,7 +433,7 @@
             this.открытьБДToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(951, 24);
+            this.menuStrip1.Size = new System.Drawing.Size(1136, 24);
             this.menuStrip1.TabIndex = 50;
             this.menuStrip1.Text = "Открыть бд";
             this.menuStrip1.Click += new System.EventHandler(this.menuStrip1_Click);
@@ -445,15 +445,15 @@
             this.открытьБДToolStripMenuItem.Text = "Открыть БД";
             this.открытьБДToolStripMenuItem.Click += new System.EventHandler(this.открытьБДToolStripMenuItem_Click);
             // 
-            // textRa
+            // surfaceRoughnessRa
             // 
-            this.textRa.Enabled = false;
-            this.textRa.Location = new System.Drawing.Point(779, 195);
-            this.textRa.Name = "textRa";
-            this.textRa.Size = new System.Drawing.Size(90, 20);
-            this.textRa.TabIndex = 51;
-            this.textRa.Click += new System.EventHandler(this.textRa_Click);
-            this.textRa.TextChanged += new System.EventHandler(this.textRa_TextChanged);
+            this.surfaceRoughnessRa.Enabled = false;
+            this.surfaceRoughnessRa.Location = new System.Drawing.Point(779, 195);
+            this.surfaceRoughnessRa.Name = "surfaceRoughnessRa";
+            this.surfaceRoughnessRa.Size = new System.Drawing.Size(90, 20);
+            this.surfaceRoughnessRa.TabIndex = 51;
+            this.surfaceRoughnessRa.Click += new System.EventHandler(this.textRa_Click);
+            this.surfaceRoughnessRa.TextChanged += new System.EventHandler(this.textRa_TextChanged);
             // 
             // label4
             // 
@@ -505,62 +505,62 @@
             this.label11.TabIndex = 56;
             this.label11.Text = "Допуск, мкм (без знака)";
             // 
-            // textBox3
+            // Allowance
             // 
-            this.textBox3.Location = new System.Drawing.Point(137, 197);
-            this.textBox3.Margin = new System.Windows.Forms.Padding(2);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(76, 20);
-            this.textBox3.TabIndex = 57;
-            this.textBox3.TextChanged += new System.EventHandler(this.textBox3_TextChanged);
+            this.Allowance.Location = new System.Drawing.Point(137, 197);
+            this.Allowance.Margin = new System.Windows.Forms.Padding(2);
+            this.Allowance.Name = "Allowance";
+            this.Allowance.Size = new System.Drawing.Size(76, 20);
+            this.Allowance.TabIndex = 57;
+            this.Allowance.TextChanged += new System.EventHandler(this.textBox3_TextChanged);
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(951, 521);
-            this.Controls.Add(this.textBox3);
+            this.ClientSize = new System.Drawing.Size(1136, 521);
+            this.Controls.Add(this.Allowance);
             this.Controls.Add(this.label11);
             this.Controls.Add(this.pictureBox2);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.textBox2);
             this.Controls.Add(this.label4);
-            this.Controls.Add(this.textRa);
+            this.Controls.Add(this.surfaceRoughnessRa);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.richTextBoxtoForm2);
             this.Controls.Add(this.buttontext);
-            this.Controls.Add(this.textBox14);
+            this.Controls.Add(this.HoleDepth);
             this.Controls.Add(this.label17);
             this.Controls.Add(this.richTextBox2);
-            this.Controls.Add(this.button4);
-            this.Controls.Add(this.comboBox5);
-            this.Controls.Add(this.textBox12);
+            this.Controls.Add(this.CalculationOfSchema);
+            this.Controls.Add(this.TypeOfInstrument);
+            this.Controls.Add(this.LengthOfPart);
             this.Controls.Add(this.label15);
             this.Controls.Add(this.label8);
-            this.Controls.Add(this.textBox11);
-            this.Controls.Add(this.button3);
+            this.Controls.Add(this.CoefficientOfRefinement);
+            this.Controls.Add(this.Backspace);
             this.Controls.Add(this.label12);
             this.Controls.Add(this.Ra);
             this.Controls.Add(this.label10);
             this.Controls.Add(this.label9);
-            this.Controls.Add(this.textBox10);
-            this.Controls.Add(this.textBox9);
-            this.Controls.Add(this.textBox8);
-            this.Controls.Add(this.button2);
+            this.Controls.Add(this.NameOfWorkpiece);
+            this.Controls.Add(this.TypeOfMachining);
+            this.Controls.Add(this.precisionOfMachining);
+            this.Controls.Add(this.ChoiceOfWorkpiece);
             this.Controls.Add(this.richTextBox1);
-            this.Controls.Add(this.textBox7);
-            this.Controls.Add(this.textBox6);
-            this.Controls.Add(this.textBox5);
-            this.Controls.Add(this.button1);
-            this.Controls.Add(this.treeView1);
-            this.Controls.Add(this.comboBox3);
+            this.Controls.Add(this.Kvalitet);
+            this.Controls.Add(this.ThicknessOfDefectiveCoating);
+            this.Controls.Add(this.surfaceRoughnessRz);
+            this.Controls.Add(this.ChoiceOfOperation);
+            this.Controls.Add(this.TreeOfOperations);
+            this.Controls.Add(this.TypeOfAllowance);
             this.Controls.Add(this.label7);
-            this.Controls.Add(this.comboBox2);
+            this.Controls.Add(this.TypeOfProcessedSurface);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.label5);
-            this.Controls.Add(this.comboBox1);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.TypeOfPart);
+            this.Controls.Add(this.DiameterOfPart);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.menuStrip1);
             this.Name = "Form1";
@@ -581,48 +581,48 @@
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.TextBox textBox6;
-        private System.Windows.Forms.TextBox textBox7;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.TextBox textBox8;
-        private System.Windows.Forms.TextBox textBox10;
+        private System.Windows.Forms.Button ChoiceOfOperation;
+        private System.Windows.Forms.TextBox ThicknessOfDefectiveCoating;
+        private System.Windows.Forms.TextBox Kvalitet;
+        private System.Windows.Forms.Button ChoiceOfWorkpiece;
+        private System.Windows.Forms.TextBox precisionOfMachining;
+        private System.Windows.Forms.TextBox NameOfWorkpiece;
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.Label Ra;
         private System.Windows.Forms.Label label12;
-        private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.TextBox textBox11;
+        private System.Windows.Forms.Button Backspace;
+        private System.Windows.Forms.TextBox CoefficientOfRefinement;
         private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.TreeView treeView1;
+        private System.Windows.Forms.TreeView TreeOfOperations;
         private System.Windows.Forms.Label label15;
-        private System.Windows.Forms.ComboBox comboBox5;
-        private System.Windows.Forms.Button button4;
+        private System.Windows.Forms.ComboBox TypeOfInstrument;
+        private System.Windows.Forms.Button CalculationOfSchema;
         private System.Windows.Forms.RichTextBox richTextBox2;
         private System.Windows.Forms.Label label17;
-        private System.Windows.Forms.TextBox textBox14;
+        private System.Windows.Forms.TextBox HoleDepth;
         private System.Windows.Forms.Button buttontext;
         private System.Windows.Forms.RichTextBox richTextBoxtoForm2;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
-        public System.Windows.Forms.TextBox textBox1;
-        public System.Windows.Forms.ComboBox comboBox3;
-        public System.Windows.Forms.TextBox textBox12;
-        public System.Windows.Forms.ComboBox comboBox1;
-        public System.Windows.Forms.ComboBox comboBox2;
-        public System.Windows.Forms.TextBox textBox9;
-        public System.Windows.Forms.TextBox textBox5;
+        public System.Windows.Forms.TextBox DiameterOfPart;
+        public System.Windows.Forms.ComboBox TypeOfAllowance;
+        public System.Windows.Forms.TextBox LengthOfPart;
+        public System.Windows.Forms.ComboBox TypeOfPart;
+        public System.Windows.Forms.ComboBox TypeOfProcessedSurface;
+        public System.Windows.Forms.TextBox TypeOfMachining;
+        public System.Windows.Forms.TextBox surfaceRoughnessRz;
         private System.Windows.Forms.MenuStrip menuStrip1;
         private System.Windows.Forms.ToolStripMenuItem открытьБДToolStripMenuItem;
         private System.Windows.Forms.ToolTip toolTip1;
-        public System.Windows.Forms.TextBox textRa;
+        public System.Windows.Forms.TextBox surfaceRoughnessRa;
         private System.Windows.Forms.Label label4;
         protected internal System.Windows.Forms.RichTextBox richTextBox1;
         public System.Windows.Forms.TextBox textBox2;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.Label label11;
-        private System.Windows.Forms.TextBox textBox3;
+        private System.Windows.Forms.TextBox Allowance;
     }
 }
 
