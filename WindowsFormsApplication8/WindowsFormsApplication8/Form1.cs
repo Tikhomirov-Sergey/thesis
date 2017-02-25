@@ -8,7 +8,8 @@ using System.Text;
 using System.Windows.Forms;
 using System.Xml;
 using System.IO;
-
+using Newtonsoft.Json;
+using System.Xml.Serialization;
 
 namespace WindowsFormsApplication8
 {
@@ -30,9 +31,8 @@ namespace WindowsFormsApplication8
         string[] Td = new string[1];
        // Массив округлений 
         double[] ZminDouble = new double[1];
-
-
-        string[,] t1 = new string[,] { { "не выбрано", "12345678", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0" },
+        
+    string[,] t1 = new string[,] { { "не выбрано", "12345678", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0" },
             {"патрон трёхкулачковый","13","0,220","0,270","0,320","0,370","0,420","0,5","0,6","0,7","0,8","0,9"},
                                {" ","467","0,050","0,060","0,070","0,080","0,100","0,120","0,14","0,16","0,18","0,2"},
                                {" ","58","0,025","0,030","0,0350","0,040","0,050","0,06","0,07","0,08","0,09","0,1"},
@@ -95,17 +95,13 @@ namespace WindowsFormsApplication8
             
         public Form1()
            {
-               
-            
             InitializeComponent();
             TypeOfPart.Items.AddRange(new string[] { "вал", "отверстие" });
             TypeOfProcessedSurface.Items.AddRange(new string[] { "цилиндрическая", "плоская" });
             TypeOfAllowance.Items.AddRange(new string[] { "двухсторонний", "односторонний" });
             TypeOfPart.SelectedIndex = 0; TypeOfProcessedSurface.SelectedIndex = 0; TypeOfAllowance.SelectedIndex = 0;
             HoleDepth.Text = "0";
-            
-            
-        }
+          }
 
         private void Form1_Load(object sender, EventArgs e)
         {

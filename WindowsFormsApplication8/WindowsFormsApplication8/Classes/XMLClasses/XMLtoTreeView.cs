@@ -1,15 +1,11 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Xml;
+﻿using System.Xml;
 using System.Windows.Forms;
 
 namespace WindowsFormsApplication8
 {
     class XMLtoTreeView
     {
-        public static void formationTreeView(string xmlFile, System.Windows.Forms.TreeView treeView)
+        public static void formationTreeView(string xmlFile, TreeView treeView)
         {
             XmlDocument xmlDocument = new XmlDocument();
             xmlDocument.Load(xmlFile);

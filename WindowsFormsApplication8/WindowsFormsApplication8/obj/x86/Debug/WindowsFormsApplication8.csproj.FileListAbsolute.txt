@@ -514,3 +514,5 @@ G:\Программирование\thesis\WindowsFormsApplication8\WindowsForms
 G:\Программирование\thesis\WindowsFormsApplication8\WindowsFormsApplication8\obj\x86\Debug\WindowsFormsApplication8.Form5.resources
 G:\Программирование\thesis\WindowsFormsApplication8\WindowsFormsApplication8\obj\x86\Debug\WindowsFormsApplication8.Properties.Resources.resources
 G:\Программирование\thesis\WindowsFormsApplication8\WindowsFormsApplication8\obj\x86\Debug\WindowsFormsApplication8.csproj.GenerateResource.Cache
+g:\Программирование\thesis\WindowsFormsApplication8\WindowsFormsApplication8\bin\Debug\Newtonsoft.Json.dll
+g:\Программирование\thesis\WindowsFormsApplication8\WindowsFormsApplication8\bin\Debug\Newtonsoft.Json.xml
