@@ -66,11 +66,18 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Classes\AuxiliaryСlasses\ConversionRoughnessRzAndRa.cs" />
+    <Compile Include="Classes\AuxiliaryСlasses\Interval.cs" />
     <Compile Include="Classes\CheckString.cs" />
-    <Compile Include="Classes\EventKeyPressForTextBox.cs" />
+    <Compile Include="Classes\Events\EventClickOfMouseOnTreeViewNode.cs" />
+    <Compile Include="Classes\Events\EventKeyPressForTextBox.cs" />
+    <Compile Include="Classes\StorageOfSelectedOperation.cs" />
+    <Compile Include="Classes\StorageOfSelectedWorkpiece.cs" />
     <Compile Include="Classes\XMLClasses\XMLtoObject.cs" />
     <Compile Include="Classes\XMLClasses\XMLtoTreeView.cs" />
-    <Compile Include="DataStructures\tables.cs" />
+    <Compile Include="DataStructures\ExtractParametersFromTreeview\ParametersWorkpieceFromTreeview.cs" />
+    <Compile Include="DataStructures\ExtractParametersFromTreeview\ParametersOperationFromTreeview.cs" />
+    <Compile Include="DataStructures\Tables.cs" />
     <Compile Include="DataStructures\InaccuracyOfPositioningPart\InaccuracyOfPositioningPart.cs" />
     <Compile Include="DataStructures\InaccuracyOfPositioningPart\Instrument.cs" />
     <Compile Include="DataStructures\InaccuracyOfPositioningPart\Surface.cs" />

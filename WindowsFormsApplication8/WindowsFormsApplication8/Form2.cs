@@ -29,24 +29,10 @@ namespace WindowsFormsApplication8
         private void treeView1_NodeMouseClick(object sender, TreeNodeMouseClickEventArgs e)
         {
             try
-            {if (e.Node.Level == 1)
-                {
-                    NameOfWorkpiece.Text = Convert.ToString(e.Node.Text);
-                    Kvalitet.Text = Convert.ToString(e.Node.FirstNode.FirstNode.Text);
-                    string[] S = new string[2];
-                    
-                    S = e.Node.FirstNode.NextNode.FirstNode.Text.Split(new Char[] { '_' });
-                     SurfaceRoughnessRz.Text = S[0];
-                    S = S[1].Split(new Char[] { '-' });
-                    Ra_max = Convert.ToDouble(S[1]);Ra_min = Convert.ToDouble(S[0]);
-                   
-                    ThicknessOfDefectiveCoating.Text = Convert.ToString(e.Node.FirstNode.NextNode.NextNode.FirstNode.Text);
-                    l = Convert.ToString(e.Node.LastNode.FirstNode.Text);
-                    if (Convert.ToInt32(e.Node.LastNode.FirstNode.Text) == 2 || Convert.ToInt32(e.Node.LastNode.FirstNode.Text) == 3) { ValidOffsetSurface.Enabled = true; label4.Enabled = true; label5.Enabled = true; } else { ValidOffsetSurface.Enabled = false; label4.Enabled = false; label5.Enabled = false; }
-                
+            {
+                EventClickOfMouseOnTreeViewNode.clickOnTreeWorkpiece(e, this);
             }
-            }
-            catch { }
+            catch { MessageBox.Show("Повреждены XML таблицы", "Ошибка"); }
         }
         
         private void button1_Click(object sender, EventArgs e)
@@ -64,25 +50,25 @@ namespace WindowsFormsApplication8
         }
         private void textBox1_TextChanged(object sender, EventArgs e)
         {
-            
             try
             {
-                if (SurfaceRoughnessRz.Text == "") { SurfaceRoughnessRz.Text = "0"; };
-                SurfaceRoughnessRa.Text = Convert.ToString((Convert.ToDouble(SurfaceRoughnessRz.Text)) / 4 * 1000);
+                SurfaceRoughnessRa.Text = ConversionRoughnessRzAndRa.stringRzToRa(SurfaceRoughnessRz.Text);
             }
-            catch { }
+            catch {SurfaceRoughnessRa.Text = ""; }
         }
 
         private void textBox6_TextChanged(object sender, EventArgs e)
         {
-            
-            // Для Rz 
             try
             {
-                if (SurfaceRoughnessRa.Text == "") { SurfaceRoughnessRa.Text = "0"; };
-                SurfaceRoughnessRz.Text = Convert.ToString((Convert.ToDouble(SurfaceRoughnessRa.Text)) * 4 / 1000);
+                SurfaceRoughnessRz.Text = ConversionRoughnessRzAndRa.stringRaToRz(SurfaceRoughnessRa.Text);
             }
-            catch { }
+            catch {SurfaceRoughnessRz.Text = ""; }
+        }
+
+        private void TreeOfWorkpiece_AfterSelect(object sender, TreeViewEventArgs e)
+        {
+
         }
 
         private void KeyPressForTextBoxWithDouble(object sender, KeyPressEventArgs e)

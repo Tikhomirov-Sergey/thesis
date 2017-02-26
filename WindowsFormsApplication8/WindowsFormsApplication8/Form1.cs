@@ -17,7 +17,7 @@ namespace WindowsFormsApplication8
     {
       
         Form2 f = new Form2(); Form4 z = new Form4("");//Form5 z = new Form5();
-
+        
         int tip; int i = 1; int level;bool per_0 = false;string[] split_data; string[] split_data1,split_data2; string[] per = new string[1];
         double[] Rz = new double[1]; double[] h = new double[1]; double[] T = new double[1]; double[] K = new double[1];int[] E1 = new int[1]; 
         double[] P = new double[1]; double[] E = new double[1]; char[] id = new char[1]; int[] id_per = new int[1]; string sid; string sid_per; string[] hh = new string[1]; int[] mas1 = new int[1]; bool[] Epr = new bool[1];
@@ -132,8 +132,8 @@ namespace WindowsFormsApplication8
                         K[i - 1] = Convert.ToDouble(CoefficientOfRefinement.Text);
                         richTextBox1.Text = richTextBox1.Text + "," + "\n" + per[i - 1];
                         l = l + "," + "\r\n" + per[i - 1];
-                        // textBox1.Text = Convert.ToString(t1[0, 0].Equals(comboBox5.Text));
-
+                    // textBox1.Text = Convert.ToString(t1[0, 0].Equals(comboBox5.Text));
+                    
 
                         CombInd[i-1] = TypeOfInstrument.SelectedIndex;
                         int hh_dlin = hh.Length; int vid_pr = 0; 
@@ -221,93 +221,10 @@ namespace WindowsFormsApplication8
 
         private void treeView1_NodeMouseClick(object sender, TreeNodeMouseClickEventArgs e)
         {
-            level = e.Node.Level;
-            TypeOfInstrument.Items.Clear(); TypeOfInstrument.Text = "";
-            try
-            {
-                if (level == 1)
-                { e.Node.Toggle(); }
-                if (e.Node.Level == 2)
-                {
-                    SurfaceRoughnessRz.Text = "0";
-                    ThicknessOfDefectiveCoating.Text = "0";//Не забыть посмотреть 0 или 1 для формулы
-                    Kvalitet.Text = "0";
-                    TypeOfMachining.Text = Convert.ToString(e.Node.Parent.Text);
-                    PrecisionOfMachining.Text = Convert.ToString(e.Node.Text);
-                    Kvalitet.Text = Convert.ToString(e.Node.FirstNode.FirstNode.Text);
-                    string[] S = new string[2];
-                        S = e.Node.FirstNode.NextNode.FirstNode.Text.Split(new Char[] { '_' });
-                    SurfaceRoughnessRz.Text = S[0];
-                    S=S[1].Split(new Char[] { '-' });
-                  
-                   
-                    Ra_max = Convert.ToDouble( S[1]);Ra_min = Convert.ToDouble(S[0]);
-
-                    Rz_min = Ra_min * 4 / 1000;
-                    Rz_max = Ra_max * 4 / 1000;
-
-
-                    ThicknessOfDefectiveCoating.Text = Convert.ToString(e.Node.FirstNode.NextNode.NextNode.FirstNode.Text);
-                    CoefficientOfRefinement.Text = Convert.ToString(e.Node.FirstNode.NextNode.NextNode.NextNode.FirstNode.Text);
-                    sid = Convert.ToString(e.Node.FirstNode.NextNode.NextNode.NextNode.NextNode.FirstNode.Text);
-                    sid_per = Convert.ToString(e.Node.FirstNode.NextNode.NextNode.NextNode.NextNode.NextNode.FirstNode.Text);
-                    TypeOfInstrument.Items.Clear();int hhn=0;
-                    switch (Convert.ToInt32(sid_per))
-                    { case 1: { int nom1 = t1.Length / 12;
-                                for(int yu=0;yu< nom1;yu++)
-                                { if(t1[yu,0][0]!=' ') {
-                                        hhn++; Array.Resize(ref hh, hhn); Array.Resize(ref mas1, hhn);
-                                        hh[hhn - 1] = t1[yu, 0]; mas1[hhn - 1] = yu;
-                                        TypeOfInstrument.Items.Add(t1[yu, 0]); }
-                                      }
-                                Array.Resize(ref mas1, hhn + 1); mas1[hhn] = nom1+1; TypeOfInstrument.Items.RemoveAt(hh.Length-1);
-                            } break;
-                        case 2:
-                            {
-                                int nom1 = t1.Length / 12;
-                                for (int yu = 0; yu < nom1; yu++)
-                                {
-                                    if (t1[yu, 0][0] != ' ')
-                                    {
-                                        hhn++; Array.Resize(ref hh, hhn); Array.Resize(ref mas1, hhn);
-                                        hh[hhn - 1] = t1[yu, 0];mas1[hhn - 1] = yu;
-                                        TypeOfInstrument.Items.Add(t1[yu, 0]); }
-                                }
-                                Array.Resize(ref mas1, hhn+1);mas1[hhn] = nom1+1;TypeOfInstrument.Items.RemoveAt(hh.Length-1);
-                            }
-                            break;
-                       case 0: { per_0 = true; break; }
-
-                          
-
-                    }
-                    try { TypeOfInstrument.SelectedIndex = 0;  } catch { }
-
-                    /* while(1<2)
-                     {
-                         try
-                         {
-                             if (Convert.ToUInt32(sid_per) == 1)
-                             { ik[nom1] = t1[0, nom1]; nom1++; }
-                             else
-                             {
-                                 if (Convert.ToUInt32(sid_per) == 2)
-                                 { ik[nom1] = t1[0, nom1]; nom1++; }
-                             }
-                         }
-
-                         catch { break; };
-
-                     }
-                     try{
-                     comboBox5.Items.AddRange(new string[] {t1[0,0],ik[1],ik[2]});}
-                     catch { }*/
-                }
-
-        }catch{}
-
-           
-            
+            try {
+                EventClickOfMouseOnTreeViewNode.clickOnTreeOperations(e, this);
+            }
+            catch { MessageBox.Show("Повреждены XML таблицы", "Ошибка"); }
         }
         
 
@@ -812,16 +729,11 @@ namespace WindowsFormsApplication8
 
         private void textBox5_TextChanged(object sender, EventArgs e)
         {
-
-          
-
-            // Для Ra 
             try
             {
-                if (SurfaceRoughnessRz.Text == "") { SurfaceRoughnessRz.Text = "0"; };
-                SurfaceRoughnessRa.Text = Convert.ToString((Convert.ToDouble(SurfaceRoughnessRz.Text)) / 4 * 1000);
+                SurfaceRoughnessRa.Text = ConversionRoughnessRzAndRa.stringRzToRa(SurfaceRoughnessRz.Text);
             }
-            catch { }
+            catch { SurfaceRoughnessRa.Text = ""; }
         }
 
         private void buttontext_Click(object sender, EventArgs e)
@@ -1153,19 +1065,11 @@ namespace WindowsFormsApplication8
 
         private void textRa_TextChanged(object sender, EventArgs e)
         {
-            
-            // Для Rz 
             try
             {
-                if (SurfaceRoughnessRa.Text == "")
-                {
-                    SurfaceRoughnessRa.Text = "0";
-                };
-                SurfaceRoughnessRz.Text = Convert.ToString((Convert.ToDouble(SurfaceRoughnessRa.Text)) * 4 / 1000);
+                SurfaceRoughnessRz.Text = ConversionRoughnessRzAndRa.stringRaToRz(SurfaceRoughnessRa.Text);
             }
-            catch { }
-
-          
+            catch { SurfaceRoughnessRz.Text = ""; }
         }
 
         private void button5_Click_1(object sender, EventArgs e)
@@ -1191,18 +1095,33 @@ namespace WindowsFormsApplication8
 
         private void textBox5_Click(object sender, EventArgs e)
        {
-             toolTip1.ToolTipIcon = ToolTipIcon.Warning;
-            toolTip1.IsBalloon = true;
-            toolTip1.ToolTipTitle = "Достигаемая шероховатость, Rz, мм";
-            toolTip1.SetToolTip(SurfaceRoughnessRz, "Интервал для данной операции: " + Convert.ToString(Rz_min) + "..." + Convert.ToString(Rz_max));
+            try {
+                Interval recommendedIntervalRz = StorageOfSelectedOperation.getParameters().getRecommendedIntervalRz();
+                string minRz = recommendedIntervalRz.getIntervalMinConvertToString();
+                string maxRz = recommendedIntervalRz.getIntervalMaxConvertToString();
+                toolTip1.ToolTipIcon = ToolTipIcon.Warning;
+                toolTip1.IsBalloon = true;
+                toolTip1.ToolTipTitle = "Достигаемая шероховатость, Rz, мм";
+                toolTip1.SetToolTip(SurfaceRoughnessRz, "Интервал для данной операции: " + Convert.ToString(minRz) + "..." + Convert.ToString(maxRz));
+            }
+            catch { }
+
         }
 
         private void textRa_Click(object sender, EventArgs e)
         {
-            toolTip1.ToolTipIcon = ToolTipIcon.Warning;
-            toolTip1.IsBalloon = true;
-            toolTip1.ToolTipTitle = "Достигаемая шероховатость, Ra, мкм";
-            toolTip1.SetToolTip(SurfaceRoughnessRa, "Интервал для данной операции: " + Convert.ToString(Ra_min) + "..." + Convert.ToString(Ra_max));
+            try
+            {
+                Interval recommendedIntervalRz = StorageOfSelectedOperation.getParameters().getRecommendedIntervalRz();
+                Interval recommendedIntervalRa = ConversionRoughnessRzAndRa.intervalRzToIntervalRa(recommendedIntervalRz);
+                string minRa = recommendedIntervalRa.getIntervalMinConvertToString();
+                string maxRa = recommendedIntervalRa.getIntervalMaxConvertToString();
+                toolTip1.ToolTipIcon = ToolTipIcon.Warning;
+                toolTip1.IsBalloon = true;
+                toolTip1.ToolTipTitle = "Достигаемая шероховатость, Ra, мкм";
+                toolTip1.SetToolTip(SurfaceRoughnessRa, "Интервал для данной операции: " + Convert.ToString(minRa) + "..." + Convert.ToString(maxRa));
+            }
+            catch { }
         }
     }
                

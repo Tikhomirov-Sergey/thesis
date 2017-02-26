@@ -584,21 +584,16 @@
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Button ChoiceOfOperation;
-        private System.Windows.Forms.TextBox ThicknessOfDefectiveCoating;
-        private System.Windows.Forms.TextBox Kvalitet;
         private System.Windows.Forms.Button ChoiceOfWorkpiece;
-        private System.Windows.Forms.TextBox PrecisionOfMachining;
         private System.Windows.Forms.TextBox NameOfWorkpiece;
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.Label Ra;
         private System.Windows.Forms.Label label12;
         private System.Windows.Forms.Button Backspace;
-        private System.Windows.Forms.TextBox CoefficientOfRefinement;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.TreeView TreeOfOperations;
         private System.Windows.Forms.Label label15;
-        private System.Windows.Forms.ComboBox TypeOfInstrument;
         private System.Windows.Forms.Button CalculationOfSchema;
         private System.Windows.Forms.RichTextBox richTextBox2;
         private System.Windows.Forms.Label label17;
@@ -625,6 +620,11 @@
         private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.Label label11;
         private System.Windows.Forms.TextBox Allowance;
+        public System.Windows.Forms.ComboBox TypeOfInstrument;
+        public System.Windows.Forms.TextBox ThicknessOfDefectiveCoating;
+        public System.Windows.Forms.TextBox Kvalitet;
+        public System.Windows.Forms.TextBox PrecisionOfMachining;
+        public System.Windows.Forms.TextBox CoefficientOfRefinement;
     }
 }
 

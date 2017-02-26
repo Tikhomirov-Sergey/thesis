@@ -5,7 +5,7 @@ using System.Text;
 
 namespace WindowsFormsApplication8
 {
-    class tables
+    class Tables
     {
         protected static InaccuracyOfPositioningPart inaccuracyOfPositioningPart = null;
 
@@ -14,7 +14,7 @@ namespace WindowsFormsApplication8
             if(inaccuracyOfPositioningPart == null)
             {
                 inaccuracyOfPositioningPart = new InaccuracyOfPositioningPart();
-                inaccuracyOfPositioningPart = (InaccuracyOfPositioningPart)XMLtoObject.inaccuracyOfPositioningPartFromXML(@"XMLFiles/InaccuracyOfPositioningPart.json", inaccuracyOfPositioningPart);
+                inaccuracyOfPositioningPart = (InaccuracyOfPositioningPart)XMLtoObject.inaccuracyOfPositioningPartFromXML(@"XMLFiles/InaccuracyOfPositioningPart.xml", inaccuracyOfPositioningPart);
             }
             return inaccuracyOfPositioningPart;
         }

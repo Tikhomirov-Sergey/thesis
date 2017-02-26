@@ -54,6 +54,7 @@
             this.TreeOfWorkpiece.ShowRootLines = false;
             this.TreeOfWorkpiece.Size = new System.Drawing.Size(483, 301);
             this.TreeOfWorkpiece.TabIndex = 0;
+            this.TreeOfWorkpiece.AfterSelect += new System.Windows.Forms.TreeViewEventHandler(this.TreeOfWorkpiece_AfterSelect);
             this.TreeOfWorkpiece.NodeMouseClick += new System.Windows.Forms.TreeNodeMouseClickEventHandler(this.treeView1_NodeMouseClick);
             // 
             // ChoiceOfWorkpiece
@@ -211,18 +212,18 @@
 
         private System.Windows.Forms.TreeView TreeOfWorkpiece;
         private System.Windows.Forms.Button ChoiceOfWorkpiece;
-        private System.Windows.Forms.TextBox SurfaceRoughnessRz;
-        private System.Windows.Forms.TextBox ThicknessOfDefectiveCoating;
-        private System.Windows.Forms.TextBox NameOfWorkpiece;
-        private System.Windows.Forms.TextBox Kvalitet;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.TextBox ValidOffsetSurface;
-        private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.TextBox SurfaceRoughnessRa;
+        public System.Windows.Forms.TextBox SurfaceRoughnessRz;
+        public System.Windows.Forms.TextBox ThicknessOfDefectiveCoating;
+        public System.Windows.Forms.TextBox NameOfWorkpiece;
+        public System.Windows.Forms.TextBox Kvalitet;
+        public System.Windows.Forms.TextBox ValidOffsetSurface;
+        public System.Windows.Forms.TextBox SurfaceRoughnessRa;
+        public System.Windows.Forms.Label label5;
+        public System.Windows.Forms.Label label6;
+        public System.Windows.Forms.Label label4;
     }
 }
