@@ -1,25 +1,20 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-
-namespace WindowsFormsApplication8
+﻿namespace WindowsFormsApplication8
 {
     class StorageOfSelectedOperation
     {
-        private static ParametersOperationFromTreeview parameters = null;
+        private static ParametersOperation parameters = null;
 
-        public static void setParameters(ParametersOperationFromTreeview parametersOperation)
+        public static void setParameters(ParametersOperation parametersOperation)
         {
             parameters = parametersOperation;
         }
 
-        public static ParametersOperationFromTreeview getParameters()
+        public static ParametersOperation getParameters()
         {
             return parameters;
         }
 
-        public static void insertParametersOfOperationsInTextboxes(Form1 form)
+        public static void insertParametersOfOperationsInTextboxes(MainForm form)
         {
             form.TypeOfMachining.Text = parameters.getTypeOfMachining();
             form.PrecisionOfMachining.Text = parameters.getPrecisionOfMachining();
@@ -28,6 +23,7 @@ namespace WindowsFormsApplication8
             form.Kvalitet.Text = parameters.getKvalitet();
             form.CoefficientOfRefinement.Text = parameters.getCoefficientOfRefinement();
 
+            form.TypeOfInstrument.Items.Clear();
             string[] ListInstruments = Tables.getInaccuracyOfPositioningPart().getListInstruments();
             form.TypeOfInstrument.Items.AddRange(ListInstruments);
             form.TypeOfInstrument.SelectedIndex = 0;

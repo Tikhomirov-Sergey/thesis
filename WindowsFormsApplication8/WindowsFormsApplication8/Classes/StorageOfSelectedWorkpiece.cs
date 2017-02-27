@@ -7,14 +7,19 @@ namespace WindowsFormsApplication8
 {
     class StorageOfSelectedWorkpiece
     {
-        private static ParametersWorkpieceFromTreeview parameters = null;
+        private static ParametersWorkpiece parameters = null;
 
-        public static void setParameters(ParametersWorkpieceFromTreeview parametersWorkpiece)
+        public static void setParameters(ParametersWorkpiece parametersWorkpiece)
         {
             parameters = parametersWorkpiece;
         }
 
-        public static void insertParametersOfOperationsInTextboxes(Form2 form)
+        public static ParametersWorkpiece getParameters()
+        {
+            return parameters;
+        }
+
+        public static void insertParametersOfOperationsInTextboxes(FormOfSelectWorkpiece form)
         {
             form.NameOfWorkpiece.Text = parameters.getNameOfWorkpiece();
             form.SurfaceRoughnessRz.Text = parameters.getSurfaceRoughnessRz();

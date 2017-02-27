@@ -1,14 +1,11 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
 using System.Windows.Forms;
 
 namespace WindowsFormsApplication8
 {
     class EventClickOfMouseOnTreeViewNode
     {
-        public static void clickOnTreeOperations(TreeNodeMouseClickEventArgs e, Form1 form)
+        public static void clickOnTreeOperations(TreeNodeMouseClickEventArgs e, MainForm form)
         {
             int level;
             level = e.Node.Level;
@@ -19,25 +16,25 @@ namespace WindowsFormsApplication8
             }
             if(level == 2)
             {
-                ParametersOperationFromTreeview parameters = extractionOfParametersOfOperations(e);
+                ParametersOperation parameters = extractionOfParametersOfOperations(e);
                 StorageOfSelectedOperation.setParameters(parameters);
                 StorageOfSelectedOperation.insertParametersOfOperationsInTextboxes(form);
             }
          }
 
-        public static void clickOnTreeWorkpiece(TreeNodeMouseClickEventArgs e, Form2 form)
+        public static void clickOnTreeWorkpiece(TreeNodeMouseClickEventArgs e, FormOfSelectWorkpiece form)
         {
             int level;
             level = e.Node.Level;
 
             if (level == 1)
             {
-                ParametersWorkpieceFromTreeview parameters = extractionOfParametersOfWorkpiece(e);
+                ParametersWorkpiece parameters = extractionOfParametersOfWorkpiece(e);
                 StorageOfSelectedWorkpiece.setParameters(parameters);
                 StorageOfSelectedWorkpiece.insertParametersOfOperationsInTextboxes(form);
             }
         }
-        private static ParametersWorkpieceFromTreeview extractionOfParametersOfWorkpiece(TreeNodeMouseClickEventArgs e)
+        private static ParametersWorkpiece extractionOfParametersOfWorkpiece(TreeNodeMouseClickEventArgs e)
         {
             TreeNode node = e.Node;
 
@@ -54,11 +51,11 @@ namespace WindowsFormsApplication8
             string[] splitStringRecommendedIntervalRz = parseStringRecommendedIntervalRz(stringRecommendedIntervalRz);
             Interval recommendedIntervalRz = createIntervalRz(splitStringRecommendedIntervalRz);
 
-            ParametersWorkpieceFromTreeview parameters = new ParametersWorkpieceFromTreeview(nameOfWorkpiece, idWorkpiece, surfaceRoughnessRz, recommendedIntervalRz, kvalitet, thicknessOfDefectiveCoating);
+            ParametersWorkpiece parameters = new ParametersWorkpiece(nameOfWorkpiece, idWorkpiece, surfaceRoughnessRz, recommendedIntervalRz, kvalitet, thicknessOfDefectiveCoating);
             return parameters;
         }
 
-        private static ParametersOperationFromTreeview extractionOfParametersOfOperations(TreeNodeMouseClickEventArgs e)
+        private static ParametersOperation extractionOfParametersOfOperations(TreeNodeMouseClickEventArgs e)
         {
             TreeNode node = e.Node;
 
@@ -77,7 +74,7 @@ namespace WindowsFormsApplication8
             string[] splitStringRecommendedIntervalRz = parseStringRecommendedIntervalRz(stringRecommendedIntervalRz);
             Interval recommendedIntervalRz = createIntervalRz(splitStringRecommendedIntervalRz);
 
-            ParametersOperationFromTreeview parameters = new ParametersOperationFromTreeview(typeOfMachining, precisionOfMachining, surfaceRoughnessRz, recommendedIntervalRz, idOperation, kvalitet, thicknessOfDefectiveCoating, coefficientOfRefinement);
+            ParametersOperation parameters = new ParametersOperation(typeOfMachining, precisionOfMachining, surfaceRoughnessRz, recommendedIntervalRz, idOperation, kvalitet, thicknessOfDefectiveCoating, coefficientOfRefinement);
             return parameters;
         }
 

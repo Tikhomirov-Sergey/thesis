@@ -1,6 +1,6 @@
 ﻿namespace WindowsFormsApplication8
 {
-    partial class Form2
+    partial class FormOfSelectWorkpiece
     {
         /// <summary>
         /// Required designer variable.

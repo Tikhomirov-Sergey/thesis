@@ -14,7 +14,7 @@ namespace WindowsFormsApplication8
 {
     public partial class Form3 : Form
     {
-        Form1 lo;
+        MainForm lo;
         Bitmap bitmap;
         new int i;
         new int dlina;   /// переменная для расчета масштаба

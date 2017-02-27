@@ -10,10 +10,10 @@ using System.Xml;
 
 namespace WindowsFormsApplication8
 {
-    public partial class Form2 : Form
+    public partial class FormOfSelectWorkpiece : Form
     {
         string h; double Ra_min, Ra_max; string l;
-        public Form2()
+        public FormOfSelectWorkpiece()
         {
             InitializeComponent();
         }
@@ -37,7 +37,11 @@ namespace WindowsFormsApplication8
         
         private void button1_Click(object sender, EventArgs e)
         {
-            
+            try {
+                FormSelectWorkpriece.EventClickOnButtonOfSelectWorkpriece.buttonSelectWorkpriece(this);
+            }
+            catch { }
+
             h = NameOfWorkpiece.Text + "|" + SurfaceRoughnessRz.Text + "|" + ThicknessOfDefectiveCoating.Text + "|" + Kvalitet.Text+"|"+l+"|"+Convert.ToString(ValidOffsetSurface.Text);
             Close();
         }

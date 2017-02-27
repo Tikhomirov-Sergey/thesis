@@ -1,6 +1,6 @@
 ﻿namespace WindowsFormsApplication8
 {
-    partial class Form1
+    partial class MainForm
     {
         /// <summary>
         /// Требуется переменная конструктора.
@@ -29,7 +29,7 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MainForm));
             this.label1 = new System.Windows.Forms.Label();
             this.DiameterOfPart = new System.Windows.Forms.TextBox();
             this.TypeOfPart = new System.Windows.Forms.ComboBox();
@@ -516,7 +516,7 @@
             this.Allowance.TextChanged += new System.EventHandler(this.textBox3_TextChanged);
             this.Allowance.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.KeyPressForTextBoxWithDouble);
             // 
-            // Form1
+            // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -565,7 +565,7 @@
             this.Controls.Add(this.DiameterOfPart);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.menuStrip1);
-            this.Name = "Form1";
+            this.Name = "MainForm";
             this.Text = "Расчёт размерной цепи v1.0";
             this.Load += new System.EventHandler(this.Form1_Load);
             this.menuStrip1.ResumeLayout(false);
@@ -583,22 +583,15 @@
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.Button ChoiceOfOperation;
         private System.Windows.Forms.Button ChoiceOfWorkpiece;
-        private System.Windows.Forms.TextBox NameOfWorkpiece;
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.Label Ra;
         private System.Windows.Forms.Label label12;
-        private System.Windows.Forms.Button Backspace;
         private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.TreeView TreeOfOperations;
         private System.Windows.Forms.Label label15;
-        private System.Windows.Forms.Button CalculationOfSchema;
-        private System.Windows.Forms.RichTextBox richTextBox2;
         private System.Windows.Forms.Label label17;
         private System.Windows.Forms.TextBox HoleDepth;
-        private System.Windows.Forms.Button buttontext;
         private System.Windows.Forms.RichTextBox richTextBoxtoForm2;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
@@ -625,6 +618,13 @@
         public System.Windows.Forms.TextBox Kvalitet;
         public System.Windows.Forms.TextBox PrecisionOfMachining;
         public System.Windows.Forms.TextBox CoefficientOfRefinement;
+        public System.Windows.Forms.TextBox NameOfWorkpiece;
+        public System.Windows.Forms.TreeView TreeOfOperations;
+        public System.Windows.Forms.RichTextBox richTextBox2;
+        public System.Windows.Forms.Button CalculationOfSchema;
+        public System.Windows.Forms.Button buttontext;
+        public System.Windows.Forms.Button ChoiceOfOperation;
+        public System.Windows.Forms.Button Backspace;
     }
 }
 

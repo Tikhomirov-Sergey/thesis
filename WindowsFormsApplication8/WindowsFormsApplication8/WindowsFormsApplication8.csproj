@@ -69,30 +69,35 @@
     <Compile Include="Classes\AuxiliaryСlasses\ConversionRoughnessRzAndRa.cs" />
     <Compile Include="Classes\AuxiliaryСlasses\Interval.cs" />
     <Compile Include="Classes\CheckString.cs" />
+    <Compile Include="Classes\Events\FormSelectWorkpriece\EventClickOnButtonOfSelectWorkpriece.cs" />
+    <Compile Include="Classes\Events\MainForm\EventClickOnButtonOfSelectOperations.cs" />
     <Compile Include="Classes\Events\EventClickOfMouseOnTreeViewNode.cs" />
+    <Compile Include="Classes\Events\MainForm\EventClickOnButtonOfSelectWorkpriece.cs" />
     <Compile Include="Classes\Events\EventKeyPressForTextBox.cs" />
     <Compile Include="Classes\StorageOfSelectedOperation.cs" />
     <Compile Include="Classes\StorageOfSelectedWorkpiece.cs" />
     <Compile Include="Classes\XMLClasses\XMLtoObject.cs" />
     <Compile Include="Classes\XMLClasses\XMLtoTreeView.cs" />
-    <Compile Include="DataStructures\ExtractParametersFromTreeview\ParametersWorkpieceFromTreeview.cs" />
-    <Compile Include="DataStructures\ExtractParametersFromTreeview\ParametersOperationFromTreeview.cs" />
+    <Compile Include="DataStructures\StorageParameters\Surfaces.cs" />
+    <Compile Include="DataStructures\StorageParameters\ParametersWorkpiece.cs" />
+    <Compile Include="DataStructures\StorageParameters\ParametersOperation.cs" />
+    <Compile Include="DataStructures\StorageParameters\Operations.cs" />
     <Compile Include="DataStructures\Tables.cs" />
     <Compile Include="DataStructures\InaccuracyOfPositioningPart\InaccuracyOfPositioningPart.cs" />
     <Compile Include="DataStructures\InaccuracyOfPositioningPart\Instrument.cs" />
     <Compile Include="DataStructures\InaccuracyOfPositioningPart\Surface.cs" />
     <Compile Include="DataStructures\InaccuracyOfPositioningPart\IntervalOfInaccuracy.cs" />
-    <Compile Include="Form1.cs">
+    <Compile Include="MainForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form1.Designer.cs">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <Compile Include="MainForm.Designer.cs">
+      <DependentUpon>MainForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="Form2.cs">
+    <Compile Include="FormOfSelectWorkpiece.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form2.Designer.cs">
-      <DependentUpon>Form2.cs</DependentUpon>
+    <Compile Include="FormOfSelectWorkpiece.Designer.cs">
+      <DependentUpon>FormOfSelectWorkpiece.cs</DependentUpon>
     </Compile>
     <Compile Include="Form3.cs">
       <SubType>Form</SubType>
@@ -123,11 +128,11 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="Form1.resx">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <EmbeddedResource Include="MainForm.resx">
+      <DependentUpon>MainForm.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Form2.resx">
-      <DependentUpon>Form2.cs</DependentUpon>
+    <EmbeddedResource Include="FormOfSelectWorkpiece.resx">
+      <DependentUpon>FormOfSelectWorkpiece.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Form3.resx">
       <DependentUpon>Form3.cs</DependentUpon>

@@ -5,7 +5,7 @@ using System.Text;
 
 namespace WindowsFormsApplication8
 {
-    class ParametersOperationFromTreeview
+    class ParametersOperation
     {
         private string typeOfMachining = "";
         private string precisionOfMachining = "";
@@ -15,8 +15,9 @@ namespace WindowsFormsApplication8
         private string kvalitet = "";
         private string thicknessOfDefectiveCoating = "";
         private string coefficientOfRefinement = "";
+        private string typeOfInstrument = "";
 
-        public ParametersOperationFromTreeview(string typeOfMachining, string precisionOfMachining, string surfaceRoughnessRz,
+        public ParametersOperation(string typeOfMachining, string precisionOfMachining, string surfaceRoughnessRz,
             Interval recommendedIntervalRz, string idOperation, string kvalitet, string thicknessOfDefectiveCoating, string coefficientOfRefinement)
         {
             this.typeOfMachining = typeOfMachining;
@@ -27,6 +28,12 @@ namespace WindowsFormsApplication8
             this.kvalitet = kvalitet;
             this.thicknessOfDefectiveCoating = thicknessOfDefectiveCoating;
             this.coefficientOfRefinement = coefficientOfRefinement;
+        }
+
+        public string getNameOperation()
+        {
+            string nameOperation = this.typeOfMachining + "(" + this.precisionOfMachining + " , " + this.typeOfInstrument + ")";
+            return nameOperation;
         }
 
         public void setTypeOfMachining(string typeOfMachining)
@@ -99,6 +106,16 @@ namespace WindowsFormsApplication8
         public string getCoefficientOfRefinement()
         {
             return this.coefficientOfRefinement;
+        }
+
+        public void setTypeOfInstrument(string typeOfInstrument)
+        {
+            this.typeOfInstrument = typeOfInstrument;
+        }
+
+        public string getTypeOfInstrument()
+        {
+            return this.typeOfInstrument;
         }
     }
 }

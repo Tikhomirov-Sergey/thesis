@@ -507,8 +507,6 @@ G:\Программирование\thesis\WindowsFormsApplication8\WindowsForms
 G:\Программирование\thesis\WindowsFormsApplication8\WindowsFormsApplication8\bin\Debug\WindowsFormsApplication8.exe
 G:\Программирование\thesis\WindowsFormsApplication8\WindowsFormsApplication8\bin\Debug\WindowsFormsApplication8.pdb
 G:\Программирование\thesis\WindowsFormsApplication8\WindowsFormsApplication8\obj\x86\Debug\WindowsFormsApplication8.csprojResolveAssemblyReference.cache
-G:\Программирование\thesis\WindowsFormsApplication8\WindowsFormsApplication8\obj\x86\Debug\WindowsFormsApplication8.Form1.resources
-G:\Программирование\thesis\WindowsFormsApplication8\WindowsFormsApplication8\obj\x86\Debug\WindowsFormsApplication8.Form2.resources
 G:\Программирование\thesis\WindowsFormsApplication8\WindowsFormsApplication8\obj\x86\Debug\WindowsFormsApplication8.Form3.resources
 G:\Программирование\thesis\WindowsFormsApplication8\WindowsFormsApplication8\obj\x86\Debug\WindowsFormsApplication8.Form4.resources
 G:\Программирование\thesis\WindowsFormsApplication8\WindowsFormsApplication8\obj\x86\Debug\WindowsFormsApplication8.Form5.resources
@@ -516,3 +514,5 @@ G:\Программирование\thesis\WindowsFormsApplication8\WindowsForms
 G:\Программирование\thesis\WindowsFormsApplication8\WindowsFormsApplication8\obj\x86\Debug\WindowsFormsApplication8.csproj.GenerateResource.Cache
 g:\Программирование\thesis\WindowsFormsApplication8\WindowsFormsApplication8\bin\Debug\Newtonsoft.Json.dll
 g:\Программирование\thesis\WindowsFormsApplication8\WindowsFormsApplication8\bin\Debug\Newtonsoft.Json.xml
+g:\Программирование\thesis\WindowsFormsApplication8\WindowsFormsApplication8\obj\x86\Debug\WindowsFormsApplication8.MainForm.resources
+g:\Программирование\thesis\WindowsFormsApplication8\WindowsFormsApplication8\obj\x86\Debug\WindowsFormsApplication8.FormOfSelectWorkpiece.resources

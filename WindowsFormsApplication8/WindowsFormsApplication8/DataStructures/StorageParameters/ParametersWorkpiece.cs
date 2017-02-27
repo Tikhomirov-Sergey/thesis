@@ -5,7 +5,7 @@ using System.Text;
 
 namespace WindowsFormsApplication8
 {
-    class ParametersWorkpieceFromTreeview
+    class ParametersWorkpiece
     {
         private string nameOfWorkpiece ="";
         private string idWorkpiece = "";
@@ -15,7 +15,7 @@ namespace WindowsFormsApplication8
         private string thicknessOfDefectiveCoating = "";
         private double validOffsetSurface = 0;
         
-        public ParametersWorkpieceFromTreeview(string nameOfWorkpiece, string idWorkpiece, string surfaceRoughnessRz,
+        public ParametersWorkpiece(string nameOfWorkpiece, string idWorkpiece, string surfaceRoughnessRz,
             Interval recommendedIntervalRz, string kvalitet, string thicknessOfDefectiveCoating, double validOffsetSurface = 0)
         {
             this.nameOfWorkpiece = nameOfWorkpiece;

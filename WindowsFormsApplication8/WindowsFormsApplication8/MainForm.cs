@@ -13,10 +13,10 @@ using System.Xml.Serialization;
 
 namespace WindowsFormsApplication8
 {
-    public partial class Form1 : Form
+    public partial class MainForm : Form
     {
       
-        Form2 f = new Form2(); Form4 z = new Form4("");//Form5 z = new Form5();
+        FormOfSelectWorkpiece f = new FormOfSelectWorkpiece(); Form4 z = new Form4("");//Form5 z = new Form5();
         
         int tip; int i = 1; int level;bool per_0 = false;string[] split_data; string[] split_data1,split_data2; string[] per = new string[1];
         double[] Rz = new double[1]; double[] h = new double[1]; double[] T = new double[1]; double[] K = new double[1];int[] E1 = new int[1]; 
@@ -93,13 +93,17 @@ namespace WindowsFormsApplication8
                                   {  11*0.001, 15*0.001,22*0.001,30*0.001,41*0.001,57*0.001,77*0.001,110*0.001,175*0.001,280*0.001,440*0.001,700*0.001,1100*0.001,1.75,2.80,4.40,7.00,11.00,17.50,28.00 },
                                   {   13*0.001, 18*0.001,26*0.001,36*0.001,50*0.001,69*0.001,93*0.001,135*0.001,210*0.001,330*0.001,540*0.001,860*0.001,1350*0.001,2.10,3.30,5.40,8.60,13.50,21.00,33.00 }};
             
-        public Form1()
+        public MainForm()
            {
             InitializeComponent();
+
             TypeOfPart.Items.AddRange(new string[] { "вал", "отверстие" });
             TypeOfProcessedSurface.Items.AddRange(new string[] { "цилиндрическая", "плоская" });
             TypeOfAllowance.Items.AddRange(new string[] { "двухсторонний", "односторонний" });
-            TypeOfPart.SelectedIndex = 0; TypeOfProcessedSurface.SelectedIndex = 0; TypeOfAllowance.SelectedIndex = 0;
+
+            TypeOfPart.SelectedIndex = 0;
+            TypeOfProcessedSurface.SelectedIndex = 0;
+            TypeOfAllowance.SelectedIndex = 0;
             HoleDepth.Text = "0";
           }
 
@@ -116,101 +120,10 @@ namespace WindowsFormsApplication8
 
         private void button1_Click(object sender, EventArgs e)
         {
-            try
-               {
-                    bool pribor = true;
-                    if (level == 2)
-                    {
-                        i++;
-                        Array.Resize(ref Rz, i); Array.Resize(ref h, i); Array.Resize(ref T, i); Array.Resize(ref CombInd, i); Array.Resize(ref K, i); Array.Resize(ref E1, i); Array.Resize(ref E, i); Array.Resize(ref prib, i); Array.Resize(ref per, i); Array.Resize(ref id, i); Array.Resize(ref id_per, i);
-                        id[i - 1] = sid[0]; Array.Resize(ref Epr, i);
-                        id_per[i - 1] = Convert.ToInt32(sid_per);
-                        per[i - 1] = Convert.ToString(i - 1) + " - " + TypeOfMachining.Text + "(" + PrecisionOfMachining.Text + "," + TypeOfInstrument.Text + ")";
-                        Rz[i - 1] = Convert.ToDouble(SurfaceRoughnessRz.Text);
-                        h[i - 1] = Convert.ToDouble(ThicknessOfDefectiveCoating.Text);
-                        T[i - 1] = Convert.ToDouble(Kvalitet.Text);
-                        K[i - 1] = Convert.ToDouble(CoefficientOfRefinement.Text);
-                        richTextBox1.Text = richTextBox1.Text + "," + "\n" + per[i - 1];
-                        l = l + "," + "\r\n" + per[i - 1];
-                    // textBox1.Text = Convert.ToString(t1[0, 0].Equals(comboBox5.Text));
-                    
-
-                        CombInd[i-1] = TypeOfInstrument.SelectedIndex;
-                        int hh_dlin = hh.Length; int vid_pr = 0; 
-                        if (id_per[i - 1] == 0)
-                        { prib[i - 1] = " "; }
-                        else
-                        {
-                            prib[i - 1] = TypeOfInstrument.Text;
-                            try { if (prib[i - 2].Contains(prib[i - 1])) { pribor = false; } else { pribor = true; } }
-                            catch { }
-                        }
-                        if (TypeOfInstrument.Text == "не выбрано") { prib[i - 1] = prib[i - 2]; }
-                       if (pribor)
-                        {
-                            switch (Convert.ToInt32(id_per[i - 1]))
-                            {
-                                case 1:
-                                    {
-
-                                        for (int nom1 = mas1[TypeOfInstrument.SelectedIndex]; nom1 < mas1[TypeOfInstrument.SelectedIndex + 1]; nom1++)
-                                        {
-                                            hh_dlin = t1[nom1, 1].Length;
-                                            for (int nom2 = 0; nom2 < hh_dlin; nom2++)
-                                            {
-                                                if (t1[nom1, 1][nom2].Equals(id[i - 2]))
-                                                {
-                                                    // richTextBox1.Text = richTextBox1.Text + Convert.ToString(nom1) + "-" + Convert.ToString(id[i - 2]) + "-" + Convert.ToString(nom2) + "-" + t1[nom1, 1][nom2] + "\n";
-                                                    E1[i-1] = nom1;Epr[i-1] = true;
-                                                }
-                                            }
-                                        }
-                                       /* for (int nom1 = 0; nom1 < 10; nom1++)
-                                        {
-                                            if ((t1_diam[0, nom1] <= Convert.ToDouble(perd)) && (t1_diam[1, nom1] > Convert.ToDouble(perd)))
-                                            {
-                                                E[i - 1] = Convert.ToDouble(t1[E1[i-1], nom1 + 2]);
-                                                //textBox10.Text = Convert.ToString(E[i - 1]) + Convert.ToString(E1) + "-" + Convert.ToString(nom1 + 2);
-                                            }
-                                        }*/
-                                        break;
-                                    }
-
-                                case 2:
-                                    {
-                                        for (int nom1 = mas1[TypeOfInstrument.SelectedIndex]; nom1 < mas1[TypeOfInstrument.SelectedIndex + 1]; nom1++)
-                                        {
-                                            hh_dlin = t1[nom1, 1].Length;
-                                            for (int nom2 = 0; nom2 < hh_dlin; nom2++)
-                                            {
-                                                if (t1[nom1, 1][nom2].Equals(id[i - 2]))
-                                                {
-                                                    //richTextBox1.Text = richTextBox1.Text + Convert.ToString(nom1) + "-" + Convert.ToString(id[i - 2]) + "-" + Convert.ToString(nom2) + "-" + t2[nom1, 1][nom2] + "\n";
-                                                    E1[i-1] = nom1; Epr[i-1] = true;
-                                                }
-                                            }
-                                        }
-                                       /* for (int nom1 = 0; nom1 < 10; nom1++)
-                                        {
-                                            if ((t1_diam[0, nom1] <= Convert.ToDouble(perd)) && (t1_diam[1, nom1] > Convert.ToDouble(perd)))
-                                            {
-                                                E[i - 1] = Convert.ToDouble(t1[E1[i-1], nom1 + 2]);
-                                                //textBox10.Text = Convert.ToString(E[i - 1]) + Convert.ToString(E1) + "-" + Convert.ToString(nom1 + 2);
-                                            }
-                                        }*/
-                                        break;
-                                    }
-                                case 0: { E[i - 1] = 0;Epr[i - 1] = false; break; }
-                            }
-                        }
-                        else { E[i - 1] = 0;Epr[i - 1] = false; }
-
-
-
-
-                    }
-                }
-                catch { }
+            try {
+                EventClickOnButtonOfSelectOperationsOrWorkpiece.buttonOfSelectOperations(e, this);
+            }
+            catch { }
             
         }
 
@@ -241,21 +154,8 @@ namespace WindowsFormsApplication8
                 string j = f.Data;
 
                 split_data = j.Split(new Char[] { '|' });
-                this.NameOfWorkpiece.Text = split_data[0];
-               
-                TreeOfOperations.Enabled = true;
-                richTextBox1.Enabled = true;
-                SurfaceRoughnessRz.Enabled = true;
-                SurfaceRoughnessRa.Enabled = true;
-               
-                PrecisionOfMachining.Enabled = true;
-                TypeOfMachining.Enabled = true;
-                ChoiceOfOperation.Enabled = true;
-                Backspace.Enabled = true;
-                CalculationOfSchema.Enabled = true;
-                TypeOfInstrument.Enabled = true;
-                richTextBox2.Enabled = true;
-                buttontext.Enabled = true;
+                // this.NameOfWorkpiece.Text = split_data[0];
+                EventClickOnButtonOfSelectWorkpriece.buttonSelectWorkpriece(this);
                 per[0] = "0 - " + split_data[0];
                 richTextBox1.Text = per[0]+"";
                 i = 1;
