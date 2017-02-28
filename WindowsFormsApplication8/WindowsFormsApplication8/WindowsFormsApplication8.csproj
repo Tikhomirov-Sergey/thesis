@@ -82,6 +82,11 @@
     <Compile Include="DataStructures\StorageParameters\ParametersWorkpiece.cs" />
     <Compile Include="DataStructures\StorageParameters\ParametersOperation.cs" />
     <Compile Include="DataStructures\StorageParameters\Operations.cs" />
+    <Compile Include="DataStructures\TableOfTolerancesAndFits\Interval.cs" />
+    <Compile Include="DataStructures\TableOfTolerancesAndFits\Kvalitet.cs" />
+    <Compile Include="DataStructures\TableOfTolerancesAndFits\Kvalitets.cs" />
+    <Compile Include="DataStructures\TableOfTolerancesAndFits\NominalSizeRangeAndTolerance.cs" />
+    <Compile Include="DataStructures\TableOfTolerancesAndFits\TableOfTolerancesAndFits.cs" />
     <Compile Include="DataStructures\Tables.cs" />
     <Compile Include="DataStructures\InaccuracyOfPositioningPart\InaccuracyOfPositioningPart.cs" />
     <Compile Include="DataStructures\InaccuracyOfPositioningPart\Instrument.cs" />

@@ -7,7 +7,7 @@ namespace WindowsFormsApplication8
 {
     public class InaccuracyOfPositioningPart
     {
-        public Instrument[] instruments { get; set; }
+        public DataStuctures.InaccuracyOfPositioningPart.Instrument[] instruments { get; set; }
 
 
         public string[] getListInstruments()

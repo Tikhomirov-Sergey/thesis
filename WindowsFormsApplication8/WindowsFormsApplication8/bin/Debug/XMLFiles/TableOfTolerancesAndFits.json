@@ -1,0 +1,2586 @@
+{
+    "kvalitets":[
+        {
+        "kvalitet": 0.1,
+        "nominalSizeRangeAndTolerance": [{
+            "nominalSizeRang": {
+                "min": 0,
+                "max": 3
+            },
+            "tolerance": 0.0003
+		}, {
+            "nominalSizeRang": {
+                "min": 3,
+                "max": 6
+            },
+            "tolerance": 0.0004
+		}, {
+            "nominalSizeRang": {
+                "min": 6,
+                "max": 10
+            },
+            "tolerance": 0.0004
+		}, {
+            "nominalSizeRang": {
+                "min": 10,
+                "max": 18
+            },
+            "tolerance": 0.0005
+		}, {
+            "nominalSizeRang": {
+                "min": 18,
+                "max": 30
+            },
+            "tolerance": 0.0006
+		}, {
+            "nominalSizeRang": {
+                "min": 30,
+                "max": 50
+            },
+            "tolerance": 0.0006
+		}, {
+            "nominalSizeRang": {
+                "min": 50,
+                "max": 80
+            },
+            "tolerance": 0.0008
+		}, {
+            "nominalSizeRang": {
+                "min": 80,
+                "max": 120
+            },
+            "tolerance": 0.001
+		}, {
+            "nominalSizeRang": {
+                "min": 120,
+                "max": 180
+            },
+            "tolerance": 0.0012
+		}, {
+            "nominalSizeRang": {
+                "min": 180,
+                "max": 250
+            },
+            "tolerance": 0.002
+		}, {
+            "nominalSizeRang": {
+                "min": 250,
+                "max": 315
+            },
+            "tolerance": 0.0025
+		}, {
+            "nominalSizeRang": {
+                "min": 315,
+                "max": 400
+            },
+            "tolerance": 0.003
+		}, {
+            "nominalSizeRang": {
+                "min": 400,
+                "max": 500
+            },
+            "tolerance": 0.004
+		}, {
+            "nominalSizeRang": {
+                "min": 500,
+                "max": 630
+            },
+            "tolerance": 0.0045
+		}, {
+            "nominalSizeRang": {
+                "min": 630,
+                "max": 800
+            },
+            "tolerance": 0.005
+		}, {
+            "nominalSizeRang": {
+                "min": 800,
+                "max": 1000
+            },
+            "tolerance": 0.0055
+		}, {
+            "nominalSizeRang": {
+                "min": 1000,
+                "max": 1250
+            },
+            "tolerance": 0.0065
+		}, {
+            "nominalSizeRang": {
+                "min": 1250,
+                "max": 1600
+            },
+            "tolerance": 0.008
+		}, {
+            "nominalSizeRang": {
+                "min": 1600,
+                "max": 2000
+            },
+            "tolerance": 0.009
+		}, {
+            "nominalSizeRang": {
+                "min": 2000,
+                "max": 2500
+            },
+            "tolerance": 0.011
+		}, {
+            "nominalSizeRang": {
+                "min": 2500,
+                "max": 3150
+            },
+            "tolerance": 0.013
+		}]
+	}, {
+        "kvalitet": 0,
+        "nominalSizeRangeAndTolerance": [{
+            "nominalSizeRang": {
+                "min": 0,
+                "max": 3
+            },
+            "tolerance": 0.0005
+		}, {
+            "nominalSizeRang": {
+                "min": 3,
+                "max": 6
+            },
+            "tolerance": 0.0006
+		}, {
+            "nominalSizeRang": {
+                "min": 6,
+                "max": 10
+            },
+            "tolerance": 0.0006
+		}, {
+            "nominalSizeRang": {
+                "min": 10,
+                "max": 18
+            },
+            "tolerance": 0.0008
+		}, {
+            "nominalSizeRang": {
+                "min": 18,
+                "max": 30
+            },
+            "tolerance": 0.001
+		}, {
+            "nominalSizeRang": {
+                "min": 30,
+                "max": 50
+            },
+            "tolerance": 0.001
+		}, {
+            "nominalSizeRang": {
+                "min": 50,
+                "max": 80
+            },
+            "tolerance": 0.0012
+		}, {
+            "nominalSizeRang": {
+                "min": 80,
+                "max": 120
+            },
+            "tolerance": 0.0015
+		}, {
+            "nominalSizeRang": {
+                "min": 120,
+                "max": 180
+            },
+            "tolerance": 0.002
+		}, {
+            "nominalSizeRang": {
+                "min": 180,
+                "max": 250
+            },
+            "tolerance": 0.003
+		}, {
+            "nominalSizeRang": {
+                "min": 250,
+                "max": 315
+            },
+            "tolerance": 0.004
+		}, {
+            "nominalSizeRang": {
+                "min": 315,
+                "max": 400
+            },
+            "tolerance": 0.005
+		}, {
+            "nominalSizeRang": {
+                "min": 400,
+                "max": 500
+            },
+            "tolerance": 0.006
+		}, {
+            "nominalSizeRang": {
+                "min": 500,
+                "max": 630
+            },
+            "tolerance": 0.006
+		}, {
+            "nominalSizeRang": {
+                "min": 630,
+                "max": 800
+            },
+            "tolerance": 0.007
+		}, {
+            "nominalSizeRang": {
+                "min": 800,
+                "max": 1000
+            },
+            "tolerance": 0.008
+		}, {
+            "nominalSizeRang": {
+                "min": 1000,
+                "max": 1250
+            },
+            "tolerance": 0.009
+		}, {
+            "nominalSizeRang": {
+                "min": 1250,
+                "max": 1600
+            },
+            "tolerance": 0.011
+		}, {
+            "nominalSizeRang": {
+                "min": 1600,
+                "max": 2000
+            },
+            "tolerance": 0.013
+		}, {
+            "nominalSizeRang": {
+                "min": 2000,
+                "max": 2500
+            },
+            "tolerance": 0.015
+		}, {
+            "nominalSizeRang": {
+                "min": 2500,
+                "max": 3150
+            },
+            "tolerance": 0.018
+		}]
+	}, {
+        "kvalitet": 1,
+        "nominalSizeRangeAndTolerance": [{
+            "nominalSizeRang": {
+                "min": 0,
+                "max": 3
+            },
+            "tolerance": 0.0008
+		}, {
+            "nominalSizeRang": {
+                "min": 3,
+                "max": 6
+            },
+            "tolerance": 0.001
+		}, {
+            "nominalSizeRang": {
+                "min": 6,
+                "max": 10
+            },
+            "tolerance": 0.001
+		}, {
+            "nominalSizeRang": {
+                "min": 10,
+                "max": 18
+            },
+            "tolerance": 0.0012
+		}, {
+            "nominalSizeRang": {
+                "min": 18,
+                "max": 30
+            },
+            "tolerance": 0.0015
+		}, {
+            "nominalSizeRang": {
+                "min": 30,
+                "max": 50
+            },
+            "tolerance": 0.0015
+		}, {
+            "nominalSizeRang": {
+                "min": 50,
+                "max": 80
+            },
+            "tolerance": 0.002
+		}, {
+            "nominalSizeRang": {
+                "min": 80,
+                "max": 120
+            },
+            "tolerance": 0.0025
+		}, {
+            "nominalSizeRang": {
+                "min": 120,
+                "max": 180
+            },
+            "tolerance": 0.0035
+		}, {
+            "nominalSizeRang": {
+                "min": 180,
+                "max": 250
+            },
+            "tolerance": 0.0045
+		}, {
+            "nominalSizeRang": {
+                "min": 250,
+                "max": 315
+            },
+            "tolerance": 0.006
+		}, {
+            "nominalSizeRang": {
+                "min": 315,
+                "max": 400
+            },
+            "tolerance": 0.007
+		}, {
+            "nominalSizeRang": {
+                "min": 400,
+                "max": 500
+            },
+            "tolerance": 0.008
+		}, {
+            "nominalSizeRang": {
+                "min": 500,
+                "max": 630
+            },
+            "tolerance": 0.009
+		}, {
+            "nominalSizeRang": {
+                "min": 630,
+                "max": 800
+            },
+            "tolerance": 0.01
+		}, {
+            "nominalSizeRang": {
+                "min": 800,
+                "max": 1000
+            },
+            "tolerance": 0.011
+		}, {
+            "nominalSizeRang": {
+                "min": 1000,
+                "max": 1250
+            },
+            "tolerance": 0.013
+		}, {
+            "nominalSizeRang": {
+                "min": 1250,
+                "max": 1600
+            },
+            "tolerance": 0.015
+		}, {
+            "nominalSizeRang": {
+                "min": 1600,
+                "max": 2000
+            },
+            "tolerance": 0.018
+		}, {
+            "nominalSizeRang": {
+                "min": 2000,
+                "max": 2500
+            },
+            "tolerance": 0.022
+		}, {
+            "nominalSizeRang": {
+                "min": 2500,
+                "max": 3150
+            },
+            "tolerance": 0.026
+		}]
+	}, {
+        "kvalitet": 2,
+        "nominalSizeRangeAndTolerance": [{
+            "nominalSizeRang": {
+                "min": 0,
+                "max": 3
+            },
+            "tolerance": 0.0012
+		}, {
+            "nominalSizeRang": {
+                "min": 3,
+                "max": 6
+            },
+            "tolerance": 0.0015
+		}, {
+            "nominalSizeRang": {
+                "min": 6,
+                "max": 10
+            },
+            "tolerance": 0.0015
+		}, {
+            "nominalSizeRang": {
+                "min": 10,
+                "max": 18
+            },
+            "tolerance": 0.002
+		}, {
+            "nominalSizeRang": {
+                "min": 18,
+                "max": 30
+            },
+            "tolerance": 0.0025
+		}, {
+            "nominalSizeRang": {
+                "min": 30,
+                "max": 50
+            },
+            "tolerance": 0.0025
+		}, {
+            "nominalSizeRang": {
+                "min": 50,
+                "max": 80
+            },
+            "tolerance": 0.003
+		}, {
+            "nominalSizeRang": {
+                "min": 80,
+                "max": 120
+            },
+            "tolerance": 0.004
+		}, {
+            "nominalSizeRang": {
+                "min": 120,
+                "max": 180
+            },
+            "tolerance": 0.005
+		}, {
+            "nominalSizeRang": {
+                "min": 180,
+                "max": 250
+            },
+            "tolerance": 0.007
+		}, {
+            "nominalSizeRang": {
+                "min": 250,
+                "max": 315
+            },
+            "tolerance": 0.008
+		}, {
+            "nominalSizeRang": {
+                "min": 315,
+                "max": 400
+            },
+            "tolerance": 0.009
+		}, {
+            "nominalSizeRang": {
+                "min": 400,
+                "max": 500
+            },
+            "tolerance": 0.01
+		}, {
+            "nominalSizeRang": {
+                "min": 500,
+                "max": 630
+            },
+            "tolerance": 0.011
+		}, {
+            "nominalSizeRang": {
+                "min": 630,
+                "max": 800
+            },
+            "tolerance": 0.013
+		}, {
+            "nominalSizeRang": {
+                "min": 800,
+                "max": 1000
+            },
+            "tolerance": 0.015
+		}, {
+            "nominalSizeRang": {
+                "min": 1000,
+                "max": 1250
+            },
+            "tolerance": 0.018
+		}, {
+            "nominalSizeRang": {
+                "min": 1250,
+                "max": 1600
+            },
+            "tolerance": 0.021
+		}, {
+            "nominalSizeRang": {
+                "min": 1600,
+                "max": 2000
+            },
+            "tolerance": 0.025
+		}, {
+            "nominalSizeRang": {
+                "min": 2000,
+                "max": 2500
+            },
+            "tolerance": 0.03
+		}, {
+            "nominalSizeRang": {
+                "min": 2500,
+                "max": 3150
+            },
+            "tolerance": 0.036
+		}]
+	}, {
+        "kvalitet": 3,
+        "nominalSizeRangeAndTolerance": [{
+            "nominalSizeRang": {
+                "min": 0,
+                "max": 3
+            },
+            "tolerance": 0.002
+		}, {
+            "nominalSizeRang": {
+                "min": 3,
+                "max": 6
+            },
+            "tolerance": 0.0025
+		}, {
+            "nominalSizeRang": {
+                "min": 6,
+                "max": 10
+            },
+            "tolerance": 0.0025
+		}, {
+            "nominalSizeRang": {
+                "min": 10,
+                "max": 18
+            },
+            "tolerance": 0.003
+		}, {
+            "nominalSizeRang": {
+                "min": 18,
+                "max": 30
+            },
+            "tolerance": 0.004
+		}, {
+            "nominalSizeRang": {
+                "min": 30,
+                "max": 50
+            },
+            "tolerance": 0.004
+		}, {
+            "nominalSizeRang": {
+                "min": 50,
+                "max": 80
+            },
+            "tolerance": 0.005
+		}, {
+            "nominalSizeRang": {
+                "min": 80,
+                "max": 120
+            },
+            "tolerance": 0.006
+		}, {
+            "nominalSizeRang": {
+                "min": 120,
+                "max": 180
+            },
+            "tolerance": 0.008
+		}, {
+            "nominalSizeRang": {
+                "min": 180,
+                "max": 250
+            },
+            "tolerance": 0.01
+		}, {
+            "nominalSizeRang": {
+                "min": 250,
+                "max": 315
+            },
+            "tolerance": 0.012
+		}, {
+            "nominalSizeRang": {
+                "min": 315,
+                "max": 400
+            },
+            "tolerance": 0.013
+		}, {
+            "nominalSizeRang": {
+                "min": 400,
+                "max": 500
+            },
+            "tolerance": 0.015
+		}, {
+            "nominalSizeRang": {
+                "min": 500,
+                "max": 630
+            },
+            "tolerance": 0.016
+		}, {
+            "nominalSizeRang": {
+                "min": 630,
+                "max": 800
+            },
+            "tolerance": 0.018
+		}, {
+            "nominalSizeRang": {
+                "min": 800,
+                "max": 1000
+            },
+            "tolerance": 0.021
+		}, {
+            "nominalSizeRang": {
+                "min": 1000,
+                "max": 1250
+            },
+            "tolerance": 0.024
+		}, {
+            "nominalSizeRang": {
+                "min": 1250,
+                "max": 1600
+            },
+            "tolerance": 0.029
+		}, {
+            "nominalSizeRang": {
+                "min": 1600,
+                "max": 2000
+            },
+            "tolerance": 0.035
+		}, {
+            "nominalSizeRang": {
+                "min": 2000,
+                "max": 2500
+            },
+            "tolerance": 0.041
+		}, {
+            "nominalSizeRang": {
+                "min": 2500,
+                "max": 3150
+            },
+            "tolerance": 0.05
+		}]
+	}, {
+        "kvalitet": 4,
+        "nominalSizeRangeAndTolerance": [{
+            "nominalSizeRang": {
+                "min": 0,
+                "max": 3
+            },
+            "tolerance": 0.003
+		}, {
+            "nominalSizeRang": {
+                "min": 3,
+                "max": 6
+            },
+            "tolerance": 0.004
+		}, {
+            "nominalSizeRang": {
+                "min": 6,
+                "max": 10
+            },
+            "tolerance": 0.004
+		}, {
+            "nominalSizeRang": {
+                "min": 10,
+                "max": 18
+            },
+            "tolerance": 0.005
+		}, {
+            "nominalSizeRang": {
+                "min": 18,
+                "max": 30
+            },
+            "tolerance": 0.006
+		}, {
+            "nominalSizeRang": {
+                "min": 30,
+                "max": 50
+            },
+            "tolerance": 0.007
+		}, {
+            "nominalSizeRang": {
+                "min": 50,
+                "max": 80
+            },
+            "tolerance": 0.008
+		}, {
+            "nominalSizeRang": {
+                "min": 80,
+                "max": 120
+            },
+            "tolerance": 0.01
+		}, {
+            "nominalSizeRang": {
+                "min": 120,
+                "max": 180
+            },
+            "tolerance": 0.012
+		}, {
+            "nominalSizeRang": {
+                "min": 180,
+                "max": 250
+            },
+            "tolerance": 0.014
+		}, {
+            "nominalSizeRang": {
+                "min": 250,
+                "max": 315
+            },
+            "tolerance": 0.016
+		}, {
+            "nominalSizeRang": {
+                "min": 315,
+                "max": 400
+            },
+            "tolerance": 0.018
+		}, {
+            "nominalSizeRang": {
+                "min": 400,
+                "max": 500
+            },
+            "tolerance": 0.02
+		}, {
+            "nominalSizeRang": {
+                "min": 500,
+                "max": 630
+            },
+            "tolerance": 0.022
+		}, {
+            "nominalSizeRang": {
+                "min": 630,
+                "max": 800
+            },
+            "tolerance": 0.025
+		}, {
+            "nominalSizeRang": {
+                "min": 800,
+                "max": 1000
+            },
+            "tolerance": 0.029
+		}, {
+            "nominalSizeRang": {
+                "min": 1000,
+                "max": 1250
+            },
+            "tolerance": 0.034
+		}, {
+            "nominalSizeRang": {
+                "min": 1250,
+                "max": 1600
+            },
+            "tolerance": 0.04
+		}, {
+            "nominalSizeRang": {
+                "min": 1600,
+                "max": 2000
+            },
+            "tolerance": 0.048
+		}, {
+            "nominalSizeRang": {
+                "min": 2000,
+                "max": 2500
+            },
+            "tolerance": 0.057
+		}, {
+            "nominalSizeRang": {
+                "min": 2500,
+                "max": 3150
+            },
+            "tolerance": 0.069
+		}]
+	}, {
+        "kvalitet": 5,
+        "nominalSizeRangeAndTolerance": [{
+            "nominalSizeRang": {
+                "min": 0,
+                "max": 3
+            },
+            "tolerance": 0.004
+		}, {
+            "nominalSizeRang": {
+                "min": 3,
+                "max": 6
+            },
+            "tolerance": 0.005
+		}, {
+            "nominalSizeRang": {
+                "min": 6,
+                "max": 10
+            },
+            "tolerance": 0.006
+		}, {
+            "nominalSizeRang": {
+                "min": 10,
+                "max": 18
+            },
+            "tolerance": 0.008
+		}, {
+            "nominalSizeRang": {
+                "min": 18,
+                "max": 30
+            },
+            "tolerance": 0.009
+		}, {
+            "nominalSizeRang": {
+                "min": 30,
+                "max": 50
+            },
+            "tolerance": 0.011
+		}, {
+            "nominalSizeRang": {
+                "min": 50,
+                "max": 80
+            },
+            "tolerance": 0.013
+		}, {
+            "nominalSizeRang": {
+                "min": 80,
+                "max": 120
+            },
+            "tolerance": 0.015
+		}, {
+            "nominalSizeRang": {
+                "min": 120,
+                "max": 180
+            },
+            "tolerance": 0.018
+		}, {
+            "nominalSizeRang": {
+                "min": 180,
+                "max": 250
+            },
+            "tolerance": 0.02
+		}, {
+            "nominalSizeRang": {
+                "min": 250,
+                "max": 315
+            },
+            "tolerance": 0.023
+		}, {
+            "nominalSizeRang": {
+                "min": 315,
+                "max": 400
+            },
+            "tolerance": 0.025
+		}, {
+            "nominalSizeRang": {
+                "min": 400,
+                "max": 500
+            },
+            "tolerance": 0.027
+		}, {
+            "nominalSizeRang": {
+                "min": 500,
+                "max": 630
+            },
+            "tolerance": 0.03
+		}, {
+            "nominalSizeRang": {
+                "min": 630,
+                "max": 800
+            },
+            "tolerance": 0.035
+		}, {
+            "nominalSizeRang": {
+                "min": 800,
+                "max": 1000
+            },
+            "tolerance": 0.04
+		}, {
+            "nominalSizeRang": {
+                "min": 1000,
+                "max": 1250
+            },
+            "tolerance": 0.046
+		}, {
+            "nominalSizeRang": {
+                "min": 1250,
+                "max": 1600
+            },
+            "tolerance": 0.054
+		}, {
+            "nominalSizeRang": {
+                "min": 1600,
+                "max": 2000
+            },
+            "tolerance": 0.065
+		}, {
+            "nominalSizeRang": {
+                "min": 2000,
+                "max": 2500
+            },
+            "tolerance": 0.077
+		}, {
+            "nominalSizeRang": {
+                "min": 2500,
+                "max": 3150
+            },
+            "tolerance": 0.093
+		}]
+	}, {
+        "kvalitet": 6,
+        "nominalSizeRangeAndTolerance": [{
+            "nominalSizeRang": {
+                "min": 0,
+                "max": 3
+            },
+            "tolerance": 0.006
+		}, {
+            "nominalSizeRang": {
+                "min": 3,
+                "max": 6
+            },
+            "tolerance": 0.008
+		}, {
+            "nominalSizeRang": {
+                "min": 6,
+                "max": 10
+            },
+            "tolerance": 0.009
+		}, {
+            "nominalSizeRang": {
+                "min": 10,
+                "max": 18
+            },
+            "tolerance": 0.011
+		}, {
+            "nominalSizeRang": {
+                "min": 18,
+                "max": 30
+            },
+            "tolerance": 0.013
+		}, {
+            "nominalSizeRang": {
+                "min": 30,
+                "max": 50
+            },
+            "tolerance": 0.016
+		}, {
+            "nominalSizeRang": {
+                "min": 50,
+                "max": 80
+            },
+            "tolerance": 0.019
+		}, {
+            "nominalSizeRang": {
+                "min": 80,
+                "max": 120
+            },
+            "tolerance": 0.022
+		}, {
+            "nominalSizeRang": {
+                "min": 120,
+                "max": 180
+            },
+            "tolerance": 0.025
+		}, {
+            "nominalSizeRang": {
+                "min": 180,
+                "max": 250
+            },
+            "tolerance": 0.029
+		}, {
+            "nominalSizeRang": {
+                "min": 250,
+                "max": 315
+            },
+            "tolerance": 0.032
+		}, {
+            "nominalSizeRang": {
+                "min": 315,
+                "max": 400
+            },
+            "tolerance": 0.036
+		}, {
+            "nominalSizeRang": {
+                "min": 400,
+                "max": 500
+            },
+            "tolerance": 0.04
+		}, {
+            "nominalSizeRang": {
+                "min": 500,
+                "max": 630
+            },
+            "tolerance": 0.044
+		}, {
+            "nominalSizeRang": {
+                "min": 630,
+                "max": 800
+            },
+            "tolerance": 0.05
+		}, {
+            "nominalSizeRang": {
+                "min": 800,
+                "max": 1000
+            },
+            "tolerance": 0.056
+		}, {
+            "nominalSizeRang": {
+                "min": 1000,
+                "max": 1250
+            },
+            "tolerance": 0.066
+		}, {
+            "nominalSizeRang": {
+                "min": 1250,
+                "max": 1600
+            },
+            "tolerance": 0.078
+		}, {
+            "nominalSizeRang": {
+                "min": 1600,
+                "max": 2000
+            },
+            "tolerance": 0.092
+		}, {
+            "nominalSizeRang": {
+                "min": 2000,
+                "max": 2500
+            },
+            "tolerance": 0.11
+		}, {
+            "nominalSizeRang": {
+                "min": 2500,
+                "max": 3150
+            },
+            "tolerance": 0.135
+		}]
+	}, {
+        "kvalitet": 7,
+        "nominalSizeRangeAndTolerance": [{
+            "nominalSizeRang": {
+                "min": 0,
+                "max": 3
+            },
+            "tolerance": 0.01
+		}, {
+            "nominalSizeRang": {
+                "min": 3,
+                "max": 6
+            },
+            "tolerance": 0.012
+		}, {
+            "nominalSizeRang": {
+                "min": 6,
+                "max": 10
+            },
+            "tolerance": 0.015
+		}, {
+            "nominalSizeRang": {
+                "min": 10,
+                "max": 18
+            },
+            "tolerance": 0.018
+		}, {
+            "nominalSizeRang": {
+                "min": 18,
+                "max": 30
+            },
+            "tolerance": 0.021
+		}, {
+            "nominalSizeRang": {
+                "min": 30,
+                "max": 50
+            },
+            "tolerance": 0.025
+		}, {
+            "nominalSizeRang": {
+                "min": 50,
+                "max": 80
+            },
+            "tolerance": 0.03
+		}, {
+            "nominalSizeRang": {
+                "min": 80,
+                "max": 120
+            },
+            "tolerance": 0.035
+		}, {
+            "nominalSizeRang": {
+                "min": 120,
+                "max": 180
+            },
+            "tolerance": 0.04
+		}, {
+            "nominalSizeRang": {
+                "min": 180,
+                "max": 250
+            },
+            "tolerance": 0.046
+		}, {
+            "nominalSizeRang": {
+                "min": 250,
+                "max": 315
+            },
+            "tolerance": 0.052
+		}, {
+            "nominalSizeRang": {
+                "min": 315,
+                "max": 400
+            },
+            "tolerance": 0.057
+		}, {
+            "nominalSizeRang": {
+                "min": 400,
+                "max": 500
+            },
+            "tolerance": 0.063
+		}, {
+            "nominalSizeRang": {
+                "min": 500,
+                "max": 630
+            },
+            "tolerance": 0.07
+		}, {
+            "nominalSizeRang": {
+                "min": 630,
+                "max": 800
+            },
+            "tolerance": 0.08
+		}, {
+            "nominalSizeRang": {
+                "min": 800,
+                "max": 1000
+            },
+            "tolerance": 0.09
+		}, {
+            "nominalSizeRang": {
+                "min": 1000,
+                "max": 1250
+            },
+            "tolerance": 0.105
+		}, {
+            "nominalSizeRang": {
+                "min": 1250,
+                "max": 1600
+            },
+            "tolerance": 0.125
+		}, {
+            "nominalSizeRang": {
+                "min": 1600,
+                "max": 2000
+            },
+            "tolerance": 0.15
+		}, {
+            "nominalSizeRang": {
+                "min": 2000,
+                "max": 2500
+            },
+            "tolerance": 0.175
+		}, {
+            "nominalSizeRang": {
+                "min": 2500,
+                "max": 3150
+            },
+            "tolerance": 0.21
+		}]
+	}, {
+        "kvalitet": 8,
+        "nominalSizeRangeAndTolerance": [{
+            "nominalSizeRang": {
+                "min": 0,
+                "max": 3
+            },
+            "tolerance": 0.014
+		}, {
+            "nominalSizeRang": {
+                "min": 3,
+                "max": 6
+            },
+            "tolerance": 0.018
+		}, {
+            "nominalSizeRang": {
+                "min": 6,
+                "max": 10
+            },
+            "tolerance": 0.022
+		}, {
+            "nominalSizeRang": {
+                "min": 10,
+                "max": 18
+            },
+            "tolerance": 0.027
+		}, {
+            "nominalSizeRang": {
+                "min": 18,
+                "max": 30
+            },
+            "tolerance": 0.033
+		}, {
+            "nominalSizeRang": {
+                "min": 30,
+                "max": 50
+            },
+            "tolerance": 0.039
+		}, {
+            "nominalSizeRang": {
+                "min": 50,
+                "max": 80
+            },
+            "tolerance": 0.046
+		}, {
+            "nominalSizeRang": {
+                "min": 80,
+                "max": 120
+            },
+            "tolerance": 0.054
+		}, {
+            "nominalSizeRang": {
+                "min": 120,
+                "max": 180
+            },
+            "tolerance": 0.063
+		}, {
+            "nominalSizeRang": {
+                "min": 180,
+                "max": 250
+            },
+            "tolerance": 0.072
+		}, {
+            "nominalSizeRang": {
+                "min": 250,
+                "max": 315
+            },
+            "tolerance": 0.081
+		}, {
+            "nominalSizeRang": {
+                "min": 315,
+                "max": 400
+            },
+            "tolerance": 0.089
+		}, {
+            "nominalSizeRang": {
+                "min": 400,
+                "max": 500
+            },
+            "tolerance": 0.097
+		}, {
+            "nominalSizeRang": {
+                "min": 500,
+                "max": 630
+            },
+            "tolerance": 0.11
+		}, {
+            "nominalSizeRang": {
+                "min": 630,
+                "max": 800
+            },
+            "tolerance": 0.125
+		}, {
+            "nominalSizeRang": {
+                "min": 800,
+                "max": 1000
+            },
+            "tolerance": 0.14
+		}, {
+            "nominalSizeRang": {
+                "min": 1000,
+                "max": 1250
+            },
+            "tolerance": 0.165
+		}, {
+            "nominalSizeRang": {
+                "min": 1250,
+                "max": 1600
+            },
+            "tolerance": 0.195
+		}, {
+            "nominalSizeRang": {
+                "min": 1600,
+                "max": 2000
+            },
+            "tolerance": 0.23
+		}, {
+            "nominalSizeRang": {
+                "min": 2000,
+                "max": 2500
+            },
+            "tolerance": 0.28
+		}, {
+            "nominalSizeRang": {
+                "min": 2500,
+                "max": 3150
+            },
+            "tolerance": 0.33
+		}]
+	}, {
+        "kvalitet": 9,
+        "nominalSizeRangeAndTolerance": [{
+            "nominalSizeRang": {
+                "min": 0,
+                "max": 3
+            },
+            "tolerance": 0.025
+		}, {
+            "nominalSizeRang": {
+                "min": 3,
+                "max": 6
+            },
+            "tolerance": 0.03
+		}, {
+            "nominalSizeRang": {
+                "min": 6,
+                "max": 10
+            },
+            "tolerance": 0.036
+		}, {
+            "nominalSizeRang": {
+                "min": 10,
+                "max": 18
+            },
+            "tolerance": 0.043
+		}, {
+            "nominalSizeRang": {
+                "min": 18,
+                "max": 30
+            },
+            "tolerance": 0.052
+		}, {
+            "nominalSizeRang": {
+                "min": 30,
+                "max": 50
+            },
+            "tolerance": 0.062
+		}, {
+            "nominalSizeRang": {
+                "min": 50,
+                "max": 80
+            },
+            "tolerance": 0.074
+		}, {
+            "nominalSizeRang": {
+                "min": 80,
+                "max": 120
+            },
+            "tolerance": 0.087
+		}, {
+            "nominalSizeRang": {
+                "min": 120,
+                "max": 180
+            },
+            "tolerance": 0.1
+		}, {
+            "nominalSizeRang": {
+                "min": 180,
+                "max": 250
+            },
+            "tolerance": 0.115
+		}, {
+            "nominalSizeRang": {
+                "min": 250,
+                "max": 315
+            },
+            "tolerance": 0.13
+		}, {
+            "nominalSizeRang": {
+                "min": 315,
+                "max": 400
+            },
+            "tolerance": 0.14
+		}, {
+            "nominalSizeRang": {
+                "min": 400,
+                "max": 500
+            },
+            "tolerance": 0.155
+		}, {
+            "nominalSizeRang": {
+                "min": 500,
+                "max": 630
+            },
+            "tolerance": 0.175
+		}, {
+            "nominalSizeRang": {
+                "min": 630,
+                "max": 800
+            },
+            "tolerance": 0.2
+		}, {
+            "nominalSizeRang": {
+                "min": 800,
+                "max": 1000
+            },
+            "tolerance": 0.23
+		}, {
+            "nominalSizeRang": {
+                "min": 1000,
+                "max": 1250
+            },
+            "tolerance": 0.26
+		}, {
+            "nominalSizeRang": {
+                "min": 1250,
+                "max": 1600
+            },
+            "tolerance": 0.31
+		}, {
+            "nominalSizeRang": {
+                "min": 1600,
+                "max": 2000
+            },
+            "tolerance": 0.37
+		}, {
+            "nominalSizeRang": {
+                "min": 2000,
+                "max": 2500
+            },
+            "tolerance": 0.44
+		}, {
+            "nominalSizeRang": {
+                "min": 2500,
+                "max": 3150
+            },
+            "tolerance": 0.54
+		}]
+	}, {
+        "kvalitet": 10,
+        "nominalSizeRangeAndTolerance": [{
+            "nominalSizeRang": {
+                "min": 0,
+                "max": 3
+            },
+            "tolerance": 0.04
+		}, {
+            "nominalSizeRang": {
+                "min": 3,
+                "max": 6
+            },
+            "tolerance": 0.048
+		}, {
+            "nominalSizeRang": {
+                "min": 6,
+                "max": 10
+            },
+            "tolerance": 0.058
+		}, {
+            "nominalSizeRang": {
+                "min": 10,
+                "max": 18
+            },
+            "tolerance": 0.07
+		}, {
+            "nominalSizeRang": {
+                "min": 18,
+                "max": 30
+            },
+            "tolerance": 0.084
+		}, {
+            "nominalSizeRang": {
+                "min": 30,
+                "max": 50
+            },
+            "tolerance": 0.1
+		}, {
+            "nominalSizeRang": {
+                "min": 50,
+                "max": 80
+            },
+            "tolerance": 0.12
+		}, {
+            "nominalSizeRang": {
+                "min": 80,
+                "max": 120
+            },
+            "tolerance": 0.14
+		}, {
+            "nominalSizeRang": {
+                "min": 120,
+                "max": 180
+            },
+            "tolerance": 0.16
+		}, {
+            "nominalSizeRang": {
+                "min": 180,
+                "max": 250
+            },
+            "tolerance": 0.185
+		}, {
+            "nominalSizeRang": {
+                "min": 250,
+                "max": 315
+            },
+            "tolerance": 0.21
+		}, {
+            "nominalSizeRang": {
+                "min": 315,
+                "max": 400
+            },
+            "tolerance": 0.23
+		}, {
+            "nominalSizeRang": {
+                "min": 400,
+                "max": 500
+            },
+            "tolerance": 0.25
+		}, {
+            "nominalSizeRang": {
+                "min": 500,
+                "max": 630
+            },
+            "tolerance": 0.28
+		}, {
+            "nominalSizeRang": {
+                "min": 630,
+                "max": 800
+            },
+            "tolerance": 0.32
+		}, {
+            "nominalSizeRang": {
+                "min": 800,
+                "max": 1000
+            },
+            "tolerance": 0.36
+		}, {
+            "nominalSizeRang": {
+                "min": 1000,
+                "max": 1250
+            },
+            "tolerance": 0.42
+		}, {
+            "nominalSizeRang": {
+                "min": 1250,
+                "max": 1600
+            },
+            "tolerance": 0.5
+		}, {
+            "nominalSizeRang": {
+                "min": 1600,
+                "max": 2000
+            },
+            "tolerance": 0.6
+		}, {
+            "nominalSizeRang": {
+                "min": 2000,
+                "max": 2500
+            },
+            "tolerance": 0.7
+		}, {
+            "nominalSizeRang": {
+                "min": 2500,
+                "max": 3150
+            },
+            "tolerance": 0.86
+		}]
+	}, {
+        "kvalitet": 11,
+        "nominalSizeRangeAndTolerance": [{
+            "nominalSizeRang": {
+                "min": 0,
+                "max": 3
+            },
+            "tolerance": 0.06
+		}, {
+            "nominalSizeRang": {
+                "min": 3,
+                "max": 6
+            },
+            "tolerance": 0.075
+		}, {
+            "nominalSizeRang": {
+                "min": 6,
+                "max": 10
+            },
+            "tolerance": 0.09
+		}, {
+            "nominalSizeRang": {
+                "min": 10,
+                "max": 18
+            },
+            "tolerance": 0.11
+		}, {
+            "nominalSizeRang": {
+                "min": 18,
+                "max": 30
+            },
+            "tolerance": 0.13
+		}, {
+            "nominalSizeRang": {
+                "min": 30,
+                "max": 50
+            },
+            "tolerance": 0.16
+		}, {
+            "nominalSizeRang": {
+                "min": 50,
+                "max": 80
+            },
+            "tolerance": 0.19
+		}, {
+            "nominalSizeRang": {
+                "min": 80,
+                "max": 120
+            },
+            "tolerance": 0.22
+		}, {
+            "nominalSizeRang": {
+                "min": 120,
+                "max": 180
+            },
+            "tolerance": 0.25
+		}, {
+            "nominalSizeRang": {
+                "min": 180,
+                "max": 250
+            },
+            "tolerance": 0.29
+		}, {
+            "nominalSizeRang": {
+                "min": 250,
+                "max": 315
+            },
+            "tolerance": 0.32
+		}, {
+            "nominalSizeRang": {
+                "min": 315,
+                "max": 400
+            },
+            "tolerance": 0.36
+		}, {
+            "nominalSizeRang": {
+                "min": 400,
+                "max": 500
+            },
+            "tolerance": 0.4
+		}, {
+            "nominalSizeRang": {
+                "min": 500,
+                "max": 630
+            },
+            "tolerance": 0.44
+		}, {
+            "nominalSizeRang": {
+                "min": 630,
+                "max": 800
+            },
+            "tolerance": 0.5
+		}, {
+            "nominalSizeRang": {
+                "min": 800,
+                "max": 1000
+            },
+            "tolerance": 0.56
+		}, {
+            "nominalSizeRang": {
+                "min": 1000,
+                "max": 1250
+            },
+            "tolerance": 0.66
+		}, {
+            "nominalSizeRang": {
+                "min": 1250,
+                "max": 1600
+            },
+            "tolerance": 0.78
+		}, {
+            "nominalSizeRang": {
+                "min": 1600,
+                "max": 2000
+            },
+            "tolerance": 0.92
+		}, {
+            "nominalSizeRang": {
+                "min": 2000,
+                "max": 2500
+            },
+            "tolerance": 1.1
+		}, {
+            "nominalSizeRang": {
+                "min": 2500,
+                "max": 3150
+            },
+            "tolerance": 1.35
+		}]
+	}, {
+        "kvalitet": 12,
+        "nominalSizeRangeAndTolerance": [{
+            "nominalSizeRang": {
+                "min": 0,
+                "max": 3
+            },
+            "tolerance": 0.1
+		}, {
+            "nominalSizeRang": {
+                "min": 3,
+                "max": 6
+            },
+            "tolerance": 0.12
+		}, {
+            "nominalSizeRang": {
+                "min": 6,
+                "max": 10
+            },
+            "tolerance": 0.15
+		}, {
+            "nominalSizeRang": {
+                "min": 10,
+                "max": 18
+            },
+            "tolerance": 0.18
+		}, {
+            "nominalSizeRang": {
+                "min": 18,
+                "max": 30
+            },
+            "tolerance": 0.21
+		}, {
+            "nominalSizeRang": {
+                "min": 30,
+                "max": 50
+            },
+            "tolerance": 0.25
+		}, {
+            "nominalSizeRang": {
+                "min": 50,
+                "max": 80
+            },
+            "tolerance": 0.3
+		}, {
+            "nominalSizeRang": {
+                "min": 80,
+                "max": 120
+            },
+            "tolerance": 0.35
+		}, {
+            "nominalSizeRang": {
+                "min": 120,
+                "max": 180
+            },
+            "tolerance": 0.4
+		}, {
+            "nominalSizeRang": {
+                "min": 180,
+                "max": 250
+            },
+            "tolerance": 0.46
+		}, {
+            "nominalSizeRang": {
+                "min": 250,
+                "max": 315
+            },
+            "tolerance": 0.52
+		}, {
+            "nominalSizeRang": {
+                "min": 315,
+                "max": 400
+            },
+            "tolerance": 0.57
+		}, {
+            "nominalSizeRang": {
+                "min": 400,
+                "max": 500
+            },
+            "tolerance": 0.63
+		}, {
+            "nominalSizeRang": {
+                "min": 500,
+                "max": 630
+            },
+            "tolerance": 0.7
+		}, {
+            "nominalSizeRang": {
+                "min": 630,
+                "max": 800
+            },
+            "tolerance": 0.8
+		}, {
+            "nominalSizeRang": {
+                "min": 800,
+                "max": 1000
+            },
+            "tolerance": 0.9
+		}, {
+            "nominalSizeRang": {
+                "min": 1000,
+                "max": 1250
+            },
+            "tolerance": 1.05
+		}, {
+            "nominalSizeRang": {
+                "min": 1250,
+                "max": 1600
+            },
+            "tolerance": 1.25
+		}, {
+            "nominalSizeRang": {
+                "min": 1600,
+                "max": 2000
+            },
+            "tolerance": 1.5
+		}, {
+            "nominalSizeRang": {
+                "min": 2000,
+                "max": 2500
+            },
+            "tolerance": 1.75
+		}, {
+            "nominalSizeRang": {
+                "min": 2500,
+                "max": 3150
+            },
+            "tolerance": 2.1
+		}]
+	}, {
+        "kvalitet": 13,
+        "nominalSizeRangeAndTolerance": [{
+            "nominalSizeRang": {
+                "min": 0,
+                "max": 3
+            },
+            "tolerance": 0.14
+		}, {
+            "nominalSizeRang": {
+                "min": 3,
+                "max": 6
+            },
+            "tolerance": 0.18
+		}, {
+            "nominalSizeRang": {
+                "min": 6,
+                "max": 10
+            },
+            "tolerance": 0.22
+		}, {
+            "nominalSizeRang": {
+                "min": 10,
+                "max": 18
+            },
+            "tolerance": 0.27
+		}, {
+            "nominalSizeRang": {
+                "min": 18,
+                "max": 30
+            },
+            "tolerance": 0.33
+		}, {
+            "nominalSizeRang": {
+                "min": 30,
+                "max": 50
+            },
+            "tolerance": 0.39
+		}, {
+            "nominalSizeRang": {
+                "min": 50,
+                "max": 80
+            },
+            "tolerance": 0.46
+		}, {
+            "nominalSizeRang": {
+                "min": 80,
+                "max": 120
+            },
+            "tolerance": 0.54
+		}, {
+            "nominalSizeRang": {
+                "min": 120,
+                "max": 180
+            },
+            "tolerance": 0.63
+		}, {
+            "nominalSizeRang": {
+                "min": 180,
+                "max": 250
+            },
+            "tolerance": 0.72
+		}, {
+            "nominalSizeRang": {
+                "min": 250,
+                "max": 315
+            },
+            "tolerance": 0.81
+		}, {
+            "nominalSizeRang": {
+                "min": 315,
+                "max": 400
+            },
+            "tolerance": 0.89
+		}, {
+            "nominalSizeRang": {
+                "min": 400,
+                "max": 500
+            },
+            "tolerance": 0.97
+		}, {
+            "nominalSizeRang": {
+                "min": 500,
+                "max": 630
+            },
+            "tolerance": 1.1
+		}, {
+            "nominalSizeRang": {
+                "min": 630,
+                "max": 800
+            },
+            "tolerance": 1.25
+		}, {
+            "nominalSizeRang": {
+                "min": 800,
+                "max": 1000
+            },
+            "tolerance": 1.4
+		}, {
+            "nominalSizeRang": {
+                "min": 1000,
+                "max": 1250
+            },
+            "tolerance": 1.65
+		}, {
+            "nominalSizeRang": {
+                "min": 1250,
+                "max": 1600
+            },
+            "tolerance": 1.95
+		}, {
+            "nominalSizeRang": {
+                "min": 1600,
+                "max": 2000
+            },
+            "tolerance": 2.3
+		}, {
+            "nominalSizeRang": {
+                "min": 2000,
+                "max": 2500
+            },
+            "tolerance": 2.8
+		}, {
+            "nominalSizeRang": {
+                "min": 2500,
+                "max": 3150
+            },
+            "tolerance": 3.3
+		}]
+	}, {
+        "kvalitet": 14,
+        "nominalSizeRangeAndTolerance": [{
+            "nominalSizeRang": {
+                "min": 0,
+                "max": 3
+            },
+            "tolerance": 0.25
+		}, {
+            "nominalSizeRang": {
+                "min": 3,
+                "max": 6
+            },
+            "tolerance": 0.3
+		}, {
+            "nominalSizeRang": {
+                "min": 6,
+                "max": 10
+            },
+            "tolerance": 0.36
+		}, {
+            "nominalSizeRang": {
+                "min": 10,
+                "max": 18
+            },
+            "tolerance": 0.43
+		}, {
+            "nominalSizeRang": {
+                "min": 18,
+                "max": 30
+            },
+            "tolerance": 0.52
+		}, {
+            "nominalSizeRang": {
+                "min": 30,
+                "max": 50
+            },
+            "tolerance": 0.62
+		}, {
+            "nominalSizeRang": {
+                "min": 50,
+                "max": 80
+            },
+            "tolerance": 0.74
+		}, {
+            "nominalSizeRang": {
+                "min": 80,
+                "max": 120
+            },
+            "tolerance": 0.87
+		}, {
+            "nominalSizeRang": {
+                "min": 120,
+                "max": 180
+            },
+            "tolerance": 1
+		}, {
+            "nominalSizeRang": {
+                "min": 180,
+                "max": 250
+            },
+            "tolerance": 1.15
+		}, {
+            "nominalSizeRang": {
+                "min": 250,
+                "max": 315
+            },
+            "tolerance": 1.3
+		}, {
+            "nominalSizeRang": {
+                "min": 315,
+                "max": 400
+            },
+            "tolerance": 1.4
+		}, {
+            "nominalSizeRang": {
+                "min": 400,
+                "max": 500
+            },
+            "tolerance": 1.55
+		}, {
+            "nominalSizeRang": {
+                "min": 500,
+                "max": 630
+            },
+            "tolerance": 1.75
+		}, {
+            "nominalSizeRang": {
+                "min": 630,
+                "max": 800
+            },
+            "tolerance": 2
+		}, {
+            "nominalSizeRang": {
+                "min": 800,
+                "max": 1000
+            },
+            "tolerance": 2.3
+		}, {
+            "nominalSizeRang": {
+                "min": 1000,
+                "max": 1250
+            },
+            "tolerance": 2.6
+		}, {
+            "nominalSizeRang": {
+                "min": 1250,
+                "max": 1600
+            },
+            "tolerance": 3.1
+		}, {
+            "nominalSizeRang": {
+                "min": 1600,
+                "max": 2000
+            },
+            "tolerance": 3.7
+		}, {
+            "nominalSizeRang": {
+                "min": 2000,
+                "max": 2500
+            },
+            "tolerance": 4.4
+		}, {
+            "nominalSizeRang": {
+                "min": 2500,
+                "max": 3150
+            },
+            "tolerance": 5.4
+		}]
+	}, {
+        "kvalitet": 15,
+        "nominalSizeRangeAndTolerance": [{
+            "nominalSizeRang": {
+                "min": 0,
+                "max": 3
+            },
+            "tolerance": 0.4
+		}, {
+            "nominalSizeRang": {
+                "min": 3,
+                "max": 6
+            },
+            "tolerance": 0.48
+		}, {
+            "nominalSizeRang": {
+                "min": 6,
+                "max": 10
+            },
+            "tolerance": 0.58
+		}, {
+            "nominalSizeRang": {
+                "min": 10,
+                "max": 18
+            },
+            "tolerance": 0.7
+		}, {
+            "nominalSizeRang": {
+                "min": 18,
+                "max": 30
+            },
+            "tolerance": 0.84
+		}, {
+            "nominalSizeRang": {
+                "min": 30,
+                "max": 50
+            },
+            "tolerance": 1
+		}, {
+            "nominalSizeRang": {
+                "min": 50,
+                "max": 80
+            },
+            "tolerance": 1.2
+		}, {
+            "nominalSizeRang": {
+                "min": 80,
+                "max": 120
+            },
+            "tolerance": 1.4
+		}, {
+            "nominalSizeRang": {
+                "min": 120,
+                "max": 180
+            },
+            "tolerance": 1.6
+		}, {
+            "nominalSizeRang": {
+                "min": 180,
+                "max": 250
+            },
+            "tolerance": 1.85
+		}, {
+            "nominalSizeRang": {
+                "min": 250,
+                "max": 315
+            },
+            "tolerance": 2.1
+		}, {
+            "nominalSizeRang": {
+                "min": 315,
+                "max": 400
+            },
+            "tolerance": 2.3
+		}, {
+            "nominalSizeRang": {
+                "min": 400,
+                "max": 500
+            },
+            "tolerance": 2.5
+		}, {
+            "nominalSizeRang": {
+                "min": 500,
+                "max": 630
+            },
+            "tolerance": 2.8
+		}, {
+            "nominalSizeRang": {
+                "min": 630,
+                "max": 800
+            },
+            "tolerance": 3.2
+		}, {
+            "nominalSizeRang": {
+                "min": 800,
+                "max": 1000
+            },
+            "tolerance": 3.6
+		}, {
+            "nominalSizeRang": {
+                "min": 1000,
+                "max": 1250
+            },
+            "tolerance": 4.2
+		}, {
+            "nominalSizeRang": {
+                "min": 1250,
+                "max": 1600
+            },
+            "tolerance": 5
+		}, {
+            "nominalSizeRang": {
+                "min": 1600,
+                "max": 2000
+            },
+            "tolerance": 6
+		}, {
+            "nominalSizeRang": {
+                "min": 2000,
+                "max": 2500
+            },
+            "tolerance": 7
+		}, {
+            "nominalSizeRang": {
+                "min": 2500,
+                "max": 3150
+            },
+            "tolerance": 8.6
+		}]
+	}, {
+        "kvalitet": 16,
+        "nominalSizeRangeAndTolerance": [
+            {
+                "nominalSizeRang": {
+                    "min": 0,
+                    "max": 3
+                },
+                "tolerance": 0.6
+		}, {
+                "nominalSizeRang": {
+                    "min": 3,
+                    "max": 6
+                },
+                "tolerance": 0.75
+		}, {
+                "nominalSizeRang": {
+                    "min": 6,
+                    "max": 10
+                },
+                "tolerance": 0.9
+		}, {
+                "nominalSizeRang": {
+                    "min": 10,
+                    "max": 18
+                },
+                "tolerance": 1.1
+		}, {
+                "nominalSizeRang": {
+                    "min": 18,
+                    "max": 30
+                },
+                "tolerance": 1.3
+		}, {
+                "nominalSizeRang": {
+                    "min": 30,
+                    "max": 50
+                },
+                "tolerance": 1.6
+		}, {
+                "nominalSizeRang": {
+                    "min": 50,
+                    "max": 80
+                },
+                "tolerance": 1.9
+		}, {
+                "nominalSizeRang": {
+                    "min": 80,
+                    "max": 120
+                },
+                "tolerance": 2.2
+		}, {
+                "nominalSizeRang": {
+                    "min": 120,
+                    "max": 180
+                },
+                "tolerance": 2.5
+		}, {
+                "nominalSizeRang": {
+                    "min": 180,
+                    "max": 250
+                },
+                "tolerance": 2.9
+		}, {
+                "nominalSizeRang": {
+                    "min": 250,
+                    "max": 315
+                },
+                "tolerance": 3.2
+		}, {
+                "nominalSizeRang": {
+                    "min": 315,
+                    "max": 400
+                },
+                "tolerance": 3.6
+		}, {
+                "nominalSizeRang": {
+                    "min": 400,
+                    "max": 500
+                },
+                "tolerance": 4
+		}, {
+                "nominalSizeRang": {
+                    "min": 500,
+                    "max": 630
+                },
+                "tolerance": 4.4
+		}, {
+                "nominalSizeRang": {
+                    "min": 630,
+                    "max": 800
+                },
+                "tolerance": 5
+		}, {
+                "nominalSizeRang": {
+                    "min": 800,
+                    "max": 1000
+                },
+                "tolerance": 5.6
+		}, {
+                "nominalSizeRang": {
+                    "min": 1000,
+                    "max": 1250
+                },
+                "tolerance": 6.6
+		}, {
+                "nominalSizeRang": {
+                    "min": 1250,
+                    "max": 1600
+                },
+                "tolerance": 7.8
+		}, {
+                "nominalSizeRang": {
+                    "min": 1600,
+                    "max": 2000
+                },
+                "tolerance": 9.2
+		}, {
+                "nominalSizeRang": {
+                    "min": 2000,
+                    "max": 2500
+                },
+                "tolerance": 11
+		}, {
+                "nominalSizeRang": {
+                    "min": 2500,
+                    "max": 3150
+                },
+                "tolerance": 13.5
+		}]
+	}, {
+        "kvalitet": 17,
+        "nominalSizeRangeAndTolerance": [{
+            "nominalSizeRang": {
+                "min": 0,
+                "max": 3
+            },
+            "tolerance": 1
+		}, {
+            "nominalSizeRang": {
+                "min": 3,
+                "max": 6
+            },
+            "tolerance": 1.2
+		}, {
+            "nominalSizeRang": {
+                "min": 6,
+                "max": 10
+            },
+            "tolerance": 1.5
+		}, {
+            "nominalSizeRang": {
+                "min": 10,
+                "max": 18
+            },
+            "tolerance": 1.8
+		}, {
+            "nominalSizeRang": {
+                "min": 18,
+                "max": 30
+            },
+            "tolerance": 2.1
+		}, {
+            "nominalSizeRang": {
+                "min": 30,
+                "max": 50
+            },
+            "tolerance": 2.5
+		}, {
+            "nominalSizeRang": {
+                "min": 50,
+                "max": 80
+            },
+            "tolerance": 3
+		}, {
+            "nominalSizeRang": {
+                "min": 80,
+                "max": 120
+            },
+            "tolerance": 3.5
+		}, {
+            "nominalSizeRang": {
+                "min": 120,
+                "max": 180
+            },
+            "tolerance": 4
+		}, {
+            "nominalSizeRang": {
+                "min": 180,
+                "max": 250
+            },
+            "tolerance": 4.6
+		}, {
+            "nominalSizeRang": {
+                "min": 250,
+                "max": 315
+            },
+            "tolerance": 5.2
+		}, {
+            "nominalSizeRang": {
+                "min": 315,
+                "max": 400
+            },
+            "tolerance": 5.7
+		}, {
+            "nominalSizeRang": {
+                "min": 400,
+                "max": 500
+            },
+            "tolerance": 6.3
+		}, {
+            "nominalSizeRang": {
+                "min": 500,
+                "max": 630
+            },
+            "tolerance": 7
+		}, {
+            "nominalSizeRang": {
+                "min": 630,
+                "max": 800
+            },
+            "tolerance": 8
+		}, {
+            "nominalSizeRang": {
+                "min": 800,
+                "max": 1000
+            },
+            "tolerance": 9
+		}, {
+            "nominalSizeRang": {
+                "min": 1000,
+                "max": 1250
+            },
+            "tolerance": 10.5
+		}, {
+            "nominalSizeRang": {
+                "min": 1250,
+                "max": 1600
+            },
+            "tolerance": 12.5
+		}, {
+            "nominalSizeRang": {
+                "min": 1600,
+                "max": 2000
+            },
+            "tolerance": 15
+		}, {
+            "nominalSizeRang": {
+                "min": 2000,
+                "max": 2500
+            },
+            "tolerance": 17.5
+		}, {
+            "nominalSizeRang": {
+                "min": 2500,
+                "max": 3150
+            },
+            "tolerance": 21
+		}]
+	}, {
+        "kvalitet": 18,
+        "nominalSizeRangeAndTolerance": [{
+            "nominalSizeRang": {
+                "min": 0,
+                "max": 3
+            },
+            "tolerance": 1.4
+		}, {
+            "nominalSizeRang": {
+                "min": 3,
+                "max": 6
+            },
+            "tolerance": 1.8
+		}, {
+            "nominalSizeRang": {
+                "min": 6,
+                "max": 10
+            },
+            "tolerance": 2.2
+		}, {
+            "nominalSizeRang": {
+                "min": 10,
+                "max": 18
+            },
+            "tolerance": 2.7
+		}, {
+            "nominalSizeRang": {
+                "min": 18,
+                "max": 30
+            },
+            "tolerance": 3.3
+		}, {
+            "nominalSizeRang": {
+                "min": 30,
+                "max": 50
+            },
+            "tolerance": 3.9
+		}, {
+            "nominalSizeRang": {
+                "min": 50,
+                "max": 80
+            },
+            "tolerance": 4.6
+		}, {
+            "nominalSizeRang": {
+                "min": 80,
+                "max": 120
+            },
+            "tolerance": 5.4
+		}, {
+            "nominalSizeRang": {
+                "min": 120,
+                "max": 180
+            },
+            "tolerance": 6.3
+		}, {
+            "nominalSizeRang": {
+                "min": 180,
+                "max": 250
+            },
+            "tolerance": 7.2
+		}, {
+            "nominalSizeRang": {
+                "min": 250,
+                "max": 315
+            },
+            "tolerance": 8.1
+		}, {
+            "nominalSizeRang": {
+                "min": 315,
+                "max": 400
+            },
+            "tolerance": 8.9
+		}, {
+            "nominalSizeRang": {
+                "min": 400,
+                "max": 500
+            },
+            "tolerance": 9.7
+		}, {
+            "nominalSizeRang": {
+                "min": 500,
+                "max": 630
+            },
+            "tolerance": 11
+		}, {
+            "nominalSizeRang": {
+                "min": 630,
+                "max": 800
+            },
+            "tolerance": 12.5
+		}, {
+            "nominalSizeRang": {
+                "min": 800,
+                "max": 1000
+            },
+            "tolerance": 14
+		}, {
+            "nominalSizeRang": {
+                "min": 1000,
+                "max": 1250
+            },
+            "tolerance": 16.5
+		}, {
+            "nominalSizeRang": {
+                "min": 1250,
+                "max": 1600
+            },
+            "tolerance": 19.5
+		}, {
+            "nominalSizeRang": {
+                "min": 1600,
+                "max": 2000
+            },
+            "tolerance": 23
+		}, {
+            "nominalSizeRang": {
+                "min": 2000,
+                "max": 2500
+            },
+            "tolerance": 28
+		}, {
+            "nominalSizeRang": {
+                "min": 2500,
+                "max": 3150
+            },
+            "tolerance": 33
+		}]
+	}
+                 ]
+}

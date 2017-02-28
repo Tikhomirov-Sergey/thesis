@@ -2,14 +2,16 @@
 using System.Xml.Serialization;
 using System.Xml;
 using System.IO;
+using System.Windows.Forms;
 
 namespace WindowsFormsApplication8
 {
     class XMLtoObject
     {
-        public static object inaccuracyOfPositioningPartFromXML(string xmlFile, object obj)
+        public static object objectFromXML(string xmlFile, object obj)
         {
             Type typeOfObject  = obj.GetType();
+            MessageBox.Show(Convert.ToString(typeOfObject), "Ошибка");
             XmlSerializer xmlSerialize = new XmlSerializer(typeOfObject);
 
             FileStream fileStream = new FileStream(xmlFile, FileMode.Open);

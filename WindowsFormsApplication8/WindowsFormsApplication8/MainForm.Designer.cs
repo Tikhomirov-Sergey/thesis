@@ -621,10 +621,10 @@
         public System.Windows.Forms.TextBox NameOfWorkpiece;
         public System.Windows.Forms.TreeView TreeOfOperations;
         public System.Windows.Forms.RichTextBox richTextBox2;
-        public System.Windows.Forms.Button CalculationOfSchema;
         public System.Windows.Forms.Button buttontext;
         public System.Windows.Forms.Button ChoiceOfOperation;
         public System.Windows.Forms.Button Backspace;
+        protected internal System.Windows.Forms.Button CalculationOfSchema;
     }
 }
 

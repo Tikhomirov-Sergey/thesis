@@ -7,10 +7,10 @@ namespace WindowsFormsApplication8
 {
     class Interval
     {
-        private double min;
-        private double max;
+        public double min { get; set; }
+        public double max { get; set; }
 
-        public Interval(double min, double max)
+    public Interval(double min = 1, double max = 1)
         {
             this.min = min;
             this.max = max;

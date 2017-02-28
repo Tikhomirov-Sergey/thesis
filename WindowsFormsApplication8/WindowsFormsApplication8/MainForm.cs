@@ -138,6 +138,7 @@ namespace WindowsFormsApplication8
                 EventClickOfMouseOnTreeViewNode.clickOnTreeOperations(e, this);
             }
             catch { MessageBox.Show("Повреждены XML таблицы", "Ошибка"); }
+            richTextBox1.Text = Tables.getTableOfTolerancesAndFits().kvalitets[5].nominalSizeRangeAndTolerance[0].tolerance.ToString();
         }
         
 
