@@ -84,7 +84,6 @@
     <Compile Include="DataStructures\StorageParameters\Operations.cs" />
     <Compile Include="DataStructures\TableOfTolerancesAndFits\Interval.cs" />
     <Compile Include="DataStructures\TableOfTolerancesAndFits\Kvalitet.cs" />
-    <Compile Include="DataStructures\TableOfTolerancesAndFits\Kvalitets.cs" />
     <Compile Include="DataStructures\TableOfTolerancesAndFits\NominalSizeRangeAndTolerance.cs" />
     <Compile Include="DataStructures\TableOfTolerancesAndFits\TableOfTolerancesAndFits.cs" />
     <Compile Include="DataStructures\Tables.cs" />

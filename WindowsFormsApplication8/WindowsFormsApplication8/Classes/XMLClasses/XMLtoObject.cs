@@ -11,7 +11,6 @@ namespace WindowsFormsApplication8
         public static object objectFromXML(string xmlFile, object obj)
         {
             Type typeOfObject  = obj.GetType();
-            MessageBox.Show(Convert.ToString(typeOfObject), "Ошибка");
             XmlSerializer xmlSerialize = new XmlSerializer(typeOfObject);
 
             FileStream fileStream = new FileStream(xmlFile, FileMode.Open);

@@ -29,31 +29,5 @@ namespace WindowsFormsApplication8
             }
             return tableOfTolerancesAndFits;
         }
-
-        public static string createTable(int[,] size, double[] kvalitet, double[,] table)
-        {
-            string json = "{" + '"' + "kvalitets" + '"' + ":[";
-            
-            for (int kvalitetCount = 0; kvalitetCount <= 19; kvalitetCount++)
-            {
-                json = json + "{" + '"' + "kvalitet" + '"' + ":" + Convert.ToString(kvalitet[kvalitetCount]).Replace(",",".") + "," + '"' + "nominalSizeRangeAndTolerance" + '"' + ":[";
-                for (int sizeCount = 0; sizeCount <= 20; sizeCount++)
-                {
-                    json = json + "{" + '"' + "nominalSizeRang" + '"' + ":{" + '"' + "min" + '"' + ":" + Convert.ToString(size[sizeCount, 0]).Replace(",", ".") + "," + '"' + "max" + '"' + ':' + Convert.ToString(size[sizeCount, 1]).Replace(",", ".") + "}," + '"' + "tolerance" + '"' + ":" + Convert.ToString(table[sizeCount, kvalitetCount]).Replace(",",".") + '}';
-                    if(sizeCount != 20)
-                    {
-                        json = json + ',';
-                    }
-                }
-                json = json + "]}";
-                if(kvalitetCount != 19)
-                {
-                    json = json + ',';
-                }
-            }
-            json = json + "]}";
-            return json;
-        }
-
     }
 }
