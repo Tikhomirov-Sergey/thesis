@@ -180,7 +180,7 @@
             this.SurfaceRoughnessRa.TextChanged += new System.EventHandler(this.textBox6_TextChanged);
             this.SurfaceRoughnessRa.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.KeyPressForTextBoxWithDouble);
             // 
-            // Form2
+            // FormOfSelectWorkpiece
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -200,7 +200,7 @@
             this.Controls.Add(this.SurfaceRoughnessRz);
             this.Controls.Add(this.ChoiceOfWorkpiece);
             this.Controls.Add(this.TreeOfWorkpiece);
-            this.Name = "Form2";
+            this.Name = "FormOfSelectWorkpiece";
             this.Text = "Выбор заготовки";
             this.Load += new System.EventHandler(this.Form2_Load);
             this.ResumeLayout(false);
@@ -209,21 +209,20 @@
         }
 
         #endregion
-
-        private System.Windows.Forms.TreeView TreeOfWorkpiece;
-        private System.Windows.Forms.Button ChoiceOfWorkpiece;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label7;
-        public System.Windows.Forms.TextBox SurfaceRoughnessRz;
-        public System.Windows.Forms.TextBox ThicknessOfDefectiveCoating;
-        public System.Windows.Forms.TextBox NameOfWorkpiece;
-        public System.Windows.Forms.TextBox Kvalitet;
-        public System.Windows.Forms.TextBox ValidOffsetSurface;
-        public System.Windows.Forms.TextBox SurfaceRoughnessRa;
         public System.Windows.Forms.Label label5;
         public System.Windows.Forms.Label label6;
         public System.Windows.Forms.Label label4;
+        protected internal System.Windows.Forms.TreeView TreeOfWorkpiece;
+        protected internal System.Windows.Forms.Button ChoiceOfWorkpiece;
+        protected internal System.Windows.Forms.TextBox SurfaceRoughnessRz;
+        protected internal System.Windows.Forms.TextBox ThicknessOfDefectiveCoating;
+        protected internal System.Windows.Forms.TextBox NameOfWorkpiece;
+        protected internal System.Windows.Forms.TextBox Kvalitet;
+        protected internal System.Windows.Forms.TextBox ValidOffsetSurface;
+        protected internal System.Windows.Forms.TextBox SurfaceRoughnessRa;
     }
 }

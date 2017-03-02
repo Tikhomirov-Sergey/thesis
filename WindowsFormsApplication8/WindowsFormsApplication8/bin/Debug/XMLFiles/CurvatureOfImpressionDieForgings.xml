@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CurvatureOfImpressionDieForgings xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <intervalAndCoefficient>
+    <IntervalAndCoefficient>
+      <estimatedSize>
+        <min>0</min>
+        <max>25</max>
+      </estimatedSize>
+      <coefficient>0.004</coefficient>
+    </IntervalAndCoefficient>
+    <IntervalAndCoefficient>
+      <estimatedSize>
+        <min>25</min>
+        <max>50</max>
+      </estimatedSize>
+      <coefficient>0.003</coefficient>
+    </IntervalAndCoefficient>
+    <IntervalAndCoefficient>
+      <estimatedSize>
+        <min>50</min>
+        <max>80</max>
+      </estimatedSize>
+      <coefficient>0.002</coefficient>
+    </IntervalAndCoefficient>
+    <IntervalAndCoefficient>
+      <estimatedSize>
+        <min>80</min>
+        <max>120</max>
+      </estimatedSize>
+      <coefficient>0.0018</coefficient>
+    </IntervalAndCoefficient>
+    <IntervalAndCoefficient>
+      <estimatedSize>
+        <min>120</min>
+        <max>180</max>
+      </estimatedSize>
+      <coefficient>0.0016</coefficient>
+    </IntervalAndCoefficient>
+    <IntervalAndCoefficient>
+      <estimatedSize>
+        <min>180</min>
+        <max>260</max>
+      </estimatedSize>
+      <coefficient>0.0014</coefficient>
+    </IntervalAndCoefficient>
+  </intervalAndCoefficient>
+</CurvatureOfImpressionDieForgings>

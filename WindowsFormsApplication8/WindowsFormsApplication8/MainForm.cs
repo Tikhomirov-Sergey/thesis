@@ -124,7 +124,6 @@ namespace WindowsFormsApplication8
                 EventClickOnButtonOfSelectOperationsOrWorkpiece.buttonOfSelectOperations(e, this);
             }
             catch { }
-            
         }
 
         private void textBox7_MouseClick(object sender, MouseEventArgs e)

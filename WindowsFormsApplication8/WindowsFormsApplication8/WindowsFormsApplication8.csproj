@@ -78,11 +78,14 @@
     <Compile Include="Classes\StorageOfSelectedWorkpiece.cs" />
     <Compile Include="Classes\XMLClasses\XMLtoObject.cs" />
     <Compile Include="Classes\XMLClasses\XMLtoTreeView.cs" />
+    <Compile Include="DataStructures\CurvatureOfImpressionDieForgings\CurvatureOfImpressionDieForgings.cs" />
+    <Compile Include="DataStructures\CurvatureOfImpressionDieForgings\IntervalAndCoefficient.cs" />
+    <Compile Include="DataStructures\ShiftInAxisOfHoleDuringDrilling\ShiftInAxisOfHoleDuringDrilling.cs" />
     <Compile Include="DataStructures\StorageParameters\Surfaces.cs" />
     <Compile Include="DataStructures\StorageParameters\ParametersWorkpiece.cs" />
     <Compile Include="DataStructures\StorageParameters\ParametersOperation.cs" />
     <Compile Include="DataStructures\StorageParameters\Operations.cs" />
-    <Compile Include="DataStructures\TableOfTolerancesAndFits\Interval.cs" />
+    <Compile Include="DataStructures\Interval.cs" />
     <Compile Include="DataStructures\TableOfTolerancesAndFits\Kvalitet.cs" />
     <Compile Include="DataStructures\TableOfTolerancesAndFits\NominalSizeRangeAndTolerance.cs" />
     <Compile Include="DataStructures\TableOfTolerancesAndFits\TableOfTolerancesAndFits.cs" />

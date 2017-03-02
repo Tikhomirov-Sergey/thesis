@@ -9,6 +9,8 @@ namespace WindowsFormsApplication8
     {
         private static InaccuracyOfPositioningPart inaccuracyOfPositioningPart = null;
         private static TableOfTolerancesAndFits tableOfTolerancesAndFits = null;
+        private static CurvatureOfImpressionDieForgings curvatureOfImpressionDieForgings = null;
+        private static ShiftInAxisOfHoleDuringDrilling shiftInAxisOfHoleDuringDrilling = null;
 
         public static InaccuracyOfPositioningPart getInaccuracyOfPositioningPart()
         {
@@ -28,6 +30,26 @@ namespace WindowsFormsApplication8
                 tableOfTolerancesAndFits = (TableOfTolerancesAndFits)XMLtoObject.objectFromXML(@"XMLFiles/TableOfTolerancesAndFits.xml", tableOfTolerancesAndFits);
             }
             return tableOfTolerancesAndFits;
+        }
+
+        public static CurvatureOfImpressionDieForgings getCurvatureOfImpressionDieForgings()
+        {
+            if (curvatureOfImpressionDieForgings == null)
+            {
+                curvatureOfImpressionDieForgings = new CurvatureOfImpressionDieForgings();
+                curvatureOfImpressionDieForgings = (CurvatureOfImpressionDieForgings)XMLtoObject.objectFromXML(@"XMLFiles/CurvatureOfImpressionDieForgings.xml", curvatureOfImpressionDieForgings);
+            }
+            return curvatureOfImpressionDieForgings;
+        }
+
+        public static ShiftInAxisOfHoleDuringDrilling getShiftInAxisOfHoleDuringDrilling()
+        {
+           if (shiftInAxisOfHoleDuringDrilling == null)
+            {
+                shiftInAxisOfHoleDuringDrilling = new ShiftInAxisOfHoleDuringDrilling();
+                shiftInAxisOfHoleDuringDrilling = (ShiftInAxisOfHoleDuringDrilling)XMLtoObject.objectFromXML(@"XMLFiles/ShiftInAxisOfHoleDuringDrilling.xml", shiftInAxisOfHoleDuringDrilling);
+            }
+            return shiftInAxisOfHoleDuringDrilling; 
         }
     }
 }
