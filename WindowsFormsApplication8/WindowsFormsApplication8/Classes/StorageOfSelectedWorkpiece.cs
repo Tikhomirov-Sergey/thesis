@@ -19,7 +19,7 @@ namespace WindowsFormsApplication8
             return parameters;
         }
 
-        public static void insertParametersOfOperationsInTextboxes(FormOfSelectWorkpiece form)
+        public static void insertParametersOfWorkpieceInTextboxes(FormOfSelectWorkpiece form)
         {
             form.NameOfWorkpiece.Text = parameters.getNameOfWorkpiece();
             form.SurfaceRoughnessRz.Text = parameters.getSurfaceRoughnessRz();

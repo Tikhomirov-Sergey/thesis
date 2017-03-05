@@ -15,7 +15,7 @@ namespace WindowsFormsApplication8.FormSelectWorkpriece
             string thicknessOfDefectiveCoating = form.ThicknessOfDefectiveCoating.Text;
             double validOffsetSurface = Convert.ToDouble(form.ValidOffsetSurface.Text);
 
-            ParametersWorkpiece parameters = StorageOfSelectedWorkpiece.getParameters();
+            ParametersWorkpiece parameters = Part.getWorkpiece();
 
             parameters.setNameOfWorkpiece(nameOfWorkpiece);
             parameters.setSurfaceRoughnessRz(surfaceRoughnessRz);

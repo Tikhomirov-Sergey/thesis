@@ -10,7 +10,7 @@ namespace WindowsFormsApplication8
         public static void buttonSelectWorkpriece(MainForm form)
         {
             openingOfFormOfSelectWorkpriece();
-            ParametersWorkpiece workpiece = StorageOfSelectedWorkpiece.getParameters();
+            ParametersWorkpiece workpiece = Part.getWorkpiece();
             form.NameOfWorkpiece.Text = workpiece.getNameOfWorkpiece();
             enabledTextBoxes(form);
         }

@@ -27,6 +27,29 @@ namespace WindowsFormsApplication8
             this.validOffsetSurface = validOffsetSurface;
         }
 
+        public void insertParametersOfWorkpieceInTextboxes(FormOfSelectWorkpiece form)
+        {
+            form.NameOfWorkpiece.Text = this.getNameOfWorkpiece();
+            form.SurfaceRoughnessRz.Text = this.getSurfaceRoughnessRz();
+            form.ThicknessOfDefectiveCoating.Text = this.getThicknessOfDefectiveCoating();
+            form.Kvalitet.Text = this.getKvalitet();
+
+            string idWorkpieceStr = this.getIdWorkpiece();
+            int idWorkpiece = Convert.ToInt32(idWorkpieceStr);
+            if ((idWorkpiece == 2) || (idWorkpiece == 3))
+            {
+                form.ValidOffsetSurface.Enabled = true;
+                form.label4.Enabled = true;
+                form.label5.Enabled = true;
+            }
+            else
+            {
+                form.ValidOffsetSurface.Enabled = false;
+                form.label4.Enabled = false;
+                form.label5.Enabled = false;
+            }
+        }
+
         public void setNameOfWorkpiece(string nameOfWorkpiece)
         {
             this.nameOfWorkpiece = nameOfWorkpiece;

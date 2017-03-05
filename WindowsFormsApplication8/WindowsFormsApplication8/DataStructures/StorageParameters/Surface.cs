@@ -5,10 +5,11 @@ using System.Text;
 
 namespace WindowsFormsApplication8
 {
-    class Operations
+    class Surface
     {
         private string nameSurface = "";
         private ParametersOperation[] operations = new ParametersOperation[0];
+        
 
         public void setNameSurface(string nameSurface)
         {

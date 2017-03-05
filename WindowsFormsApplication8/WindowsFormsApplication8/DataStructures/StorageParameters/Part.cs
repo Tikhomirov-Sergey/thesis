@@ -5,22 +5,44 @@ using System.Text;
 
 namespace WindowsFormsApplication8
 {
-    class Surfaces
+    class Part
     {
-        private static Operations[] surfaces = new Operations[1];
+        private static ParametersOfPart parametersOfPart = null;
+        private static ParametersWorkpiece workpriece = null;
+        private static Surface[] surfaces = new Surface[1];
         
-        public static void setOpetations(Operations operations)
+        public static ParametersOfPart getParametersOfPart()
+        {
+            return parametersOfPart;
+        }
+
+        public static void setParametersOfPart(ParametersOfPart parametersOfPart)
+        {
+            Part.parametersOfPart = parametersOfPart;
+        }
+
+        public static ParametersWorkpiece getWorkpiece()
+        {
+            return workpriece;
+        }
+
+        public static void setWorkpiece(ParametersWorkpiece workpirece)
+        {
+            Part.workpriece = workpirece;
+        }
+
+        public static void setOpetations(Surface operations)
         {
             int length = surfaces.Length;
             Array.Resize(ref surfaces, length + 1);
             surfaces[length] = operations;
         }
 
-        public static Operations[] getSurfaces()
+        public static Surface[] getSurfaces()
         {
             return surfaces;
         }
-        
+
         public static void addOperationInSurface(ParametersOperation operation, int indexSurface)
         {
             try
@@ -31,7 +53,7 @@ namespace WindowsFormsApplication8
             catch { }
         }
 
-        public static Operations getSurfaceOnIndex(int indexSurface)
+        public static Surface getSurfaceOnIndex(int indexSurface)
         {
             try
             { 
@@ -44,11 +66,11 @@ namespace WindowsFormsApplication8
         {
             if (SurfaceIsNull(surfaces[indexSurface]))
             {
-                surfaces[indexSurface] = new Operations();
+                surfaces[indexSurface] = new Surface();
             }
         }
 
-        private static bool SurfaceIsNull(Operations surface)
+        private static bool SurfaceIsNull(Surface surface)
         {
             return (surface == null);
         }

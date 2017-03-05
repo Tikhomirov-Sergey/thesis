@@ -30,8 +30,9 @@ namespace WindowsFormsApplication8
             if (level == 1)
             {
                 ParametersWorkpiece parameters = extractionOfParametersOfWorkpiece(e);
-                StorageOfSelectedWorkpiece.setParameters(parameters);
-                StorageOfSelectedWorkpiece.insertParametersOfOperationsInTextboxes(form);
+
+                Part.setWorkpiece(parameters);
+                parameters.insertParametersOfWorkpieceInTextboxes(form);
             }
         }
         private static ParametersWorkpiece extractionOfParametersOfWorkpiece(TreeNodeMouseClickEventArgs e)
