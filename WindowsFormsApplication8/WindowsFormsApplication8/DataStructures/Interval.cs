@@ -12,7 +12,7 @@ namespace WindowsFormsApplication8.DataStructures
         
         public bool checkOfInterval(double value)
         {
-            return ((this.min < value) && (this.max > value));
+            return ((this.min < value) && (this.max >= value));
         }
 
         public double getIntervalMin()

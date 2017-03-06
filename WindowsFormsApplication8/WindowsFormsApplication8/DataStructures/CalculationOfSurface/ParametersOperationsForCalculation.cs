@@ -9,18 +9,18 @@ namespace WindowsFormsApplication8.DataStructures.CalculationOfSurface
     class ParametersOperationsForCalculation
     {
         private double[] surfaceRoughnessRz;
-        private double[] kvalitet;
+        private double[] kvalitets;
         private double[] thicknessOfDefectiveCoating;
         private double[] coefficientOfRefinement;
 
         private int[] idOperation;
         private string[] typeOfInstrument;
 
-        public ParametersOperationsForCalculation(double[] surfaceRoughnessRz, double[] kvalitet, 
+        public ParametersOperationsForCalculation(double[] surfaceRoughnessRz, double[] kvalitets, 
             double[] thicknessOfDefectiveCoating, double[] coefficientOfRefinement, int[] idOperation, string[] typeOfInstrument)
         {
             this.surfaceRoughnessRz = surfaceRoughnessRz;
-            this.kvalitet = kvalitet;
+            this.kvalitets = kvalitets;
             this.thicknessOfDefectiveCoating = thicknessOfDefectiveCoating;
             this.coefficientOfRefinement = coefficientOfRefinement;
             this.idOperation = idOperation;
@@ -32,9 +32,9 @@ namespace WindowsFormsApplication8.DataStructures.CalculationOfSurface
             return this.surfaceRoughnessRz;
         }
 
-        public double[] getKvalitet()
+        public double[] getKvalitets()
         {
-            return this.kvalitet;
+            return this.kvalitets;
         }
 
         public double[] getThicknessOfDefectiveCoating()
@@ -55,6 +55,11 @@ namespace WindowsFormsApplication8.DataStructures.CalculationOfSurface
         public string[] getTypeOfInstrument()
         {
             return this.typeOfInstrument;
+        }
+
+        public int getNumberOfOperations()
+        {
+            return this.idOperation.Length;
         }
     }
 }

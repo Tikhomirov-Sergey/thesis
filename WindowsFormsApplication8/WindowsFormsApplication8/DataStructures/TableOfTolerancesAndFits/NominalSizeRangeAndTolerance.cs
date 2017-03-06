@@ -9,5 +9,15 @@ namespace WindowsFormsApplication8.DataStructures.TableOfTolerancesAndFits
     {
         public Interval nominalSizeRange { get; set; }
         public double tolerance { get; set; }
+
+        public bool checkIterval(double size)
+        {
+            return nominalSizeRange.checkOfInterval(size);
+        }
+
+        public double getTolerance()
+        {
+            return this.tolerance;
+        }
     }
 }
