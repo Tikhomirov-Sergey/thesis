@@ -21,5 +21,10 @@ namespace WindowsFormsApplication8
             }
             return listInstruments;
         }
+
+      //  public double getDeviationOfInstallation(double requiredSize, int idOperation, string typeOfInstrument)
+      //  {
+
+       // }
     }
 }

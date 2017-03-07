@@ -9,5 +9,15 @@ namespace WindowsFormsApplication8.DataStructures.CurvatureOfImpressionDieForgin
     {
         public Interval estimatedSize { get; set; }
         public double coefficient { get; set; }
+
+        public double getCoefficient()
+        {
+            return coefficient;
+        }
+
+        public bool checkOfSize(double requiredSize)
+        {
+            return estimatedSize.checkOfInterval(requiredSize);
+        }
     }
 }

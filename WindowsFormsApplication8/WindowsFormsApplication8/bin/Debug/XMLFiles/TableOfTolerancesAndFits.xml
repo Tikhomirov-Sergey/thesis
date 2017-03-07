@@ -5,66 +5,150 @@
       <kvalitet>0.1</kvalitet>
       <nominalSizeRangeAndTolerance>
         <NominalSizeRangeAndTolerance>
+          <nominalSizeRange>
+            <min>0</min>
+            <max>3</max>
+          </nominalSizeRange>
           <tolerance>0.0003</tolerance>
         </NominalSizeRangeAndTolerance>
         <NominalSizeRangeAndTolerance>
+          <nominalSizeRange>
+            <min>3</min>
+            <max>6</max>
+          </nominalSizeRange>
           <tolerance>0.0004</tolerance>
         </NominalSizeRangeAndTolerance>
         <NominalSizeRangeAndTolerance>
+          <nominalSizeRange>
+            <min>6</min>
+            <max>10</max>
+          </nominalSizeRange>
           <tolerance>0.0004</tolerance>
         </NominalSizeRangeAndTolerance>
         <NominalSizeRangeAndTolerance>
+          <nominalSizeRange>
+            <min>10</min>
+            <max>18</max>
+          </nominalSizeRange>
           <tolerance>0.0005</tolerance>
         </NominalSizeRangeAndTolerance>
         <NominalSizeRangeAndTolerance>
+          <nominalSizeRange>
+            <min>18</min>
+            <max>30</max>
+          </nominalSizeRange>
           <tolerance>0.0006</tolerance>
         </NominalSizeRangeAndTolerance>
         <NominalSizeRangeAndTolerance>
+          <nominalSizeRange>
+            <min>30</min>
+            <max>50</max>
+          </nominalSizeRange>
           <tolerance>0.0006</tolerance>
         </NominalSizeRangeAndTolerance>
         <NominalSizeRangeAndTolerance>
+          <nominalSizeRange>
+            <min>50</min>
+            <max>80</max>
+          </nominalSizeRange>
           <tolerance>0.0008</tolerance>
         </NominalSizeRangeAndTolerance>
         <NominalSizeRangeAndTolerance>
+          <nominalSizeRange>
+            <min>80</min>
+            <max>120</max>
+          </nominalSizeRange>
           <tolerance>0.001</tolerance>
         </NominalSizeRangeAndTolerance>
         <NominalSizeRangeAndTolerance>
+          <nominalSizeRange>
+            <min>120</min>
+            <max>180</max>
+          </nominalSizeRange>
           <tolerance>0.0012</tolerance>
         </NominalSizeRangeAndTolerance>
         <NominalSizeRangeAndTolerance>
+          <nominalSizeRange>
+            <min>180</min>
+            <max>250</max>
+          </nominalSizeRange>
           <tolerance>0.002</tolerance>
         </NominalSizeRangeAndTolerance>
         <NominalSizeRangeAndTolerance>
+          <nominalSizeRange>
+            <min>250</min>
+            <max>315</max>
+          </nominalSizeRange>
           <tolerance>0.0025</tolerance>
         </NominalSizeRangeAndTolerance>
         <NominalSizeRangeAndTolerance>
+          <nominalSizeRange>
+            <min>315</min>
+            <max>400</max>
+          </nominalSizeRange>
           <tolerance>0.003</tolerance>
         </NominalSizeRangeAndTolerance>
         <NominalSizeRangeAndTolerance>
+          <nominalSizeRange>
+            <min>400</min>
+            <max>500</max>
+          </nominalSizeRange>
           <tolerance>0.004</tolerance>
         </NominalSizeRangeAndTolerance>
         <NominalSizeRangeAndTolerance>
+          <nominalSizeRange>
+            <min>500</min>
+            <max>630</max>
+          </nominalSizeRange>
           <tolerance>0.0045</tolerance>
         </NominalSizeRangeAndTolerance>
         <NominalSizeRangeAndTolerance>
+          <nominalSizeRange>
+            <min>630</min>
+            <max>800</max>
+          </nominalSizeRange>
           <tolerance>0.005</tolerance>
         </NominalSizeRangeAndTolerance>
         <NominalSizeRangeAndTolerance>
+          <nominalSizeRange>
+            <min>800</min>
+            <max>1000</max>
+          </nominalSizeRange>
           <tolerance>0.0055</tolerance>
         </NominalSizeRangeAndTolerance>
         <NominalSizeRangeAndTolerance>
+          <nominalSizeRange>
+            <min>1000</min>
+            <max>1250</max>
+          </nominalSizeRange>
           <tolerance>0.0065</tolerance>
         </NominalSizeRangeAndTolerance>
         <NominalSizeRangeAndTolerance>
+          <nominalSizeRange>
+            <min>1250</min>
+            <max>1600</max>
+          </nominalSizeRange>
           <tolerance>0.008</tolerance>
         </NominalSizeRangeAndTolerance>
         <NominalSizeRangeAndTolerance>
+          <nominalSizeRange>
+            <min>1600</min>
+            <max>2000</max>
+          </nominalSizeRange>
           <tolerance>0.009</tolerance>
         </NominalSizeRangeAndTolerance>
         <NominalSizeRangeAndTolerance>
+          <nominalSizeRange>
+            <min>2000</min>
+            <max>2500</max>
+          </nominalSizeRange>
           <tolerance>0.011</tolerance>
         </NominalSizeRangeAndTolerance>
         <NominalSizeRangeAndTolerance>
+          <nominalSizeRange>
+            <min>2500</min>
+            <max>3150</max>
+          </nominalSizeRange>
           <tolerance>0.013</tolerance>
         </NominalSizeRangeAndTolerance>
       </nominalSizeRangeAndTolerance>
@@ -73,66 +157,150 @@
       <kvalitet>0</kvalitet>
       <nominalSizeRangeAndTolerance>
         <NominalSizeRangeAndTolerance>
+          <nominalSizeRange>
+            <min>0</min>
+            <max>3</max>
+          </nominalSizeRange>
           <tolerance>0.0005</tolerance>
         </NominalSizeRangeAndTolerance>
         <NominalSizeRangeAndTolerance>
+          <nominalSizeRange>
+            <min>3</min>
+            <max>6</max>
+          </nominalSizeRange>
           <tolerance>0.0006</tolerance>
         </NominalSizeRangeAndTolerance>
         <NominalSizeRangeAndTolerance>
+          <nominalSizeRange>
+            <min>6</min>
+            <max>10</max>
+          </nominalSizeRange>
           <tolerance>0.0006</tolerance>
         </NominalSizeRangeAndTolerance>
         <NominalSizeRangeAndTolerance>
+          <nominalSizeRange>
+            <min>10</min>
+            <max>18</max>
+          </nominalSizeRange>
           <tolerance>0.0008</tolerance>
         </NominalSizeRangeAndTolerance>
         <NominalSizeRangeAndTolerance>
+          <nominalSizeRange>
+            <min>18</min>
+            <max>30</max>
+          </nominalSizeRange>
           <tolerance>0.001</tolerance>
         </NominalSizeRangeAndTolerance>
         <NominalSizeRangeAndTolerance>
+          <nominalSizeRange>
+            <min>30</min>
+            <max>50</max>
+          </nominalSizeRange>
           <tolerance>0.001</tolerance>
         </NominalSizeRangeAndTolerance>
         <NominalSizeRangeAndTolerance>
+          <nominalSizeRange>
+            <min>50</min>
+            <max>80</max>
+          </nominalSizeRange>
           <tolerance>0.0012</tolerance>
         </NominalSizeRangeAndTolerance>
         <NominalSizeRangeAndTolerance>
+          <nominalSizeRange>
+            <min>80</min>
+            <max>120</max>
+          </nominalSizeRange>
           <tolerance>0.0015</tolerance>
         </NominalSizeRangeAndTolerance>
         <NominalSizeRangeAndTolerance>
+          <nominalSizeRange>
+            <min>120</min>
+            <max>180</max>
+          </nominalSizeRange>
           <tolerance>0.002</tolerance>
         </NominalSizeRangeAndTolerance>
         <NominalSizeRangeAndTolerance>
+          <nominalSizeRange>
+            <min>180</min>
+            <max>250</max>
+          </nominalSizeRange>
           <tolerance>0.003</tolerance>
         </NominalSizeRangeAndTolerance>
         <NominalSizeRangeAndTolerance>
+          <nominalSizeRange>
+            <min>250</min>
+            <max>315</max>
+          </nominalSizeRange>
           <tolerance>0.004</tolerance>
         </NominalSizeRangeAndTolerance>
         <NominalSizeRangeAndTolerance>
+          <nominalSizeRange>
+            <min>315</min>
+            <max>400</max>
+          </nominalSizeRange>
           <tolerance>0.005</tolerance>
         </NominalSizeRangeAndTolerance>
         <NominalSizeRangeAndTolerance>
+          <nominalSizeRange>
+            <min>400</min>
+            <max>500</max>
+          </nominalSizeRange>
           <tolerance>0.006</tolerance>
         </NominalSizeRangeAndTolerance>
         <NominalSizeRangeAndTolerance>
+          <nominalSizeRange>
+            <min>500</min>
+            <max>630</max>
+          </nominalSizeRange>
           <tolerance>0.006</tolerance>
         </NominalSizeRangeAndTolerance>
         <NominalSizeRangeAndTolerance>
+          <nominalSizeRange>
+            <min>630</min>
+            <max>800</max>
+          </nominalSizeRange>
           <tolerance>0.007</tolerance>
         </NominalSizeRangeAndTolerance>
         <NominalSizeRangeAndTolerance>
+          <nominalSizeRange>
+            <min>800</min>
+            <max>1000</max>
+          </nominalSizeRange>
           <tolerance>0.008</tolerance>
         </NominalSizeRangeAndTolerance>
         <NominalSizeRangeAndTolerance>
+          <nominalSizeRange>
+            <min>1000</min>
+            <max>1250</max>
+          </nominalSizeRange>
           <tolerance>0.009</tolerance>
         </NominalSizeRangeAndTolerance>
         <NominalSizeRangeAndTolerance>
+          <nominalSizeRange>
+            <min>1250</min>
+            <max>1600</max>
+          </nominalSizeRange>
           <tolerance>0.011</tolerance>
         </NominalSizeRangeAndTolerance>
         <NominalSizeRangeAndTolerance>
+          <nominalSizeRange>
+            <min>1600</min>
+            <max>2000</max>
+          </nominalSizeRange>
           <tolerance>0.013</tolerance>
         </NominalSizeRangeAndTolerance>
         <NominalSizeRangeAndTolerance>
+          <nominalSizeRange>
+            <min>2000</min>
+            <max>2500</max>
+          </nominalSizeRange>
           <tolerance>0.015</tolerance>
         </NominalSizeRangeAndTolerance>
         <NominalSizeRangeAndTolerance>
+          <nominalSizeRange>
+            <min>2500</min>
+            <max>3150</max>
+          </nominalSizeRange>
           <tolerance>0.018</tolerance>
         </NominalSizeRangeAndTolerance>
       </nominalSizeRangeAndTolerance>
@@ -141,66 +309,150 @@
       <kvalitet>1</kvalitet>
       <nominalSizeRangeAndTolerance>
         <NominalSizeRangeAndTolerance>
+          <nominalSizeRange>
+            <min>0</min>
+            <max>3</max>
+          </nominalSizeRange>
           <tolerance>0.0008</tolerance>
         </NominalSizeRangeAndTolerance>
         <NominalSizeRangeAndTolerance>
+          <nominalSizeRange>
+            <min>3</min>
+            <max>6</max>
+          </nominalSizeRange>
           <tolerance>0.001</tolerance>
         </NominalSizeRangeAndTolerance>
         <NominalSizeRangeAndTolerance>
+          <nominalSizeRange>
+            <min>6</min>
+            <max>10</max>
+          </nominalSizeRange>
           <tolerance>0.001</tolerance>
         </NominalSizeRangeAndTolerance>
         <NominalSizeRangeAndTolerance>
+          <nominalSizeRange>
+            <min>10</min>
+            <max>18</max>
+          </nominalSizeRange>
           <tolerance>0.0012</tolerance>
         </NominalSizeRangeAndTolerance>
         <NominalSizeRangeAndTolerance>
+          <nominalSizeRange>
+            <min>18</min>
+            <max>30</max>
+          </nominalSizeRange>
           <tolerance>0.0015</tolerance>
         </NominalSizeRangeAndTolerance>
         <NominalSizeRangeAndTolerance>
+          <nominalSizeRange>
+            <min>30</min>
+            <max>50</max>
+          </nominalSizeRange>
           <tolerance>0.0015</tolerance>
         </NominalSizeRangeAndTolerance>
         <NominalSizeRangeAndTolerance>
+          <nominalSizeRange>
+            <min>50</min>
+            <max>80</max>
+          </nominalSizeRange>
           <tolerance>0.002</tolerance>
         </NominalSizeRangeAndTolerance>
         <NominalSizeRangeAndTolerance>
+          <nominalSizeRange>
+            <min>80</min>
+            <max>120</max>
+          </nominalSizeRange>
           <tolerance>0.0025</tolerance>
         </NominalSizeRangeAndTolerance>
         <NominalSizeRangeAndTolerance>
+          <nominalSizeRange>
+            <min>120</min>
+            <max>180</max>
+          </nominalSizeRange>
           <tolerance>0.0035</tolerance>
         </NominalSizeRangeAndTolerance>
         <NominalSizeRangeAndTolerance>
+          <nominalSizeRange>
+            <min>180</min>
+            <max>250</max>
+          </nominalSizeRange>
           <tolerance>0.0045</tolerance>
         </NominalSizeRangeAndTolerance>
         <NominalSizeRangeAndTolerance>
+          <nominalSizeRange>
+            <min>250</min>
+            <max>315</max>
+          </nominalSizeRange>
           <tolerance>0.006</tolerance>
         </NominalSizeRangeAndTolerance>
         <NominalSizeRangeAndTolerance>
+          <nominalSizeRange>
+            <min>315</min>
+            <max>400</max>
+          </nominalSizeRange>
           <tolerance>0.007</tolerance>
         </NominalSizeRangeAndTolerance>
         <NominalSizeRangeAndTolerance>
+          <nominalSizeRange>
+            <min>400</min>
+            <max>500</max>
+          </nominalSizeRange>
           <tolerance>0.008</tolerance>
         </NominalSizeRangeAndTolerance>
         <NominalSizeRangeAndTolerance>
+          <nominalSizeRange>
+            <min>500</min>
+            <max>630</max>
+          </nominalSizeRange>
           <tolerance>0.009</tolerance>
         </NominalSizeRangeAndTolerance>
         <NominalSizeRangeAndTolerance>
+          <nominalSizeRange>
+            <min>630</min>
+            <max>800</max>
+          </nominalSizeRange>
           <tolerance>0.01</tolerance>
         </NominalSizeRangeAndTolerance>
         <NominalSizeRangeAndTolerance>
+          <nominalSizeRange>
+            <min>800</min>
+            <max>1000</max>
+          </nominalSizeRange>
           <tolerance>0.011</tolerance>
         </NominalSizeRangeAndTolerance>
         <NominalSizeRangeAndTolerance>
+          <nominalSizeRange>
+            <min>1000</min>
+            <max>1250</max>
+          </nominalSizeRange>
           <tolerance>0.013</tolerance>
         </NominalSizeRangeAndTolerance>
         <NominalSizeRangeAndTolerance>
+          <nominalSizeRange>
+            <min>1250</min>
+            <max>1600</max>
+          </nominalSizeRange>
           <tolerance>0.015</tolerance>
         </NominalSizeRangeAndTolerance>
         <NominalSizeRangeAndTolerance>
+          <nominalSizeRange>
+            <min>1600</min>
+            <max>2000</max>
+          </nominalSizeRange>
           <tolerance>0.018</tolerance>
         </NominalSizeRangeAndTolerance>
         <NominalSizeRangeAndTolerance>
+          <nominalSizeRange>
+            <min>2000</min>
+            <max>2500</max>
+          </nominalSizeRange>
           <tolerance>0.022</tolerance>
         </NominalSizeRangeAndTolerance>
         <NominalSizeRangeAndTolerance>
+          <nominalSizeRange>
+            <min>2500</min>
+            <max>3150</max>
+          </nominalSizeRange>
           <tolerance>0.026</tolerance>
         </NominalSizeRangeAndTolerance>
       </nominalSizeRangeAndTolerance>
@@ -209,66 +461,150 @@
       <kvalitet>2</kvalitet>
       <nominalSizeRangeAndTolerance>
         <NominalSizeRangeAndTolerance>
+          <nominalSizeRange>
+            <min>0</min>
+            <max>3</max>
+          </nominalSizeRange>
           <tolerance>0.0012</tolerance>
         </NominalSizeRangeAndTolerance>
         <NominalSizeRangeAndTolerance>
+          <nominalSizeRange>
+            <min>3</min>
+            <max>6</max>
+          </nominalSizeRange>
           <tolerance>0.0015</tolerance>
         </NominalSizeRangeAndTolerance>
         <NominalSizeRangeAndTolerance>
+          <nominalSizeRange>
+            <min>6</min>
+            <max>10</max>
+          </nominalSizeRange>
           <tolerance>0.0015</tolerance>
         </NominalSizeRangeAndTolerance>
         <NominalSizeRangeAndTolerance>
+          <nominalSizeRange>
+            <min>10</min>
+            <max>18</max>
+          </nominalSizeRange>
           <tolerance>0.002</tolerance>
         </NominalSizeRangeAndTolerance>
         <NominalSizeRangeAndTolerance>
+          <nominalSizeRange>
+            <min>18</min>
+            <max>30</max>
+          </nominalSizeRange>
           <tolerance>0.0025</tolerance>
         </NominalSizeRangeAndTolerance>
         <NominalSizeRangeAndTolerance>
+          <nominalSizeRange>
+            <min>30</min>
+            <max>50</max>
+          </nominalSizeRange>
           <tolerance>0.0025</tolerance>
         </NominalSizeRangeAndTolerance>
         <NominalSizeRangeAndTolerance>
+          <nominalSizeRange>
+            <min>50</min>
+            <max>80</max>
+          </nominalSizeRange>
           <tolerance>0.003</tolerance>
         </NominalSizeRangeAndTolerance>
         <NominalSizeRangeAndTolerance>
+          <nominalSizeRange>
+            <min>80</min>
+            <max>120</max>
+          </nominalSizeRange>
           <tolerance>0.004</tolerance>
         </NominalSizeRangeAndTolerance>
         <NominalSizeRangeAndTolerance>
+          <nominalSizeRange>
+            <min>120</min>
+            <max>180</max>
+          </nominalSizeRange>
           <tolerance>0.005</tolerance>
         </NominalSizeRangeAndTolerance>
         <NominalSizeRangeAndTolerance>
+          <nominalSizeRange>
+            <min>180</min>
+            <max>250</max>
+          </nominalSizeRange>
           <tolerance>0.007</tolerance>
         </NominalSizeRangeAndTolerance>
         <NominalSizeRangeAndTolerance>
+          <nominalSizeRange>
+            <min>250</min>
+            <max>315</max>
+          </nominalSizeRange>
           <tolerance>0.008</tolerance>
         </NominalSizeRangeAndTolerance>
         <NominalSizeRangeAndTolerance>
+          <nominalSizeRange>
+            <min>315</min>
+            <max>400</max>
+          </nominalSizeRange>
           <tolerance>0.009</tolerance>
         </NominalSizeRangeAndTolerance>
         <NominalSizeRangeAndTolerance>
+          <nominalSizeRange>
+            <min>400</min>
+            <max>500</max>
+          </nominalSizeRange>
           <tolerance>0.01</tolerance>
         </NominalSizeRangeAndTolerance>
         <NominalSizeRangeAndTolerance>
+          <nominalSizeRange>
+            <min>500</min>
+            <max>630</max>
+          </nominalSizeRange>
           <tolerance>0.011</tolerance>
         </NominalSizeRangeAndTolerance>
         <NominalSizeRangeAndTolerance>
+          <nominalSizeRange>
+            <min>630</min>
+            <max>800</max>
+          </nominalSizeRange>
           <tolerance>0.013</tolerance>
         </NominalSizeRangeAndTolerance>
         <NominalSizeRangeAndTolerance>
+          <nominalSizeRange>
+            <min>800</min>
+            <max>1000</max>
+          </nominalSizeRange>
           <tolerance>0.015</tolerance>
         </NominalSizeRangeAndTolerance>
         <NominalSizeRangeAndTolerance>
+          <nominalSizeRange>
+            <min>1000</min>
+            <max>1250</max>
+          </nominalSizeRange>
           <tolerance>0.018</tolerance>
         </NominalSizeRangeAndTolerance>
         <NominalSizeRangeAndTolerance>
+          <nominalSizeRange>
+            <min>1250</min>
+            <max>1600</max>
+          </nominalSizeRange>
           <tolerance>0.021</tolerance>
         </NominalSizeRangeAndTolerance>
         <NominalSizeRangeAndTolerance>
+          <nominalSizeRange>
+            <min>1600</min>
+            <max>2000</max>
+          </nominalSizeRange>
           <tolerance>0.025</tolerance>
         </NominalSizeRangeAndTolerance>
         <NominalSizeRangeAndTolerance>
+          <nominalSizeRange>
+            <min>2000</min>
+            <max>2500</max>
+          </nominalSizeRange>
           <tolerance>0.03</tolerance>
         </NominalSizeRangeAndTolerance>
         <NominalSizeRangeAndTolerance>
+          <nominalSizeRange>
+            <min>2500</min>
+            <max>3150</max>
+          </nominalSizeRange>
           <tolerance>0.036</tolerance>
         </NominalSizeRangeAndTolerance>
       </nominalSizeRangeAndTolerance>
@@ -277,66 +613,150 @@
       <kvalitet>3</kvalitet>
       <nominalSizeRangeAndTolerance>
         <NominalSizeRangeAndTolerance>
+          <nominalSizeRange>
+            <min>0</min>
+            <max>3</max>
+          </nominalSizeRange>
           <tolerance>0.002</tolerance>
         </NominalSizeRangeAndTolerance>
         <NominalSizeRangeAndTolerance>
+          <nominalSizeRange>
+            <min>3</min>
+            <max>6</max>
+          </nominalSizeRange>
           <tolerance>0.0025</tolerance>
         </NominalSizeRangeAndTolerance>
         <NominalSizeRangeAndTolerance>
+          <nominalSizeRange>
+            <min>6</min>
+            <max>10</max>
+          </nominalSizeRange>
           <tolerance>0.0025</tolerance>
         </NominalSizeRangeAndTolerance>
         <NominalSizeRangeAndTolerance>
+          <nominalSizeRange>
+            <min>10</min>
+            <max>18</max>
+          </nominalSizeRange>
           <tolerance>0.003</tolerance>
         </NominalSizeRangeAndTolerance>
         <NominalSizeRangeAndTolerance>
+          <nominalSizeRange>
+            <min>18</min>
+            <max>30</max>
+          </nominalSizeRange>
           <tolerance>0.004</tolerance>
         </NominalSizeRangeAndTolerance>
         <NominalSizeRangeAndTolerance>
+          <nominalSizeRange>
+            <min>30</min>
+            <max>50</max>
+          </nominalSizeRange>
           <tolerance>0.004</tolerance>
         </NominalSizeRangeAndTolerance>
         <NominalSizeRangeAndTolerance>
+          <nominalSizeRange>
+            <min>50</min>
+            <max>80</max>
+          </nominalSizeRange>
           <tolerance>0.005</tolerance>
         </NominalSizeRangeAndTolerance>
         <NominalSizeRangeAndTolerance>
+          <nominalSizeRange>
+            <min>80</min>
+            <max>120</max>
+          </nominalSizeRange>
           <tolerance>0.006</tolerance>
         </NominalSizeRangeAndTolerance>
         <NominalSizeRangeAndTolerance>
+          <nominalSizeRange>
+            <min>120</min>
+            <max>180</max>
+          </nominalSizeRange>
           <tolerance>0.008</tolerance>
         </NominalSizeRangeAndTolerance>
         <NominalSizeRangeAndTolerance>
+          <nominalSizeRange>
+            <min>180</min>
+            <max>250</max>
+          </nominalSizeRange>
           <tolerance>0.01</tolerance>
         </NominalSizeRangeAndTolerance>
         <NominalSizeRangeAndTolerance>
+          <nominalSizeRange>
+            <min>250</min>
+            <max>315</max>
+          </nominalSizeRange>
           <tolerance>0.012</tolerance>
         </NominalSizeRangeAndTolerance>
         <NominalSizeRangeAndTolerance>
+          <nominalSizeRange>
+            <min>315</min>
+            <max>400</max>
+          </nominalSizeRange>
           <tolerance>0.013</tolerance>
         </NominalSizeRangeAndTolerance>
         <NominalSizeRangeAndTolerance>
+          <nominalSizeRange>
+            <min>400</min>
+            <max>500</max>
+          </nominalSizeRange>
           <tolerance>0.015</tolerance>
         </NominalSizeRangeAndTolerance>
         <NominalSizeRangeAndTolerance>
+          <nominalSizeRange>
+            <min>500</min>
+            <max>630</max>
+          </nominalSizeRange>
           <tolerance>0.016</tolerance>
         </NominalSizeRangeAndTolerance>
         <NominalSizeRangeAndTolerance>
+          <nominalSizeRange>
+            <min>630</min>
+            <max>800</max>
+          </nominalSizeRange>
           <tolerance>0.018</tolerance>
         </NominalSizeRangeAndTolerance>
         <NominalSizeRangeAndTolerance>
+          <nominalSizeRange>
+            <min>800</min>
+            <max>1000</max>
+          </nominalSizeRange>
           <tolerance>0.021</tolerance>
         </NominalSizeRangeAndTolerance>
         <NominalSizeRangeAndTolerance>
+          <nominalSizeRange>
+            <min>1000</min>
+            <max>1250</max>
+          </nominalSizeRange>
           <tolerance>0.024</tolerance>
         </NominalSizeRangeAndTolerance>
         <NominalSizeRangeAndTolerance>
+          <nominalSizeRange>
+            <min>1250</min>
+            <max>1600</max>
+          </nominalSizeRange>
           <tolerance>0.029</tolerance>
         </NominalSizeRangeAndTolerance>
         <NominalSizeRangeAndTolerance>
+          <nominalSizeRange>
+            <min>1600</min>
+            <max>2000</max>
+          </nominalSizeRange>
           <tolerance>0.035</tolerance>
         </NominalSizeRangeAndTolerance>
         <NominalSizeRangeAndTolerance>
+          <nominalSizeRange>
+            <min>2000</min>
+            <max>2500</max>
+          </nominalSizeRange>
           <tolerance>0.041</tolerance>
         </NominalSizeRangeAndTolerance>
         <NominalSizeRangeAndTolerance>
+          <nominalSizeRange>
+            <min>2500</min>
+            <max>3150</max>
+          </nominalSizeRange>
           <tolerance>0.05</tolerance>
         </NominalSizeRangeAndTolerance>
       </nominalSizeRangeAndTolerance>
@@ -345,66 +765,150 @@
       <kvalitet>4</kvalitet>
       <nominalSizeRangeAndTolerance>
         <NominalSizeRangeAndTolerance>
+          <nominalSizeRange>
+            <min>0</min>
+            <max>3</max>
+          </nominalSizeRange>
           <tolerance>0.003</tolerance>
         </NominalSizeRangeAndTolerance>
         <NominalSizeRangeAndTolerance>
+          <nominalSizeRange>
+            <min>3</min>
+            <max>6</max>
+          </nominalSizeRange>
           <tolerance>0.004</tolerance>
         </NominalSizeRangeAndTolerance>
         <NominalSizeRangeAndTolerance>
+          <nominalSizeRange>
+            <min>6</min>
+            <max>10</max>
+          </nominalSizeRange>
           <tolerance>0.004</tolerance>
         </NominalSizeRangeAndTolerance>
         <NominalSizeRangeAndTolerance>
+          <nominalSizeRange>
+            <min>10</min>
+            <max>18</max>
+          </nominalSizeRange>
           <tolerance>0.005</tolerance>
         </NominalSizeRangeAndTolerance>
         <NominalSizeRangeAndTolerance>
+          <nominalSizeRange>
+            <min>18</min>
+            <max>30</max>
+          </nominalSizeRange>
           <tolerance>0.006</tolerance>
         </NominalSizeRangeAndTolerance>
         <NominalSizeRangeAndTolerance>
+          <nominalSizeRange>
+            <min>30</min>
+            <max>50</max>
+          </nominalSizeRange>
           <tolerance>0.007</tolerance>
         </NominalSizeRangeAndTolerance>
         <NominalSizeRangeAndTolerance>
+          <nominalSizeRange>
+            <min>50</min>
+            <max>80</max>
+          </nominalSizeRange>
           <tolerance>0.008</tolerance>
         </NominalSizeRangeAndTolerance>
         <NominalSizeRangeAndTolerance>
+          <nominalSizeRange>
+            <min>80</min>
+            <max>120</max>
+          </nominalSizeRange>
           <tolerance>0.01</tolerance>
         </NominalSizeRangeAndTolerance>
         <NominalSizeRangeAndTolerance>
+          <nominalSizeRange>
+            <min>120</min>
+            <max>180</max>
+          </nominalSizeRange>
           <tolerance>0.012</tolerance>
         </NominalSizeRangeAndTolerance>
         <NominalSizeRangeAndTolerance>
+          <nominalSizeRange>
+            <min>180</min>
+            <max>250</max>
+          </nominalSizeRange>
           <tolerance>0.014</tolerance>
         </NominalSizeRangeAndTolerance>
         <NominalSizeRangeAndTolerance>
+          <nominalSizeRange>
+            <min>250</min>
+            <max>315</max>
+          </nominalSizeRange>
           <tolerance>0.016</tolerance>
         </NominalSizeRangeAndTolerance>
         <NominalSizeRangeAndTolerance>
+          <nominalSizeRange>
+            <min>315</min>
+            <max>400</max>
+          </nominalSizeRange>
           <tolerance>0.018</tolerance>
         </NominalSizeRangeAndTolerance>
         <NominalSizeRangeAndTolerance>
+          <nominalSizeRange>
+            <min>400</min>
+            <max>500</max>
+          </nominalSizeRange>
           <tolerance>0.02</tolerance>
         </NominalSizeRangeAndTolerance>
         <NominalSizeRangeAndTolerance>
+          <nominalSizeRange>
+            <min>500</min>
+            <max>630</max>
+          </nominalSizeRange>
           <tolerance>0.022</tolerance>
         </NominalSizeRangeAndTolerance>
         <NominalSizeRangeAndTolerance>
+          <nominalSizeRange>
+            <min>630</min>
+            <max>800</max>
+          </nominalSizeRange>
           <tolerance>0.025</tolerance>
         </NominalSizeRangeAndTolerance>
         <NominalSizeRangeAndTolerance>
+          <nominalSizeRange>
+            <min>800</min>
+            <max>1000</max>
+          </nominalSizeRange>
           <tolerance>0.029</tolerance>
         </NominalSizeRangeAndTolerance>
         <NominalSizeRangeAndTolerance>
+          <nominalSizeRange>
+            <min>1000</min>
+            <max>1250</max>
+          </nominalSizeRange>
           <tolerance>0.034</tolerance>
         </NominalSizeRangeAndTolerance>
         <NominalSizeRangeAndTolerance>
+          <nominalSizeRange>
+            <min>1250</min>
+            <max>1600</max>
+          </nominalSizeRange>
           <tolerance>0.04</tolerance>
         </NominalSizeRangeAndTolerance>
         <NominalSizeRangeAndTolerance>
+          <nominalSizeRange>
+            <min>1600</min>
+            <max>2000</max>
+          </nominalSizeRange>
           <tolerance>0.048</tolerance>
         </NominalSizeRangeAndTolerance>
         <NominalSizeRangeAndTolerance>
+          <nominalSizeRange>
+            <min>2000</min>
+            <max>2500</max>
+          </nominalSizeRange>
           <tolerance>0.057</tolerance>
         </NominalSizeRangeAndTolerance>
         <NominalSizeRangeAndTolerance>
+          <nominalSizeRange>
+            <min>2500</min>
+            <max>3150</max>
+          </nominalSizeRange>
           <tolerance>0.069</tolerance>
         </NominalSizeRangeAndTolerance>
       </nominalSizeRangeAndTolerance>
@@ -413,66 +917,150 @@
       <kvalitet>5</kvalitet>
       <nominalSizeRangeAndTolerance>
         <NominalSizeRangeAndTolerance>
+          <nominalSizeRange>
+            <min>0</min>
+            <max>3</max>
+          </nominalSizeRange>
           <tolerance>0.004</tolerance>
         </NominalSizeRangeAndTolerance>
         <NominalSizeRangeAndTolerance>
+          <nominalSizeRange>
+            <min>3</min>
+            <max>6</max>
+          </nominalSizeRange>
           <tolerance>0.005</tolerance>
         </NominalSizeRangeAndTolerance>
         <NominalSizeRangeAndTolerance>
+          <nominalSizeRange>
+            <min>6</min>
+            <max>10</max>
+          </nominalSizeRange>
           <tolerance>0.006</tolerance>
         </NominalSizeRangeAndTolerance>
         <NominalSizeRangeAndTolerance>
+          <nominalSizeRange>
+            <min>10</min>
+            <max>18</max>
+          </nominalSizeRange>
           <tolerance>0.008</tolerance>
         </NominalSizeRangeAndTolerance>
         <NominalSizeRangeAndTolerance>
+          <nominalSizeRange>
+            <min>18</min>
+            <max>30</max>
+          </nominalSizeRange>
           <tolerance>0.009</tolerance>
         </NominalSizeRangeAndTolerance>
         <NominalSizeRangeAndTolerance>
+          <nominalSizeRange>
+            <min>30</min>
+            <max>50</max>
+          </nominalSizeRange>
           <tolerance>0.011</tolerance>
         </NominalSizeRangeAndTolerance>
         <NominalSizeRangeAndTolerance>
+          <nominalSizeRange>
+            <min>50</min>
+            <max>80</max>
+          </nominalSizeRange>
           <tolerance>0.013</tolerance>
         </NominalSizeRangeAndTolerance>
         <NominalSizeRangeAndTolerance>
+          <nominalSizeRange>
+            <min>80</min>
+            <max>120</max>
+          </nominalSizeRange>
           <tolerance>0.015</tolerance>
         </NominalSizeRangeAndTolerance>
         <NominalSizeRangeAndTolerance>
+          <nominalSizeRange>
+            <min>120</min>
+            <max>180</max>
+          </nominalSizeRange>
           <tolerance>0.018</tolerance>
         </NominalSizeRangeAndTolerance>
         <NominalSizeRangeAndTolerance>
+          <nominalSizeRange>
+            <min>180</min>
+            <max>250</max>
+          </nominalSizeRange>
           <tolerance>0.02</tolerance>
         </NominalSizeRangeAndTolerance>
         <NominalSizeRangeAndTolerance>
+          <nominalSizeRange>
+            <min>250</min>
+            <max>315</max>
+          </nominalSizeRange>
           <tolerance>0.023</tolerance>
         </NominalSizeRangeAndTolerance>
         <NominalSizeRangeAndTolerance>
+          <nominalSizeRange>
+            <min>315</min>
+            <max>400</max>
+          </nominalSizeRange>
           <tolerance>0.025</tolerance>
         </NominalSizeRangeAndTolerance>
         <NominalSizeRangeAndTolerance>
+          <nominalSizeRange>
+            <min>400</min>
+            <max>500</max>
+          </nominalSizeRange>
           <tolerance>0.027</tolerance>
         </NominalSizeRangeAndTolerance>
         <NominalSizeRangeAndTolerance>
+          <nominalSizeRange>
+            <min>500</min>
+            <max>630</max>
+          </nominalSizeRange>
           <tolerance>0.03</tolerance>
         </NominalSizeRangeAndTolerance>
         <NominalSizeRangeAndTolerance>
+          <nominalSizeRange>
+            <min>630</min>
+            <max>800</max>
+          </nominalSizeRange>
           <tolerance>0.035</tolerance>
         </NominalSizeRangeAndTolerance>
         <NominalSizeRangeAndTolerance>
+          <nominalSizeRange>
+            <min>800</min>
+            <max>1000</max>
+          </nominalSizeRange>
           <tolerance>0.04</tolerance>
         </NominalSizeRangeAndTolerance>
         <NominalSizeRangeAndTolerance>
+          <nominalSizeRange>
+            <min>1000</min>
+            <max>1250</max>
+          </nominalSizeRange>
           <tolerance>0.046</tolerance>
         </NominalSizeRangeAndTolerance>
         <NominalSizeRangeAndTolerance>
+          <nominalSizeRange>
+            <min>1250</min>
+            <max>1600</max>
+          </nominalSizeRange>
           <tolerance>0.054</tolerance>
         </NominalSizeRangeAndTolerance>
         <NominalSizeRangeAndTolerance>
+          <nominalSizeRange>
+            <min>1600</min>
+            <max>2000</max>
+          </nominalSizeRange>
           <tolerance>0.065</tolerance>
         </NominalSizeRangeAndTolerance>
         <NominalSizeRangeAndTolerance>
+          <nominalSizeRange>
+            <min>2000</min>
+            <max>2500</max>
+          </nominalSizeRange>
           <tolerance>0.077</tolerance>
         </NominalSizeRangeAndTolerance>
         <NominalSizeRangeAndTolerance>
+          <nominalSizeRange>
+            <min>2500</min>
+            <max>3150</max>
+          </nominalSizeRange>
           <tolerance>0.093</tolerance>
         </NominalSizeRangeAndTolerance>
       </nominalSizeRangeAndTolerance>
@@ -481,66 +1069,150 @@
       <kvalitet>6</kvalitet>
       <nominalSizeRangeAndTolerance>
         <NominalSizeRangeAndTolerance>
+          <nominalSizeRange>
+            <min>0</min>
+            <max>3</max>
+          </nominalSizeRange>
           <tolerance>0.006</tolerance>
         </NominalSizeRangeAndTolerance>
         <NominalSizeRangeAndTolerance>
+          <nominalSizeRange>
+            <min>3</min>
+            <max>6</max>
+          </nominalSizeRange>
           <tolerance>0.008</tolerance>
         </NominalSizeRangeAndTolerance>
         <NominalSizeRangeAndTolerance>
+          <nominalSizeRange>
+            <min>6</min>
+            <max>10</max>
+          </nominalSizeRange>
           <tolerance>0.009</tolerance>
         </NominalSizeRangeAndTolerance>
         <NominalSizeRangeAndTolerance>
+          <nominalSizeRange>
+            <min>10</min>
+            <max>18</max>
+          </nominalSizeRange>
           <tolerance>0.011</tolerance>
         </NominalSizeRangeAndTolerance>
         <NominalSizeRangeAndTolerance>
+          <nominalSizeRange>
+            <min>18</min>
+            <max>30</max>
+          </nominalSizeRange>
           <tolerance>0.013</tolerance>
         </NominalSizeRangeAndTolerance>
         <NominalSizeRangeAndTolerance>
+          <nominalSizeRange>
+            <min>30</min>
+            <max>50</max>
+          </nominalSizeRange>
           <tolerance>0.016</tolerance>
         </NominalSizeRangeAndTolerance>
         <NominalSizeRangeAndTolerance>
+          <nominalSizeRange>
+            <min>50</min>
+            <max>80</max>
+          </nominalSizeRange>
           <tolerance>0.019</tolerance>
         </NominalSizeRangeAndTolerance>
         <NominalSizeRangeAndTolerance>
+          <nominalSizeRange>
+            <min>80</min>
+            <max>120</max>
+          </nominalSizeRange>
           <tolerance>0.022</tolerance>
         </NominalSizeRangeAndTolerance>
         <NominalSizeRangeAndTolerance>
+          <nominalSizeRange>
+            <min>120</min>
+            <max>180</max>
+          </nominalSizeRange>
           <tolerance>0.025</tolerance>
         </NominalSizeRangeAndTolerance>
         <NominalSizeRangeAndTolerance>
+          <nominalSizeRange>
+            <min>180</min>
+            <max>250</max>
+          </nominalSizeRange>
           <tolerance>0.029</tolerance>
         </NominalSizeRangeAndTolerance>
         <NominalSizeRangeAndTolerance>
+          <nominalSizeRange>
+            <min>250</min>
+            <max>315</max>
+          </nominalSizeRange>
           <tolerance>0.032</tolerance>
         </NominalSizeRangeAndTolerance>
         <NominalSizeRangeAndTolerance>
+          <nominalSizeRange>
+            <min>315</min>
+            <max>400</max>
+          </nominalSizeRange>
           <tolerance>0.036</tolerance>
         </NominalSizeRangeAndTolerance>
         <NominalSizeRangeAndTolerance>
+          <nominalSizeRange>
+            <min>400</min>
+            <max>500</max>
+          </nominalSizeRange>
           <tolerance>0.04</tolerance>
         </NominalSizeRangeAndTolerance>
         <NominalSizeRangeAndTolerance>
+          <nominalSizeRange>
+            <min>500</min>
+            <max>630</max>
+          </nominalSizeRange>
           <tolerance>0.044</tolerance>
         </NominalSizeRangeAndTolerance>
         <NominalSizeRangeAndTolerance>
+          <nominalSizeRange>
+            <min>630</min>
+            <max>800</max>
+          </nominalSizeRange>
           <tolerance>0.05</tolerance>
         </NominalSizeRangeAndTolerance>
         <NominalSizeRangeAndTolerance>
+          <nominalSizeRange>
+            <min>800</min>
+            <max>1000</max>
+          </nominalSizeRange>
           <tolerance>0.056</tolerance>
         </NominalSizeRangeAndTolerance>
         <NominalSizeRangeAndTolerance>
+          <nominalSizeRange>
+            <min>1000</min>
+            <max>1250</max>
+          </nominalSizeRange>
           <tolerance>0.066</tolerance>
         </NominalSizeRangeAndTolerance>
         <NominalSizeRangeAndTolerance>
+          <nominalSizeRange>
+            <min>1250</min>
+            <max>1600</max>
+          </nominalSizeRange>
           <tolerance>0.078</tolerance>
         </NominalSizeRangeAndTolerance>
         <NominalSizeRangeAndTolerance>
+          <nominalSizeRange>
+            <min>1600</min>
+            <max>2000</max>
+          </nominalSizeRange>
           <tolerance>0.092</tolerance>
         </NominalSizeRangeAndTolerance>
         <NominalSizeRangeAndTolerance>
+          <nominalSizeRange>
+            <min>2000</min>
+            <max>2500</max>
+          </nominalSizeRange>
           <tolerance>0.11</tolerance>
         </NominalSizeRangeAndTolerance>
         <NominalSizeRangeAndTolerance>
+          <nominalSizeRange>
+            <min>2500</min>
+            <max>3150</max>
+          </nominalSizeRange>
           <tolerance>0.135</tolerance>
         </NominalSizeRangeAndTolerance>
       </nominalSizeRangeAndTolerance>
@@ -549,66 +1221,150 @@
       <kvalitet>7</kvalitet>
       <nominalSizeRangeAndTolerance>
         <NominalSizeRangeAndTolerance>
+          <nominalSizeRange>
+            <min>0</min>
+            <max>3</max>
+          </nominalSizeRange>
           <tolerance>0.01</tolerance>
         </NominalSizeRangeAndTolerance>
         <NominalSizeRangeAndTolerance>
+          <nominalSizeRange>
+            <min>3</min>
+            <max>6</max>
+          </nominalSizeRange>
           <tolerance>0.012</tolerance>
         </NominalSizeRangeAndTolerance>
         <NominalSizeRangeAndTolerance>
+          <nominalSizeRange>
+            <min>6</min>
+            <max>10</max>
+          </nominalSizeRange>
           <tolerance>0.015</tolerance>
         </NominalSizeRangeAndTolerance>
         <NominalSizeRangeAndTolerance>
+          <nominalSizeRange>
+            <min>10</min>
+            <max>18</max>
+          </nominalSizeRange>
           <tolerance>0.018</tolerance>
         </NominalSizeRangeAndTolerance>
         <NominalSizeRangeAndTolerance>
+          <nominalSizeRange>
+            <min>18</min>
+            <max>30</max>
+          </nominalSizeRange>
           <tolerance>0.021</tolerance>
         </NominalSizeRangeAndTolerance>
         <NominalSizeRangeAndTolerance>
+          <nominalSizeRange>
+            <min>30</min>
+            <max>50</max>
+          </nominalSizeRange>
           <tolerance>0.025</tolerance>
         </NominalSizeRangeAndTolerance>
         <NominalSizeRangeAndTolerance>
+          <nominalSizeRange>
+            <min>50</min>
+            <max>80</max>
+          </nominalSizeRange>
           <tolerance>0.03</tolerance>
         </NominalSizeRangeAndTolerance>
         <NominalSizeRangeAndTolerance>
+          <nominalSizeRange>
+            <min>80</min>
+            <max>120</max>
+          </nominalSizeRange>
           <tolerance>0.035</tolerance>
         </NominalSizeRangeAndTolerance>
         <NominalSizeRangeAndTolerance>
+          <nominalSizeRange>
+            <min>120</min>
+            <max>180</max>
+          </nominalSizeRange>
           <tolerance>0.04</tolerance>
         </NominalSizeRangeAndTolerance>
         <NominalSizeRangeAndTolerance>
+          <nominalSizeRange>
+            <min>180</min>
+            <max>250</max>
+          </nominalSizeRange>
           <tolerance>0.046</tolerance>
         </NominalSizeRangeAndTolerance>
         <NominalSizeRangeAndTolerance>
+          <nominalSizeRange>
+            <min>250</min>
+            <max>315</max>
+          </nominalSizeRange>
           <tolerance>0.052</tolerance>
         </NominalSizeRangeAndTolerance>
         <NominalSizeRangeAndTolerance>
+          <nominalSizeRange>
+            <min>315</min>
+            <max>400</max>
+          </nominalSizeRange>
           <tolerance>0.057</tolerance>
         </NominalSizeRangeAndTolerance>
         <NominalSizeRangeAndTolerance>
+          <nominalSizeRange>
+            <min>400</min>
+            <max>500</max>
+          </nominalSizeRange>
           <tolerance>0.063</tolerance>
         </NominalSizeRangeAndTolerance>
         <NominalSizeRangeAndTolerance>
+          <nominalSizeRange>
+            <min>500</min>
+            <max>630</max>
+          </nominalSizeRange>
           <tolerance>0.07</tolerance>
         </NominalSizeRangeAndTolerance>
         <NominalSizeRangeAndTolerance>
+          <nominalSizeRange>
+            <min>630</min>
+            <max>800</max>
+          </nominalSizeRange>
           <tolerance>0.08</tolerance>
         </NominalSizeRangeAndTolerance>
         <NominalSizeRangeAndTolerance>
+          <nominalSizeRange>
+            <min>800</min>
+            <max>1000</max>
+          </nominalSizeRange>
           <tolerance>0.09</tolerance>
         </NominalSizeRangeAndTolerance>
         <NominalSizeRangeAndTolerance>
+          <nominalSizeRange>
+            <min>1000</min>
+            <max>1250</max>
+          </nominalSizeRange>
           <tolerance>0.105</tolerance>
         </NominalSizeRangeAndTolerance>
         <NominalSizeRangeAndTolerance>
+          <nominalSizeRange>
+            <min>1250</min>
+            <max>1600</max>
+          </nominalSizeRange>
           <tolerance>0.125</tolerance>
         </NominalSizeRangeAndTolerance>
         <NominalSizeRangeAndTolerance>
+          <nominalSizeRange>
+            <min>1600</min>
+            <max>2000</max>
+          </nominalSizeRange>
           <tolerance>0.15</tolerance>
         </NominalSizeRangeAndTolerance>
         <NominalSizeRangeAndTolerance>
+          <nominalSizeRange>
+            <min>2000</min>
+            <max>2500</max>
+          </nominalSizeRange>
           <tolerance>0.175</tolerance>
         </NominalSizeRangeAndTolerance>
         <NominalSizeRangeAndTolerance>
+          <nominalSizeRange>
+            <min>2500</min>
+            <max>3150</max>
+          </nominalSizeRange>
           <tolerance>0.21</tolerance>
         </NominalSizeRangeAndTolerance>
       </nominalSizeRangeAndTolerance>
@@ -617,66 +1373,150 @@
       <kvalitet>8</kvalitet>
       <nominalSizeRangeAndTolerance>
         <NominalSizeRangeAndTolerance>
+          <nominalSizeRange>
+            <min>0</min>
+            <max>3</max>
+          </nominalSizeRange>
           <tolerance>0.014</tolerance>
         </NominalSizeRangeAndTolerance>
         <NominalSizeRangeAndTolerance>
+          <nominalSizeRange>
+            <min>3</min>
+            <max>6</max>
+          </nominalSizeRange>
           <tolerance>0.018</tolerance>
         </NominalSizeRangeAndTolerance>
         <NominalSizeRangeAndTolerance>
+          <nominalSizeRange>
+            <min>6</min>
+            <max>10</max>
+          </nominalSizeRange>
           <tolerance>0.022</tolerance>
         </NominalSizeRangeAndTolerance>
         <NominalSizeRangeAndTolerance>
+          <nominalSizeRange>
+            <min>10</min>
+            <max>18</max>
+          </nominalSizeRange>
           <tolerance>0.027</tolerance>
         </NominalSizeRangeAndTolerance>
         <NominalSizeRangeAndTolerance>
+          <nominalSizeRange>
+            <min>18</min>
+            <max>30</max>
+          </nominalSizeRange>
           <tolerance>0.033</tolerance>
         </NominalSizeRangeAndTolerance>
         <NominalSizeRangeAndTolerance>
+          <nominalSizeRange>
+            <min>30</min>
+            <max>50</max>
+          </nominalSizeRange>
           <tolerance>0.039</tolerance>
         </NominalSizeRangeAndTolerance>
         <NominalSizeRangeAndTolerance>
+          <nominalSizeRange>
+            <min>50</min>
+            <max>80</max>
+          </nominalSizeRange>
           <tolerance>0.046</tolerance>
         </NominalSizeRangeAndTolerance>
         <NominalSizeRangeAndTolerance>
+          <nominalSizeRange>
+            <min>80</min>
+            <max>120</max>
+          </nominalSizeRange>
           <tolerance>0.054</tolerance>
         </NominalSizeRangeAndTolerance>
         <NominalSizeRangeAndTolerance>
+          <nominalSizeRange>
+            <min>120</min>
+            <max>180</max>
+          </nominalSizeRange>
           <tolerance>0.063</tolerance>
         </NominalSizeRangeAndTolerance>
         <NominalSizeRangeAndTolerance>
+          <nominalSizeRange>
+            <min>180</min>
+            <max>250</max>
+          </nominalSizeRange>
           <tolerance>0.072</tolerance>
         </NominalSizeRangeAndTolerance>
         <NominalSizeRangeAndTolerance>
+          <nominalSizeRange>
+            <min>250</min>
+            <max>315</max>
+          </nominalSizeRange>
           <tolerance>0.081</tolerance>
         </NominalSizeRangeAndTolerance>
         <NominalSizeRangeAndTolerance>
+          <nominalSizeRange>
+            <min>315</min>
+            <max>400</max>
+          </nominalSizeRange>
           <tolerance>0.089</tolerance>
         </NominalSizeRangeAndTolerance>
         <NominalSizeRangeAndTolerance>
+          <nominalSizeRange>
+            <min>400</min>
+            <max>500</max>
+          </nominalSizeRange>
           <tolerance>0.097</tolerance>
         </NominalSizeRangeAndTolerance>
         <NominalSizeRangeAndTolerance>
+          <nominalSizeRange>
+            <min>500</min>
+            <max>630</max>
+          </nominalSizeRange>
           <tolerance>0.11</tolerance>
         </NominalSizeRangeAndTolerance>
         <NominalSizeRangeAndTolerance>
+          <nominalSizeRange>
+            <min>630</min>
+            <max>800</max>
+          </nominalSizeRange>
           <tolerance>0.125</tolerance>
         </NominalSizeRangeAndTolerance>
         <NominalSizeRangeAndTolerance>
+          <nominalSizeRange>
+            <min>800</min>
+            <max>1000</max>
+          </nominalSizeRange>
           <tolerance>0.14</tolerance>
         </NominalSizeRangeAndTolerance>
         <NominalSizeRangeAndTolerance>
+          <nominalSizeRange>
+            <min>1000</min>
+            <max>1250</max>
+          </nominalSizeRange>
           <tolerance>0.165</tolerance>
         </NominalSizeRangeAndTolerance>
         <NominalSizeRangeAndTolerance>
+          <nominalSizeRange>
+            <min>1250</min>
+            <max>1600</max>
+          </nominalSizeRange>
           <tolerance>0.195</tolerance>
         </NominalSizeRangeAndTolerance>
         <NominalSizeRangeAndTolerance>
+          <nominalSizeRange>
+            <min>1600</min>
+            <max>2000</max>
+          </nominalSizeRange>
           <tolerance>0.23</tolerance>
         </NominalSizeRangeAndTolerance>
         <NominalSizeRangeAndTolerance>
+          <nominalSizeRange>
+            <min>2000</min>
+            <max>2500</max>
+          </nominalSizeRange>
           <tolerance>0.28</tolerance>
         </NominalSizeRangeAndTolerance>
         <NominalSizeRangeAndTolerance>
+          <nominalSizeRange>
+            <min>2500</min>
+            <max>3150</max>
+          </nominalSizeRange>
           <tolerance>0.33</tolerance>
         </NominalSizeRangeAndTolerance>
       </nominalSizeRangeAndTolerance>
@@ -685,66 +1525,150 @@
       <kvalitet>9</kvalitet>
       <nominalSizeRangeAndTolerance>
         <NominalSizeRangeAndTolerance>
+          <nominalSizeRange>
+            <min>0</min>
+            <max>3</max>
+          </nominalSizeRange>
           <tolerance>0.025</tolerance>
         </NominalSizeRangeAndTolerance>
         <NominalSizeRangeAndTolerance>
+          <nominalSizeRange>
+            <min>3</min>
+            <max>6</max>
+          </nominalSizeRange>
           <tolerance>0.03</tolerance>
         </NominalSizeRangeAndTolerance>
         <NominalSizeRangeAndTolerance>
+          <nominalSizeRange>
+            <min>6</min>
+            <max>10</max>
+          </nominalSizeRange>
           <tolerance>0.036</tolerance>
         </NominalSizeRangeAndTolerance>
         <NominalSizeRangeAndTolerance>
+          <nominalSizeRange>
+            <min>10</min>
+            <max>18</max>
+          </nominalSizeRange>
           <tolerance>0.043</tolerance>
         </NominalSizeRangeAndTolerance>
         <NominalSizeRangeAndTolerance>
+          <nominalSizeRange>
+            <min>18</min>
+            <max>30</max>
+          </nominalSizeRange>
           <tolerance>0.052</tolerance>
         </NominalSizeRangeAndTolerance>
         <NominalSizeRangeAndTolerance>
+          <nominalSizeRange>
+            <min>30</min>
+            <max>50</max>
+          </nominalSizeRange>
           <tolerance>0.062</tolerance>
         </NominalSizeRangeAndTolerance>
         <NominalSizeRangeAndTolerance>
+          <nominalSizeRange>
+            <min>50</min>
+            <max>80</max>
+          </nominalSizeRange>
           <tolerance>0.074</tolerance>
         </NominalSizeRangeAndTolerance>
         <NominalSizeRangeAndTolerance>
+          <nominalSizeRange>
+            <min>80</min>
+            <max>120</max>
+          </nominalSizeRange>
           <tolerance>0.087</tolerance>
         </NominalSizeRangeAndTolerance>
         <NominalSizeRangeAndTolerance>
+          <nominalSizeRange>
+            <min>120</min>
+            <max>180</max>
+          </nominalSizeRange>
           <tolerance>0.1</tolerance>
         </NominalSizeRangeAndTolerance>
         <NominalSizeRangeAndTolerance>
+          <nominalSizeRange>
+            <min>180</min>
+            <max>250</max>
+          </nominalSizeRange>
           <tolerance>0.115</tolerance>
         </NominalSizeRangeAndTolerance>
         <NominalSizeRangeAndTolerance>
+          <nominalSizeRange>
+            <min>250</min>
+            <max>315</max>
+          </nominalSizeRange>
           <tolerance>0.13</tolerance>
         </NominalSizeRangeAndTolerance>
         <NominalSizeRangeAndTolerance>
+          <nominalSizeRange>
+            <min>315</min>
+            <max>400</max>
+          </nominalSizeRange>
           <tolerance>0.14</tolerance>
         </NominalSizeRangeAndTolerance>
         <NominalSizeRangeAndTolerance>
+          <nominalSizeRange>
+            <min>400</min>
+            <max>500</max>
+          </nominalSizeRange>
           <tolerance>0.155</tolerance>
         </NominalSizeRangeAndTolerance>
         <NominalSizeRangeAndTolerance>
+          <nominalSizeRange>
+            <min>500</min>
+            <max>630</max>
+          </nominalSizeRange>
           <tolerance>0.175</tolerance>
         </NominalSizeRangeAndTolerance>
         <NominalSizeRangeAndTolerance>
+          <nominalSizeRange>
+            <min>630</min>
+            <max>800</max>
+          </nominalSizeRange>
           <tolerance>0.2</tolerance>
         </NominalSizeRangeAndTolerance>
         <NominalSizeRangeAndTolerance>
+          <nominalSizeRange>
+            <min>800</min>
+            <max>1000</max>
+          </nominalSizeRange>
           <tolerance>0.23</tolerance>
         </NominalSizeRangeAndTolerance>
         <NominalSizeRangeAndTolerance>
+          <nominalSizeRange>
+            <min>1000</min>
+            <max>1250</max>
+          </nominalSizeRange>
           <tolerance>0.26</tolerance>
         </NominalSizeRangeAndTolerance>
         <NominalSizeRangeAndTolerance>
+          <nominalSizeRange>
+            <min>1250</min>
+            <max>1600</max>
+          </nominalSizeRange>
           <tolerance>0.31</tolerance>
         </NominalSizeRangeAndTolerance>
         <NominalSizeRangeAndTolerance>
+          <nominalSizeRange>
+            <min>1600</min>
+            <max>2000</max>
+          </nominalSizeRange>
           <tolerance>0.37</tolerance>
         </NominalSizeRangeAndTolerance>
         <NominalSizeRangeAndTolerance>
+          <nominalSizeRange>
+            <min>2000</min>
+            <max>2500</max>
+          </nominalSizeRange>
           <tolerance>0.44</tolerance>
         </NominalSizeRangeAndTolerance>
         <NominalSizeRangeAndTolerance>
+          <nominalSizeRange>
+            <min>2500</min>
+            <max>3150</max>
+          </nominalSizeRange>
           <tolerance>0.54</tolerance>
         </NominalSizeRangeAndTolerance>
       </nominalSizeRangeAndTolerance>
@@ -753,66 +1677,150 @@
       <kvalitet>10</kvalitet>
       <nominalSizeRangeAndTolerance>
         <NominalSizeRangeAndTolerance>
+          <nominalSizeRange>
+            <min>0</min>
+            <max>3</max>
+          </nominalSizeRange>
           <tolerance>0.04</tolerance>
         </NominalSizeRangeAndTolerance>
         <NominalSizeRangeAndTolerance>
+          <nominalSizeRange>
+            <min>3</min>
+            <max>6</max>
+          </nominalSizeRange>
           <tolerance>0.048</tolerance>
         </NominalSizeRangeAndTolerance>
         <NominalSizeRangeAndTolerance>
+          <nominalSizeRange>
+            <min>6</min>
+            <max>10</max>
+          </nominalSizeRange>
           <tolerance>0.058</tolerance>
         </NominalSizeRangeAndTolerance>
         <NominalSizeRangeAndTolerance>
+          <nominalSizeRange>
+            <min>10</min>
+            <max>18</max>
+          </nominalSizeRange>
           <tolerance>0.07</tolerance>
         </NominalSizeRangeAndTolerance>
         <NominalSizeRangeAndTolerance>
+          <nominalSizeRange>
+            <min>18</min>
+            <max>30</max>
+          </nominalSizeRange>
           <tolerance>0.084</tolerance>
         </NominalSizeRangeAndTolerance>
         <NominalSizeRangeAndTolerance>
+          <nominalSizeRange>
+            <min>30</min>
+            <max>50</max>
+          </nominalSizeRange>
           <tolerance>0.1</tolerance>
         </NominalSizeRangeAndTolerance>
         <NominalSizeRangeAndTolerance>
+          <nominalSizeRange>
+            <min>50</min>
+            <max>80</max>
+          </nominalSizeRange>
           <tolerance>0.12</tolerance>
         </NominalSizeRangeAndTolerance>
         <NominalSizeRangeAndTolerance>
+          <nominalSizeRange>
+            <min>80</min>
+            <max>120</max>
+          </nominalSizeRange>
           <tolerance>0.14</tolerance>
         </NominalSizeRangeAndTolerance>
         <NominalSizeRangeAndTolerance>
+          <nominalSizeRange>
+            <min>120</min>
+            <max>180</max>
+          </nominalSizeRange>
           <tolerance>0.16</tolerance>
         </NominalSizeRangeAndTolerance>
         <NominalSizeRangeAndTolerance>
+          <nominalSizeRange>
+            <min>180</min>
+            <max>250</max>
+          </nominalSizeRange>
           <tolerance>0.185</tolerance>
         </NominalSizeRangeAndTolerance>
         <NominalSizeRangeAndTolerance>
+          <nominalSizeRange>
+            <min>250</min>
+            <max>315</max>
+          </nominalSizeRange>
           <tolerance>0.21</tolerance>
         </NominalSizeRangeAndTolerance>
         <NominalSizeRangeAndTolerance>
+          <nominalSizeRange>
+            <min>315</min>
+            <max>400</max>
+          </nominalSizeRange>
           <tolerance>0.23</tolerance>
         </NominalSizeRangeAndTolerance>
         <NominalSizeRangeAndTolerance>
+          <nominalSizeRange>
+            <min>400</min>
+            <max>500</max>
+          </nominalSizeRange>
           <tolerance>0.25</tolerance>
         </NominalSizeRangeAndTolerance>
         <NominalSizeRangeAndTolerance>
+          <nominalSizeRange>
+            <min>500</min>
+            <max>630</max>
+          </nominalSizeRange>
           <tolerance>0.28</tolerance>
         </NominalSizeRangeAndTolerance>
         <NominalSizeRangeAndTolerance>
+          <nominalSizeRange>
+            <min>630</min>
+            <max>800</max>
+          </nominalSizeRange>
           <tolerance>0.32</tolerance>
         </NominalSizeRangeAndTolerance>
         <NominalSizeRangeAndTolerance>
+          <nominalSizeRange>
+            <min>800</min>
+            <max>1000</max>
+          </nominalSizeRange>
           <tolerance>0.36</tolerance>
         </NominalSizeRangeAndTolerance>
         <NominalSizeRangeAndTolerance>
+          <nominalSizeRange>
+            <min>1000</min>
+            <max>1250</max>
+          </nominalSizeRange>
           <tolerance>0.42</tolerance>
         </NominalSizeRangeAndTolerance>
         <NominalSizeRangeAndTolerance>
+          <nominalSizeRange>
+            <min>1250</min>
+            <max>1600</max>
+          </nominalSizeRange>
           <tolerance>0.5</tolerance>
         </NominalSizeRangeAndTolerance>
         <NominalSizeRangeAndTolerance>
+          <nominalSizeRange>
+            <min>1600</min>
+            <max>2000</max>
+          </nominalSizeRange>
           <tolerance>0.6</tolerance>
         </NominalSizeRangeAndTolerance>
         <NominalSizeRangeAndTolerance>
+          <nominalSizeRange>
+            <min>2000</min>
+            <max>2500</max>
+          </nominalSizeRange>
           <tolerance>0.7</tolerance>
         </NominalSizeRangeAndTolerance>
         <NominalSizeRangeAndTolerance>
+          <nominalSizeRange>
+            <min>2500</min>
+            <max>3150</max>
+          </nominalSizeRange>
           <tolerance>0.86</tolerance>
         </NominalSizeRangeAndTolerance>
       </nominalSizeRangeAndTolerance>
@@ -821,66 +1829,150 @@
       <kvalitet>11</kvalitet>
       <nominalSizeRangeAndTolerance>
         <NominalSizeRangeAndTolerance>
+          <nominalSizeRange>
+            <min>0</min>
+            <max>3</max>
+          </nominalSizeRange>
           <tolerance>0.06</tolerance>
         </NominalSizeRangeAndTolerance>
         <NominalSizeRangeAndTolerance>
+          <nominalSizeRange>
+            <min>3</min>
+            <max>6</max>
+          </nominalSizeRange>
           <tolerance>0.075</tolerance>
         </NominalSizeRangeAndTolerance>
         <NominalSizeRangeAndTolerance>
+          <nominalSizeRange>
+            <min>6</min>
+            <max>10</max>
+          </nominalSizeRange>
           <tolerance>0.09</tolerance>
         </NominalSizeRangeAndTolerance>
         <NominalSizeRangeAndTolerance>
+          <nominalSizeRange>
+            <min>10</min>
+            <max>18</max>
+          </nominalSizeRange>
           <tolerance>0.11</tolerance>
         </NominalSizeRangeAndTolerance>
         <NominalSizeRangeAndTolerance>
+          <nominalSizeRange>
+            <min>18</min>
+            <max>30</max>
+          </nominalSizeRange>
           <tolerance>0.13</tolerance>
         </NominalSizeRangeAndTolerance>
         <NominalSizeRangeAndTolerance>
+          <nominalSizeRange>
+            <min>30</min>
+            <max>50</max>
+          </nominalSizeRange>
           <tolerance>0.16</tolerance>
         </NominalSizeRangeAndTolerance>
         <NominalSizeRangeAndTolerance>
+          <nominalSizeRange>
+            <min>50</min>
+            <max>80</max>
+          </nominalSizeRange>
           <tolerance>0.19</tolerance>
         </NominalSizeRangeAndTolerance>
         <NominalSizeRangeAndTolerance>
+          <nominalSizeRange>
+            <min>80</min>
+            <max>120</max>
+          </nominalSizeRange>
           <tolerance>0.22</tolerance>
         </NominalSizeRangeAndTolerance>
         <NominalSizeRangeAndTolerance>
+          <nominalSizeRange>
+            <min>120</min>
+            <max>180</max>
+          </nominalSizeRange>
           <tolerance>0.25</tolerance>
         </NominalSizeRangeAndTolerance>
         <NominalSizeRangeAndTolerance>
+          <nominalSizeRange>
+            <min>180</min>
+            <max>250</max>
+          </nominalSizeRange>
           <tolerance>0.29</tolerance>
         </NominalSizeRangeAndTolerance>
         <NominalSizeRangeAndTolerance>
+          <nominalSizeRange>
+            <min>250</min>
+            <max>315</max>
+          </nominalSizeRange>
           <tolerance>0.32</tolerance>
         </NominalSizeRangeAndTolerance>
         <NominalSizeRangeAndTolerance>
+          <nominalSizeRange>
+            <min>315</min>
+            <max>400</max>
+          </nominalSizeRange>
           <tolerance>0.36</tolerance>
         </NominalSizeRangeAndTolerance>
         <NominalSizeRangeAndTolerance>
+          <nominalSizeRange>
+            <min>400</min>
+            <max>500</max>
+          </nominalSizeRange>
           <tolerance>0.4</tolerance>
         </NominalSizeRangeAndTolerance>
         <NominalSizeRangeAndTolerance>
+          <nominalSizeRange>
+            <min>500</min>
+            <max>630</max>
+          </nominalSizeRange>
           <tolerance>0.44</tolerance>
         </NominalSizeRangeAndTolerance>
         <NominalSizeRangeAndTolerance>
+          <nominalSizeRange>
+            <min>630</min>
+            <max>800</max>
+          </nominalSizeRange>
           <tolerance>0.5</tolerance>
         </NominalSizeRangeAndTolerance>
         <NominalSizeRangeAndTolerance>
+          <nominalSizeRange>
+            <min>800</min>
+            <max>1000</max>
+          </nominalSizeRange>
           <tolerance>0.56</tolerance>
         </NominalSizeRangeAndTolerance>
         <NominalSizeRangeAndTolerance>
+          <nominalSizeRange>
+            <min>1000</min>
+            <max>1250</max>
+          </nominalSizeRange>
           <tolerance>0.66</tolerance>
         </NominalSizeRangeAndTolerance>
         <NominalSizeRangeAndTolerance>
+          <nominalSizeRange>
+            <min>1250</min>
+            <max>1600</max>
+          </nominalSizeRange>
           <tolerance>0.78</tolerance>
         </NominalSizeRangeAndTolerance>
         <NominalSizeRangeAndTolerance>
+          <nominalSizeRange>
+            <min>1600</min>
+            <max>2000</max>
+          </nominalSizeRange>
           <tolerance>0.92</tolerance>
         </NominalSizeRangeAndTolerance>
         <NominalSizeRangeAndTolerance>
+          <nominalSizeRange>
+            <min>2000</min>
+            <max>2500</max>
+          </nominalSizeRange>
           <tolerance>1.1</tolerance>
         </NominalSizeRangeAndTolerance>
         <NominalSizeRangeAndTolerance>
+          <nominalSizeRange>
+            <min>2500</min>
+            <max>3150</max>
+          </nominalSizeRange>
           <tolerance>1.35</tolerance>
         </NominalSizeRangeAndTolerance>
       </nominalSizeRangeAndTolerance>
@@ -889,66 +1981,150 @@
       <kvalitet>12</kvalitet>
       <nominalSizeRangeAndTolerance>
         <NominalSizeRangeAndTolerance>
+          <nominalSizeRange>
+            <min>0</min>
+            <max>3</max>
+          </nominalSizeRange>
           <tolerance>0.1</tolerance>
         </NominalSizeRangeAndTolerance>
         <NominalSizeRangeAndTolerance>
+          <nominalSizeRange>
+            <min>3</min>
+            <max>6</max>
+          </nominalSizeRange>
           <tolerance>0.12</tolerance>
         </NominalSizeRangeAndTolerance>
         <NominalSizeRangeAndTolerance>
+          <nominalSizeRange>
+            <min>6</min>
+            <max>10</max>
+          </nominalSizeRange>
           <tolerance>0.15</tolerance>
         </NominalSizeRangeAndTolerance>
         <NominalSizeRangeAndTolerance>
+          <nominalSizeRange>
+            <min>10</min>
+            <max>18</max>
+          </nominalSizeRange>
           <tolerance>0.18</tolerance>
         </NominalSizeRangeAndTolerance>
         <NominalSizeRangeAndTolerance>
+          <nominalSizeRange>
+            <min>18</min>
+            <max>30</max>
+          </nominalSizeRange>
           <tolerance>0.21</tolerance>
         </NominalSizeRangeAndTolerance>
         <NominalSizeRangeAndTolerance>
+          <nominalSizeRange>
+            <min>30</min>
+            <max>50</max>
+          </nominalSizeRange>
           <tolerance>0.25</tolerance>
         </NominalSizeRangeAndTolerance>
         <NominalSizeRangeAndTolerance>
+          <nominalSizeRange>
+            <min>50</min>
+            <max>80</max>
+          </nominalSizeRange>
           <tolerance>0.3</tolerance>
         </NominalSizeRangeAndTolerance>
         <NominalSizeRangeAndTolerance>
+          <nominalSizeRange>
+            <min>80</min>
+            <max>120</max>
+          </nominalSizeRange>
           <tolerance>0.35</tolerance>
         </NominalSizeRangeAndTolerance>
         <NominalSizeRangeAndTolerance>
+          <nominalSizeRange>
+            <min>120</min>
+            <max>180</max>
+          </nominalSizeRange>
           <tolerance>0.4</tolerance>
         </NominalSizeRangeAndTolerance>
         <NominalSizeRangeAndTolerance>
+          <nominalSizeRange>
+            <min>180</min>
+            <max>250</max>
+          </nominalSizeRange>
           <tolerance>0.46</tolerance>
         </NominalSizeRangeAndTolerance>
         <NominalSizeRangeAndTolerance>
+          <nominalSizeRange>
+            <min>250</min>
+            <max>315</max>
+          </nominalSizeRange>
           <tolerance>0.52</tolerance>
         </NominalSizeRangeAndTolerance>
         <NominalSizeRangeAndTolerance>
+          <nominalSizeRange>
+            <min>315</min>
+            <max>400</max>
+          </nominalSizeRange>
           <tolerance>0.57</tolerance>
         </NominalSizeRangeAndTolerance>
         <NominalSizeRangeAndTolerance>
+          <nominalSizeRange>
+            <min>400</min>
+            <max>500</max>
+          </nominalSizeRange>
           <tolerance>0.63</tolerance>
         </NominalSizeRangeAndTolerance>
         <NominalSizeRangeAndTolerance>
+          <nominalSizeRange>
+            <min>500</min>
+            <max>630</max>
+          </nominalSizeRange>
           <tolerance>0.7</tolerance>
         </NominalSizeRangeAndTolerance>
         <NominalSizeRangeAndTolerance>
+          <nominalSizeRange>
+            <min>630</min>
+            <max>800</max>
+          </nominalSizeRange>
           <tolerance>0.8</tolerance>
         </NominalSizeRangeAndTolerance>
         <NominalSizeRangeAndTolerance>
+          <nominalSizeRange>
+            <min>800</min>
+            <max>1000</max>
+          </nominalSizeRange>
           <tolerance>0.9</tolerance>
         </NominalSizeRangeAndTolerance>
         <NominalSizeRangeAndTolerance>
+          <nominalSizeRange>
+            <min>1000</min>
+            <max>1250</max>
+          </nominalSizeRange>
           <tolerance>1.05</tolerance>
         </NominalSizeRangeAndTolerance>
         <NominalSizeRangeAndTolerance>
+          <nominalSizeRange>
+            <min>1250</min>
+            <max>1600</max>
+          </nominalSizeRange>
           <tolerance>1.25</tolerance>
         </NominalSizeRangeAndTolerance>
         <NominalSizeRangeAndTolerance>
+          <nominalSizeRange>
+            <min>1600</min>
+            <max>2000</max>
+          </nominalSizeRange>
           <tolerance>1.5</tolerance>
         </NominalSizeRangeAndTolerance>
         <NominalSizeRangeAndTolerance>
+          <nominalSizeRange>
+            <min>2000</min>
+            <max>2500</max>
+          </nominalSizeRange>
           <tolerance>1.75</tolerance>
         </NominalSizeRangeAndTolerance>
         <NominalSizeRangeAndTolerance>
+          <nominalSizeRange>
+            <min>2500</min>
+            <max>3150</max>
+          </nominalSizeRange>
           <tolerance>2.1</tolerance>
         </NominalSizeRangeAndTolerance>
       </nominalSizeRangeAndTolerance>
@@ -957,66 +2133,150 @@
       <kvalitet>13</kvalitet>
       <nominalSizeRangeAndTolerance>
         <NominalSizeRangeAndTolerance>
+          <nominalSizeRange>
+            <min>0</min>
+            <max>3</max>
+          </nominalSizeRange>
           <tolerance>0.14</tolerance>
         </NominalSizeRangeAndTolerance>
         <NominalSizeRangeAndTolerance>
+          <nominalSizeRange>
+            <min>3</min>
+            <max>6</max>
+          </nominalSizeRange>
           <tolerance>0.18</tolerance>
         </NominalSizeRangeAndTolerance>
         <NominalSizeRangeAndTolerance>
+          <nominalSizeRange>
+            <min>6</min>
+            <max>10</max>
+          </nominalSizeRange>
           <tolerance>0.22</tolerance>
         </NominalSizeRangeAndTolerance>
         <NominalSizeRangeAndTolerance>
+          <nominalSizeRange>
+            <min>10</min>
+            <max>18</max>
+          </nominalSizeRange>
           <tolerance>0.27</tolerance>
         </NominalSizeRangeAndTolerance>
         <NominalSizeRangeAndTolerance>
+          <nominalSizeRange>
+            <min>18</min>
+            <max>30</max>
+          </nominalSizeRange>
           <tolerance>0.33</tolerance>
         </NominalSizeRangeAndTolerance>
         <NominalSizeRangeAndTolerance>
+          <nominalSizeRange>
+            <min>30</min>
+            <max>50</max>
+          </nominalSizeRange>
           <tolerance>0.39</tolerance>
         </NominalSizeRangeAndTolerance>
         <NominalSizeRangeAndTolerance>
+          <nominalSizeRange>
+            <min>50</min>
+            <max>80</max>
+          </nominalSizeRange>
           <tolerance>0.46</tolerance>
         </NominalSizeRangeAndTolerance>
         <NominalSizeRangeAndTolerance>
+          <nominalSizeRange>
+            <min>80</min>
+            <max>120</max>
+          </nominalSizeRange>
           <tolerance>0.54</tolerance>
         </NominalSizeRangeAndTolerance>
         <NominalSizeRangeAndTolerance>
+          <nominalSizeRange>
+            <min>120</min>
+            <max>180</max>
+          </nominalSizeRange>
           <tolerance>0.63</tolerance>
         </NominalSizeRangeAndTolerance>
         <NominalSizeRangeAndTolerance>
+          <nominalSizeRange>
+            <min>180</min>
+            <max>250</max>
+          </nominalSizeRange>
           <tolerance>0.72</tolerance>
         </NominalSizeRangeAndTolerance>
         <NominalSizeRangeAndTolerance>
+          <nominalSizeRange>
+            <min>250</min>
+            <max>315</max>
+          </nominalSizeRange>
           <tolerance>0.81</tolerance>
         </NominalSizeRangeAndTolerance>
         <NominalSizeRangeAndTolerance>
+          <nominalSizeRange>
+            <min>315</min>
+            <max>400</max>
+          </nominalSizeRange>
           <tolerance>0.89</tolerance>
         </NominalSizeRangeAndTolerance>
         <NominalSizeRangeAndTolerance>
+          <nominalSizeRange>
+            <min>400</min>
+            <max>500</max>
+          </nominalSizeRange>
           <tolerance>0.97</tolerance>
         </NominalSizeRangeAndTolerance>
         <NominalSizeRangeAndTolerance>
+          <nominalSizeRange>
+            <min>500</min>
+            <max>630</max>
+          </nominalSizeRange>
           <tolerance>1.1</tolerance>
         </NominalSizeRangeAndTolerance>
         <NominalSizeRangeAndTolerance>
+          <nominalSizeRange>
+            <min>630</min>
+            <max>800</max>
+          </nominalSizeRange>
           <tolerance>1.25</tolerance>
         </NominalSizeRangeAndTolerance>
         <NominalSizeRangeAndTolerance>
+          <nominalSizeRange>
+            <min>800</min>
+            <max>1000</max>
+          </nominalSizeRange>
           <tolerance>1.4</tolerance>
         </NominalSizeRangeAndTolerance>
         <NominalSizeRangeAndTolerance>
+          <nominalSizeRange>
+            <min>1000</min>
+            <max>1250</max>
+          </nominalSizeRange>
           <tolerance>1.65</tolerance>
         </NominalSizeRangeAndTolerance>
         <NominalSizeRangeAndTolerance>
+          <nominalSizeRange>
+            <min>1250</min>
+            <max>1600</max>
+          </nominalSizeRange>
           <tolerance>1.95</tolerance>
         </NominalSizeRangeAndTolerance>
         <NominalSizeRangeAndTolerance>
+          <nominalSizeRange>
+            <min>1600</min>
+            <max>2000</max>
+          </nominalSizeRange>
           <tolerance>2.3</tolerance>
         </NominalSizeRangeAndTolerance>
         <NominalSizeRangeAndTolerance>
+          <nominalSizeRange>
+            <min>2000</min>
+            <max>2500</max>
+          </nominalSizeRange>
           <tolerance>2.8</tolerance>
         </NominalSizeRangeAndTolerance>
         <NominalSizeRangeAndTolerance>
+          <nominalSizeRange>
+            <min>2500</min>
+            <max>3150</max>
+          </nominalSizeRange>
           <tolerance>3.3</tolerance>
         </NominalSizeRangeAndTolerance>
       </nominalSizeRangeAndTolerance>
@@ -1025,66 +2285,150 @@
       <kvalitet>14</kvalitet>
       <nominalSizeRangeAndTolerance>
         <NominalSizeRangeAndTolerance>
+          <nominalSizeRange>
+            <min>0</min>
+            <max>3</max>
+          </nominalSizeRange>
           <tolerance>0.25</tolerance>
         </NominalSizeRangeAndTolerance>
         <NominalSizeRangeAndTolerance>
+          <nominalSizeRange>
+            <min>3</min>
+            <max>6</max>
+          </nominalSizeRange>
           <tolerance>0.3</tolerance>
         </NominalSizeRangeAndTolerance>
         <NominalSizeRangeAndTolerance>
+          <nominalSizeRange>
+            <min>6</min>
+            <max>10</max>
+          </nominalSizeRange>
           <tolerance>0.36</tolerance>
         </NominalSizeRangeAndTolerance>
         <NominalSizeRangeAndTolerance>
+          <nominalSizeRange>
+            <min>10</min>
+            <max>18</max>
+          </nominalSizeRange>
           <tolerance>0.43</tolerance>
         </NominalSizeRangeAndTolerance>
         <NominalSizeRangeAndTolerance>
+          <nominalSizeRange>
+            <min>18</min>
+            <max>30</max>
+          </nominalSizeRange>
           <tolerance>0.52</tolerance>
         </NominalSizeRangeAndTolerance>
         <NominalSizeRangeAndTolerance>
+          <nominalSizeRange>
+            <min>30</min>
+            <max>50</max>
+          </nominalSizeRange>
           <tolerance>0.62</tolerance>
         </NominalSizeRangeAndTolerance>
         <NominalSizeRangeAndTolerance>
+          <nominalSizeRange>
+            <min>50</min>
+            <max>80</max>
+          </nominalSizeRange>
           <tolerance>0.74</tolerance>
         </NominalSizeRangeAndTolerance>
         <NominalSizeRangeAndTolerance>
+          <nominalSizeRange>
+            <min>80</min>
+            <max>120</max>
+          </nominalSizeRange>
           <tolerance>0.87</tolerance>
         </NominalSizeRangeAndTolerance>
         <NominalSizeRangeAndTolerance>
+          <nominalSizeRange>
+            <min>120</min>
+            <max>180</max>
+          </nominalSizeRange>
           <tolerance>1</tolerance>
         </NominalSizeRangeAndTolerance>
         <NominalSizeRangeAndTolerance>
+          <nominalSizeRange>
+            <min>180</min>
+            <max>250</max>
+          </nominalSizeRange>
           <tolerance>1.15</tolerance>
         </NominalSizeRangeAndTolerance>
         <NominalSizeRangeAndTolerance>
+          <nominalSizeRange>
+            <min>250</min>
+            <max>315</max>
+          </nominalSizeRange>
           <tolerance>1.3</tolerance>
         </NominalSizeRangeAndTolerance>
         <NominalSizeRangeAndTolerance>
+          <nominalSizeRange>
+            <min>315</min>
+            <max>400</max>
+          </nominalSizeRange>
           <tolerance>1.4</tolerance>
         </NominalSizeRangeAndTolerance>
         <NominalSizeRangeAndTolerance>
+          <nominalSizeRange>
+            <min>400</min>
+            <max>500</max>
+          </nominalSizeRange>
           <tolerance>1.55</tolerance>
         </NominalSizeRangeAndTolerance>
         <NominalSizeRangeAndTolerance>
+          <nominalSizeRange>
+            <min>500</min>
+            <max>630</max>
+          </nominalSizeRange>
           <tolerance>1.75</tolerance>
         </NominalSizeRangeAndTolerance>
         <NominalSizeRangeAndTolerance>
+          <nominalSizeRange>
+            <min>630</min>
+            <max>800</max>
+          </nominalSizeRange>
           <tolerance>2</tolerance>
         </NominalSizeRangeAndTolerance>
         <NominalSizeRangeAndTolerance>
+          <nominalSizeRange>
+            <min>800</min>
+            <max>1000</max>
+          </nominalSizeRange>
           <tolerance>2.3</tolerance>
         </NominalSizeRangeAndTolerance>
         <NominalSizeRangeAndTolerance>
+          <nominalSizeRange>
+            <min>1000</min>
+            <max>1250</max>
+          </nominalSizeRange>
           <tolerance>2.6</tolerance>
         </NominalSizeRangeAndTolerance>
         <NominalSizeRangeAndTolerance>
+          <nominalSizeRange>
+            <min>1250</min>
+            <max>1600</max>
+          </nominalSizeRange>
           <tolerance>3.1</tolerance>
         </NominalSizeRangeAndTolerance>
         <NominalSizeRangeAndTolerance>
+          <nominalSizeRange>
+            <min>1600</min>
+            <max>2000</max>
+          </nominalSizeRange>
           <tolerance>3.7</tolerance>
         </NominalSizeRangeAndTolerance>
         <NominalSizeRangeAndTolerance>
+          <nominalSizeRange>
+            <min>2000</min>
+            <max>2500</max>
+          </nominalSizeRange>
           <tolerance>4.4</tolerance>
         </NominalSizeRangeAndTolerance>
         <NominalSizeRangeAndTolerance>
+          <nominalSizeRange>
+            <min>2500</min>
+            <max>3150</max>
+          </nominalSizeRange>
           <tolerance>5.4</tolerance>
         </NominalSizeRangeAndTolerance>
       </nominalSizeRangeAndTolerance>
@@ -1093,66 +2437,150 @@
       <kvalitet>15</kvalitet>
       <nominalSizeRangeAndTolerance>
         <NominalSizeRangeAndTolerance>
+          <nominalSizeRange>
+            <min>0</min>
+            <max>3</max>
+          </nominalSizeRange>
           <tolerance>0.4</tolerance>
         </NominalSizeRangeAndTolerance>
         <NominalSizeRangeAndTolerance>
+          <nominalSizeRange>
+            <min>3</min>
+            <max>6</max>
+          </nominalSizeRange>
           <tolerance>0.48</tolerance>
         </NominalSizeRangeAndTolerance>
         <NominalSizeRangeAndTolerance>
+          <nominalSizeRange>
+            <min>6</min>
+            <max>10</max>
+          </nominalSizeRange>
           <tolerance>0.58</tolerance>
         </NominalSizeRangeAndTolerance>
         <NominalSizeRangeAndTolerance>
+          <nominalSizeRange>
+            <min>10</min>
+            <max>18</max>
+          </nominalSizeRange>
           <tolerance>0.7</tolerance>
         </NominalSizeRangeAndTolerance>
         <NominalSizeRangeAndTolerance>
+          <nominalSizeRange>
+            <min>18</min>
+            <max>30</max>
+          </nominalSizeRange>
           <tolerance>0.84</tolerance>
         </NominalSizeRangeAndTolerance>
         <NominalSizeRangeAndTolerance>
+          <nominalSizeRange>
+            <min>30</min>
+            <max>50</max>
+          </nominalSizeRange>
           <tolerance>1</tolerance>
         </NominalSizeRangeAndTolerance>
         <NominalSizeRangeAndTolerance>
+          <nominalSizeRange>
+            <min>50</min>
+            <max>80</max>
+          </nominalSizeRange>
           <tolerance>1.2</tolerance>
         </NominalSizeRangeAndTolerance>
         <NominalSizeRangeAndTolerance>
+          <nominalSizeRange>
+            <min>80</min>
+            <max>120</max>
+          </nominalSizeRange>
           <tolerance>1.4</tolerance>
         </NominalSizeRangeAndTolerance>
         <NominalSizeRangeAndTolerance>
+          <nominalSizeRange>
+            <min>120</min>
+            <max>180</max>
+          </nominalSizeRange>
           <tolerance>1.6</tolerance>
         </NominalSizeRangeAndTolerance>
         <NominalSizeRangeAndTolerance>
+          <nominalSizeRange>
+            <min>180</min>
+            <max>250</max>
+          </nominalSizeRange>
           <tolerance>1.85</tolerance>
         </NominalSizeRangeAndTolerance>
         <NominalSizeRangeAndTolerance>
+          <nominalSizeRange>
+            <min>250</min>
+            <max>315</max>
+          </nominalSizeRange>
           <tolerance>2.1</tolerance>
         </NominalSizeRangeAndTolerance>
         <NominalSizeRangeAndTolerance>
+          <nominalSizeRange>
+            <min>315</min>
+            <max>400</max>
+          </nominalSizeRange>
           <tolerance>2.3</tolerance>
         </NominalSizeRangeAndTolerance>
         <NominalSizeRangeAndTolerance>
+          <nominalSizeRange>
+            <min>400</min>
+            <max>500</max>
+          </nominalSizeRange>
           <tolerance>2.5</tolerance>
         </NominalSizeRangeAndTolerance>
         <NominalSizeRangeAndTolerance>
+          <nominalSizeRange>
+            <min>500</min>
+            <max>630</max>
+          </nominalSizeRange>
           <tolerance>2.8</tolerance>
         </NominalSizeRangeAndTolerance>
         <NominalSizeRangeAndTolerance>
+          <nominalSizeRange>
+            <min>630</min>
+            <max>800</max>
+          </nominalSizeRange>
           <tolerance>3.2</tolerance>
         </NominalSizeRangeAndTolerance>
         <NominalSizeRangeAndTolerance>
+          <nominalSizeRange>
+            <min>800</min>
+            <max>1000</max>
+          </nominalSizeRange>
           <tolerance>3.6</tolerance>
         </NominalSizeRangeAndTolerance>
         <NominalSizeRangeAndTolerance>
+          <nominalSizeRange>
+            <min>1000</min>
+            <max>1250</max>
+          </nominalSizeRange>
           <tolerance>4.2</tolerance>
         </NominalSizeRangeAndTolerance>
         <NominalSizeRangeAndTolerance>
+          <nominalSizeRange>
+            <min>1250</min>
+            <max>1600</max>
+          </nominalSizeRange>
           <tolerance>5</tolerance>
         </NominalSizeRangeAndTolerance>
         <NominalSizeRangeAndTolerance>
+          <nominalSizeRange>
+            <min>1600</min>
+            <max>2000</max>
+          </nominalSizeRange>
           <tolerance>6</tolerance>
         </NominalSizeRangeAndTolerance>
         <NominalSizeRangeAndTolerance>
+          <nominalSizeRange>
+            <min>2000</min>
+            <max>2500</max>
+          </nominalSizeRange>
           <tolerance>7</tolerance>
         </NominalSizeRangeAndTolerance>
         <NominalSizeRangeAndTolerance>
+          <nominalSizeRange>
+            <min>2500</min>
+            <max>3150</max>
+          </nominalSizeRange>
           <tolerance>8.6</tolerance>
         </NominalSizeRangeAndTolerance>
       </nominalSizeRangeAndTolerance>
@@ -1161,66 +2589,150 @@
       <kvalitet>16</kvalitet>
       <nominalSizeRangeAndTolerance>
         <NominalSizeRangeAndTolerance>
+          <nominalSizeRange>
+            <min>0</min>
+            <max>3</max>
+          </nominalSizeRange>
           <tolerance>0.6</tolerance>
         </NominalSizeRangeAndTolerance>
         <NominalSizeRangeAndTolerance>
+          <nominalSizeRange>
+            <min>3</min>
+            <max>6</max>
+          </nominalSizeRange>
           <tolerance>0.75</tolerance>
         </NominalSizeRangeAndTolerance>
         <NominalSizeRangeAndTolerance>
+          <nominalSizeRange>
+            <min>6</min>
+            <max>10</max>
+          </nominalSizeRange>
           <tolerance>0.9</tolerance>
         </NominalSizeRangeAndTolerance>
         <NominalSizeRangeAndTolerance>
+          <nominalSizeRange>
+            <min>10</min>
+            <max>18</max>
+          </nominalSizeRange>
           <tolerance>1.1</tolerance>
         </NominalSizeRangeAndTolerance>
         <NominalSizeRangeAndTolerance>
+          <nominalSizeRange>
+            <min>18</min>
+            <max>30</max>
+          </nominalSizeRange>
           <tolerance>1.3</tolerance>
         </NominalSizeRangeAndTolerance>
         <NominalSizeRangeAndTolerance>
+          <nominalSizeRange>
+            <min>30</min>
+            <max>50</max>
+          </nominalSizeRange>
           <tolerance>1.6</tolerance>
         </NominalSizeRangeAndTolerance>
         <NominalSizeRangeAndTolerance>
+          <nominalSizeRange>
+            <min>50</min>
+            <max>80</max>
+          </nominalSizeRange>
           <tolerance>1.9</tolerance>
         </NominalSizeRangeAndTolerance>
         <NominalSizeRangeAndTolerance>
+          <nominalSizeRange>
+            <min>80</min>
+            <max>120</max>
+          </nominalSizeRange>
           <tolerance>2.2</tolerance>
         </NominalSizeRangeAndTolerance>
         <NominalSizeRangeAndTolerance>
+          <nominalSizeRange>
+            <min>120</min>
+            <max>180</max>
+          </nominalSizeRange>
           <tolerance>2.5</tolerance>
         </NominalSizeRangeAndTolerance>
         <NominalSizeRangeAndTolerance>
+          <nominalSizeRange>
+            <min>180</min>
+            <max>250</max>
+          </nominalSizeRange>
           <tolerance>2.9</tolerance>
         </NominalSizeRangeAndTolerance>
         <NominalSizeRangeAndTolerance>
+          <nominalSizeRange>
+            <min>250</min>
+            <max>315</max>
+          </nominalSizeRange>
           <tolerance>3.2</tolerance>
         </NominalSizeRangeAndTolerance>
         <NominalSizeRangeAndTolerance>
+          <nominalSizeRange>
+            <min>315</min>
+            <max>400</max>
+          </nominalSizeRange>
           <tolerance>3.6</tolerance>
         </NominalSizeRangeAndTolerance>
         <NominalSizeRangeAndTolerance>
+          <nominalSizeRange>
+            <min>400</min>
+            <max>500</max>
+          </nominalSizeRange>
           <tolerance>4</tolerance>
         </NominalSizeRangeAndTolerance>
         <NominalSizeRangeAndTolerance>
+          <nominalSizeRange>
+            <min>500</min>
+            <max>630</max>
+          </nominalSizeRange>
           <tolerance>4.4</tolerance>
         </NominalSizeRangeAndTolerance>
         <NominalSizeRangeAndTolerance>
+          <nominalSizeRange>
+            <min>630</min>
+            <max>800</max>
+          </nominalSizeRange>
           <tolerance>5</tolerance>
         </NominalSizeRangeAndTolerance>
         <NominalSizeRangeAndTolerance>
+          <nominalSizeRange>
+            <min>800</min>
+            <max>1000</max>
+          </nominalSizeRange>
           <tolerance>5.6</tolerance>
         </NominalSizeRangeAndTolerance>
         <NominalSizeRangeAndTolerance>
+          <nominalSizeRange>
+            <min>1000</min>
+            <max>1250</max>
+          </nominalSizeRange>
           <tolerance>6.6</tolerance>
         </NominalSizeRangeAndTolerance>
         <NominalSizeRangeAndTolerance>
+          <nominalSizeRange>
+            <min>1250</min>
+            <max>1600</max>
+          </nominalSizeRange>
           <tolerance>7.8</tolerance>
         </NominalSizeRangeAndTolerance>
         <NominalSizeRangeAndTolerance>
+          <nominalSizeRange>
+            <min>1600</min>
+            <max>2000</max>
+          </nominalSizeRange>
           <tolerance>9.2</tolerance>
         </NominalSizeRangeAndTolerance>
         <NominalSizeRangeAndTolerance>
+          <nominalSizeRange>
+            <min>2000</min>
+            <max>2500</max>
+          </nominalSizeRange>
           <tolerance>11</tolerance>
         </NominalSizeRangeAndTolerance>
         <NominalSizeRangeAndTolerance>
+          <nominalSizeRange>
+            <min>2500</min>
+            <max>3150</max>
+          </nominalSizeRange>
           <tolerance>13.5</tolerance>
         </NominalSizeRangeAndTolerance>
       </nominalSizeRangeAndTolerance>
@@ -1229,66 +2741,150 @@
       <kvalitet>17</kvalitet>
       <nominalSizeRangeAndTolerance>
         <NominalSizeRangeAndTolerance>
+          <nominalSizeRange>
+            <min>0</min>
+            <max>3</max>
+          </nominalSizeRange>
           <tolerance>1</tolerance>
         </NominalSizeRangeAndTolerance>
         <NominalSizeRangeAndTolerance>
+          <nominalSizeRange>
+            <min>3</min>
+            <max>6</max>
+          </nominalSizeRange>
           <tolerance>1.2</tolerance>
         </NominalSizeRangeAndTolerance>
         <NominalSizeRangeAndTolerance>
+          <nominalSizeRange>
+            <min>6</min>
+            <max>10</max>
+          </nominalSizeRange>
           <tolerance>1.5</tolerance>
         </NominalSizeRangeAndTolerance>
         <NominalSizeRangeAndTolerance>
+          <nominalSizeRange>
+            <min>10</min>
+            <max>18</max>
+          </nominalSizeRange>
           <tolerance>1.8</tolerance>
         </NominalSizeRangeAndTolerance>
         <NominalSizeRangeAndTolerance>
+          <nominalSizeRange>
+            <min>18</min>
+            <max>30</max>
+          </nominalSizeRange>
           <tolerance>2.1</tolerance>
         </NominalSizeRangeAndTolerance>
         <NominalSizeRangeAndTolerance>
+          <nominalSizeRange>
+            <min>30</min>
+            <max>50</max>
+          </nominalSizeRange>
           <tolerance>2.5</tolerance>
         </NominalSizeRangeAndTolerance>
         <NominalSizeRangeAndTolerance>
+          <nominalSizeRange>
+            <min>50</min>
+            <max>80</max>
+          </nominalSizeRange>
           <tolerance>3</tolerance>
         </NominalSizeRangeAndTolerance>
         <NominalSizeRangeAndTolerance>
+          <nominalSizeRange>
+            <min>80</min>
+            <max>120</max>
+          </nominalSizeRange>
           <tolerance>3.5</tolerance>
         </NominalSizeRangeAndTolerance>
         <NominalSizeRangeAndTolerance>
+          <nominalSizeRange>
+            <min>120</min>
+            <max>180</max>
+          </nominalSizeRange>
           <tolerance>4</tolerance>
         </NominalSizeRangeAndTolerance>
         <NominalSizeRangeAndTolerance>
+          <nominalSizeRange>
+            <min>180</min>
+            <max>250</max>
+          </nominalSizeRange>
           <tolerance>4.6</tolerance>
         </NominalSizeRangeAndTolerance>
         <NominalSizeRangeAndTolerance>
+          <nominalSizeRange>
+            <min>250</min>
+            <max>315</max>
+          </nominalSizeRange>
           <tolerance>5.2</tolerance>
         </NominalSizeRangeAndTolerance>
         <NominalSizeRangeAndTolerance>
+          <nominalSizeRange>
+            <min>315</min>
+            <max>400</max>
+          </nominalSizeRange>
           <tolerance>5.7</tolerance>
         </NominalSizeRangeAndTolerance>
         <NominalSizeRangeAndTolerance>
+          <nominalSizeRange>
+            <min>400</min>
+            <max>500</max>
+          </nominalSizeRange>
           <tolerance>6.3</tolerance>
         </NominalSizeRangeAndTolerance>
         <NominalSizeRangeAndTolerance>
+          <nominalSizeRange>
+            <min>500</min>
+            <max>630</max>
+          </nominalSizeRange>
           <tolerance>7</tolerance>
         </NominalSizeRangeAndTolerance>
         <NominalSizeRangeAndTolerance>
+          <nominalSizeRange>
+            <min>630</min>
+            <max>800</max>
+          </nominalSizeRange>
           <tolerance>8</tolerance>
         </NominalSizeRangeAndTolerance>
         <NominalSizeRangeAndTolerance>
+          <nominalSizeRange>
+            <min>800</min>
+            <max>1000</max>
+          </nominalSizeRange>
           <tolerance>9</tolerance>
         </NominalSizeRangeAndTolerance>
         <NominalSizeRangeAndTolerance>
+          <nominalSizeRange>
+            <min>1000</min>
+            <max>1250</max>
+          </nominalSizeRange>
           <tolerance>10.5</tolerance>
         </NominalSizeRangeAndTolerance>
         <NominalSizeRangeAndTolerance>
+          <nominalSizeRange>
+            <min>1250</min>
+            <max>1600</max>
+          </nominalSizeRange>
           <tolerance>12.5</tolerance>
         </NominalSizeRangeAndTolerance>
         <NominalSizeRangeAndTolerance>
+          <nominalSizeRange>
+            <min>1600</min>
+            <max>2000</max>
+          </nominalSizeRange>
           <tolerance>15</tolerance>
         </NominalSizeRangeAndTolerance>
         <NominalSizeRangeAndTolerance>
+          <nominalSizeRange>
+            <min>2000</min>
+            <max>2500</max>
+          </nominalSizeRange>
           <tolerance>17.5</tolerance>
         </NominalSizeRangeAndTolerance>
         <NominalSizeRangeAndTolerance>
+          <nominalSizeRange>
+            <min>2500</min>
+            <max>3150</max>
+          </nominalSizeRange>
           <tolerance>21</tolerance>
         </NominalSizeRangeAndTolerance>
       </nominalSizeRangeAndTolerance>
@@ -1297,66 +2893,150 @@
       <kvalitet>18</kvalitet>
       <nominalSizeRangeAndTolerance>
         <NominalSizeRangeAndTolerance>
+          <nominalSizeRange>
+            <min>0</min>
+            <max>3</max>
+          </nominalSizeRange>
           <tolerance>1.4</tolerance>
         </NominalSizeRangeAndTolerance>
         <NominalSizeRangeAndTolerance>
+          <nominalSizeRange>
+            <min>3</min>
+            <max>6</max>
+          </nominalSizeRange>
           <tolerance>1.8</tolerance>
         </NominalSizeRangeAndTolerance>
         <NominalSizeRangeAndTolerance>
+          <nominalSizeRange>
+            <min>6</min>
+            <max>10</max>
+          </nominalSizeRange>
           <tolerance>2.2</tolerance>
         </NominalSizeRangeAndTolerance>
         <NominalSizeRangeAndTolerance>
+          <nominalSizeRange>
+            <min>10</min>
+            <max>18</max>
+          </nominalSizeRange>
           <tolerance>2.7</tolerance>
         </NominalSizeRangeAndTolerance>
         <NominalSizeRangeAndTolerance>
+          <nominalSizeRange>
+            <min>18</min>
+            <max>30</max>
+          </nominalSizeRange>
           <tolerance>3.3</tolerance>
         </NominalSizeRangeAndTolerance>
         <NominalSizeRangeAndTolerance>
+          <nominalSizeRange>
+            <min>30</min>
+            <max>50</max>
+          </nominalSizeRange>
           <tolerance>3.9</tolerance>
         </NominalSizeRangeAndTolerance>
         <NominalSizeRangeAndTolerance>
+          <nominalSizeRange>
+            <min>50</min>
+            <max>80</max>
+          </nominalSizeRange>
           <tolerance>4.6</tolerance>
         </NominalSizeRangeAndTolerance>
         <NominalSizeRangeAndTolerance>
+          <nominalSizeRange>
+            <min>80</min>
+            <max>120</max>
+          </nominalSizeRange>
           <tolerance>5.4</tolerance>
         </NominalSizeRangeAndTolerance>
         <NominalSizeRangeAndTolerance>
+          <nominalSizeRange>
+            <min>120</min>
+            <max>180</max>
+          </nominalSizeRange>
           <tolerance>6.3</tolerance>
         </NominalSizeRangeAndTolerance>
         <NominalSizeRangeAndTolerance>
+          <nominalSizeRange>
+            <min>180</min>
+            <max>250</max>
+          </nominalSizeRange>
           <tolerance>7.2</tolerance>
         </NominalSizeRangeAndTolerance>
         <NominalSizeRangeAndTolerance>
+          <nominalSizeRange>
+            <min>250</min>
+            <max>315</max>
+          </nominalSizeRange>
           <tolerance>8.1</tolerance>
         </NominalSizeRangeAndTolerance>
         <NominalSizeRangeAndTolerance>
+          <nominalSizeRange>
+            <min>315</min>
+            <max>400</max>
+          </nominalSizeRange>
           <tolerance>8.9</tolerance>
         </NominalSizeRangeAndTolerance>
         <NominalSizeRangeAndTolerance>
+          <nominalSizeRange>
+            <min>400</min>
+            <max>500</max>
+          </nominalSizeRange>
           <tolerance>9.7</tolerance>
         </NominalSizeRangeAndTolerance>
         <NominalSizeRangeAndTolerance>
+          <nominalSizeRange>
+            <min>500</min>
+            <max>630</max>
+          </nominalSizeRange>
           <tolerance>11</tolerance>
         </NominalSizeRangeAndTolerance>
         <NominalSizeRangeAndTolerance>
+          <nominalSizeRange>
+            <min>630</min>
+            <max>800</max>
+          </nominalSizeRange>
           <tolerance>12.5</tolerance>
         </NominalSizeRangeAndTolerance>
         <NominalSizeRangeAndTolerance>
+          <nominalSizeRange>
+            <min>800</min>
+            <max>1000</max>
+          </nominalSizeRange>
           <tolerance>14</tolerance>
         </NominalSizeRangeAndTolerance>
         <NominalSizeRangeAndTolerance>
+          <nominalSizeRange>
+            <min>1000</min>
+            <max>1250</max>
+          </nominalSizeRange>
           <tolerance>16.5</tolerance>
         </NominalSizeRangeAndTolerance>
         <NominalSizeRangeAndTolerance>
+          <nominalSizeRange>
+            <min>1250</min>
+            <max>1600</max>
+          </nominalSizeRange>
           <tolerance>19.5</tolerance>
         </NominalSizeRangeAndTolerance>
         <NominalSizeRangeAndTolerance>
+          <nominalSizeRange>
+            <min>1600</min>
+            <max>2000</max>
+          </nominalSizeRange>
           <tolerance>23</tolerance>
         </NominalSizeRangeAndTolerance>
         <NominalSizeRangeAndTolerance>
+          <nominalSizeRange>
+            <min>2000</min>
+            <max>2500</max>
+          </nominalSizeRange>
           <tolerance>28</tolerance>
         </NominalSizeRangeAndTolerance>
         <NominalSizeRangeAndTolerance>
+          <nominalSizeRange>
+            <min>2500</min>
+            <max>3150</max>
+          </nominalSizeRange>
           <tolerance>33</tolerance>
         </NominalSizeRangeAndTolerance>
       </nominalSizeRangeAndTolerance>

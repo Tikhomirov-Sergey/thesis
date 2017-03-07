@@ -16,7 +16,7 @@ namespace WindowsFormsApplication8
 
         private double tolerance;
         private double holeDepth;
-       
+
         public ParametersOfPart(double lengthOfPart, double diameterOfPart,
             int typeOfPart, int typeOfAllowance, int typeOfProcessedSurface,
             double tolerance, double holeDepth = 0)

@@ -3,127 +3,127 @@
         {
         "kvalitet": 0.1,
         "nominalSizeRangeAndTolerance": [{
-            "nominalSizeRang": {
+            "nominalSizeRange": {
                 "min": 0,
                 "max": 3
             },
             "tolerance": 0.0003
 		}, {
-            "nominalSizeRang": {
+            "nominalSizeRange": {
                 "min": 3,
                 "max": 6
             },
             "tolerance": 0.0004
 		}, {
-            "nominalSizeRang": {
+            "nominalSizeRange": {
                 "min": 6,
                 "max": 10
             },
             "tolerance": 0.0004
 		}, {
-            "nominalSizeRang": {
+            "nominalSizeRange": {
                 "min": 10,
                 "max": 18
             },
             "tolerance": 0.0005
 		}, {
-            "nominalSizeRang": {
+            "nominalSizeRange": {
                 "min": 18,
                 "max": 30
             },
             "tolerance": 0.0006
 		}, {
-            "nominalSizeRang": {
+            "nominalSizeRange": {
                 "min": 30,
                 "max": 50
             },
             "tolerance": 0.0006
 		}, {
-            "nominalSizeRang": {
+            "nominalSizeRange": {
                 "min": 50,
                 "max": 80
             },
             "tolerance": 0.0008
 		}, {
-            "nominalSizeRang": {
+            "nominalSizeRange": {
                 "min": 80,
                 "max": 120
             },
             "tolerance": 0.001
 		}, {
-            "nominalSizeRang": {
+            "nominalSizeRange": {
                 "min": 120,
                 "max": 180
             },
             "tolerance": 0.0012
 		}, {
-            "nominalSizeRang": {
+            "nominalSizeRange": {
                 "min": 180,
                 "max": 250
             },
             "tolerance": 0.002
 		}, {
-            "nominalSizeRang": {
+            "nominalSizeRange": {
                 "min": 250,
                 "max": 315
             },
             "tolerance": 0.0025
 		}, {
-            "nominalSizeRang": {
+            "nominalSizeRange": {
                 "min": 315,
                 "max": 400
             },
             "tolerance": 0.003
 		}, {
-            "nominalSizeRang": {
+            "nominalSizeRange": {
                 "min": 400,
                 "max": 500
             },
             "tolerance": 0.004
 		}, {
-            "nominalSizeRang": {
+            "nominalSizeRange": {
                 "min": 500,
                 "max": 630
             },
             "tolerance": 0.0045
 		}, {
-            "nominalSizeRang": {
+            "nominalSizeRange": {
                 "min": 630,
                 "max": 800
             },
             "tolerance": 0.005
 		}, {
-            "nominalSizeRang": {
+            "nominalSizeRange": {
                 "min": 800,
                 "max": 1000
             },
             "tolerance": 0.0055
 		}, {
-            "nominalSizeRang": {
+            "nominalSizeRange": {
                 "min": 1000,
                 "max": 1250
             },
             "tolerance": 0.0065
 		}, {
-            "nominalSizeRang": {
+            "nominalSizeRange": {
                 "min": 1250,
                 "max": 1600
             },
             "tolerance": 0.008
 		}, {
-            "nominalSizeRang": {
+            "nominalSizeRange": {
                 "min": 1600,
                 "max": 2000
             },
             "tolerance": 0.009
 		}, {
-            "nominalSizeRang": {
+            "nominalSizeRange": {
                 "min": 2000,
                 "max": 2500
             },
             "tolerance": 0.011
 		}, {
-            "nominalSizeRang": {
+            "nominalSizeRange": {
                 "min": 2500,
                 "max": 3150
             },
@@ -132,127 +132,127 @@
 	}, {
         "kvalitet": 0,
         "nominalSizeRangeAndTolerance": [{
-            "nominalSizeRang": {
+            "nominalSizeRange": {
                 "min": 0,
                 "max": 3
             },
             "tolerance": 0.0005
 		}, {
-            "nominalSizeRang": {
+            "nominalSizeRange": {
                 "min": 3,
                 "max": 6
             },
             "tolerance": 0.0006
 		}, {
-            "nominalSizeRang": {
+            "nominalSizeRange": {
                 "min": 6,
                 "max": 10
             },
             "tolerance": 0.0006
 		}, {
-            "nominalSizeRang": {
+            "nominalSizeRange": {
                 "min": 10,
                 "max": 18
             },
             "tolerance": 0.0008
 		}, {
-            "nominalSizeRang": {
+            "nominalSizeRange": {
                 "min": 18,
                 "max": 30
             },
             "tolerance": 0.001
 		}, {
-            "nominalSizeRang": {
+            "nominalSizeRange": {
                 "min": 30,
                 "max": 50
             },
             "tolerance": 0.001
 		}, {
-            "nominalSizeRang": {
+            "nominalSizeRange": {
                 "min": 50,
                 "max": 80
             },
             "tolerance": 0.0012
 		}, {
-            "nominalSizeRang": {
+            "nominalSizeRange": {
                 "min": 80,
                 "max": 120
             },
             "tolerance": 0.0015
 		}, {
-            "nominalSizeRang": {
+            "nominalSizeRange": {
                 "min": 120,
                 "max": 180
             },
             "tolerance": 0.002
 		}, {
-            "nominalSizeRang": {
+            "nominalSizeRange": {
                 "min": 180,
                 "max": 250
             },
             "tolerance": 0.003
 		}, {
-            "nominalSizeRang": {
+            "nominalSizeRange": {
                 "min": 250,
                 "max": 315
             },
             "tolerance": 0.004
 		}, {
-            "nominalSizeRang": {
+            "nominalSizeRange": {
                 "min": 315,
                 "max": 400
             },
             "tolerance": 0.005
 		}, {
-            "nominalSizeRang": {
+            "nominalSizeRange": {
                 "min": 400,
                 "max": 500
             },
             "tolerance": 0.006
 		}, {
-            "nominalSizeRang": {
+            "nominalSizeRange": {
                 "min": 500,
                 "max": 630
             },
             "tolerance": 0.006
 		}, {
-            "nominalSizeRang": {
+            "nominalSizeRange": {
                 "min": 630,
                 "max": 800
             },
             "tolerance": 0.007
 		}, {
-            "nominalSizeRang": {
+            "nominalSizeRange": {
                 "min": 800,
                 "max": 1000
             },
             "tolerance": 0.008
 		}, {
-            "nominalSizeRang": {
+            "nominalSizeRange": {
                 "min": 1000,
                 "max": 1250
             },
             "tolerance": 0.009
 		}, {
-            "nominalSizeRang": {
+            "nominalSizeRange": {
                 "min": 1250,
                 "max": 1600
             },
             "tolerance": 0.011
 		}, {
-            "nominalSizeRang": {
+            "nominalSizeRange": {
                 "min": 1600,
                 "max": 2000
             },
             "tolerance": 0.013
 		}, {
-            "nominalSizeRang": {
+            "nominalSizeRange": {
                 "min": 2000,
                 "max": 2500
             },
             "tolerance": 0.015
 		}, {
-            "nominalSizeRang": {
+            "nominalSizeRange": {
                 "min": 2500,
                 "max": 3150
             },
@@ -261,127 +261,127 @@
 	}, {
         "kvalitet": 1,
         "nominalSizeRangeAndTolerance": [{
-            "nominalSizeRang": {
+            "nominalSizeRange": {
                 "min": 0,
                 "max": 3
             },
             "tolerance": 0.0008
 		}, {
-            "nominalSizeRang": {
+            "nominalSizeRange": {
                 "min": 3,
                 "max": 6
             },
             "tolerance": 0.001
 		}, {
-            "nominalSizeRang": {
+            "nominalSizeRange": {
                 "min": 6,
                 "max": 10
             },
             "tolerance": 0.001
 		}, {
-            "nominalSizeRang": {
+            "nominalSizeRange": {
                 "min": 10,
                 "max": 18
             },
             "tolerance": 0.0012
 		}, {
-            "nominalSizeRang": {
+            "nominalSizeRange": {
                 "min": 18,
                 "max": 30
             },
             "tolerance": 0.0015
 		}, {
-            "nominalSizeRang": {
+            "nominalSizeRange": {
                 "min": 30,
                 "max": 50
             },
             "tolerance": 0.0015
 		}, {
-            "nominalSizeRang": {
+            "nominalSizeRange": {
                 "min": 50,
                 "max": 80
             },
             "tolerance": 0.002
 		}, {
-            "nominalSizeRang": {
+            "nominalSizeRange": {
                 "min": 80,
                 "max": 120
             },
             "tolerance": 0.0025
 		}, {
-            "nominalSizeRang": {
+            "nominalSizeRange": {
                 "min": 120,
                 "max": 180
             },
             "tolerance": 0.0035
 		}, {
-            "nominalSizeRang": {
+            "nominalSizeRange": {
                 "min": 180,
                 "max": 250
             },
             "tolerance": 0.0045
 		}, {
-            "nominalSizeRang": {
+            "nominalSizeRange": {
                 "min": 250,
                 "max": 315
             },
             "tolerance": 0.006
 		}, {
-            "nominalSizeRang": {
+            "nominalSizeRange": {
                 "min": 315,
                 "max": 400
             },
             "tolerance": 0.007
 		}, {
-            "nominalSizeRang": {
+            "nominalSizeRange": {
                 "min": 400,
                 "max": 500
             },
             "tolerance": 0.008
 		}, {
-            "nominalSizeRang": {
+            "nominalSizeRange": {
                 "min": 500,
                 "max": 630
             },
             "tolerance": 0.009
 		}, {
-            "nominalSizeRang": {
+            "nominalSizeRange": {
                 "min": 630,
                 "max": 800
             },
             "tolerance": 0.01
 		}, {
-            "nominalSizeRang": {
+            "nominalSizeRange": {
                 "min": 800,
                 "max": 1000
             },
             "tolerance": 0.011
 		}, {
-            "nominalSizeRang": {
+            "nominalSizeRange": {
                 "min": 1000,
                 "max": 1250
             },
             "tolerance": 0.013
 		}, {
-            "nominalSizeRang": {
+            "nominalSizeRange": {
                 "min": 1250,
                 "max": 1600
             },
             "tolerance": 0.015
 		}, {
-            "nominalSizeRang": {
+            "nominalSizeRange": {
                 "min": 1600,
                 "max": 2000
             },
             "tolerance": 0.018
 		}, {
-            "nominalSizeRang": {
+            "nominalSizeRange": {
                 "min": 2000,
                 "max": 2500
             },
             "tolerance": 0.022
 		}, {
-            "nominalSizeRang": {
+            "nominalSizeRange": {
                 "min": 2500,
                 "max": 3150
             },
@@ -390,127 +390,127 @@
 	}, {
         "kvalitet": 2,
         "nominalSizeRangeAndTolerance": [{
-            "nominalSizeRang": {
+            "nominalSizeRange": {
                 "min": 0,
                 "max": 3
             },
             "tolerance": 0.0012
 		}, {
-            "nominalSizeRang": {
+            "nominalSizeRange": {
                 "min": 3,
                 "max": 6
             },
             "tolerance": 0.0015
 		}, {
-            "nominalSizeRang": {
+            "nominalSizeRange": {
                 "min": 6,
                 "max": 10
             },
             "tolerance": 0.0015
 		}, {
-            "nominalSizeRang": {
+            "nominalSizeRange": {
                 "min": 10,
                 "max": 18
             },
             "tolerance": 0.002
 		}, {
-            "nominalSizeRang": {
+            "nominalSizeRange": {
                 "min": 18,
                 "max": 30
             },
             "tolerance": 0.0025
 		}, {
-            "nominalSizeRang": {
+            "nominalSizeRange": {
                 "min": 30,
                 "max": 50
             },
             "tolerance": 0.0025
 		}, {
-            "nominalSizeRang": {
+            "nominalSizeRange": {
                 "min": 50,
                 "max": 80
             },
             "tolerance": 0.003
 		}, {
-            "nominalSizeRang": {
+            "nominalSizeRange": {
                 "min": 80,
                 "max": 120
             },
             "tolerance": 0.004
 		}, {
-            "nominalSizeRang": {
+            "nominalSizeRange": {
                 "min": 120,
                 "max": 180
             },
             "tolerance": 0.005
 		}, {
-            "nominalSizeRang": {
+            "nominalSizeRange": {
                 "min": 180,
                 "max": 250
             },
             "tolerance": 0.007
 		}, {
-            "nominalSizeRang": {
+            "nominalSizeRange": {
                 "min": 250,
                 "max": 315
             },
             "tolerance": 0.008
 		}, {
-            "nominalSizeRang": {
+            "nominalSizeRange": {
                 "min": 315,
                 "max": 400
             },
             "tolerance": 0.009
 		}, {
-            "nominalSizeRang": {
+            "nominalSizeRange": {
                 "min": 400,
                 "max": 500
             },
             "tolerance": 0.01
 		}, {
-            "nominalSizeRang": {
+            "nominalSizeRange": {
                 "min": 500,
                 "max": 630
             },
             "tolerance": 0.011
 		}, {
-            "nominalSizeRang": {
+            "nominalSizeRange": {
                 "min": 630,
                 "max": 800
             },
             "tolerance": 0.013
 		}, {
-            "nominalSizeRang": {
+            "nominalSizeRange": {
                 "min": 800,
                 "max": 1000
             },
             "tolerance": 0.015
 		}, {
-            "nominalSizeRang": {
+            "nominalSizeRange": {
                 "min": 1000,
                 "max": 1250
             },
             "tolerance": 0.018
 		}, {
-            "nominalSizeRang": {
+            "nominalSizeRange": {
                 "min": 1250,
                 "max": 1600
             },
             "tolerance": 0.021
 		}, {
-            "nominalSizeRang": {
+            "nominalSizeRange": {
                 "min": 1600,
                 "max": 2000
             },
             "tolerance": 0.025
 		}, {
-            "nominalSizeRang": {
+            "nominalSizeRange": {
                 "min": 2000,
                 "max": 2500
             },
             "tolerance": 0.03
 		}, {
-            "nominalSizeRang": {
+            "nominalSizeRange": {
                 "min": 2500,
                 "max": 3150
             },
@@ -519,127 +519,127 @@
 	}, {
         "kvalitet": 3,
         "nominalSizeRangeAndTolerance": [{
-            "nominalSizeRang": {
+            "nominalSizeRange": {
                 "min": 0,
                 "max": 3
             },
             "tolerance": 0.002
 		}, {
-            "nominalSizeRang": {
+            "nominalSizeRange": {
                 "min": 3,
                 "max": 6
             },
             "tolerance": 0.0025
 		}, {
-            "nominalSizeRang": {
+            "nominalSizeRange": {
                 "min": 6,
                 "max": 10
             },
             "tolerance": 0.0025
 		}, {
-            "nominalSizeRang": {
+            "nominalSizeRange": {
                 "min": 10,
                 "max": 18
             },
             "tolerance": 0.003
 		}, {
-            "nominalSizeRang": {
+            "nominalSizeRange": {
                 "min": 18,
                 "max": 30
             },
             "tolerance": 0.004
 		}, {
-            "nominalSizeRang": {
+            "nominalSizeRange": {
                 "min": 30,
                 "max": 50
             },
             "tolerance": 0.004
 		}, {
-            "nominalSizeRang": {
+            "nominalSizeRange": {
                 "min": 50,
                 "max": 80
             },
             "tolerance": 0.005
 		}, {
-            "nominalSizeRang": {
+            "nominalSizeRange": {
                 "min": 80,
                 "max": 120
             },
             "tolerance": 0.006
 		}, {
-            "nominalSizeRang": {
+            "nominalSizeRange": {
                 "min": 120,
                 "max": 180
             },
             "tolerance": 0.008
 		}, {
-            "nominalSizeRang": {
+            "nominalSizeRange": {
                 "min": 180,
                 "max": 250
             },
             "tolerance": 0.01
 		}, {
-            "nominalSizeRang": {
+            "nominalSizeRange": {
                 "min": 250,
                 "max": 315
             },
             "tolerance": 0.012
 		}, {
-            "nominalSizeRang": {
+            "nominalSizeRange": {
                 "min": 315,
                 "max": 400
             },
             "tolerance": 0.013
 		}, {
-            "nominalSizeRang": {
+            "nominalSizeRange": {
                 "min": 400,
                 "max": 500
             },
             "tolerance": 0.015
 		}, {
-            "nominalSizeRang": {
+            "nominalSizeRange": {
                 "min": 500,
                 "max": 630
             },
             "tolerance": 0.016
 		}, {
-            "nominalSizeRang": {
+            "nominalSizeRange": {
                 "min": 630,
                 "max": 800
             },
             "tolerance": 0.018
 		}, {
-            "nominalSizeRang": {
+            "nominalSizeRange": {
                 "min": 800,
                 "max": 1000
             },
             "tolerance": 0.021
 		}, {
-            "nominalSizeRang": {
+            "nominalSizeRange": {
                 "min": 1000,
                 "max": 1250
             },
             "tolerance": 0.024
 		}, {
-            "nominalSizeRang": {
+            "nominalSizeRange": {
                 "min": 1250,
                 "max": 1600
             },
             "tolerance": 0.029
 		}, {
-            "nominalSizeRang": {
+            "nominalSizeRange": {
                 "min": 1600,
                 "max": 2000
             },
             "tolerance": 0.035
 		}, {
-            "nominalSizeRang": {
+            "nominalSizeRange": {
                 "min": 2000,
                 "max": 2500
             },
             "tolerance": 0.041
 		}, {
-            "nominalSizeRang": {
+            "nominalSizeRange": {
                 "min": 2500,
                 "max": 3150
             },
@@ -648,127 +648,127 @@
 	}, {
         "kvalitet": 4,
         "nominalSizeRangeAndTolerance": [{
-            "nominalSizeRang": {
+            "nominalSizeRange": {
                 "min": 0,
                 "max": 3
             },
             "tolerance": 0.003
 		}, {
-            "nominalSizeRang": {
+            "nominalSizeRange": {
                 "min": 3,
                 "max": 6
             },
             "tolerance": 0.004
 		}, {
-            "nominalSizeRang": {
+            "nominalSizeRange": {
                 "min": 6,
                 "max": 10
             },
             "tolerance": 0.004
 		}, {
-            "nominalSizeRang": {
+            "nominalSizeRange": {
                 "min": 10,
                 "max": 18
             },
             "tolerance": 0.005
 		}, {
-            "nominalSizeRang": {
+            "nominalSizeRange": {
                 "min": 18,
                 "max": 30
             },
             "tolerance": 0.006
 		}, {
-            "nominalSizeRang": {
+            "nominalSizeRange": {
                 "min": 30,
                 "max": 50
             },
             "tolerance": 0.007
 		}, {
-            "nominalSizeRang": {
+            "nominalSizeRange": {
                 "min": 50,
                 "max": 80
             },
             "tolerance": 0.008
 		}, {
-            "nominalSizeRang": {
+            "nominalSizeRange": {
                 "min": 80,
                 "max": 120
             },
             "tolerance": 0.01
 		}, {
-            "nominalSizeRang": {
+            "nominalSizeRange": {
                 "min": 120,
                 "max": 180
             },
             "tolerance": 0.012
 		}, {
-            "nominalSizeRang": {
+            "nominalSizeRange": {
                 "min": 180,
                 "max": 250
             },
             "tolerance": 0.014
 		}, {
-            "nominalSizeRang": {
+            "nominalSizeRange": {
                 "min": 250,
                 "max": 315
             },
             "tolerance": 0.016
 		}, {
-            "nominalSizeRang": {
+            "nominalSizeRange": {
                 "min": 315,
                 "max": 400
             },
             "tolerance": 0.018
 		}, {
-            "nominalSizeRang": {
+            "nominalSizeRange": {
                 "min": 400,
                 "max": 500
             },
             "tolerance": 0.02
 		}, {
-            "nominalSizeRang": {
+            "nominalSizeRange": {
                 "min": 500,
                 "max": 630
             },
             "tolerance": 0.022
 		}, {
-            "nominalSizeRang": {
+            "nominalSizeRange": {
                 "min": 630,
                 "max": 800
             },
             "tolerance": 0.025
 		}, {
-            "nominalSizeRang": {
+            "nominalSizeRange": {
                 "min": 800,
                 "max": 1000
             },
             "tolerance": 0.029
 		}, {
-            "nominalSizeRang": {
+            "nominalSizeRange": {
                 "min": 1000,
                 "max": 1250
             },
             "tolerance": 0.034
 		}, {
-            "nominalSizeRang": {
+            "nominalSizeRange": {
                 "min": 1250,
                 "max": 1600
             },
             "tolerance": 0.04
 		}, {
-            "nominalSizeRang": {
+            "nominalSizeRange": {
                 "min": 1600,
                 "max": 2000
             },
             "tolerance": 0.048
 		}, {
-            "nominalSizeRang": {
+            "nominalSizeRange": {
                 "min": 2000,
                 "max": 2500
             },
             "tolerance": 0.057
 		}, {
-            "nominalSizeRang": {
+            "nominalSizeRange": {
                 "min": 2500,
                 "max": 3150
             },
@@ -777,127 +777,127 @@
 	}, {
         "kvalitet": 5,
         "nominalSizeRangeAndTolerance": [{
-            "nominalSizeRang": {
+            "nominalSizeRange": {
                 "min": 0,
                 "max": 3
             },
             "tolerance": 0.004
 		}, {
-            "nominalSizeRang": {
+            "nominalSizeRange": {
                 "min": 3,
                 "max": 6
             },
             "tolerance": 0.005
 		}, {
-            "nominalSizeRang": {
+            "nominalSizeRange": {
                 "min": 6,
                 "max": 10
             },
             "tolerance": 0.006
 		}, {
-            "nominalSizeRang": {
+            "nominalSizeRange": {
                 "min": 10,
                 "max": 18
             },
             "tolerance": 0.008
 		}, {
-            "nominalSizeRang": {
+            "nominalSizeRange": {
                 "min": 18,
                 "max": 30
             },
             "tolerance": 0.009
 		}, {
-            "nominalSizeRang": {
+            "nominalSizeRange": {
                 "min": 30,
                 "max": 50
             },
             "tolerance": 0.011
 		}, {
-            "nominalSizeRang": {
+            "nominalSizeRange": {
                 "min": 50,
                 "max": 80
             },
             "tolerance": 0.013
 		}, {
-            "nominalSizeRang": {
+            "nominalSizeRange": {
                 "min": 80,
                 "max": 120
             },
             "tolerance": 0.015
 		}, {
-            "nominalSizeRang": {
+            "nominalSizeRange": {
                 "min": 120,
                 "max": 180
             },
             "tolerance": 0.018
 		}, {
-            "nominalSizeRang": {
+            "nominalSizeRange": {
                 "min": 180,
                 "max": 250
             },
             "tolerance": 0.02
 		}, {
-            "nominalSizeRang": {
+            "nominalSizeRange": {
                 "min": 250,
                 "max": 315
             },
             "tolerance": 0.023
 		}, {
-            "nominalSizeRang": {
+            "nominalSizeRange": {
                 "min": 315,
                 "max": 400
             },
             "tolerance": 0.025
 		}, {
-            "nominalSizeRang": {
+            "nominalSizeRange": {
                 "min": 400,
                 "max": 500
             },
             "tolerance": 0.027
 		}, {
-            "nominalSizeRang": {
+            "nominalSizeRange": {
                 "min": 500,
                 "max": 630
             },
             "tolerance": 0.03
 		}, {
-            "nominalSizeRang": {
+            "nominalSizeRange": {
                 "min": 630,
                 "max": 800
             },
             "tolerance": 0.035
 		}, {
-            "nominalSizeRang": {
+            "nominalSizeRange": {
                 "min": 800,
                 "max": 1000
             },
             "tolerance": 0.04
 		}, {
-            "nominalSizeRang": {
+            "nominalSizeRange": {
                 "min": 1000,
                 "max": 1250
             },
             "tolerance": 0.046
 		}, {
-            "nominalSizeRang": {
+            "nominalSizeRange": {
                 "min": 1250,
                 "max": 1600
             },
             "tolerance": 0.054
 		}, {
-            "nominalSizeRang": {
+            "nominalSizeRange": {
                 "min": 1600,
                 "max": 2000
             },
             "tolerance": 0.065
 		}, {
-            "nominalSizeRang": {
+            "nominalSizeRange": {
                 "min": 2000,
                 "max": 2500
             },
             "tolerance": 0.077
 		}, {
-            "nominalSizeRang": {
+            "nominalSizeRange": {
                 "min": 2500,
                 "max": 3150
             },
@@ -906,127 +906,127 @@
 	}, {
         "kvalitet": 6,
         "nominalSizeRangeAndTolerance": [{
-            "nominalSizeRang": {
+            "nominalSizeRange": {
                 "min": 0,
                 "max": 3
             },
             "tolerance": 0.006
 		}, {
-            "nominalSizeRang": {
+            "nominalSizeRange": {
                 "min": 3,
                 "max": 6
             },
             "tolerance": 0.008
 		}, {
-            "nominalSizeRang": {
+            "nominalSizeRange": {
                 "min": 6,
                 "max": 10
             },
             "tolerance": 0.009
 		}, {
-            "nominalSizeRang": {
+            "nominalSizeRange": {
                 "min": 10,
                 "max": 18
             },
             "tolerance": 0.011
 		}, {
-            "nominalSizeRang": {
+            "nominalSizeRange": {
                 "min": 18,
                 "max": 30
             },
             "tolerance": 0.013
 		}, {
-            "nominalSizeRang": {
+            "nominalSizeRange": {
                 "min": 30,
                 "max": 50
             },
             "tolerance": 0.016
 		}, {
-            "nominalSizeRang": {
+            "nominalSizeRange": {
                 "min": 50,
                 "max": 80
             },
             "tolerance": 0.019
 		}, {
-            "nominalSizeRang": {
+            "nominalSizeRange": {
                 "min": 80,
                 "max": 120
             },
             "tolerance": 0.022
 		}, {
-            "nominalSizeRang": {
+            "nominalSizeRange": {
                 "min": 120,
                 "max": 180
             },
             "tolerance": 0.025
 		}, {
-            "nominalSizeRang": {
+            "nominalSizeRange": {
                 "min": 180,
                 "max": 250
             },
             "tolerance": 0.029
 		}, {
-            "nominalSizeRang": {
+            "nominalSizeRange": {
                 "min": 250,
                 "max": 315
             },
             "tolerance": 0.032
 		}, {
-            "nominalSizeRang": {
+            "nominalSizeRange": {
                 "min": 315,
                 "max": 400
             },
             "tolerance": 0.036
 		}, {
-            "nominalSizeRang": {
+            "nominalSizeRange": {
                 "min": 400,
                 "max": 500
             },
             "tolerance": 0.04
 		}, {
-            "nominalSizeRang": {
+            "nominalSizeRange": {
                 "min": 500,
                 "max": 630
             },
             "tolerance": 0.044
 		}, {
-            "nominalSizeRang": {
+            "nominalSizeRange": {
                 "min": 630,
                 "max": 800
             },
             "tolerance": 0.05
 		}, {
-            "nominalSizeRang": {
+            "nominalSizeRange": {
                 "min": 800,
                 "max": 1000
             },
             "tolerance": 0.056
 		}, {
-            "nominalSizeRang": {
+            "nominalSizeRange": {
                 "min": 1000,
                 "max": 1250
             },
             "tolerance": 0.066
 		}, {
-            "nominalSizeRang": {
+            "nominalSizeRange": {
                 "min": 1250,
                 "max": 1600
             },
             "tolerance": 0.078
 		}, {
-            "nominalSizeRang": {
+            "nominalSizeRange": {
                 "min": 1600,
                 "max": 2000
             },
             "tolerance": 0.092
 		}, {
-            "nominalSizeRang": {
+            "nominalSizeRange": {
                 "min": 2000,
                 "max": 2500
             },
             "tolerance": 0.11
 		}, {
-            "nominalSizeRang": {
+            "nominalSizeRange": {
                 "min": 2500,
                 "max": 3150
             },
@@ -1035,127 +1035,127 @@
 	}, {
         "kvalitet": 7,
         "nominalSizeRangeAndTolerance": [{
-            "nominalSizeRang": {
+            "nominalSizeRange": {
                 "min": 0,
                 "max": 3
             },
             "tolerance": 0.01
 		}, {
-            "nominalSizeRang": {
+            "nominalSizeRange": {
                 "min": 3,
                 "max": 6
             },
             "tolerance": 0.012
 		}, {
-            "nominalSizeRang": {
+            "nominalSizeRange": {
                 "min": 6,
                 "max": 10
             },
             "tolerance": 0.015
 		}, {
-            "nominalSizeRang": {
+            "nominalSizeRange": {
                 "min": 10,
                 "max": 18
             },
             "tolerance": 0.018
 		}, {
-            "nominalSizeRang": {
+            "nominalSizeRange": {
                 "min": 18,
                 "max": 30
             },
             "tolerance": 0.021
 		}, {
-            "nominalSizeRang": {
+            "nominalSizeRange": {
                 "min": 30,
                 "max": 50
             },
             "tolerance": 0.025
 		}, {
-            "nominalSizeRang": {
+            "nominalSizeRange": {
                 "min": 50,
                 "max": 80
             },
             "tolerance": 0.03
 		}, {
-            "nominalSizeRang": {
+            "nominalSizeRange": {
                 "min": 80,
                 "max": 120
             },
             "tolerance": 0.035
 		}, {
-            "nominalSizeRang": {
+            "nominalSizeRange": {
                 "min": 120,
                 "max": 180
             },
             "tolerance": 0.04
 		}, {
-            "nominalSizeRang": {
+            "nominalSizeRange": {
                 "min": 180,
                 "max": 250
             },
             "tolerance": 0.046
 		}, {
-            "nominalSizeRang": {
+            "nominalSizeRange": {
                 "min": 250,
                 "max": 315
             },
             "tolerance": 0.052
 		}, {
-            "nominalSizeRang": {
+            "nominalSizeRange": {
                 "min": 315,
                 "max": 400
             },
             "tolerance": 0.057
 		}, {
-            "nominalSizeRang": {
+            "nominalSizeRange": {
                 "min": 400,
                 "max": 500
             },
             "tolerance": 0.063
 		}, {
-            "nominalSizeRang": {
+            "nominalSizeRange": {
                 "min": 500,
                 "max": 630
             },
             "tolerance": 0.07
 		}, {
-            "nominalSizeRang": {
+            "nominalSizeRange": {
                 "min": 630,
                 "max": 800
             },
             "tolerance": 0.08
 		}, {
-            "nominalSizeRang": {
+            "nominalSizeRange": {
                 "min": 800,
                 "max": 1000
             },
             "tolerance": 0.09
 		}, {
-            "nominalSizeRang": {
+            "nominalSizeRange": {
                 "min": 1000,
                 "max": 1250
             },
             "tolerance": 0.105
 		}, {
-            "nominalSizeRang": {
+            "nominalSizeRange": {
                 "min": 1250,
                 "max": 1600
             },
             "tolerance": 0.125
 		}, {
-            "nominalSizeRang": {
+            "nominalSizeRange": {
                 "min": 1600,
                 "max": 2000
             },
             "tolerance": 0.15
 		}, {
-            "nominalSizeRang": {
+            "nominalSizeRange": {
                 "min": 2000,
                 "max": 2500
             },
             "tolerance": 0.175
 		}, {
-            "nominalSizeRang": {
+            "nominalSizeRange": {
                 "min": 2500,
                 "max": 3150
             },
@@ -1164,127 +1164,127 @@
 	}, {
         "kvalitet": 8,
         "nominalSizeRangeAndTolerance": [{
-            "nominalSizeRang": {
+            "nominalSizeRange": {
                 "min": 0,
                 "max": 3
             },
             "tolerance": 0.014
 		}, {
-            "nominalSizeRang": {
+            "nominalSizeRange": {
                 "min": 3,
                 "max": 6
             },
             "tolerance": 0.018
 		}, {
-            "nominalSizeRang": {
+            "nominalSizeRange": {
                 "min": 6,
                 "max": 10
             },
             "tolerance": 0.022
 		}, {
-            "nominalSizeRang": {
+            "nominalSizeRange": {
                 "min": 10,
                 "max": 18
             },
             "tolerance": 0.027
 		}, {
-            "nominalSizeRang": {
+            "nominalSizeRange": {
                 "min": 18,
                 "max": 30
             },
             "tolerance": 0.033
 		}, {
-            "nominalSizeRang": {
+            "nominalSizeRange": {
                 "min": 30,
                 "max": 50
             },
             "tolerance": 0.039
 		}, {
-            "nominalSizeRang": {
+            "nominalSizeRange": {
                 "min": 50,
                 "max": 80
             },
             "tolerance": 0.046
 		}, {
-            "nominalSizeRang": {
+            "nominalSizeRange": {
                 "min": 80,
                 "max": 120
             },
             "tolerance": 0.054
 		}, {
-            "nominalSizeRang": {
+            "nominalSizeRange": {
                 "min": 120,
                 "max": 180
             },
             "tolerance": 0.063
 		}, {
-            "nominalSizeRang": {
+            "nominalSizeRange": {
                 "min": 180,
                 "max": 250
             },
             "tolerance": 0.072
 		}, {
-            "nominalSizeRang": {
+            "nominalSizeRange": {
                 "min": 250,
                 "max": 315
             },
             "tolerance": 0.081
 		}, {
-            "nominalSizeRang": {
+            "nominalSizeRange": {
                 "min": 315,
                 "max": 400
             },
             "tolerance": 0.089
 		}, {
-            "nominalSizeRang": {
+            "nominalSizeRange": {
                 "min": 400,
                 "max": 500
             },
             "tolerance": 0.097
 		}, {
-            "nominalSizeRang": {
+            "nominalSizeRange": {
                 "min": 500,
                 "max": 630
             },
             "tolerance": 0.11
 		}, {
-            "nominalSizeRang": {
+            "nominalSizeRange": {
                 "min": 630,
                 "max": 800
             },
             "tolerance": 0.125
 		}, {
-            "nominalSizeRang": {
+            "nominalSizeRange": {
                 "min": 800,
                 "max": 1000
             },
             "tolerance": 0.14
 		}, {
-            "nominalSizeRang": {
+            "nominalSizeRange": {
                 "min": 1000,
                 "max": 1250
             },
             "tolerance": 0.165
 		}, {
-            "nominalSizeRang": {
+            "nominalSizeRange": {
                 "min": 1250,
                 "max": 1600
             },
             "tolerance": 0.195
 		}, {
-            "nominalSizeRang": {
+            "nominalSizeRange": {
                 "min": 1600,
                 "max": 2000
             },
             "tolerance": 0.23
 		}, {
-            "nominalSizeRang": {
+            "nominalSizeRange": {
                 "min": 2000,
                 "max": 2500
             },
             "tolerance": 0.28
 		}, {
-            "nominalSizeRang": {
+            "nominalSizeRange": {
                 "min": 2500,
                 "max": 3150
             },
@@ -1293,127 +1293,127 @@
 	}, {
         "kvalitet": 9,
         "nominalSizeRangeAndTolerance": [{
-            "nominalSizeRang": {
+            "nominalSizeRange": {
                 "min": 0,
                 "max": 3
             },
             "tolerance": 0.025
 		}, {
-            "nominalSizeRang": {
+            "nominalSizeRange": {
                 "min": 3,
                 "max": 6
             },
             "tolerance": 0.03
 		}, {
-            "nominalSizeRang": {
+            "nominalSizeRange": {
                 "min": 6,
                 "max": 10
             },
             "tolerance": 0.036
 		}, {
-            "nominalSizeRang": {
+            "nominalSizeRange": {
                 "min": 10,
                 "max": 18
             },
             "tolerance": 0.043
 		}, {
-            "nominalSizeRang": {
+            "nominalSizeRange": {
                 "min": 18,
                 "max": 30
             },
             "tolerance": 0.052
 		}, {
-            "nominalSizeRang": {
+            "nominalSizeRange": {
                 "min": 30,
                 "max": 50
             },
             "tolerance": 0.062
 		}, {
-            "nominalSizeRang": {
+            "nominalSizeRange": {
                 "min": 50,
                 "max": 80
             },
             "tolerance": 0.074
 		}, {
-            "nominalSizeRang": {
+            "nominalSizeRange": {
                 "min": 80,
                 "max": 120
             },
             "tolerance": 0.087
 		}, {
-            "nominalSizeRang": {
+            "nominalSizeRange": {
                 "min": 120,
                 "max": 180
             },
             "tolerance": 0.1
 		}, {
-            "nominalSizeRang": {
+            "nominalSizeRange": {
                 "min": 180,
                 "max": 250
             },
             "tolerance": 0.115
 		}, {
-            "nominalSizeRang": {
+            "nominalSizeRange": {
                 "min": 250,
                 "max": 315
             },
             "tolerance": 0.13
 		}, {
-            "nominalSizeRang": {
+            "nominalSizeRange": {
                 "min": 315,
                 "max": 400
             },
             "tolerance": 0.14
 		}, {
-            "nominalSizeRang": {
+            "nominalSizeRange": {
                 "min": 400,
                 "max": 500
             },
             "tolerance": 0.155
 		}, {
-            "nominalSizeRang": {
+            "nominalSizeRange": {
                 "min": 500,
                 "max": 630
             },
             "tolerance": 0.175
 		}, {
-            "nominalSizeRang": {
+            "nominalSizeRange": {
                 "min": 630,
                 "max": 800
             },
             "tolerance": 0.2
 		}, {
-            "nominalSizeRang": {
+            "nominalSizeRange": {
                 "min": 800,
                 "max": 1000
             },
             "tolerance": 0.23
 		}, {
-            "nominalSizeRang": {
+            "nominalSizeRange": {
                 "min": 1000,
                 "max": 1250
             },
             "tolerance": 0.26
 		}, {
-            "nominalSizeRang": {
+            "nominalSizeRange": {
                 "min": 1250,
                 "max": 1600
             },
             "tolerance": 0.31
 		}, {
-            "nominalSizeRang": {
+            "nominalSizeRange": {
                 "min": 1600,
                 "max": 2000
             },
             "tolerance": 0.37
 		}, {
-            "nominalSizeRang": {
+            "nominalSizeRange": {
                 "min": 2000,
                 "max": 2500
             },
             "tolerance": 0.44
 		}, {
-            "nominalSizeRang": {
+            "nominalSizeRange": {
                 "min": 2500,
                 "max": 3150
             },
@@ -1422,127 +1422,127 @@
 	}, {
         "kvalitet": 10,
         "nominalSizeRangeAndTolerance": [{
-            "nominalSizeRang": {
+            "nominalSizeRange": {
                 "min": 0,
                 "max": 3
             },
             "tolerance": 0.04
 		}, {
-            "nominalSizeRang": {
+            "nominalSizeRange": {
                 "min": 3,
                 "max": 6
             },
             "tolerance": 0.048
 		}, {
-            "nominalSizeRang": {
+            "nominalSizeRange": {
                 "min": 6,
                 "max": 10
             },
             "tolerance": 0.058
 		}, {
-            "nominalSizeRang": {
+            "nominalSizeRange": {
                 "min": 10,
                 "max": 18
             },
             "tolerance": 0.07
 		}, {
-            "nominalSizeRang": {
+            "nominalSizeRange": {
                 "min": 18,
                 "max": 30
             },
             "tolerance": 0.084
 		}, {
-            "nominalSizeRang": {
+            "nominalSizeRange": {
                 "min": 30,
                 "max": 50
             },
             "tolerance": 0.1
 		}, {
-            "nominalSizeRang": {
+            "nominalSizeRange": {
                 "min": 50,
                 "max": 80
             },
             "tolerance": 0.12
 		}, {
-            "nominalSizeRang": {
+            "nominalSizeRange": {
                 "min": 80,
                 "max": 120
             },
             "tolerance": 0.14
 		}, {
-            "nominalSizeRang": {
+            "nominalSizeRange": {
                 "min": 120,
                 "max": 180
             },
             "tolerance": 0.16
 		}, {
-            "nominalSizeRang": {
+            "nominalSizeRange": {
                 "min": 180,
                 "max": 250
             },
             "tolerance": 0.185
 		}, {
-            "nominalSizeRang": {
+            "nominalSizeRange": {
                 "min": 250,
                 "max": 315
             },
             "tolerance": 0.21
 		}, {
-            "nominalSizeRang": {
+            "nominalSizeRange": {
                 "min": 315,
                 "max": 400
             },
             "tolerance": 0.23
 		}, {
-            "nominalSizeRang": {
+            "nominalSizeRange": {
                 "min": 400,
                 "max": 500
             },
             "tolerance": 0.25
 		}, {
-            "nominalSizeRang": {
+            "nominalSizeRange": {
                 "min": 500,
                 "max": 630
             },
             "tolerance": 0.28
 		}, {
-            "nominalSizeRang": {
+            "nominalSizeRange": {
                 "min": 630,
                 "max": 800
             },
             "tolerance": 0.32
 		}, {
-            "nominalSizeRang": {
+            "nominalSizeRange": {
                 "min": 800,
                 "max": 1000
             },
             "tolerance": 0.36
 		}, {
-            "nominalSizeRang": {
+            "nominalSizeRange": {
                 "min": 1000,
                 "max": 1250
             },
             "tolerance": 0.42
 		}, {
-            "nominalSizeRang": {
+            "nominalSizeRange": {
                 "min": 1250,
                 "max": 1600
             },
             "tolerance": 0.5
 		}, {
-            "nominalSizeRang": {
+            "nominalSizeRange": {
                 "min": 1600,
                 "max": 2000
             },
             "tolerance": 0.6
 		}, {
-            "nominalSizeRang": {
+            "nominalSizeRange": {
                 "min": 2000,
                 "max": 2500
             },
             "tolerance": 0.7
 		}, {
-            "nominalSizeRang": {
+            "nominalSizeRange": {
                 "min": 2500,
                 "max": 3150
             },
@@ -1551,127 +1551,127 @@
 	}, {
         "kvalitet": 11,
         "nominalSizeRangeAndTolerance": [{
-            "nominalSizeRang": {
+            "nominalSizeRange": {
                 "min": 0,
                 "max": 3
             },
             "tolerance": 0.06
 		}, {
-            "nominalSizeRang": {
+            "nominalSizeRange": {
                 "min": 3,
                 "max": 6
             },
             "tolerance": 0.075
 		}, {
-            "nominalSizeRang": {
+            "nominalSizeRange": {
                 "min": 6,
                 "max": 10
             },
             "tolerance": 0.09
 		}, {
-            "nominalSizeRang": {
+            "nominalSizeRange": {
                 "min": 10,
                 "max": 18
             },
             "tolerance": 0.11
 		}, {
-            "nominalSizeRang": {
+            "nominalSizeRange": {
                 "min": 18,
                 "max": 30
             },
             "tolerance": 0.13
 		}, {
-            "nominalSizeRang": {
+            "nominalSizeRange": {
                 "min": 30,
                 "max": 50
             },
             "tolerance": 0.16
 		}, {
-            "nominalSizeRang": {
+            "nominalSizeRange": {
                 "min": 50,
                 "max": 80
             },
             "tolerance": 0.19
 		}, {
-            "nominalSizeRang": {
+            "nominalSizeRange": {
                 "min": 80,
                 "max": 120
             },
             "tolerance": 0.22
 		}, {
-            "nominalSizeRang": {
+            "nominalSizeRange": {
                 "min": 120,
                 "max": 180
             },
             "tolerance": 0.25
 		}, {
-            "nominalSizeRang": {
+            "nominalSizeRange": {
                 "min": 180,
                 "max": 250
             },
             "tolerance": 0.29
 		}, {
-            "nominalSizeRang": {
+            "nominalSizeRange": {
                 "min": 250,
                 "max": 315
             },
             "tolerance": 0.32
 		}, {
-            "nominalSizeRang": {
+            "nominalSizeRange": {
                 "min": 315,
                 "max": 400
             },
             "tolerance": 0.36
 		}, {
-            "nominalSizeRang": {
+            "nominalSizeRange": {
                 "min": 400,
                 "max": 500
             },
             "tolerance": 0.4
 		}, {
-            "nominalSizeRang": {
+            "nominalSizeRange": {
                 "min": 500,
                 "max": 630
             },
             "tolerance": 0.44
 		}, {
-            "nominalSizeRang": {
+            "nominalSizeRange": {
                 "min": 630,
                 "max": 800
             },
             "tolerance": 0.5
 		}, {
-            "nominalSizeRang": {
+            "nominalSizeRange": {
                 "min": 800,
                 "max": 1000
             },
             "tolerance": 0.56
 		}, {
-            "nominalSizeRang": {
+            "nominalSizeRange": {
                 "min": 1000,
                 "max": 1250
             },
             "tolerance": 0.66
 		}, {
-            "nominalSizeRang": {
+            "nominalSizeRange": {
                 "min": 1250,
                 "max": 1600
             },
             "tolerance": 0.78
 		}, {
-            "nominalSizeRang": {
+            "nominalSizeRange": {
                 "min": 1600,
                 "max": 2000
             },
             "tolerance": 0.92
 		}, {
-            "nominalSizeRang": {
+            "nominalSizeRange": {
                 "min": 2000,
                 "max": 2500
             },
             "tolerance": 1.1
 		}, {
-            "nominalSizeRang": {
+            "nominalSizeRange": {
                 "min": 2500,
                 "max": 3150
             },
@@ -1680,127 +1680,127 @@
 	}, {
         "kvalitet": 12,
         "nominalSizeRangeAndTolerance": [{
-            "nominalSizeRang": {
+            "nominalSizeRange": {
                 "min": 0,
                 "max": 3
             },
             "tolerance": 0.1
 		}, {
-            "nominalSizeRang": {
+            "nominalSizeRange": {
                 "min": 3,
                 "max": 6
             },
             "tolerance": 0.12
 		}, {
-            "nominalSizeRang": {
+            "nominalSizeRange": {
                 "min": 6,
                 "max": 10
             },
             "tolerance": 0.15
 		}, {
-            "nominalSizeRang": {
+            "nominalSizeRange": {
                 "min": 10,
                 "max": 18
             },
             "tolerance": 0.18
 		}, {
-            "nominalSizeRang": {
+            "nominalSizeRange": {
                 "min": 18,
                 "max": 30
             },
             "tolerance": 0.21
 		}, {
-            "nominalSizeRang": {
+            "nominalSizeRange": {
                 "min": 30,
                 "max": 50
             },
             "tolerance": 0.25
 		}, {
-            "nominalSizeRang": {
+            "nominalSizeRange": {
                 "min": 50,
                 "max": 80
             },
             "tolerance": 0.3
 		}, {
-            "nominalSizeRang": {
+            "nominalSizeRange": {
                 "min": 80,
                 "max": 120
             },
             "tolerance": 0.35
 		}, {
-            "nominalSizeRang": {
+            "nominalSizeRange": {
                 "min": 120,
                 "max": 180
             },
             "tolerance": 0.4
 		}, {
-            "nominalSizeRang": {
+            "nominalSizeRange": {
                 "min": 180,
                 "max": 250
             },
             "tolerance": 0.46
 		}, {
-            "nominalSizeRang": {
+            "nominalSizeRange": {
                 "min": 250,
                 "max": 315
             },
             "tolerance": 0.52
 		}, {
-            "nominalSizeRang": {
+            "nominalSizeRange": {
                 "min": 315,
                 "max": 400
             },
             "tolerance": 0.57
 		}, {
-            "nominalSizeRang": {
+            "nominalSizeRange": {
                 "min": 400,
                 "max": 500
             },
             "tolerance": 0.63
 		}, {
-            "nominalSizeRang": {
+            "nominalSizeRange": {
                 "min": 500,
                 "max": 630
             },
             "tolerance": 0.7
 		}, {
-            "nominalSizeRang": {
+            "nominalSizeRange": {
                 "min": 630,
                 "max": 800
             },
             "tolerance": 0.8
 		}, {
-            "nominalSizeRang": {
+            "nominalSizeRange": {
                 "min": 800,
                 "max": 1000
             },
             "tolerance": 0.9
 		}, {
-            "nominalSizeRang": {
+            "nominalSizeRange": {
                 "min": 1000,
                 "max": 1250
             },
             "tolerance": 1.05
 		}, {
-            "nominalSizeRang": {
+            "nominalSizeRange": {
                 "min": 1250,
                 "max": 1600
             },
             "tolerance": 1.25
 		}, {
-            "nominalSizeRang": {
+            "nominalSizeRange": {
                 "min": 1600,
                 "max": 2000
             },
             "tolerance": 1.5
 		}, {
-            "nominalSizeRang": {
+            "nominalSizeRange": {
                 "min": 2000,
                 "max": 2500
             },
             "tolerance": 1.75
 		}, {
-            "nominalSizeRang": {
+            "nominalSizeRange": {
                 "min": 2500,
                 "max": 3150
             },
@@ -1809,127 +1809,127 @@
 	}, {
         "kvalitet": 13,
         "nominalSizeRangeAndTolerance": [{
-            "nominalSizeRang": {
+            "nominalSizeRange": {
                 "min": 0,
                 "max": 3
             },
             "tolerance": 0.14
 		}, {
-            "nominalSizeRang": {
+            "nominalSizeRange": {
                 "min": 3,
                 "max": 6
             },
             "tolerance": 0.18
 		}, {
-            "nominalSizeRang": {
+            "nominalSizeRange": {
                 "min": 6,
                 "max": 10
             },
             "tolerance": 0.22
 		}, {
-            "nominalSizeRang": {
+            "nominalSizeRange": {
                 "min": 10,
                 "max": 18
             },
             "tolerance": 0.27
 		}, {
-            "nominalSizeRang": {
+            "nominalSizeRange": {
                 "min": 18,
                 "max": 30
             },
             "tolerance": 0.33
 		}, {
-            "nominalSizeRang": {
+            "nominalSizeRange": {
                 "min": 30,
                 "max": 50
             },
             "tolerance": 0.39
 		}, {
-            "nominalSizeRang": {
+            "nominalSizeRange": {
                 "min": 50,
                 "max": 80
             },
             "tolerance": 0.46
 		}, {
-            "nominalSizeRang": {
+            "nominalSizeRange": {
                 "min": 80,
                 "max": 120
             },
             "tolerance": 0.54
 		}, {
-            "nominalSizeRang": {
+            "nominalSizeRange": {
                 "min": 120,
                 "max": 180
             },
             "tolerance": 0.63
 		}, {
-            "nominalSizeRang": {
+            "nominalSizeRange": {
                 "min": 180,
                 "max": 250
             },
             "tolerance": 0.72
 		}, {
-            "nominalSizeRang": {
+            "nominalSizeRange": {
                 "min": 250,
                 "max": 315
             },
             "tolerance": 0.81
 		}, {
-            "nominalSizeRang": {
+            "nominalSizeRange": {
                 "min": 315,
                 "max": 400
             },
             "tolerance": 0.89
 		}, {
-            "nominalSizeRang": {
+            "nominalSizeRange": {
                 "min": 400,
                 "max": 500
             },
             "tolerance": 0.97
 		}, {
-            "nominalSizeRang": {
+            "nominalSizeRange": {
                 "min": 500,
                 "max": 630
             },
             "tolerance": 1.1
 		}, {
-            "nominalSizeRang": {
+            "nominalSizeRange": {
                 "min": 630,
                 "max": 800
             },
             "tolerance": 1.25
 		}, {
-            "nominalSizeRang": {
+            "nominalSizeRange": {
                 "min": 800,
                 "max": 1000
             },
             "tolerance": 1.4
 		}, {
-            "nominalSizeRang": {
+            "nominalSizeRange": {
                 "min": 1000,
                 "max": 1250
             },
             "tolerance": 1.65
 		}, {
-            "nominalSizeRang": {
+            "nominalSizeRange": {
                 "min": 1250,
                 "max": 1600
             },
             "tolerance": 1.95
 		}, {
-            "nominalSizeRang": {
+            "nominalSizeRange": {
                 "min": 1600,
                 "max": 2000
             },
             "tolerance": 2.3
 		}, {
-            "nominalSizeRang": {
+            "nominalSizeRange": {
                 "min": 2000,
                 "max": 2500
             },
             "tolerance": 2.8
 		}, {
-            "nominalSizeRang": {
+            "nominalSizeRange": {
                 "min": 2500,
                 "max": 3150
             },
@@ -1938,127 +1938,127 @@
 	}, {
         "kvalitet": 14,
         "nominalSizeRangeAndTolerance": [{
-            "nominalSizeRang": {
+            "nominalSizeRange": {
                 "min": 0,
                 "max": 3
             },
             "tolerance": 0.25
 		}, {
-            "nominalSizeRang": {
+            "nominalSizeRange": {
                 "min": 3,
                 "max": 6
             },
             "tolerance": 0.3
 		}, {
-            "nominalSizeRang": {
+            "nominalSizeRange": {
                 "min": 6,
                 "max": 10
             },
             "tolerance": 0.36
 		}, {
-            "nominalSizeRang": {
+            "nominalSizeRange": {
                 "min": 10,
                 "max": 18
             },
             "tolerance": 0.43
 		}, {
-            "nominalSizeRang": {
+            "nominalSizeRange": {
                 "min": 18,
                 "max": 30
             },
             "tolerance": 0.52
 		}, {
-            "nominalSizeRang": {
+            "nominalSizeRange": {
                 "min": 30,
                 "max": 50
             },
             "tolerance": 0.62
 		}, {
-            "nominalSizeRang": {
+            "nominalSizeRange": {
                 "min": 50,
                 "max": 80
             },
             "tolerance": 0.74
 		}, {
-            "nominalSizeRang": {
+            "nominalSizeRange": {
                 "min": 80,
                 "max": 120
             },
             "tolerance": 0.87
 		}, {
-            "nominalSizeRang": {
+            "nominalSizeRange": {
                 "min": 120,
                 "max": 180
             },
             "tolerance": 1
 		}, {
-            "nominalSizeRang": {
+            "nominalSizeRange": {
                 "min": 180,
                 "max": 250
             },
             "tolerance": 1.15
 		}, {
-            "nominalSizeRang": {
+            "nominalSizeRange": {
                 "min": 250,
                 "max": 315
             },
             "tolerance": 1.3
 		}, {
-            "nominalSizeRang": {
+            "nominalSizeRange": {
                 "min": 315,
                 "max": 400
             },
             "tolerance": 1.4
 		}, {
-            "nominalSizeRang": {
+            "nominalSizeRange": {
                 "min": 400,
                 "max": 500
             },
             "tolerance": 1.55
 		}, {
-            "nominalSizeRang": {
+            "nominalSizeRange": {
                 "min": 500,
                 "max": 630
             },
             "tolerance": 1.75
 		}, {
-            "nominalSizeRang": {
+            "nominalSizeRange": {
                 "min": 630,
                 "max": 800
             },
             "tolerance": 2
 		}, {
-            "nominalSizeRang": {
+            "nominalSizeRange": {
                 "min": 800,
                 "max": 1000
             },
             "tolerance": 2.3
 		}, {
-            "nominalSizeRang": {
+            "nominalSizeRange": {
                 "min": 1000,
                 "max": 1250
             },
             "tolerance": 2.6
 		}, {
-            "nominalSizeRang": {
+            "nominalSizeRange": {
                 "min": 1250,
                 "max": 1600
             },
             "tolerance": 3.1
 		}, {
-            "nominalSizeRang": {
+            "nominalSizeRange": {
                 "min": 1600,
                 "max": 2000
             },
             "tolerance": 3.7
 		}, {
-            "nominalSizeRang": {
+            "nominalSizeRange": {
                 "min": 2000,
                 "max": 2500
             },
             "tolerance": 4.4
 		}, {
-            "nominalSizeRang": {
+            "nominalSizeRange": {
                 "min": 2500,
                 "max": 3150
             },
@@ -2067,127 +2067,127 @@
 	}, {
         "kvalitet": 15,
         "nominalSizeRangeAndTolerance": [{
-            "nominalSizeRang": {
+            "nominalSizeRange": {
                 "min": 0,
                 "max": 3
             },
             "tolerance": 0.4
 		}, {
-            "nominalSizeRang": {
+            "nominalSizeRange": {
                 "min": 3,
                 "max": 6
             },
             "tolerance": 0.48
 		}, {
-            "nominalSizeRang": {
+            "nominalSizeRange": {
                 "min": 6,
                 "max": 10
             },
             "tolerance": 0.58
 		}, {
-            "nominalSizeRang": {
+            "nominalSizeRange": {
                 "min": 10,
                 "max": 18
             },
             "tolerance": 0.7
 		}, {
-            "nominalSizeRang": {
+            "nominalSizeRange": {
                 "min": 18,
                 "max": 30
             },
             "tolerance": 0.84
 		}, {
-            "nominalSizeRang": {
+            "nominalSizeRange": {
                 "min": 30,
                 "max": 50
             },
             "tolerance": 1
 		}, {
-            "nominalSizeRang": {
+            "nominalSizeRange": {
                 "min": 50,
                 "max": 80
             },
             "tolerance": 1.2
 		}, {
-            "nominalSizeRang": {
+            "nominalSizeRange": {
                 "min": 80,
                 "max": 120
             },
             "tolerance": 1.4
 		}, {
-            "nominalSizeRang": {
+            "nominalSizeRange": {
                 "min": 120,
                 "max": 180
             },
             "tolerance": 1.6
 		}, {
-            "nominalSizeRang": {
+            "nominalSizeRange": {
                 "min": 180,
                 "max": 250
             },
             "tolerance": 1.85
 		}, {
-            "nominalSizeRang": {
+            "nominalSizeRange": {
                 "min": 250,
                 "max": 315
             },
             "tolerance": 2.1
 		}, {
-            "nominalSizeRang": {
+            "nominalSizeRange": {
                 "min": 315,
                 "max": 400
             },
             "tolerance": 2.3
 		}, {
-            "nominalSizeRang": {
+            "nominalSizeRange": {
                 "min": 400,
                 "max": 500
             },
             "tolerance": 2.5
 		}, {
-            "nominalSizeRang": {
+            "nominalSizeRange": {
                 "min": 500,
                 "max": 630
             },
             "tolerance": 2.8
 		}, {
-            "nominalSizeRang": {
+            "nominalSizeRange": {
                 "min": 630,
                 "max": 800
             },
             "tolerance": 3.2
 		}, {
-            "nominalSizeRang": {
+            "nominalSizeRange": {
                 "min": 800,
                 "max": 1000
             },
             "tolerance": 3.6
 		}, {
-            "nominalSizeRang": {
+            "nominalSizeRange": {
                 "min": 1000,
                 "max": 1250
             },
             "tolerance": 4.2
 		}, {
-            "nominalSizeRang": {
+            "nominalSizeRange": {
                 "min": 1250,
                 "max": 1600
             },
             "tolerance": 5
 		}, {
-            "nominalSizeRang": {
+            "nominalSizeRange": {
                 "min": 1600,
                 "max": 2000
             },
             "tolerance": 6
 		}, {
-            "nominalSizeRang": {
+            "nominalSizeRange": {
                 "min": 2000,
                 "max": 2500
             },
             "tolerance": 7
 		}, {
-            "nominalSizeRang": {
+            "nominalSizeRange": {
                 "min": 2500,
                 "max": 3150
             },
@@ -2197,127 +2197,127 @@
         "kvalitet": 16,
         "nominalSizeRangeAndTolerance": [
             {
-                "nominalSizeRang": {
+                "nominalSizeRange": {
                     "min": 0,
                     "max": 3
                 },
                 "tolerance": 0.6
 		}, {
-                "nominalSizeRang": {
+                "nominalSizeRange": {
                     "min": 3,
                     "max": 6
                 },
                 "tolerance": 0.75
 		}, {
-                "nominalSizeRang": {
+                "nominalSizeRange": {
                     "min": 6,
                     "max": 10
                 },
                 "tolerance": 0.9
 		}, {
-                "nominalSizeRang": {
+                "nominalSizeRange": {
                     "min": 10,
                     "max": 18
                 },
                 "tolerance": 1.1
 		}, {
-                "nominalSizeRang": {
+                "nominalSizeRange": {
                     "min": 18,
                     "max": 30
                 },
                 "tolerance": 1.3
 		}, {
-                "nominalSizeRang": {
+                "nominalSizeRange": {
                     "min": 30,
                     "max": 50
                 },
                 "tolerance": 1.6
 		}, {
-                "nominalSizeRang": {
+                "nominalSizeRange": {
                     "min": 50,
                     "max": 80
                 },
                 "tolerance": 1.9
 		}, {
-                "nominalSizeRang": {
+                "nominalSizeRange": {
                     "min": 80,
                     "max": 120
                 },
                 "tolerance": 2.2
 		}, {
-                "nominalSizeRang": {
+                "nominalSizeRange": {
                     "min": 120,
                     "max": 180
                 },
                 "tolerance": 2.5
 		}, {
-                "nominalSizeRang": {
+                "nominalSizeRange": {
                     "min": 180,
                     "max": 250
                 },
                 "tolerance": 2.9
 		}, {
-                "nominalSizeRang": {
+                "nominalSizeRange": {
                     "min": 250,
                     "max": 315
                 },
                 "tolerance": 3.2
 		}, {
-                "nominalSizeRang": {
+                "nominalSizeRange": {
                     "min": 315,
                     "max": 400
                 },
                 "tolerance": 3.6
 		}, {
-                "nominalSizeRang": {
+                "nominalSizeRange": {
                     "min": 400,
                     "max": 500
                 },
                 "tolerance": 4
 		}, {
-                "nominalSizeRang": {
+                "nominalSizeRange": {
                     "min": 500,
                     "max": 630
                 },
                 "tolerance": 4.4
 		}, {
-                "nominalSizeRang": {
+                "nominalSizeRange": {
                     "min": 630,
                     "max": 800
                 },
                 "tolerance": 5
 		}, {
-                "nominalSizeRang": {
+                "nominalSizeRange": {
                     "min": 800,
                     "max": 1000
                 },
                 "tolerance": 5.6
 		}, {
-                "nominalSizeRang": {
+                "nominalSizeRange": {
                     "min": 1000,
                     "max": 1250
                 },
                 "tolerance": 6.6
 		}, {
-                "nominalSizeRang": {
+                "nominalSizeRange": {
                     "min": 1250,
                     "max": 1600
                 },
                 "tolerance": 7.8
 		}, {
-                "nominalSizeRang": {
+                "nominalSizeRange": {
                     "min": 1600,
                     "max": 2000
                 },
                 "tolerance": 9.2
 		}, {
-                "nominalSizeRang": {
+                "nominalSizeRange": {
                     "min": 2000,
                     "max": 2500
                 },
                 "tolerance": 11
 		}, {
-                "nominalSizeRang": {
+                "nominalSizeRange": {
                     "min": 2500,
                     "max": 3150
                 },
@@ -2326,127 +2326,127 @@
 	}, {
         "kvalitet": 17,
         "nominalSizeRangeAndTolerance": [{
-            "nominalSizeRang": {
+            "nominalSizeRange": {
                 "min": 0,
                 "max": 3
             },
             "tolerance": 1
 		}, {
-            "nominalSizeRang": {
+            "nominalSizeRange": {
                 "min": 3,
                 "max": 6
             },
             "tolerance": 1.2
 		}, {
-            "nominalSizeRang": {
+            "nominalSizeRange": {
                 "min": 6,
                 "max": 10
             },
             "tolerance": 1.5
 		}, {
-            "nominalSizeRang": {
+            "nominalSizeRange": {
                 "min": 10,
                 "max": 18
             },
             "tolerance": 1.8
 		}, {
-            "nominalSizeRang": {
+            "nominalSizeRange": {
                 "min": 18,
                 "max": 30
             },
             "tolerance": 2.1
 		}, {
-            "nominalSizeRang": {
+            "nominalSizeRange": {
                 "min": 30,
                 "max": 50
             },
             "tolerance": 2.5
 		}, {
-            "nominalSizeRang": {
+            "nominalSizeRange": {
                 "min": 50,
                 "max": 80
             },
             "tolerance": 3
 		}, {
-            "nominalSizeRang": {
+            "nominalSizeRange": {
                 "min": 80,
                 "max": 120
             },
             "tolerance": 3.5
 		}, {
-            "nominalSizeRang": {
+            "nominalSizeRange": {
                 "min": 120,
                 "max": 180
             },
             "tolerance": 4
 		}, {
-            "nominalSizeRang": {
+            "nominalSizeRange": {
                 "min": 180,
                 "max": 250
             },
             "tolerance": 4.6
 		}, {
-            "nominalSizeRang": {
+            "nominalSizeRange": {
                 "min": 250,
                 "max": 315
             },
             "tolerance": 5.2
 		}, {
-            "nominalSizeRang": {
+            "nominalSizeRange": {
                 "min": 315,
                 "max": 400
             },
             "tolerance": 5.7
 		}, {
-            "nominalSizeRang": {
+            "nominalSizeRange": {
                 "min": 400,
                 "max": 500
             },
             "tolerance": 6.3
 		}, {
-            "nominalSizeRang": {
+            "nominalSizeRange": {
                 "min": 500,
                 "max": 630
             },
             "tolerance": 7
 		}, {
-            "nominalSizeRang": {
+            "nominalSizeRange": {
                 "min": 630,
                 "max": 800
             },
             "tolerance": 8
 		}, {
-            "nominalSizeRang": {
+            "nominalSizeRange": {
                 "min": 800,
                 "max": 1000
             },
             "tolerance": 9
 		}, {
-            "nominalSizeRang": {
+            "nominalSizeRange": {
                 "min": 1000,
                 "max": 1250
             },
             "tolerance": 10.5
 		}, {
-            "nominalSizeRang": {
+            "nominalSizeRange": {
                 "min": 1250,
                 "max": 1600
             },
             "tolerance": 12.5
 		}, {
-            "nominalSizeRang": {
+            "nominalSizeRange": {
                 "min": 1600,
                 "max": 2000
             },
             "tolerance": 15
 		}, {
-            "nominalSizeRang": {
+            "nominalSizeRange": {
                 "min": 2000,
                 "max": 2500
             },
             "tolerance": 17.5
 		}, {
-            "nominalSizeRang": {
+            "nominalSizeRange": {
                 "min": 2500,
                 "max": 3150
             },
@@ -2455,127 +2455,127 @@
 	}, {
         "kvalitet": 18,
         "nominalSizeRangeAndTolerance": [{
-            "nominalSizeRang": {
+            "nominalSizeRange": {
                 "min": 0,
                 "max": 3
             },
             "tolerance": 1.4
 		}, {
-            "nominalSizeRang": {
+            "nominalSizeRange": {
                 "min": 3,
                 "max": 6
             },
             "tolerance": 1.8
 		}, {
-            "nominalSizeRang": {
+            "nominalSizeRange": {
                 "min": 6,
                 "max": 10
             },
             "tolerance": 2.2
 		}, {
-            "nominalSizeRang": {
+            "nominalSizeRange": {
                 "min": 10,
                 "max": 18
             },
             "tolerance": 2.7
 		}, {
-            "nominalSizeRang": {
+            "nominalSizeRange": {
                 "min": 18,
                 "max": 30
             },
             "tolerance": 3.3
 		}, {
-            "nominalSizeRang": {
+            "nominalSizeRange": {
                 "min": 30,
                 "max": 50
             },
             "tolerance": 3.9
 		}, {
-            "nominalSizeRang": {
+            "nominalSizeRange": {
                 "min": 50,
                 "max": 80
             },
             "tolerance": 4.6
 		}, {
-            "nominalSizeRang": {
+            "nominalSizeRange": {
                 "min": 80,
                 "max": 120
             },
             "tolerance": 5.4
 		}, {
-            "nominalSizeRang": {
+            "nominalSizeRange": {
                 "min": 120,
                 "max": 180
             },
             "tolerance": 6.3
 		}, {
-            "nominalSizeRang": {
+            "nominalSizeRange": {
                 "min": 180,
                 "max": 250
             },
             "tolerance": 7.2
 		}, {
-            "nominalSizeRang": {
+            "nominalSizeRange": {
                 "min": 250,
                 "max": 315
             },
             "tolerance": 8.1
 		}, {
-            "nominalSizeRang": {
+            "nominalSizeRange": {
                 "min": 315,
                 "max": 400
             },
             "tolerance": 8.9
 		}, {
-            "nominalSizeRang": {
+            "nominalSizeRange": {
                 "min": 400,
                 "max": 500
             },
             "tolerance": 9.7
 		}, {
-            "nominalSizeRang": {
+            "nominalSizeRange": {
                 "min": 500,
                 "max": 630
             },
             "tolerance": 11
 		}, {
-            "nominalSizeRang": {
+            "nominalSizeRange": {
                 "min": 630,
                 "max": 800
             },
             "tolerance": 12.5
 		}, {
-            "nominalSizeRang": {
+            "nominalSizeRange": {
                 "min": 800,
                 "max": 1000
             },
             "tolerance": 14
 		}, {
-            "nominalSizeRang": {
+            "nominalSizeRange": {
                 "min": 1000,
                 "max": 1250
             },
             "tolerance": 16.5
 		}, {
-            "nominalSizeRang": {
+            "nominalSizeRange": {
                 "min": 1250,
                 "max": 1600
             },
             "tolerance": 19.5
 		}, {
-            "nominalSizeRang": {
+            "nominalSizeRange": {
                 "min": 1600,
                 "max": 2000
             },
             "tolerance": 23
 		}, {
-            "nominalSizeRang": {
+            "nominalSizeRange": {
                 "min": 2000,
                 "max": 2500
             },
             "tolerance": 28
 		}, {
-            "nominalSizeRang": {
+            "nominalSizeRange": {
                 "min": 2500,
                 "max": 3150
             },

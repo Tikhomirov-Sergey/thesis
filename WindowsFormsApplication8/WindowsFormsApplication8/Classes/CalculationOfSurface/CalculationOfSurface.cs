@@ -11,8 +11,6 @@ namespace WindowsFormsApplication8
         private ParametersOfPart parametersOfPart;
         private DataStructures.CalculationOfSurface.ParametersOperationsForCalculation parametersForCalculation;
 
-        private int numberOfOperations;
-
         private double[] accuracies;
 
         private double[] spatialDeviationP;
@@ -34,7 +32,6 @@ namespace WindowsFormsApplication8
         {
             if (this.checkOfIntervalsLenghtAndDiameter())
                 {
-                    this.numberOfOperations = parametersForCalculation.getNumberOfOperations();
                     kvalitetToAccuracy();
                 }
         }
@@ -80,8 +77,10 @@ namespace WindowsFormsApplication8
         
         private void kvalitetToAccuracy()
         {
-            double[] kvalitets = parametersForCalculation.getKvalitets();
-            double[] accuracies = new double[this.numberOfOperations];
+            int numberOfOperations = this.parametersForCalculation.getNumberOfOperations();
+
+            double[] kvalitets = this.parametersForCalculation.getKvalitets();
+            double[] accuracies = new double[numberOfOperations];
 
             double diameterOfPart = parametersOfPart.getDiameterOfPart();
 
@@ -93,6 +92,12 @@ namespace WindowsFormsApplication8
                 accuracies[i] = accuracy;
             }
             this.accuracies = accuracies;
+        }
+
+        private void CalculationOfSpatialDeviation()
+        {
+            ClassesToCalculate.SpatialDeviation spatialDeviation = new ClassesToCalculate.SpatialDeviation(this.parametersOfPart, this.parametersForCalculation);
+            this.spatialDeviationP = spatialDeviation.calculation();
         }
     }
 }

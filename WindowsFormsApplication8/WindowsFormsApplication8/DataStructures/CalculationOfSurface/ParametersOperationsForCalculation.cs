@@ -16,8 +16,10 @@ namespace WindowsFormsApplication8.DataStructures.CalculationOfSurface
         private int[] idOperation;
         private string[] typeOfInstrument;
 
+        private double validOffsetSurfacePcm;
+
         public ParametersOperationsForCalculation(double[] surfaceRoughnessRz, double[] kvalitets, 
-            double[] thicknessOfDefectiveCoating, double[] coefficientOfRefinement, int[] idOperation, string[] typeOfInstrument)
+            double[] thicknessOfDefectiveCoating, double[] coefficientOfRefinement, int[] idOperation, string[] typeOfInstrument, double validOffsetSurfacePcm = 0)
         {
             this.surfaceRoughnessRz = surfaceRoughnessRz;
             this.kvalitets = kvalitets;
@@ -25,6 +27,7 @@ namespace WindowsFormsApplication8.DataStructures.CalculationOfSurface
             this.coefficientOfRefinement = coefficientOfRefinement;
             this.idOperation = idOperation;
             this.typeOfInstrument = typeOfInstrument;
+            this.validOffsetSurfacePcm = validOffsetSurfacePcm;
         }
 
         public double[] getSurfaceRoughnessRz()
@@ -55,6 +58,11 @@ namespace WindowsFormsApplication8.DataStructures.CalculationOfSurface
         public string[] getTypeOfInstrument()
         {
             return this.typeOfInstrument;
+        }
+
+        public double getValidOffsetSurfacePcm()
+        {
+            return this.validOffsetSurfacePcm;
         }
 
         public int getNumberOfOperations()

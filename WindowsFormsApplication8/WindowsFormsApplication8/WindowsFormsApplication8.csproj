@@ -68,6 +68,8 @@
   <ItemGroup>
     <Compile Include="Classes\AuxiliaryСlasses\ConversionRoughnessRzAndRa.cs" />
     <Compile Include="Classes\AuxiliaryСlasses\Interval.cs" />
+    <Compile Include="Classes\CalculationOfSurface\ClassesToCalculate\DeviationOfInstallation.cs" />
+    <Compile Include="Classes\CalculationOfSurface\ClassesToCalculate\SpatialDeviation.cs" />
     <Compile Include="Classes\CheckString.cs" />
     <Compile Include="Classes\Events\FormSelectWorkpriece\EventClickOnButtonOfSelectWorkpriece.cs" />
     <Compile Include="Classes\Events\MainForm\EventClickOnButtonOfSelectOperations.cs" />
@@ -218,9 +220,7 @@
       <Install>true</Install>
     </BootstrapperPackage>
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Classes\CalculationOfSurface\ClassesToCalculate\" />
-  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
