@@ -15,6 +15,8 @@ namespace WindowsFormsApplication8.ClassesToCalculate
         private string[] typeOfInstrument;
         private int[] idOperation;
 
+        private InaccuracyOfPositioningPart table;
+
 
         public DeviationOfInstallation(ParametersOfPart parametersOfPart, DataStructures.CalculationOfSurface.ParametersOperationsForCalculation parametersForCalculation)
         {
@@ -24,36 +26,39 @@ namespace WindowsFormsApplication8.ClassesToCalculate
 
             this.typeOfInstrument = parametersForCalculation.getTypeOfInstrument();
             this.idOperation = parametersForCalculation.getIdOperation();
+            this.table = Tables.getInaccuracyOfPositioningPart();
         }
 
-        /*public double[] calculation()
+        public double[] calculation()
         {
             double requiredSize;
+            double[] deviationOfInstallation = new double[numberOfOperations];
+            deviationOfInstallation[0] = 0;
 
             for (int i = 1; i < numberOfOperations; i++)
             {
                 requiredSize = chooseOfRequiredSize(this.typeOfInstrument[i]);
 
+                if (typeOfInstrument[i].Equals(typeOfInstrument[i - 1]))
+                {
+                    deviationOfInstallation[i] = 0;
+                }
+                else
+                {
+                    deviationOfInstallation[i] = table.getDeviationOfInstallation(requiredSize, this.idOperation[i], typeOfInstrument[i]);
+                }
+
             }
-        }*/
+
+            return deviationOfInstallation;
+        }
 
         private double chooseOfRequiredSize(string typeOfInstrument)
         {
-            string[] instrumentWhenDiameter = { "с винтовыми или эксцентриковыми зажимами", "с пневматическим зажимом" };
-
-            bool requiredSizeIsDiameter = false;
-
-            foreach(string instrument in instrumentWhenDiameter)
-            {
-                if (instrument.Equals(typeOfInstrument))
-                {
-                    requiredSizeIsDiameter = true;
-                }
-            }
-
             double requiredSize;
+            bool usedSizeIsDiameter = this.table.usedSizeIsDiameter(typeOfInstrument);
 
-            if (requiredSizeIsDiameter)
+            if (usedSizeIsDiameter)
             {
                 requiredSize = this.diameterOfPart;
             }

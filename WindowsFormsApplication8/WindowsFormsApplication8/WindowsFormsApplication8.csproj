@@ -99,7 +99,7 @@
     <Compile Include="DataStructures\InaccuracyOfPositioningPart\InaccuracyOfPositioningPart.cs" />
     <Compile Include="DataStructures\InaccuracyOfPositioningPart\Instrument.cs" />
     <Compile Include="DataStructures\InaccuracyOfPositioningPart\Surface.cs" />
-    <Compile Include="DataStructures\InaccuracyOfPositioningPart\IntervalOfInaccuracy.cs" />
+    <Compile Include="DataStructures\InaccuracyOfPositioningPart\IntervalsAndDeviationOfInstallation.cs" />
     <Compile Include="MainForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -182,6 +182,8 @@
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
     <None Include="packages.config" />
+    <None Include="Properties\DataSources\WindowsFormsApplication8.DataStructures.TableOfTolerancesAndFits.Kvalitet.datasource" />
+    <None Include="Properties\DataSources\WindowsFormsApplication8.DataStructures.TableOfTolerancesAndFits.NominalSizeRangeAndTolerance.datasource" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>

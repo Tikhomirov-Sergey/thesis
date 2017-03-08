@@ -111,6 +111,25 @@ namespace WindowsFormsApplication8
         {
             string xmlpath = @"XMLFiles/ParametersOfSurfacesAfterVariousOperations.xml";
             XMLtoTreeView.formationTreeView(xmlpath, TreeOfOperations);
+
+            ParametersOfPart p = new ParametersOfPart(50, 50, 1, 1, 1, 0, 6);
+
+        double[] surfaceRoughnessRz = { 7, 5, 4, 3 };
+        double[] kvalitets = { 9, 8, 7, 6 };
+        double[] thicknessOfDefectiveCoating = { 3, 4, 5, 6 };
+        double[] coefficientOfRefinement = { 3, 4, 0, 2 };
+
+        int[] idOperation = { 1, 3, 8, 6 };
+        string[] typeOfInstrument = {"", "32","патрон трёхкулачковый", "патрон трёхкулачковый" };
+
+        DataStructures.CalculationOfSurface.ParametersOperationsForCalculation s = new DataStructures.CalculationOfSurface.ParametersOperationsForCalculation(surfaceRoughnessRz,kvalitets,thicknessOfDefectiveCoating,coefficientOfRefinement,idOperation,typeOfInstrument);
+
+            ClassesToCalculate.SpatialDeviation f = new ClassesToCalculate.SpatialDeviation(p, s);
+            double[] g = f.calculation();
+            foreach(double t in g)
+            {
+                richTextBox1.Text += t.ToString();
+            }
         }
        
         private void button3_Click(object sender, EventArgs e)

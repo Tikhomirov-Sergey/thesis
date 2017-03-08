@@ -1,706 +1,922 @@
-
 {
-    "instruments": 
-    [
+    "instruments": [
         {
-            "instrument":"не выбрано",
-            "surfaces": 
-            [
+            "instrument": "не выбрано",
+            "usedSizeIsDiameter": true,
+            "surfaces": [
                 {
-                    "id":[1,2,3,4,5,6,7,8],
-                    "intervalsOfInaccuracy":
-                    [
+                    "id": [1, 2, 3, 4, 5, 6, 7, 8],
+                    "intervalsAnddeviationOfInstallation": [
                         {
-                            "min":6,
-                            "max":500,
-                            "E":0
-                        }   
-                    ]
-                }
-            ]
-        },
-        {
-            "instrument":"патрон трёхкулачковый",
-            "surfaces": 
-            [
-                {
-                    "id":[1,3],
-                    "intervalsOfInaccuracy":
-                    [
-                        {
-                            "min":6,
-                            "max":10,
-                            "E":0.220
-                        },
-                        {
-                            "min":10,
-                            "max":18,
-                            "E":0.270
-                        },
-                        {
-                            "min":18,
-                            "max":30,
-                            "E":0.320
-                        },
-                        {
-                            "min":30,
-                            "max":50,
-                            "E":0.370
-                        },
-                        {
-                            "min":50,
-                            "max":80,
-                            "E":0.420
-                        },
-                        {
-                            "min":80,
-                            "max":120,
-                            "E":0.5
-                        },
-                        {
-                            "min":120,
-                            "max":180,
-                            "E":0.6
-                        },
-                        {
-                            "min":180,
-                            "max":260,
-                            "E":0.7
-                        },
-                        {
-                            "min":260,
-                            "max":360,
-                            "E":0.8
-                        },
-                        {
-                            "min":360,
-                            "max":500,
-                            "E":0.9
-                        }
-                    ]
-                },
-                {
-                    "id":[4,6,7],
-                    "intervalsOfInaccuracy":
-                    [
-                        {
-                            "min":6,
-                            "max":10,
-                            "E":0.050
-                        },
-                        {
-                            "min":10,
-                            "max":18,
-                            "E":0.060
-                        },
-                        {
-                            "min":18,
-                            "max":30,
-                            "E":0.070
-                        },
-                        {
-                            "min":30,
-                            "max":50,
-                            "E":0.080
-                        },
-                        {
-                            "min":50,
-                            "max":80,
-                            "E":0.1
-                        },
-                        {
-                            "min":80,
-                            "max":120,
-                            "E":0.12
-                        },
-                        {
-                            "min":120,
-                            "max":180,
-                            "E":0.14
-                        },
-                        {
-                            "min":180,
-                            "max":260,
-                            "E":0.16
-                        },
-                        {
-                            "min":260,
-                            "max":360,
-                            "E":0.18
-                        },
-                        {
-                            "min":360,
-                            "max":500,
-                            "E":0.2
-                        }
-                    ]
-                },
-                {
-                    "id":[5,8],
-                    "intervalsOfInaccuracy":
-                    [
-                        {
-                            "min":6,
-                            "max":10,
-                            "E":0.025
-                        },
-                        {
-                            "min":10,
-                            "max":18,
-                            "E":0.03
-                        },
-                        {
-                            "min":18,
-                            "max":30,
-                            "E":0.035
-                        },
-                        {
-                            "min":30,
-                            "max":50,
-                            "E":0.040
-                        },
-                        {
-                            "min":50,
-                            "max":80,
-                            "E":0.050
-                        },
-                        {
-                            "min":80,
-                            "max":120,
-                            "E":0.06
-                        },
-                        {
-                            "min":120,
-                            "max":180,
-                            "E":0.07
-                        },
-                        {
-                            "min":180,
-                            "max":260,
-                            "E":0.08
-                        },
-                        {
-                            "min":260,
-                            "max":360,
-                            "E":0.09
-                        },
-                        {
-                            "min":360,
-                            "max":500,
-                            "E":0.1
-                        }
-                    ]
-                },
-                {
-                    "id":[2],
-                    "intervalsOfInaccuracy":
-                    [
-                        {
-                            "min":6,
-                            "max":10,
-                            "E":0.22
-                        },
-                        {
-                            "min":10,
-                            "max":18,
-                            "E":0.27
-                        },
-                        {
-                            "min":18,
-                            "max":30,
-                            "E":0.32
-                        },
-                        {
-                            "min":30,
-                            "max":50,
-                            "E":0.37
-                        },
-                        {
-                            "min":50,
-                            "max":80,
-                            "E":0.42
-                        },
-                        {
-                            "min":80,
-                            "max":120,
-                            "E":0.5
-                        },
-                        {
-                            "min":120,
-                            "max":180,
-                            "E":0.6
-                        },
-                        {
-                            "min":180,
-                            "max":260,
-                            "E":0.7
-                        },
-                        {
-                            "min":260,
-                            "max":360,
-                            "E":0.8
-                        },
-                        {
-                            "min":360,
-                            "max":500,
-                            "E":0.9
+                            "intervalOfSize": {
+                                "min": 6,
+                                "max": 500,
+                            },
+                            "deviationOfInstallation": 0
                         }
                     ]
                 }
             ]
         },
         {
-            "instrument":"цанговый патрон",
-            "surfaces": 
-            [
+            "instrument": "патрон трёхкулачковый",
+            "usedSizeIsDiameter": true,
+            "surfaces": [
                 {
-                    "id":[6,7,4],
-                    "intervalsOfInaccuracy":
-                    [
+                    "id": [1, 3],
+                    "intervalsAnddeviationOfInstallation": [
                         {
-                            "min":6,
-                            "max":10,
-                            "E":0.04
+                            "intervalOfSize": {
+                                "min": 6,
+                                "max": 10
+                            },
+                            "deviationOfInstallation": 0.220
                         },
                         {
-                            "min":10,
-                            "max":18,
-                            "E":0.05
+                            "intervalOfSize": {
+                                "min": 10,
+                                "max": 18,
+                            },
+                            "deviationOfInstallation": 0.270
                         },
                         {
-                            "min":18,
-                            "max":30,
-                            "E":0.06
+                            "intervalOfSize": {
+                                "min": 18,
+                                "max": 30,
+                            },
+                            "deviationOfInstallation": 0.320
                         },
                         {
-                            "min":30,
-                            "max":50,
-                            "E":0.07
+                            "intervalOfSize": {
+                                "min": 30,
+                                "max": 50,
+                            },
+                            "deviationOfInstallation": 0.370
                         },
                         {
-                            "min":50,
-                            "max":80,
-                            "E":0.08
+                            "intervalOfSize": {
+                                "min": 50,
+                                "max": 80,
+                            },
+                            "deviationOfInstallation": 0.420
                         },
                         {
-                            "min":80,
-                            "max":500,
-                            "E":0
+                            "intervalOfSize": {
+                                "min": 80,
+                                "max": 120,
+                            },
+                            "deviationOfInstallation": 0.5
+                        },
+                        {
+                            "intervalOfSize": {
+                                "min": 120,
+                                "max": 180,
+                            },
+                            "deviationOfInstallation": 0.6
+                        },
+                        {
+                            "intervalOfSize": {
+                                "min": 180,
+                                "max": 260,
+                            },
+                            "deviationOfInstallation": 0.7
+                        },
+                        {
+                            "intervalOfSize": {
+                                "min": 260,
+                                "max": 360,
+                            },
+                            "deviationOfInstallation": 0.8
+                        },
+                        {
+                            "intervalOfSize": {
+                                "min": 360,
+                                "max": 500,
+                            },
+                            "deviationOfInstallation": 0.9
                         }
                     ]
                 },
                 {
-                    "id":[1,2,3,5,8],
-                    "intervalsOfInaccuracy":
-                    [
+                    "id": [4, 6, 7],
+                    "intervalsAnddeviationOfInstallation": [
                         {
-                            "min":6,
-                            "max":10,
-                            "E":0.02
+                            "intervalOfSize": {
+                                "min": 6,
+                                "max": 10,
+                            },
+                            "deviationOfInstallation": 0.050
                         },
                         {
-                            "min":10,
-                            "max":18,
-                            "E":0.025
+                            "intervalOfSize": {
+                                "min": 10,
+                                "max": 18,
+                            },
+                            "deviationOfInstallation": 0.060
                         },
                         {
-                            "min":18,
-                            "max":30,
-                            "E":0.03
+                            "intervalOfSize": {
+                                "min": 18,
+                                "max": 30,
+                            },
+                            "deviationOfInstallation": 0.070
                         },
                         {
-                            "min":30,
-                            "max":50,
-                            "E":0.035
+                            "intervalOfSize": {
+                                "min": 30,
+                                "max": 50,
+                            },
+                            "deviationOfInstallation": 0.080
                         },
                         {
-                            "min":50,
-                            "max":80,
-                            "E":0.04
+                            "intervalOfSize": {
+                                "min": 50,
+                                "max": 80,
+                            },
+                            "deviationOfInstallation": 0.1
                         },
                         {
-                            "min":80,
-                            "max":500,
-                            "E":0
+                            "intervalOfSize": {
+                                "min": 80,
+                                "max": 120,
+                            },
+                            "deviationOfInstallation": 0.12
+                        },
+                        {
+                            "intervalOfSize": {
+                                "min": 120,
+                                "max": 180,
+                            },
+                            "deviationOfInstallation": 0.14
+                        },
+                        {
+                            "intervalOfSize": {
+                                "min": 180,
+                                "max": 260,
+                            },
+                            "deviationOfInstallation": 0.16
+                        },
+                        {
+                            "intervalOfSize": {
+                                "min": 260,
+                                "max": 360,
+                            },
+                            "deviationOfInstallation": 0.18
+                        },
+                        {
+                            "intervalOfSize": {
+                                "min": 360,
+                                "max": 500,
+                            },
+                            "deviationOfInstallation": 0.2
+                        }
+                    ]
+                },
+                {
+                    "id": [5, 8],
+                    "intervalsAnddeviationOfInstallation": [
+                        {
+                            "intervalOfSize": {
+                                "min": 6,
+                                "max": 10,
+                            },
+                            "deviationOfInstallation": 0.025
+                        },
+                        {
+                            "intervalOfSize": {
+                                "min": 10,
+                                "max": 18,
+                            },
+                            "deviationOfInstallation": 0.03
+                        },
+                        {
+                            "intervalOfSize": {
+                                "min": 18,
+                                "max": 30,
+                            },
+                            "deviationOfInstallation": 0.035
+                        },
+                        {
+                            "intervalOfSize": {
+                                "min": 30,
+                                "max": 50,
+                            },
+                            "deviationOfInstallation": 0.040
+                        },
+                        {
+                            "intervalOfSize": {
+                                "min": 50,
+                                "max": 80,
+                            },
+                            "deviationOfInstallation": 0.050
+                        },
+                        {
+                            "intervalOfSize": {
+                                "min": 80,
+                                "max": 120,
+                            },
+                            "deviationOfInstallation": 0.06
+                        },
+                        {
+                            "intervalOfSize": {
+                                "min": 120,
+                                "max": 180,
+                            },
+                            "deviationOfInstallation": 0.07
+                        },
+                        {
+                            "intervalOfSize": {
+                                "min": 180,
+                                "max": 260,
+                            },
+                            "deviationOfInstallation": 0.08
+                        },
+                        {
+                            "intervalOfSize": {
+                                "min": 260,
+                                "max": 360,
+                            },
+                            "deviationOfInstallation": 0.09
+                        },
+                        {
+                            "intervalOfSize": {
+                                "min": 360,
+                                "max": 500,
+                            },
+                            "deviationOfInstallation": 0.1
+                        }
+                    ]
+                },
+                {
+                    "id": [2],
+                    "intervalsAnddeviationOfInstallation": [
+                        {
+                            "intervalOfSize": {
+                                "min": 6,
+                                "max": 10,
+                            },
+                            "deviationOfInstallation": 0.22
+                        },
+                        {
+                            "intervalOfSize": {
+                                "min": 10,
+                                "max": 18,
+                            },
+                            "deviationOfInstallation": 0.27
+                        },
+                        {
+                            "intervalOfSize": {
+                                "min": 18,
+                                "max": 30,
+                            },
+                            "deviationOfInstallation": 0.32
+                        },
+                        {
+                            "intervalOfSize": {
+                                "min": 30,
+                                "max": 50,
+                            },
+                            "deviationOfInstallation": 0.37
+                        },
+                        {
+                            "intervalOfSize": {
+                                "min": 50,
+                                "max": 80,
+                            },
+                            "deviationOfInstallation": 0.42
+                        },
+                        {
+                            "intervalOfSize": {
+                                "min": 80,
+                                "max": 120,
+                            },
+                            "deviationOfInstallation": 0.5
+                        },
+                        {
+                            "intervalOfSize": {
+                                "min": 120,
+                                "max": 180,
+                            },
+                            "deviationOfInstallation": 0.6
+                        },
+                        {
+                            "intervalOfSize": {
+                                "min": 180,
+                                "max": 260,
+                            },
+                            "deviationOfInstallation": 0.7
+                        },
+                        {
+                            "intervalOfSize": {
+                                "min": 260,
+                                "max": 360,
+                            },
+                            "deviationOfInstallation": 0.8
+                        },
+                        {
+                            "intervalOfSize": {
+                                "min": 360,
+                                "max": 500,
+                            },
+                            "deviationOfInstallation": 0.9
                         }
                     ]
                 }
             ]
         },
         {
-            "instrument":"гладкие центры",
-            "surfaces": 
-            [
+            "instrument": "цанговый патрон",
+            "usedSizeIsDiameter": true,
+            "surfaces": [
                 {
-                    "id":[1,2,3,4,5,6,7,8],
-                    "intervalsOfInaccuracy":
-                    [
+                    "id": [6, 7, 4],
+                    "intervalsAnddeviationOfInstallation": [
                         {
-                            "min":6,
-                            "max":30,
-                            "E":0.02
+                            "intervalOfSize": {
+                                "min": 6,
+                                "max": 10,
+                            },
+                            "deviationOfInstallation": 0.04
                         },
                         {
-                            "min":30,
-                            "max":120,
-                            "E":0.04
+                            "intervalOfSize": {
+                                "min": 10,
+                                "max": 18,
+                            },
+                            "deviationOfInstallation": 0.05
                         },
-                         {
-                            "min":120,
-                            "max":500,
-                            "E":0
+                        {
+                            "intervalOfSize": {
+                                "min": 18,
+                                "max": 30,
+                            },
+                            "deviationOfInstallation": 0.06
+                        },
+                        {
+                            "intervalOfSize": {
+                                "min": 30,
+                                "max": 50,
+                            },
+                            "deviationOfInstallation": 0.07
+                        },
+                        {
+                            "intervalOfSize": {
+                                "min": 50,
+                                "max": 80,
+                            },
+                            "deviationOfInstallation": 0.08
+                        },
+                        {
+                            "intervalOfSize": {
+                                "min": 80,
+                                "max": 500,
+                            },
+                            "deviationOfInstallation": 0
+                        }
+                    ]
+                },
+                {
+                    "id": [1, 2, 3, 5, 8],
+                    "intervalsAnddeviationOfInstallation": [
+                        {
+                            "intervalOfSize": {
+                                "min": 6,
+                                "max": 10,
+                            },
+                            "deviationOfInstallation": 0.02
+                        },
+                        {
+                            "intervalOfSize": {
+                                "min": 10,
+                                "max": 18,
+                            },
+                            "deviationOfInstallation": 0.025
+                        },
+                        {
+                            "intervalOfSize": {
+                                "min": 18,
+                                "max": 30,
+                            },
+                            "deviationOfInstallation": 0.03
+                        },
+                        {
+                            "intervalOfSize": {
+                                "min": 30,
+                                "max": 50,
+                            },
+                            "deviationOfInstallation": 0.035
+                        },
+                        {
+                            "intervalOfSize": {
+                                "min": 50,
+                                "max": 80,
+                            },
+                            "deviationOfInstallation": 0.04
+                        },
+                        {
+                            "intervalOfSize": {
+                                "min": 80,
+                                "max": 500,
+                            },
+                            "deviationOfInstallation": 0
                         }
                     ]
                 }
             ]
         },
         {
-            "instrument":"с винтовыми или эксцентриковыми зажимами",
-            "surfaces": 
-            [
+            "instrument": "гладкие центры",
+            "usedSizeIsDiameter": true,
+            "surfaces": [
                 {
-                    "id":[1,2,3,6,7],
-                    "intervalsOfInaccuracy":
-                    [
+                    "id": [1, 2, 3, 4, 5, 6, 7, 8],
+                    "intervalsAnddeviationOfInstallation": [
                         {
-                            "min":6,
-                            "max":10,
-                            "E":0.09
+                            "intervalOfSize": {
+                                "min": 6,
+                                "max": 30,
+                            },
+                            "deviationOfInstallation": 0.02
                         },
                         {
-                            "min":10,
-                            "max":18,
-                            "E":0.1
+                            "intervalOfSize": {
+                                "min": 30,
+                                "max": 120,
+                            },
+                            "deviationOfInstallation": 0.04
                         },
                         {
-                            "min":18,
-                            "max":30,
-                            "E":0.11
-                        },
-                        {
-                            "min":30,
-                            "max":50,
-                            "E":0.12
-                        },
-                        {
-                            "min":50,
-                            "max":80,
-                            "E":0.135
-                        },
-                        {
-                            "min":80,
-                            "max":120,
-                            "E":0.15
-                        },
-                        {
-                            "min":120,
-                            "max":180,
-                            "E":0.175
-                        },
-                        {
-                            "min":180,
-                            "max":260,
-                            "E":0.2
-                        },
-                        {
-                            "min":260,
-                            "max":360,
-                            "E":0.24
-                        },
-                        {
-                            "min":360,
-                            "max":500,
-                            "E":0.28
-                        }
-                    ]
-                },
-                {
-                    "id":[4,8],
-                    "intervalsOfInaccuracy":
-                    [
-                        {
-                            "min":6,
-                            "max":10,
-                            "E":0.04
-                        },
-                        {
-                            "min":10,
-                            "max":18,
-                            "E":0.05
-                        },
-                        {
-                            "min":18,
-                            "max":30,
-                            "E":0.06
-                        },
-                        {
-                            "min":30,
-                            "max":50,
-                            "E":0.07
-                        },
-                        {
-                            "min":50,
-                            "max":80,
-                            "E":0.08
-                        },
-                        {
-                            "min":80,
-                            "max":120,
-                            "E":0.09
-                        },
-                        {
-                            "min":120,
-                            "max":180,
-                            "E":0.1
-                        },
-                        {
-                            "min":180,
-                            "max":260,
-                            "E":0.11
-                        },
-                        {
-                            "min":260,
-                            "max":360,
-                            "E":0.12
-                        },
-                        {
-                            "min":360,
-                            "max":500,
-                            "E":0.13
-                        }
-                    ]
-                },
-                {
-                    "id":[5],
-                    "intervalsOfInaccuracy":
-                    [
-                        {
-                            "min":6,
-                            "max":10,
-                            "E":0.03
-                        },
-                        {
-                            "min":10,
-                            "max":18,
-                            "E":0.04
-                        },
-                        {
-                            "min":18,
-                            "max":30,
-                            "E":0.05
-                        },
-                        {
-                            "min":30,
-                            "max":50,
-                            "E":0.06
-                        },
-                        {
-                            "min":50,
-                            "max":80,
-                            "E":0.07
-                        },
-                        {
-                            "min":80,
-                            "max":120,
-                            "E":0.08
-                        },
-                        {
-                            "min":120,
-                            "max":180,
-                            "E":0.09
-                        },
-                        {
-                            "min":180,
-                            "max":260,
-                            "E":0.1
-                        },
-                        {
-                            "min":260,
-                            "max":360,
-                            "E":0.11
-                        },
-                        {
-                            "min":360,
-                            "max":500,
-                            "E":0.12
+                            "intervalOfSize": {
+                                "min": 120,
+                                "max": 500,
+                            },
+                            "deviationOfInstallation": 0
                         }
                     ]
                 }
             ]
         },
         {
-            "instrument":"с пневматическим зажимом",
-            "surfaces": 
-            [
+            "instrument": "с винтовыми или эксцентриковыми зажимами",
+            "usedSizeIsDiameter": false,
+            "surfaces": [
                 {
-                    "id":[1,2,3,6,7],
-                    "intervalsOfInaccuracy":
-                    [
+                    "id": [1, 2, 3, 6, 7],
+                    "intervalsAnddeviationOfInstallation": [
                         {
-                            "min":6,
-                            "max":10,
-                            "E":0.07
+                            "intervalOfSize": {
+                                "min": 6,
+                                "max": 10,
+                            },
+                            "deviationOfInstallation": 0.09
                         },
                         {
-                            "min":10,
-                            "max":18,
-                            "E":0.08
+                            "intervalOfSize": {
+                                "min": 10,
+                                "max": 18,
+                            },
+                            "deviationOfInstallation": 0.1
                         },
                         {
-                            "min":18,
-                            "max":30,
-                            "E":0.09
+                            "intervalOfSize": {
+                                "min": 18,
+                                "max": 30,
+                            },
+                            "deviationOfInstallation": 0.11
                         },
                         {
-                            "min":30,
-                            "max":50,
-                            "E":0.1
+                            "intervalOfSize": {
+                                "min": 30,
+                                "max": 50,
+                            },
+                            "deviationOfInstallation": 0.12
                         },
                         {
-                            "min":50,
-                            "max":80,
-                            "E":0.11
+                            "intervalOfSize": {
+                                "min": 50,
+                                "max": 80,
+                            },
+                            "deviationOfInstallation": 0.135
                         },
                         {
-                            "min":80,
-                            "max":120,
-                            "E":0.12
+                            "intervalOfSize": {
+                                "min": 80,
+                                "max": 120,
+                            },
+                            "deviationOfInstallation": 0.15
                         },
                         {
-                            "min":120,
-                            "max":180,
-                            "E":0.14
+                            "intervalOfSize": {
+                                "min": 120,
+                                "max": 180,
+                            },
+                            "deviationOfInstallation": 0.175
                         },
                         {
-                            "min":180,
-                            "max":260,
-                            "E":0.16
+                            "intervalOfSize": {
+                                "min": 180,
+                                "max": 260,
+                            },
+                            "deviationOfInstallation": 0.2
                         },
                         {
-                            "min":260,
-                            "max":360,
-                            "E":0.19
+                            "intervalOfSize": {
+                                "min": 260,
+                                "max": 360,
+                            },
+                            "deviationOfInstallation": 0.24
                         },
                         {
-                            "min":360,
-                            "max":500,
-                            "E":0.22
+                            "intervalOfSize": {
+                                "min": 360,
+                                "max": 500,
+                            },
+                            "deviationOfInstallation": 0.28
                         }
                     ]
                 },
                 {
-                    "id":[4,8],
-                    "intervalsOfInaccuracy":
-                    [
+                    "id": [4, 8],
+                    "intervalsAnddeviationOfInstallation": [
                         {
-                            "min":6,
-                            "max":10,
-                            "E":0.03
+                            "intervalOfSize": {
+                                "min": 6,
+                                "max": 10,
+                            },
+                            "deviationOfInstallation": 0.04
                         },
                         {
-                            "min":10,
-                            "max":18,
-                            "E":0.04
+                            "intervalOfSize": {
+                                "min": 10,
+                                "max": 18,
+                            },
+                            "deviationOfInstallation": 0.05
                         },
                         {
-                            "min":18,
-                            "max":30,
-                            "E":0.05
+                            "intervalOfSize": {
+                                "min": 18,
+                                "max": 30,
+                            },
+                            "deviationOfInstallation": 0.06
                         },
                         {
-                            "min":30,
-                            "max":50,
-                            "E":0.06
+                            "intervalOfSize": {
+                                "min": 30,
+                                "max": 50,
+                            },
+                            "deviationOfInstallation": 0.07
                         },
                         {
-                            "min":50,
-                            "max":80,
-                            "E":0.07
+                            "intervalOfSize": {
+                                "min": 50,
+                                "max": 80,
+                            },
+                            "deviationOfInstallation": 0.08
                         },
                         {
-                            "min":80,
-                            "max":120,
-                            "E":0.08
+                            "intervalOfSize": {
+                                "min": 80,
+                                "max": 120,
+                            },
+                            "deviationOfInstallation": 0.09
                         },
                         {
-                            "min":120,
-                            "max":180,
-                            "E":0.09
+                            "intervalOfSize": {
+                                "min": 120,
+                                "max": 180,
+                            },
+                            "deviationOfInstallation": 0.1
                         },
                         {
-                            "min":180,
-                            "max":260,
-                            "E":0.1
+                            "intervalOfSize": {
+                                "min": 180,
+                                "max": 260,
+                            },
+                            "deviationOfInstallation": 0.11
                         },
                         {
-                            "min":260,
-                            "max":360,
-                            "E":0.11
+                            "intervalOfSize": {
+                                "min": 260,
+                                "max": 360,
+                            },
+                            "deviationOfInstallation": 0.12
                         },
                         {
-                            "min":360,
-                            "max":500,
-                            "E":0.12
+                            "intervalOfSize": {
+                                "min": 360,
+                                "max": 500,
+                            },
+                            "deviationOfInstallation": 0.13
                         }
                     ]
                 },
                 {
-                    "id":[5],
-                    "intervalsOfInaccuracy":
-                    [
+                    "id": [5],
+                    "intervalsAnddeviationOfInstallation": [
                         {
-                            "min":6,
-                            "max":10,
-                            "E":0.01
+                            "intervalOfSize": {
+                                "min": 6,
+                                "max": 10,
+                            },
+                            "deviationOfInstallation": 0.03
                         },
                         {
-                            "min":10,
-                            "max":18,
-                            "E":0.02
+                            "intervalOfSize": {
+                                "min": 10,
+                                "max": 18,
+                            },
+                            "deviationOfInstallation": 0.04
                         },
                         {
-                            "min":18,
-                            "max":30,
-                            "E":0.03
+                            "intervalOfSize": {
+                                "min": 18,
+                                "max": 30,
+                            },
+                            "deviationOfInstallation": 0.05
                         },
                         {
-                            "min":30,
-                            "max":50,
-                            "E":0.04
+                            "intervalOfSize": {
+                                "min": 30,
+                                "max": 50,
+                            },
+                            "deviationOfInstallation": 0.06
                         },
                         {
-                            "min":50,
-                            "max":80,
-                            "E":0.05
+                            "intervalOfSize": {
+                                "min": 50,
+                                "max": 80,
+                            },
+                            "deviationOfInstallation": 0.07
                         },
                         {
-                            "min":80,
-                            "max":120,
-                            "E":0.06
+                            "intervalOfSize": {
+                                "min": 80,
+                                "max": 120,
+                            },
+                            "deviationOfInstallation": 0.08
                         },
                         {
-                            "min":120,
-                            "max":180,
-                            "E":0.07
+                            "intervalOfSize": {
+                                "min": 120,
+                                "max": 180,
+                            },
+                            "deviationOfInstallation": 0.09
                         },
                         {
-                            "min":180,
-                            "max":260,
-                            "E":0.08
+                            "intervalOfSize": {
+                                "min": 180,
+                                "max": 260,
+                            },
+                            "deviationOfInstallation": 0.1
                         },
                         {
-                            "min":260,
-                            "max":360,
-                            "E":0.09
+                            "intervalOfSize": {
+                                "min": 260,
+                                "max": 360,
+                            },
+                            "deviationOfInstallation": 0.11
                         },
                         {
-                            "min":360,
-                            "max":500,
-                            "E":0.1
+                            "intervalOfSize": {
+                                "min": 360,
+                                "max": 500,
+                            },
+                            "deviationOfInstallation": 0.12
                         }
                     ]
                 }
             ]
-        }          
+        },
+        {
+            "instrument": "с пневматическим зажимом",
+            "usedSizeIsDiameter": false,
+            "surfaces": [
+                {
+                    "id": [1, 2, 3, 6, 7],
+                    "intervalsAnddeviationOfInstallation": [
+                        {
+                            "intervalOfSize": {
+                                "min": 6,
+                                "max": 10,
+                            },
+                            "deviationOfInstallation": 0.07
+                        },
+                        {
+                            "intervalOfSize": {
+                                "min": 10,
+                                "max": 18,
+                            },
+                            "deviationOfInstallation": 0.08
+                        },
+                        {
+                            "intervalOfSize": {
+                                "min": 18,
+                                "max": 30,
+                            },
+                            "deviationOfInstallation": 0.09
+                        },
+                        {
+                            "intervalOfSize": {
+                                "min": 30,
+                                "max": 50,
+                            },
+                            "deviationOfInstallation": 0.1
+                        },
+                        {
+                            "intervalOfSize": {
+                                "min": 50,
+                                "max": 80,
+                            },
+                            "deviationOfInstallation": 0.11
+                        },
+                        {
+                            "intervalOfSize": {
+                                "min": 80,
+                                "max": 120,
+                            },
+                            "deviationOfInstallation": 0.12
+                        },
+                        {
+                            "intervalOfSize": {
+                                "min": 120,
+                                "max": 180,
+                            },
+                            "deviationOfInstallation": 0.14
+                        },
+                        {
+                            "intervalOfSize": {
+                                "min": 180,
+                                "max": 260,
+                            },
+                            "deviationOfInstallation": 0.16
+                        },
+                        {
+                            "intervalOfSize": {
+                                "min": 260,
+                                "max": 360,
+                            },
+                            "deviationOfInstallation": 0.19
+                        },
+                        {
+                            "intervalOfSize": {
+                                "min": 360,
+                                "max": 500,
+                            },
+                            "deviationOfInstallation": 0.22
+                        }
+                    ]
+                },
+                {
+                    "id": [4, 8],
+                    "intervalsAnddeviationOfInstallation": [
+                        {
+                            "intervalOfSize": {
+                                "min": 6,
+                                "max": 10,
+                            },
+                            "deviationOfInstallation": 0.03
+                        },
+                        {
+                            "intervalOfSize": {
+                                "min": 10,
+                                "max": 18,
+                            },
+                            "deviationOfInstallation": 0.04
+                        },
+                        {
+                            "intervalOfSize": {
+                                "min": 18,
+                                "max": 30,
+                            },
+                            "deviationOfInstallation": 0.05
+                        },
+                        {
+                            "intervalOfSize": {
+                                "min": 30,
+                                "max": 50,
+                            },
+                            "deviationOfInstallation": 0.06
+                        },
+                        {
+                            "intervalOfSize": {
+                                "min": 50,
+                                "max": 80,
+                            },
+                            "deviationOfInstallation": 0.07
+                        },
+                        {
+                            "intervalOfSize": {
+                                "min": 80,
+                                "max": 120,
+                            },
+                            "deviationOfInstallation": 0.08
+                        },
+                        {
+                            "intervalOfSize": {
+                                "min": 120,
+                                "max": 180,
+                            },
+                            "deviationOfInstallation": 0.09
+                        },
+                        {
+                            "intervalOfSize": {
+                                "min": 180,
+                                "max": 260,
+                            },
+                            "deviationOfInstallation": 0.1
+                        },
+                        {
+                            "intervalOfSize": {
+                                "min": 260,
+                                "max": 360,
+                            },
+                            "deviationOfInstallation": 0.11
+                        },
+                        {
+                            "intervalOfSize": {
+                                "min": 360,
+                                "max": 500,
+                            },
+                            "deviationOfInstallation": 0.12
+                        }
+                    ]
+                },
+                {
+                    "id": [5],
+                    "intervalsAnddeviationOfInstallation": [
+                        {
+                            "intervalOfSize": {
+                                "min": 6,
+                                "max": 10,
+                            },
+                            "deviationOfInstallation": 0.01
+                        },
+                        {
+                            "intervalOfSize": {
+                                "min": 10,
+                                "max": 18,
+                            },
+                            "deviationOfInstallation": 0.02
+                        },
+                        {
+                            "intervalOfSize": {
+                                "min": 18,
+                                "max": 30,
+                            },
+                            "deviationOfInstallation": 0.03
+                        },
+                        {
+                            "intervalOfSize": {
+                                "min": 30,
+                                "max": 50,
+                            },
+                            "deviationOfInstallation": 0.04
+                        },
+                        {
+                            "intervalOfSize": {
+                                "min": 50,
+                                "max": 80,
+                            },
+                            "deviationOfInstallation": 0.05
+                        },
+                        {
+                            "intervalOfSize": {
+                                "min": 80,
+                                "max": 120,
+                            },
+                            "deviationOfInstallation": 0.06
+                        },
+                        {
+                            "intervalOfSize": {
+                                "min": 120,
+                                "max": 180,
+                            },
+                            "deviationOfInstallation": 0.07
+                        },
+                        {
+                            "intervalOfSize": {
+                                "min": 180,
+                                "max": 260,
+                            },
+                            "deviationOfInstallation": 0.08
+                        },
+                        {
+                            "intervalOfSize": {
+                                "min": 260,
+                                "max": 360,
+                            },
+                            "deviationOfInstallation": 0.09
+                        },
+                        {
+                            "intervalOfSize": {
+                                "min": 360,
+                                "max": 500,
+                            },
+                            "deviationOfInstallation": 0.1
+                        }
+                    ]
+                }
+            ]
+        }
      ]
 }

@@ -22,9 +22,34 @@ namespace WindowsFormsApplication8
             return listInstruments;
         }
 
-      //  public double getDeviationOfInstallation(double requiredSize, int idOperation, string typeOfInstrument)
-      //  {
+        public double getDeviationOfInstallation(double requiredSize, int idOperation, string typeOfInstrument)
+        {
+            double deviationOfInstallation = 0;
 
-       // }
+            foreach (DataStuctures.InaccuracyOfPositioningPart.Instrument instrument in instruments)
+            {
+                if (instrument.isSelectedInstrument(typeOfInstrument))
+                {
+                    deviationOfInstallation = instrument.getDeviationOfInstallation(requiredSize, idOperation);
+                }
+            }
+
+            return deviationOfInstallation;
+        }
+
+        public bool usedSizeIsDiameter(string typeOfInstrument)
+        {
+            bool usedSizeIsDiameter = false;
+
+            foreach (DataStuctures.InaccuracyOfPositioningPart.Instrument instrument in instruments)
+            {
+                if (instrument.isSelectedInstrument(typeOfInstrument))
+                {
+                    usedSizeIsDiameter = instrument.getUsedSizeIsDiameter();
+                }
+            }
+
+            return usedSizeIsDiameter;
+        }
     }
 }

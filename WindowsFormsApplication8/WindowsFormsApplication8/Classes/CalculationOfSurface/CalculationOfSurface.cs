@@ -33,8 +33,12 @@ namespace WindowsFormsApplication8
             if (this.checkOfIntervalsLenghtAndDiameter())
                 {
                     kvalitetToAccuracy();
+                    CalculationOfSpatialDeviation();
+
                 }
         }
+
+
 
         private bool checkOfIntervalsLenghtAndDiameter()
         {
@@ -98,6 +102,12 @@ namespace WindowsFormsApplication8
         {
             ClassesToCalculate.SpatialDeviation spatialDeviation = new ClassesToCalculate.SpatialDeviation(this.parametersOfPart, this.parametersForCalculation);
             this.spatialDeviationP = spatialDeviation.calculation();
+        }
+
+        private void CalculationOfDeviationOfInstallation()
+        {
+            ClassesToCalculate.DeviationOfInstallation deviationOfInstallation = new ClassesToCalculate.DeviationOfInstallation(this.parametersOfPart, this.parametersForCalculation);
+            this.deviationOfInstallationE = deviationOfInstallation.calculation();
         }
     }
 }
