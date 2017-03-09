@@ -112,16 +112,16 @@ namespace WindowsFormsApplication8
             string xmlpath = @"XMLFiles/ParametersOfSurfacesAfterVariousOperations.xml";
             XMLtoTreeView.formationTreeView(xmlpath, TreeOfOperations);
 
-            ParametersOfPart p = new ParametersOfPart(300, 100, 0, 1, 1, 0, 6);
+            ParametersOfPart p = new ParametersOfPart(56, 56, 0, 0, 1, 0, 1);
 
-        double[] surfaceRoughnessRz = {5, 5, 4, 3 };
+        double[] surfaceRoughnessRz = {0.3, 0.0005, 0.005, 0.02 };
         double[] kvalitets = { 9, 8, 7, 6 };
-        double[] thicknessOfDefectiveCoating = { 3, 4, 5, 6 };
+        double[] thicknessOfDefectiveCoating = { 0.3, 0.004, 0.01, 0.04 };
         double[] coefficientOfRefinement = { 3, 4, 0, 2 };
-        double[] accuracies = { 5, 8, 7, 9 };
+        double[] accuracies = { 1.9, 0.008, 0.03, 0.3 };
 
-        int[] idOperation = { 1, 3, 8, 6 };
-        string[] typeOfInstrument = {"", "32","патрон трёхкулачковый", "патрон трёхкулачковый" };
+        int[] idOperation = { 2, 8, 5, 6 };
+        string[] typeOfInstrument = {"", "патрон трёхкулачковый", "с винтовыми или эксцентриковыми зажимами", "не выбрано" };
 
         DataStructures.CalculationOfSurface.ParametersOperationsForCalculation s = new DataStructures.CalculationOfSurface.ParametersOperationsForCalculation(surfaceRoughnessRz,kvalitets,thicknessOfDefectiveCoating,coefficientOfRefinement,idOperation,typeOfInstrument);
 

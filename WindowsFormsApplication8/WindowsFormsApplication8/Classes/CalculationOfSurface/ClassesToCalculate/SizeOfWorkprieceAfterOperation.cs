@@ -44,6 +44,8 @@ namespace WindowsFormsApplication8.ClassesToCalculate
         {
             double[] sizeOfWorkprieceAfterOperation = new double[this.numberOfOperations];
 
+            sizeOfWorkprieceAfterOperation[this.numberOfOperations - 1] = this.diameterOfPart;
+
             for (int i = numberOfOperations - 2; i >= 0; i--)
             {
                 sizeOfWorkprieceAfterOperation[i] = sizeOfWorkprieceAfterOperation[i + 1] - this.nominalAllowanceZnom[i + 1];
