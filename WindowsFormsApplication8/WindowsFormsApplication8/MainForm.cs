@@ -112,23 +112,33 @@ namespace WindowsFormsApplication8
             string xmlpath = @"XMLFiles/ParametersOfSurfacesAfterVariousOperations.xml";
             XMLtoTreeView.formationTreeView(xmlpath, TreeOfOperations);
 
-            ParametersOfPart p = new ParametersOfPart(50, 50, 1, 1, 1, 0, 6);
+            ParametersOfPart p = new ParametersOfPart(300, 100, 0, 1, 1, 0, 6);
 
-        double[] surfaceRoughnessRz = { 7, 5, 4, 3 };
+        double[] surfaceRoughnessRz = {5, 5, 4, 3 };
         double[] kvalitets = { 9, 8, 7, 6 };
         double[] thicknessOfDefectiveCoating = { 3, 4, 5, 6 };
         double[] coefficientOfRefinement = { 3, 4, 0, 2 };
+        double[] accuracies = { 5, 8, 7, 9 };
 
         int[] idOperation = { 1, 3, 8, 6 };
         string[] typeOfInstrument = {"", "32","патрон трёхкулачковый", "патрон трёхкулачковый" };
 
         DataStructures.CalculationOfSurface.ParametersOperationsForCalculation s = new DataStructures.CalculationOfSurface.ParametersOperationsForCalculation(surfaceRoughnessRz,kvalitets,thicknessOfDefectiveCoating,coefficientOfRefinement,idOperation,typeOfInstrument);
 
-            ClassesToCalculate.SpatialDeviation f = new ClassesToCalculate.SpatialDeviation(p, s);
-            double[] g = f.calculation();
-            foreach(double t in g)
+            ClassesToCalculate.SpatialDeviation spatialDeviation = new ClassesToCalculate.SpatialDeviation(p, s);
+            double[] spatialDeviationArr = spatialDeviation.calculation();
+
+            ClassesToCalculate.DeviationOfInstallation deviationOfInstallation = new ClassesToCalculate.DeviationOfInstallation(p, s);
+            double[] deviationOfInstallationArr = deviationOfInstallation.calculation();
+
+            ClassesToCalculate.Allowance allowance = new ClassesToCalculate.Allowance(p,s, spatialDeviationArr, deviationOfInstallationArr, accuracies);
+            double[] allowanceArr = allowance.calculation();
+
+            ClassesToCalculate.SizeOfWorkprieceAfterOperation sizeOfWorkprieceAfterOperation = new ClassesToCalculate.SizeOfWorkprieceAfterOperation(p,s,allowanceArr);
+            double[] sizeOfWorkprieceAfterOperationArr = sizeOfWorkprieceAfterOperation.calculation();
+            foreach (double t in sizeOfWorkprieceAfterOperationArr)
             {
-                richTextBox1.Text += t.ToString();
+                richTextBox1.Text += t.ToString() + "  ";
             }
         }
        

@@ -68,7 +68,9 @@
   <ItemGroup>
     <Compile Include="Classes\AuxiliaryСlasses\ConversionRoughnessRzAndRa.cs" />
     <Compile Include="Classes\AuxiliaryСlasses\Interval.cs" />
+    <Compile Include="Classes\CalculationOfSurface\ClassesToCalculate\Allowance.cs" />
     <Compile Include="Classes\CalculationOfSurface\ClassesToCalculate\DeviationOfInstallation.cs" />
+    <Compile Include="Classes\CalculationOfSurface\ClassesToCalculate\SizeOfWorkprieceAfterOperation.cs" />
     <Compile Include="Classes\CalculationOfSurface\ClassesToCalculate\SpatialDeviation.cs" />
     <Compile Include="Classes\CheckString.cs" />
     <Compile Include="Classes\Events\FormSelectWorkpriece\EventClickOnButtonOfSelectWorkpriece.cs" />

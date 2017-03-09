@@ -15,27 +15,25 @@ namespace WindowsFormsApplication8
 
         private double[] spatialDeviationP;
         private double[] deviationOfInstallationE;
-
-        private double[] minimumAllowanceZmin;
-        private double[] maximumAllowanceZmax;
+        
         private double[] nominalAllowanceZnom;
 
-        private double[] sizeOfWorkprieceAfterPperation;
+        private double[] sizeOfWorkprieceAfterOperation;
 
         public CalculationOfSurface(ParametersOfPart parametersOfPart, DataStructures.CalculationOfSurface.ParametersOperationsForCalculation parametersForCalculation)
-            {
+        {
                 this.parametersOfPart = parametersOfPart;
                 this.parametersForCalculation = parametersForCalculation;
-            }
+        }
 
         public void calculation()
         {
             if (this.checkOfIntervalsLenghtAndDiameter())
-                {
+            {
                     kvalitetToAccuracy();
                     CalculationOfSpatialDeviation();
-
-                }
+                    CalculationOfAllowance();
+            }
         }
 
 
@@ -108,6 +106,18 @@ namespace WindowsFormsApplication8
         {
             ClassesToCalculate.DeviationOfInstallation deviationOfInstallation = new ClassesToCalculate.DeviationOfInstallation(this.parametersOfPart, this.parametersForCalculation);
             this.deviationOfInstallationE = deviationOfInstallation.calculation();
+        }
+
+        private void CalculationOfAllowance()
+        {
+            ClassesToCalculate.Allowance allowance = new ClassesToCalculate.Allowance(this.parametersOfPart, this.parametersForCalculation, this.spatialDeviationP, this.deviationOfInstallationE, this.accuracies);
+            this.nominalAllowanceZnom = allowance.calculation();
+        }
+
+        private void CalculationOfSizeOfWorkprieceAfterOperation()
+        {
+            ClassesToCalculate.SizeOfWorkprieceAfterOperation sizeOfWorkprieceAfterOperation = new ClassesToCalculate.SizeOfWorkprieceAfterOperation(parametersOfPart, parametersForCalculation, nominalAllowanceZnom);
+            this.sizeOfWorkprieceAfterOperation = sizeOfWorkprieceAfterOperation.calculation();
         }
     }
 }
