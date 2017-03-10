@@ -13,10 +13,10 @@ namespace WindowsFormsApplication8
         private Interval recommendedIntervalRz = null;
         private string kvalitet = "";
         private string thicknessOfDefectiveCoating = "";
-        private double validOffsetSurface = 0;
+        private string validOffsetSurface = "0";
         
         public ParametersWorkpiece(string nameOfWorkpiece, string idWorkpiece, string surfaceRoughnessRz,
-            Interval recommendedIntervalRz, string kvalitet, string thicknessOfDefectiveCoating, double validOffsetSurface = 0)
+            Interval recommendedIntervalRz, string kvalitet, string thicknessOfDefectiveCoating, string validOffsetSurface = "0")
         {
             this.nameOfWorkpiece = nameOfWorkpiece;
             this.idWorkpiece = idWorkpiece;
@@ -67,6 +67,10 @@ namespace WindowsFormsApplication8
         {
             return this.surfaceRoughnessRz;
         }
+        public double getSurfaceRoughnessRzToDouble()
+        {
+            return Convert.ToDouble(this.surfaceRoughnessRz);
+        }
 
         public void setIdWorkpiece(string idWorkpiece)
         {
@@ -75,6 +79,10 @@ namespace WindowsFormsApplication8
         public string getIdWorkpiece()
         {
             return this.idWorkpiece;
+        }
+        public int getIdWorkpieceToInt()
+        {
+            return Convert.ToInt32(this.idWorkpiece);
         }
 
         public void setKvalitet(string kvalitet)
@@ -85,6 +93,10 @@ namespace WindowsFormsApplication8
         {
             return this.kvalitet;
         }
+        public double getKvalitetToDouble()
+        {
+            return Convert.ToDouble(this.kvalitet);
+        }
 
         public void setThicknessOfDefectiveCoating(string thicknessOfDefectiveCoating)
         {
@@ -94,14 +106,22 @@ namespace WindowsFormsApplication8
         {
             return this.thicknessOfDefectiveCoating;
         }
+        public double getThicknessOfDefectiveCoatingToDouble()
+        {
+            return Convert.ToDouble(this.thicknessOfDefectiveCoating);
+        }
 
-        public void setValidOffsetSurface(double validOffsetSurface)
+        public void setValidOffsetSurface(string validOffsetSurface)
         {
             this.validOffsetSurface = validOffsetSurface;
         }
-        public double getValidOffsetSurface()
+        public string getValidOffsetSurface()
         {
             return this.validOffsetSurface;
+        }
+        public double getValidOffsetSurfaceToDouble()
+        {
+            return Convert.ToDouble(this.validOffsetSurface);
         }
 
         public void setRecommendedIntervalRz(Interval interval)

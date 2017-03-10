@@ -13,7 +13,7 @@ namespace WindowsFormsApplication8.FormSelectWorkpriece
             string surfaceRoughnessRz = form.SurfaceRoughnessRz.Text;
             string kvalitet = form.Kvalitet.Text;
             string thicknessOfDefectiveCoating = form.ThicknessOfDefectiveCoating.Text;
-            double validOffsetSurface = Convert.ToDouble(form.ValidOffsetSurface.Text);
+            string validOffsetSurface = form.ValidOffsetSurface.Text;
 
             ParametersWorkpiece parameters = Part.getWorkpiece();
 

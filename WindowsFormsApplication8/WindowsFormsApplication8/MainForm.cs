@@ -246,6 +246,17 @@ namespace WindowsFormsApplication8
 
         private void button4_Click(object sender, EventArgs e)
         {
+            ParametersOfPart param = new ParametersOfPart(87, 56, 1,0,1,0);
+            Part.setParametersOfPart(param);
+
+
+            Part.getSurfaceOnIndex(0).calculationOFSurface();
+            double[] d = Part.getSurfaceOnIndex(0).getResultsOfCalculation().getSizeOfWorkprieceAfterOperation();
+
+            foreach (double g in d)
+            {
+                richTextBox1.Text += g.ToString() + "  ";
+            }
             bool osh = true;
             try { double u; u = Convert.ToDouble(DiameterOfPart.Text); u = Convert.ToDouble(LengthOfPart.Text); }
             catch { osh = false; }

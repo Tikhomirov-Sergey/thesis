@@ -53,7 +53,7 @@ namespace WindowsFormsApplication8
         {
             return this.precisionOfMachining;
         }
-
+        
         public void setSurfaceRoughnessRz(string surfaceRoughnessRz)
         {
             this.surfaceRoughnessRz = surfaceRoughnessRz;
@@ -62,7 +62,11 @@ namespace WindowsFormsApplication8
         {
             return this.surfaceRoughnessRz;
         }
-        
+        public double getSurfaceRoughnessRzToDouble()
+        {
+            return Convert.ToDouble(this.surfaceRoughnessRz);
+        }
+
         public void setRecommendedIntervalRz(Interval interval)
         {
             this.recommendedIntervalRz = interval;
@@ -80,6 +84,10 @@ namespace WindowsFormsApplication8
         {
             return this.idOperation;
         }
+        public int getIdOperationToInt()
+        {
+            return Convert.ToInt32(this.idOperation);
+        }
 
         public void setKvalitet(string kvalitet)
         {
@@ -88,6 +96,10 @@ namespace WindowsFormsApplication8
         public string getKvalitet()
         {
             return this.kvalitet;
+        }
+        public double getKvalitetToDouble()
+        {
+            return Convert.ToDouble(this.kvalitet);
         }
 
         public void setThicknessOfDefectiveCoating(string thicknessOfDefectiveCoating)
@@ -98,6 +110,10 @@ namespace WindowsFormsApplication8
         {
             return this.thicknessOfDefectiveCoating;
         }
+        public double getThicknessOfDefectiveCoatingToDouble()
+        {
+            return Convert.ToDouble(this.thicknessOfDefectiveCoating);
+        }
 
         public void setCoefficientOfRefinement(string coefficientOfRefinement)
         {
@@ -107,12 +123,15 @@ namespace WindowsFormsApplication8
         {
             return this.coefficientOfRefinement;
         }
+        public double getCoefficientOfRefinementToDouble()
+        {
+            return Convert.ToDouble(this.coefficientOfRefinement);
+        }
 
         public void setTypeOfInstrument(string typeOfInstrument)
         {
             this.typeOfInstrument = typeOfInstrument;
         }
-
         public string getTypeOfInstrument()
         {
             return this.typeOfInstrument;

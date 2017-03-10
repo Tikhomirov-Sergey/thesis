@@ -62,6 +62,14 @@ namespace WindowsFormsApplication8
             catch { return null; }
         }
 
+        public static void calculationOfSurfaces()
+        {
+            foreach (Surface surface in Part.surfaces)
+            {
+                surface.calculationOFSurface();
+            }
+        }
+
         private static void checkSurface(int indexSurface)
         {
             if (SurfaceIsNull(surfaces[indexSurface]))
@@ -74,6 +82,5 @@ namespace WindowsFormsApplication8
         {
             return (surface == null);
         }
- 
     }
 }

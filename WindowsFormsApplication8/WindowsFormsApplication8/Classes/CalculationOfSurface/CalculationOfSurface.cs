@@ -26,14 +26,20 @@ namespace WindowsFormsApplication8
                 this.parametersForCalculation = parametersForCalculation;
         }
 
-        public void calculation()
+        public ClassesToCalculate.ResultsOfCalculation calculation()
         {
             if (this.checkOfIntervalsLenghtAndDiameter())
             {
-                    kvalitetToAccuracy();
-                    CalculationOfSpatialDeviation();
-                    CalculationOfAllowance();
+                kvalitetToAccuracy();
+                CalculationOfSpatialDeviation();
+                CalculationOfDeviationOfInstallation();
+                CalculationOfAllowance();
+                CalculationOfSizeOfWorkprieceAfterOperation();
+
+                return getResultsOfCalculation();
             }
+
+            return null;
         }
 
 
@@ -118,6 +124,12 @@ namespace WindowsFormsApplication8
         {
             ClassesToCalculate.SizeOfWorkprieceAfterOperation sizeOfWorkprieceAfterOperation = new ClassesToCalculate.SizeOfWorkprieceAfterOperation(parametersOfPart, parametersForCalculation, nominalAllowanceZnom);
             this.sizeOfWorkprieceAfterOperation = sizeOfWorkprieceAfterOperation.calculation();
+        }
+
+        private ClassesToCalculate.ResultsOfCalculation getResultsOfCalculation()
+        {
+            ClassesToCalculate.ResultsOfCalculation resultsOfCalculation = new ClassesToCalculate.ResultsOfCalculation(this.accuracies, this.spatialDeviationP, this.deviationOfInstallationE, this.nominalAllowanceZnom, this.sizeOfWorkprieceAfterOperation);
+            return resultsOfCalculation;
         }
     }
 }

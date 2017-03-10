@@ -9,7 +9,8 @@ namespace WindowsFormsApplication8
     {
         private string nameSurface = "";
         private ParametersOperation[] operations = new ParametersOperation[0];
-        
+
+        private ClassesToCalculate.ResultsOfCalculation resultsOfCalculation = null;
 
         public void setNameSurface(string nameSurface)
         {
@@ -53,6 +54,62 @@ namespace WindowsFormsApplication8
             }
 
             return list;
+        }
+
+        public int getNumberOfOperations()
+        {
+            return this.operations.Length;
+        }
+
+        public void calculationOFSurface()
+        {
+            ParametersOfPart parametersOfPart = Part.getParametersOfPart();
+            DataStructures.CalculationOfSurface.ParametersOperationsForCalculation parametersOperations = this.getParametersOperationsForCalculation();
+
+            CalculationOfSurface calculationOfSurface = new CalculationOfSurface(parametersOfPart, parametersOperations);
+            this.resultsOfCalculation = calculationOfSurface.calculation();
+        }
+
+        private DataStructures.CalculationOfSurface.ParametersOperationsForCalculation getParametersOperationsForCalculation()
+        {
+            double[] surfaceRoughnessRz = new double[this.getNumberOfOperations() + 1]; ;
+            double[] kvalitets = new double[this.getNumberOfOperations() + 1]; ;
+            double[] thicknessOfDefectiveCoating = new double[this.getNumberOfOperations() + 1]; ;
+            double[] coefficientOfRefinement = new double[this.getNumberOfOperations() + 1]; ;
+
+            int[] idOperation = new int[this.getNumberOfOperations() + 1]; ;
+            string[] typeOfInstrument = new string[this.getNumberOfOperations() + 1];
+
+            ParametersWorkpiece workpiece = Part.getWorkpiece();
+
+            surfaceRoughnessRz[0] = workpiece.getSurfaceRoughnessRzToDouble();
+            kvalitets[0] = workpiece.getKvalitetToDouble();
+            thicknessOfDefectiveCoating[0] = workpiece.getThicknessOfDefectiveCoatingToDouble();
+
+            idOperation[0] = workpiece.getIdWorkpieceToInt();
+
+            double validOffsetSurface = workpiece.getValidOffsetSurfaceToDouble();
+
+            for (int i = 0; i < this.getNumberOfOperations(); i++)
+            {
+                ParametersOperation operation = this.operations[i];
+
+                surfaceRoughnessRz[i + 1] = operation.getSurfaceRoughnessRzToDouble();
+                kvalitets[i + 1] = operation.getKvalitetToDouble();
+                thicknessOfDefectiveCoating[i + 1] = operation.getThicknessOfDefectiveCoatingToDouble();
+                coefficientOfRefinement[i + 1] = operation.getCoefficientOfRefinementToDouble();
+
+                idOperation[i + 1] = operation.getIdOperationToInt();
+                typeOfInstrument[i + 1] = operation.getTypeOfInstrument();
+            }
+
+            DataStructures.CalculationOfSurface.ParametersOperationsForCalculation parameters = new DataStructures.CalculationOfSurface.ParametersOperationsForCalculation(surfaceRoughnessRz, kvalitets, thicknessOfDefectiveCoating, coefficientOfRefinement, idOperation, typeOfInstrument, validOffsetSurface);
+            return parameters;
+        }
+
+        public ClassesToCalculate.ResultsOfCalculation getResultsOfCalculation()
+        {
+            return this.resultsOfCalculation;
         }
     }
 }
