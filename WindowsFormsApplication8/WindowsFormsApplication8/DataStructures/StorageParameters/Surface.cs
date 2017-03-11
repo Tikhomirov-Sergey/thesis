@@ -94,12 +94,12 @@ namespace WindowsFormsApplication8
             {
                 ParametersOperation operation = this.operations[i];
 
-                surfaceRoughnessRz[i + 1] = operation.getSurfaceRoughnessRzToDouble();
-                kvalitets[i + 1] = operation.getKvalitetToDouble();
-                thicknessOfDefectiveCoating[i + 1] = operation.getThicknessOfDefectiveCoatingToDouble();
-                coefficientOfRefinement[i + 1] = operation.getCoefficientOfRefinementToDouble();
+                surfaceRoughnessRz[i + 1] = operation.getSurfaceRoughnessRz();
+                kvalitets[i + 1] = operation.getKvalitet();
+                thicknessOfDefectiveCoating[i + 1] = operation.getThicknessOfDefectiveCoating();
+                coefficientOfRefinement[i + 1] = operation.getCoefficientOfRefinement();
 
-                idOperation[i + 1] = operation.getIdOperationToInt();
+                idOperation[i + 1] = operation.getIdOperation();
                 typeOfInstrument[i + 1] = operation.getTypeOfInstrument();
             }
 

@@ -167,9 +167,7 @@
             this.TreeOfOperations.ShowRootLines = false;
             this.TreeOfOperations.Size = new System.Drawing.Size(398, 289);
             this.TreeOfOperations.TabIndex = 16;
-            this.TreeOfOperations.AfterSelect += new System.Windows.Forms.TreeViewEventHandler(this.treeView1_AfterSelect);
             this.TreeOfOperations.NodeMouseClick += new System.Windows.Forms.TreeNodeMouseClickEventHandler(this.treeView1_NodeMouseClick);
-            this.TreeOfOperations.NodeMouseDoubleClick += new System.Windows.Forms.TreeNodeMouseClickEventHandler(this.treeView1_NodeMouseDoubleClick);
             // 
             // ChoiceOfOperation
             // 
@@ -209,7 +207,6 @@
             this.Kvalitet.Name = "Kvalitet";
             this.Kvalitet.Size = new System.Drawing.Size(234, 20);
             this.Kvalitet.TabIndex = 20;
-            this.Kvalitet.MouseClick += new System.Windows.Forms.MouseEventHandler(this.textBox7_MouseClick);
             this.Kvalitet.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.KeyPressForTextBoxWithDouble);
             // 
             // richTextBox1
@@ -436,7 +433,6 @@
             this.menuStrip1.Size = new System.Drawing.Size(1136, 24);
             this.menuStrip1.TabIndex = 50;
             this.menuStrip1.Text = "Открыть бд";
-            this.menuStrip1.Click += new System.EventHandler(this.menuStrip1_Click);
             // 
             // открытьБДToolStripMenuItem
             // 

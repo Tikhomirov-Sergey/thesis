@@ -41,17 +41,9 @@ namespace WindowsFormsApplication8
                 FormSelectWorkpriece.EventClickOnButtonOfSelectWorkpriece.buttonSelectWorkpriece(this);
             }
             catch { }
-
-            h = NameOfWorkpiece.Text + "|" + SurfaceRoughnessRz.Text + "|" + ThicknessOfDefectiveCoating.Text + "|" + Kvalitet.Text+"|"+l+"|"+Convert.ToString(ValidOffsetSurface.Text);
             Close();
         }
-        public string Data
-        {
-            get
-            {
-                return Convert.ToString(h);
-            }
-        }
+        
         private void textBox1_TextChanged(object sender, EventArgs e)
         {
             try
@@ -69,12 +61,7 @@ namespace WindowsFormsApplication8
             }
             catch {SurfaceRoughnessRz.Text = ""; }
         }
-
-        private void TreeOfWorkpiece_AfterSelect(object sender, TreeViewEventArgs e)
-        {
-
-        }
-
+        
         private void KeyPressForTextBoxWithDouble(object sender, KeyPressEventArgs e)
         {
             EventKeyPressForTextBox.keyPressForTextBoxWithDouble(sender, e);

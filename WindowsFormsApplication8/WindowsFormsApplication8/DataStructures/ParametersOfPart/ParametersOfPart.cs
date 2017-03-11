@@ -14,19 +14,19 @@ namespace WindowsFormsApplication8
         private int typeOfAllowance;
         private int typeOfProcessedSurface;
 
-        private double tolerance;
+        private double allowance;
         private double holeDepth;
 
         public ParametersOfPart(double lengthOfPart, double diameterOfPart,
             int typeOfPart, int typeOfAllowance, int typeOfProcessedSurface,
-            double tolerance, double holeDepth = 0)
+            double allowance, double holeDepth = 0)
         {
             this.lengthOfPart = lengthOfPart;
             this.diameterOfPart = diameterOfPart;
             this.typeOfPart = typeOfPart;
             this.typeOfAllowance = typeOfAllowance;
             this.typeOfProcessedSurface = typeOfProcessedSurface;
-            this.tolerance = tolerance;
+            this.allowance = allowance;
             this.holeDepth = holeDepth;
         }
         public double getLengthOfPart()
@@ -89,14 +89,14 @@ namespace WindowsFormsApplication8
             this.holeDepth = holeDepth;
         }
 
-        public double getTolerance()
+        public double getAllowance()
         {
-            return this.tolerance;
+            return this.allowance;
         }
 
-        public void setTolerance(double tolerance)
+        public void setAllowance(double allowance)
         {
-            this.tolerance = tolerance;
+            this.allowance = allowance;
         }
     }
 }

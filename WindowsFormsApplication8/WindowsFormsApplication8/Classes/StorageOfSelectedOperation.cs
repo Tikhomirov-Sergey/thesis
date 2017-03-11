@@ -18,10 +18,10 @@
         {
             form.TypeOfMachining.Text = parameters.getTypeOfMachining();
             form.PrecisionOfMachining.Text = parameters.getPrecisionOfMachining();
-            form.SurfaceRoughnessRz.Text = parameters.getSurfaceRoughnessRz();
-            form.ThicknessOfDefectiveCoating.Text = parameters.getThicknessOfDefectiveCoating();
-            form.Kvalitet.Text = parameters.getKvalitet();
-            form.CoefficientOfRefinement.Text = parameters.getCoefficientOfRefinement();
+            form.SurfaceRoughnessRz.Text = parameters.getSurfaceRoughnessRzToString();
+            form.ThicknessOfDefectiveCoating.Text = parameters.getThicknessOfDefectiveCoatingToString();
+            form.Kvalitet.Text = parameters.getKvalitetToString();
+            form.CoefficientOfRefinement.Text = parameters.getCoefficientOfRefinementToString();
 
             form.TypeOfInstrument.Items.Clear();
             string[] ListInstruments = Tables.getInaccuracyOfPositioningPart().getListInstruments();

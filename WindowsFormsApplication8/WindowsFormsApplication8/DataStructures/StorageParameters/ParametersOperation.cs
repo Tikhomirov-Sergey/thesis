@@ -7,27 +7,27 @@ namespace WindowsFormsApplication8
 {
     class ParametersOperation
     {
-        private string typeOfMachining = "";
-        private string precisionOfMachining = "";
-        private string surfaceRoughnessRz = "";
-        private Interval recommendedIntervalRz = null;
-        private string idOperation = "";
-        private string kvalitet = "";
-        private string thicknessOfDefectiveCoating = "";
-        private string coefficientOfRefinement = "";
-        private string typeOfInstrument = "";
+        private string typeOfMachining;
+        private string precisionOfMachining;
+        private double surfaceRoughnessRz;
+        private Interval recommendedIntervalRz;
+        private int idOperation;
+        private double kvalitet;
+        private double thicknessOfDefectiveCoating;
+        private double coefficientOfRefinement;
+        private string typeOfInstrument;
 
         public ParametersOperation(string typeOfMachining, string precisionOfMachining, string surfaceRoughnessRz,
             Interval recommendedIntervalRz, string idOperation, string kvalitet, string thicknessOfDefectiveCoating, string coefficientOfRefinement)
         {
             this.typeOfMachining = typeOfMachining;
             this.precisionOfMachining = precisionOfMachining;
-            this.surfaceRoughnessRz = surfaceRoughnessRz;
+            this.surfaceRoughnessRz = Convert.ToDouble(surfaceRoughnessRz);
             this.recommendedIntervalRz = recommendedIntervalRz;
-            this.idOperation = idOperation;
-            this.kvalitet = kvalitet;
-            this.thicknessOfDefectiveCoating = thicknessOfDefectiveCoating;
-            this.coefficientOfRefinement = coefficientOfRefinement;
+            this.idOperation = Convert.ToInt32(idOperation);
+            this.kvalitet = Convert.ToDouble(kvalitet);
+            this.thicknessOfDefectiveCoating = Convert.ToDouble(thicknessOfDefectiveCoating);
+            this.coefficientOfRefinement = Convert.ToDouble(coefficientOfRefinement);
         }
 
         public string getNameOperation()
@@ -56,15 +56,15 @@ namespace WindowsFormsApplication8
         
         public void setSurfaceRoughnessRz(string surfaceRoughnessRz)
         {
-            this.surfaceRoughnessRz = surfaceRoughnessRz;
+            this.surfaceRoughnessRz = Convert.ToDouble(surfaceRoughnessRz);
         }
-        public string getSurfaceRoughnessRz()
+        public double getSurfaceRoughnessRz()
         {
             return this.surfaceRoughnessRz;
         }
-        public double getSurfaceRoughnessRzToDouble()
+        public string getSurfaceRoughnessRzToString()
         {
-            return Convert.ToDouble(this.surfaceRoughnessRz);
+            return Convert.ToString(this.surfaceRoughnessRz);
         }
 
         public void setRecommendedIntervalRz(Interval interval)
@@ -78,54 +78,54 @@ namespace WindowsFormsApplication8
 
         public void setIdOperation(string idOperation)
         {
-            this.idOperation = idOperation;
+            this.idOperation = Convert.ToInt32(idOperation);
         }
-        public string IdOperation()
+        public int getIdOperation()
         {
             return this.idOperation;
         }
-        public int getIdOperationToInt()
+        public string getIdOperationToString()
         {
-            return Convert.ToInt32(this.idOperation);
+            return Convert.ToString(this.idOperation);
         }
 
         public void setKvalitet(string kvalitet)
         {
-            this.kvalitet = kvalitet;
+            this.kvalitet = Convert.ToDouble(kvalitet);
         }
-        public string getKvalitet()
+        public double getKvalitet()
         {
             return this.kvalitet;
         }
-        public double getKvalitetToDouble()
+        public string getKvalitetToString()
         {
-            return Convert.ToDouble(this.kvalitet);
+            return Convert.ToString(this.kvalitet);
         }
 
         public void setThicknessOfDefectiveCoating(string thicknessOfDefectiveCoating)
         {
-            this.thicknessOfDefectiveCoating = thicknessOfDefectiveCoating;
+            this.thicknessOfDefectiveCoating = Convert.ToDouble(thicknessOfDefectiveCoating);
         }
-        public string getThicknessOfDefectiveCoating()
+        public double getThicknessOfDefectiveCoating()
         {
             return this.thicknessOfDefectiveCoating;
         }
-        public double getThicknessOfDefectiveCoatingToDouble()
+        public string getThicknessOfDefectiveCoatingToString()
         {
-            return Convert.ToDouble(this.thicknessOfDefectiveCoating);
+            return Convert.ToString(this.thicknessOfDefectiveCoating);
         }
 
         public void setCoefficientOfRefinement(string coefficientOfRefinement)
         {
-            this.coefficientOfRefinement = coefficientOfRefinement;
+            this.coefficientOfRefinement = Convert.ToDouble(coefficientOfRefinement);
         }
-        public string getCoefficientOfRefinement()
+        public double getCoefficientOfRefinement()
         {
             return this.coefficientOfRefinement;
         }
-        public double getCoefficientOfRefinementToDouble()
+        public string getCoefficientOfRefinementToString()
         {
-            return Convert.ToDouble(this.coefficientOfRefinement);
+            return Convert.ToString(this.coefficientOfRefinement);
         }
 
         public void setTypeOfInstrument(string typeOfInstrument)

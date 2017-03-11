@@ -54,7 +54,6 @@
             this.TreeOfWorkpiece.ShowRootLines = false;
             this.TreeOfWorkpiece.Size = new System.Drawing.Size(483, 301);
             this.TreeOfWorkpiece.TabIndex = 0;
-            this.TreeOfWorkpiece.AfterSelect += new System.Windows.Forms.TreeViewEventHandler(this.TreeOfWorkpiece_AfterSelect);
             this.TreeOfWorkpiece.NodeMouseClick += new System.Windows.Forms.TreeNodeMouseClickEventHandler(this.treeView1_NodeMouseClick);
             // 
             // ChoiceOfWorkpiece
