@@ -16,7 +16,7 @@ namespace WindowsFormsApplication8.FormSelectWorkpriece
             string validOffsetSurface = form.ValidOffsetSurface.Text;
 
             ParametersWorkpiece parameters = Part.getWorkpiece();
-
+            
             parameters.setNameOfWorkpiece(nameOfWorkpiece);
             parameters.setSurfaceRoughnessRz(surfaceRoughnessRz);
             parameters.setKvalitet(kvalitet);

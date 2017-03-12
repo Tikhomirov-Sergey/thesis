@@ -11,7 +11,9 @@ namespace WindowsFormsApplication8
         {
             openingOfFormOfSelectWorkpriece();
             ParametersWorkpiece workpiece = Part.getWorkpiece();
-            form.NameOfWorkpiece.Text = workpiece.getNameOfWorkpiece();
+
+            string nameOfWorkpiece = workpiece.getNameOfWorkpiece();
+            insertNameOfWorkpieceInTreeViewAndTextBox(form, nameOfWorkpiece);
             enabledTextBoxes(form);
         }
 
@@ -35,6 +37,20 @@ namespace WindowsFormsApplication8
             form.TypeOfInstrument.Enabled = true;
             form.richTextBox2.Enabled = true;
             form.buttontext.Enabled = true;
+        }
+
+        private static void insertNameOfWorkpieceInTreeViewAndTextBox(MainForm form, string nameOfWorkpiece)
+        {
+            if(form.treeView1.Nodes.Count == 0)
+            {
+                form.treeView1.Nodes.Add(nameOfWorkpiece);
+            }
+            else
+            {
+                form.treeView1.Nodes[0].Text = nameOfWorkpiece;
+            }
+
+            form.NameOfWorkpiece.Text = nameOfWorkpiece;
         }
     }
 }

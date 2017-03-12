@@ -9,9 +9,12 @@ namespace WindowsFormsApplication8
     {
         public static void buttonOfCalculation(MainForm form)
         {
-            ParametersOfPart parameters = extractionOfParametersOfPartFromTextBoxes(form);
-            Part.setParametersOfPart(parameters);
-            Part.calculationOfSurfaces();
+            try {
+                ParametersOfPart parameters = extractionOfParametersOfPartFromTextBoxes(form);
+                Part.setParametersOfPart(parameters);
+                Part.calculationOfSurfaces();
+            }
+            catch { }
         }
 
     public static ParametersOfPart extractionOfParametersOfPartFromTextBoxes(MainForm form)

@@ -76,6 +76,7 @@
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.label11 = new System.Windows.Forms.Label();
             this.Allowance = new System.Windows.Forms.TextBox();
+            this.treeView1 = new System.Windows.Forms.TreeView();
             this.menuStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
@@ -212,9 +213,9 @@
             // richTextBox1
             // 
             this.richTextBox1.Enabled = false;
-            this.richTextBox1.Location = new System.Drawing.Point(438, 332);
+            this.richTextBox1.Location = new System.Drawing.Point(804, 332);
             this.richTextBox1.Name = "richTextBox1";
-            this.richTextBox1.Size = new System.Drawing.Size(661, 141);
+            this.richTextBox1.Size = new System.Drawing.Size(295, 141);
             this.richTextBox1.TabIndex = 21;
             this.richTextBox1.Text = "";
             // 
@@ -512,11 +513,19 @@
             this.Allowance.TextChanged += new System.EventHandler(this.textBox3_TextChanged);
             this.Allowance.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.KeyPressForTextBoxWithDouble);
             // 
+            // treeView1
+            // 
+            this.treeView1.Location = new System.Drawing.Point(438, 332);
+            this.treeView1.Name = "treeView1";
+            this.treeView1.Size = new System.Drawing.Size(360, 141);
+            this.treeView1.TabIndex = 58;
+            // 
             // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1136, 521);
+            this.Controls.Add(this.treeView1);
             this.Controls.Add(this.Allowance);
             this.Controls.Add(this.label11);
             this.Controls.Add(this.pictureBox2);
@@ -621,6 +630,7 @@
         protected internal System.Windows.Forms.Button buttontext;
         protected internal System.Windows.Forms.Button ChoiceOfOperation;
         protected internal System.Windows.Forms.Button Backspace;
+        protected internal System.Windows.Forms.TreeView treeView1;
     }
 }
 

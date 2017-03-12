@@ -17,9 +17,9 @@ namespace WindowsFormsApplication8
     {
       
          Form4 z = new Form4("");
-        
+
         public MainForm()
-           {
+        {
             InitializeComponent();
 
             TypeOfPart.Items.AddRange(new string[] { "вал", "отверстие" });
@@ -30,8 +30,7 @@ namespace WindowsFormsApplication8
             TypeOfProcessedSurface.SelectedIndex = 0;
             TypeOfAllowance.SelectedIndex = 0;
             HoleDepth.Text = "0";
-          }
-
+        }
         private void Form1_Load(object sender, EventArgs e)
         {
             string xmlpath = @"XMLFiles/ParametersOfSurfacesAfterVariousOperations.xml";
@@ -44,7 +43,7 @@ namespace WindowsFormsApplication8
             double[] thicknessOfDefectiveCoating = { 0.3, 0.004, 0.01, 0.04 };
             double[] coefficientOfRefinement = { 3, 4, 0, 2 };
             double[] accuracies = { 1.9, 0.008, 0.03, 0.3 };
-
+            
             int[] idOperation = { 2, 8, 5, 6 };
             string[] typeOfInstrument = {"", "патрон трёхкулачковый", "с винтовыми или эксцентриковыми зажимами", "не выбрано" };
 
@@ -61,6 +60,7 @@ namespace WindowsFormsApplication8
 
             ClassesToCalculate.SizeOfWorkprieceAfterOperation sizeOfWorkprieceAfterOperation = new ClassesToCalculate.SizeOfWorkprieceAfterOperation(p,s,allowanceArr);
             double[] sizeOfWorkprieceAfterOperationArr = sizeOfWorkprieceAfterOperation.calculation();
+            
             foreach (double t in sizeOfWorkprieceAfterOperationArr)
             {
                 richTextBox1.Text += t.ToString() + "  ";

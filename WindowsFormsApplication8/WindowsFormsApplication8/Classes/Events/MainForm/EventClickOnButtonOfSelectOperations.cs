@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using System.Windows.Forms;
 
 namespace WindowsFormsApplication8
 {
@@ -11,12 +12,13 @@ namespace WindowsFormsApplication8
         {
             ParametersOperation operation = StorageOfSelectedOperation.getParameters();
 
-            if(operation != null)
+            if (operation != null)
             {
                 extractionOfParametersOfOperationFromTextBoxes(operation, form);
                 Part.addOperationInSurface(operation, 0);
-                
-                form.richTextBox1.Text = form.richTextBox1.Text + "\n" + operation.getNameOperation(); 
+
+                form.richTextBox1.Text = form.richTextBox1.Text + "\n" + operation.getNameOperation();
+                insertNameOperationInTextboxes(form, operation.getNameOperation());
             }
         }
 
@@ -31,9 +33,13 @@ namespace WindowsFormsApplication8
             operation.setPrecisionOfMachining(precisionOfMachining);
             operation.setSurfaceRoughnessRz(surfaceRoughnessRz);
             operation.setTypeOfInstrument(typeOfInsrument);
-             
+
             return operation;
         }
-    }
 
+        public static void insertNameOperationInTextboxes(MainForm form, string nameOperation)
+        {
+            form.treeView1.Nodes.Add(new TreeNode(nameOperation));
+        }
+    }
 }
