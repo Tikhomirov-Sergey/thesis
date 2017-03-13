@@ -33,38 +33,12 @@ namespace WindowsFormsApplication8
         }
         private void Form1_Load(object sender, EventArgs e)
         {
-            string xmlpath = @"XMLFiles/ParametersOfSurfacesAfterVariousOperations.xml";
-            XMLtoTreeView.formationTreeView(xmlpath, TreeOfOperations);
-
-            ParametersOfPart p = new ParametersOfPart(56, 56, 0, 0, 1, 0, 1);
-
-            double[] surfaceRoughnessRz = {0.3, 0.0005, 0.005, 0.02 };
-            double[] kvalitets = { 9, 8, 7, 6 };
-            double[] thicknessOfDefectiveCoating = { 0.3, 0.004, 0.01, 0.04 };
-            double[] coefficientOfRefinement = { 3, 4, 0, 2 };
-            double[] accuracies = { 1.9, 0.008, 0.03, 0.3 };
-            
-            int[] idOperation = { 2, 8, 5, 6 };
-            string[] typeOfInstrument = {"", "патрон трёхкулачковый", "с винтовыми или эксцентриковыми зажимами", "не выбрано" };
-
-            DataStructures.CalculationOfSurface.ParametersOperationsForCalculation s = new DataStructures.CalculationOfSurface.ParametersOperationsForCalculation(surfaceRoughnessRz,kvalitets,thicknessOfDefectiveCoating,coefficientOfRefinement,idOperation,typeOfInstrument);
-
-            ClassesToCalculate.SpatialDeviation spatialDeviation = new ClassesToCalculate.SpatialDeviation(p, s);
-            double[] spatialDeviationArr = spatialDeviation.calculation();
-
-            ClassesToCalculate.DeviationOfInstallation deviationOfInstallation = new ClassesToCalculate.DeviationOfInstallation(p, s);
-            double[] deviationOfInstallationArr = deviationOfInstallation.calculation();
-
-            ClassesToCalculate.Allowance allowance = new ClassesToCalculate.Allowance(p,s, spatialDeviationArr, deviationOfInstallationArr, accuracies);
-            double[] allowanceArr = allowance.calculation();
-
-            ClassesToCalculate.SizeOfWorkprieceAfterOperation sizeOfWorkprieceAfterOperation = new ClassesToCalculate.SizeOfWorkprieceAfterOperation(p,s,allowanceArr);
-            double[] sizeOfWorkprieceAfterOperationArr = sizeOfWorkprieceAfterOperation.calculation();
-            
-            foreach (double t in sizeOfWorkprieceAfterOperationArr)
+            try
             {
-                richTextBox1.Text += t.ToString() + "  ";
+                string xmlpath = @"XMLFiles/ParametersOfSurfacesAfterVariousOperations.xml";
+                XMLtoTreeView.formationTreeView(xmlpath, TreeOfOperations);
             }
+            catch { MessageBox.Show("Повреждены XML таблицы", "Ошибка"); }
         }
        
         private void button1_Click(object sender, EventArgs e)
@@ -121,13 +95,17 @@ namespace WindowsFormsApplication8
         
         private void button4_Click(object sender, EventArgs e)
         {
-            EventClickOnButtonOfCalculationPart.buttonOfCalculation(this);
-            double[] d = Part.getSurfaceOnIndex(0).getResultsOfCalculation().getSizeOfWorkprieceAfterOperation();
-
-            foreach (double g in d)
+            try
             {
-                richTextBox1.Text += g.ToString() + "  ";
+                EventClickOnButtonOfCalculationPart.buttonOfCalculation(this);
+                double[] d = Part.getSurfaceOnIndex(0).getResultsOfCalculation().getSizeOfWorkprieceAfterOperation();
+
+                foreach (double g in d)
+                {
+                    richTextBox1.Text += g.ToString() + "  ";
+                }
             }
+            catch { }
             
             /* // Округление 
              Zmin[nom1] = Math.Round(Zmin[nom1], 4);
@@ -185,9 +163,7 @@ namespace WindowsFormsApplication8
                 Backspace.Enabled = true;
                 CalculationOfSchema.Enabled = true;
                 TypeOfInstrument.Enabled = true;
-                richTextBox2.Enabled = true;
                 SurfaceRoughnessRa.Enabled = true;
-                buttontext.Enabled = true;
                 //stroka = z.Data;
 
                 /*split_data1 = stroka.Split(new Char[] { '-' });
@@ -364,7 +340,11 @@ namespace WindowsFormsApplication8
 
         private void KeyPressForTextBoxWithDouble(object sender, KeyPressEventArgs e)
         {
-            EventKeyPressForTextBox.keyPressForTextBoxWithDouble(sender, e);
+            try
+            {
+                EventKeyPressForTextBox.keyPressForTextBoxWithDouble(sender, e);
+            }
+            catch { }
         }
 
         private void textRa_TextChanged(object sender, EventArgs e)

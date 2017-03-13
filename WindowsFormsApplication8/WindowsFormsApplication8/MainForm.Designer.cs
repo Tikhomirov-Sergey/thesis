@@ -59,11 +59,8 @@
             this.LengthOfPart = new System.Windows.Forms.TextBox();
             this.TypeOfInstrument = new System.Windows.Forms.ComboBox();
             this.CalculationOfSchema = new System.Windows.Forms.Button();
-            this.richTextBox2 = new System.Windows.Forms.RichTextBox();
             this.label17 = new System.Windows.Forms.Label();
             this.HoleDepth = new System.Windows.Forms.TextBox();
-            this.buttontext = new System.Windows.Forms.Button();
-            this.richTextBoxtoForm2 = new System.Windows.Forms.RichTextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
@@ -71,7 +68,6 @@
             this.toolTip1 = new System.Windows.Forms.ToolTip(this.components);
             this.SurfaceRoughnessRa = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
-            this.textBox2 = new System.Windows.Forms.TextBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.label11 = new System.Windows.Forms.Label();
@@ -358,16 +354,6 @@
             this.CalculationOfSchema.UseVisualStyleBackColor = true;
             this.CalculationOfSchema.Click += new System.EventHandler(this.button4_Click);
             // 
-            // richTextBox2
-            // 
-            this.richTextBox2.Enabled = false;
-            this.richTextBox2.Location = new System.Drawing.Point(42, 349);
-            this.richTextBox2.Name = "richTextBox2";
-            this.richTextBox2.Size = new System.Drawing.Size(103, 34);
-            this.richTextBox2.TabIndex = 40;
-            this.richTextBox2.Text = "";
-            this.richTextBox2.Visible = false;
-            // 
             // label17
             // 
             this.label17.AutoSize = true;
@@ -384,27 +370,6 @@
             this.HoleDepth.Size = new System.Drawing.Size(158, 20);
             this.HoleDepth.TabIndex = 44;
             this.HoleDepth.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.KeyPressForTextBoxWithDouble);
-            // 
-            // buttontext
-            // 
-            this.buttontext.Enabled = false;
-            this.buttontext.Location = new System.Drawing.Point(-5, 345);
-            this.buttontext.Name = "buttontext";
-            this.buttontext.Size = new System.Drawing.Size(41, 26);
-            this.buttontext.TabIndex = 45;
-            this.buttontext.Text = "Сохранить в текстовой файл";
-            this.buttontext.UseVisualStyleBackColor = true;
-            this.buttontext.Visible = false;
-            this.buttontext.Click += new System.EventHandler(this.buttontext_Click);
-            // 
-            // richTextBoxtoForm2
-            // 
-            this.richTextBoxtoForm2.Location = new System.Drawing.Point(9, 377);
-            this.richTextBoxtoForm2.Name = "richTextBoxtoForm2";
-            this.richTextBoxtoForm2.Size = new System.Drawing.Size(16, 17);
-            this.richTextBoxtoForm2.TabIndex = 46;
-            this.richTextBoxtoForm2.Text = "";
-            this.richTextBoxtoForm2.Visible = false;
             // 
             // label2
             // 
@@ -461,15 +426,6 @@
             this.label4.Size = new System.Drawing.Size(160, 13);
             this.label4.TabIndex = 52;
             this.label4.Text = "Глубина дефектного слоя, мм";
-            // 
-            // textBox2
-            // 
-            this.textBox2.Location = new System.Drawing.Point(42, 314);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(103, 20);
-            this.textBox2.TabIndex = 53;
-            this.textBox2.Text = "Текста";
-            this.textBox2.Visible = false;
             // 
             // pictureBox1
             // 
@@ -530,16 +486,12 @@
             this.Controls.Add(this.label11);
             this.Controls.Add(this.pictureBox2);
             this.Controls.Add(this.pictureBox1);
-            this.Controls.Add(this.textBox2);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.SurfaceRoughnessRa);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
-            this.Controls.Add(this.richTextBoxtoForm2);
-            this.Controls.Add(this.buttontext);
             this.Controls.Add(this.HoleDepth);
             this.Controls.Add(this.label17);
-            this.Controls.Add(this.richTextBox2);
             this.Controls.Add(this.CalculationOfSchema);
             this.Controls.Add(this.TypeOfInstrument);
             this.Controls.Add(this.LengthOfPart);
@@ -608,7 +560,6 @@
         protected internal System.Windows.Forms.Button CalculationOfSchema;
         protected internal System.Windows.Forms.Button ChoiceOfWorkpiece;
         protected internal System.Windows.Forms.TextBox HoleDepth;
-        protected internal System.Windows.Forms.RichTextBox richTextBoxtoForm2;
         protected internal System.Windows.Forms.TextBox DiameterOfPart;
         protected internal System.Windows.Forms.ComboBox TypeOfAllowance;
         protected internal System.Windows.Forms.TextBox LengthOfPart;
@@ -617,7 +568,6 @@
         protected internal System.Windows.Forms.TextBox TypeOfMachining;
         protected internal System.Windows.Forms.TextBox SurfaceRoughnessRz;
         protected internal System.Windows.Forms.TextBox SurfaceRoughnessRa;
-        protected internal System.Windows.Forms.TextBox textBox2;
         protected internal System.Windows.Forms.TextBox Allowance;
         protected internal System.Windows.Forms.ComboBox TypeOfInstrument;
         protected internal System.Windows.Forms.TextBox ThicknessOfDefectiveCoating;
@@ -626,8 +576,6 @@
         protected internal System.Windows.Forms.TextBox CoefficientOfRefinement;
         protected internal System.Windows.Forms.TextBox NameOfWorkpiece;
         protected internal System.Windows.Forms.TreeView TreeOfOperations;
-        protected internal System.Windows.Forms.RichTextBox richTextBox2;
-        protected internal System.Windows.Forms.Button buttontext;
         protected internal System.Windows.Forms.Button ChoiceOfOperation;
         protected internal System.Windows.Forms.Button Backspace;
         protected internal System.Windows.Forms.TreeView treeView1;

@@ -28,5 +28,5 @@
             form.TypeOfInstrument.Items.AddRange(ListInstruments);
             form.TypeOfInstrument.SelectedIndex = 0;
         }
-    }
+    } 
 }

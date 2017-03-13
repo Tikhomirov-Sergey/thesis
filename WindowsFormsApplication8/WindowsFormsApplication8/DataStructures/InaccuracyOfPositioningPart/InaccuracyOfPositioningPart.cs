@@ -25,15 +25,23 @@ namespace WindowsFormsApplication8
         public double getDeviationOfInstallation(double requiredSize, int idOperation, string typeOfInstrument)
         {
             double deviationOfInstallation = 0;
+            bool isSelectedInstrument = false;
 
             foreach (DataStuctures.InaccuracyOfPositioningPart.Instrument instrument in instruments)
             {
                 if (instrument.isSelectedInstrument(typeOfInstrument))
                 {
+                    isSelectedInstrument = true;
                     deviationOfInstallation = instrument.getDeviationOfInstallation(requiredSize, idOperation);
                 }
             }
 
+            if(!isSelectedInstrument)
+            {
+                typeOfInstrument = " " + typeOfInstrument;
+                throw new ErrorMessage("Инструмент" + typeOfInstrument + " не найден");
+            }
+            
             return deviationOfInstallation;
         }
 

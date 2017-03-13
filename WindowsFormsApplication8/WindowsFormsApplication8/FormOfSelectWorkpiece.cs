@@ -12,7 +12,6 @@ namespace WindowsFormsApplication8
 {
     public partial class FormOfSelectWorkpiece : Form
     {
-        string h; double Ra_min, Ra_max; string l;
         public FormOfSelectWorkpiece()
         {
             InitializeComponent();
@@ -67,5 +66,4 @@ namespace WindowsFormsApplication8
             EventKeyPressForTextBox.keyPressForTextBoxWithDouble(sender, e);
         }
     }
-
 }

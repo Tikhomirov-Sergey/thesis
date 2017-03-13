@@ -28,13 +28,20 @@ namespace WindowsFormsApplication8.DataStuctures.InaccuracyOfPositioningPart
         public double getDeviationOfInstallation(double requiredSize)
         {
             double deviationOfInstallation = 0;
+            bool chekInterval = false;
 
             foreach (IntervalsAndDeviationOfInstallation intervalsAndDeviationOfInstallation in this.intervalsAndDeviationOfInstallation)
             {
                 if (intervalsAndDeviationOfInstallation.chekInterval(requiredSize))
                 {
+                    chekInterval = true;
                     deviationOfInstallation = intervalsAndDeviationOfInstallation.getDeviationOfInstallation();
                 }
+            }
+
+            if (!chekInterval)
+            {
+                throw new ErrorMessage("Введенный размер выходит за границы таблицы");
             }
 
             return deviationOfInstallation;

@@ -11,14 +11,24 @@ namespace WindowsFormsApplication8
 
         public double getCoefficient(double requiredSize)
         {
+                double coefficient = 0;
+                bool checkOfSize = false;
+
             foreach (DataStructures.CurvatureOfImpressionDieForgings.IntervalAndCoefficient intervalAndCoefficient in this.intervalAndCoefficient)
             {
                 if (intervalAndCoefficient.checkOfSize(requiredSize))
                 {
-                    return intervalAndCoefficient.coefficient;
-                }
+                    checkOfSize = true;
+                    coefficient = intervalAndCoefficient.coefficient;
+                }   
             }
-            return 0;
+
+            if (!checkOfSize)
+            {
+                throw new ErrorMessage("Введенный размер выходит за границы таблицы");
+            }
+
+            return coefficient;
         }
     }
 }

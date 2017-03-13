@@ -12,9 +12,12 @@ namespace WindowsFormsApplication8
             openingOfFormOfSelectWorkpriece();
             ParametersWorkpiece workpiece = Part.getWorkpiece();
 
-            string nameOfWorkpiece = workpiece.getNameOfWorkpiece();
-            insertNameOfWorkpieceInTreeViewAndTextBox(form, nameOfWorkpiece);
-            enabledTextBoxes(form);
+            if (workpiece != null)
+            {
+                string nameOfWorkpiece = workpiece.getNameOfWorkpiece();
+                insertNameOfWorkpieceInTreeViewAndTextBox(form, nameOfWorkpiece);
+                enabledTextBoxes(form);
+            }
         }
 
         private static void openingOfFormOfSelectWorkpriece()
@@ -35,8 +38,6 @@ namespace WindowsFormsApplication8
             form.Backspace.Enabled = true;
             form.CalculationOfSchema.Enabled = true;
             form.TypeOfInstrument.Enabled = true;
-            form.richTextBox2.Enabled = true;
-            form.buttontext.Enabled = true;
         }
 
         private static void insertNameOfWorkpieceInTreeViewAndTextBox(MainForm form, string nameOfWorkpiece)
@@ -49,7 +50,6 @@ namespace WindowsFormsApplication8
             {
                 form.treeView1.Nodes[0].Text = nameOfWorkpiece;
             }
-
             form.NameOfWorkpiece.Text = nameOfWorkpiece;
         }
     }

@@ -72,13 +72,14 @@
     <Compile Include="Classes\CalculationOfSurface\ClassesToCalculate\DeviationOfInstallation.cs" />
     <Compile Include="Classes\CalculationOfSurface\ClassesToCalculate\SizeOfWorkprieceAfterOperation.cs" />
     <Compile Include="Classes\CalculationOfSurface\ClassesToCalculate\SpatialDeviation.cs" />
-    <Compile Include="Classes\CheckString.cs" />
+    <Compile Include="Classes\AuxiliaryСlasses\CheckString.cs" />
     <Compile Include="Classes\Events\FormSelectWorkpriece\EventClickOnButtonOfSelectWorkpriece.cs" />
     <Compile Include="Classes\Events\MainForm\EventClickOnButtonOfCalculationPart.cs" />
     <Compile Include="Classes\Events\MainForm\EventClickOnButtonOfSelectOperations.cs" />
     <Compile Include="Classes\Events\EventClickOfMouseOnTreeViewNode.cs" />
     <Compile Include="Classes\Events\MainForm\EventClickOnButtonOfSelectWorkpriece.cs" />
-    <Compile Include="Classes\Events\EventKeyPressForTextBox.cs" />
+    <Compile Include="Classes\AuxiliaryСlasses\EventKeyPressForTextBox.cs" />
+    <Compile Include="Classes\Exception\ErrorMessage.cs" />
     <Compile Include="Classes\StorageOfSelectedOperation.cs" />
     <Compile Include="Classes\StorageOfSelectedWorkpiece.cs" />
     <Compile Include="Classes\XMLClasses\XMLtoObject.cs" />
@@ -225,9 +226,7 @@
       <Install>true</Install>
     </BootstrapperPackage>
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Classes\Exception\" />
-  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
