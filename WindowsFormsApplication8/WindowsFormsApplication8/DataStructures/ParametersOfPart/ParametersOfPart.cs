@@ -29,6 +29,20 @@ namespace WindowsFormsApplication8
             this.allowance = allowance;
             this.holeDepth = holeDepth;
         }
+
+        public void insertParametersOfPartInTextboxes(MainForm form)
+        {
+            form.LengthOfPart.Text = this.lengthOfPart.ToString();
+            form.DiameterOfPart.Text = this.diameterOfPart.ToString();
+
+            form.TypeOfPart.SelectedIndex = this.typeOfPart;
+            form.TypeOfAllowance.SelectedIndex = this.typeOfAllowance;
+            form.TypeOfProcessedSurface.SelectedIndex = this.typeOfProcessedSurface;
+
+            form.Allowance.Text = this.allowance.ToString();
+            form.HoleDepth.Text = this.holeDepth.ToString();
+        }
+
         public double getLengthOfPart()
         {
             return this.lengthOfPart;

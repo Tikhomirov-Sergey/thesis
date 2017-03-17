@@ -72,15 +72,20 @@ namespace WindowsFormsApplication8
 
         private static void checkSurface(int indexSurface)
         {
-            if (SurfaceIsNull(surfaces[indexSurface]))
+            if (surfaceIsNull(surfaces[indexSurface]))
             {
                 surfaces[indexSurface] = new Surface();
             }
         }
 
-        private static bool SurfaceIsNull(Surface surface)
+        private static bool surfaceIsNull(Surface surface)
         {
             return (surface == null);
+        }
+
+        public static void insertParametersOfPartInTextboxes(MainForm form)
+        {
+            parametersOfPart.insertParametersOfPartInTextboxes(form);
         }
     }
 }

@@ -1,6 +1,6 @@
 ﻿namespace WindowsFormsApplication8
 {
-    partial class Form4
+    partial class FormOfWorkWithDatabase
     {
         /// <summary>
         /// Required designer variable.
@@ -30,6 +30,19 @@
         {
             this.components = new System.ComponentModel.Container();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.номерДеталиDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.naimenovanieDetaliDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.датаDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.длинаДеталиLмDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.диаметрDLМмDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.допускTdTLМмDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.шероховатостьRzМкмDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.глубинаhyDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.типРазмераDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.типОбработаннойПоверхностиDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.типПрипускаDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.видЗаготовкиDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.oboznacheniePoverhnostiDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.детальBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.bindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.juliaDataSet = new WindowsFormsApplication8.juliaDataSet();
@@ -60,19 +73,6 @@
             this.button4 = new System.Windows.Forms.Button();
             this.textBox2 = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
-            this.номерДеталиDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.naimenovanieDetaliDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.датаDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.длинаДеталиLмDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.диаметрDLМмDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.допускTdTLМмDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.шероховатостьRzМкмDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.глубинаhyDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.типРазмераDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.типОбработаннойПоверхностиDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.типПрипускаDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.видЗаготовкиDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.oboznacheniePoverhnostiDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.детальBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.bindingSource)).BeginInit();
@@ -105,6 +105,85 @@
             this.dataGridView1.Size = new System.Drawing.Size(1346, 214);
             this.dataGridView1.TabIndex = 0;
             this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
+            // 
+            // номерДеталиDataGridViewTextBoxColumn
+            // 
+            this.номерДеталиDataGridViewTextBoxColumn.DataPropertyName = "Номер детали";
+            this.номерДеталиDataGridViewTextBoxColumn.HeaderText = "Номер детали";
+            this.номерДеталиDataGridViewTextBoxColumn.Name = "номерДеталиDataGridViewTextBoxColumn";
+            this.номерДеталиDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // naimenovanieDetaliDataGridViewTextBoxColumn
+            // 
+            this.naimenovanieDetaliDataGridViewTextBoxColumn.DataPropertyName = "NaimenovanieDetali";
+            this.naimenovanieDetaliDataGridViewTextBoxColumn.HeaderText = "Наименование детали";
+            this.naimenovanieDetaliDataGridViewTextBoxColumn.Name = "naimenovanieDetaliDataGridViewTextBoxColumn";
+            // 
+            // датаDataGridViewTextBoxColumn
+            // 
+            this.датаDataGridViewTextBoxColumn.DataPropertyName = "Дата";
+            this.датаDataGridViewTextBoxColumn.HeaderText = "Дата";
+            this.датаDataGridViewTextBoxColumn.Name = "датаDataGridViewTextBoxColumn";
+            // 
+            // длинаДеталиLмDataGridViewTextBoxColumn
+            // 
+            this.длинаДеталиLмDataGridViewTextBoxColumn.DataPropertyName = "Длина детали l,м";
+            this.длинаДеталиLмDataGridViewTextBoxColumn.HeaderText = "Длина детали l,м";
+            this.длинаДеталиLмDataGridViewTextBoxColumn.Name = "длинаДеталиLмDataGridViewTextBoxColumn";
+            // 
+            // диаметрDLМмDataGridViewTextBoxColumn
+            // 
+            this.диаметрDLМмDataGridViewTextBoxColumn.DataPropertyName = "Диаметр d(L), мм";
+            this.диаметрDLМмDataGridViewTextBoxColumn.HeaderText = "Диаметр d(L), мм";
+            this.диаметрDLМмDataGridViewTextBoxColumn.Name = "диаметрDLМмDataGridViewTextBoxColumn";
+            // 
+            // допускTdTLМмDataGridViewTextBoxColumn
+            // 
+            this.допускTdTLМмDataGridViewTextBoxColumn.DataPropertyName = "Допуск Td(TL), мм";
+            this.допускTdTLМмDataGridViewTextBoxColumn.HeaderText = "Допуск Td(TL), мм";
+            this.допускTdTLМмDataGridViewTextBoxColumn.Name = "допускTdTLМмDataGridViewTextBoxColumn";
+            // 
+            // шероховатостьRzМкмDataGridViewTextBoxColumn
+            // 
+            this.шероховатостьRzМкмDataGridViewTextBoxColumn.DataPropertyName = "Шероховатость Rz, мкм";
+            this.шероховатостьRzМкмDataGridViewTextBoxColumn.HeaderText = "Шероховатость Rz, мкм";
+            this.шероховатостьRzМкмDataGridViewTextBoxColumn.Name = "шероховатостьRzМкмDataGridViewTextBoxColumn";
+            // 
+            // глубинаhyDataGridViewTextBoxColumn
+            // 
+            this.глубинаhyDataGridViewTextBoxColumn.DataPropertyName = "Глубина(hy)";
+            this.глубинаhyDataGridViewTextBoxColumn.HeaderText = "Глубина(hy)";
+            this.глубинаhyDataGridViewTextBoxColumn.Name = "глубинаhyDataGridViewTextBoxColumn";
+            // 
+            // типРазмераDataGridViewTextBoxColumn
+            // 
+            this.типРазмераDataGridViewTextBoxColumn.DataPropertyName = "Тип размера";
+            this.типРазмераDataGridViewTextBoxColumn.HeaderText = "Тип размера";
+            this.типРазмераDataGridViewTextBoxColumn.Name = "типРазмераDataGridViewTextBoxColumn";
+            // 
+            // типОбработаннойПоверхностиDataGridViewTextBoxColumn
+            // 
+            this.типОбработаннойПоверхностиDataGridViewTextBoxColumn.DataPropertyName = "Тип обработанной поверхности";
+            this.типОбработаннойПоверхностиDataGridViewTextBoxColumn.HeaderText = "Тип обработанной поверхности";
+            this.типОбработаннойПоверхностиDataGridViewTextBoxColumn.Name = "типОбработаннойПоверхностиDataGridViewTextBoxColumn";
+            // 
+            // типПрипускаDataGridViewTextBoxColumn
+            // 
+            this.типПрипускаDataGridViewTextBoxColumn.DataPropertyName = "Тип припуска";
+            this.типПрипускаDataGridViewTextBoxColumn.HeaderText = "Тип припуска";
+            this.типПрипускаDataGridViewTextBoxColumn.Name = "типПрипускаDataGridViewTextBoxColumn";
+            // 
+            // видЗаготовкиDataGridViewTextBoxColumn
+            // 
+            this.видЗаготовкиDataGridViewTextBoxColumn.DataPropertyName = "Вид заготовки";
+            this.видЗаготовкиDataGridViewTextBoxColumn.HeaderText = "Вид заготовки";
+            this.видЗаготовкиDataGridViewTextBoxColumn.Name = "видЗаготовкиDataGridViewTextBoxColumn";
+            // 
+            // oboznacheniePoverhnostiDataGridViewTextBoxColumn
+            // 
+            this.oboznacheniePoverhnostiDataGridViewTextBoxColumn.DataPropertyName = "OboznacheniePoverhnosti";
+            this.oboznacheniePoverhnostiDataGridViewTextBoxColumn.HeaderText = "Обозначение поверхности";
+            this.oboznacheniePoverhnostiDataGridViewTextBoxColumn.Name = "oboznacheniePoverhnostiDataGridViewTextBoxColumn";
             // 
             // детальBindingSource
             // 
@@ -145,9 +224,9 @@
             this.квалитетDataGridViewTextBoxColumn});
             this.dataGridView2.DataSource = this.fKПереходыДетальBindingSource;
             this.dataGridView2.GridColor = System.Drawing.SystemColors.ButtonShadow;
-            this.dataGridView2.Location = new System.Drawing.Point(15, 300);
+            this.dataGridView2.Location = new System.Drawing.Point(-22, 317);
             this.dataGridView2.Name = "dataGridView2";
-            this.dataGridView2.Size = new System.Drawing.Size(1346, 216);
+            this.dataGridView2.Size = new System.Drawing.Size(1541, 216);
             this.dataGridView2.TabIndex = 1;
             // 
             // номерДеталиDataGridViewTextBoxColumn1
@@ -327,86 +406,7 @@
             this.label2.TabIndex = 10;
             this.label2.Text = "Поиск по\r\nнаименованию\r\nдетали:";
             // 
-            // номерДеталиDataGridViewTextBoxColumn
-            // 
-            this.номерДеталиDataGridViewTextBoxColumn.DataPropertyName = "Номер детали";
-            this.номерДеталиDataGridViewTextBoxColumn.HeaderText = "Номер детали";
-            this.номерДеталиDataGridViewTextBoxColumn.Name = "номерДеталиDataGridViewTextBoxColumn";
-            this.номерДеталиDataGridViewTextBoxColumn.ReadOnly = true;
-            // 
-            // naimenovanieDetaliDataGridViewTextBoxColumn
-            // 
-            this.naimenovanieDetaliDataGridViewTextBoxColumn.DataPropertyName = "NaimenovanieDetali";
-            this.naimenovanieDetaliDataGridViewTextBoxColumn.HeaderText = "Наименование детали";
-            this.naimenovanieDetaliDataGridViewTextBoxColumn.Name = "naimenovanieDetaliDataGridViewTextBoxColumn";
-            // 
-            // датаDataGridViewTextBoxColumn
-            // 
-            this.датаDataGridViewTextBoxColumn.DataPropertyName = "Дата";
-            this.датаDataGridViewTextBoxColumn.HeaderText = "Дата";
-            this.датаDataGridViewTextBoxColumn.Name = "датаDataGridViewTextBoxColumn";
-            // 
-            // длинаДеталиLмDataGridViewTextBoxColumn
-            // 
-            this.длинаДеталиLмDataGridViewTextBoxColumn.DataPropertyName = "Длина детали l,м";
-            this.длинаДеталиLмDataGridViewTextBoxColumn.HeaderText = "Длина детали l,м";
-            this.длинаДеталиLмDataGridViewTextBoxColumn.Name = "длинаДеталиLмDataGridViewTextBoxColumn";
-            // 
-            // диаметрDLМмDataGridViewTextBoxColumn
-            // 
-            this.диаметрDLМмDataGridViewTextBoxColumn.DataPropertyName = "Диаметр d(L), мм";
-            this.диаметрDLМмDataGridViewTextBoxColumn.HeaderText = "Диаметр d(L), мм";
-            this.диаметрDLМмDataGridViewTextBoxColumn.Name = "диаметрDLМмDataGridViewTextBoxColumn";
-            // 
-            // допускTdTLМмDataGridViewTextBoxColumn
-            // 
-            this.допускTdTLМмDataGridViewTextBoxColumn.DataPropertyName = "Допуск Td(TL), мм";
-            this.допускTdTLМмDataGridViewTextBoxColumn.HeaderText = "Допуск Td(TL), мм";
-            this.допускTdTLМмDataGridViewTextBoxColumn.Name = "допускTdTLМмDataGridViewTextBoxColumn";
-            // 
-            // шероховатостьRzМкмDataGridViewTextBoxColumn
-            // 
-            this.шероховатостьRzМкмDataGridViewTextBoxColumn.DataPropertyName = "Шероховатость Rz, мкм";
-            this.шероховатостьRzМкмDataGridViewTextBoxColumn.HeaderText = "Шероховатость Rz, мкм";
-            this.шероховатостьRzМкмDataGridViewTextBoxColumn.Name = "шероховатостьRzМкмDataGridViewTextBoxColumn";
-            // 
-            // глубинаhyDataGridViewTextBoxColumn
-            // 
-            this.глубинаhyDataGridViewTextBoxColumn.DataPropertyName = "Глубина(hy)";
-            this.глубинаhyDataGridViewTextBoxColumn.HeaderText = "Глубина(hy)";
-            this.глубинаhyDataGridViewTextBoxColumn.Name = "глубинаhyDataGridViewTextBoxColumn";
-            // 
-            // типРазмераDataGridViewTextBoxColumn
-            // 
-            this.типРазмераDataGridViewTextBoxColumn.DataPropertyName = "Тип размера";
-            this.типРазмераDataGridViewTextBoxColumn.HeaderText = "Тип размера";
-            this.типРазмераDataGridViewTextBoxColumn.Name = "типРазмераDataGridViewTextBoxColumn";
-            // 
-            // типОбработаннойПоверхностиDataGridViewTextBoxColumn
-            // 
-            this.типОбработаннойПоверхностиDataGridViewTextBoxColumn.DataPropertyName = "Тип обработанной поверхности";
-            this.типОбработаннойПоверхностиDataGridViewTextBoxColumn.HeaderText = "Тип обработанной поверхности";
-            this.типОбработаннойПоверхностиDataGridViewTextBoxColumn.Name = "типОбработаннойПоверхностиDataGridViewTextBoxColumn";
-            // 
-            // типПрипускаDataGridViewTextBoxColumn
-            // 
-            this.типПрипускаDataGridViewTextBoxColumn.DataPropertyName = "Тип припуска";
-            this.типПрипускаDataGridViewTextBoxColumn.HeaderText = "Тип припуска";
-            this.типПрипускаDataGridViewTextBoxColumn.Name = "типПрипускаDataGridViewTextBoxColumn";
-            // 
-            // видЗаготовкиDataGridViewTextBoxColumn
-            // 
-            this.видЗаготовкиDataGridViewTextBoxColumn.DataPropertyName = "Вид заготовки";
-            this.видЗаготовкиDataGridViewTextBoxColumn.HeaderText = "Вид заготовки";
-            this.видЗаготовкиDataGridViewTextBoxColumn.Name = "видЗаготовкиDataGridViewTextBoxColumn";
-            // 
-            // oboznacheniePoverhnostiDataGridViewTextBoxColumn
-            // 
-            this.oboznacheniePoverhnostiDataGridViewTextBoxColumn.DataPropertyName = "OboznacheniePoverhnosti";
-            this.oboznacheniePoverhnostiDataGridViewTextBoxColumn.HeaderText = "Обозначение поверхности";
-            this.oboznacheniePoverhnostiDataGridViewTextBoxColumn.Name = "oboznacheniePoverhnostiDataGridViewTextBoxColumn";
-            // 
-            // Form4
+            // FormOfWorkWithDatabase
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -421,7 +421,7 @@
             this.Controls.Add(this.button1);
             this.Controls.Add(this.dataGridView2);
             this.Controls.Add(this.dataGridView1);
-            this.Name = "Form4";
+            this.Name = "FormOfWorkWithDatabase";
             this.Text = "База данных";
             this.Load += new System.EventHandler(this.Form4_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();

@@ -73,6 +73,7 @@
     <Compile Include="Classes\CalculationOfSurface\ClassesToCalculate\SizeOfWorkprieceAfterOperation.cs" />
     <Compile Include="Classes\CalculationOfSurface\ClassesToCalculate\SpatialDeviation.cs" />
     <Compile Include="Classes\AuxiliaryСlasses\CheckString.cs" />
+    <Compile Include="Classes\Events\FormOfWorkWithDatabase\EventClickOnButtonOfSelectPart.cs" />
     <Compile Include="Classes\Events\FormSelectWorkpriece\EventClickOnButtonOfSelectWorkpriece.cs" />
     <Compile Include="Classes\Events\MainForm\EventClickOnButtonOfCalculationPart.cs" />
     <Compile Include="Classes\Events\MainForm\EventClickOnButtonOfSelectOperations.cs" />
@@ -81,7 +82,6 @@
     <Compile Include="Classes\AuxiliaryСlasses\EventKeyPressForTextBox.cs" />
     <Compile Include="Classes\Exception\ErrorMessage.cs" />
     <Compile Include="Classes\StorageOfSelectedOperation.cs" />
-    <Compile Include="Classes\StorageOfSelectedWorkpiece.cs" />
     <Compile Include="Classes\XMLClasses\XMLtoObject.cs" />
     <Compile Include="Classes\XMLClasses\XMLtoTreeView.cs" />
     <Compile Include="Classes\CalculationOfSurface\CalculationOfSurface.cs" />
@@ -122,11 +122,11 @@
     <Compile Include="Form3.Designer.cs">
       <DependentUpon>Form3.cs</DependentUpon>
     </Compile>
-    <Compile Include="Form4.cs">
+    <Compile Include="FormOfWorkWithDatabase.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form4.Designer.cs">
-      <DependentUpon>Form4.cs</DependentUpon>
+    <Compile Include="FormOfWorkWithDatabase.Designer.cs">
+      <DependentUpon>FormOfWorkWithDatabase.cs</DependentUpon>
     </Compile>
     <Compile Include="Form5.cs">
       <SubType>Form</SubType>
@@ -154,8 +154,8 @@
     <EmbeddedResource Include="Form3.resx">
       <DependentUpon>Form3.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Form4.resx">
-      <DependentUpon>Form4.cs</DependentUpon>
+    <EmbeddedResource Include="FormOfWorkWithDatabase.resx">
+      <DependentUpon>FormOfWorkWithDatabase.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Form5.resx">
       <DependentUpon>Form5.cs</DependentUpon>

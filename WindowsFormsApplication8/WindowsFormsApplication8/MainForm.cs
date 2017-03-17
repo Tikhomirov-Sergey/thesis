@@ -15,9 +15,6 @@ namespace WindowsFormsApplication8
 {
     public partial class MainForm : Form
     {
-      
-         Form4 z = new Form4("");
-
         public MainForm()
         {
             InitializeComponent();
@@ -99,10 +96,13 @@ namespace WindowsFormsApplication8
             {
                 EventClickOnButtonOfCalculationPart.buttonOfCalculation(this);
                 double[] d = Part.getSurfaceOnIndex(0).getResultsOfCalculation().getSizeOfWorkprieceAfterOperation();
-
-                foreach (double g in d)
+                richTextBox1.Clear();
+                for(int i = 0; i <= Part.getSurfaceOnIndex(0).getNumberOfOperations(); i++)
                 {
-                    richTextBox1.Text += g.ToString() + "  ";
+                    ClassesToCalculate.ResultsOfCalculation f = Part.getSurfaceOnIndex(0).getResultsOfCalculation();
+                    
+                    richTextBox1.Text = richTextBox1.Text + "\n" + "__________" + i.ToString() + "______\n";
+                    richTextBox1.Text += " E= " + f.getdeviationOfInstallation()[i].ToString() + "\n P= " + f.getSpatialDeviation()[i].ToString() + "\n Znom= " + f.getNominalAllowance()[i].ToString() + "\n Size= " + f.getSizeOfWorkprieceAfterOperation()[i].ToString();
                 }
             }
             catch { }
@@ -149,10 +149,11 @@ namespace WindowsFormsApplication8
         
         private void открытьБДToolStripMenuItem_Click(object sender, EventArgs e)
         {
-           // try
+            // try
             //{
-                //  Hide();
-                z.ShowDialog();
+            //  Hide();
+            FormOfWorkWithDatabase z = new FormOfWorkWithDatabase("", this);
+            z.ShowDialog();
                 TreeOfOperations.Enabled = true;
                 richTextBox1.Enabled = true;
                 SurfaceRoughnessRz.Enabled = true;
@@ -408,12 +409,7 @@ namespace WindowsFormsApplication8
             catch { }
         }
     }
-               
-           
-
-
-
-        }
+}
         
 
         
