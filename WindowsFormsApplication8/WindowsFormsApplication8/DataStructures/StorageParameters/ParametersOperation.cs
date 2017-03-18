@@ -17,15 +17,28 @@ namespace WindowsFormsApplication8
         private double coefficientOfRefinement;
         private string typeOfInstrument;
 
+        public ParametersOperation(string typeOfMachining, string precisionOfMachining, double surfaceRoughnessRz,
+            Interval recommendedIntervalRz, int idOperation, double kvalitet, double thicknessOfDefectiveCoating, double coefficientOfRefinement)
+        {
+            this.typeOfMachining = typeOfMachining;
+            this.precisionOfMachining = precisionOfMachining;
+            this.surfaceRoughnessRz = surfaceRoughnessRz;
+            this.recommendedIntervalRz = recommendedIntervalRz;
+            this.idOperation = idOperation;
+            this.kvalitet = kvalitet;
+            this.thicknessOfDefectiveCoating = thicknessOfDefectiveCoating;
+            this.coefficientOfRefinement = coefficientOfRefinement;
+        }
+
         public ParametersOperation(string typeOfMachining, string precisionOfMachining, string surfaceRoughnessRz,
-            Interval recommendedIntervalRz, string idOperation, string kvalitet, string thicknessOfDefectiveCoating, string coefficientOfRefinement)
+           Interval recommendedIntervalRz, string idOperation, string kvalitet, string thicknessOfDefectiveCoating, string coefficientOfRefinement)
         {
             this.typeOfMachining = typeOfMachining;
             this.precisionOfMachining = precisionOfMachining;
             this.surfaceRoughnessRz = Convert.ToDouble(surfaceRoughnessRz);
             this.recommendedIntervalRz = recommendedIntervalRz;
             this.idOperation = Convert.ToInt32(idOperation);
-            this.kvalitet = Convert.ToDouble(kvalitet);
+            this.kvalitet = Convert.ToInt32(kvalitet);
             this.thicknessOfDefectiveCoating = Convert.ToDouble(thicknessOfDefectiveCoating);
             this.coefficientOfRefinement = Convert.ToDouble(coefficientOfRefinement);
         }
@@ -54,6 +67,10 @@ namespace WindowsFormsApplication8
             return this.precisionOfMachining;
         }
         
+        public void setSurfaceRoughnessRz(double surfaceRoughnessRz)
+        {
+            this.surfaceRoughnessRz = surfaceRoughnessRz;
+        }
         public void setSurfaceRoughnessRz(string surfaceRoughnessRz)
         {
             this.surfaceRoughnessRz = Convert.ToDouble(surfaceRoughnessRz);
@@ -76,6 +93,10 @@ namespace WindowsFormsApplication8
             return this.recommendedIntervalRz;
         }
 
+        public void setIdOperation(int idOperation)
+        {
+            this.idOperation = idOperation;
+        }
         public void setIdOperation(string idOperation)
         {
             this.idOperation = Convert.ToInt32(idOperation);
@@ -89,6 +110,10 @@ namespace WindowsFormsApplication8
             return Convert.ToString(this.idOperation);
         }
 
+        public void setKvalitet(double kvalitet)
+        {
+            this.kvalitet = kvalitet;
+        }
         public void setKvalitet(string kvalitet)
         {
             this.kvalitet = Convert.ToDouble(kvalitet);
@@ -102,6 +127,10 @@ namespace WindowsFormsApplication8
             return Convert.ToString(this.kvalitet);
         }
 
+        public void setThicknessOfDefectiveCoating(double thicknessOfDefectiveCoating)
+        {
+            this.thicknessOfDefectiveCoating = thicknessOfDefectiveCoating;
+        }
         public void setThicknessOfDefectiveCoating(string thicknessOfDefectiveCoating)
         {
             this.thicknessOfDefectiveCoating = Convert.ToDouble(thicknessOfDefectiveCoating);
@@ -115,6 +144,10 @@ namespace WindowsFormsApplication8
             return Convert.ToString(this.thicknessOfDefectiveCoating);
         }
 
+        public void setCoefficientOfRefinement(double coefficientOfRefinement)
+        {
+            this.coefficientOfRefinement = coefficientOfRefinement;
+        }
         public void setCoefficientOfRefinement(string coefficientOfRefinement)
         {
             this.coefficientOfRefinement = Convert.ToDouble(coefficientOfRefinement);

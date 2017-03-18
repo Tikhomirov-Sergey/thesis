@@ -7,16 +7,16 @@ namespace WindowsFormsApplication8
 {
     class ParametersWorkpiece
     {
-        private string nameOfWorkpiece ="";
-        private string idWorkpiece = "";
-        private string surfaceRoughnessRz = "";
-        private Interval recommendedIntervalRz = null;
-        private string kvalitet = "";
-        private string thicknessOfDefectiveCoating = "";
-        private string validOffsetSurface = "0";
+        private string nameOfWorkpiece;
+        private int idWorkpiece;
+        private double surfaceRoughnessRz;
+        private Interval recommendedIntervalRz;
+        private int kvalitet;
+        private double thicknessOfDefectiveCoating;
+        private double validOffsetSurface;
         
-        public ParametersWorkpiece(string nameOfWorkpiece, string idWorkpiece, string surfaceRoughnessRz,
-            Interval recommendedIntervalRz, string kvalitet, string thicknessOfDefectiveCoating, string validOffsetSurface = "0")
+        public ParametersWorkpiece(string nameOfWorkpiece, int idWorkpiece, double surfaceRoughnessRz,
+            Interval recommendedIntervalRz, int kvalitet, double thicknessOfDefectiveCoating, double validOffsetSurface = 0)
         {
             this.nameOfWorkpiece = nameOfWorkpiece;
             this.idWorkpiece = idWorkpiece;
@@ -30,11 +30,11 @@ namespace WindowsFormsApplication8
         public void insertParametersOfWorkpieceInTextboxes(FormOfSelectWorkpiece form)
         {
             form.NameOfWorkpiece.Text = this.getNameOfWorkpiece();
-            form.SurfaceRoughnessRz.Text = this.getSurfaceRoughnessRz();
-            form.ThicknessOfDefectiveCoating.Text = this.getThicknessOfDefectiveCoating();
-            form.Kvalitet.Text = this.getKvalitet();
+            form.SurfaceRoughnessRz.Text = this.getSurfaceRoughnessRzToString();
+            form.ThicknessOfDefectiveCoating.Text = this.getThicknessOfDefectiveCoatingToString();
+            form.Kvalitet.Text = this.getKvalitetToString();
 
-            string idWorkpieceStr = this.getIdWorkpiece();
+            string idWorkpieceStr = this.getIdWorkpieceToString();
             int idWorkpiece = Convert.ToInt32(idWorkpieceStr);
             if ((idWorkpiece == 2) || (idWorkpiece == 3))
             {
@@ -50,6 +50,19 @@ namespace WindowsFormsApplication8
             }
         }
 
+        public void insertNameOfWorkpieceInTreeViewAndTextBox(MainForm form)
+        {
+            if (form.treeView1.Nodes.Count == 0)
+            {
+                form.treeView1.Nodes.Add(this.nameOfWorkpiece);
+            }
+            else
+            {
+                form.treeView1.Nodes[0].Text = this.nameOfWorkpiece;
+            }
+            form.NameOfWorkpiece.Text = this.nameOfWorkpiece;
+        }
+
         public void setNameOfWorkpiece(string nameOfWorkpiece)
         {
             this.nameOfWorkpiece = nameOfWorkpiece;
@@ -59,69 +72,89 @@ namespace WindowsFormsApplication8
             return this.nameOfWorkpiece;
         }
         
-        public void setSurfaceRoughnessRz(string surfaceRoughnessRz)
+        public void setSurfaceRoughnessRz(double surfaceRoughnessRz)
         {
             this.surfaceRoughnessRz = surfaceRoughnessRz;
         }
-        public string getSurfaceRoughnessRz()
+        public void setSurfaceRoughnessRz(string surfaceRoughnessRz)
+        {
+            this.surfaceRoughnessRz = Convert.ToDouble(surfaceRoughnessRz);
+        }
+        public double getSurfaceRoughnessRz()
         {
             return this.surfaceRoughnessRz;
         }
-        public double getSurfaceRoughnessRzToDouble()
+        public string getSurfaceRoughnessRzToString()
         {
-            return Convert.ToDouble(this.surfaceRoughnessRz);
+            return Convert.ToString(this.surfaceRoughnessRz);
         }
 
-        public void setIdWorkpiece(string idWorkpiece)
+        public void setIdWorkpiece(int idWorkpiece)
         {
             this.idWorkpiece = idWorkpiece;
         }
-        public string getIdWorkpiece()
+        public void setIdWorkpiece(string idWorkpiece)
+        {
+            this.idWorkpiece = Convert.ToInt32(idWorkpiece);
+        }
+        public int getIdWorkpiece()
         {
             return this.idWorkpiece;
         }
-        public int getIdWorkpieceToInt()
+        public string getIdWorkpieceToString()
         {
-            return Convert.ToInt32(this.idWorkpiece);
+            return Convert.ToString(this.idWorkpiece);
         }
 
-        public void setKvalitet(string kvalitet)
+        public void setKvalitet(int kvalitet)
         {
             this.kvalitet = kvalitet;
         }
-        public string getKvalitet()
+        public void setKvalitet(string kvalitet)
+        {
+            this.kvalitet = Convert.ToInt32(kvalitet);
+        }
+        public int getKvalitet()
         {
             return this.kvalitet;
         }
-        public double getKvalitetToDouble()
+        public string getKvalitetToString()
         {
-            return Convert.ToDouble(this.kvalitet);
+            return Convert.ToString(this.kvalitet);
         }
 
-        public void setThicknessOfDefectiveCoating(string thicknessOfDefectiveCoating)
+        public void setThicknessOfDefectiveCoating(double thicknessOfDefectiveCoating)
         {
             this.thicknessOfDefectiveCoating = thicknessOfDefectiveCoating;
         }
-        public string getThicknessOfDefectiveCoating()
+        public void setThicknessOfDefectiveCoating(string thicknessOfDefectiveCoating)
+        {
+            this.thicknessOfDefectiveCoating = Convert.ToDouble(thicknessOfDefectiveCoating);
+        }
+        public double getThicknessOfDefectiveCoating()
         {
             return this.thicknessOfDefectiveCoating;
         }
-        public double getThicknessOfDefectiveCoatingToDouble()
+        public string getThicknessOfDefectiveCoatingToString()
         {
-            return Convert.ToDouble(this.thicknessOfDefectiveCoating);
+            return Convert.ToString(this.thicknessOfDefectiveCoating);
         }
 
-        public void setValidOffsetSurface(string validOffsetSurface)
+        public void setValidOffsetSurface(double validOffsetSurface)
         {
             this.validOffsetSurface = validOffsetSurface;
         }
-        public string getValidOffsetSurface()
+        public void setValidOffsetSurface(string validOffsetSurface)
+        {
+            this.validOffsetSurface = Convert.ToDouble(validOffsetSurface);
+        }
+        public double getValidOffsetSurface()
         {
             return this.validOffsetSurface;
         }
-        public double getValidOffsetSurfaceToDouble()
+        public string getValidOffsetSurfaceToDouble()
         {
-            return Convert.ToDouble(this.validOffsetSurface);
+            return Convert.ToString(this.validOffsetSurface);
         }
 
         public void setRecommendedIntervalRz(Interval interval)

@@ -224,7 +224,7 @@
             this.квалитетDataGridViewTextBoxColumn});
             this.dataGridView2.DataSource = this.fKПереходыДетальBindingSource;
             this.dataGridView2.GridColor = System.Drawing.SystemColors.ButtonShadow;
-            this.dataGridView2.Location = new System.Drawing.Point(-22, 317);
+            this.dataGridView2.Location = new System.Drawing.Point(101, 300);
             this.dataGridView2.Name = "dataGridView2";
             this.dataGridView2.Size = new System.Drawing.Size(1541, 216);
             this.dataGridView2.TabIndex = 1;
@@ -436,8 +436,6 @@
         }
 
         #endregion
-
-        private System.Windows.Forms.DataGridView dataGridView2;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.DataGridViewTextBoxColumn expr1DataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn expr2DataGridViewTextBoxColumn;
@@ -496,5 +494,6 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn видЗаготовкиDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn oboznacheniePoverhnostiDataGridViewTextBoxColumn;
         private System.Windows.Forms.Label label2;
+        protected internal System.Windows.Forms.DataGridView dataGridView2;
     }
 }

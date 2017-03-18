@@ -21,14 +21,14 @@ namespace WindowsFormsApplication8
         {
             return this.nameSurface;
         }
-        
+
         public void setOpetation(ParametersOperation operation)
         {
             int length = this.operations.Length;
-            Array.Resize(ref this.operations, length+1);
+            Array.Resize(ref this.operations, length + 1);
             this.operations[length] = operation;
         }
-        
+
         public ParametersOperation[] getOperations()
         {
             return this.operations;
@@ -48,7 +48,7 @@ namespace WindowsFormsApplication8
             int length = this.operations.Length;
             string[] list = new string[length];
 
-            for(int i = 0; i < length; i++)
+            for (int i = 0; i < length; i++)
             {
                 list[i] = this.operations[i].getNameOperation();
             }
@@ -82,13 +82,13 @@ namespace WindowsFormsApplication8
 
             ParametersWorkpiece workpiece = Part.getWorkpiece();
 
-            surfaceRoughnessRz[0] = workpiece.getSurfaceRoughnessRzToDouble();
-            kvalitets[0] = workpiece.getKvalitetToDouble();
-            thicknessOfDefectiveCoating[0] = workpiece.getThicknessOfDefectiveCoatingToDouble();
+            surfaceRoughnessRz[0] = workpiece.getSurfaceRoughnessRz();
+            kvalitets[0] = workpiece.getKvalitet();
+            thicknessOfDefectiveCoating[0] = workpiece.getThicknessOfDefectiveCoating();
 
-            idOperation[0] = workpiece.getIdWorkpieceToInt();
+            idOperation[0] = workpiece.getIdWorkpiece();
 
-            double validOffsetSurface = workpiece.getValidOffsetSurfaceToDouble();
+            double validOffsetSurface = workpiece.getValidOffsetSurface();
 
             for (int i = 0; i < this.getNumberOfOperations(); i++)
             {
@@ -110,6 +110,29 @@ namespace WindowsFormsApplication8
         public ClassesToCalculate.ResultsOfCalculation getResultsOfCalculation()
         {
             return this.resultsOfCalculation;
+        }
+
+        public void insertListOfOperationsInTreeView(MainForm form)
+        {
+            string[] listOfSurface = this.getListOperations();
+            int numberOfOperations = this.getNumberOfOperations();
+
+            for (int i = 1; i <= numberOfOperations; i++)
+            {
+                if (form.treeView1.Nodes.Count < i + 1)
+                {
+                    form.treeView1.Nodes.Add(listOfSurface[i - 1]);
+                }
+                else
+                {
+                    form.treeView1.Nodes[i].Text = listOfSurface[i - 1];
+                }
+            }
+
+            for(int i = numberOfOperations; i < form.treeView1.Nodes.Count; i++)
+            {
+                form.treeView1.Nodes.RemoveAt(i);
+            }
         }
     }
 }

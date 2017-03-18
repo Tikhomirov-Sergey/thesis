@@ -37,6 +37,17 @@ namespace WindowsFormsApplication8
             Array.Resize(ref surfaces, length + 1);
             surfaces[length] = operations;
         }
+        public static void setOpetations(Surface operations, int index)
+        {
+            if (surfaces.Length - 1 >= index)
+            {
+                surfaces[index] = operations;
+            }
+            else
+            {
+                setOpetations(operations);
+            }
+        }
 
         public static Surface[] getSurfaces()
         {
@@ -86,6 +97,23 @@ namespace WindowsFormsApplication8
         public static void insertParametersOfPartInTextboxes(MainForm form)
         {
             parametersOfPart.insertParametersOfPartInTextboxes(form);
+        }
+
+        public static void insertNameOfWorkpieceInTreeViewAndTextBox(MainForm form)
+        {
+            workpriece.insertNameOfWorkpieceInTreeViewAndTextBox(form);
+        }
+
+        public static void insertListOfOperationsInTreeView(MainForm form, int indexOfSurface = 0)
+        {
+            if(surfaces[indexOfSurface] != null)
+            {
+                surfaces[indexOfSurface].insertListOfOperationsInTreeView(form);
+            }
+            else
+            {
+                surfaces[0].insertListOfOperationsInTreeView(form);
+            }
         }
     }
 }

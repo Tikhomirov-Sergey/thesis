@@ -40,13 +40,13 @@ namespace WindowsFormsApplication8
             TreeNode node = e.Node;
 
             string nameOfWorkpiece = node.Text;
-            string kvalitet = node.FirstNode.FirstNode.Text;
-            string thicknessOfDefectiveCoating = node.FirstNode.NextNode.NextNode.FirstNode.Text;
-            string idWorkpiece = node.FirstNode.NextNode.NextNode.NextNode.FirstNode.Text;
+            int kvalitet = Convert.ToInt32(node.FirstNode.FirstNode.Text);
+            double thicknessOfDefectiveCoating = Convert.ToDouble(node.FirstNode.NextNode.NextNode.FirstNode.Text);
+            int idWorkpiece = Convert.ToInt32(node.FirstNode.NextNode.NextNode.NextNode.FirstNode.Text);
 
             string stringRz = node.FirstNode.NextNode.FirstNode.Text;
             string[] splitStringRz = parseStringRz(stringRz);
-            string surfaceRoughnessRz = splitStringRz[0];
+            double surfaceRoughnessRz = Convert.ToDouble(splitStringRz[0]);
 
             string stringRecommendedIntervalRz = splitStringRz[1];
             string[] splitStringRecommendedIntervalRz = parseStringRecommendedIntervalRz(stringRecommendedIntervalRz);

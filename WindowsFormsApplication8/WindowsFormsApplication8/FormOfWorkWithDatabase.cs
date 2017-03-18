@@ -73,12 +73,5 @@ namespace WindowsFormsApplication8
                 this.переходыTableAdapter.Update(this.juliaDataSet.Переходы);
             }
         }
-
-        
-        
-             
-                
-     
-        
     }
 }
