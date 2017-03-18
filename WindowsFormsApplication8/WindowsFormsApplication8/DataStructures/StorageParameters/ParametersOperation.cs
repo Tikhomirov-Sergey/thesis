@@ -18,7 +18,7 @@ namespace WindowsFormsApplication8
         private string typeOfInstrument;
 
         public ParametersOperation(string typeOfMachining, string precisionOfMachining, double surfaceRoughnessRz,
-            Interval recommendedIntervalRz, int idOperation, double kvalitet, double thicknessOfDefectiveCoating, double coefficientOfRefinement)
+            Interval recommendedIntervalRz, int idOperation, double kvalitet, double thicknessOfDefectiveCoating, double coefficientOfRefinement, string typeOfInstrument = "не выбрано")
         {
             this.typeOfMachining = typeOfMachining;
             this.precisionOfMachining = precisionOfMachining;
@@ -28,10 +28,11 @@ namespace WindowsFormsApplication8
             this.kvalitet = kvalitet;
             this.thicknessOfDefectiveCoating = thicknessOfDefectiveCoating;
             this.coefficientOfRefinement = coefficientOfRefinement;
+            this.typeOfInstrument = typeOfInstrument;
         }
 
         public ParametersOperation(string typeOfMachining, string precisionOfMachining, string surfaceRoughnessRz,
-           Interval recommendedIntervalRz, string idOperation, string kvalitet, string thicknessOfDefectiveCoating, string coefficientOfRefinement)
+           Interval recommendedIntervalRz, string idOperation, string kvalitet, string thicknessOfDefectiveCoating, string coefficientOfRefinement, string typeOfInstrument = "не выбрано")
         {
             this.typeOfMachining = typeOfMachining;
             this.precisionOfMachining = precisionOfMachining;
@@ -41,6 +42,7 @@ namespace WindowsFormsApplication8
             this.kvalitet = Convert.ToInt32(kvalitet);
             this.thicknessOfDefectiveCoating = Convert.ToDouble(thicknessOfDefectiveCoating);
             this.coefficientOfRefinement = Convert.ToDouble(coefficientOfRefinement);
+            this.typeOfInstrument = typeOfInstrument;
         }
 
         public string getNameOperation()

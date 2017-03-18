@@ -123,25 +123,6 @@ namespace WindowsFormsApplication8
             catch { SurfaceRoughnessRa.Text = ""; }
         }
 
-        private void buttontext_Click(object sender, EventArgs e)
-        {
-
-           /* System.IO.StreamWriter textFile = new System.IO.StreamWriter(@"textfile.txt");
-        //Последовательность переходов
-
-            textFile.WriteLine();
-            textFile.WriteLine("Последовательность переходов");
-            textFile.WriteLine(l);
-            
-            // Исходые данные
-            textFile.WriteLine();
-            textFile.WriteLine("");
-            textFile.WriteLine(l2);
-            //
-            textFile.Close();*/
-        
-        }
-
         private void comboBox1_TextChanged(object sender, EventArgs e)
         {
             if (TypeOfPart.SelectedIndex == 0) { HoleDepth.Visible = false; label17.Visible = false; } else { label17.Visible = true; HoleDepth.Visible = true; }
@@ -149,11 +130,8 @@ namespace WindowsFormsApplication8
         
         private void открытьБДToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            // try
-            //{
-            //  Hide();
-            FormOfWorkWithDatabase z = new FormOfWorkWithDatabase("", this);
-            z.ShowDialog();
+            FormOfWorkWithDatabase formOfWorkWithDatabase = new FormOfWorkWithDatabase("", this);
+            formOfWorkWithDatabase.ShowDialog();
                 TreeOfOperations.Enabled = true;
                 richTextBox1.Enabled = true;
                 SurfaceRoughnessRz.Enabled = true;
@@ -165,115 +143,6 @@ namespace WindowsFormsApplication8
                 CalculationOfSchema.Enabled = true;
                 TypeOfInstrument.Enabled = true;
                 SurfaceRoughnessRa.Enabled = true;
-                //stroka = z.Data;
-
-                /*split_data1 = stroka.Split(new Char[] { '-' });
-
-
-                DiameterOfPart.Text = split_data1[1]; LengthOfPart.Text = split_data1[0];
-                per[0] = "0 - " + split_data1[2]; NameOfWorkpiece.Text = split_data1[2];
-                Rz[0] = Convert.ToDouble(split_data1[3]); h[0] = Convert.ToDouble(split_data1[4]); T[0] = Convert.ToDouble(split_data1[5]);
-                id[0] = split_data1[7][0];
-                Pcm = Convert.ToDouble(split_data1[6]);
-                prib[0] = " ";
-                id_per[0] = 0;
-                richTextBox1.Text = per[0] + "";
-
-                l = per[0] + "";
-
-                i = Convert.ToInt32(split_data1[8]) - 1;
-                Array.Resize(ref Rz, i); Array.Resize(ref h, i); Array.Resize(ref T, i); Array.Resize(ref CombInd, i); Array.Resize(ref per, i); Array.Resize(ref K, i); Array.Resize(ref E1, i); Array.Resize(ref E, i); Array.Resize(ref prib, i); Array.Resize(ref per, i); Array.Resize(ref id, i); Array.Resize(ref id_per, i); Array.Resize(ref Epr, i);
-                int hhn = 0; Epr[0] = false; CombInd[0] = 0;
-                int nom1 = t1.Length / 12;
-                for (int yu = 0; yu < nom1; yu++)
-                {
-                    if (t1[yu, 0][0] != ' ')
-                    {
-                        hhn++; Array.Resize(ref hh, hhn); Array.Resize(ref mas1, hhn);
-                        hh[hhn - 1] = t1[yu, 0]; mas1[hhn - 1] = yu;
-
-                    }
-                }
-
-
-
-                for (int u = 1; u < i; u++)
-                {
-
-
-                    Rz[u] = Convert.ToDouble(split_data1[10 + (7 * (u - 1))]);
-                    h[u] = Convert.ToDouble(split_data1[11 + (7 * (u - 1))]);
-                    T[u] = Convert.ToDouble(split_data1[12 + (7 * (u - 1))]);
-                    K[u] = Convert.ToDouble(split_data1[13 + (7 * (u - 1))]);
-                    CombInd[u] = Convert.ToInt32(split_data1[14 + (7 * (u - 1))]);
-                    id[u] = (split_data1[15 + (7 * (u - 1))])[0];
-                    if (CombInd[u] == 0) { CombInd[u] = CombInd[u - 1]; }
-                    if (CombInd[u] == CombInd[u - 1]) { Epr[u] = false; } else { Epr[u] = true; }
-                    prib[u] = hh[CombInd[u]];
-                    split_data2 = split_data1[9 + (7 * (u - 1))].Split(new Char[] { ',' });
-                    per[u] = Convert.ToString(u) + " - " + split_data2[0] + "(" + split_data2[1] + "," + prib[u] + ")";
-                    richTextBox1.Text = richTextBox1.Text + "," + "\n" + per[u];
-                    l = l + "," + "\r\n" + per[u];
-                }
-                //    h[u] = Convert.ToDouble(split_data1[11 + (7 * (u - 1))]);
-                string tip_det = split_data1[11 + (7 * (i - 1))];
-
-                if (tip_det.Contains("двухсторонний"))
-                { TypeOfAllowance.SelectedIndex = 0;      }
-
-                else { TypeOfAllowance.SelectedIndex = 1;           }
-                tip_det = split_data1[10 + (7 * (i - 1))];
-
-
-
-                if (tip_det.Contains("цилиндрическая"))
-                { TypeOfProcessedSurface.SelectedIndex = 0; }
-                else { TypeOfProcessedSurface.SelectedIndex = 1; }
-                tip_det = split_data1[9 + (7 * (i - 1))];
-
-
-                if (tip_det.Contains("вал"))
-                { TypeOfPart.SelectedIndex = 0; }
-                else { TypeOfPart.SelectedIndex = 1; }
-                HoleDepth.Text = split_data1[12 + (7 * (i - 1))];
-                for (int u = 1; u < i; u++)
-                {
-                    for (nom1 = mas1[CombInd[u]]; nom1 < mas1[CombInd[u] + 1]; nom1++)
-                    {
-                        int hh_dlin = t1[nom1, 1].Length;
-                        for (int nom2 = 0; nom2 < hh_dlin; nom2++)
-                        {
-                            if (t1[nom1, 1][nom2].Equals(id[u - 1]))
-                            {
-
-                                E1[u] = nom1;
-                            }
-                        }
-                    }
-
-                }
-
-
-            }
-            catch
-            {
-                TreeOfOperations.Enabled = false;
-                richTextBox1.Enabled = false;
-                SurfaceRoughnessRz.Enabled = false;
-                ThicknessOfDefectiveCoating.Enabled = false;
-                Kvalitet.Enabled = false;
-                PrecisionOfMachining.Enabled = false;
-                TypeOfMachining.Enabled = false;
-                CoefficientOfRefinement.Enabled = false;
-                ChoiceOfOperation.Enabled = false;
-                Backspace.Enabled = false;
-                CalculationOfSchema.Enabled = false;
-                TypeOfInstrument.Enabled = false;
-                richTextBox2.Enabled = false;
-                SurfaceRoughnessRa.Enabled = false;
-                buttontext.Enabled = false;
-            }*/
-            
         }
 
         private void textBox12_Click(object sender, EventArgs e)

@@ -116,7 +116,7 @@ namespace WindowsFormsApplication8
             double coefficientOfRefinement = Convert.ToDouble(form.dataGridView2[13, index].Value.ToString()); ;
             string typeOfInstrument = form.dataGridView2[3, index].Value.ToString();
 
-            ParametersOperation parametersOperation = new ParametersOperation(typeOfMachining, precisionOfMachining, surfaceRoughnessRz, recommendedIntervalRz, idOperation, kvalitet, thicknessOfDefectiveCoating, coefficientOfRefinement);
+            ParametersOperation parametersOperation = new ParametersOperation(typeOfMachining, precisionOfMachining, surfaceRoughnessRz, recommendedIntervalRz, idOperation, kvalitet, thicknessOfDefectiveCoating, coefficientOfRefinement, typeOfInstrument);
 
             return parametersOperation;
         }
