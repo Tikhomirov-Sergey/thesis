@@ -29,7 +29,7 @@ namespace WindowsFormsApplication8
         public static void enabledTextBoxes(MainForm form)
         {
             form.TreeOfOperations.Enabled = true;
-            form.richTextBox1.Enabled = true;
+            form.treeView1.Enabled = true;
             form.SurfaceRoughnessRz.Enabled = true;
             form.SurfaceRoughnessRa.Enabled = true;
             form.PrecisionOfMachining.Enabled = true;

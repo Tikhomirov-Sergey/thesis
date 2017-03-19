@@ -134,5 +134,16 @@ namespace WindowsFormsApplication8
                 form.treeView1.Nodes.RemoveAt(i);
             }
         }
+
+        public void deleteOperation(int indexOfOperation)
+        {
+            try
+            {
+                List<ParametersOperation> parametersOperationToList = this.operations.ToList<ParametersOperation>();
+                parametersOperationToList.RemoveAt(indexOfOperation);
+                this.operations = parametersOperationToList.ToArray<ParametersOperation>();
+            }
+            catch { }
+        }
     }
 }

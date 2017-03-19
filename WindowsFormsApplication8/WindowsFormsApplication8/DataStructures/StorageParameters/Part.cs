@@ -64,11 +64,11 @@ namespace WindowsFormsApplication8
             catch { }
         }
 
-        public static Surface getSurfaceOnIndex(int indexSurface)
+        public static Surface getSurfaceOnIndex(int indexOfSurface)
         {
             try
             { 
-                return surfaces[indexSurface];
+                return surfaces[indexOfSurface];
             }
             catch { return null; }
         }
@@ -114,6 +114,15 @@ namespace WindowsFormsApplication8
             {
                 surfaces[0].insertListOfOperationsInTreeView(form);
             }
+        }
+
+        public static void deleteOperation(int indexOfSurface, int indexOfOperation)
+        {
+            try
+            {
+                getSurfaceOnIndex(indexOfSurface).deleteOperation(indexOfOperation);
+            }
+            catch { }
         }
     }
 }

@@ -23,33 +23,27 @@ namespace WindowsFormsApplication8
 
         private void FormResult_Load(object sender, EventArgs e)
         {
-            // 0 -BAL 1-otverstie
-            //   EventClickOnButtonOfCalculationPart.buttonOfCalculation(form);
-            //   MessageBox.Show(Part.getSurfaceOnIndex(0).getTypeOfPart());
             int typeOfPart = Part.getParametersOfPart().getTypeOfPart();
             char type;
-                if (typeOfPart == 0)
+
+            if (typeOfPart == 0)
                 {
-                type = '-';
+                    type = '-';
                 }
-                else
+            else
                 {
-                type = '+';
-                };
-            Part.getParametersOfPart().getAllowance();
-            double[] bb = Part.getSurfaceOnIndex(0).getResultsOfCalculation().getAccuracies();
+                    type = '+';
+                }
 
+            ClassesToCalculate.ResultsOfCalculation resultsOfCalculation = Part.getSurfaceOnIndex(0).getResultsOfCalculation();
 
-            double[] d = Part.getSurfaceOnIndex(0).getResultsOfCalculation().getSizeOfWorkprieceAfterOperation();
-            ClassesToCalculate.ResultsOfCalculation f = Part.getSurfaceOnIndex(0).getResultsOfCalculation();
-            richTextBoxResult.Text = "Исходные данные: " + Part.getWorkpiece().getNameOfWorkpiece() + "\nСоставляющая припуска P= " + f.getSpatialDeviation()[0].ToString() + "\nРазмер= " + f.getSizeOfWorkprieceAfterOperation()[0].ToString() + "(" + type + Part.getSurfaceOnIndex(0).getResultsOfCalculation().getAccuracies()[0] + ")";
+            richTextBoxResult.Text = "Исходные данные: " + Part.getWorkpiece().getNameOfWorkpiece() + "\nСоставляющая припуска P= " + resultsOfCalculation.getSpatialDeviation()[0].ToString() + "\nРазмер= " + resultsOfCalculation.getSizeOfWorkprieceAfterOperation()[0].ToString() + "(" + type + Part.getSurfaceOnIndex(0).getResultsOfCalculation().getAccuracies()[0] + ")";
 
             for (int i = 1; i <= Part.getSurfaceOnIndex(0).getNumberOfOperations(); i++)
             {
-                double Ld = Part.getSurfaceOnIndex(0).getResultsOfCalculation().getAccuracies()[0];
                 richTextBoxResult.Text += "\n" + i.ToString() + ") ";
                 richTextBoxResult.Text += Part.getSurfaceOnIndex(0).getListOperations()[i-1];
-                richTextBoxResult.Text += "\nСоставляющая припуска E= " + f.getdeviationOfInstallation()[i].ToString() + "\nСоставляющая припуска P= " + f.getSpatialDeviation()[i].ToString() + "\nВеличина номинального припуска Znom= " + f.getNominalAllowance()[i].ToString() + "\nРазмер= " + f.getSizeOfWorkprieceAfterOperation()[i].ToString() + "(" + type + Part.getSurfaceOnIndex(0).getResultsOfCalculation().getAccuracies()[i]+ ")";
+                richTextBoxResult.Text += "\nСоставляющая припуска E= " + resultsOfCalculation.getdeviationOfInstallation()[i].ToString() + "\nСоставляющая припуска P= " + resultsOfCalculation.getSpatialDeviation()[i].ToString() + "\nВеличина номинального припуска Znom= " + resultsOfCalculation.getNominalAllowance()[i].ToString() + "\nРазмер= " + resultsOfCalculation.getSizeOfWorkprieceAfterOperation()[i].ToString() + "(" + type + Part.getSurfaceOnIndex(0).getResultsOfCalculation().getAccuracies()[i]+ ")";
             }
         }
 

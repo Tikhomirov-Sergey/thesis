@@ -43,7 +43,6 @@
             this.SurfaceRoughnessRz = new System.Windows.Forms.TextBox();
             this.ThicknessOfDefectiveCoating = new System.Windows.Forms.TextBox();
             this.Kvalitet = new System.Windows.Forms.TextBox();
-            this.richTextBox1 = new System.Windows.Forms.RichTextBox();
             this.ChoiceOfWorkpiece = new System.Windows.Forms.Button();
             this.PrecisionOfMachining = new System.Windows.Forms.TextBox();
             this.TypeOfMachining = new System.Windows.Forms.TextBox();
@@ -149,7 +148,6 @@
             this.TypeOfAllowance.Name = "TypeOfAllowance";
             this.TypeOfAllowance.Size = new System.Drawing.Size(143, 21);
             this.TypeOfAllowance.TabIndex = 13;
-            this.TypeOfAllowance.SelectedIndexChanged += new System.EventHandler(this.comboBox3_SelectedIndexChanged_1);
             this.TypeOfAllowance.TextChanged += new System.EventHandler(this.comboBox3_TextChanged);
             this.TypeOfAllowance.Click += new System.EventHandler(this.comboBox3_Click);
             // 
@@ -206,15 +204,6 @@
             this.Kvalitet.TabIndex = 20;
             this.Kvalitet.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.KeyPressForTextBoxWithDouble);
             // 
-            // richTextBox1
-            // 
-            this.richTextBox1.Enabled = false;
-            this.richTextBox1.Location = new System.Drawing.Point(804, 332);
-            this.richTextBox1.Name = "richTextBox1";
-            this.richTextBox1.Size = new System.Drawing.Size(295, 141);
-            this.richTextBox1.TabIndex = 21;
-            this.richTextBox1.Text = "";
-            // 
             // ChoiceOfWorkpiece
             // 
             this.ChoiceOfWorkpiece.Location = new System.Drawing.Point(635, 50);
@@ -257,7 +246,6 @@
             this.label9.Size = new System.Drawing.Size(60, 13);
             this.label9.TabIndex = 26;
             this.label9.Text = "Заготовка";
-            this.label9.Click += new System.EventHandler(this.label9_Click);
             // 
             // label10
             // 
@@ -471,9 +459,10 @@
             // 
             // treeView1
             // 
+            this.treeView1.Enabled = false;
             this.treeView1.Location = new System.Drawing.Point(438, 332);
             this.treeView1.Name = "treeView1";
-            this.treeView1.Size = new System.Drawing.Size(360, 141);
+            this.treeView1.Size = new System.Drawing.Size(661, 141);
             this.treeView1.TabIndex = 58;
             // 
             // MainForm
@@ -507,7 +496,6 @@
             this.Controls.Add(this.TypeOfMachining);
             this.Controls.Add(this.PrecisionOfMachining);
             this.Controls.Add(this.ChoiceOfWorkpiece);
-            this.Controls.Add(this.richTextBox1);
             this.Controls.Add(this.Kvalitet);
             this.Controls.Add(this.ThicknessOfDefectiveCoating);
             this.Controls.Add(this.SurfaceRoughnessRz);
@@ -553,7 +541,6 @@
         private System.Windows.Forms.ToolStripMenuItem открытьБДToolStripMenuItem;
         private System.Windows.Forms.ToolTip toolTip1;
         private System.Windows.Forms.Label label4;
-        protected internal System.Windows.Forms.RichTextBox richTextBox1;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.Label label11;

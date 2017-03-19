@@ -76,6 +76,7 @@
     <Compile Include="Classes\Events\FormOfWorkWithDatabase\EventClickOnButtonOfSelectPart.cs" />
     <Compile Include="Classes\Events\FormSelectWorkpriece\EventClickOnButtonOfSelectWorkpriece.cs" />
     <Compile Include="Classes\Events\MainForm\EventClickOnButtonOfCalculationPart.cs" />
+    <Compile Include="Classes\Events\MainForm\EventClickOnButtonOfDeleteOperation.cs" />
     <Compile Include="Classes\Events\MainForm\EventClickOnButtonOfSelectOperations.cs" />
     <Compile Include="Classes\Events\EventClickOfMouseOnTreeViewNode.cs" />
     <Compile Include="Classes\Events\MainForm\EventClickOnButtonOfSelectWorkpriece.cs" />

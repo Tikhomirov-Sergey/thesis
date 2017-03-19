@@ -16,8 +16,7 @@ namespace WindowsFormsApplication8
             {
                 extractionOfParametersOfOperationFromTextBoxes(operation, form);
                 Part.addOperationInSurface(operation, 0);
-
-                form.richTextBox1.Text = form.richTextBox1.Text + "\n" + operation.getNameOperation();
+ 
                 insertNameOperationInTextboxes(form, operation.getNameOperation());
             }
         }

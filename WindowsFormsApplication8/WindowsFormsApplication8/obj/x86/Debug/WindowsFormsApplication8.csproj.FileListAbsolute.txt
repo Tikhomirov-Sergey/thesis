@@ -507,7 +507,6 @@ G:\Программирование\thesis\WindowsFormsApplication8\WindowsForms
 G:\Программирование\thesis\WindowsFormsApplication8\WindowsFormsApplication8\bin\Debug\WindowsFormsApplication8.exe
 G:\Программирование\thesis\WindowsFormsApplication8\WindowsFormsApplication8\bin\Debug\WindowsFormsApplication8.pdb
 G:\Программирование\thesis\WindowsFormsApplication8\WindowsFormsApplication8\obj\x86\Debug\WindowsFormsApplication8.csprojResolveAssemblyReference.cache
-G:\Программирование\thesis\WindowsFormsApplication8\WindowsFormsApplication8\obj\x86\Debug\WindowsFormsApplication8.Form3.resources
 G:\Программирование\thesis\WindowsFormsApplication8\WindowsFormsApplication8\obj\x86\Debug\WindowsFormsApplication8.Form5.resources
 G:\Программирование\thesis\WindowsFormsApplication8\WindowsFormsApplication8\obj\x86\Debug\WindowsFormsApplication8.Properties.Resources.resources
 G:\Программирование\thesis\WindowsFormsApplication8\WindowsFormsApplication8\obj\x86\Debug\WindowsFormsApplication8.csproj.GenerateResource.Cache
@@ -557,3 +556,4 @@ C:\Users\admin\Desktop\thesis--_-_-_0_-_-_-\WindowsFormsApplication8\WindowsForm
 g:\Программирование\1\NEWthesis--_-_-_0_-_-_-\WindowsFormsApplication8\WindowsFormsApplication8\bin\Debug\WindowsFormsApplication8.exe.config
 g:\Программирование\1\NEWthesis--_-_-_0_-_-_-\WindowsFormsApplication8\WindowsFormsApplication8\obj\x86\Debug\WindowsFormsApplication8.exe
 g:\Программирование\1\NEWthesis--_-_-_0_-_-_-\WindowsFormsApplication8\WindowsFormsApplication8\obj\x86\Debug\WindowsFormsApplication8.pdb
+g:\Программирование\thesis\WindowsFormsApplication8\WindowsFormsApplication8\obj\x86\Debug\WindowsFormsApplication8.FormResult.resources

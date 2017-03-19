@@ -1,15 +1,5 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
 using System.Windows.Forms;
-using System.Xml;
-using System.IO;
-using Newtonsoft.Json;
-using System.Xml.Serialization;
 
 namespace WindowsFormsApplication8
 {
@@ -61,59 +51,22 @@ namespace WindowsFormsApplication8
 
         private void button3_Click_1(object sender, EventArgs e)
         {
-           /* try
+            try
             {
-                if (i > 1)
-                {
-                    i--;
-                    richTextBox1.Text = "";
-                    l = "";
-                    if (i == 1)
-                    {
-
-                        richTextBox1.Text = "";
-                        l = "";
-                        richTextBox1.Text = richTextBox1.Text + per[0];
-                        l = l + per[0];
-                    }
-                    else { 
-                    for (int nom = 0; nom <= i-2; nom++)
-                    { richTextBox1.Text = richTextBox1.Text + per[nom]+",\n";
-                      l=l + per[nom] + ",\r\n";
-                        }
-                        richTextBox1.Text = richTextBox1.Text + per[i-1] ;
-                        l = l + per[i-1] ;
-                    }
-                }
-                
+                EventClickOnButtonOfDeleteOperation.buttonDeleteOperation(this);
             }
-            catch
-            { }*/ }
+            catch { }
+        }
         
         private void button4_Click(object sender, EventArgs e)
         {
             try
             {
                 EventClickOnButtonOfCalculationPart.buttonOfCalculation(this);
-                FormResult form1 = new FormResult();
-                form1.ShowDialog();
+                FormResult formResult = new FormResult();
+                formResult.ShowDialog();
             }
             catch { }
-
-
-          /* 
-                EventClickOnButtonOfCalculationPart.buttonOfCalculation(this);
-                double[] d = Part.getSurfaceOnIndex(0).getResultsOfCalculation().getSizeOfWorkprieceAfterOperation();
-                richTextBox1.Clear();
-                for(int i = 0; i <= Part.getSurfaceOnIndex(0).getNumberOfOperations(); i++)
-                {
-                    ClassesToCalculate.ResultsOfCalculation f = Part.getSurfaceOnIndex(0).getResultsOfCalculation();
-                    
-                    richTextBox1.Text = richTextBox1.Text + "\n" + "__________" + i.ToString() + "______\n";
-                    richTextBox1.Text += " E= " + f.getdeviationOfInstallation()[i].ToString() + "\n P= " + f.getSpatialDeviation()[i].ToString() + "\n Znom= " + f.getNominalAllowance()[i].ToString() + "\n Size= " + f.getSizeOfWorkprieceAfterOperation()[i].ToString();
-                }
-            
-            */
 
             /* // Округление 
              Zmin[nom1] = Math.Round(Zmin[nom1], 4);
@@ -141,7 +94,7 @@ namespace WindowsFormsApplication8
             FormOfWorkWithDatabase formOfWorkWithDatabase = new FormOfWorkWithDatabase("", this);
             formOfWorkWithDatabase.ShowDialog();
                 TreeOfOperations.Enabled = true;
-                richTextBox1.Enabled = true;
+                treeView1.Enabled = true;
                 SurfaceRoughnessRz.Enabled = true;
         
                 PrecisionOfMachining.Enabled = true;
@@ -208,10 +161,6 @@ namespace WindowsFormsApplication8
             {
                 int nom = Allowance.Text.Length;
                 if (Allowance.Text[nom - 1].Equals('.')) { Allowance.Text = Allowance.Text.Replace('.', ','); Allowance.SelectionStart = nom; }
-           //     if (textBox3.Text[nom - 1].Equals('-')) { textBox3.Text = textBox3.Text.Replace('-', '' ); textBox3.SelectionStart = nom; }
-            //    if (textBox3.Text[nom - 1].Equals('+')) { textBox3.Text = textBox3.Text.Replace('+', '' ); textBox3.SelectionStart = nom; }
-
-
             }
             catch { }
         }
@@ -232,21 +181,6 @@ namespace WindowsFormsApplication8
                 SurfaceRoughnessRz.Text = ConversionRoughnessRzAndRa.stringRaToRz(SurfaceRoughnessRa.Text);
             }
             catch { SurfaceRoughnessRz.Text = ""; }
-        }
-
-        private void button5_Click_1(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label9_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void comboBox3_SelectedIndexChanged_1(object sender, EventArgs e)
-        {
-
         }
 
         private void comboBox3_TextChanged(object sender, EventArgs e)
