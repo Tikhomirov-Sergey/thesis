@@ -14,7 +14,7 @@ using System.IO;
 namespace WindowsFormsApplication8
 {
     
-    public partial class FormOfWorkWithDatabase : Form
+    public partial class FormOfWorkWithDatabase : System.Windows.Forms.Form
     {
         MainForm parrentForm;
         public FormOfWorkWithDatabase(string data, MainForm parrentForm)

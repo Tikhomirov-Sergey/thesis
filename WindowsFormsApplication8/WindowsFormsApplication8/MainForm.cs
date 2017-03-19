@@ -13,7 +13,7 @@ using System.Xml.Serialization;
 
 namespace WindowsFormsApplication8
 {
-    public partial class MainForm : Form
+    public partial class MainForm : System.Windows.Forms.Form
     {
         public MainForm()
         {
@@ -95,6 +95,14 @@ namespace WindowsFormsApplication8
             try
             {
                 EventClickOnButtonOfCalculationPart.buttonOfCalculation(this);
+                FormResult form1 = new FormResult();
+                form1.ShowDialog();
+            }
+            catch { }
+
+
+          /* 
+                EventClickOnButtonOfCalculationPart.buttonOfCalculation(this);
                 double[] d = Part.getSurfaceOnIndex(0).getResultsOfCalculation().getSizeOfWorkprieceAfterOperation();
                 richTextBox1.Clear();
                 for(int i = 0; i <= Part.getSurfaceOnIndex(0).getNumberOfOperations(); i++)
@@ -104,9 +112,9 @@ namespace WindowsFormsApplication8
                     richTextBox1.Text = richTextBox1.Text + "\n" + "__________" + i.ToString() + "______\n";
                     richTextBox1.Text += " E= " + f.getdeviationOfInstallation()[i].ToString() + "\n P= " + f.getSpatialDeviation()[i].ToString() + "\n Znom= " + f.getNominalAllowance()[i].ToString() + "\n Size= " + f.getSizeOfWorkprieceAfterOperation()[i].ToString();
                 }
-            }
-            catch { }
             
+            */
+
             /* // Округление 
              Zmin[nom1] = Math.Round(Zmin[nom1], 4);
              /// my

@@ -10,7 +10,7 @@ using System.Xml;
 
 namespace WindowsFormsApplication8
 {
-    public partial class FormOfSelectWorkpiece : Form
+    public partial class FormOfSelectWorkpiece : System.Windows.Forms.Form
     {
         public FormOfSelectWorkpiece()
         {
