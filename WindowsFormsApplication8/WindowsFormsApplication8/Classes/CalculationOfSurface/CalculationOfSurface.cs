@@ -128,8 +128,25 @@ namespace WindowsFormsApplication8
 
         private ClassesToCalculate.ResultsOfCalculation getResultsOfCalculation()
         {
+            this.rounding();
             ClassesToCalculate.ResultsOfCalculation resultsOfCalculation = new ClassesToCalculate.ResultsOfCalculation(this.accuracies, this.spatialDeviationP, this.deviationOfInstallationE, this.nominalAllowanceZnom, this.sizeOfWorkprieceAfterOperation);
             return resultsOfCalculation;
+        }
+
+        private void rounding()
+        {
+            for(int i = 0; i < this.parametersForCalculation.getNumberOfOperations(); i++)
+            {
+                try
+                {
+                    this.accuracies[i] = Rounding.rounding(this.accuracies[i]);
+                    this.spatialDeviationP[i] = Rounding.rounding(this.spatialDeviationP[i]);
+                    this.deviationOfInstallationE[i] = Rounding.rounding(this.deviationOfInstallationE[i]);
+                    this.nominalAllowanceZnom[i] = Rounding.rounding(this.nominalAllowanceZnom[i]);
+                    this.sizeOfWorkprieceAfterOperation[i] = Rounding.rounding(this.sizeOfWorkprieceAfterOperation[i]);
+                }
+                catch { }
+            }
         }
     }
 }

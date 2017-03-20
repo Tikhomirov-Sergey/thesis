@@ -12,11 +12,12 @@ namespace WindowsFormsApplication8
         {
             TreeView treeView = form.treeView1;
             int countNodesOfTreeView = treeView.Nodes.Count;
+            int countOperations = Part.getSurfaceOnIndex(0).getNumberOfOperations();
 
             if (countNodesOfTreeView > 1)
             {
                 treeView.Nodes.RemoveAt(countNodesOfTreeView - 1);
-                Part.deleteOperation(0, countNodesOfTreeView - 2);
+                Part.deleteOperation(0, countOperations - 1);
             }
         }
     }

@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using System.Windows.Forms;
 
 namespace WindowsFormsApplication8
 {
@@ -64,7 +65,7 @@ namespace WindowsFormsApplication8
         public void calculationOFSurface()
         {
             ParametersOfPart parametersOfPart = Part.getParametersOfPart();
-            DataStructures.CalculationOfSurface.ParametersOperationsForCalculation parametersOperations = this.getParametersOperationsForCalculation();
+            DataStructures.CalculationOfSurface.ParametersOperationsForCalculation parametersOperations = getParametersOperationsForCalculation();
 
             CalculationOfSurface calculationOfSurface = new CalculationOfSurface(parametersOfPart, parametersOperations);
             this.resultsOfCalculation = calculationOfSurface.calculation();
@@ -100,9 +101,12 @@ namespace WindowsFormsApplication8
                 coefficientOfRefinement[i + 1] = operation.getCoefficientOfRefinement();
 
                 idOperation[i + 1] = operation.getIdOperation();
+
                 typeOfInstrument[i + 1] = operation.getTypeOfInstrument();
             }
 
+            //typeOfInstrument = changeTypeOfInstrument(typeOfInstrument);
+            
             DataStructures.CalculationOfSurface.ParametersOperationsForCalculation parameters = new DataStructures.CalculationOfSurface.ParametersOperationsForCalculation(surfaceRoughnessRz, kvalitets, thicknessOfDefectiveCoating, coefficientOfRefinement, idOperation, typeOfInstrument, validOffsetSurface);
             return parameters;
         }
@@ -119,7 +123,7 @@ namespace WindowsFormsApplication8
 
             for (int i = 1; i <= numberOfOperations; i++)
             {
-                if (form.treeView1.Nodes.Count < i + 1)
+                if (form.treeView1.Nodes.Count <= i)
                 {
                     form.treeView1.Nodes.Add(listOfSurface[i - 1]);
                 }
@@ -129,7 +133,7 @@ namespace WindowsFormsApplication8
                 }
             }
 
-            for(int i = numberOfOperations; i < form.treeView1.Nodes.Count; i++)
+            for(int i = numberOfOperations + 1; i < form.treeView1.Nodes.Count; i++)
             {
                 form.treeView1.Nodes.RemoveAt(i);
             }
@@ -137,13 +141,31 @@ namespace WindowsFormsApplication8
 
         public void deleteOperation(int indexOfOperation)
         {
-            try
-            {
+           try
+           {
                 List<ParametersOperation> parametersOperationToList = this.operations.ToList<ParametersOperation>();
                 parametersOperationToList.RemoveAt(indexOfOperation);
                 this.operations = parametersOperationToList.ToArray<ParametersOperation>();
+           }
+           catch { }
+        }
+
+        private string[] changeTypeOfInstrument(string[] typeOfInstrument)
+        {
+            try
+            {
+                for (int i = 2; i < typeOfInstrument.Length; i++)
+                {
+                    if (typeOfInstrument[i].Equals("не выбрано"))
+                    {
+                        typeOfInstrument[i] = typeOfInstrument[i - 1];
+                    }
+                }
             }
             catch { }
+
+            return typeOfInstrument;
         }
+
     }
 }

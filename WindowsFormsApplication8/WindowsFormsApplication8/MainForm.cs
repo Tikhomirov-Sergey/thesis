@@ -1,5 +1,8 @@
 ﻿using System;
 using System.Windows.Forms;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
 
 namespace WindowsFormsApplication8
 {
@@ -63,16 +66,13 @@ namespace WindowsFormsApplication8
             try
             {
                 EventClickOnButtonOfCalculationPart.buttonOfCalculation(this);
-                FormResult formResult = new FormResult();
-                formResult.ShowDialog();
+                if (Part.getSurfaceOnIndex(0).getResultsOfCalculation() != null)
+                {
+                    FormResult formResult = new FormResult();
+                    formResult.ShowDialog();
+                }
             }
             catch { }
-
-            /* // Округление 
-             Zmin[nom1] = Math.Round(Zmin[nom1], 4);
-             /// my
-             Zmind[nom1 - 1] = Convert.ToString(Zmin[nom1]);
-             */
         }
 
         private void textBox5_TextChanged(object sender, EventArgs e)

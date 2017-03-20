@@ -16,7 +16,7 @@ namespace WindowsFormsApplication8
             {
                 extractionOfParametersOfOperationFromTextBoxes(operation, form);
                 Part.addOperationInSurface(operation, 0);
- 
+
                 insertNameOperationInTextboxes(form, operation.getNameOperation());
             }
         }

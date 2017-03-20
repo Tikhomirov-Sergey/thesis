@@ -23,6 +23,7 @@ namespace WindowsFormsApplication8
 
                 form.Close();
             }
+
             catch { MessageBox.Show("Выбранная запись поврежденна", "Ошибка"); }
         }
 
@@ -61,7 +62,7 @@ namespace WindowsFormsApplication8
             }
             if (!validType)
             {
-                throw new ErrorMessage("Выбранная запись поврежденна");
+                throw new Exception();
             }
 
             return indexOfType;
