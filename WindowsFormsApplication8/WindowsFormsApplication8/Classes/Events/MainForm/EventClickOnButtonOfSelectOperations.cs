@@ -18,6 +18,9 @@ namespace WindowsFormsApplication8
                 Part.addOperationInSurface(operation, 0);
 
                 insertNameOperationInTextboxes(form, operation.getNameOperation());
+
+                operation = new ParametersOperation(operation);
+                StorageOfSelectedOperation.setParameters(operation);
             }
         }
 

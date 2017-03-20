@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using System.Windows.Forms;
 
 namespace WindowsFormsApplication8
 {
@@ -45,6 +46,19 @@ namespace WindowsFormsApplication8
             this.typeOfInstrument = typeOfInstrument;
         }
 
+        public ParametersOperation(ParametersOperation operation)
+        {
+            this.typeOfMachining = operation.getTypeOfMachining();
+            this.precisionOfMachining = operation.getPrecisionOfMachining();
+            this.surfaceRoughnessRz = operation.getSurfaceRoughnessRz();
+            this.recommendedIntervalRz = operation.getRecommendedIntervalRz();
+            this.idOperation = operation.getIdOperation();
+            this.kvalitet = operation.getKvalitet();
+            this.thicknessOfDefectiveCoating = operation.getThicknessOfDefectiveCoating();
+            this.coefficientOfRefinement = operation.getCoefficientOfRefinement();
+            this.typeOfInstrument = operation.getTypeOfInstrument();
+
+        }
         public string getNameOperation()
         {
             string nameOperation = this.typeOfMachining + "(" + this.precisionOfMachining + " , " + this.typeOfInstrument + ")";

@@ -105,7 +105,7 @@ namespace WindowsFormsApplication8
                 typeOfInstrument[i + 1] = operation.getTypeOfInstrument();
             }
 
-            //typeOfInstrument = changeTypeOfInstrument(typeOfInstrument);
+            typeOfInstrument = changeTypeOfInstrument(typeOfInstrument);
             
             DataStructures.CalculationOfSurface.ParametersOperationsForCalculation parameters = new DataStructures.CalculationOfSurface.ParametersOperationsForCalculation(surfaceRoughnessRz, kvalitets, thicknessOfDefectiveCoating, coefficientOfRefinement, idOperation, typeOfInstrument, validOffsetSurface);
             return parameters;

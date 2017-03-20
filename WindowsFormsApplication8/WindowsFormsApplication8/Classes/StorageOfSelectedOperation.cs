@@ -1,4 +1,6 @@
-﻿namespace WindowsFormsApplication8
+﻿using System.Windows.Forms;
+
+namespace WindowsFormsApplication8
 {
     class StorageOfSelectedOperation
     {
