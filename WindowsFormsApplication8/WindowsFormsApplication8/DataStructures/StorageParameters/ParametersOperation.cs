@@ -82,7 +82,7 @@ namespace WindowsFormsApplication8
         {
             return this.precisionOfMachining;
         }
-        
+
         public void setSurfaceRoughnessRz(double surfaceRoughnessRz)
         {
             this.surfaceRoughnessRz = surfaceRoughnessRz;

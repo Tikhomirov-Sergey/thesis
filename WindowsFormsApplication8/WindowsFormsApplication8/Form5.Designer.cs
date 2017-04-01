@@ -366,7 +366,6 @@
             this.label2.Size = new System.Drawing.Size(314, 20);
             this.label2.TabIndex = 6;
             this.label2.Text = "Введите обозначение поверхности:";
-            this.label2.Click += new System.EventHandler(this.label2_Click);
             // 
             // textBox2
             // 
@@ -387,7 +386,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(491, 168);
+            this.ClientSize = new System.Drawing.Size(491, 174);
             this.Controls.Add(this.textBox2);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
@@ -411,22 +410,13 @@
         }
 
         #endregion
-
-        private System.Windows.Forms.BindingSource bindingSource1;
-        private System.Windows.Forms.DataGridView dataGridView1;
-        private System.Windows.Forms.DataGridView dataGridView2;
         private System.Windows.Forms.DataGridViewTextBoxColumn dlinadetaliLмDataGridViewTextBoxColumn;
         private System.Windows.Forms.RichTextBox richTextBox1;
         private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.TextBox textBox2;
         private System.Windows.Forms.DataGridViewTextBoxColumn наименованиеДеталиDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn обозначениеПоверхностиDataGridViewTextBoxColumn;
-        private juliaDataSet juliaDataSet;
-        private System.Windows.Forms.BindingSource детальBindingSource;
-        private juliaDataSetTableAdapters.ДетальTableAdapter детальTableAdapter1;
         private System.Windows.Forms.DataGridViewTextBoxColumn номерДеталиDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn naimenovanieDetaliDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn датаDataGridViewTextBoxColumn;
@@ -440,8 +430,6 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn типПрипускаDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn видЗаготовкиDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn oboznacheniePoverhnostiDataGridViewTextBoxColumn;
-        private System.Windows.Forms.BindingSource fKПереходыДетальBindingSource;
-        private juliaDataSetTableAdapters.ПереходыTableAdapter переходыTableAdapter;
         private System.Windows.Forms.DataGridViewTextBoxColumn номерДеталиDataGridViewTextBoxColumn1;
         private System.Windows.Forms.DataGridViewTextBoxColumn номерПереходаDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn переходDataGridViewTextBoxColumn;
@@ -457,7 +445,15 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn idПриспособленияDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn pcmDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn квалитетDataGridViewTextBoxColumn;
-
-
+        protected internal System.Windows.Forms.BindingSource bindingSource1;
+        protected internal juliaDataSet juliaDataSet;
+        protected internal System.Windows.Forms.BindingSource детальBindingSource;
+        protected internal juliaDataSetTableAdapters.ДетальTableAdapter детальTableAdapter1;
+        protected internal System.Windows.Forms.BindingSource fKПереходыДетальBindingSource;
+        protected internal juliaDataSetTableAdapters.ПереходыTableAdapter переходыTableAdapter;
+        protected internal System.Windows.Forms.TextBox textBox1;
+        protected internal System.Windows.Forms.TextBox textBox2;
+        protected internal System.Windows.Forms.DataGridView dataGridView1;
+        protected internal System.Windows.Forms.DataGridView dataGridView2;
     }
 }

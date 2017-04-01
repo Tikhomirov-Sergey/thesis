@@ -15,9 +15,11 @@ namespace WindowsFormsApplication8
             if (operation != null)
             {
                 extractionOfParametersOfOperationFromTextBoxes(operation, form);
-                Part.addOperationInSurface(operation, 0);
 
-                insertNameOperationInTextboxes(form, operation.getNameOperation());
+                int indexSelectedOperation = StorageOfSelectedOperation.getIndexSelectedOperation();
+                Part.addOperationInSurface(operation, 0, indexSelectedOperation);
+
+                insertNameOperationInTextboxes(form, operation.getNameOperation(), indexSelectedOperation);
 
                 operation = new ParametersOperation(operation);
                 StorageOfSelectedOperation.setParameters(operation);
@@ -39,9 +41,11 @@ namespace WindowsFormsApplication8
             return operation;
         }
 
-        public static void insertNameOperationInTextboxes(MainForm form, string nameOperation)
+        public static void insertNameOperationInTextboxes(MainForm form, string nameOperation,int indexSelectedOperation)
         {
-            form.treeView1.Nodes.Add(new TreeNode(nameOperation));
+            form.TreeOfSelectedOperations.Nodes.Insert(indexSelectedOperation + 1, nameOperation);
+            form.TreeOfSelectedOperations.SelectedNode = form.TreeOfSelectedOperations.Nodes[indexSelectedOperation + 1];
+            StorageOfSelectedOperation.incrementOfIndex();
         }
     }
 }

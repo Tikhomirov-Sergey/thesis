@@ -23,11 +23,20 @@ namespace WindowsFormsApplication8
             return this.nameSurface;
         }
 
-        public void setOpetation(ParametersOperation operation)
+        public void setOpetation(ParametersOperation operation, int indexOfOperation = -1)
         {
-            int length = this.operations.Length;
-            Array.Resize(ref this.operations, length + 1);
-            this.operations[length] = operation;
+            if (indexOfOperation.Equals(-1))
+            {
+                indexOfOperation = getNumberOfOperations();
+            }
+
+           try
+           {
+                List<ParametersOperation> parametersOperationToList = this.operations.ToList<ParametersOperation>();
+                parametersOperationToList.Insert(indexOfOperation, operation);
+                this.operations = parametersOperationToList.ToArray<ParametersOperation>();
+           }
+           catch { }
         }
 
         public ParametersOperation[] getOperations()
@@ -123,20 +132,23 @@ namespace WindowsFormsApplication8
 
             for (int i = 1; i <= numberOfOperations; i++)
             {
-                if (form.treeView1.Nodes.Count <= i)
+                if (form.TreeOfSelectedOperations.Nodes.Count <= i)
                 {
-                    form.treeView1.Nodes.Add(listOfSurface[i - 1]);
+                    form.TreeOfSelectedOperations.Nodes.Add(listOfSurface[i - 1]);
                 }
                 else
                 {
-                    form.treeView1.Nodes[i].Text = listOfSurface[i - 1];
+                    form.TreeOfSelectedOperations.Nodes[i].Text = listOfSurface[i - 1];
                 }
             }
 
-            for(int i = numberOfOperations + 1; i < form.treeView1.Nodes.Count; i++)
+            for(int i = numberOfOperations + 1; i < form.TreeOfSelectedOperations.Nodes.Count; i++)
             {
-                form.treeView1.Nodes.RemoveAt(i);
+                form.TreeOfSelectedOperations.Nodes.RemoveAt(i);
             }
+
+            StorageOfSelectedOperation.setIndexSelectedOperation(numberOfOperations);
+            form.TreeOfSelectedOperations.SelectedNode = form.TreeOfSelectedOperations.Nodes[numberOfOperations];
         }
 
         public void deleteOperation(int indexOfOperation)

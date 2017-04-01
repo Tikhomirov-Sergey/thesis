@@ -29,7 +29,7 @@ namespace WindowsFormsApplication8
         public static void enabledTextBoxes(MainForm form)
         {
             form.TreeOfOperations.Enabled = true;
-            form.treeView1.Enabled = true;
+            form.TreeOfSelectedOperations.Enabled = true;
             form.SurfaceRoughnessRz.Enabled = true;
             form.SurfaceRoughnessRa.Enabled = true;
             form.PrecisionOfMachining.Enabled = true;
@@ -42,13 +42,13 @@ namespace WindowsFormsApplication8
 
         private static void insertNameOfWorkpieceInTreeViewAndTextBox(MainForm form, string nameOfWorkpiece)
         {
-            if(form.treeView1.Nodes.Count == 0)
+            if(form.TreeOfSelectedOperations.Nodes.Count == 0)
             {
-                form.treeView1.Nodes.Add(nameOfWorkpiece);
+                form.TreeOfSelectedOperations.Nodes.Add(nameOfWorkpiece);
             }
             else
             {
-                form.treeView1.Nodes[0].Text = nameOfWorkpiece;
+                form.TreeOfSelectedOperations.Nodes[0].Text = nameOfWorkpiece;
             }
             form.NameOfWorkpiece.Text = nameOfWorkpiece;
         }

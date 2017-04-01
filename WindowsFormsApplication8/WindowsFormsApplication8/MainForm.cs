@@ -94,7 +94,7 @@ namespace WindowsFormsApplication8
             FormOfWorkWithDatabase formOfWorkWithDatabase = new FormOfWorkWithDatabase("", this);
             formOfWorkWithDatabase.ShowDialog();
                 TreeOfOperations.Enabled = true;
-                treeView1.Enabled = true;
+                TreeOfSelectedOperations.Enabled = true;
                 SurfaceRoughnessRz.Enabled = true;
         
                 PrecisionOfMachining.Enabled = true;
@@ -218,6 +218,28 @@ namespace WindowsFormsApplication8
                 toolTip1.SetToolTip(SurfaceRoughnessRa, "Интервал для данной операции: " + Convert.ToString(minRa) + "..." + Convert.ToString(maxRa));
             }
             catch { }
+        }
+
+        private void TreeOfSelectedOperations_NodeMouseClick(object sender, TreeNodeMouseClickEventArgs e)
+        {
+            EventClickOfMouseOnTreeViewNodeSelectedOperations.clickOnNode(e, this);
+        }
+
+        private void SaveChanges_Click(object sender, EventArgs e)
+        {
+            EventClickOnButtonOfSaveChanges.buttonOfSaveChanges(e, this);
+        }
+
+        private void TreeOfSelectedOperations_AfterSelect(object sender, TreeViewEventArgs e)
+        {
+            foreach(TreeNode node in TreeOfSelectedOperations.Nodes)
+            {
+                node.BackColor = System.Drawing.Color.White;
+                node.ForeColor = System.Drawing.Color.Black;
+            }
+            
+            e.Node.ForeColor = System.Drawing.Color.White;
+            e.Node.BackColor = System.Drawing.Color.FromArgb(0, 0,160, 255);
         }
     }
 }

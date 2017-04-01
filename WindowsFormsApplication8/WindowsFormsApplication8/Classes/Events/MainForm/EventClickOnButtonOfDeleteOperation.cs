@@ -10,15 +10,20 @@ namespace WindowsFormsApplication8
     {
         public static void buttonDeleteOperation(MainForm form)
         {
-            TreeView treeView = form.treeView1;
-            int countNodesOfTreeView = treeView.Nodes.Count;
-            int countOperations = Part.getSurfaceOnIndex(0).getNumberOfOperations();
-
-            if (countNodesOfTreeView > 1)
+            try
             {
-                treeView.Nodes.RemoveAt(countNodesOfTreeView - 1);
-                Part.deleteOperation(0, countOperations - 1);
+                TreeView treeView = form.TreeOfSelectedOperations;
+                int indexSelectedOperation = StorageOfSelectedOperation.getIndexSelectedOperation();
+
+                if (indexSelectedOperation != 0)
+                {
+                    treeView.Nodes.RemoveAt(indexSelectedOperation);
+                    Part.deleteOperation(0, indexSelectedOperation - 1);
+                    StorageOfSelectedOperation.decrementOfIndex();
+                    form.TreeOfSelectedOperations.SelectedNode = form.TreeOfSelectedOperations.Nodes[indexSelectedOperation - 1];
+                }
             }
+            catch { }
         }
     }
 }

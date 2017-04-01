@@ -54,12 +54,12 @@ namespace WindowsFormsApplication8
             return surfaces;
         }
 
-        public static void addOperationInSurface(ParametersOperation operation, int indexSurface)
+        public static void addOperationInSurface(ParametersOperation operation, int indexSurface, int indexOfOperation)
         {
             try
             {
                 checkSurface(indexSurface);
-                surfaces[indexSurface].setOpetation(operation);
+                surfaces[indexSurface].setOpetation(operation, indexOfOperation);
             }
             catch { }
         }

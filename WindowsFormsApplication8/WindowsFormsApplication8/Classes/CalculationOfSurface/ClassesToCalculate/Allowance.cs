@@ -36,8 +36,8 @@ namespace WindowsFormsApplication8.ClassesToCalculate
 
             this.accuracies = accuracies;
 
-            this.typeOfProcessedSurface = parametersOfPart.getTypeOfProcessedSurface();
-            this.typeOfAllowance = parametersOfPart.getTypeOfAllowance();
+            this.typeOfProcessedSurface = parametersOfPart.getTypeOfProcessedSurface().getIndex();
+            this.typeOfAllowance = parametersOfPart.getTypeOfAllowance().getIndex();
         }
 
         public double[] calculation()

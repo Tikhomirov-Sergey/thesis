@@ -36,9 +36,9 @@ namespace WindowsFormsApplication8
             string typeOfAllowance = form.dataGridView1.CurrentRow.Cells[10].Value.ToString();
             string typeOfProcessedSurface = form.dataGridView1.CurrentRow.Cells[9].Value.ToString();
 
-            int indexOfTypeOfPart = selectIndexOfTypesFromComboBox(typeOfPart, parrentForm.TypeOfPart);
-            int indexOfTypeOfAllowance = selectIndexOfTypesFromComboBox(typeOfAllowance, parrentForm.TypeOfAllowance);
-            int indexOfTypeOfProcessedSurface = selectIndexOfTypesFromComboBox(typeOfProcessedSurface, parrentForm.TypeOfProcessedSurface);
+            TypeOfPart indexOfTypeOfPart = selectIndexOfTypesFromComboBox(typeOfPart, parrentForm.TypeOfPart);
+            TypeOfPart indexOfTypeOfAllowance = selectIndexOfTypesFromComboBox(typeOfAllowance, parrentForm.TypeOfAllowance);
+            TypeOfPart indexOfTypeOfProcessedSurface = selectIndexOfTypesFromComboBox(typeOfProcessedSurface, parrentForm.TypeOfProcessedSurface);
 
             double allowance = Convert.ToDouble(form.dataGridView1.CurrentRow.Cells[5].Value.ToString());
             double holeDepth = Convert.ToDouble(form.dataGridView1.CurrentRow.Cells[7].Value.ToString());
@@ -47,7 +47,7 @@ namespace WindowsFormsApplication8
             Part.setParametersOfPart(parametersOfPart);
         }
 
-        private static int selectIndexOfTypesFromComboBox(string type, ComboBox comboBox)
+        private static TypeOfPart selectIndexOfTypesFromComboBox(string type, ComboBox comboBox)
         {
             bool validType = false;
             int indexOfType = 0;
@@ -64,8 +64,8 @@ namespace WindowsFormsApplication8
             {
                 throw new Exception();
             }
-
-            return indexOfType;
+            TypeOfPart typeOfPart = new TypeOfPart(type, indexOfType);
+            return typeOfPart;
         }
 
         private static void insertParametersOfWorkpriece(FormOfWorkWithDatabase form)
@@ -92,6 +92,8 @@ namespace WindowsFormsApplication8
             for (int i = 1; i < numberOfOperations; i++)
             {
                 ParametersOperation parametersOperation = createOperation(form, i);
+
+                
                 surface.setOpetation(parametersOperation);
             }
 

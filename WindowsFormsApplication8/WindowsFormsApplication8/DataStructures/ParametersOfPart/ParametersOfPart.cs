@@ -10,15 +10,15 @@ namespace WindowsFormsApplication8
         private double lengthOfPart;
         private double diameterOfPart;
 
-        private int typeOfPart;
-        private int typeOfAllowance;
-        private int typeOfProcessedSurface;
+        private TypeOfPart typeOfPart;
+        private TypeOfPart typeOfAllowance;
+        private TypeOfPart typeOfProcessedSurface;
 
         private double allowance;
         private double holeDepth;
 
         public ParametersOfPart(double lengthOfPart, double diameterOfPart,
-            int typeOfPart, int typeOfAllowance, int typeOfProcessedSurface,
+            TypeOfPart typeOfPart, TypeOfPart typeOfAllowance, TypeOfPart typeOfProcessedSurface,
             double allowance, double holeDepth = 0)
         {
             this.lengthOfPart = lengthOfPart;
@@ -35,9 +35,9 @@ namespace WindowsFormsApplication8
             form.LengthOfPart.Text = this.lengthOfPart.ToString();
             form.DiameterOfPart.Text = this.diameterOfPart.ToString();
 
-            form.TypeOfPart.SelectedIndex = this.typeOfPart;
-            form.TypeOfAllowance.SelectedIndex = this.typeOfAllowance;
-            form.TypeOfProcessedSurface.SelectedIndex = this.typeOfProcessedSurface;
+            form.TypeOfPart.SelectedIndex = this.typeOfPart.getIndex();
+            form.TypeOfAllowance.SelectedIndex = this.typeOfAllowance.getIndex();
+            form.TypeOfProcessedSurface.SelectedIndex = this.typeOfProcessedSurface.getIndex();
 
             form.Allowance.Text = this.allowance.ToString();
             form.HoleDepth.Text = this.holeDepth.ToString();
@@ -63,33 +63,52 @@ namespace WindowsFormsApplication8
             this.diameterOfPart = diameterOfPart;
         }
 
-        public int getTypeOfPart()
+
+        public TypeOfPart getTypeOfPart()
         {
             return this.typeOfPart;
         }
+        
 
-        public void setTypeOfPart(int typeOfPart)
+        public void setTypeOfPart(TypeOfPart typeOfPart)
         {
             this.typeOfPart = typeOfPart;
         }
+        public void setTypeOfPart(string name, int index)
+        {
+            TypeOfPart typeOfPart = new TypeOfPart(name, index);
+            this.typeOfPart = typeOfPart;
+        }
 
-        public int getTypeOfAllowance()
+        public TypeOfPart getTypeOfAllowance()
         {
             return this.typeOfAllowance;
         }
 
-        public void setTypeOfAllowance(int typeOfAllowance)
+        public void setTypeOfAllowance(TypeOfPart typeOfAllowance)
         {
             this.typeOfAllowance = typeOfAllowance;
         }
 
-        public int getTypeOfProcessedSurface()
+        public void setTypeOfAllowance(string name, int index)
+        {
+            TypeOfPart typeOfAllowance = new TypeOfPart(name, index);
+            this.typeOfAllowance = typeOfAllowance;
+        }
+
+        public TypeOfPart getTypeOfProcessedSurface()
         {
             return this.typeOfProcessedSurface;
         }
 
-        public void setTypeOfProcessedSurface(int typeOfProcessedSurface)
+        public void setTypeOfProcessedSurface(TypeOfPart typeOfProcessedSurface)
         {
+            this.typeOfProcessedSurface = typeOfProcessedSurface;
+        }
+
+        public void setTypeOfProcessedSurface(string name, int index)
+        {
+            TypeOfPart typeOfProcessedSurface = new TypeOfPart(name, index);
             this.typeOfProcessedSurface = typeOfProcessedSurface;
         }
 

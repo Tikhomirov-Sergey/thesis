@@ -23,7 +23,7 @@ namespace WindowsFormsApplication8
 
         private void FormResult_Load(object sender, EventArgs e)
         {
-            int typeOfPart = Part.getParametersOfPart().getTypeOfPart();
+            int typeOfPart = Part.getParametersOfPart().getTypeOfPart().getIndex();
             char type;
 
             if (typeOfPart == 0)
@@ -57,6 +57,12 @@ namespace WindowsFormsApplication8
                 sw.WriteLine(richTextBoxResult.Text);
                 sw.Close();
             }
+        }
+
+        private void buttonSaveToBase_Click(object sender, EventArgs e)
+        {
+            Form5 form = new Form5();
+            form.ShowDialog();
         }
     }
 }

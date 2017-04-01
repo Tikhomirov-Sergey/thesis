@@ -59,6 +59,7 @@
             this.buttonSaveToBase.TabIndex = 14;
             this.buttonSaveToBase.Text = "Сохранить в БД";
             this.buttonSaveToBase.UseVisualStyleBackColor = true;
+            this.buttonSaveToBase.Click += new System.EventHandler(this.buttonSaveToBase_Click);
             // 
             // FormResult
             // 

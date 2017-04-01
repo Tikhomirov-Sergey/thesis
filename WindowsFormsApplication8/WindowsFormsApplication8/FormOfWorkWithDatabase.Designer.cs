@@ -223,9 +223,9 @@
             this.квалитетDataGridViewTextBoxColumn});
             this.dataGridView2.DataSource = this.fKПереходыДетальBindingSource;
             this.dataGridView2.GridColor = System.Drawing.SystemColors.ButtonShadow;
-            this.dataGridView2.Location = new System.Drawing.Point(101, 300);
+            this.dataGridView2.Location = new System.Drawing.Point(-34, 300);
             this.dataGridView2.Name = "dataGridView2";
-            this.dataGridView2.Size = new System.Drawing.Size(1541, 216);
+            this.dataGridView2.Size = new System.Drawing.Size(1488, 216);
             this.dataGridView2.TabIndex = 1;
             // 
             // номерДеталиDataGridViewTextBoxColumn1

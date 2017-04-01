@@ -19,7 +19,7 @@ namespace WindowsFormsApplication8.ClassesToCalculate
             this.numberOfOperations = parametersForCalculation.getNumberOfOperations();
 
             this.diameterOfPart = parametersOfPart.getDiameterOfPart();
-            this.typeOfPart = parametersOfPart.getTypeOfPart();
+            this.typeOfPart = parametersOfPart.getTypeOfPart().getIndex();
 
             this.nominalAllowanceZnom = nominalAllowanceZnom;
         }

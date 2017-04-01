@@ -52,13 +52,13 @@ namespace WindowsFormsApplication8
 
         public void insertNameOfWorkpieceInTreeViewAndTextBox(MainForm form)
         {
-            if (form.treeView1.Nodes.Count == 0)
+            if (form.TreeOfSelectedOperations.Nodes.Count == 0)
             {
-                form.treeView1.Nodes.Add(this.nameOfWorkpiece);
+                form.TreeOfSelectedOperations.Nodes.Add(this.nameOfWorkpiece);
             }
             else
             {
-                form.treeView1.Nodes[0].Text = this.nameOfWorkpiece;
+                form.TreeOfSelectedOperations.Nodes[0].Text = this.nameOfWorkpiece;
             }
             form.NameOfWorkpiece.Text = this.nameOfWorkpiece;
         }

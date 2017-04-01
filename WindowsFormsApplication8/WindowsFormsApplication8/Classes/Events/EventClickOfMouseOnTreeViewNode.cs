@@ -35,6 +35,7 @@ namespace WindowsFormsApplication8
                 parameters.insertParametersOfWorkpieceInTextboxes(form);
             }
         }
+
         private static ParametersWorkpiece extractionOfParametersOfWorkpiece(TreeNodeMouseClickEventArgs e)
         {
             TreeNode node = e.Node;
