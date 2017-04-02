@@ -1,7 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
 
 namespace WindowsFormsApplication8.ClassesToCalculate
 {
@@ -93,11 +90,11 @@ namespace WindowsFormsApplication8.ClassesToCalculate
 
             if(this.typeOfAllowance == 1)
             {
-                nominalAllowanceZnom = calculationNominalBilateralAllowance();
+                nominalAllowanceZnom = calculationNominalUnilateralAllowance();
             }
             else
             {
-                nominalAllowanceZnom = calculationNominalUnilateralAllowance();
+                nominalAllowanceZnom = calculationNominalBilateralAllowance();
             }
 
             return nominalAllowanceZnom;

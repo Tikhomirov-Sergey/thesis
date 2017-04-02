@@ -1,8 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-
+﻿
 namespace WindowsFormsApplication8.DataStructures.CalculationOfSurface
 {
     //Переход с индексом 0 - это заготовка
@@ -47,7 +43,7 @@ namespace WindowsFormsApplication8.DataStructures.CalculationOfSurface
 
         public double[] getCoefficientOfRefinement()
         {
-            return this.surfaceRoughnessRz;
+            return this.coefficientOfRefinement;
         }
 
         public int[] getIdOperation()

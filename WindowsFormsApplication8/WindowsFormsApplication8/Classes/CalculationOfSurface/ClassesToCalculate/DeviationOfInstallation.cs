@@ -1,8 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-
+﻿
 namespace WindowsFormsApplication8.ClassesToCalculate
 {
     class DeviationOfInstallation
@@ -45,7 +41,7 @@ namespace WindowsFormsApplication8.ClassesToCalculate
                 }
                 else
                 {
-                    deviationOfInstallation[i] = table.getDeviationOfInstallation(requiredSize, this.idOperation[i], typeOfInstrument[i]);
+                    deviationOfInstallation[i] = table.getDeviationOfInstallation(requiredSize, this.idOperation[i - 1], typeOfInstrument[i]);
                 }
 
             }

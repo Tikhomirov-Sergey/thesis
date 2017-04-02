@@ -1,8 +1,5 @@
 ﻿using System;
 using System.Windows.Forms;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
 
 namespace WindowsFormsApplication8
 {
@@ -37,6 +34,8 @@ namespace WindowsFormsApplication8
                 EventClickOnButtonOfSelectOperationsOrWorkpiece.buttonOfSelectOperations(e, this);
             }
             catch { }
+
+            int g = Part.getSurfaceOnIndex(0).getNumberOfOperations();
         }
         
         private void treeView1_NodeMouseClick(object sender, TreeNodeMouseClickEventArgs e)

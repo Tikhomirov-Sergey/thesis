@@ -27,7 +27,7 @@
         <min>18.1</min>
         <max>30</max>
       </estimatedSize>
-      <coefficient>0.0018</coefficient>
+      <coefficient>0.0009</coefficient>
     </IntervalAndCoefficient>
     <IntervalAndCoefficient>
       <estimatedSize>

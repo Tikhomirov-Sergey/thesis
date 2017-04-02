@@ -1,7 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
 using System.Windows.Forms;
 
 namespace WindowsFormsApplication8
@@ -12,10 +9,12 @@ namespace WindowsFormsApplication8
         {
            try
            {
-                checkNameOfPartAndNameOfSurface(form);
-                saveToDatabase(form);
-                MessageBox.Show("Сохранение прошло успешно", "Ошибка");
-                form.Close();
+                if (checkNameOfPartAndNameOfSurface(form))
+                {
+                    saveToDatabase(form);
+                    MessageBox.Show("Сохранение прошло успешно", "Ошибка");
+                    form.Close();
+                }
             }
            catch { MessageBox.Show("Ошибка Базы данных", "Ошибка"); }
         }
@@ -70,7 +69,7 @@ namespace WindowsFormsApplication8
             {
                 ParametersOperation parametersOperation = parametersOperations[i];
 
-                string nameOperation = parametersOperation.getNameOperation() + ',' + parametersOperation.getPrecisionOfMachining();
+                string nameOperation = parametersOperation.getTypeOfMachining() + ',' + parametersOperation.getPrecisionOfMachining();
 
                 form.переходыTableAdapter.Insert(Convert.ToInt16(form.dataGridView1[0, index - 1].Value.ToString()) + 1, i + 1, nameOperation, parametersOperation.getTypeOfInstrument(), (float)parametersOperation.getSurfaceRoughnessRz(), (float)parametersOperation.getThicknessOfDefectiveCoating(), (float)resultsOfCalculation.getSpatialDeviation()[i + 1], (float)resultsOfCalculation.getdeviationOfInstallation()[i + 1], (float)resultsOfCalculation.getAccuracies()[i + 1], (float)resultsOfCalculation.getNominalAllowance()[i + 1], (float)resultsOfCalculation.getSizeOfWorkprieceAfterOperation()[i + 1], parametersOperation.getIdOperation(), null, (float)parametersOperation.getCoefficientOfRefinement(), (int)parametersOperation.getKvalitet());
             }

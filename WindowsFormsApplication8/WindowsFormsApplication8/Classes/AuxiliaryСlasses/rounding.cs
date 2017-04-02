@@ -1,13 +1,10 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
 
 namespace WindowsFormsApplication8
 {
     class Rounding
     {
-        public static double rounding(double value, int digits = 3)
+        public static double rounding(double value, int digits = 5)
         {
             try
             {

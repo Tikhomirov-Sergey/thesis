@@ -1,7 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
 
 namespace WindowsFormsApplication8.ClassesToCalculate
 {
@@ -41,7 +38,7 @@ namespace WindowsFormsApplication8.ClassesToCalculate
 
             for (int i = 1; i < this.numberOfOperations; i++)
             {
-                spatialDeviationP[i] = deviationOfWorkpiece * this.coefficientOfRefinement[i];
+                spatialDeviationP[i] = deviationOfWorkpiece * this.coefficientOfRefinement[i];                
             }
             return spatialDeviationP;
         }

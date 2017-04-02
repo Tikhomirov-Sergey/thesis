@@ -249,7 +249,7 @@ SELECT [Номер детали], [Номер перехода], Переход,
   <xs:element name="juliaDataSet" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="True" msprop:Generator_DataSetName="juliaDataSet" msprop:Generator_UserDSName="juliaDataSet">
     <xs:complexType>
       <xs:choice minOccurs="0" maxOccurs="unbounded">
-        <xs:element name="Деталь" msprop:Generator_TableClassName="ДетальDataTable" msprop:Generator_TableVarName="tableДеталь" msprop:Generator_TablePropName="Деталь" msprop:Generator_RowDeletingName="ДетальRowDeleting" msprop:Generator_RowChangingName="ДетальRowChanging" msprop:Generator_RowEvHandlerName="ДетальRowChangeEventHandler" msprop:Generator_RowDeletedName="ДетальRowDeleted" msprop:Generator_UserTableName="Деталь" msprop:Generator_RowChangedName="ДетальRowChanged" msprop:Generator_RowEvArgName="ДетальRowChangeEvent" msprop:Generator_RowClassName="ДетальRow">
+        <xs:element name="Деталь" msprop:Generator_TableClassName="ДетальDataTable" msprop:Generator_TableVarName="tableДеталь" msprop:Generator_RowChangedName="ДетальRowChanged" msprop:Generator_TablePropName="Деталь" msprop:Generator_RowDeletingName="ДетальRowDeleting" msprop:Generator_RowChangingName="ДетальRowChanging" msprop:Generator_RowEvHandlerName="ДетальRowChangeEventHandler" msprop:Generator_RowDeletedName="ДетальRowDeleted" msprop:Generator_RowClassName="ДетальRow" msprop:Generator_UserTableName="Деталь" msprop:Generator_RowEvArgName="ДетальRowChangeEvent">
           <xs:complexType>
             <xs:sequence>
               <xs:element name="Номер_x0020_детали" msdata:ReadOnly="true" msdata:AutoIncrement="true" msdata:AutoIncrementSeed="-1" msdata:AutoIncrementStep="-1" msprop:Generator_ColumnVarNameInTable="columnНомер_детали" msprop:Generator_ColumnPropNameInRow="Номер_детали" msprop:Generator_ColumnPropNameInTable="Номер_деталиColumn" msprop:Generator_UserColumnName="Номер детали" type="xs:int" />
@@ -304,7 +304,7 @@ SELECT [Номер детали], [Номер перехода], Переход,
             </xs:sequence>
           </xs:complexType>
         </xs:element>
-        <xs:element name="Переходы" msprop:Generator_TableClassName="ПереходыDataTable" msprop:Generator_TableVarName="tableПереходы" msprop:Generator_TablePropName="Переходы" msprop:Generator_RowDeletingName="ПереходыRowDeleting" msprop:Generator_RowChangingName="ПереходыRowChanging" msprop:Generator_RowEvHandlerName="ПереходыRowChangeEventHandler" msprop:Generator_RowDeletedName="ПереходыRowDeleted" msprop:Generator_UserTableName="Переходы" msprop:Generator_RowChangedName="ПереходыRowChanged" msprop:Generator_RowEvArgName="ПереходыRowChangeEvent" msprop:Generator_RowClassName="ПереходыRow">
+        <xs:element name="Переходы" msprop:Generator_TableClassName="ПереходыDataTable" msprop:Generator_TableVarName="tableПереходы" msprop:Generator_RowChangedName="ПереходыRowChanged" msprop:Generator_TablePropName="Переходы" msprop:Generator_RowDeletingName="ПереходыRowDeleting" msprop:Generator_RowChangingName="ПереходыRowChanging" msprop:Generator_RowEvHandlerName="ПереходыRowChangeEventHandler" msprop:Generator_RowDeletedName="ПереходыRowDeleted" msprop:Generator_RowClassName="ПереходыRow" msprop:Generator_UserTableName="Переходы" msprop:Generator_RowEvArgName="ПереходыRowChangeEvent">
           <xs:complexType>
             <xs:sequence>
               <xs:element name="Номер_x0020_детали" msprop:Generator_ColumnVarNameInTable="columnНомер_детали" msprop:Generator_ColumnPropNameInRow="Номер_детали" msprop:Generator_ColumnPropNameInTable="Номер_деталиColumn" msprop:Generator_UserColumnName="Номер детали" type="xs:int" />
@@ -351,7 +351,7 @@ SELECT [Номер детали], [Номер перехода], Переход,
   </xs:element>
   <xs:annotation>
     <xs:appinfo>
-      <msdata:Relationship name="FK_Переходы_Деталь" msdata:parent="Деталь" msdata:child="Переходы" msdata:parentkey="Номер_x0020_детали" msdata:childkey="Номер_x0020_детали" msprop:Generator_UserChildTable="Переходы" msprop:Generator_ChildPropName="GetПереходыRows" msprop:Generator_UserRelationName="FK_Переходы_Деталь" msprop:Generator_ParentPropName="ДетальRow" msprop:Generator_RelationVarName="relationFK_Переходы_Деталь" msprop:Generator_UserParentTable="Деталь" />
+      <msdata:Relationship name="FK_Переходы_Деталь" msdata:parent="Деталь" msdata:child="Переходы" msdata:parentkey="Номер_x0020_детали" msdata:childkey="Номер_x0020_детали" msprop:Generator_UserChildTable="Переходы" msprop:Generator_ChildPropName="GetПереходыRows" msprop:Generator_UserRelationName="FK_Переходы_Деталь" msprop:Generator_RelationVarName="relationFK_Переходы_Деталь" msprop:Generator_UserParentTable="Деталь" msprop:Generator_ParentPropName="ДетальRow" />
     </xs:appinfo>
   </xs:annotation>
 </xs:schema>

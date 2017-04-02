@@ -71,7 +71,7 @@ namespace WindowsFormsApplication8
         private static void insertParametersOfWorkpriece(FormOfWorkWithDatabase form)
         {
             string nameOfWorkpiece = form.dataGridView1.CurrentRow.Cells[11].Value.ToString();
-            int idWorkpiece = Convert.ToInt32(form.dataGridView2[12, 0].Value.ToString());
+            int idWorkpiece = Convert.ToInt32(form.dataGridView2[11, 0].Value.ToString());
 
             double surfaceRoughnessRz = Convert.ToDouble(form.dataGridView2[4, 0].Value.ToString());
             Interval recommendedIntervalRz = new Interval();
@@ -92,8 +92,6 @@ namespace WindowsFormsApplication8
             for (int i = 1; i < numberOfOperations; i++)
             {
                 ParametersOperation parametersOperation = createOperation(form, i);
-
-                
                 surface.setOpetation(parametersOperation);
             }
 
@@ -112,7 +110,7 @@ namespace WindowsFormsApplication8
             double surfaceRoughnessRz = Convert.ToDouble(form.dataGridView2[4, index].Value.ToString()); ;
             Interval recommendedIntervalRz = new Interval();
 
-            int idOperation = Convert.ToInt32(form.dataGridView2[12, index].Value.ToString());
+            int idOperation = Convert.ToInt32(form.dataGridView2[11, index].Value.ToString());
             double kvalitet = Convert.ToInt32(form.dataGridView2[14, index].Value.ToString()); ;
 
             double thicknessOfDefectiveCoating = Convert.ToDouble(form.dataGridView2[5, index].Value.ToString());

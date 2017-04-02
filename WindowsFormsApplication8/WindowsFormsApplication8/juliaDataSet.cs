@@ -1,6 +1,8 @@
-﻿namespace WindowsFormsApplication8 {
-    
-    
-    public partial class juliaDataSet {
+﻿namespace WindowsFormsApplication8
+{
+
+
+    public partial class juliaDataSet
+    {
     }
 }
