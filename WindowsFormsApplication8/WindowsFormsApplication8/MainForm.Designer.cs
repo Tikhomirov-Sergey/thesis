@@ -73,6 +73,13 @@
             this.Allowance = new System.Windows.Forms.TextBox();
             this.TreeOfSelectedOperations = new System.Windows.Forms.TreeView();
             this.SaveChanges = new System.Windows.Forms.Button();
+            this.addSurfaceButton = new System.Windows.Forms.Button();
+            this.delSurfaceButton = new System.Windows.Forms.Button();
+            this.SurfacesTreeView = new System.Windows.Forms.TreeView();
+            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.Surfaces = new System.Windows.Forms.Label();
+            this.editProcessButton = new System.Windows.Forms.Button();
+            this.editSurfacesButton = new System.Windows.Forms.Button();
             this.menuStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
@@ -156,12 +163,12 @@
             // 
             this.TreeOfOperations.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.TreeOfOperations.Enabled = false;
-            this.TreeOfOperations.Location = new System.Drawing.Point(9, 225);
+            this.TreeOfOperations.Location = new System.Drawing.Point(12, 335);
             this.TreeOfOperations.Name = "TreeOfOperations";
             this.TreeOfOperations.ShowLines = false;
             this.TreeOfOperations.ShowPlusMinus = false;
             this.TreeOfOperations.ShowRootLines = false;
-            this.TreeOfOperations.Size = new System.Drawing.Size(398, 289);
+            this.TreeOfOperations.Size = new System.Drawing.Size(400, 179);
             this.TreeOfOperations.TabIndex = 16;
             this.TreeOfOperations.NodeMouseClick += new System.Windows.Forms.TreeNodeMouseClickEventHandler(this.treeView1_NodeMouseClick);
             // 
@@ -452,7 +459,7 @@
             // Allowance
             // 
             this.Allowance.Location = new System.Drawing.Point(137, 197);
-            this.Allowance.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Allowance.Margin = new System.Windows.Forms.Padding(2);
             this.Allowance.Name = "Allowance";
             this.Allowance.Size = new System.Drawing.Size(76, 20);
             this.Allowance.TabIndex = 57;
@@ -482,11 +489,84 @@
             this.SaveChanges.UseVisualStyleBackColor = true;
             this.SaveChanges.Click += new System.EventHandler(this.SaveChanges_Click);
             // 
+            // addSurfaceButton
+            // 
+            this.addSurfaceButton.Location = new System.Drawing.Point(373, 234);
+            this.addSurfaceButton.Name = "addSurfaceButton";
+            this.addSurfaceButton.Size = new System.Drawing.Size(36, 33);
+            this.addSurfaceButton.TabIndex = 61;
+            this.addSurfaceButton.Text = "+";
+            this.addSurfaceButton.UseVisualStyleBackColor = true;
+            // 
+            // delSurfaceButton
+            // 
+            this.delSurfaceButton.Location = new System.Drawing.Point(373, 269);
+            this.delSurfaceButton.Name = "delSurfaceButton";
+            this.delSurfaceButton.Size = new System.Drawing.Size(36, 33);
+            this.delSurfaceButton.TabIndex = 62;
+            this.delSurfaceButton.Text = "-";
+            this.delSurfaceButton.UseVisualStyleBackColor = true;
+            // 
+            // SurfacesTreeView
+            // 
+            this.SurfacesTreeView.Location = new System.Drawing.Point(9, 234);
+            this.SurfacesTreeView.Name = "SurfacesTreeView";
+            this.SurfacesTreeView.Size = new System.Drawing.Size(358, 68);
+            this.SurfacesTreeView.TabIndex = 60;
+            // 
+            // comboBox1
+            // 
+            this.comboBox1.FormattingEnabled = true;
+            this.comboBox1.Items.AddRange(new object[] {
+            "Дерево операций",
+            "Тех. процесс"});
+            this.comboBox1.Location = new System.Drawing.Point(9, 308);
+            this.comboBox1.Name = "comboBox1";
+            this.comboBox1.Size = new System.Drawing.Size(172, 21);
+            this.comboBox1.TabIndex = 63;
+            // 
+            // Surfaces
+            // 
+            this.Surfaces.AutoSize = true;
+            this.Surfaces.Location = new System.Drawing.Point(154, 219);
+            this.Surfaces.Name = "Surfaces";
+            this.Surfaces.Size = new System.Drawing.Size(73, 13);
+            this.Surfaces.TabIndex = 64;
+            this.Surfaces.Text = "Поверхности";
+            // 
+            // editProcessButton
+            // 
+            this.editProcessButton.Location = new System.Drawing.Point(187, 306);
+            this.editProcessButton.Name = "editProcessButton";
+            this.editProcessButton.Size = new System.Drawing.Size(222, 23);
+            this.editProcessButton.TabIndex = 65;
+            this.editProcessButton.Text = "редактирование тех. процесса";
+            this.editProcessButton.UseVisualStyleBackColor = true;
+            this.editProcessButton.Visible = false;
+            this.editProcessButton.Click += new System.EventHandler(this.editProcessButton_Click);
+            // 
+            // editSurfacesButton
+            // 
+            this.editSurfacesButton.Location = new System.Drawing.Point(187, 306);
+            this.editSurfacesButton.Name = "editSurfacesButton";
+            this.editSurfacesButton.Size = new System.Drawing.Size(222, 23);
+            this.editSurfacesButton.TabIndex = 66;
+            this.editSurfacesButton.Text = "редактирование поверхностей";
+            this.editSurfacesButton.UseVisualStyleBackColor = true;
+            this.editSurfacesButton.Click += new System.EventHandler(this.editSurfacesButton_Click);
+            // 
             // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1136, 521);
+            this.Controls.Add(this.editSurfacesButton);
+            this.Controls.Add(this.editProcessButton);
+            this.Controls.Add(this.Surfaces);
+            this.Controls.Add(this.comboBox1);
+            this.Controls.Add(this.delSurfaceButton);
+            this.Controls.Add(this.addSurfaceButton);
+            this.Controls.Add(this.SurfacesTreeView);
             this.Controls.Add(this.SaveChanges);
             this.Controls.Add(this.TreeOfSelectedOperations);
             this.Controls.Add(this.Allowance);
@@ -585,6 +665,13 @@
         protected internal System.Windows.Forms.Button Backspace;
         protected internal System.Windows.Forms.TreeView TreeOfSelectedOperations;
         protected internal System.Windows.Forms.Button SaveChanges;
+        private System.Windows.Forms.Button addSurfaceButton;
+        private System.Windows.Forms.Button delSurfaceButton;
+        private System.Windows.Forms.TreeView SurfacesTreeView;
+        private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.Label Surfaces;
+        private System.Windows.Forms.Button editProcessButton;
+        private System.Windows.Forms.Button editSurfacesButton;
     }
 }
 

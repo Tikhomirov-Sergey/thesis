@@ -240,6 +240,18 @@ namespace WindowsFormsApplication8
             e.Node.ForeColor = System.Drawing.Color.White;
             e.Node.BackColor = System.Drawing.Color.FromArgb(0, 0,160, 255);
         }
+
+        private void editSurfacesButton_Click(object sender, EventArgs e)
+        {
+            editProcessButton.Visible = true;
+            editSurfacesButton.Visible = false;
+        }
+
+        private void editProcessButton_Click(object sender, EventArgs e)
+        {
+            editProcessButton.Visible = false;
+            editSurfacesButton.Visible = true;
+        }
     }
 }
         
