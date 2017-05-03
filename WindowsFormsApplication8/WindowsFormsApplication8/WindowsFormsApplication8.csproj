@@ -102,6 +102,7 @@
     <Compile Include="DataStructures\StorageParameters\ParametersOperation.cs" />
     <Compile Include="DataStructures\StorageParameters\Surface.cs" />
     <Compile Include="DataStructures\Interval.cs" />
+    <Compile Include="DataStructures\StorageParameters\TechnologicalProcess.cs" />
     <Compile Include="DataStructures\TableOfTolerancesAndFits\Kvalitet.cs" />
     <Compile Include="DataStructures\TableOfTolerancesAndFits\NominalSizeRangeAndTolerance.cs" />
     <Compile Include="DataStructures\TableOfTolerancesAndFits\TableOfTolerancesAndFits.cs" />
