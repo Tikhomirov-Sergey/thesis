@@ -30,7 +30,6 @@
         {
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MainForm));
-            System.Windows.Forms.TreeNode treeNode1 = new System.Windows.Forms.TreeNode("Тех.процесс");
             this.label1 = new System.Windows.Forms.Label();
             this.DiameterOfPart = new System.Windows.Forms.TextBox();
             this.TypeOfPart = new System.Windows.Forms.ComboBox();
@@ -81,6 +80,7 @@
             this.Surfaces = new System.Windows.Forms.Label();
             this.editProcessButton = new System.Windows.Forms.Button();
             this.editSurfacesButton = new System.Windows.Forms.Button();
+            this.SelectTechnologicalProcess = new System.Windows.Forms.Button();
             this.menuStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
@@ -344,9 +344,9 @@
             // CalculationOfSchema
             // 
             this.CalculationOfSchema.Enabled = false;
-            this.CalculationOfSchema.Location = new System.Drawing.Point(438, 479);
+            this.CalculationOfSchema.Location = new System.Drawing.Point(757, 479);
             this.CalculationOfSchema.Name = "CalculationOfSchema";
-            this.CalculationOfSchema.Size = new System.Drawing.Size(661, 35);
+            this.CalculationOfSchema.Size = new System.Drawing.Size(342, 35);
             this.CalculationOfSchema.TabIndex = 39;
             this.CalculationOfSchema.Text = "Расчёт размерной цепи";
             this.CalculationOfSchema.UseVisualStyleBackColor = true;
@@ -514,12 +514,9 @@
             // 
             this.SurfacesTreeView.Location = new System.Drawing.Point(9, 234);
             this.SurfacesTreeView.Name = "SurfacesTreeView";
-            treeNode1.Name = "technologicalProcess";
-            treeNode1.Text = "Тех.процесс";
-            this.SurfacesTreeView.Nodes.AddRange(new System.Windows.Forms.TreeNode[] {
-            treeNode1});
             this.SurfacesTreeView.Size = new System.Drawing.Size(358, 68);
             this.SurfacesTreeView.TabIndex = 60;
+            this.SurfacesTreeView.AfterSelect += new System.Windows.Forms.TreeViewEventHandler(this.TreeOfSelectedOperations_AfterSelect);
             this.SurfacesTreeView.NodeMouseClick += new System.Windows.Forms.TreeNodeMouseClickEventHandler(this.SurfacesTreeView_NodeMouseClick);
             // 
             // comboBox1
@@ -563,11 +560,22 @@
             this.editSurfacesButton.UseVisualStyleBackColor = true;
             this.editSurfacesButton.Click += new System.EventHandler(this.editSurfacesButton_Click);
             // 
+            // SelectTechnologicalProcess
+            // 
+            this.SelectTechnologicalProcess.Location = new System.Drawing.Point(438, 479);
+            this.SelectTechnologicalProcess.Name = "SelectTechnologicalProcess";
+            this.SelectTechnologicalProcess.Size = new System.Drawing.Size(313, 35);
+            this.SelectTechnologicalProcess.TabIndex = 67;
+            this.SelectTechnologicalProcess.Text = "Выбор технологического процесса";
+            this.SelectTechnologicalProcess.UseVisualStyleBackColor = true;
+            this.SelectTechnologicalProcess.Click += new System.EventHandler(this.SelectTechnologicalProcess_Click);
+            // 
             // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1136, 521);
+            this.Controls.Add(this.SelectTechnologicalProcess);
             this.Controls.Add(this.editSurfacesButton);
             this.Controls.Add(this.editProcessButton);
             this.Controls.Add(this.Surfaces);
@@ -680,6 +688,7 @@
         private System.Windows.Forms.Button editProcessButton;
         private System.Windows.Forms.Button editSurfacesButton;
         public System.Windows.Forms.TreeView SurfacesTreeView;
+        private System.Windows.Forms.Button SelectTechnologicalProcess;
     }
 }
 

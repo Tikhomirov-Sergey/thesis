@@ -10,9 +10,17 @@ namespace WindowsFormsApplication8
     {
         public static void clickOnNode(TreeNodeMouseClickEventArgs e, MainForm form)
         {
-            int selectedIndexSurface = e.Node.Index;
-            StorageOfSelectedOperation.setIndexSelectedSurface(selectedIndexSurface);
+            int selectedIndex = e.Node.Index;
+            StorageOfSelectedOperation.setIndexSelectedSurface(selectedIndex);
 
+            if (selectedIndex == 0)
+            {
+                EventClickOnButtonOfEditOfTechnologicalProcess.buttonEditProcess(form);
+            }
+            else
+            {
+
+            }
         }
     }
 }

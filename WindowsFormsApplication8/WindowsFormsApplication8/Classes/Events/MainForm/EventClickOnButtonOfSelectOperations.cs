@@ -17,7 +17,9 @@ namespace WindowsFormsApplication8
                 extractionOfParametersOfOperationFromTextBoxes(operation, form);
 
                 int indexSelectedOperation = StorageOfSelectedOperation.getIndexSelectedOperation();
-                Part.addOperationInSurface(operation, 0, indexSelectedOperation);
+                int indexSelectedSurface = StorageOfSelectedOperation.getIndexSelectedSurface();
+
+                Part.addOperationInSurface(operation, indexSelectedSurface, indexSelectedOperation);
 
                 insertNameOperationInTextboxes(form, operation.getNameOperation(), indexSelectedOperation);
 

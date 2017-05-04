@@ -37,6 +37,7 @@ namespace WindowsFormsApplication8
             Array.Resize(ref surfaces, length + 1);
             surfaces[length] = operations;
         }
+
         public static void setOpetations(Surface operations, int index)
         {
             if (surfaces.Length - 1 >= index)
@@ -106,7 +107,9 @@ namespace WindowsFormsApplication8
 
         public static void insertListOfOperationsInTreeView(MainForm form, int indexOfSurface = 0)
         {
-            if(surfaces[indexOfSurface] != null)
+            insertNameOfWorkpieceInTreeViewAndTextBox(form);
+
+            if (surfaces[indexOfSurface] != null)
             {
                 surfaces[indexOfSurface].insertListOfOperationsInTreeView(form);
             }
@@ -115,7 +118,7 @@ namespace WindowsFormsApplication8
                 surfaces[0].insertListOfOperationsInTreeView(form);
             }
         }
-
+        
         public static void deleteOperation(int indexOfSurface, int indexOfOperation)
         {
             try

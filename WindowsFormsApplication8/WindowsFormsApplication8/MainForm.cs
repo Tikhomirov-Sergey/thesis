@@ -14,6 +14,8 @@ namespace WindowsFormsApplication8
             TypeOfProcessedSurface.Items.AddRange(new string[] { "цилиндрическая", "плоская" });
             TypeOfAllowance.Items.AddRange(new string[] { "двухсторонний", "односторонний" });
 
+            SurfacesTreeView.Nodes.Add("Главный технологический процесс");
+
             TypeOfPart.SelectedIndex = 0;
             TypeOfProcessedSurface.SelectedIndex = 0;
             TypeOfAllowance.SelectedIndex = 0;
@@ -35,8 +37,6 @@ namespace WindowsFormsApplication8
                 EventClickOnButtonOfSelectOperationsOrWorkpiece.buttonOfSelectOperations(e, this);
             }
             catch { }
-
-            int g = Part.getSurfaceOnIndex(0).getNumberOfOperations();
         }
         
         private void treeView1_NodeMouseClick(object sender, TreeNodeMouseClickEventArgs e)
@@ -232,14 +232,7 @@ namespace WindowsFormsApplication8
 
         private void TreeOfSelectedOperations_AfterSelect(object sender, TreeViewEventArgs e)
         {
-            foreach(TreeNode node in TreeOfSelectedOperations.Nodes)
-            {
-                node.BackColor = System.Drawing.Color.White;
-                node.ForeColor = System.Drawing.Color.Black;
-            }
-            
-            e.Node.ForeColor = System.Drawing.Color.White;
-            e.Node.BackColor = System.Drawing.Color.FromArgb(0, 0,160, 255);
+            EventTreeViewAfterSelectOperations.alferSelect(this, (TreeView)sender, e);
         }
 
         private void editSurfacesButton_Click(object sender, EventArgs e)
@@ -268,6 +261,11 @@ namespace WindowsFormsApplication8
         private void addSurfaceButton_Click(object sender, EventArgs e)
         {
             EventAddSurfaceButton.buttonAddSurface(e, this);
+        }
+
+        private void SelectTechnologicalProcess_Click(object sender, EventArgs e)
+        {
+            EventClickOnButtonOfSelectTechnologicalProcess.buttonSelectProcess(this);
         }
     }
 }
