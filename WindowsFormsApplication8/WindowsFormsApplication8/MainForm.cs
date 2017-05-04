@@ -3,6 +3,7 @@ using System.Windows.Forms;
 
 namespace WindowsFormsApplication8
 {
+    
     public partial class MainForm : System.Windows.Forms.Form
     {
         public MainForm()
@@ -251,6 +252,22 @@ namespace WindowsFormsApplication8
         {
             editProcessButton.Visible = false;
             editSurfacesButton.Visible = true;
+        }
+
+
+        private void SurfacesTreeView_NodeMouseClick(object sender, TreeNodeMouseClickEventArgs e)
+        {
+            EventClickOfMouseOnSurfacesTreeView.clickOnNode(e, this);
+        }
+
+        private void delSurfaceButton_Click(object sender, EventArgs e)
+        {
+            EventDelSurfaceButton.buttonDelSurface(e, this);
+        }
+
+        private void addSurfaceButton_Click(object sender, EventArgs e)
+        {
+            EventAddSurfaceButton.buttonAddSurface(e, this);
         }
     }
 }

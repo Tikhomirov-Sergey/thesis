@@ -77,6 +77,8 @@
     <Compile Include="Classes\Events\FormOfSaveToDatabase\EventClickOnButtonOfSaveToDatabase.cs" />
     <Compile Include="Classes\Events\FormOfWorkWithDatabase\EventClickOnButtonOfSelectPart.cs" />
     <Compile Include="Classes\Events\FormSelectWorkpriece\EventClickOnButtonOfSelectWorkpriece.cs" />
+    <Compile Include="Classes\Events\MainForm\EventAddSurfaceButton.cs" />
+    <Compile Include="Classes\Events\MainForm\EventClickOfMouseOnSurfacesTreeView.cs" />
     <Compile Include="Classes\Events\MainForm\EventClickOfMouseOnTreeViewNodeSelectedOperations.cs" />
     <Compile Include="Classes\Events\MainForm\EventClickOnButtonOfCalculationPart.cs" />
     <Compile Include="Classes\Events\MainForm\EventClickOnButtonOfDeleteOperation.cs" />
@@ -85,6 +87,7 @@
     <Compile Include="Classes\Events\EventClickOfMouseOnTreeViewNode.cs" />
     <Compile Include="Classes\Events\MainForm\EventClickOnButtonOfSelectWorkpriece.cs" />
     <Compile Include="Classes\AuxiliaryСlasses\EventKeyPressForTextBox.cs" />
+    <Compile Include="Classes\Events\MainForm\EventDelSurfaceButton.cs" />
     <Compile Include="Classes\Exception\ErrorMessage.cs" />
     <Compile Include="Classes\StorageOfSelectedOperation.cs" />
     <Compile Include="Classes\XMLClasses\XMLtoObject.cs" />

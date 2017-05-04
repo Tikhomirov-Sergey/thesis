@@ -6,6 +6,7 @@ namespace WindowsFormsApplication8
     {
         private static ParametersOperation parameters = null;
         private static int indexSelectOperation;
+        private static int indexSelectSurface;
 
         public static void setParameters(ParametersOperation parametersOperation)
         {
@@ -25,6 +26,16 @@ namespace WindowsFormsApplication8
         public static int getIndexSelectedOperation()
         {
             return indexSelectOperation;
+        }
+
+        public static void setIndexSelectedSurface(int indexSurface)
+        {
+            indexSelectSurface = indexSurface;
+        }
+
+        public static int getIndexSelectedSurface()
+        {
+            return indexSelectSurface;
         }
 
         public static void incrementOfIndex()
