@@ -19,7 +19,12 @@ namespace WindowsFormsApplication8
             }
             else
             {
+                int indexSelectSurface = StorageOfSelectedOperation.getIndexSelectedSurface();
 
+                Part.insertListOfOperationsInTreeView(form, indexSelectSurface);
+
+                int countOperations = form.TreeOfSelectedOperations.Nodes.Count;
+                form.TreeOfSelectedOperations.SelectedNode = form.TreeOfSelectedOperations.Nodes[countOperations - 1];
             }
         }
     }

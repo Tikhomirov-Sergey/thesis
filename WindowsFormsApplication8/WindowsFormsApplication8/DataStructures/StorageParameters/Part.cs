@@ -107,16 +107,20 @@ namespace WindowsFormsApplication8
 
         public static void insertListOfOperationsInTreeView(MainForm form, int indexOfSurface = 0)
         {
-            insertNameOfWorkpieceInTreeViewAndTextBox(form);
+            try
+            {
+                insertNameOfWorkpieceInTreeViewAndTextBox(form);
 
-            if (surfaces[indexOfSurface] != null)
-            {
-                surfaces[indexOfSurface].insertListOfOperationsInTreeView(form);
+                if (surfaces[indexOfSurface] != null)
+                {
+                    surfaces[indexOfSurface].insertListOfOperationsInTreeView(form);
+                }
+                else
+                {
+                    surfaces[0].insertListOfOperationsInTreeView(form);
+                }
             }
-            else
-            {
-                surfaces[0].insertListOfOperationsInTreeView(form);
-            }
+            catch { } 
         }
         
         public static void deleteOperation(int indexOfSurface, int indexOfOperation)

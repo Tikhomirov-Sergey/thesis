@@ -1,280 +1,466 @@
 {
-   "Точение_и_растачивание": {
-      "черновое": {
-         "toch": "14",
-         "sher": "0,040_6,3-50",
-         "glub": "0,060",
-         "k": "0,06",
-         "i": "4",
-         "id_per": "1"
-      },
-      "получистовое": {
-         "toch": "12",
-         "sher": "0,020_1,6-6,3",
-         "glub": "0,040",
-         "k": "0,05",
-         "i": "4",
-         "id_per": "1"
-      },
-      "чистовое": {
-         "toch": "10",
-         "sher": "0,010_0,4-1,6",
-         "glub": "0,030",
-         "k": "0,04",
-         "i": "5",
-         "id_per": "1"
-      },
-      "тонкое": {
-         "toch": "7",
-         "sher": "0,005_0,2-0,4",
-         "glub": "0,010",
-         "k": "0",
-         "i": "5",
-         "id_per": "1"
-      },
-      "Сверление_и_рассверливание": {
-         "toch": "10",
-         "sher": "0,024_0,8-25",
-         "glub": "0,040",
-         "k": "1",
-         "i": "8",
-         "id_per": "1"
-      }
-   },
-   "Зенкерование": {
-      "черновое": {
-         "toch": "12",
-         "sher": "0,030_6,3-25",
-         "glub": "0,040",
-         "k": "0",
-         "i": "4",
-         "id_per": "1"
-      },
-      "чистовое": {
-         "toch": "8",
-         "sher": "0,010_0,4-6,3",
-         "glub": "0,015",
-         "k": "0",
-         "i": "5",
-         "id_per": "1"
-      }
-   },
-   "Развертывание": {
-      "черновое": {
-         "toch": "10",
-         "sher": "0,010_0,8-1,25",
-         "glub": "0,015",
-         "k": "0",
-         "i": "4",
-         "id_per": "1"
-      },
-      "чистовое": {
-         "toch": "7",
-         "sher": "0,0024_0,4-0,8",
-         "glub": "0,010",
-         "k": "0",
-         "i": "5",
-         "id_per": "1"
-      },
-      "тонкое": {
-         "toch": "5",
-         "sher": "0,001_0,1-0,4",
-         "glub": "0,005",
-         "k": "0",
-         "i": "5",
-         "id_per": "1"
-      }
-   },
-   "Протягивание": {
-      "черновое": {
-         "toch": "10",
-         "sher": "0,005_0,8-1,6",
-         "glub": "0,015",
-         "k": "0",
-         "i": "4",
-         "id_per": "1"
-      },
-      "чистовое": {
-         "toch": "7",
-         "sher": "0,002_0,2-0,8",
-         "glub": "0,010",
-         "k": "0",
-         "i": "5",
-         "id_per": "1"
-      }
-   },
-   "Шлифование": {
-      "черновое": {
-         "toch": "8",
-         "sher": "0,010_0,4-6,3",
-         "glub": "0,020",
-         "k": "0,03",
-         "i": "4",
-         "id_per": "1"
-      },
-      "чистовое": {
-         "toch": "7",
-         "sher": "0,005_0,2-0,4",
-         "glub": "0,010",
-         "k": "0,02",
-         "i": "5",
-         "id_per": "1"
-      },
-      "тонкое": {
-         "toch": "6",
-         "sher": "0,001_0,08-0,2",
-         "glub": "0,005",
-         "k": "0",
-         "i": "5",
-         "id_per": "1"
-      }
-   },
-   "Фрезерование": {
-      "черновое": {
-         "toch": "14",
-         "sher": "0,040_3,2-12,5",
-         "glub": "0,040",
-         "k": "0,06",
-         "i": "4",
-         "id_per": "2"
-      },
-      "чистовое": {
-         "toch": "10",
-         "sher": "0,020_2,5-1,25",
-         "glub": "0,020",
-         "k": "0,04",
-         "i": "5",
-         "id_per": "2"
-      },
-      "тонкое": {
-         "toch": "6",
-         "sher": "0,005_0,32-1,25",
-         "glub": "0,010",
-         "k": "0",
-         "i": "5",
-         "id_per": "2"
-      }
-   },
-   "Строгание": {
-      "черновое": {
-         "toch": "14",
-         "sher": "0,040_6,3-50",
-         "glub": "0,050",
-         "k": "0,06",
-         "i": "4",
-         "id_per": "1"
-      },
-      "чистовое": {
-         "toch": "11",
-         "sher": "0,020_1-6,3",
-         "glub": "0,025",
-         "k": "0,04",
-         "i": "5",
-         "id_per": "1"
-      },
-      "тонкое": {
-         "toch": "8",
-         "sher": "0,010_0,32-1,6",
-         "glub": "0,010",
-         "k": "0",
-         "i": "5",
-         "id_per": "1"
-      }
-   },
-   "Доводочная": {
-      "Доводочная": {
-         "toch": "4",
-         "sher": "0,0005_0,02-0,1",
-         "glub": "0,004",
-         "k": "0",
-         "i": "5",
-         "id_per": "1"
-      }
-   },
-   "Суперфиниширование": {
-      "Суперфиниширование": {
-         "toch": "4",
-         "sher": "0,0005_0,032-0,2",
-         "glub": "0,004",
-         "k": "0",
-         "i": "5",
-         "id_per": "1"
-      }
-   },
-   "Хонингование": {
-      "Хонингование": {
-         "toch": "4",
-         "sher": "0,0005_0,04-0,2",
-         "glub": "0,004",
-         "k": "0",
-         "i": "5",
-         "id_per": "1"
-      }
-   },
-   "Раскатывание": {
-      "Раскатывание": {
-         "toch": "6",
-         "sher": "0,0008_0,05-0,4",
-         "glub": "0",
-         "k": "0",
-         "i": "5",
-         "id_per": "1"
-      }
-   },
-   "Калибрование": {
-      "Калибрование": {
-         "toch": "5",
-         "sher": "0,0005_0,05-0,4",
-         "glub": "0",
-         "k": "0",
-         "i": "5",
-         "id_per": "1"
-      }
-   },
-   "Алмазное_выглаживание": {
-      "Алмазное_выглаживание": {
-         "toch": "5",
-         "sher": "0,0005_0,05-0,4",
-         "glub": "0",
-         "k": "0",
-         "i": "5",
-         "id_per": "1"
-      }
-   },
-   "Полирование": {
-      "Полирование": {
-         "toch": "0",
-         "sher": "0,000032_0,008-0,08",
-         "glub": "0",
-         "k": "0",
-         "i": "5",
-         "id_per": "1"
-      }
-   },
-   "Электрозионная_обработка": {
-      "черновая": {
-         "toch": "14",
-         "sher": "0,040_10-20",
-         "glub": "0,080",
-         "k": "0",
-         "i": "4",
-         "id_per": "1"
-      },
-      "чистовая": {
-         "toch": "10",
-         "sher": "0,020_1,25-5",
-         "glub": "0,040",
-         "k": "0",
-         "i": "5",
-         "id_per": "1"
-      },
-      "отделочная": {
-         "toch": "7",
-         "sher": "0,005_0-1,25",
-         "glub": "0,020",
-         "k": "0",
-         "i": "5",
-         "id_per": "1"
-      }
-   }
+    "parametersOfSurfacesAfterVariousOperations": [
+        {
+            "typeOfMachining": "Точение и растачивание",
+            "precisionOfMachining": [
+                {
+                    "name": "черновое",
+                    "kvalitet": 14,
+                    "surfaceRoughnessRz": 0.04,
+                    "recommendedIntervalRz": {
+                        "min": 6.3,
+                        "max": 50
+                    },
+                    "thicknessOfDefectiveCoating": 0.06,
+                    "coefficientOfRefinement": 0.06,
+                    "idOperation": 4
+                },
+                {
+                    "name": "получистовое",
+                    "kvalitet": 12,
+                    "surfaceRoughnessRz": 0.02,
+                    "recommendedIntervalRz": {
+                        "min": 1.6,
+                        "max": 6.3
+                    },
+                    "thicknessOfDefectiveCoating": 0.04,
+                    "coefficientOfRefinement": 0.05,
+                    "idOperation": 4
+                },
+                {
+                    "name": "чистовое",
+                    "kvalitet": 10,
+                    "surfaceRoughnessRz": 0.01,
+                    "recommendedIntervalRz": {
+                        "min": 0.4,
+                        "max": 1.6
+                    },
+                    "thicknessOfDefectiveCoating": 0.03,
+                    "coefficientOfRefinement": 0.04,
+                    "idOperation": 5
+                },
+                {
+                    "name": "тонкое",
+                    "kvalitet": 7,
+                    "surfaceRoughnessRz": 0.005,
+                    "recommendedIntervalRz": {
+                        "min": 0.2,
+                        "max": 0.4
+                    },
+                    "thicknessOfDefectiveCoating": 0.01,
+                    "coefficientOfRefinement": 0,
+                    "idOperation": 5
+                }
+            ]
+        },
+        {
+            "typeOfMachining": "Сверление и рассверливание",
+            "precisionOfMachining": [
+                {
+                    "name": "",
+                    "kvalitet": 10,
+                    "surfaceRoughnessRz": 0.024,
+                    "recommendedIntervalRz": {
+                        "min": 0.8,
+                        "max": 25
+                    },
+                    "thicknessOfDefectiveCoating": 0.04,
+                    "coefficientOfRefinement": 1,
+                    "idOperation": 8
+                }
+            ]
+        },
+
+        {
+            "typeOfMachining": "Зенкерование",
+            "precisionOfMachining": [
+                {
+                    "name": "черновое",
+                    "kvalitet": 12,
+                    "surfaceRoughnessRz": 0.03,
+                    "recommendedIntervalRz": {
+                        "min": 6.3,
+                        "max": 25
+                    },
+                    "thicknessOfDefectiveCoating": 0.04,
+                    "coefficientOfRefinement": 0.0,
+                    "idOperation": 4
+                },
+                {
+                    "name": "чистовое",
+                    "kvalitet": 8,
+                    "surfaceRoughnessRz": 0.01,
+                    "recommendedIntervalRz": {
+                        "min": 0.4,
+                        "max": 6.3
+                    },
+                    "thicknessOfDefectiveCoating": 0.015,
+                    "coefficientOfRefinement": 0.0,
+                    "idOperation": 5
+                }
+            ]
+        },
+
+        {
+            "typeOfMachining": "Развертывание",
+            "precisionOfMachining": [
+                {
+                    "name": "черновое",
+                    "kvalitet": 10,
+                    "surfaceRoughnessRz": 0.01,
+                    "recommendedIntervalRz": {
+                        "min": 0.8,
+                        "max": 1.25
+                    },
+                    "thicknessOfDefectiveCoating": 0.015,
+                    "coefficientOfRefinement": 0,
+                    "idOperation": 4
+                },
+                {
+                    "name": "чистовое",
+                    "kvalitet": 7,
+                    "surfaceRoughnessRz": 0.0024,
+                    "recommendedIntervalRz": {
+                        "min": 0.4,
+                        "max": 0.8
+                    },
+                    "thicknessOfDefectiveCoating": 0.01,
+                    "coefficientOfRefinement": 0,
+                    "idOperation": 5
+                },
+                {
+                    "name": "тонкое",
+                    "kvalitet": 5,
+                    "surfaceRoughnessRz": 0.001,
+                    "recommendedIntervalRz": {
+                        "min": 0.1,
+                        "max": 0.4
+                    },
+                    "thicknessOfDefectiveCoating": 0.005,
+                    "coefficientOfRefinement": 0,
+                    "idOperation": 5
+                }
+            ]
+        },
+        {
+            "typeOfMachining": "Протягивание",
+            "precisionOfMachining": [
+                {
+                    "name": "черновое",
+                    "kvalitet": 10,
+                    "surfaceRoughnessRz": 0.005,
+                    "recommendedIntervalRz": {
+                        "min": 0.8,
+                        "max": 1.6
+                    },
+                    "thicknessOfDefectiveCoating": 0.015,
+                    "coefficientOfRefinement": 0,
+                    "idOperation": 4
+                },
+                {
+                    "name": "чистовое",
+                    "kvalitet": 7,
+                    "surfaceRoughnessRz": 0.002,
+                    "recommendedIntervalRz": {
+                        "min": 0.2,
+                        "max": 0.8
+                    },
+                    "thicknessOfDefectiveCoating": 0.01,
+                    "coefficientOfRefinement": 0,
+                    "idOperation": 5
+                }
+            ]
+        },
+        {
+            "typeOfMachining": "Шлифование",
+            "precisionOfMachining": [
+                {
+                    "name": "черновое",
+                    "kvalitet": 8,
+                    "surfaceRoughnessRz": 0.01,
+                    "recommendedIntervalRz": {
+                        "min": 0.4,
+                        "max": 6.3
+                    },
+                    "thicknessOfDefectiveCoating": 0.02,
+                    "coefficientOfRefinement": 0.03,
+                    "idOperation": 4
+                },
+                {
+                    "name": "чистовое",
+                    "kvalitet": 7,
+                    "surfaceRoughnessRz": 0.005,
+                    "recommendedIntervalRz": {
+                        "min": 0.2,
+                        "max": 0.4
+                    },
+                    "thicknessOfDefectiveCoating": 0.01,
+                    "coefficientOfRefinement": 0.02,
+                    "idOperation": 5
+                },
+                {
+                    "name": "тонкое",
+                    "kvalitet": 6,
+                    "surfaceRoughnessRz": 0.001,
+                    "recommendedIntervalRz": {
+                        "min": 0.08,
+                        "max": 0.2
+                    },
+                    "thicknessOfDefectiveCoating": 0.005,
+                    "coefficientOfRefinement": 0,
+                    "idOperation": 5
+                }
+            ]
+        },
+        {
+            "typeOfMachining": "Фрезерование",
+            "precisionOfMachining": [
+                {
+                    "name": "черновое",
+                    "kvalitet": 14,
+                    "surfaceRoughnessRz": 0.04,
+                    "recommendedIntervalRz": {
+                        "min": 3.2,
+                        "max": 12.5
+                    },
+                    "thicknessOfDefectiveCoating": 0.04,
+                    "coefficientOfRefinement": 0.06,
+                    "idOperation": 4
+                },
+                {
+                    "name": "чистовое",
+                    "kvalitet": 10,
+                    "surfaceRoughnessRz": 0.02,
+                    "recommendedIntervalRz": {
+                        "min": 2.5,
+                        "max": 1.25
+                    },
+                    "thicknessOfDefectiveCoating": 0.02,
+                    "coefficientOfRefinement": 0.04,
+                    "idOperation": 5
+                },
+                {
+                    "name": "тонкое",
+                    "kvalitet": 6,
+                    "surfaceRoughnessRz": 0.005,
+                    "recommendedIntervalRz": {
+                        "min": 0.32,
+                        "max": 1.25
+                    },
+                    "thicknessOfDefectiveCoating": 0.01,
+                    "coefficientOfRefinement": 0,
+                    "idOperation": 5
+                }
+            ]
+        },
+        {
+            "typeOfMachining": "Строгание",
+            "precisionOfMachining": [
+                {
+                    "name": "черновое",
+                    "kvalitet": 14,
+                    "surfaceRoughnessRz": 0.04,
+                    "recommendedIntervalRz": {
+                        "min": 6.3,
+                        "max": 50
+                    },
+                    "thicknessOfDefectiveCoating": 0.05,
+                    "coefficientOfRefinement": 0.06,
+                    "idOperation": 4
+                },
+                {
+                    "name": "чистовое",
+                    "kvalitet": 11,
+                    "surfaceRoughnessRz": 0.02,
+                    "recommendedIntervalRz": {
+                        "min": 1,
+                        "max": 6.3
+                    },
+                    "thicknessOfDefectiveCoating": 0.025,
+                    "coefficientOfRefinement": 0.04,
+                    "idOperation": 5
+                },
+                {
+                    "name": "тонкое",
+                    "kvalitet": 8,
+                    "surfaceRoughnessRz": 0.01,
+                    "recommendedIntervalRz": {
+                        "min": 0.32,
+                        "max": 1.6
+                    },
+                    "thicknessOfDefectiveCoating": 0.01,
+                    "coefficientOfRefinement": 0,
+                    "idOperation": 5
+                }
+            ]
+        },
+
+        {
+            "typeOfMachining": "Доводочная",
+            "precisionOfMachining": [
+                {
+                    "name": "Доводочная",
+                    "kvalitet": 4,
+                    "surfaceRoughnessRz": 0.0005,
+                    "recommendedIntervalRz": {
+                        "min": 0.02,
+                        "max": 0.1
+                    },
+                    "thicknessOfDefectiveCoating": 0.004,
+                    "coefficientOfRefinement": 0,
+                    "idOperation": 5
+                }
+            ]
+        },
+        {
+            "typeOfMachining": "Суперфиниширование",
+            "precisionOfMachining": [
+                {
+                    "name": "Суперфиниширование",
+                    "kvalitet": 4,
+                    "surfaceRoughnessRz": 0.0005,
+                    "recommendedIntervalRz": {
+                        "min": 0.032,
+                        "max": 0.2
+                    },
+                    "thicknessOfDefectiveCoating": 0.004,
+                    "coefficientOfRefinement": 0,
+                    "idOperation": 5
+                }
+            ]
+        },
+        {
+            "typeOfMachining": "Хонингование",
+            "precisionOfMachining": [
+                {
+                    "name": "Хонингование",
+                    "kvalitet": 4,
+                    "surfaceRoughnessRz": 0.0005,
+                    "recommendedIntervalRz": {
+                        "min": 0.04,
+                        "max": 0.2
+                    },
+                    "thicknessOfDefectiveCoating": 0.004,
+                    "coefficientOfRefinement": 0,
+                    "idOperation": 5
+                }
+            ]
+        },
+
+
+        {
+            "typeOfMachining": "Раскатывание",
+            "precisionOfMachining": [
+                {
+                    "name": "Раскатывание",
+                    "kvalitet": 6,
+                    "surfaceRoughnessRz": 0.0008,
+                    "recommendedIntervalRz": {
+                        "min": 0.05,
+                        "max": 0.4
+                    },
+                    "thicknessOfDefectiveCoating": 0,
+                    "coefficientOfRefinement": 0,
+                    "idOperation": 5
+                }
+            ]
+        },
+
+        {
+            "typeOfMachining": "Калибрование",
+            "precisionOfMachining": [
+                {
+                    "name": "Калибрование",
+                    "kvalitet": 5,
+                    "surfaceRoughnessRz": 0.0005,
+                    "recommendedIntervalRz": {
+                        "min": 0.05,
+                        "max": 0.4
+                    },
+                    "thicknessOfDefectiveCoating": 0,
+                    "coefficientOfRefinement": 0,
+                    "idOperation": 5
+                }
+            ]
+        },
+
+        {
+            "typeOfMachining": "Алмазное выглаживание",
+            "precisionOfMachining": [
+                {
+                    "name": "Алмазное выглаживание",
+                    "kvalitet": 5,
+                    "surfaceRoughnessRz": 0.0005,
+                    "recommendedIntervalRz": {
+                        "min": 0.05,
+                        "max": 0.4
+                    },
+                    "thicknessOfDefectiveCoating": 0,
+                    "coefficientOfRefinement": 0,
+                    "idOperation": 5
+                }
+            ]
+        },
+
+        {
+            "typeOfMachining": "Полирование",
+            "precisionOfMachining": [
+                {
+                    "name": "Полирование",
+                    "kvalitet": 0,
+                    "surfaceRoughnessRz": 0.000032,
+                    "recommendedIntervalRz": {
+                        "min": 0.008,
+                        "max": 0.08
+                    },
+                    "thicknessOfDefectiveCoating": 0,
+                    "coefficientOfRefinement": 0,
+                    "idOperation": 5
+                }
+            ]
+        },
+
+        {
+            "typeOfMachining": "Электрозионная обработка",
+            "precisionOfMachining": [
+                {
+                    "name": "черновая",
+                    "kvalitet": 14,
+                    "surfaceRoughnessRz": 0.04,
+                    "recommendedIntervalRz": {
+                        "min": 10,
+                        "max": 20
+                    },
+                    "thicknessOfDefectiveCoating": 0.08,
+                    "coefficientOfRefinement": 0,
+                    "idOperation": 4
+                },
+                {
+                    "name": "чистовая",
+                    "kvalitet": 10,
+                    "surfaceRoughnessRz": 0.02,
+                    "recommendedIntervalRz": {
+                        "min": 1.25,
+                        "max": 5
+                    },
+                    "thicknessOfDefectiveCoating": 0.04,
+                    "coefficientOfRefinement": 0,
+                    "idOperation": 5
+                },
+                {
+                    "name": "отделочная",
+                    "kvalitet": 7,
+                    "surfaceRoughnessRz": 0.005,
+                    "recommendedIntervalRz": {
+                        "min": 0.00,
+                        "max": 1.25
+                    },
+                    "thicknessOfDefectiveCoating": 0.02,
+                    "coefficientOfRefinement": 0,
+                    "idOperation": 5
+                }
+            ]
+        }
+
+    ]
 }

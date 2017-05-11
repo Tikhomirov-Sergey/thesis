@@ -11,7 +11,7 @@ namespace WindowsFormsApplication8
         {
             int countNodes = form.SurfacesTreeView.Nodes.Count;
 
-            if(countNodes == 1)
+            if (countNodes == 1)
             {
                 form.SurfacesTreeView.Nodes.Add("Поверхность 1");
             }
@@ -20,6 +20,17 @@ namespace WindowsFormsApplication8
             form.SurfacesTreeView.SelectedNode = form.SurfacesTreeView.Nodes[1];
 
             form.TreeOfSelectedOperations.Nodes.Clear();
+
+            enabledTextBoxes(form);
         }
+
+        private static void enabledTextBoxes(MainForm form)
+        {
+            form.addSurfaceButton.Enabled = true;
+            form.delSurfaceButton.Enabled = true;
+            form.SurfacesTreeView.Enabled = true;
+            form.CalculationOfSchema.Visible = true;
+        }
+        
     }
 }

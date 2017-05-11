@@ -104,6 +104,9 @@ namespace WindowsFormsApplication8
                 CalculationOfSchema.Enabled = true;
                 TypeOfInstrument.Enabled = true;
                 SurfaceRoughnessRa.Enabled = true;
+                addSurfaceButton.Enabled = true;
+                delSurfaceButton.Enabled = true;
+                SurfacesTreeView.Enabled = true;
         }
 
         private void textBox12_Click(object sender, EventArgs e)
@@ -267,6 +270,8 @@ namespace WindowsFormsApplication8
         {
             EventClickOnButtonOfSelectTechnologicalProcess.buttonSelectProcess(this);
         }
+
+       
     }
 }
         

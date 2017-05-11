@@ -1,68 +1,126 @@
 {
-   "Литьё_в_песчано-глинистые_формы": {
-      "toch": "16",
-      "sher": "0,300_20-80",
-      "glub": "0,300",
-      "i": "3"
-   },
-   "Литьё_в_оболочковые_формы": {
-      "toch": "15",
-      "sher": "0,040_5-40",
-      "glub": "0,160",
-      "i": "3"
-   },
-   "Литьё_по_выплавляемым_моделям": {
-      "toch": "12",
-      "sher": "0,032_2,5-10",
-      "glub": "0,100",
-      "i": "3"
-   },
-   "Литьё_в_кокиль": {
-      "toch": "15",
-      "sher": "0,200_5-20",
-      "glub": "0,200",
-      "i": "3"
-   },
-   "Литьё_под_давлением_в_металлические_формы": {
-      "toch": "12",
-      "sher": "0,040_2,5-10",
-      "glub": "0,100",
-      "i": "3"
-   },
-   "Центробежное_литьё": {
-      "toch": "15",
-      "sher": "0,200_5-20",
-      "glub": "0,200",
-      "i": "3"
-   },
-   "Горячая_объёмная_штамповка_на_молотах_и_прессах": {
-      "toch": "17",
-      "sher": "0,160_5-40",
-      "glub": "0,200",
-      "i": "3"
-   },
-   "Холодное_выдавливание": {
-      "toch": "14",
-      "sher": "0,40_0,63-10",
-      "glub": "0,040",
-      "i": "2"
-   },
-   "Прокат_Обычная_точность_В1": {
-      "toch": "16",
-      "sher": "0,2_20-30",
-      "glub": "0,3",
-      "i": "1"
-   },
-   "Прокат_Повышенная_точность_Б1": {
-      "toch": "15",
-      "sher": "0,125_15-25",
-      "glub": "0,15",
-      "i": "6"
-   },
-   "Прокат_Высокая_точность_А1": {
-      "toch": "14",
-      "sher": "0,075_10-15",
-      "glub": "0,1",
-      "i": "7"
-   }
+    "ParametersOfWorkpieces": [
+        {
+            "nameOfWorkpiece": "литьё в песчано глинистые формы",
+            "kvalitet": 16,
+            "surfaceRoughnessRz": 0.300,
+            "recommendedIntervalRz": {
+                "max": 20,
+                "min": 80
+            },
+            "thicknessOfDefectiveCoating": 0.300,
+            "idWorkpiece": 3
+        },
+        {
+            "nameOfWorkpiece": "Литьё в оболочковые формы",
+            "kvalitet": 15,
+            "surfaceRoughnessRz": 0.040,
+            "recommendedIntervalRz": {
+                "max": 5,
+                "min": 40
+            },
+            "thicknessOfDefectiveCoating": 0.160,
+            "idWorkpiece": 3
+        },
+        
+           {
+            "nameOfWorkpiece": "Литьё по выплавляемым моделям",
+            "kvalitet": 12,
+            "surfaceRoughnessRz": 0.032,
+            "recommendedIntervalRz": {
+                "max": 2.50,
+                "min": 10
+            },
+            "thicknessOfDefectiveCoating": 0.100,
+            "idWorkpiece": 3
+        },
+                  {
+            "nameOfWorkpiece": "Литьё в кокиль",
+            "kvalitet": 15,
+            "surfaceRoughnessRz": 0.2,
+            "recommendedIntervalRz": {
+                "max": 5,
+                "min": 20
+            },
+            "thicknessOfDefectiveCoating": 0.200,
+            "idWorkpiece": 3
+        },
+         {
+            "nameOfWorkpiece": "Литьё под давлением в металлические формы",
+            "kvalitet": 12,
+            "surfaceRoughnessRz": 0.04,
+            "recommendedIntervalRz": {
+                "max": 2.5,
+                "min": 10
+            },
+            "thicknessOfDefectiveCoating": 0.100,
+            "idWorkpiece": 3
+        },
+          {
+            "nameOfWorkpiece": "Центробежное литьё",
+            "kvalitet": 15,
+            "surfaceRoughnessRz": 0.2,
+            "recommendedIntervalRz": {
+                "max": 5,
+                "min": 20
+            },
+            "thicknessOfDefectiveCoating": 0.200,
+            "idWorkpiece": 3
+        },
+                  {
+            "nameOfWorkpiece": "Горячая объёмная штамповка на молотах и прессах",
+            "kvalitet": 17,
+            "surfaceRoughnessRz": 0.16,
+            "recommendedIntervalRz": {
+                "max": 5,
+                "min": 40
+            },
+            "thicknessOfDefectiveCoating": 0.200,
+            "idWorkpiece": 3
+        },
+             {
+            "nameOfWorkpiece": "Холодное выдавливание",
+            "kvalitet": 14,
+            "surfaceRoughnessRz": 0.4,
+            "recommendedIntervalRz": {
+                "max": 0.63,
+                "min": 10
+            },
+            "thicknessOfDefectiveCoating": 0.04,
+            "idWorkpiece": 2
+        },
+         {
+            "nameOfWorkpiece": "Прокат Обычная точность В1",
+            "kvalitet": 16,
+            "surfaceRoughnessRz": 0.2,
+            "recommendedIntervalRz": {
+                "max": 20,
+                "min": 30
+            },
+            "thicknessOfDefectiveCoating": 0.3,
+            "idWorkpiece": 1
+        },
+          {
+            "nameOfWorkpiece": "Прокат Повышенная точность Б1",
+            "kvalitet": 15,
+            "surfaceRoughnessRz": 0.125,
+            "recommendedIntervalRz": {
+                "max": 15,
+                "min": 25
+            },
+            "thicknessOfDefectiveCoating": 0.15,
+            "idWorkpiece": 6
+        },
+          {
+            "nameOfWorkpiece": "Прокат Высокая точность А1",
+            "kvalitet": 14,
+            "surfaceRoughnessRz": 0.075,
+            "recommendedIntervalRz": {
+                "max": 10,
+                "min": 15
+            },
+            "thicknessOfDefectiveCoating": 0.1,
+            "idWorkpiece": 7
+        }
+    ]
 }
