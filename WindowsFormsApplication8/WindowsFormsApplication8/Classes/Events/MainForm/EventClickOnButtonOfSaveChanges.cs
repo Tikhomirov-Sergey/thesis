@@ -13,9 +13,11 @@ namespace WindowsFormsApplication8
             try
             {
                 int selectedOperation = StorageOfSelectedOperation.getIndexSelectedOperation();
+                int selectedSurface = StorageOfSelectedOperation.getIndexSelectedSurface();
+
                 if (selectedOperation != 0)
                 {
-                    ParametersOperation operation = Part.getSurfaceOnIndex(0).getOperationOnIndex(selectedOperation - 1);
+                    ParametersOperation operation = Part.getSurfaceOnIndex(selectedSurface).getOperationOnIndex(selectedOperation - 1);
 
                     extractionOfParametersOfOperationFromTextBoxes(operation, form);
                     insertNameOperationInTreeView(form, selectedOperation);

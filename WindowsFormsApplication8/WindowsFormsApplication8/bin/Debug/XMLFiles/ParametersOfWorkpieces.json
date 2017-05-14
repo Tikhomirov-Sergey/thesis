@@ -1,12 +1,12 @@
 {
-    "ParametersOfWorkpieces": [
+    "workpieces": [
         {
             "nameOfWorkpiece": "литьё в песчано глинистые формы",
             "kvalitet": 16,
             "surfaceRoughnessRz": 0.300,
             "recommendedIntervalRz": {
-                "max": 20,
-                "min": 80
+                "mix": 20,
+                "max": 80
             },
             "thicknessOfDefectiveCoating": 0.300,
             "idWorkpiece": 3
@@ -16,8 +16,8 @@
             "kvalitet": 15,
             "surfaceRoughnessRz": 0.040,
             "recommendedIntervalRz": {
-                "max": 5,
-                "min": 40
+                "mix": 5,
+                "max": 40
             },
             "thicknessOfDefectiveCoating": 0.160,
             "idWorkpiece": 3
@@ -28,8 +28,8 @@
             "kvalitet": 12,
             "surfaceRoughnessRz": 0.032,
             "recommendedIntervalRz": {
-                "max": 2.50,
-                "min": 10
+                "mix": 2.50,
+                "max": 10
             },
             "thicknessOfDefectiveCoating": 0.100,
             "idWorkpiece": 3
@@ -39,8 +39,8 @@
             "kvalitet": 15,
             "surfaceRoughnessRz": 0.2,
             "recommendedIntervalRz": {
-                "max": 5,
-                "min": 20
+                "mix": 5,
+                "max": 20
             },
             "thicknessOfDefectiveCoating": 0.200,
             "idWorkpiece": 3
@@ -50,8 +50,8 @@
             "kvalitet": 12,
             "surfaceRoughnessRz": 0.04,
             "recommendedIntervalRz": {
-                "max": 2.5,
-                "min": 10
+                "mix": 2.5,
+                "max": 10
             },
             "thicknessOfDefectiveCoating": 0.100,
             "idWorkpiece": 3
@@ -61,8 +61,8 @@
             "kvalitet": 15,
             "surfaceRoughnessRz": 0.2,
             "recommendedIntervalRz": {
-                "max": 5,
-                "min": 20
+                "mix": 5,
+                "max": 20
             },
             "thicknessOfDefectiveCoating": 0.200,
             "idWorkpiece": 3
@@ -72,8 +72,8 @@
             "kvalitet": 17,
             "surfaceRoughnessRz": 0.16,
             "recommendedIntervalRz": {
-                "max": 5,
-                "min": 40
+                "mix": 5,
+                "max": 40
             },
             "thicknessOfDefectiveCoating": 0.200,
             "idWorkpiece": 3
@@ -83,8 +83,8 @@
             "kvalitet": 14,
             "surfaceRoughnessRz": 0.4,
             "recommendedIntervalRz": {
-                "max": 0.63,
-                "min": 10
+                "mix": 0.63,
+                "max": 10
             },
             "thicknessOfDefectiveCoating": 0.04,
             "idWorkpiece": 2
@@ -94,8 +94,8 @@
             "kvalitet": 16,
             "surfaceRoughnessRz": 0.2,
             "recommendedIntervalRz": {
-                "max": 20,
-                "min": 30
+                "mix": 20,
+                "max": 30
             },
             "thicknessOfDefectiveCoating": 0.3,
             "idWorkpiece": 1
@@ -105,8 +105,8 @@
             "kvalitet": 15,
             "surfaceRoughnessRz": 0.125,
             "recommendedIntervalRz": {
-                "max": 15,
-                "min": 25
+                "mix": 15,
+                "max": 25
             },
             "thicknessOfDefectiveCoating": 0.15,
             "idWorkpiece": 6
@@ -116,8 +116,8 @@
             "kvalitet": 14,
             "surfaceRoughnessRz": 0.075,
             "recommendedIntervalRz": {
-                "max": 10,
-                "min": 15
+                "mix": 10,
+                "max": 15
             },
             "thicknessOfDefectiveCoating": 0.1,
             "idWorkpiece": 7

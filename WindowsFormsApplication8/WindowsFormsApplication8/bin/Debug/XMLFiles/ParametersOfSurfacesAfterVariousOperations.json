@@ -1,5 +1,5 @@
 {
-    "parametersOfSurfacesAfterVariousOperations": [
+    "operations": [
         {
             "typeOfMachining": "Точение и растачивание",
             "precisionOfMachining": [

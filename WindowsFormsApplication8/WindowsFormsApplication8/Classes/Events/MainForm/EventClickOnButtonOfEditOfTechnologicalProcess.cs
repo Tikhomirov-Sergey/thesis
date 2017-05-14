@@ -18,8 +18,7 @@ namespace WindowsFormsApplication8
 
             int countOperations = form.TreeOfSelectedOperations.Nodes.Count;
             form.TreeOfSelectedOperations.SelectedNode = form.TreeOfSelectedOperations.Nodes[countOperations - 1];
-            form.SurfacesTreeView.SelectedNode = form.SurfacesTreeView.Nodes[0];
-            
+            form.SurfacesTreeView.SelectedNode = form.SurfacesTreeView.Nodes[0];    
         }
     }
 }

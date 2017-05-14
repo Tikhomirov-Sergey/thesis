@@ -49,9 +49,8 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="Newtonsoft.Json, Version=9.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
-      <HintPath>packages\Newtonsoft.Json.9.0.1\lib\net40\Newtonsoft.Json.dll</HintPath>
-      <Private>True</Private>
+    <Reference Include="Newtonsoft.Json, Version=10.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>packages\Newtonsoft.Json.10.0.2\lib\net40\Newtonsoft.Json.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
@@ -93,15 +92,20 @@
     <Compile Include="Classes\Events\MainForm\EventTreeViewAfterSelectOperations.cs" />
     <Compile Include="Classes\Exception\ErrorMessage.cs" />
     <Compile Include="Classes\StorageOfSelectedOperation.cs" />
-    <Compile Include="Classes\XMLClasses\XMLtoObject.cs" />
+    <Compile Include="Classes\XMLClasses\JsonToObject.cs" />
     <Compile Include="Classes\XMLClasses\XMLtoTreeView.cs" />
     <Compile Include="Classes\CalculationOfSurface\CalculationOfSurface.cs" />
     <Compile Include="DataStructures\CalculationOfSurface\ResultsOfCalculation.cs" />
     <Compile Include="DataStructures\CurvatureOfImpressionDieForgings\CurvatureOfImpressionDieForgings.cs" />
     <Compile Include="DataStructures\CurvatureOfImpressionDieForgings\IntervalAndCoefficient.cs" />
     <Compile Include="DataStructures\CalculationOfSurface\ParametersOperationsForCalculation.cs" />
+    <Compile Include="DataStructures\PaarametersOfWorkpieces\ParametersOfWorkpieces.cs" />
+    <Compile Include="DataStructures\PaarametersOfWorkpieces\Workpieces.cs" />
     <Compile Include="DataStructures\ParametersOfPart\ParametersOfPart.cs" />
     <Compile Include="DataStructures\ParametersOfPart\TypeOfPart.cs" />
+    <Compile Include="DataStructures\ParametersOfSurfacesAfterVariousOperations\Operations.cs" />
+    <Compile Include="DataStructures\ParametersOfSurfacesAfterVariousOperations\ParametersOfSurfacesAfterVariousOperations.cs" />
+    <Compile Include="DataStructures\ParametersOfSurfacesAfterVariousOperations\PrecisionOfMachining.cs" />
     <Compile Include="DataStructures\ShiftInAxisOfHoleDuringDrilling\ShiftInAxisOfHoleDuringDrilling.cs" />
     <Compile Include="DataStructures\StorageParameters\Part.cs" />
     <Compile Include="DataStructures\StorageParameters\ParametersWorkpiece.cs" />

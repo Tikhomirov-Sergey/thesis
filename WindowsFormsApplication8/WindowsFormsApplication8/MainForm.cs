@@ -1,5 +1,8 @@
 ﻿using System;
 using System.Windows.Forms;
+using Newtonsoft.Json;
+using System.Text;
+using System.IO;
 
 namespace WindowsFormsApplication8
 {
@@ -29,6 +32,8 @@ namespace WindowsFormsApplication8
                 XMLtoTreeView.formationTreeView(xmlpath, TreeOfOperations);
             }
             catch { MessageBox.Show("Повреждены XML таблицы", "Ошибка"); }
+
+            LengthOfPart.Text = Tables.getParametersOfWorkpieces().workpieces[2].nameOfWorkpiece;
         }
        
         private void button1_Click(object sender, EventArgs e)
