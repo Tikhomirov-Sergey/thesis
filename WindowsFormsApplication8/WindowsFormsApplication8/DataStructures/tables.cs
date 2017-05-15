@@ -19,7 +19,7 @@ namespace WindowsFormsApplication8
             if (parametersOfSurfacesAfterVariousOperations == null)
             {
                 parametersOfSurfacesAfterVariousOperations = new ParametersOfSurfacesAfterVariousOperations();
-                parametersOfSurfacesAfterVariousOperations = (ParametersOfSurfacesAfterVariousOperations)JsonToObject.objectFromJson(@"XMLFiles/ParametersOfSurfacesAfterVariousOperations.json", parametersOfSurfacesAfterVariousOperations);
+                parametersOfSurfacesAfterVariousOperations = (ParametersOfSurfacesAfterVariousOperations)FileToObject.objectFromXML(@"XMLFiles/ParametersOfSurfacesAfterVariousOperations.xml", parametersOfSurfacesAfterVariousOperations);
             }
             return parametersOfSurfacesAfterVariousOperations;
         }
@@ -29,7 +29,7 @@ namespace WindowsFormsApplication8
             if(parametersOfWorkpieces == null)
             {
                 parametersOfWorkpieces = new ParametersOfWorkpieces();
-                parametersOfWorkpieces = (ParametersOfWorkpieces)JsonToObject.objectFromJson(@"XMLFiles/ParametersOfWorkpieces.json", parametersOfWorkpieces);
+                parametersOfWorkpieces = (ParametersOfWorkpieces)FileToObject.objectFromXML(@"XMLFiles/ParametersOfWorkpieces.xml", parametersOfWorkpieces);
             }
             return parametersOfWorkpieces;
         }
@@ -39,7 +39,7 @@ namespace WindowsFormsApplication8
             if (inaccuracyOfPositioningPart == null)
             {
                 inaccuracyOfPositioningPart = new InaccuracyOfPositioningPart();
-                inaccuracyOfPositioningPart = (InaccuracyOfPositioningPart)JsonToObject.objectFromJson(@"XMLFiles/InaccuracyOfPositioningPart.json", inaccuracyOfPositioningPart);
+                inaccuracyOfPositioningPart = (InaccuracyOfPositioningPart)FileToObject.objectFromXML(@"XMLFiles/InaccuracyOfPositioningPart.xml", inaccuracyOfPositioningPart);
             }
             return inaccuracyOfPositioningPart;
         }
@@ -49,7 +49,7 @@ namespace WindowsFormsApplication8
             if (tableOfTolerancesAndFits == null)
             {
                 tableOfTolerancesAndFits = new TableOfTolerancesAndFits();
-                tableOfTolerancesAndFits = (TableOfTolerancesAndFits)JsonToObject.objectFromJson(@"XMLFiles/TableOfTolerancesAndFits.json", tableOfTolerancesAndFits);
+                tableOfTolerancesAndFits = (TableOfTolerancesAndFits)FileToObject.objectFromXML(@"XMLFiles/TableOfTolerancesAndFits.xml", tableOfTolerancesAndFits);
             }
             return tableOfTolerancesAndFits;
         }
@@ -59,7 +59,7 @@ namespace WindowsFormsApplication8
             if (curvatureOfImpressionDieForgings == null)
             {
                 curvatureOfImpressionDieForgings = new CurvatureOfImpressionDieForgings();
-                curvatureOfImpressionDieForgings = (CurvatureOfImpressionDieForgings)JsonToObject.objectFromJson(@"XMLFiles/CurvatureOfImpressionDieForgings.json", curvatureOfImpressionDieForgings);
+                curvatureOfImpressionDieForgings = (CurvatureOfImpressionDieForgings)FileToObject.objectFromXML(@"XMLFiles/CurvatureOfImpressionDieForgings.xml", curvatureOfImpressionDieForgings);
             }
             return curvatureOfImpressionDieForgings;
         }
@@ -69,7 +69,7 @@ namespace WindowsFormsApplication8
            if (shiftInAxisOfHoleDuringDrilling == null)
             {
                 shiftInAxisOfHoleDuringDrilling = new ShiftInAxisOfHoleDuringDrilling();
-                shiftInAxisOfHoleDuringDrilling = (ShiftInAxisOfHoleDuringDrilling)JsonToObject.objectFromJson(@"XMLFiles/ShiftInAxisOfHoleDuringDrilling.json", shiftInAxisOfHoleDuringDrilling);
+                shiftInAxisOfHoleDuringDrilling = (ShiftInAxisOfHoleDuringDrilling)FileToObject.objectFromXML(@"XMLFiles/ShiftInAxisOfHoleDuringDrilling.xml", shiftInAxisOfHoleDuringDrilling);
             }
             return shiftInAxisOfHoleDuringDrilling; 
         }

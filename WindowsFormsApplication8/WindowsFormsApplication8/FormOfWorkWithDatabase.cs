@@ -14,6 +14,8 @@ namespace WindowsFormsApplication8
         
         private void Form4_Load(object sender, EventArgs e)
         {
+            // TODO: данная строка кода позволяет загрузить данные в таблицу "chainsDataSet.Surface". При необходимости она может быть перемещена или удалена.
+            this.surfaceTableAdapter.Fill(this.chainsDataSet.Surface);
             // TODO: данная строка кода позволяет загрузить данные в таблицу "juliaDataSet.Переходы". При необходимости она может быть перемещена или удалена.
             this.переходыTableAdapter.Fill(this.juliaDataSet.Переходы);
             // TODO: данная строка кода позволяет загрузить данные в таблицу "juliaDataSet.Деталь". При необходимости она может быть перемещена или удалена.

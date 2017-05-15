@@ -30,19 +30,6 @@
         {
             this.components = new System.ComponentModel.Container();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.номерДеталиDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.naimenovanieDetaliDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.датаDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.длинаДеталиLмDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.диаметрDLМмDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.допускTdTLМмDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.шероховатостьRzМкмDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.глубинаhyDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.типРазмераDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.типОбработаннойПоверхностиDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.типПрипускаDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.видЗаготовкиDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.oboznacheniePoverhnostiDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.детальBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.bindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.juliaDataSet = new WindowsFormsApplication8.juliaDataSet();
@@ -73,12 +60,26 @@
             this.button4 = new System.Windows.Forms.Button();
             this.textBox2 = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
+            this.chainsDataSet = new WindowsFormsApplication8.ChainsDataSet();
+            this.surfaceBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.surfaceTableAdapter = new WindowsFormsApplication8.ChainsDataSetTableAdapters.SurfaceTableAdapter();
+            this.tableAdapterManager = new WindowsFormsApplication8.ChainsDataSetTableAdapters.TableAdapterManager();
+            this.surfacecipherDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.cipherdetailDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.viewDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.diameterDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.sizetypeDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.allowancetypeDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.toleranceDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.iDDataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.детальBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.bindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.juliaDataSet)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.fKПереходыДетальBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.chainsDataSet)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.surfaceBindingSource)).BeginInit();
             this.SuspendLayout();
             // 
             // dataGridView1
@@ -86,103 +87,20 @@
             this.dataGridView1.AutoGenerateColumns = false;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.номерДеталиDataGridViewTextBoxColumn,
-            this.naimenovanieDetaliDataGridViewTextBoxColumn,
-            this.датаDataGridViewTextBoxColumn,
-            this.длинаДеталиLмDataGridViewTextBoxColumn,
-            this.диаметрDLМмDataGridViewTextBoxColumn,
-            this.допускTdTLМмDataGridViewTextBoxColumn,
-            this.шероховатостьRzМкмDataGridViewTextBoxColumn,
-            this.глубинаhyDataGridViewTextBoxColumn,
-            this.типРазмераDataGridViewTextBoxColumn,
-            this.типОбработаннойПоверхностиDataGridViewTextBoxColumn,
-            this.типПрипускаDataGridViewTextBoxColumn,
-            this.видЗаготовкиDataGridViewTextBoxColumn,
-            this.oboznacheniePoverhnostiDataGridViewTextBoxColumn});
-            this.dataGridView1.DataSource = this.детальBindingSource;
-            this.dataGridView1.Location = new System.Drawing.Point(15, 80);
+            this.surfacecipherDataGridViewTextBoxColumn,
+            this.cipherdetailDataGridViewTextBoxColumn,
+            this.viewDataGridViewTextBoxColumn,
+            this.diameterDataGridViewTextBoxColumn,
+            this.sizetypeDataGridViewTextBoxColumn,
+            this.allowancetypeDataGridViewTextBoxColumn,
+            this.toleranceDataGridViewTextBoxColumn,
+            this.iDDataGridViewTextBoxColumn1});
+            this.dataGridView1.DataSource = this.surfaceBindingSource;
+            this.dataGridView1.Location = new System.Drawing.Point(20, 98);
+            this.dataGridView1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(1346, 214);
+            this.dataGridView1.Size = new System.Drawing.Size(1795, 263);
             this.dataGridView1.TabIndex = 0;
-            // 
-            // номерДеталиDataGridViewTextBoxColumn
-            // 
-            this.номерДеталиDataGridViewTextBoxColumn.DataPropertyName = "Номер детали";
-            this.номерДеталиDataGridViewTextBoxColumn.HeaderText = "Номер детали";
-            this.номерДеталиDataGridViewTextBoxColumn.Name = "номерДеталиDataGridViewTextBoxColumn";
-            this.номерДеталиDataGridViewTextBoxColumn.ReadOnly = true;
-            // 
-            // naimenovanieDetaliDataGridViewTextBoxColumn
-            // 
-            this.naimenovanieDetaliDataGridViewTextBoxColumn.DataPropertyName = "NaimenovanieDetali";
-            this.naimenovanieDetaliDataGridViewTextBoxColumn.HeaderText = "Наименование детали";
-            this.naimenovanieDetaliDataGridViewTextBoxColumn.Name = "naimenovanieDetaliDataGridViewTextBoxColumn";
-            // 
-            // датаDataGridViewTextBoxColumn
-            // 
-            this.датаDataGridViewTextBoxColumn.DataPropertyName = "Дата";
-            this.датаDataGridViewTextBoxColumn.HeaderText = "Дата";
-            this.датаDataGridViewTextBoxColumn.Name = "датаDataGridViewTextBoxColumn";
-            // 
-            // длинаДеталиLмDataGridViewTextBoxColumn
-            // 
-            this.длинаДеталиLмDataGridViewTextBoxColumn.DataPropertyName = "Длина детали l,м";
-            this.длинаДеталиLмDataGridViewTextBoxColumn.HeaderText = "Длина детали l,м";
-            this.длинаДеталиLмDataGridViewTextBoxColumn.Name = "длинаДеталиLмDataGridViewTextBoxColumn";
-            // 
-            // диаметрDLМмDataGridViewTextBoxColumn
-            // 
-            this.диаметрDLМмDataGridViewTextBoxColumn.DataPropertyName = "Диаметр d(L), мм";
-            this.диаметрDLМмDataGridViewTextBoxColumn.HeaderText = "Диаметр d(L), мм";
-            this.диаметрDLМмDataGridViewTextBoxColumn.Name = "диаметрDLМмDataGridViewTextBoxColumn";
-            // 
-            // допускTdTLМмDataGridViewTextBoxColumn
-            // 
-            this.допускTdTLМмDataGridViewTextBoxColumn.DataPropertyName = "Допуск Td(TL), мм";
-            this.допускTdTLМмDataGridViewTextBoxColumn.HeaderText = "Допуск Td(TL), мм";
-            this.допускTdTLМмDataGridViewTextBoxColumn.Name = "допускTdTLМмDataGridViewTextBoxColumn";
-            // 
-            // шероховатостьRzМкмDataGridViewTextBoxColumn
-            // 
-            this.шероховатостьRzМкмDataGridViewTextBoxColumn.DataPropertyName = "Шероховатость Rz, мкм";
-            this.шероховатостьRzМкмDataGridViewTextBoxColumn.HeaderText = "Шероховатость Rz, мкм";
-            this.шероховатостьRzМкмDataGridViewTextBoxColumn.Name = "шероховатостьRzМкмDataGridViewTextBoxColumn";
-            // 
-            // глубинаhyDataGridViewTextBoxColumn
-            // 
-            this.глубинаhyDataGridViewTextBoxColumn.DataPropertyName = "Глубина(hy)";
-            this.глубинаhyDataGridViewTextBoxColumn.HeaderText = "Глубина(hy)";
-            this.глубинаhyDataGridViewTextBoxColumn.Name = "глубинаhyDataGridViewTextBoxColumn";
-            // 
-            // типРазмераDataGridViewTextBoxColumn
-            // 
-            this.типРазмераDataGridViewTextBoxColumn.DataPropertyName = "Тип размера";
-            this.типРазмераDataGridViewTextBoxColumn.HeaderText = "Тип размера";
-            this.типРазмераDataGridViewTextBoxColumn.Name = "типРазмераDataGridViewTextBoxColumn";
-            // 
-            // типОбработаннойПоверхностиDataGridViewTextBoxColumn
-            // 
-            this.типОбработаннойПоверхностиDataGridViewTextBoxColumn.DataPropertyName = "Тип обработанной поверхности";
-            this.типОбработаннойПоверхностиDataGridViewTextBoxColumn.HeaderText = "Тип обработанной поверхности";
-            this.типОбработаннойПоверхностиDataGridViewTextBoxColumn.Name = "типОбработаннойПоверхностиDataGridViewTextBoxColumn";
-            // 
-            // типПрипускаDataGridViewTextBoxColumn
-            // 
-            this.типПрипускаDataGridViewTextBoxColumn.DataPropertyName = "Тип припуска";
-            this.типПрипускаDataGridViewTextBoxColumn.HeaderText = "Тип припуска";
-            this.типПрипускаDataGridViewTextBoxColumn.Name = "типПрипускаDataGridViewTextBoxColumn";
-            // 
-            // видЗаготовкиDataGridViewTextBoxColumn
-            // 
-            this.видЗаготовкиDataGridViewTextBoxColumn.DataPropertyName = "Вид заготовки";
-            this.видЗаготовкиDataGridViewTextBoxColumn.HeaderText = "Вид заготовки";
-            this.видЗаготовкиDataGridViewTextBoxColumn.Name = "видЗаготовкиDataGridViewTextBoxColumn";
-            // 
-            // oboznacheniePoverhnostiDataGridViewTextBoxColumn
-            // 
-            this.oboznacheniePoverhnostiDataGridViewTextBoxColumn.DataPropertyName = "OboznacheniePoverhnosti";
-            this.oboznacheniePoverhnostiDataGridViewTextBoxColumn.HeaderText = "Обозначение поверхности";
-            this.oboznacheniePoverhnostiDataGridViewTextBoxColumn.Name = "oboznacheniePoverhnostiDataGridViewTextBoxColumn";
             // 
             // детальBindingSource
             // 
@@ -223,9 +141,10 @@
             this.квалитетDataGridViewTextBoxColumn});
             this.dataGridView2.DataSource = this.fKПереходыДетальBindingSource;
             this.dataGridView2.GridColor = System.Drawing.SystemColors.ButtonShadow;
-            this.dataGridView2.Location = new System.Drawing.Point(-34, 300);
+            this.dataGridView2.Location = new System.Drawing.Point(-45, 369);
+            this.dataGridView2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.dataGridView2.Name = "dataGridView2";
-            this.dataGridView2.Size = new System.Drawing.Size(1488, 216);
+            this.dataGridView2.Size = new System.Drawing.Size(1984, 266);
             this.dataGridView2.TabIndex = 1;
             // 
             // номерДеталиDataGridViewTextBoxColumn1
@@ -325,9 +244,10 @@
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(324, 12);
+            this.button1.Location = new System.Drawing.Point(432, 15);
+            this.button1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 55);
+            this.button1.Size = new System.Drawing.Size(100, 68);
             this.button1.TabIndex = 2;
             this.button1.Text = "Выбор\r\nзаписи \r\nиз БД";
             this.button1.UseVisualStyleBackColor = true;
@@ -336,24 +256,27 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(12, 54);
+            this.label1.Location = new System.Drawing.Point(16, 66);
+            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(83, 13);
+            this.label1.Size = new System.Drawing.Size(107, 17);
             this.label1.TabIndex = 4;
             this.label1.Text = "Поиск по дате:";
             // 
             // textBox1
             // 
-            this.textBox1.Location = new System.Drawing.Point(101, 12);
+            this.textBox1.Location = new System.Drawing.Point(135, 15);
+            this.textBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(100, 20);
+            this.textBox1.Size = new System.Drawing.Size(132, 22);
             this.textBox1.TabIndex = 5;
             // 
             // button2
             // 
-            this.button2.Location = new System.Drawing.Point(219, 12);
+            this.button2.Location = new System.Drawing.Point(292, 15);
+            this.button2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(75, 23);
+            this.button2.Size = new System.Drawing.Size(100, 28);
             this.button2.TabIndex = 6;
             this.button2.Text = "Поиск";
             this.button2.UseVisualStyleBackColor = true;
@@ -361,9 +284,10 @@
             // 
             // button3
             // 
-            this.button3.Location = new System.Drawing.Point(417, 12);
+            this.button3.Location = new System.Drawing.Point(556, 15);
+            this.button3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(75, 55);
+            this.button3.Size = new System.Drawing.Size(100, 68);
             this.button3.TabIndex = 7;
             this.button3.Text = "Удаление\r\nзаписи \r\nиз БД";
             this.button3.UseVisualStyleBackColor = true;
@@ -379,9 +303,10 @@
             // 
             // button4
             // 
-            this.button4.Location = new System.Drawing.Point(219, 51);
+            this.button4.Location = new System.Drawing.Point(292, 63);
+            this.button4.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(75, 23);
+            this.button4.Size = new System.Drawing.Size(100, 28);
             this.button4.TabIndex = 8;
             this.button4.Text = "Поиск";
             this.button4.UseVisualStyleBackColor = true;
@@ -389,27 +314,102 @@
             // 
             // textBox2
             // 
-            this.textBox2.Location = new System.Drawing.Point(101, 51);
+            this.textBox2.Location = new System.Drawing.Point(135, 63);
+            this.textBox2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(100, 20);
+            this.textBox2.Size = new System.Drawing.Size(132, 22);
             this.textBox2.TabIndex = 9;
             // 
             // label2
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label2.Location = new System.Drawing.Point(12, 3);
+            this.label2.Location = new System.Drawing.Point(16, 4);
+            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
             this.label2.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.label2.Size = new System.Drawing.Size(83, 39);
+            this.label2.Size = new System.Drawing.Size(106, 51);
             this.label2.TabIndex = 10;
             this.label2.Text = "Поиск по\r\nнаименованию\r\nдетали:";
             // 
+            // chainsDataSet
+            // 
+            this.chainsDataSet.DataSetName = "ChainsDataSet";
+            this.chainsDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // surfaceBindingSource
+            // 
+            this.surfaceBindingSource.DataMember = "Surface";
+            this.surfaceBindingSource.DataSource = this.chainsDataSet;
+            // 
+            // surfaceTableAdapter
+            // 
+            this.surfaceTableAdapter.ClearBeforeFill = true;
+            // 
+            // tableAdapterManager
+            // 
+            this.tableAdapterManager.BackupDataSetBeforeUpdate = false;
+            this.tableAdapterManager.CalculationTableAdapter = null;
+            this.tableAdapterManager.ChamferTableAdapter = null;
+            this.tableAdapterManager.DetailTableAdapter = null;
+            this.tableAdapterManager.Operations_and_ResultsTableAdapter = null;
+            this.tableAdapterManager.OperationsTableAdapter = null;
+            this.tableAdapterManager.SurfaceTableAdapter = this.surfaceTableAdapter;
+            this.tableAdapterManager.UpdateOrder = WindowsFormsApplication8.ChainsDataSetTableAdapters.TableAdapterManager.UpdateOrderOption.InsertUpdateDelete;
+            // 
+            // surfacecipherDataGridViewTextBoxColumn
+            // 
+            this.surfacecipherDataGridViewTextBoxColumn.DataPropertyName = "Surface_cipher";
+            this.surfacecipherDataGridViewTextBoxColumn.HeaderText = "Surface_cipher";
+            this.surfacecipherDataGridViewTextBoxColumn.Name = "surfacecipherDataGridViewTextBoxColumn";
+            // 
+            // cipherdetailDataGridViewTextBoxColumn
+            // 
+            this.cipherdetailDataGridViewTextBoxColumn.DataPropertyName = "Cipher_detail";
+            this.cipherdetailDataGridViewTextBoxColumn.HeaderText = "Cipher_detail";
+            this.cipherdetailDataGridViewTextBoxColumn.Name = "cipherdetailDataGridViewTextBoxColumn";
+            // 
+            // viewDataGridViewTextBoxColumn
+            // 
+            this.viewDataGridViewTextBoxColumn.DataPropertyName = "View";
+            this.viewDataGridViewTextBoxColumn.HeaderText = "View";
+            this.viewDataGridViewTextBoxColumn.Name = "viewDataGridViewTextBoxColumn";
+            // 
+            // diameterDataGridViewTextBoxColumn
+            // 
+            this.diameterDataGridViewTextBoxColumn.DataPropertyName = "Diameter";
+            this.diameterDataGridViewTextBoxColumn.HeaderText = "Diameter";
+            this.diameterDataGridViewTextBoxColumn.Name = "diameterDataGridViewTextBoxColumn";
+            // 
+            // sizetypeDataGridViewTextBoxColumn
+            // 
+            this.sizetypeDataGridViewTextBoxColumn.DataPropertyName = "Size_type";
+            this.sizetypeDataGridViewTextBoxColumn.HeaderText = "Size_type";
+            this.sizetypeDataGridViewTextBoxColumn.Name = "sizetypeDataGridViewTextBoxColumn";
+            // 
+            // allowancetypeDataGridViewTextBoxColumn
+            // 
+            this.allowancetypeDataGridViewTextBoxColumn.DataPropertyName = "Allowance_type";
+            this.allowancetypeDataGridViewTextBoxColumn.HeaderText = "Allowance_type";
+            this.allowancetypeDataGridViewTextBoxColumn.Name = "allowancetypeDataGridViewTextBoxColumn";
+            // 
+            // toleranceDataGridViewTextBoxColumn
+            // 
+            this.toleranceDataGridViewTextBoxColumn.DataPropertyName = "Tolerance";
+            this.toleranceDataGridViewTextBoxColumn.HeaderText = "Tolerance";
+            this.toleranceDataGridViewTextBoxColumn.Name = "toleranceDataGridViewTextBoxColumn";
+            // 
+            // iDDataGridViewTextBoxColumn1
+            // 
+            this.iDDataGridViewTextBoxColumn1.DataPropertyName = "ID";
+            this.iDDataGridViewTextBoxColumn1.HeaderText = "ID";
+            this.iDDataGridViewTextBoxColumn1.Name = "iDDataGridViewTextBoxColumn1";
+            // 
             // FormOfWorkWithDatabase
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1370, 570);
+            this.ClientSize = new System.Drawing.Size(1827, 702);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.textBox2);
             this.Controls.Add(this.button4);
@@ -420,6 +420,7 @@
             this.Controls.Add(this.button1);
             this.Controls.Add(this.dataGridView2);
             this.Controls.Add(this.dataGridView1);
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "FormOfWorkWithDatabase";
             this.Text = "База данных";
             this.Load += new System.EventHandler(this.Form4_Load);
@@ -429,6 +430,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.juliaDataSet)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.fKПереходыДетальBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.chainsDataSet)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.surfaceBindingSource)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -479,20 +482,19 @@
         public juliaDataSetTableAdapters.ПереходыTableAdapter переходыTableAdapter;
         private System.Windows.Forms.Button button4;
         private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.DataGridViewTextBoxColumn номерДеталиDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn naimenovanieDetaliDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn датаDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn длинаДеталиLмDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn диаметрDLМмDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn допускTdTLМмDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn шероховатостьRzМкмDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn глубинаhyDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn типРазмераDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn типОбработаннойПоверхностиDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn типПрипускаDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn видЗаготовкиDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn oboznacheniePoverhnostiDataGridViewTextBoxColumn;
         private System.Windows.Forms.Label label2;
         protected internal System.Windows.Forms.DataGridView dataGridView2;
+        private ChainsDataSet chainsDataSet;
+        private System.Windows.Forms.BindingSource surfaceBindingSource;
+        private ChainsDataSetTableAdapters.SurfaceTableAdapter surfaceTableAdapter;
+        private ChainsDataSetTableAdapters.TableAdapterManager tableAdapterManager;
+        private System.Windows.Forms.DataGridViewTextBoxColumn surfacecipherDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn cipherdetailDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn viewDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn diameterDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn sizetypeDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn allowancetypeDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn toleranceDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn iDDataGridViewTextBoxColumn1;
     }
 }

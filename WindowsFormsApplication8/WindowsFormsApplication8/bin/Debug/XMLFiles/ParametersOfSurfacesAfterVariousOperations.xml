@@ -1,294 +1,457 @@
-<?xml version="1.0" encoding="windows-1251"?>
-
-<Операции>
-<Точение_и_растачивание>
-  <черновое>
-    <toch>14</toch>
-    <sher>0,040_6,3-50</sher>
-    <glub>0,060</glub>
-<k>0,06</k>
-<i>4</i>
-<id_per>1</id_per>
-  </черновое> 
-  <получистовое>
-    <toch>12</toch>
-    <sher>0,020_1,6-6,3</sher>
-    <glub>0,040</glub>
-<k>0,05</k>
-<i>4</i>
-<id_per>1</id_per>
-
-
-  </получистовое>
-  <чистовое>
-    <toch>10</toch>
-    <sher>0,010_0,4-1,6</sher>
-    <glub>0,030</glub>
-<k>0,04</k>
-<i>5</i>
-<id_per>1</id_per>
-  </чистовое>
-  <тонкое>
-    <toch>7</toch>
-    <sher>0,005_0,2-0,4</sher>
-    <glub>0,010</glub>
-<k>0</k>
-<i>5</i>
-<id_per>1</id_per>
-  </тонкое>
-  <Сверление_и_рассверливание>
-    <toch>10</toch>
-    <sher>0,024_0,8-25</sher>
-    <glub>0,040</glub>
-<k>1</k>
-<i>8</i>
-<id_per>1</id_per>
-  </Сверление_и_рассверливание>
-</Точение_и_растачивание>
-<Зенкерование>
-  <черновое>
-    <toch>12</toch>
-    <sher>0,030_6,3-25</sher>
-    <glub>0,040</glub>
-<k>0</k>
-<i>4</i>
-<id_per>1</id_per>
-  </черновое>
-  <чистовое>
-    <toch>8</toch>
-    <sher>0,010_0,4-6,3</sher>
-     <glub>0,015</glub>
-<k>0</k>
-<i>5</i>
-<id_per>1</id_per>
-  </чистовое>
-  </Зенкерование>
-<Развертывание>
-  <черновое>
-    <toch>10</toch>
-    <sher>0,010_0,8-1,25</sher>
-    <glub>0,015</glub>
-<k>0</k>
-<i>4</i>
-<id_per>1</id_per>
-  </черновое>
-  <чистовое>
-    <toch>7</toch>
-    <sher>0,0024_0,4-0,8</sher>
-     <glub>0,010</glub>
-<k>0</k>
-<i>5</i>
-<id_per>1</id_per>
-  </чистовое>
-  <тонкое>
-    <toch>5</toch>
-    <sher>0,001_0,1-0,4</sher>
-     <glub>0,005</glub>
-<k>0</k>
-<i>5</i>
-<id_per>1</id_per>
-  </тонкое>
-  </Развертывание>
-<Протягивание>
-  <черновое>
-    <toch>10</toch>
-    <sher>0,005_0,8-1,6</sher>
-    <glub>0,015</glub>
-<k>0</k>
-<i>4</i>
-<id_per>1</id_per>
-  </черновое>
-  <чистовое>
-    <toch>7</toch>
-    <sher>0,002_0,2-0,8</sher>
-     <glub>0,010</glub>
-<k>0</k>
-<i>5</i>
-<id_per>1</id_per>
-  </чистовое>
-   </Протягивание>
-<Шлифование>
-  <черновое>
-    <toch>8</toch>
-    <sher>0,010_0,4-6,3</sher>
-    <glub>0,020</glub>
-<k>0,03</k>
-<i>4</i>
-<id_per>1</id_per>
-  </черновое>
-  <чистовое>
-    <toch>7</toch>
-    <sher>0,005_0,2-0,4</sher>
-     <glub>0,010</glub>
-<k>0,02</k>
-<i>5</i>
-<id_per>1</id_per>
-  </чистовое>
-<тонкое>
-    <toch>6</toch>
-    <sher>0,001_0,08-0,2</sher>
-     <glub>0,005</glub>
-<k>0</k>
-<i>5</i>
-<id_per>1</id_per>
-  </тонкое>
-   </Шлифование>
-<Фрезерование>
-  <черновое>
-    <toch>14</toch>
-    <sher>0,040_3,2-12,5</sher>
-    <glub>0,040</glub>
-<k>0,06</k>
-<i>4</i>
-<id_per>2</id_per>
-  </черновое>
-  <чистовое>
-    <toch>10</toch>
-    <sher>0,020_2,5-1,25</sher>
-     <glub>0,020</glub>
-<k>0,04</k>
-<i>5</i>
-
-<id_per>2</id_per>
-  </чистовое>
-<тонкое>
-    <toch>6</toch>
-    <sher>0,005_0,32-1,25</sher>
-     <glub>0,010</glub>
-<k>0</k>
-<i>5</i>
-
-<id_per>2</id_per>
-  </тонкое>
-   </Фрезерование>
-<Строгание>
-  <черновое>
-    <toch>14</toch>
-    <sher>0,040_6,3-50</sher>
-    <glub>0,050</glub>
-<k>0,06</k>
-<i>4</i>
-
-<id_per>1</id_per>
-  </черновое>
-  <чистовое>
-    <toch>11</toch>
-    <sher>0,020_1-6,3</sher>
-     <glub>0,025</glub>
-<k>0,04</k>
-<i>5</i>
-
-<id_per>1</id_per>
-  </чистовое>
-<тонкое>
-    <toch>8</toch>
-    <sher>0,010_0,32-1,6</sher>
-     <glub>0,010</glub>
-<k>0</k>
-<i>5</i>
-
-<id_per>1</id_per>
-  </тонкое>
-</Строгание>
-<Доводочная>
-   <Доводочная>
-    <toch>4</toch>
-    <sher>0,0005_0,02-0,1</sher>
-     <glub>0,004</glub>
-<k>0</k>
-<i>5</i>
-
-<id_per>1</id_per>
-  </Доводочная>
-</Доводочная>
-<Суперфиниширование>
-   <Суперфиниширование>
-    <toch>4</toch>
-    <sher>0,0005_0,032-0,2</sher>
-     <glub>0,004</glub>
-<k>0</k>
-<i>5</i>
-<id_per>1</id_per>
-  </Суперфиниширование>
-</Суперфиниширование>
-<Хонингование>
-   <Хонингование>
-    <toch>4</toch>
-    <sher>0,0005_0,04-0,2</sher>
-     <glub>0,004</glub>
-<k>0</k>
-<i>5</i>
-<id_per>1</id_per>
-  </Хонингование>
-</Хонингование>
-<Раскатывание>
-   <Раскатывание>
-    <toch>6</toch>
-    <sher>0,0008_0,05-0,4</sher>
- <glub>0</glub>
-<k>0</k>
-<i>5</i>
-<id_per>1</id_per>
-     </Раскатывание>
-</Раскатывание>
-<Калибрование>
-   <Калибрование>
-    <toch>5</toch>
-    <sher>0,0005_0,05-0,4</sher>
-<glub>0</glub>
-<k>0</k>
-<i>5</i>
-<id_per>1</id_per>
-    </Калибрование>
-</Калибрование>
-<Алмазное_выглаживание>
-   <Алмазное_выглаживание>
-    <toch>5</toch>
-    <sher>0,0005_0,05-0,4</sher>
-<glub>0</glub>
-<k>0</k>
-<i>5</i>
-<id_per>1</id_per>
-    </Алмазное_выглаживание>
-</Алмазное_выглаживание>
-<Полирование>
-   <Полирование>
-<toch>0</toch>
- <sher>0,000032_0,008-0,08</sher>
-<glub>0</glub>
-<k>0</k>
-<i>5</i>
-<id_per>1</id_per>
-     </Полирование>
-</Полирование>
-<Электрозионная_обработка>
-   <черновая>
-    <toch>14</toch>
-    <sher>0,040_10-20</sher>
-     <glub>0,080</glub>
-<k>0</k>
-<i>4</i>
-<id_per>1</id_per>
-  </черновая>
-<чистовая>
-    <toch>10</toch>
-    <sher>0,020_1,25-5</sher>
-     <glub>0,040</glub>
-<k>0</k>
-<i>5</i>
-<id_per>1</id_per>
-  </чистовая>
-<отделочная>
-    <toch>7</toch>
-    <sher>0,005_0-1,25</sher>
-     <glub>0,020</glub>
-<k>0</k>
-<i>5</i>
-<id_per>1</id_per>
-  </отделочная>
-</Электрозионная_обработка>
-</Операции>
-
-
-
-
+<?xml version="1.0" encoding="utf-8"?>
+<ParametersOfSurfacesAfterVariousOperations xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <operations>
+    <Operations>
+      <typeOfMachining>РўРѕС‡РµРЅРёРµ Рё СЂР°СЃС‚Р°С‡РёРІР°РЅРёРµ</typeOfMachining>
+      <precisionOfMachining>
+        <PrecisionOfMachining>
+          <name>С‡РµСЂРЅРѕРІРѕРµ</name>
+          <kvalitet>14</kvalitet>
+          <surfaceRoughnessRz>0.04</surfaceRoughnessRz>
+          <recommendedIntervalRz>
+            <min>6.3</min>
+            <max>50</max>
+          </recommendedIntervalRz>
+          <thicknessOfDefectiveCoating>0.06</thicknessOfDefectiveCoating>
+          <coefficientOfRefinement>0.06</coefficientOfRefinement>
+          <idOperation>4</idOperation>
+        </PrecisionOfMachining>
+        <PrecisionOfMachining>
+          <name>РїРѕР»СѓС‡РёСЃС‚РѕРІРѕРµ</name>
+          <kvalitet>12</kvalitet>
+          <surfaceRoughnessRz>0.02</surfaceRoughnessRz>
+          <recommendedIntervalRz>
+            <min>1.6</min>
+            <max>6.3</max>
+          </recommendedIntervalRz>
+          <thicknessOfDefectiveCoating>0.04</thicknessOfDefectiveCoating>
+          <coefficientOfRefinement>0.05</coefficientOfRefinement>
+          <idOperation>4</idOperation>
+        </PrecisionOfMachining>
+        <PrecisionOfMachining>
+          <name>С‡РёСЃС‚РѕРІРѕРµ</name>
+          <kvalitet>10</kvalitet>
+          <surfaceRoughnessRz>0.01</surfaceRoughnessRz>
+          <recommendedIntervalRz>
+            <min>0.4</min>
+            <max>1.6</max>
+          </recommendedIntervalRz>
+          <thicknessOfDefectiveCoating>0.03</thicknessOfDefectiveCoating>
+          <coefficientOfRefinement>0.04</coefficientOfRefinement>
+          <idOperation>5</idOperation>
+        </PrecisionOfMachining>
+        <PrecisionOfMachining>
+          <name>С‚РѕРЅРєРѕРµ</name>
+          <kvalitet>7</kvalitet>
+          <surfaceRoughnessRz>0.005</surfaceRoughnessRz>
+          <recommendedIntervalRz>
+            <min>0.2</min>
+            <max>0.4</max>
+          </recommendedIntervalRz>
+          <thicknessOfDefectiveCoating>0.01</thicknessOfDefectiveCoating>
+          <coefficientOfRefinement>0</coefficientOfRefinement>
+          <idOperation>5</idOperation>
+        </PrecisionOfMachining>
+      </precisionOfMachining>
+    </Operations>
+    <Operations>
+      <typeOfMachining>РЎРІРµСЂР»РµРЅРёРµ Рё СЂР°СЃСЃРІРµСЂР»РёРІР°РЅРёРµ</typeOfMachining>
+      <precisionOfMachining>
+        <PrecisionOfMachining>
+          <name />
+          <kvalitet>10</kvalitet>
+          <surfaceRoughnessRz>0.024</surfaceRoughnessRz>
+          <recommendedIntervalRz>
+            <min>0.8</min>
+            <max>25</max>
+          </recommendedIntervalRz>
+          <thicknessOfDefectiveCoating>0.04</thicknessOfDefectiveCoating>
+          <coefficientOfRefinement>1</coefficientOfRefinement>
+          <idOperation>8</idOperation>
+        </PrecisionOfMachining>
+      </precisionOfMachining>
+    </Operations>
+    <Operations>
+      <typeOfMachining>Р—РµРЅРєРµСЂРѕРІР°РЅРёРµ</typeOfMachining>
+      <precisionOfMachining>
+        <PrecisionOfMachining>
+          <name>С‡РµСЂРЅРѕРІРѕРµ</name>
+          <kvalitet>12</kvalitet>
+          <surfaceRoughnessRz>0.03</surfaceRoughnessRz>
+          <recommendedIntervalRz>
+            <min>6.3</min>
+            <max>25</max>
+          </recommendedIntervalRz>
+          <thicknessOfDefectiveCoating>0.04</thicknessOfDefectiveCoating>
+          <coefficientOfRefinement>0</coefficientOfRefinement>
+          <idOperation>4</idOperation>
+        </PrecisionOfMachining>
+        <PrecisionOfMachining>
+          <name>С‡РёСЃС‚РѕРІРѕРµ</name>
+          <kvalitet>8</kvalitet>
+          <surfaceRoughnessRz>0.01</surfaceRoughnessRz>
+          <recommendedIntervalRz>
+            <min>0.4</min>
+            <max>6.3</max>
+          </recommendedIntervalRz>
+          <thicknessOfDefectiveCoating>0.015</thicknessOfDefectiveCoating>
+          <coefficientOfRefinement>0</coefficientOfRefinement>
+          <idOperation>5</idOperation>
+        </PrecisionOfMachining>
+      </precisionOfMachining>
+    </Operations>
+    <Operations>
+      <typeOfMachining>Р Р°Р·РІРµСЂС‚С‹РІР°РЅРёРµ</typeOfMachining>
+      <precisionOfMachining>
+        <PrecisionOfMachining>
+          <name>С‡РµСЂРЅРѕРІРѕРµ</name>
+          <kvalitet>10</kvalitet>
+          <surfaceRoughnessRz>0.01</surfaceRoughnessRz>
+          <recommendedIntervalRz>
+            <min>0.8</min>
+            <max>1.25</max>
+          </recommendedIntervalRz>
+          <thicknessOfDefectiveCoating>0.015</thicknessOfDefectiveCoating>
+          <coefficientOfRefinement>0</coefficientOfRefinement>
+          <idOperation>4</idOperation>
+        </PrecisionOfMachining>
+        <PrecisionOfMachining>
+          <name>С‡РёСЃС‚РѕРІРѕРµ</name>
+          <kvalitet>7</kvalitet>
+          <surfaceRoughnessRz>0.0024</surfaceRoughnessRz>
+          <recommendedIntervalRz>
+            <min>0.4</min>
+            <max>0.8</max>
+          </recommendedIntervalRz>
+          <thicknessOfDefectiveCoating>0.01</thicknessOfDefectiveCoating>
+          <coefficientOfRefinement>0</coefficientOfRefinement>
+          <idOperation>5</idOperation>
+        </PrecisionOfMachining>
+        <PrecisionOfMachining>
+          <name>С‚РѕРЅРєРѕРµ</name>
+          <kvalitet>5</kvalitet>
+          <surfaceRoughnessRz>0.001</surfaceRoughnessRz>
+          <recommendedIntervalRz>
+            <min>0.1</min>
+            <max>0.4</max>
+          </recommendedIntervalRz>
+          <thicknessOfDefectiveCoating>0.005</thicknessOfDefectiveCoating>
+          <coefficientOfRefinement>0</coefficientOfRefinement>
+          <idOperation>5</idOperation>
+        </PrecisionOfMachining>
+      </precisionOfMachining>
+    </Operations>
+    <Operations>
+      <typeOfMachining>РџСЂРѕС‚СЏРіРёРІР°РЅРёРµ</typeOfMachining>
+      <precisionOfMachining>
+        <PrecisionOfMachining>
+          <name>С‡РµСЂРЅРѕРІРѕРµ</name>
+          <kvalitet>10</kvalitet>
+          <surfaceRoughnessRz>0.005</surfaceRoughnessRz>
+          <recommendedIntervalRz>
+            <min>0.8</min>
+            <max>1.6</max>
+          </recommendedIntervalRz>
+          <thicknessOfDefectiveCoating>0.015</thicknessOfDefectiveCoating>
+          <coefficientOfRefinement>0</coefficientOfRefinement>
+          <idOperation>4</idOperation>
+        </PrecisionOfMachining>
+        <PrecisionOfMachining>
+          <name>С‡РёСЃС‚РѕРІРѕРµ</name>
+          <kvalitet>7</kvalitet>
+          <surfaceRoughnessRz>0.002</surfaceRoughnessRz>
+          <recommendedIntervalRz>
+            <min>0.2</min>
+            <max>0.8</max>
+          </recommendedIntervalRz>
+          <thicknessOfDefectiveCoating>0.01</thicknessOfDefectiveCoating>
+          <coefficientOfRefinement>0</coefficientOfRefinement>
+          <idOperation>5</idOperation>
+        </PrecisionOfMachining>
+      </precisionOfMachining>
+    </Operations>
+    <Operations>
+      <typeOfMachining>РЁР»РёС„РѕРІР°РЅРёРµ</typeOfMachining>
+      <precisionOfMachining>
+        <PrecisionOfMachining>
+          <name>С‡РµСЂРЅРѕРІРѕРµ</name>
+          <kvalitet>8</kvalitet>
+          <surfaceRoughnessRz>0.01</surfaceRoughnessRz>
+          <recommendedIntervalRz>
+            <min>0.4</min>
+            <max>6.3</max>
+          </recommendedIntervalRz>
+          <thicknessOfDefectiveCoating>0.02</thicknessOfDefectiveCoating>
+          <coefficientOfRefinement>0.03</coefficientOfRefinement>
+          <idOperation>4</idOperation>
+        </PrecisionOfMachining>
+        <PrecisionOfMachining>
+          <name>С‡РёСЃС‚РѕРІРѕРµ</name>
+          <kvalitet>7</kvalitet>
+          <surfaceRoughnessRz>0.005</surfaceRoughnessRz>
+          <recommendedIntervalRz>
+            <min>0.2</min>
+            <max>0.4</max>
+          </recommendedIntervalRz>
+          <thicknessOfDefectiveCoating>0.01</thicknessOfDefectiveCoating>
+          <coefficientOfRefinement>0.02</coefficientOfRefinement>
+          <idOperation>5</idOperation>
+        </PrecisionOfMachining>
+        <PrecisionOfMachining>
+          <name>С‚РѕРЅРєРѕРµ</name>
+          <kvalitet>6</kvalitet>
+          <surfaceRoughnessRz>0.001</surfaceRoughnessRz>
+          <recommendedIntervalRz>
+            <min>0.08</min>
+            <max>0.2</max>
+          </recommendedIntervalRz>
+          <thicknessOfDefectiveCoating>0.005</thicknessOfDefectiveCoating>
+          <coefficientOfRefinement>0</coefficientOfRefinement>
+          <idOperation>5</idOperation>
+        </PrecisionOfMachining>
+      </precisionOfMachining>
+    </Operations>
+    <Operations>
+      <typeOfMachining>Р¤СЂРµР·РµСЂРѕРІР°РЅРёРµ</typeOfMachining>
+      <precisionOfMachining>
+        <PrecisionOfMachining>
+          <name>С‡РµСЂРЅРѕРІРѕРµ</name>
+          <kvalitet>14</kvalitet>
+          <surfaceRoughnessRz>0.04</surfaceRoughnessRz>
+          <recommendedIntervalRz>
+            <min>3.2</min>
+            <max>12.5</max>
+          </recommendedIntervalRz>
+          <thicknessOfDefectiveCoating>0.04</thicknessOfDefectiveCoating>
+          <coefficientOfRefinement>0.06</coefficientOfRefinement>
+          <idOperation>4</idOperation>
+        </PrecisionOfMachining>
+        <PrecisionOfMachining>
+          <name>С‡РёСЃС‚РѕРІРѕРµ</name>
+          <kvalitet>10</kvalitet>
+          <surfaceRoughnessRz>0.02</surfaceRoughnessRz>
+          <recommendedIntervalRz>
+            <min>2.5</min>
+            <max>1.25</max>
+          </recommendedIntervalRz>
+          <thicknessOfDefectiveCoating>0.02</thicknessOfDefectiveCoating>
+          <coefficientOfRefinement>0.04</coefficientOfRefinement>
+          <idOperation>5</idOperation>
+        </PrecisionOfMachining>
+        <PrecisionOfMachining>
+          <name>С‚РѕРЅРєРѕРµ</name>
+          <kvalitet>6</kvalitet>
+          <surfaceRoughnessRz>0.005</surfaceRoughnessRz>
+          <recommendedIntervalRz>
+            <min>0.32</min>
+            <max>1.25</max>
+          </recommendedIntervalRz>
+          <thicknessOfDefectiveCoating>0.01</thicknessOfDefectiveCoating>
+          <coefficientOfRefinement>0</coefficientOfRefinement>
+          <idOperation>5</idOperation>
+        </PrecisionOfMachining>
+      </precisionOfMachining>
+    </Operations>
+    <Operations>
+      <typeOfMachining>РЎС‚СЂРѕРіР°РЅРёРµ</typeOfMachining>
+      <precisionOfMachining>
+        <PrecisionOfMachining>
+          <name>С‡РµСЂРЅРѕРІРѕРµ</name>
+          <kvalitet>14</kvalitet>
+          <surfaceRoughnessRz>0.04</surfaceRoughnessRz>
+          <recommendedIntervalRz>
+            <min>6.3</min>
+            <max>50</max>
+          </recommendedIntervalRz>
+          <thicknessOfDefectiveCoating>0.05</thicknessOfDefectiveCoating>
+          <coefficientOfRefinement>0.06</coefficientOfRefinement>
+          <idOperation>4</idOperation>
+        </PrecisionOfMachining>
+        <PrecisionOfMachining>
+          <name>С‡РёСЃС‚РѕРІРѕРµ</name>
+          <kvalitet>11</kvalitet>
+          <surfaceRoughnessRz>0.02</surfaceRoughnessRz>
+          <recommendedIntervalRz>
+            <min>1</min>
+            <max>6.3</max>
+          </recommendedIntervalRz>
+          <thicknessOfDefectiveCoating>0.025</thicknessOfDefectiveCoating>
+          <coefficientOfRefinement>0.04</coefficientOfRefinement>
+          <idOperation>5</idOperation>
+        </PrecisionOfMachining>
+        <PrecisionOfMachining>
+          <name>С‚РѕРЅРєРѕРµ</name>
+          <kvalitet>8</kvalitet>
+          <surfaceRoughnessRz>0.01</surfaceRoughnessRz>
+          <recommendedIntervalRz>
+            <min>0.32</min>
+            <max>1.6</max>
+          </recommendedIntervalRz>
+          <thicknessOfDefectiveCoating>0.01</thicknessOfDefectiveCoating>
+          <coefficientOfRefinement>0</coefficientOfRefinement>
+          <idOperation>5</idOperation>
+        </PrecisionOfMachining>
+      </precisionOfMachining>
+    </Operations>
+    <Operations>
+      <typeOfMachining>Р”РѕРІРѕРґРѕС‡РЅР°СЏ</typeOfMachining>
+      <precisionOfMachining>
+        <PrecisionOfMachining>
+          <name>Р”РѕРІРѕРґРѕС‡РЅР°СЏ</name>
+          <kvalitet>4</kvalitet>
+          <surfaceRoughnessRz>0.0005</surfaceRoughnessRz>
+          <recommendedIntervalRz>
+            <min>0.02</min>
+            <max>0.1</max>
+          </recommendedIntervalRz>
+          <thicknessOfDefectiveCoating>0.004</thicknessOfDefectiveCoating>
+          <coefficientOfRefinement>0</coefficientOfRefinement>
+          <idOperation>5</idOperation>
+        </PrecisionOfMachining>
+      </precisionOfMachining>
+    </Operations>
+    <Operations>
+      <typeOfMachining>РЎСѓРїРµСЂС„РёРЅРёС€РёСЂРѕРІР°РЅРёРµ</typeOfMachining>
+      <precisionOfMachining>
+        <PrecisionOfMachining>
+          <name>РЎСѓРїРµСЂС„РёРЅРёС€РёСЂРѕРІР°РЅРёРµ</name>
+          <kvalitet>4</kvalitet>
+          <surfaceRoughnessRz>0.0005</surfaceRoughnessRz>
+          <recommendedIntervalRz>
+            <min>0.032</min>
+            <max>0.2</max>
+          </recommendedIntervalRz>
+          <thicknessOfDefectiveCoating>0.004</thicknessOfDefectiveCoating>
+          <coefficientOfRefinement>0</coefficientOfRefinement>
+          <idOperation>5</idOperation>
+        </PrecisionOfMachining>
+      </precisionOfMachining>
+    </Operations>
+    <Operations>
+      <typeOfMachining>РҐРѕРЅРёРЅРіРѕРІР°РЅРёРµ</typeOfMachining>
+      <precisionOfMachining>
+        <PrecisionOfMachining>
+          <name>РҐРѕРЅРёРЅРіРѕРІР°РЅРёРµ</name>
+          <kvalitet>4</kvalitet>
+          <surfaceRoughnessRz>0.0005</surfaceRoughnessRz>
+          <recommendedIntervalRz>
+            <min>0.04</min>
+            <max>0.2</max>
+          </recommendedIntervalRz>
+          <thicknessOfDefectiveCoating>0.004</thicknessOfDefectiveCoating>
+          <coefficientOfRefinement>0</coefficientOfRefinement>
+          <idOperation>5</idOperation>
+        </PrecisionOfMachining>
+      </precisionOfMachining>
+    </Operations>
+    <Operations>
+      <typeOfMachining>Р Р°СЃРєР°С‚С‹РІР°РЅРёРµ</typeOfMachining>
+      <precisionOfMachining>
+        <PrecisionOfMachining>
+          <name>Р Р°СЃРєР°С‚С‹РІР°РЅРёРµ</name>
+          <kvalitet>6</kvalitet>
+          <surfaceRoughnessRz>0.0008</surfaceRoughnessRz>
+          <recommendedIntervalRz>
+            <min>0.05</min>
+            <max>0.4</max>
+          </recommendedIntervalRz>
+          <thicknessOfDefectiveCoating>0</thicknessOfDefectiveCoating>
+          <coefficientOfRefinement>0</coefficientOfRefinement>
+          <idOperation>5</idOperation>
+        </PrecisionOfMachining>
+      </precisionOfMachining>
+    </Operations>
+    <Operations>
+      <typeOfMachining>РљР°Р»РёР±СЂРѕРІР°РЅРёРµ</typeOfMachining>
+      <precisionOfMachining>
+        <PrecisionOfMachining>
+          <name>РљР°Р»РёР±СЂРѕРІР°РЅРёРµ</name>
+          <kvalitet>5</kvalitet>
+          <surfaceRoughnessRz>0.0005</surfaceRoughnessRz>
+          <recommendedIntervalRz>
+            <min>0.05</min>
+            <max>0.4</max>
+          </recommendedIntervalRz>
+          <thicknessOfDefectiveCoating>0</thicknessOfDefectiveCoating>
+          <coefficientOfRefinement>0</coefficientOfRefinement>
+          <idOperation>5</idOperation>
+        </PrecisionOfMachining>
+      </precisionOfMachining>
+    </Operations>
+    <Operations>
+      <typeOfMachining>РђР»РјР°Р·РЅРѕРµ РІС‹РіР»Р°Р¶РёРІР°РЅРёРµ</typeOfMachining>
+      <precisionOfMachining>
+        <PrecisionOfMachining>
+          <name>РђР»РјР°Р·РЅРѕРµ РІС‹РіР»Р°Р¶РёРІР°РЅРёРµ</name>
+          <kvalitet>5</kvalitet>
+          <surfaceRoughnessRz>0.0005</surfaceRoughnessRz>
+          <recommendedIntervalRz>
+            <min>0.05</min>
+            <max>0.4</max>
+          </recommendedIntervalRz>
+          <thicknessOfDefectiveCoating>0</thicknessOfDefectiveCoating>
+          <coefficientOfRefinement>0</coefficientOfRefinement>
+          <idOperation>5</idOperation>
+        </PrecisionOfMachining>
+      </precisionOfMachining>
+    </Operations>
+    <Operations>
+      <typeOfMachining>РџРѕР»РёСЂРѕРІР°РЅРёРµ</typeOfMachining>
+      <precisionOfMachining>
+        <PrecisionOfMachining>
+          <name>РџРѕР»РёСЂРѕРІР°РЅРёРµ</name>
+          <kvalitet>0</kvalitet>
+          <surfaceRoughnessRz>3.2E-05</surfaceRoughnessRz>
+          <recommendedIntervalRz>
+            <min>0.008</min>
+            <max>0.08</max>
+          </recommendedIntervalRz>
+          <thicknessOfDefectiveCoating>0</thicknessOfDefectiveCoating>
+          <coefficientOfRefinement>0</coefficientOfRefinement>
+          <idOperation>5</idOperation>
+        </PrecisionOfMachining>
+      </precisionOfMachining>
+    </Operations>
+    <Operations>
+      <typeOfMachining>Р­Р»РµРєС‚СЂРѕР·РёРѕРЅРЅР°СЏ РѕР±СЂР°Р±РѕС‚РєР°</typeOfMachining>
+      <precisionOfMachining>
+        <PrecisionOfMachining>
+          <name>С‡РµСЂРЅРѕРІР°СЏ</name>
+          <kvalitet>14</kvalitet>
+          <surfaceRoughnessRz>0.04</surfaceRoughnessRz>
+          <recommendedIntervalRz>
+            <min>10</min>
+            <max>20</max>
+          </recommendedIntervalRz>
+          <thicknessOfDefectiveCoating>0.08</thicknessOfDefectiveCoating>
+          <coefficientOfRefinement>0</coefficientOfRefinement>
+          <idOperation>4</idOperation>
+        </PrecisionOfMachining>
+        <PrecisionOfMachining>
+          <name>С‡РёСЃС‚РѕРІР°СЏ</name>
+          <kvalitet>10</kvalitet>
+          <surfaceRoughnessRz>0.02</surfaceRoughnessRz>
+          <recommendedIntervalRz>
+            <min>1.25</min>
+            <max>5</max>
+          </recommendedIntervalRz>
+          <thicknessOfDefectiveCoating>0.04</thicknessOfDefectiveCoating>
+          <coefficientOfRefinement>0</coefficientOfRefinement>
+          <idOperation>5</idOperation>
+        </PrecisionOfMachining>
+        <PrecisionOfMachining>
+          <name>РѕС‚РґРµР»РѕС‡РЅР°СЏ</name>
+          <kvalitet>7</kvalitet>
+          <surfaceRoughnessRz>0.005</surfaceRoughnessRz>
+          <recommendedIntervalRz>
+            <min>0</min>
+            <max>1.25</max>
+          </recommendedIntervalRz>
+          <thicknessOfDefectiveCoating>0.02</thicknessOfDefectiveCoating>
+          <coefficientOfRefinement>0</coefficientOfRefinement>
+          <idOperation>5</idOperation>
+        </PrecisionOfMachining>
+      </precisionOfMachining>
+    </Operations>
+  </operations>
+</ParametersOfSurfacesAfterVariousOperations>

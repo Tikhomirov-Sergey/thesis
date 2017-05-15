@@ -1,69 +1,126 @@
-<?xml version="1.0" encoding="windows-1251"?>
-<Заготовки>
-<Литьё_в_песчано-глинистые_формы>
-  <toch>16</toch>
-  <sher>0,300_20-80</sher>
-  <glub>0,300</glub>
-<i>3</i>
-</Литьё_в_песчано-глинистые_формы>
-<Литьё_в_оболочковые_формы>
-  <toch>15</toch>
-  <sher>0,040_5-40</sher>
-  <glub>0,160</glub>
-<i>3</i>
-</Литьё_в_оболочковые_формы>
-<Литьё_по_выплавляемым_моделям>
-  <toch>12</toch>
-  <sher>0,032_2,5-10</sher>
-  <glub>0,100</glub>
-<i>3</i>
-</Литьё_по_выплавляемым_моделям>
-<Литьё_в_кокиль>
-  <toch>15</toch>
-  <sher>0,200_5-20</sher>
-  <glub>0,200</glub>
-<i>3</i>
-</Литьё_в_кокиль>
-<Литьё_под_давлением_в_металлические_формы>
-  <toch>12</toch>
-  <sher>0,040_2,5-10</sher>
-  <glub>0,100</glub>
-<i>3</i>
-</Литьё_под_давлением_в_металлические_формы>
-<Центробежное_литьё>
-  <toch>15</toch>
-  <sher>0,200_5-20</sher>
-  <glub>0,200</glub>
-<i>3</i>
-</Центробежное_литьё>
-<Горячая_объёмная_штамповка_на_молотах_и_прессах>
-  <toch>17</toch>
-  <sher>0,160_5-40</sher>
-  <glub>0,200</glub>
-<i>3</i>
-</Горячая_объёмная_штамповка_на_молотах_и_прессах>
-<Холодное_выдавливание>
-  <toch>14</toch>
-  <sher>0,40_0,63-10</sher>
-  <glub>0,040</glub>
-<i>2</i>
-</Холодное_выдавливание>
-<Прокат_Обычная_точность_В1>
-  <toch>16</toch>
-  <sher>0,2_20-30</sher>
-  <glub>0,3</glub>
-<i>1</i>
-</Прокат_Обычная_точность_В1>
-<Прокат_Повышенная_точность_Б1>
-  <toch>15</toch>
-  <sher>0,125_15-25</sher>
-  <glub>0,15</glub>
-<i>6</i>
-</Прокат_Повышенная_точность_Б1>
-<Прокат_Высокая_точность_А1>
-  <toch>14</toch>
-  <sher>0,075_10-15</sher>
-  <glub>0,1</glub>
-<i>7</i>
-</Прокат_Высокая_точность_А1>
-</Заготовки>
+<?xml version="1.0" encoding="utf-8"?>
+<ParametersOfWorkpieces xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <workpieces>
+    <Workpieces>
+      <nameOfWorkpiece>Р›РёС‚СЊС‘ РІ РїРµСЃС‡Р°РЅРѕ РіР»РёРЅРёСЃС‚С‹Рµ С„РѕСЂРјС‹</nameOfWorkpiece>
+      <kvalitet>16</kvalitet>
+      <surfaceRoughnessRz>0.3</surfaceRoughnessRz>
+      <recommendedIntervalRz>
+        <min>0</min>
+        <max>80</max>
+      </recommendedIntervalRz>
+      <thicknessOfDefectiveCoating>0.3</thicknessOfDefectiveCoating>
+      <idWorkpieces>0</idWorkpieces>
+    </Workpieces>
+    <Workpieces>
+      <nameOfWorkpiece>Р›РёС‚СЊС‘ РІ РѕР±РѕР»РѕС‡РєРѕРІС‹Рµ С„РѕСЂРјС‹</nameOfWorkpiece>
+      <kvalitet>15</kvalitet>
+      <surfaceRoughnessRz>0.04</surfaceRoughnessRz>
+      <recommendedIntervalRz>
+        <min>0</min>
+        <max>40</max>
+      </recommendedIntervalRz>
+      <thicknessOfDefectiveCoating>0.16</thicknessOfDefectiveCoating>
+      <idWorkpieces>0</idWorkpieces>
+    </Workpieces>
+    <Workpieces>
+      <nameOfWorkpiece>Р›РёС‚СЊС‘ РїРѕ РІС‹РїР»Р°РІР»СЏРµРјС‹Рј РјРѕРґРµР»СЏРј</nameOfWorkpiece>
+      <kvalitet>12</kvalitet>
+      <surfaceRoughnessRz>0.032</surfaceRoughnessRz>
+      <recommendedIntervalRz>
+        <min>0</min>
+        <max>10</max>
+      </recommendedIntervalRz>
+      <thicknessOfDefectiveCoating>0.1</thicknessOfDefectiveCoating>
+      <idWorkpieces>0</idWorkpieces>
+    </Workpieces>
+    <Workpieces>
+      <nameOfWorkpiece>Р›РёС‚СЊС‘ РІ РєРѕРєРёР»СЊ</nameOfWorkpiece>
+      <kvalitet>15</kvalitet>
+      <surfaceRoughnessRz>0.2</surfaceRoughnessRz>
+      <recommendedIntervalRz>
+        <min>0</min>
+        <max>20</max>
+      </recommendedIntervalRz>
+      <thicknessOfDefectiveCoating>0.2</thicknessOfDefectiveCoating>
+      <idWorkpieces>0</idWorkpieces>
+    </Workpieces>
+    <Workpieces>
+      <nameOfWorkpiece>Р›РёС‚СЊС‘ РїРѕРґ РґР°РІР»РµРЅРёРµРј РІ РјРµС‚Р°Р»Р»РёС‡РµСЃРєРёРµ С„РѕСЂРјС‹</nameOfWorkpiece>
+      <kvalitet>12</kvalitet>
+      <surfaceRoughnessRz>0.04</surfaceRoughnessRz>
+      <recommendedIntervalRz>
+        <min>0</min>
+        <max>10</max>
+      </recommendedIntervalRz>
+      <thicknessOfDefectiveCoating>0.1</thicknessOfDefectiveCoating>
+      <idWorkpieces>0</idWorkpieces>
+    </Workpieces>
+    <Workpieces>
+      <nameOfWorkpiece>Р¦РµРЅС‚СЂРѕР±РµР¶РЅРѕРµ Р»РёС‚СЊС‘</nameOfWorkpiece>
+      <kvalitet>15</kvalitet>
+      <surfaceRoughnessRz>0.2</surfaceRoughnessRz>
+      <recommendedIntervalRz>
+        <min>0</min>
+        <max>20</max>
+      </recommendedIntervalRz>
+      <thicknessOfDefectiveCoating>0.2</thicknessOfDefectiveCoating>
+      <idWorkpieces>0</idWorkpieces>
+    </Workpieces>
+    <Workpieces>
+      <nameOfWorkpiece>Р“РѕСЂСЏС‡Р°СЏ РѕР±СЉС‘РјРЅР°СЏ С€С‚Р°РјРїРѕРІРєР° РЅР° РјРѕР»РѕС‚Р°С… Рё РїСЂРµСЃСЃР°С…</nameOfWorkpiece>
+      <kvalitet>17</kvalitet>
+      <surfaceRoughnessRz>0.16</surfaceRoughnessRz>
+      <recommendedIntervalRz>
+        <min>0</min>
+        <max>40</max>
+      </recommendedIntervalRz>
+      <thicknessOfDefectiveCoating>0.2</thicknessOfDefectiveCoating>
+      <idWorkpieces>0</idWorkpieces>
+    </Workpieces>
+    <Workpieces>
+      <nameOfWorkpiece>РҐРѕР»РѕРґРЅРѕРµ РІС‹РґР°РІР»РёРІР°РЅРёРµ</nameOfWorkpiece>
+      <kvalitet>14</kvalitet>
+      <surfaceRoughnessRz>0.4</surfaceRoughnessRz>
+      <recommendedIntervalRz>
+        <min>0</min>
+        <max>10</max>
+      </recommendedIntervalRz>
+      <thicknessOfDefectiveCoating>0.04</thicknessOfDefectiveCoating>
+      <idWorkpieces>0</idWorkpieces>
+    </Workpieces>
+    <Workpieces>
+      <nameOfWorkpiece>РџСЂРѕРєР°С‚ РћР±С‹С‡РЅР°СЏ С‚РѕС‡РЅРѕСЃС‚СЊ Р’1</nameOfWorkpiece>
+      <kvalitet>16</kvalitet>
+      <surfaceRoughnessRz>0.2</surfaceRoughnessRz>
+      <recommendedIntervalRz>
+        <min>0</min>
+        <max>30</max>
+      </recommendedIntervalRz>
+      <thicknessOfDefectiveCoating>0.3</thicknessOfDefectiveCoating>
+      <idWorkpieces>0</idWorkpieces>
+    </Workpieces>
+    <Workpieces>
+      <nameOfWorkpiece>РџСЂРѕРєР°С‚ РџРѕРІС‹С€РµРЅРЅР°СЏ С‚РѕС‡РЅРѕСЃС‚СЊ Р‘1</nameOfWorkpiece>
+      <kvalitet>15</kvalitet>
+      <surfaceRoughnessRz>0.125</surfaceRoughnessRz>
+      <recommendedIntervalRz>
+        <min>0</min>
+        <max>25</max>
+      </recommendedIntervalRz>
+      <thicknessOfDefectiveCoating>0.15</thicknessOfDefectiveCoating>
+      <idWorkpieces>0</idWorkpieces>
+    </Workpieces>
+    <Workpieces>
+      <nameOfWorkpiece>РџСЂРѕРєР°С‚ Р’С‹СЃРѕРєР°СЏ С‚РѕС‡РЅРѕСЃС‚СЊ Рђ1</nameOfWorkpiece>
+      <kvalitet>14</kvalitet>
+      <surfaceRoughnessRz>0.075</surfaceRoughnessRz>
+      <recommendedIntervalRz>
+        <min>0</min>
+        <max>15</max>
+      </recommendedIntervalRz>
+      <thicknessOfDefectiveCoating>0.1</thicknessOfDefectiveCoating>
+      <idWorkpieces>0</idWorkpieces>
+    </Workpieces>
+  </workpieces>
+</ParametersOfWorkpieces>

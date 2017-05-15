@@ -3,6 +3,8 @@ using System.Windows.Forms;
 using Newtonsoft.Json;
 using System.Text;
 using System.IO;
+using System.Xml.Serialization;
+using System.Collections.Generic;
 
 namespace WindowsFormsApplication8
 {
@@ -28,12 +30,18 @@ namespace WindowsFormsApplication8
         {
             try
             {
-                string xmlpath = @"XMLFiles/ParametersOfSurfacesAfterVariousOperations.xml";
-                XMLtoTreeView.formationTreeView(xmlpath, TreeOfOperations);
+                //string xmlpath = @"XMLFiles/ParametersOfSurfacesAfterVariousOperations.xml";
+                //XMLtoTreeView.formationTreeView(xmlpath, TreeOfOperations);
+
+                List<string> g = Tables.getParametersOfSurfacesAfterVariousOperations().getListOperation();
+
+                foreach (string h in g)
+                {
+                    TreeOfOperations.Nodes.Add(h);
+                }
             }
             catch { MessageBox.Show("Повреждены XML таблицы", "Ошибка"); }
-
-            LengthOfPart.Text = Tables.getParametersOfWorkpieces().workpieces[2].nameOfWorkpiece;
+            
         }
        
         private void button1_Click(object sender, EventArgs e)
@@ -275,8 +283,6 @@ namespace WindowsFormsApplication8
         {
             EventClickOnButtonOfSelectTechnologicalProcess.buttonSelectProcess(this);
         }
-
-       
     }
 }
         

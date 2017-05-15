@@ -13,5 +13,10 @@ namespace WindowsFormsApplication8.DataStructures.PaarametersOfWorkpieces
         public DataStructures.Interval recommendedIntervalRz { get; set; }
         public double thicknessOfDefectiveCoating { get; set; }
         public int idWorkpieces { get; set; }
+
+        public string getNameOfWorkpieces()
+        {
+            return nameOfWorkpiece;
+        }
     }
 }

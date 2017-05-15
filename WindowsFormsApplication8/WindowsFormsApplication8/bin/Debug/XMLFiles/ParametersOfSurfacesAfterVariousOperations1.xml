@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ParametersOfWorkpieces xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <workpieces>
+    <Workpieces>
+      <nameOfWorkpiece>литьё в песчано глинистые формы</nameOfWorkpiece>
+      <kvalitet>16</kvalitet>
+      <surfaceRoughnessRz>0.3</surfaceRoughnessRz>
+      <recommendedIntervalRz>
+        <min>0</min>
+        <max>80</max>
+      </recommendedIntervalRz>
+      <thicknessOfDefectiveCoating>0.3</thicknessOfDefectiveCoating>
+      <idWorkpieces>0</idWorkpieces>
+    </Workpieces>
+    <Workpieces>
+      <nameOfWorkpiece>Литьё в оболочковые формы</nameOfWorkpiece>
+      <kvalitet>15</kvalitet>
+      <surfaceRoughnessRz>0.04</surfaceRoughnessRz>
+      <recommendedIntervalRz>
+        <min>0</min>
+        <max>40</max>
+      </recommendedIntervalRz>
+      <thicknessOfDefectiveCoating>0.16</thicknessOfDefectiveCoating>
+      <idWorkpieces>0</idWorkpieces>
+    </Workpieces>
+    <Workpieces>
+      <nameOfWorkpiece>Литьё по выплавляемым моделям</nameOfWorkpiece>
+      <kvalitet>12</kvalitet>
+      <surfaceRoughnessRz>0.032</surfaceRoughnessRz>
+      <recommendedIntervalRz>
+        <min>0</min>
+        <max>10</max>
+      </recommendedIntervalRz>
+      <thicknessOfDefectiveCoating>0.1</thicknessOfDefectiveCoating>
+      <idWorkpieces>0</idWorkpieces>
+    </Workpieces>
+    <Workpieces>
+      <nameOfWorkpiece>Литьё в кокиль</nameOfWorkpiece>
+      <kvalitet>15</kvalitet>
+      <surfaceRoughnessRz>0.2</surfaceRoughnessRz>
+      <recommendedIntervalRz>
+        <min>0</min>
+        <max>20</max>
+      </recommendedIntervalRz>
+      <thicknessOfDefectiveCoating>0.2</thicknessOfDefectiveCoating>
+      <idWorkpieces>0</idWorkpieces>
+    </Workpieces>
+    <Workpieces>
+      <nameOfWorkpiece>Литьё под давлением в металлические формы</nameOfWorkpiece>
+      <kvalitet>12</kvalitet>
+      <surfaceRoughnessRz>0.04</surfaceRoughnessRz>
+      <recommendedIntervalRz>
+        <min>0</min>
+        <max>10</max>
+      </recommendedIntervalRz>
+      <thicknessOfDefectiveCoating>0.1</thicknessOfDefectiveCoating>
+      <idWorkpieces>0</idWorkpieces>
+    </Workpieces>
+    <Workpieces>
+      <nameOfWorkpiece>Центробежное литьё</nameOfWorkpiece>
+      <kvalitet>15</kvalitet>
+      <surfaceRoughnessRz>0.2</surfaceRoughnessRz>
+      <recommendedIntervalRz>
+        <min>0</min>
+        <max>20</max>
+      </recommendedIntervalRz>
+      <thicknessOfDefectiveCoating>0.2</thicknessOfDefectiveCoating>
+      <idWorkpieces>0</idWorkpieces>
+    </Workpieces>
+    <Workpieces>
+      <nameOfWorkpiece>Горячая объёмная штамповка на молотах и прессах</nameOfWorkpiece>
+      <kvalitet>17</kvalitet>
+      <surfaceRoughnessRz>0.16</surfaceRoughnessRz>
+      <recommendedIntervalRz>
+        <min>0</min>
+        <max>40</max>
+      </recommendedIntervalRz>
+      <thicknessOfDefectiveCoating>0.2</thicknessOfDefectiveCoating>
+      <idWorkpieces>0</idWorkpieces>
+    </Workpieces>
+    <Workpieces>
+      <nameOfWorkpiece>Холодное выдавливание</nameOfWorkpiece>
+      <kvalitet>14</kvalitet>
+      <surfaceRoughnessRz>0.4</surfaceRoughnessRz>
+      <recommendedIntervalRz>
+        <min>0</min>
+        <max>10</max>
+      </recommendedIntervalRz>
+      <thicknessOfDefectiveCoating>0.04</thicknessOfDefectiveCoating>
+      <idWorkpieces>0</idWorkpieces>
+    </Workpieces>
+    <Workpieces>
+      <nameOfWorkpiece>Прокат Обычная точность В1</nameOfWorkpiece>
+      <kvalitet>16</kvalitet>
+      <surfaceRoughnessRz>0.2</surfaceRoughnessRz>
+      <recommendedIntervalRz>
+        <min>0</min>
+        <max>30</max>
+      </recommendedIntervalRz>
+      <thicknessOfDefectiveCoating>0.3</thicknessOfDefectiveCoating>
+      <idWorkpieces>0</idWorkpieces>
+    </Workpieces>
+    <Workpieces>
+      <nameOfWorkpiece>Прокат Повышенная точность Б1</nameOfWorkpiece>
+      <kvalitet>15</kvalitet>
+      <surfaceRoughnessRz>0.125</surfaceRoughnessRz>
+      <recommendedIntervalRz>
+        <min>0</min>
+        <max>25</max>
+      </recommendedIntervalRz>
+      <thicknessOfDefectiveCoating>0.15</thicknessOfDefectiveCoating>
+      <idWorkpieces>0</idWorkpieces>
+    </Workpieces>
+    <Workpieces>
+      <nameOfWorkpiece>Прокат Высокая точность А1</nameOfWorkpiece>
+      <kvalitet>14</kvalitet>
+      <surfaceRoughnessRz>0.075</surfaceRoughnessRz>
+      <recommendedIntervalRz>
+        <min>0</min>
+        <max>15</max>
+      </recommendedIntervalRz>
+      <thicknessOfDefectiveCoating>0.1</thicknessOfDefectiveCoating>
+      <idWorkpieces>0</idWorkpieces>
+    </Workpieces>
+  </workpieces>
+</ParametersOfWorkpieces>

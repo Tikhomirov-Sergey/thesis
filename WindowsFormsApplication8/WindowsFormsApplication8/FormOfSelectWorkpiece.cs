@@ -19,8 +19,18 @@ namespace WindowsFormsApplication8
 
         private void Form2_Load(object sender, EventArgs e)
         {
-            string xmlpath = @"XMLFiles/ParametersOfWorkpieces.xml";
-            XMLtoTreeView.formationTreeView(xmlpath, TreeOfWorkpiece);
+            try
+            {
+                List<string> g = Tables.getParametersOfWorkpieces().getListWorkprieces();
+
+                foreach (string h in g)
+                {
+                    TreeOfWorkpiece.Nodes.Add(h);
+                }
+            }
+            catch { } /*string xmlpath = @"XMLFiles/ParametersOfWorkpieces.xml";
+            XMLtoTreeView.formationTreeView(xmlpath, TreeOfWorkpiece);*/
+
 
             ValidOffsetSurface.Enabled = false; label4.Enabled = false; label5.Enabled = false; ValidOffsetSurface.Text = "0";
         }
