@@ -24,37 +24,39 @@ namespace WindowsFormsApplication8
 
         public static void clickOnTreeWorkpiece(TreeNodeMouseClickEventArgs e, FormOfSelectWorkpiece form)
         {
-            int level;
-            level = e.Node.Level;
-
-            if (level == 1)
-            {
                 ParametersWorkpiece parameters = extractionOfParametersOfWorkpiece(e);
 
                 Part.setWorkpiece(parameters);
                 parameters.insertParametersOfWorkpieceInTextboxes(form);
-            }
         }
 
         private static ParametersWorkpiece extractionOfParametersOfWorkpiece(TreeNodeMouseClickEventArgs e)
         {
-            TreeNode node = e.Node;
+            int idWorkpiece = e.Node.Index;
 
-            string nameOfWorkpiece = node.Text;
-            int kvalitet = Convert.ToInt32(node.FirstNode.FirstNode.Text);
-            double thicknessOfDefectiveCoating = Convert.ToDouble(node.FirstNode.NextNode.NextNode.FirstNode.Text);
-            int idWorkpiece = Convert.ToInt32(node.FirstNode.NextNode.NextNode.NextNode.FirstNode.Text);
+            ParametersWorkpiece workpiece = Tables.getParametersOfWorkpieces().getParametersWorkprieceOnIndex(idWorkpiece);
+            return workpiece;
 
-            string stringRz = node.FirstNode.NextNode.FirstNode.Text;
-            string[] splitStringRz = parseStringRz(stringRz);
-            double surfaceRoughnessRz = Convert.ToDouble(splitStringRz[0]);
 
-            string stringRecommendedIntervalRz = splitStringRz[1];
-            string[] splitStringRecommendedIntervalRz = parseStringRecommendedIntervalRz(stringRecommendedIntervalRz);
-            Interval recommendedIntervalRz = createIntervalRz(splitStringRecommendedIntervalRz);
+            /* TreeNode node = e.Node;
 
-            ParametersWorkpiece parameters = new ParametersWorkpiece(nameOfWorkpiece, idWorkpiece, surfaceRoughnessRz, recommendedIntervalRz, kvalitet, thicknessOfDefectiveCoating);
-            return parameters;
+             string nameOfWorkpiece = node.Text;
+             int kvalitet = Convert.ToInt32(node.FirstNode.FirstNode.Text);
+             double thicknessOfDefectiveCoating = Convert.ToDouble(node.FirstNode.NextNode.NextNode.FirstNode.Text);
+             int idWorkpiece = Convert.ToInt32(node.FirstNode.NextNode.NextNode.NextNode.FirstNode.Text);
+
+             string stringRz = node.FirstNode.NextNode.FirstNode.Text;
+             string[] splitStringRz = parseStringRz(stringRz);
+             double surfaceRoughnessRz = Convert.ToDouble(splitStringRz[0]);
+
+             string stringRecommendedIntervalRz = splitStringRz[1];
+             string[] splitStringRecommendedIntervalRz = parseStringRecommendedIntervalRz(stringRecommendedIntervalRz);
+             Interval recommendedIntervalRz = createIntervalRz(splitStringRecommendedIntervalRz);
+
+             ParametersWorkpiece parameters = new ParametersWorkpiece(nameOfWorkpiece, idWorkpiece, surfaceRoughnessRz, recommendedIntervalRz, kvalitet, thicknessOfDefectiveCoating);
+             return parameters;
+             */
+
         }
 
         private static ParametersOperation extractionOfParametersOfOperations(TreeNodeMouseClickEventArgs e)

@@ -5,7 +5,7 @@ using System.Text;
 
 namespace WindowsFormsApplication8
 {
-    class ParametersWorkpiece
+    public class ParametersWorkpiece
     {
         private string nameOfWorkpiece;
         private int idWorkpiece;

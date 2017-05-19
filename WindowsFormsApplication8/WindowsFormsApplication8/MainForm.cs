@@ -33,7 +33,7 @@ namespace WindowsFormsApplication8
                 //string xmlpath = @"XMLFiles/ParametersOfSurfacesAfterVariousOperations.xml";
                 //XMLtoTreeView.formationTreeView(xmlpath, TreeOfOperations);
 
-                List<string> g = Tables.getParametersOfSurfacesAfterVariousOperations().getListOperation();
+                List<string> g = Tables.getParametersOfSurfacesAfterVariousOperations().getListOperations();
 
                 foreach (string h in g)
                 {

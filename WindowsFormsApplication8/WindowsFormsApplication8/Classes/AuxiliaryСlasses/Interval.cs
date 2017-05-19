@@ -5,7 +5,7 @@ using System.Text;
 
 namespace WindowsFormsApplication8
 {
-    class Interval
+    public class Interval
     {
         public double min { get; set; }
         public double max { get; set; }
@@ -14,6 +14,11 @@ namespace WindowsFormsApplication8
         {
             this.min = min;
             this.max = max;
+        }
+    public Interval(DataStructures.Interval interval)
+        {
+            this.min = interval.min;
+            this.max = interval.max;
         }
 
         public bool checkOfInterval(double value)

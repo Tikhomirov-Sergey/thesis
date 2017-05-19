@@ -9,6 +9,11 @@ namespace WindowsFormsApplication8
     {
         public DataStructures.PaarametersOfWorkpieces.Workpieces[] workpieces { get; set; }
 
+        public ParametersWorkpiece getParametersWorkprieceOnIndex(int indexWorkpriece)
+        {
+                return workpieces[indexWorkpriece].getParametersWorkpiece();
+        }
+
         public List<string> getListWorkprieces()
         {
                 int length = workpieces.Length;
@@ -21,6 +26,16 @@ namespace WindowsFormsApplication8
                 }
 
                 return listOfWorkpieces;
+        }
+
+        public void insertListOfOperationsInTreeView(FormOfSelectWorkpiece form)
+        {
+            List<string> workprieces = this.getListWorkprieces();
+
+            foreach (string workpriece in workprieces)
+            {
+                form.TreeOfWorkpiece.Nodes.Add(workpriece);
+            }
         }
     }
 }

@@ -9,7 +9,7 @@ namespace WindowsFormsApplication8
     {
         public DataStructures.ParametersOfSurfacesAfterVariousOperations.Operations[] operations { get; set; }
 
-        public List<string> getListOperation()
+        public List<string> getListOperations()
         {
             int length = operations.Length;
 
@@ -21,6 +21,16 @@ namespace WindowsFormsApplication8
             }
 
             return listOfOperation;
+        }
+
+        public void insertListOfOperationsInTreeView(MainForm form)
+        {
+            List<string> operations = this.getListOperations();
+
+            foreach (string operation in operations)
+            {
+                form.TreeOfOperations.Nodes.Add(operation);
+            }
         }
     }
 }
