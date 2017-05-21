@@ -112,6 +112,7 @@
     <Compile Include="DataStructures\ParametersOfSurfacesAfterVariousOperations\ParametersOfSurfacesAfterVariousOperations.cs" />
     <Compile Include="DataStructures\ParametersOfSurfacesAfterVariousOperations\PrecisionOfMachining.cs" />
     <Compile Include="DataStructures\ShiftInAxisOfHoleDuringDrilling\ShiftInAxisOfHoleDuringDrilling.cs" />
+    <Compile Include="DataStructures\StorageParameters\Operation.cs" />
     <Compile Include="DataStructures\StorageParameters\Part.cs" />
     <Compile Include="DataStructures\StorageParameters\ParametersWorkpiece.cs" />
     <Compile Include="DataStructures\StorageParameters\ParametersOperation.cs" />
