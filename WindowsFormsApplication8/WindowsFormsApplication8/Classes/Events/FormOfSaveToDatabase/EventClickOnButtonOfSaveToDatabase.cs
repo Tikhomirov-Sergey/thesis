@@ -41,7 +41,7 @@ namespace WindowsFormsApplication8
             saveToTableOfPart(form);
             int index = form.dataGridView1.NewRowIndex;
             saveWorkpieceToTableOfOperations(form, index);
-            saveToTableOfOperations(form, index);
+            //saveToTableOfOperations(form, index);
         }
 
         private static void saveToTableOfPart(Form5 form)
@@ -56,7 +56,7 @@ namespace WindowsFormsApplication8
             form.детальTableAdapter1.Insert(nameOfPart, date, (float)parametersOfPart.getLengthOfPart(), (float)parametersOfPart.getDiameterOfPart(), parametersWorkpiece.getKvalitet(), (float)parametersWorkpiece.getSurfaceRoughnessRz(), (float)parametersWorkpiece.getThicknessOfDefectiveCoating(), parametersOfPart.getTypeOfPart().getName(), parametersOfPart.getTypeOfProcessedSurface().getName(), parametersOfPart.getTypeOfAllowance().getName(), parametersWorkpiece.getNameOfWorkpiece(), nameOfSurface);
         }
 
-        private static void saveToTableOfOperations(Form5 form, int index)
+       /* private static void saveToTableOfOperations(Form5 form, int index)
         {
             Surface surface = Part.getSurfaceOnIndex(0);
 
@@ -73,7 +73,7 @@ namespace WindowsFormsApplication8
 
                 form.переходыTableAdapter.Insert(Convert.ToInt16(form.dataGridView1[0, index - 1].Value.ToString()) + 1, i + 1, nameOperation, parametersOperation.getTypeOfInstrument(), (float)parametersOperation.getSurfaceRoughnessRz(), (float)parametersOperation.getThicknessOfDefectiveCoating(), (float)resultsOfCalculation.getSpatialDeviation()[i + 1], (float)resultsOfCalculation.getdeviationOfInstallation()[i + 1], (float)resultsOfCalculation.getAccuracies()[i + 1], (float)resultsOfCalculation.getNominalAllowance()[i + 1], (float)resultsOfCalculation.getSizeOfWorkprieceAfterOperation()[i + 1], parametersOperation.getIdOperation(), null, (float)parametersOperation.getCoefficientOfRefinement(), (int)parametersOperation.getKvalitet());
             }
-        }
+        }*/
 
         private static void saveWorkpieceToTableOfOperations(Form5 form, int index)
         {

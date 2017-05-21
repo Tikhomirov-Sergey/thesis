@@ -7,19 +7,26 @@ namespace WindowsFormsApplication8
 {
     public class Operation
     {
-        private string nameOperation;
+        private string typeOfMachining;
         private int idOperation;
         private string typeOfInstrument;
 
-        public Operation(string nameOperation, int idOperation)
+        public Operation(string typeOfMachining, int idOperation)
         {
-            this.nameOperation = nameOperation;
+            this.typeOfMachining = typeOfMachining;
             this.idOperation = idOperation;
         }
 
-        public string getNameOperation()
+        public Operation(Operation operation)
         {
-            return nameOperation;
+            this.typeOfMachining = operation.getTypeOfMachining();
+            this.idOperation = operation.getIdOperation();
+            this.typeOfInstrument = operation.getTypeOfInstrument();
+        }
+
+        public string getTypeOfMachining()
+        {
+            return typeOfMachining;
         }
 
         public int getIdOperation()

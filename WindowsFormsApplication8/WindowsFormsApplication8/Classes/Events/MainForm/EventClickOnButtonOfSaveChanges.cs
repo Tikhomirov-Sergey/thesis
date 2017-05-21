@@ -17,9 +17,9 @@ namespace WindowsFormsApplication8
 
                 if (selectedOperation != 0)
                 {
-                    ParametersOperation operation = Part.getSurfaceOnIndex(selectedSurface).getOperationOnIndex(selectedOperation - 1);
+                   // ParametersOperation operation = Part.getSurfaceOnIndex(selectedSurface).getOperationOnIndex(selectedOperation - 1);
 
-                    extractionOfParametersOfOperationFromTextBoxes(operation, form);
+                    //extractionOfParametersOfOperationFromTextBoxes(operation, form);
                     insertNameOperationInTreeView(form, selectedOperation);
                 }
             }

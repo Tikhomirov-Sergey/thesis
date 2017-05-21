@@ -4,18 +4,18 @@ namespace WindowsFormsApplication8
 {
     class StorageOfSelectedOperation
     {
-        private static ParametersOperation parameters = null;
+        private static Operation operation = null;
         private static int indexSelectOperation;
         private static int indexSelectSurface;
 
-        public static void setParameters(ParametersOperation parametersOperation)
+        public static void setOperation(Operation operation)
         {
-            parameters = parametersOperation;
+            StorageOfSelectedOperation.operation = operation;
         }
 
-        public static ParametersOperation getParameters()
+        public static Operation getOperation()
         {
-            return parameters;
+            return operation;
         }
 
         public static void setIndexSelectedOperation(int index)
@@ -50,14 +50,18 @@ namespace WindowsFormsApplication8
 
         public static void insertParametersOfOperationsInTextboxes(MainForm form)
         {
-            form.TypeOfMachining.Text = parameters.getTypeOfMachining();
-            form.PrecisionOfMachining.Text = parameters.getPrecisionOfMachining();
-            form.SurfaceRoughnessRz.Text = parameters.getSurfaceRoughnessRzToString();
-            form.ThicknessOfDefectiveCoating.Text = parameters.getThicknessOfDefectiveCoatingToString();
-            form.Kvalitet.Text = parameters.getKvalitetToString();
-            form.CoefficientOfRefinement.Text = parameters.getCoefficientOfRefinementToString();
-
+            form.TypeOfMachining.Text = operation.getTypeOfMachining();
             selectTypeOfInstrument(form);
+
+            /*
+            form.TypeOfMachining.Text = operation.getTypeOfMachining();
+            form.PrecisionOfMachining.Text = operation.getPrecisionOfMachining();
+            form.SurfaceRoughnessRz.Text = operation.getSurfaceRoughnessRzToString();
+            form.ThicknessOfDefectiveCoating.Text = operation.getThicknessOfDefectiveCoatingToString();
+            form.Kvalitet.Text = operation.getKvalitetToString();
+            form.CoefficientOfRefinement.Text = operation.getCoefficientOfRefinementToString();
+
+            selectTypeOfInstrument(form);*/
         }
 
         private static void selectTypeOfInstrument(MainForm form)
@@ -69,7 +73,7 @@ namespace WindowsFormsApplication8
 
             try
             {
-                string typeOfInstrument = parameters.getTypeOfInstrument();
+                string typeOfInstrument = operation.getTypeOfInstrument();
                 int index = form.TypeOfInstrument.Items.IndexOf(typeOfInstrument);
                 form.TypeOfInstrument.SelectedIndex = index;
             }

@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using System.Windows.Forms;
 
 namespace WindowsFormsApplication8
 {
@@ -30,6 +31,23 @@ namespace WindowsFormsApplication8
             foreach (string operation in operations)
             {
                 form.TreeOfOperations.Nodes.Add(operation);
+            }
+        }
+
+        public Operation getTypeOfMachiningOnIndex(int idOperation)
+        {
+            try
+            {
+                string typeOfMachining = operations[idOperation].getTypeOfMachining();
+
+                Operation operation = new Operation(typeOfMachining, idOperation);
+
+                return operation;
+            }
+            catch
+            {
+                MessageBox.Show("Операции с введенным индексом не существует", "Ошибка");
+                return null;
             }
         }
     }

@@ -7,20 +7,15 @@ namespace WindowsFormsApplication8
     {
         public static void clickOnTreeOperations(TreeNodeMouseClickEventArgs e, MainForm form)
         {
-            int level;
-            level = e.Node.Level;
-            
-            if(level == 1)
-            {
-                e.Node.Toggle();
-            }
-            if(level == 2)
-            {
-                ParametersOperation parameters = extractionOfParametersOfOperations(e);
-                StorageOfSelectedOperation.setParameters(parameters);
+                Operation operation = extractionOfParametersOfOperations(e);
+                StorageOfSelectedOperation.setOperation(operation);
                 StorageOfSelectedOperation.insertParametersOfOperationsInTextboxes(form);
-            }
-         }
+
+            /* ParametersOperation parameters = extractionOfParametersOfOperations(e);
+             StorageOfSelectedOperation.setParameters(parameters);
+             StorageOfSelectedOperation.insertParametersOfOperationsInTextboxes(form);*/
+
+        }
 
         public static void clickOnTreeWorkpiece(TreeNodeMouseClickEventArgs e, FormOfSelectWorkpiece form)
         {
@@ -59,9 +54,15 @@ namespace WindowsFormsApplication8
 
         }
 
-        private static ParametersOperation extractionOfParametersOfOperations(TreeNodeMouseClickEventArgs e)
+        private static Operation extractionOfParametersOfOperations(TreeNodeMouseClickEventArgs e)
         {
-            TreeNode node = e.Node;
+
+            int idOperation = e.Node.Index;
+
+            Operation operation = Tables.getParametersOfSurfacesAfterVariousOperations().getTypeOfMachiningOnIndex(idOperation);
+
+            return operation;
+            /*TreeNode node = e.Node;
 
             string typeOfMachining = node.Parent.Text;
             string precisionOfMachining = node.Text;
@@ -79,7 +80,7 @@ namespace WindowsFormsApplication8
             Interval recommendedIntervalRz = createIntervalRz(splitStringRecommendedIntervalRz);
 
             ParametersOperation parameters = new ParametersOperation(typeOfMachining, precisionOfMachining, surfaceRoughnessRz, recommendedIntervalRz, idOperation, kvalitet, thicknessOfDefectiveCoating, coefficientOfRefinement);
-            return parameters;
+            return parameters;*/
         }
 
         private static string[] parseString(string str, char symbol)

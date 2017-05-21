@@ -92,7 +92,7 @@ namespace WindowsFormsApplication8
             for (int i = 1; i < numberOfOperations; i++)
             {
                 ParametersOperation parametersOperation = createOperation(form, i);
-                surface.setOpetation(parametersOperation);
+               //surface.setOpetation(parametersOperation);
             }
 
             Part.setOpetations(surface, 0);

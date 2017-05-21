@@ -20,8 +20,8 @@ namespace WindowsFormsApplication8
             else
             {
                 int index = e.Node.Index - 1;
-                ParametersOperation parametersOperation = Part.getSurfaceOnIndex(0).getOperationOnIndex(index);
-                StorageOfSelectedOperation.setParameters(parametersOperation);
+                //ParametersOperation parametersOperation = Part.getSurfaceOnIndex(0).getOperationOnIndex(index);
+               // StorageOfSelectedOperation.setParameters(parametersOperation);
                 StorageOfSelectedOperation.insertParametersOfOperationsInTextboxes(form);
             }
         }

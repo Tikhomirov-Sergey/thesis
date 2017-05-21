@@ -32,7 +32,7 @@ namespace WindowsFormsApplication8
             {
                 //string xmlpath = @"XMLFiles/ParametersOfSurfacesAfterVariousOperations.xml";
                 //XMLtoTreeView.formationTreeView(xmlpath, TreeOfOperations);
-
+                //!!!!!!!!!!!!!!!!!!!!!!!Не забыть для чтоль прекрасной штуки сдеать класс!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
                 List<string> g = Tables.getParametersOfSurfacesAfterVariousOperations().getListOperations();
 
                 foreach (string h in g)
@@ -48,6 +48,14 @@ namespace WindowsFormsApplication8
         {
             try {
                 EventClickOnButtonOfSelectOperationsOrWorkpiece.buttonOfSelectOperations(e, this);
+
+                SurfacesTreeView.Nodes.Clear();
+                string[] s = Part.getSurfaceOnIndex(0).getListOperations();
+                foreach (string h in s)
+                {
+
+                    SurfacesTreeView.Nodes.Add(h);
+                }
             }
             catch { }
         }
@@ -207,8 +215,8 @@ namespace WindowsFormsApplication8
 
         private void textBox5_Click(object sender, EventArgs e)
        {
-            try {
-                Interval recommendedIntervalRz = StorageOfSelectedOperation.getParameters().getRecommendedIntervalRz();
+            /*try {
+                Interval recommendedIntervalRz = StorageOfSelectedOperation.getOperation().getRecommendedIntervalRz();
                 string minRz = recommendedIntervalRz.getIntervalMinConvertToString();
                 string maxRz = recommendedIntervalRz.getIntervalMaxConvertToString();
                 toolTip1.ToolTipIcon = ToolTipIcon.Warning;
@@ -216,15 +224,15 @@ namespace WindowsFormsApplication8
                 toolTip1.ToolTipTitle = "Достигаемая шероховатость, Rz, мм";
                 toolTip1.SetToolTip(SurfaceRoughnessRz, "Интервал для данной операции: " + Convert.ToString(minRz) + "..." + Convert.ToString(maxRz));
             }
-            catch { }
+            catch { }*/
 
         }
 
         private void textRa_Click(object sender, EventArgs e)
         {
-            try
+           /* try
             {
-                Interval recommendedIntervalRz = StorageOfSelectedOperation.getParameters().getRecommendedIntervalRz();
+                Interval recommendedIntervalRz = StorageOfSelectedOperation.getOperation().getRecommendedIntervalRz();
                 Interval recommendedIntervalRa = ConversionRoughnessRzAndRa.intervalRzToIntervalRa(recommendedIntervalRz);
                 string minRa = recommendedIntervalRa.getIntervalMinConvertToString();
                 string maxRa = recommendedIntervalRa.getIntervalMaxConvertToString();
@@ -233,7 +241,7 @@ namespace WindowsFormsApplication8
                 toolTip1.ToolTipTitle = "Достигаемая шероховатость, Ra, мкм";
                 toolTip1.SetToolTip(SurfaceRoughnessRa, "Интервал для данной операции: " + Convert.ToString(minRa) + "..." + Convert.ToString(maxRa));
             }
-            catch { }
+            catch { }*/
         }
 
         private void TreeOfSelectedOperations_NodeMouseClick(object sender, TreeNodeMouseClickEventArgs e)

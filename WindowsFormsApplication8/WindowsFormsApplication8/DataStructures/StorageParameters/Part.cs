@@ -55,7 +55,7 @@ namespace WindowsFormsApplication8
             return surfaces;
         }
 
-        public static void addOperationInSurface(ParametersOperation operation, int indexSurface, int indexOfOperation)
+        public static void addOperationInSurface(Operation operation, int indexSurface, int indexOfOperation)
         {
             try
             {
@@ -74,13 +74,13 @@ namespace WindowsFormsApplication8
             catch { return null; }
         }
 
-        public static void calculationOfSurfaces()
+       /* public static void calculationOfSurfaces()
         {
             foreach (Surface surface in Part.surfaces)
             {
                 surface.calculationOFSurface();
             }
-        }
+        }*/
 
         private static void checkSurface(int indexSurface)
         {

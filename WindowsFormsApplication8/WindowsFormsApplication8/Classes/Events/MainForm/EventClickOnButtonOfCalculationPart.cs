@@ -12,7 +12,7 @@ namespace WindowsFormsApplication8
         {
             ParametersOfPart parameters = extractionOfParametersOfPartFromTextBoxes(form);
             Part.setParametersOfPart(parameters);
-            Part.calculationOfSurfaces();
+           // Part.calculationOfSurfaces();
         }
 
         public static ParametersOfPart extractionOfParametersOfPartFromTextBoxes(MainForm form)

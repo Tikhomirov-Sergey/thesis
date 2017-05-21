@@ -9,7 +9,9 @@ namespace WindowsFormsApplication8
     class Surface
     {
         private string nameSurface = "";
-        private ParametersOperation[] operations = new ParametersOperation[0];
+        // private ParametersOperation[] operations = new ParametersOperation[0];
+
+        List<Operation> operations = new List<Operation>();
 
         private ClassesToCalculate.ResultsOfCalculation resultsOfCalculation = null;
 
@@ -23,7 +25,7 @@ namespace WindowsFormsApplication8
             return this.nameSurface;
         }
 
-        public void setOpetation(ParametersOperation operation, int indexOfOperation = -1)
+        public void setOpetation(Operation operation, int indexOfOperation = -1)
         {
             if (indexOfOperation.Equals(-1))
             {
@@ -32,19 +34,17 @@ namespace WindowsFormsApplication8
 
            try
            {
-                List<ParametersOperation> parametersOperationToList = this.operations.ToList<ParametersOperation>();
-                parametersOperationToList.Insert(indexOfOperation, operation);
-                this.operations = parametersOperationToList.ToArray<ParametersOperation>();
+                this.operations.Insert(indexOfOperation, operation);
            }
            catch { }
         }
 
-        public ParametersOperation[] getOperations()
+        public List<Operation> getOperations()
         {
             return this.operations;
         }
 
-        public ParametersOperation getOperationOnIndex(int indexOperation)
+        public Operation getOperationOnIndex(int indexOperation)
         {
             try
             {
@@ -55,12 +55,12 @@ namespace WindowsFormsApplication8
 
         public string[] getListOperations()
         {
-            int length = this.operations.Length;
+            int length = this.operations.Count;
             string[] list = new string[length];
 
             for (int i = 0; i < length; i++)
             {
-                list[i] = this.operations[i].getNameOperation();
+                list[i] = this.operations[i].getTypeOfMachining();
             }
 
             return list;
@@ -68,19 +68,19 @@ namespace WindowsFormsApplication8
 
         public int getNumberOfOperations()
         {
-            return this.operations.Length;
+            return this.operations.Count;
         }
 
-        public void calculationOFSurface()
+      /*  public void calculationOFSurface()
         {
             ParametersOfPart parametersOfPart = Part.getParametersOfPart();
             DataStructures.CalculationOfSurface.ParametersOperationsForCalculation parametersOperations = getParametersOperationsForCalculation();
 
             CalculationOfSurface calculationOfSurface = new CalculationOfSurface(parametersOfPart, parametersOperations);
             this.resultsOfCalculation = calculationOfSurface.calculation();
-        }
+        }*/
 
-        private DataStructures.CalculationOfSurface.ParametersOperationsForCalculation getParametersOperationsForCalculation()
+       /* private DataStructures.CalculationOfSurface.ParametersOperationsForCalculation getParametersOperationsForCalculation()
         {
             double[] surfaceRoughnessRz = new double[this.getNumberOfOperations() + 1]; ;
             double[] kvalitets = new double[this.getNumberOfOperations() + 1]; ;
@@ -118,7 +118,7 @@ namespace WindowsFormsApplication8
             
             DataStructures.CalculationOfSurface.ParametersOperationsForCalculation parameters = new DataStructures.CalculationOfSurface.ParametersOperationsForCalculation(surfaceRoughnessRz, kvalitets, thicknessOfDefectiveCoating, coefficientOfRefinement, idOperation, typeOfInstrument, validOffsetSurface);
             return parameters;
-        }
+        }*/
 
         public ClassesToCalculate.ResultsOfCalculation getResultsOfCalculation()
         {
@@ -155,9 +155,7 @@ namespace WindowsFormsApplication8
         {
            try
            {
-                List<ParametersOperation> parametersOperationToList = this.operations.ToList<ParametersOperation>();
-                parametersOperationToList.RemoveAt(indexOfOperation);
-                this.operations = parametersOperationToList.ToArray<ParametersOperation>();
+                this.operations.RemoveAt(indexOfOperation);
            }
            catch { }
         }

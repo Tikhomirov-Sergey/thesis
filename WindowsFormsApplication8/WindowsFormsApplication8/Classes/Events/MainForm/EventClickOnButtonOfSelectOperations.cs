@@ -10,7 +10,7 @@ namespace WindowsFormsApplication8
     {
         public static void buttonOfSelectOperations(EventArgs e, MainForm form)
         {
-            ParametersOperation operation = StorageOfSelectedOperation.getParameters();
+            Operation operation = StorageOfSelectedOperation.getOperation();
 
             if (operation != null)
             {
@@ -21,16 +21,38 @@ namespace WindowsFormsApplication8
 
                 Part.addOperationInSurface(operation, indexSelectedSurface, indexSelectedOperation);
 
-                insertNameOperationInTextboxes(form, operation.getNameOperation(), indexSelectedOperation);
+                insertNameOperationInTextboxes(form, operation.getTypeOfMachining(), indexSelectedOperation);
 
-                operation = new ParametersOperation(operation);
-                StorageOfSelectedOperation.setParameters(operation);
+                operation = new Operation(operation);
+                StorageOfSelectedOperation.setOperation(operation);
             }
-        }
+                /*ParametersOperation operation = StorageOfSelectedOperation.getOperation();
 
-        public static ParametersOperation extractionOfParametersOfOperationFromTextBoxes(ParametersOperation operation, MainForm form)
+                if (operation != null)
+                {
+                    extractionOfParametersOfOperationFromTextBoxes(operation, form);
+
+                    int indexSelectedOperation = StorageOfSelectedOperation.getIndexSelectedOperation();
+                    int indexSelectedSurface = StorageOfSelectedOperation.getIndexSelectedSurface();
+
+                    Part.addOperationInSurface(operation, indexSelectedSurface, indexSelectedOperation);
+
+                    insertNameOperationInTextboxes(form, operation.getNameOperation(), indexSelectedOperation);
+
+                    operation = new ParametersOperation(operation);
+                    StorageOfSelectedOperation.setParameters(operation);
+                }*/
+            }
+
+        public static Operation extractionOfParametersOfOperationFromTextBoxes(Operation operation, MainForm form)
         {
-            string typeOfMachining = form.TypeOfMachining.Text;
+            string typeOfInsrument = form.TypeOfInstrument.Text;
+
+            operation.setTypeOfInstrument(typeOfInsrument);
+
+            return operation;
+
+            /*string typeOfMachining = form.TypeOfMachining.Text;
             string precisionOfMachining = form.PrecisionOfMachining.Text;
             string surfaceRoughnessRz = form.SurfaceRoughnessRz.Text;
             string typeOfInsrument = form.TypeOfInstrument.Text;
@@ -40,7 +62,7 @@ namespace WindowsFormsApplication8
             operation.setSurfaceRoughnessRz(surfaceRoughnessRz);
             operation.setTypeOfInstrument(typeOfInsrument);
 
-            return operation;
+            return operation;*/
         }
 
         public static void insertNameOperationInTextboxes(MainForm form, string nameOperation,int indexSelectedOperation)
