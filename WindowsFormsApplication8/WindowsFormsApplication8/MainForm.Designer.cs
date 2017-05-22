@@ -172,13 +172,13 @@
             // 
             this.TreeOfOperations.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.TreeOfOperations.Enabled = false;
-            this.TreeOfOperations.Location = new System.Drawing.Point(16, 412);
+            this.TreeOfOperations.Location = new System.Drawing.Point(11, 409);
             this.TreeOfOperations.Margin = new System.Windows.Forms.Padding(4);
             this.TreeOfOperations.Name = "TreeOfOperations";
             this.TreeOfOperations.ShowLines = false;
             this.TreeOfOperations.ShowPlusMinus = false;
             this.TreeOfOperations.ShowRootLines = false;
-            this.TreeOfOperations.Size = new System.Drawing.Size(533, 220);
+            this.TreeOfOperations.Size = new System.Drawing.Size(534, 223);
             this.TreeOfOperations.TabIndex = 16;
             this.TreeOfOperations.NodeMouseClick += new System.Windows.Forms.TreeNodeMouseClickEventHandler(this.treeView1_NodeMouseClick);
             // 

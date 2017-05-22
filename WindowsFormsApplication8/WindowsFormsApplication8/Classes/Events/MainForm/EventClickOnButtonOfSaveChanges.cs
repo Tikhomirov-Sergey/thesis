@@ -17,26 +17,31 @@ namespace WindowsFormsApplication8
 
                 if (selectedOperation != 0)
                 {
-                   // ParametersOperation operation = Part.getSurfaceOnIndex(selectedSurface).getOperationOnIndex(selectedOperation - 1);
+                    Operation operation = Part.getSurfaceOnIndex(selectedSurface).getOperationOnIndex(selectedOperation - 1);
 
-                    //extractionOfParametersOfOperationFromTextBoxes(operation, form);
+                    extractionOfParametersOfOperationFromTextBoxes(operation, form);
                     insertNameOperationInTreeView(form, selectedOperation);
                 }
             }
             catch { }
         }
 
-        public static void extractionOfParametersOfOperationFromTextBoxes(ParametersOperation operation, MainForm form)
+        public static void extractionOfParametersOfOperationFromTextBoxes(Operation operation, MainForm form)
         {
             string typeOfMachining = form.TypeOfMachining.Text;
-            string precisionOfMachining = form.PrecisionOfMachining.Text;
-            string surfaceRoughnessRz = form.SurfaceRoughnessRz.Text;
             string typeOfInsrument = form.TypeOfInstrument.Text;
 
             operation.setTypeOfMachining(typeOfMachining);
-            operation.setPrecisionOfMachining(precisionOfMachining);
-            operation.setSurfaceRoughnessRz(surfaceRoughnessRz);
             operation.setTypeOfInstrument(typeOfInsrument);
+            /* string typeOfMachining = form.TypeOfMachining.Text;
+             string precisionOfMachining = form.PrecisionOfMachining.Text;
+             string surfaceRoughnessRz = form.SurfaceRoughnessRz.Text;
+             string typeOfInsrument = form.TypeOfInstrument.Text;
+
+             operation.setTypeOfMachining(typeOfMachining);
+             operation.setPrecisionOfMachining(precisionOfMachining);
+             operation.setSurfaceRoughnessRz(surfaceRoughnessRz);
+             operation.setTypeOfInstrument(typeOfInsrument);*/
         }
 
         private static void insertNameOperationInTreeView(MainForm form, int selectedOperation)

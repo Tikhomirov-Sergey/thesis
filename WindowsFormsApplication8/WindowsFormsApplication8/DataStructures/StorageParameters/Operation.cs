@@ -24,6 +24,11 @@ namespace WindowsFormsApplication8
             this.typeOfInstrument = operation.getTypeOfInstrument();
         }
 
+        public void setTypeOfMachining(string typeOfMachining)
+        {
+            this.typeOfMachining = typeOfMachining;
+        }
+
         public string getTypeOfMachining()
         {
             return typeOfMachining;
