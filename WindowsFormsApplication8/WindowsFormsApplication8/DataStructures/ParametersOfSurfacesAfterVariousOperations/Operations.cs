@@ -14,5 +14,39 @@ namespace WindowsFormsApplication8.DataStructures.ParametersOfSurfacesAfterVario
         {
             return typeOfMachining;
         }
+
+        public List<ParametersOperation> getListOperationOnSurfaceRoughness(double surfaceRoughness, string nameOperation, string typeOfInstrument)
+        {
+            int indextPrecisionOfMachining = checkSurfaceRoughness(surfaceRoughness);
+
+            List<ParametersOperation> operations = new List<ParametersOperation>();
+
+            for(int i = 0; i <= indextPrecisionOfMachining; i++)
+            {
+                ParametersOperation parameters = precisionOfMachining[i].getParametersOperation(nameOperation);
+                parameters.setTypeOfInstrument(typeOfInstrument);
+
+                operations.Add(parameters);
+            }
+
+            return operations;
+        }
+
+        private int checkSurfaceRoughness(double surfaceRoughness)
+        {
+            int countPrecisionOfMachining = precisionOfMachining.Length;
+
+            int indextPrecisionOfMachining = 0;
+
+            for(int i = 0; i < countPrecisionOfMachining; i++)
+            {
+                if (precisionOfMachining[i].checkInterval(surfaceRoughness))
+                {
+                    indextPrecisionOfMachining = i;
+                }
+            }
+
+            return indextPrecisionOfMachining;
+        }
     }
 }

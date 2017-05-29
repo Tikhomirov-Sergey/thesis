@@ -50,5 +50,16 @@ namespace WindowsFormsApplication8
                 return null;
             }
         }
+
+        public List<ParametersOperation> getListOperationOnSurfaceRoughness(int idOperation, double surfaceRoughness, string nameOperation, string typeOfInstrument)
+        {
+            try
+            {
+                List<ParametersOperation>  operations = this.operations[idOperation].getListOperationOnSurfaceRoughness(surfaceRoughness, nameOperation, typeOfInstrument);
+
+                return operations;
+            }
+            catch { return null; }
+        }
     }
 }

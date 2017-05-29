@@ -6,7 +6,7 @@ using System.Windows.Forms;
 
 namespace WindowsFormsApplication8
 {
-    class ParametersOperation
+    public class ParametersOperation
     {
         private string typeOfMachining;
         private string precisionOfMachining;
