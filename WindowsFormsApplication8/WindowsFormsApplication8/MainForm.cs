@@ -87,6 +87,7 @@ namespace WindowsFormsApplication8
             try
             {
                 EventClickOnButtonOfCalculationPart.buttonOfCalculation(this);
+
                 if (Part.getSurfaceOnIndex(0).getResultsOfCalculation() != null)
                 {
                     FormResult formResult = new FormResult();
@@ -289,43 +290,11 @@ namespace WindowsFormsApplication8
 
         private void SelectTechnologicalProcess_Click(object sender, EventArgs e)
         {
-            EventClickOnButtonOfSelectTechnologicalProcess.buttonSelectProcess(this);
-
-            List<Operation> p = Part.getSurfaceOnIndex(0).getOperations();
-            List<ParametersOperation> h = new List<ParametersOperation>();
-
-            double SurfaceRoughness = Convert.ToDouble(Allowance.Text);
-            TreeOfOperations.Nodes.Clear();
-            /* foreach (Operation o in p)
-             {
-                 h = Tables.getParametersOfSurfacesAfterVariousOperations().getListOperationOnSurfaceRoughness(o.getIdOperation(), SurfaceRoughness, o.getTypeOfMachining(), o.getTypeOfInstrument());
-
-                 foreach(ParametersOperation l in h)
-                 {
-                     TreeOfOperations.Nodes.Add(l.getNameOperation());
-                 }
-             }*/
-
-            int count = Part.getSurfaceOnIndex(0).getNumberOfOperations();
-            List<ParametersOperation> ki = new List<ParametersOperation>();
-
-            for(int i = count -1 ; i >= 0; i--)
+            try
             {
-                Operation o = Part.getSurfaceOnIndex(0).getOperationOnIndex(i);
-                h = Tables.getParametersOfSurfacesAfterVariousOperations().getListOperationOnSurfaceRoughness(o.getIdOperation(), SurfaceRoughness, o.getTypeOfMachining(), o.getTypeOfInstrument());
-
-                ki.InsertRange(0, h);
-
-                SurfaceRoughness = h[0].getRecommendedIntervalRz().getIntervalMax();
+                EventClickOnButtonOfSelectTechnologicalProcess.buttonSelectProcess(this);
             }
-
-            foreach(ParametersOperation tg in ki)
-            {
-                TreeOfOperations.Nodes.Add(tg.getNameOperation());
-            }
-
-
-
+            catch { }
         }
     }
 }

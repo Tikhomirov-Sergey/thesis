@@ -63,7 +63,7 @@ namespace WindowsFormsApplication8
             ParametersOperation[] parametersOperations = surface.getOperations();
             ClassesToCalculate.ResultsOfCalculation resultsOfCalculation = surface.getResultsOfCalculation();
 
-            int numberOfOperation = surface.getNumberOfOperations();
+            int numberOfOperation = surface.getCountShortListOperation();
 
             for (int i = 0; i < numberOfOperation; i++)
             {

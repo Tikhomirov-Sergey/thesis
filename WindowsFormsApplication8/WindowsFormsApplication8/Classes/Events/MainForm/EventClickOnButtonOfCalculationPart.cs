@@ -12,7 +12,7 @@ namespace WindowsFormsApplication8
         {
             ParametersOfPart parameters = extractionOfParametersOfPartFromTextBoxes(form);
             Part.setParametersOfPart(parameters);
-           // Part.calculationOfSurfaces();
+            Part.calculationOfSurfaces();
         }
 
         public static ParametersOfPart extractionOfParametersOfPartFromTextBoxes(MainForm form)
@@ -23,11 +23,13 @@ namespace WindowsFormsApplication8
             TypeOfPart typeOfPart = createType(form.TypeOfPart);
             TypeOfPart typeOfAllowance = createType(form.TypeOfAllowance);
             TypeOfPart typeOfProcessedSurface = createType(form.TypeOfProcessedSurface);
-            
+
+            double surfaceRoughness = StringConvertToDoubleOrZero(form.SurfaceRoughness.Text);
             double allowance = StringConvertToDoubleOrZero(form.Allowance.Text);
             double holeDepth = StringConvertToDoubleOrZero(form.HoleDepth.Text);
 
-            ParametersOfPart parameters = new ParametersOfPart(lengthOfPart, diameterOfPart,typeOfPart, typeOfAllowance, typeOfProcessedSurface, allowance, holeDepth);
+
+            ParametersOfPart parameters = new ParametersOfPart(lengthOfPart, diameterOfPart,typeOfPart, typeOfAllowance, typeOfProcessedSurface, surfaceRoughness, allowance, holeDepth);
             return parameters;
         }
 

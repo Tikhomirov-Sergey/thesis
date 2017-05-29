@@ -9,7 +9,7 @@ namespace WindowsFormsApplication8
     class Surface
     {
         private string nameSurface = "";
-        // private ParametersOperation[] operations = new ParametersOperation[0];
+        private List<ParametersOperation> parametersOperation = new List<ParametersOperation>();
 
         List<Operation> operations = new List<Operation>();
 
@@ -29,7 +29,7 @@ namespace WindowsFormsApplication8
         {
             if (indexOfOperation.Equals(-1))
             {
-                indexOfOperation = getNumberOfOperations();
+                indexOfOperation = getCountShortListOperation();
             }
 
            try
@@ -66,29 +66,43 @@ namespace WindowsFormsApplication8
             return list;
         }
 
-        public int getNumberOfOperations()
+        public List<ParametersOperation> getParametersOperation()
+        {
+            return parametersOperation;
+        }
+
+        public int getCountShortListOperation()
         {
             return this.operations.Count;
         }
 
-      /*  public void calculationOFSurface()
+        public int getCountLongListOperation()
+        {
+            return this.parametersOperation.Count;
+        }
+
+        public void calculationOFSurface()
         {
             ParametersOfPart parametersOfPart = Part.getParametersOfPart();
             DataStructures.CalculationOfSurface.ParametersOperationsForCalculation parametersOperations = getParametersOperationsForCalculation();
 
             CalculationOfSurface calculationOfSurface = new CalculationOfSurface(parametersOfPart, parametersOperations);
             this.resultsOfCalculation = calculationOfSurface.calculation();
-        }*/
+        }
 
-       /* private DataStructures.CalculationOfSurface.ParametersOperationsForCalculation getParametersOperationsForCalculation()
+        private DataStructures.CalculationOfSurface.ParametersOperationsForCalculation getParametersOperationsForCalculation()
         {
-            double[] surfaceRoughnessRz = new double[this.getNumberOfOperations() + 1]; ;
-            double[] kvalitets = new double[this.getNumberOfOperations() + 1]; ;
-            double[] thicknessOfDefectiveCoating = new double[this.getNumberOfOperations() + 1]; ;
-            double[] coefficientOfRefinement = new double[this.getNumberOfOperations() + 1]; ;
+            this.formationOfLongListWithParametersOfOperation();
 
-            int[] idOperation = new int[this.getNumberOfOperations() + 1]; ;
-            string[] typeOfInstrument = new string[this.getNumberOfOperations() + 1];
+            int countLongListOperation = this.getCountLongListOperation();
+
+            double[] surfaceRoughnessRz = new double[countLongListOperation + 1]; ;
+            double[] kvalitets = new double[countLongListOperation + 1]; ;
+            double[] thicknessOfDefectiveCoating = new double[countLongListOperation + 1]; ;
+            double[] coefficientOfRefinement = new double[countLongListOperation + 1]; ;
+
+            int[] idOperation = new int[countLongListOperation + 1]; ;
+            string[] typeOfInstrument = new string[countLongListOperation + 1];
 
             ParametersWorkpiece workpiece = Part.getWorkpiece();
 
@@ -100,9 +114,9 @@ namespace WindowsFormsApplication8
 
             double validOffsetSurface = workpiece.getValidOffsetSurface();
 
-            for (int i = 0; i < this.getNumberOfOperations(); i++)
+            for (int i = 0; i < countLongListOperation; i++)
             {
-                ParametersOperation operation = this.operations[i];
+                ParametersOperation operation = this.parametersOperation[i];
 
                 surfaceRoughnessRz[i + 1] = operation.getSurfaceRoughnessRz();
                 kvalitets[i + 1] = operation.getKvalitet();
@@ -118,7 +132,26 @@ namespace WindowsFormsApplication8
             
             DataStructures.CalculationOfSurface.ParametersOperationsForCalculation parameters = new DataStructures.CalculationOfSurface.ParametersOperationsForCalculation(surfaceRoughnessRz, kvalitets, thicknessOfDefectiveCoating, coefficientOfRefinement, idOperation, typeOfInstrument, validOffsetSurface);
             return parameters;
-        }*/
+        }
+
+        public void formationOfLongListWithParametersOfOperation()
+        {
+            this.parametersOperation.Clear();
+
+            double surfaceRoughness = Part.getParametersOfPart().getSurfaceRoughness();
+
+            int numberOfOperations = this.getCountShortListOperation();
+
+            for (int i = numberOfOperations - 1; i >= 0; i--)
+            {
+                Operation operation = this.getOperationOnIndex(i);
+                List<ParametersOperation> parametersOperation = Tables.getParametersOfSurfacesAfterVariousOperations().getListOperationOnSurfaceRoughness(operation, surfaceRoughness);
+
+                this.parametersOperation.InsertRange(0, parametersOperation);
+
+                surfaceRoughness = parametersOperation[0].getRecommendedIntervalRz().getIntervalMax();
+            }
+        }
 
         public ClassesToCalculate.ResultsOfCalculation getResultsOfCalculation()
         {
@@ -128,7 +161,7 @@ namespace WindowsFormsApplication8
         public void insertListOfOperationsInTreeView(MainForm form)
         {
             string[] listOfSurface = this.getListOperations();
-            int numberOfOperations = this.getNumberOfOperations();
+            int numberOfOperations = this.getCountShortListOperation();
 
             for (int i = 1; i <= numberOfOperations; i++)
             {
@@ -176,6 +209,8 @@ namespace WindowsFormsApplication8
 
             return typeOfInstrument;
         }
+
+        
 
     }
 }

@@ -14,18 +14,20 @@ namespace WindowsFormsApplication8
         private TypeOfPart typeOfAllowance;
         private TypeOfPart typeOfProcessedSurface;
 
+        private double surfaceRoughness;
         private double allowance;
         private double holeDepth;
 
         public ParametersOfPart(double lengthOfPart, double diameterOfPart,
             TypeOfPart typeOfPart, TypeOfPart typeOfAllowance, TypeOfPart typeOfProcessedSurface,
-            double allowance, double holeDepth = 0)
+            double surfaceRoughness, double allowance, double holeDepth = 0)
         {
             this.lengthOfPart = lengthOfPart;
             this.diameterOfPart = diameterOfPart;
             this.typeOfPart = typeOfPart;
             this.typeOfAllowance = typeOfAllowance;
             this.typeOfProcessedSurface = typeOfProcessedSurface;
+            this.surfaceRoughness = surfaceRoughness;
             this.allowance = allowance;
             this.holeDepth = holeDepth;
         }
@@ -130,6 +132,16 @@ namespace WindowsFormsApplication8
         public void setAllowance(double allowance)
         {
             this.allowance = allowance;
+        }
+
+        public double getSurfaceRoughness()
+        {
+            return surfaceRoughness;
+        }
+
+        public void setSurfaceRoughness(double surfaceRoughness)
+        {
+            this.surfaceRoughness = surfaceRoughness;
         }
     }
 }
