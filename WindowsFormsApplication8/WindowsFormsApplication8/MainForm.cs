@@ -46,18 +46,11 @@ namespace WindowsFormsApplication8
        
         private void button1_Click(object sender, EventArgs e)
         {
-            try {
+            try
+            {
                 EventClickOnButtonOfSelectOperationsOrWorkpiece.buttonOfSelectOperations(e, this);
-
-                SurfacesTreeView.Nodes.Clear();
-                string[] s = Part.getSurfaceOnIndex(0).getListOperations();
-                foreach (string h in s)
-                {
-
-                    SurfacesTreeView.Nodes.Add(h);
-                }
             }
-            catch { }
+            catch { MessageBox.Show("button1_Click", "W"); }
         }
         
         private void treeView1_NodeMouseClick(object sender, TreeNodeMouseClickEventArgs e)
@@ -294,7 +287,7 @@ namespace WindowsFormsApplication8
             {
                 EventClickOnButtonOfSelectTechnologicalProcess.buttonSelectProcess(this);
             }
-            catch { }
+            catch { MessageBox.Show("SelectTechnologicalProcess_Click", "W"); }
         }
     }
 }

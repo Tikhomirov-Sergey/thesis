@@ -21,6 +21,8 @@ namespace WindowsFormsApplication8
 
             form.TreeOfSelectedOperations.Nodes.Clear();
 
+
+
             enabledTextBoxes(form);
         }
 

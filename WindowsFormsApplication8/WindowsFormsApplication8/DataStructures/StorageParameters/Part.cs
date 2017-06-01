@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using System.Windows.Forms;
 
 namespace WindowsFormsApplication8
 {
@@ -9,7 +10,8 @@ namespace WindowsFormsApplication8
     {
         private static ParametersOfPart parametersOfPart = null;
         private static ParametersWorkpiece workpriece = null;
-        private static Surface[] surfaces = new Surface[1];
+        private static List<Surface> surfaces = new List<Surface>();
+
         
         public static ParametersOfPart getParametersOfPart()
         {
@@ -33,24 +35,23 @@ namespace WindowsFormsApplication8
 
         public static void setOpetations(Surface operations)
         {
-            int length = surfaces.Length;
-            Array.Resize(ref surfaces, length + 1);
-            surfaces[length] = operations;
+            surfaces.Add(operations);
         }
 
         public static void setOpetations(Surface operations, int index)
         {
-            if (surfaces.Length - 1 >= index)
+            if (!surfaceIsNull(index))
             {
                 surfaces[index] = operations;
             }
             else
             {
-                setOpetations(operations);
+                surfaces.Insert(index, operations);
             }
+            
         }
 
-        public static Surface[] getSurfaces()
+        public static List<Surface> getSurfaces()
         {
             return surfaces;
         }
@@ -84,15 +85,19 @@ namespace WindowsFormsApplication8
 
         private static void checkSurface(int indexSurface)
         {
-            if (surfaceIsNull(surfaces[indexSurface]))
+            try
             {
-                surfaces[indexSurface] = new Surface();
+                if (surfaceIsNull(indexSurface))
+                {
+                    surfaces.Insert(indexSurface, new Surface());
+                }
             }
+            catch { }
         }
 
-        private static bool surfaceIsNull(Surface surface)
+        private static bool surfaceIsNull(int indexSurface)
         {
-            return (surface == null);
+            return (surfaces.Count - 1 < indexSurface);
         }
 
         public static void insertParametersOfPartInTextboxes(MainForm form)

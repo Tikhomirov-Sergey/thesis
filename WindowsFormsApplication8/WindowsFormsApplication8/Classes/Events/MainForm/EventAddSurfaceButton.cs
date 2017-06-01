@@ -16,8 +16,21 @@ namespace WindowsFormsApplication8
                 Surface.Name = "Surface" + Convert.ToString(form.SurfacesTreeView.Nodes.Count);
                 Surface.Text = "Поверхность " + Convert.ToString(form.SurfacesTreeView.Nodes.Count);
                 form.SurfacesTreeView.Nodes.Add(Surface);
+                CopyTechnologicalProcessInSurface(form);
             }
-            catch { }
+            catch { MessageBox.Show("buttonAddSurface"); }
         }
+
+        public static void CopyTechnologicalProcessInSurface(MainForm form)
+        {
+            try
+            {
+
+                form.TreeOfSelectedOperations.Nodes.Clear();
+
+            }
+            
+            catch { MessageBox.Show("CopyTechnologicalProcessInSurface"); }
+}
     }
 }
