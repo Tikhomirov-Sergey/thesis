@@ -27,6 +27,8 @@ namespace WindowsFormsApplication8
                 {
                     TreeOfWorkpiece.Nodes.Add(h);
                 }
+
+                EventClickOfMouseOnTreeViewNode.clickOnTreeWorkpiece(0, this);
             }
             catch { } /*string xmlpath = @"XMLFiles/ParametersOfWorkpieces.xml";
             XMLtoTreeView.formationTreeView(xmlpath, TreeOfWorkpiece);*/

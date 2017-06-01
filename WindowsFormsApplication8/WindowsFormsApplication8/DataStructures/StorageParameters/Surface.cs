@@ -9,9 +9,9 @@ namespace WindowsFormsApplication8
     class Surface
     {
         private string nameSurface = "";
-        private List<ParametersOperation> parametersOperation = new List<ParametersOperation>();
 
-        List<Operation> operations = new List<Operation>();
+        private List<Operation> operations = new List<Operation>();
+        private List<ParametersOperation> parametersOperation = new List<ParametersOperation>();
 
         private ClassesToCalculate.ResultsOfCalculation resultsOfCalculation = null;
 
@@ -37,6 +37,19 @@ namespace WindowsFormsApplication8
                 this.operations.Insert(indexOfOperation, operation);
            }
            catch { }
+        }
+
+        public void setOpetation(List<Operation> operations, int indexOfOperation = -1)
+        {
+            if (indexOfOperation.Equals(-1))
+            {
+                this.operations.Clear();
+                this.operations.AddRange(operations);
+            }
+            else
+            {
+                this.operations.InsertRange(indexOfOperation, operations);
+            }
         }
 
         public List<Operation> getOperations()
@@ -163,6 +176,9 @@ namespace WindowsFormsApplication8
             string[] listOfSurface = this.getListOperations();
             int numberOfOperations = this.getCountShortListOperation();
 
+            form.TreeOfSelectedOperations.Nodes.Clear();
+            Part.insertNameOfWorkpieceInTreeViewAndTextBox(form);
+
             for (int i = 1; i <= numberOfOperations; i++)
             {
                 if (form.TreeOfSelectedOperations.Nodes.Count <= i)
@@ -173,11 +189,6 @@ namespace WindowsFormsApplication8
                 {
                     form.TreeOfSelectedOperations.Nodes[i].Text = listOfSurface[i - 1];
                 }
-            }
-
-            for(int i = numberOfOperations + 1; i < form.TreeOfSelectedOperations.Nodes.Count; i++)
-            {
-                form.TreeOfSelectedOperations.Nodes.RemoveAt(i);
             }
 
             StorageOfSelectedOperation.setIndexSelectedOperation(numberOfOperations);
@@ -209,8 +220,5 @@ namespace WindowsFormsApplication8
 
             return typeOfInstrument;
         }
-
-        
-
     }
 }

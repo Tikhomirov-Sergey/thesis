@@ -19,9 +19,10 @@ namespace WindowsFormsApplication8
             StorageOfSelectedOperation.setIndexSelectedSurface(1);
             form.SurfacesTreeView.SelectedNode = form.SurfacesTreeView.Nodes[1];
 
-            form.TreeOfSelectedOperations.Nodes.Clear();
+            Part.copyTechnologicalProcessInSurface(1);
+            Part.insertListOfOperationsInTreeView(form, 1);
 
-
+            Part.insertListOfTechnologicalProcessInTreeView(form);
 
             enabledTextBoxes(form);
         }

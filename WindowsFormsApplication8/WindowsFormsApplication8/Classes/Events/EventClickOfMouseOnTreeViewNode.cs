@@ -7,28 +7,50 @@ namespace WindowsFormsApplication8
     {
         public static void clickOnTreeOperations(TreeNodeMouseClickEventArgs e, MainForm form)
         {
-                Operation operation = extractionOfParametersOfOperations(e);
-                StorageOfSelectedOperation.setOperation(operation);
-                StorageOfSelectedOperation.insertParametersOfOperationsInTextboxes(form);
+            int idOperation = e.Node.Index;
+            int indexSelectedSurface = StorageOfSelectedOperation.getIndexSelectedSurface();
+
+            Operation operation;
+
+            if (indexSelectedSurface == 0)
+            {
+                operation = extractionOfParametersOfOperationsFromTables(idOperation);
+            }
+            else
+            {
+                operation = extractionOfParametersOfOperationsFromTechnologicalProcess(idOperation);
+            }
+
+
+            StorageOfSelectedOperation.setOperation(operation);
+            StorageOfSelectedOperation.insertParametersOfOperationsInTextboxes(form);
 
             /* ParametersOperation parameters = extractionOfParametersOfOperations(e);
              StorageOfSelectedOperation.setParameters(parameters);
              StorageOfSelectedOperation.insertParametersOfOperationsInTextboxes(form);*/
-
         }
 
         public static void clickOnTreeWorkpiece(TreeNodeMouseClickEventArgs e, FormOfSelectWorkpiece form)
         {
-                ParametersWorkpiece parameters = extractionOfParametersOfWorkpiece(e);
 
-                Part.setWorkpiece(parameters);
-                parameters.insertParametersOfWorkpieceInTextboxes(form);
-        }
-
-        private static ParametersWorkpiece extractionOfParametersOfWorkpiece(TreeNodeMouseClickEventArgs e)
-        {
             int idWorkpiece = e.Node.Index;
 
+            ParametersWorkpiece parameters = extractionOfParametersOfWorkpiece(idWorkpiece);
+
+            Part.setWorkpiece(parameters);
+            parameters.insertParametersOfWorkpieceInTextboxes(form);
+        }
+
+        public static void clickOnTreeWorkpiece(int idWorkpiece, FormOfSelectWorkpiece form)
+        {
+            ParametersWorkpiece parameters = extractionOfParametersOfWorkpiece(idWorkpiece);
+
+            Part.setWorkpiece(parameters);
+            parameters.insertParametersOfWorkpieceInTextboxes(form);
+        }
+
+        public static ParametersWorkpiece extractionOfParametersOfWorkpiece(int idWorkpiece)
+        {
             ParametersWorkpiece workpiece = Tables.getParametersOfWorkpieces().getParametersWorkprieceOnIndex(idWorkpiece);
             return workpiece;
 
@@ -51,14 +73,10 @@ namespace WindowsFormsApplication8
              ParametersWorkpiece parameters = new ParametersWorkpiece(nameOfWorkpiece, idWorkpiece, surfaceRoughnessRz, recommendedIntervalRz, kvalitet, thicknessOfDefectiveCoating);
              return parameters;
              */
-
         }
-
-        private static Operation extractionOfParametersOfOperations(TreeNodeMouseClickEventArgs e)
+        
+        private static Operation extractionOfParametersOfOperationsFromTables(int idOperation)
         {
-
-            int idOperation = e.Node.Index;
-
             Operation operation = Tables.getParametersOfSurfacesAfterVariousOperations().getTypeOfMachiningOnIndex(idOperation);
 
             return operation;
@@ -83,7 +101,14 @@ namespace WindowsFormsApplication8
             return parameters;*/
         }
 
-        private static string[] parseString(string str, char symbol)
+        private static Operation extractionOfParametersOfOperationsFromTechnologicalProcess(int idOperation)
+        {
+            Operation operation = Part.getSurfaceOnIndex(0).getOperationOnIndex(idOperation);
+
+            return operation;
+        }
+
+            private static string[] parseString(string str, char symbol)
         {
             string[] splitStr = str.Split(new Char[] { symbol });
             return splitStr;

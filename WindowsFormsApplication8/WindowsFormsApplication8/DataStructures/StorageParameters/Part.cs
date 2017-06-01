@@ -10,8 +10,9 @@ namespace WindowsFormsApplication8
     {
         private static ParametersOfPart parametersOfPart = null;
         private static ParametersWorkpiece workpriece = null;
-        private static List<Surface> surfaces = new List<Surface>();
 
+        //surfaces[0] = technologicalProcess;
+        private static List<Surface> surfaces = new List<Surface>();
         
         public static ParametersOfPart getParametersOfPart()
         {
@@ -48,7 +49,6 @@ namespace WindowsFormsApplication8
             {
                 surfaces.Insert(index, operations);
             }
-            
         }
 
         public static List<Surface> getSurfaces()
@@ -77,10 +77,16 @@ namespace WindowsFormsApplication8
 
         public static void calculationOfSurfaces()
         {
-            foreach (Surface surface in Part.surfaces)
+            try
             {
-                surface.calculationOFSurface();
+                int count = surfaces.Count;
+
+                for(int i = 1; i < count; i++)
+                {
+                    surfaces[i].calculationOFSurface();
+                }
             }
+            catch { }
         }
 
         private static void checkSurface(int indexSurface)
@@ -127,12 +133,42 @@ namespace WindowsFormsApplication8
             }
             catch { } 
         }
-        
+
+        public static void insertListOfTechnologicalProcessInTreeView(MainForm form)
+        {
+            try
+            {
+                List<Operation> technologicalProcess = getSurfaceOnIndex(0).getOperations();
+
+                form.TreeOfOperations.Nodes.Clear();
+
+                foreach(Operation operation in technologicalProcess)
+                {
+                    form.TreeOfOperations.Nodes.Add(operation.getTypeOfMachining());
+                }
+            }
+            catch { }
+        }
+
+
         public static void deleteOperation(int indexOfSurface, int indexOfOperation)
         {
             try
             {
                 getSurfaceOnIndex(indexOfSurface).deleteOperation(indexOfOperation);
+            }
+            catch { }
+        }
+
+        public static void copyTechnologicalProcessInSurface(int indexSurface)
+        {
+            try
+            {
+                List<Operation> technologicalProcess = surfaces[0].getOperations();
+
+                checkSurface(indexSurface);
+
+                getSurfaceOnIndex(indexSurface).setOpetation(technologicalProcess);
             }
             catch { }
         }

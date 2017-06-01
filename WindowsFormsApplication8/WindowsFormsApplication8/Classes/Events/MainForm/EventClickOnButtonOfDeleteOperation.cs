@@ -14,11 +14,12 @@ namespace WindowsFormsApplication8
             {
                 TreeView treeView = form.TreeOfSelectedOperations;
                 int indexSelectedOperation = StorageOfSelectedOperation.getIndexSelectedOperation();
+                int indexSelectedSurface = StorageOfSelectedOperation.getIndexSelectedSurface();
 
                 if (indexSelectedOperation != 0)
                 {
                     treeView.Nodes.RemoveAt(indexSelectedOperation);
-                    Part.deleteOperation(0, indexSelectedOperation - 1);
+                    Part.deleteOperation(indexSelectedSurface, indexSelectedOperation - 1);
                     StorageOfSelectedOperation.decrementOfIndex();
                     form.TreeOfSelectedOperations.SelectedNode = form.TreeOfSelectedOperations.Nodes[indexSelectedOperation - 1];
                 }

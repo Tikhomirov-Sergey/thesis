@@ -42,7 +42,7 @@ namespace WindowsFormsApplication8
             form.TypeOfInstrument.Enabled = true;
         }
 
-        private static void insertNameOfWorkpieceInTreeViewAndTextBox(MainForm form, string nameOfWorkpiece)
+        public static void insertNameOfWorkpieceInTreeViewAndTextBox(MainForm form, string nameOfWorkpiece)
         {
             if(form.TreeOfSelectedOperations.Nodes.Count == 0)
             {
