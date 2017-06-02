@@ -23,27 +23,9 @@ namespace WindowsFormsApplication8
 
         private void FormResult_Load(object sender, EventArgs e)
         {
-            int typeOfPart = Part.getParametersOfPart().getTypeOfPart().getIndex();
-            char type;
+            ClickOnSurfacesTreeView.getSurfacesTreeView(this);
 
-            if (typeOfPart == 0)
-                {
-                    type = '-';
-                }
-            else
-                {
-                    type = '+';
-                }
-
-            ClassesToCalculate.ResultsOfCalculation f = Part.getSurfaceOnIndex(2).getResultsOfCalculation();
-            richTextBoxResult.Text = "Исходные данные: " + Part.getWorkpiece().getNameOfWorkpiece() + "\nСоставляющая припуска P= " + f.getSpatialDeviation()[0].ToString() + "\nРазмер= " + f.getSizeOfWorkprieceAfterOperation()[0].ToString() + "(" + type + Part.getSurfaceOnIndex(2).getResultsOfCalculation().getAccuracies()[0] + ")";
-
-            for (int i = 1; i <= Part.getSurfaceOnIndex(2).getCountLongListOperation(); i++)
-            {
-                richTextBoxResult.Text += "\n" + i.ToString() + ") ";
-                richTextBoxResult.Text += Part.getSurfaceOnIndex(2).getParametersOperation()[i - 1].getNameOperation();
-                richTextBoxResult.Text += "\nСоставляющая припуска E= " + f.getdeviationOfInstallation()[i].ToString() + "\nСоставляющая припуска P= " + f.getSpatialDeviation()[i].ToString() + "\nВеличина номинального припуска Znom= " + f.getNominalAllowance()[i].ToString() + "\nРазмер= " + f.getSizeOfWorkprieceAfterOperation()[i].ToString() + "(" + type + Part.getSurfaceOnIndex(2).getResultsOfCalculation().getAccuracies()[i]+ ")";
-            }
+            ClickOnSurfacesTreeView.clickOnNode(1, this);
         }
 
         private void buttonSaveToDisk_Click(object sender, EventArgs e)
@@ -63,6 +45,11 @@ namespace WindowsFormsApplication8
         {
             Form5 form = new Form5();
             form.ShowDialog();
+        }
+
+        private void SurfacesTreeView_NodeMouseClick(object sender, TreeNodeMouseClickEventArgs e)
+        {
+            ClickOnSurfacesTreeView.clickOnNode(e, this);
         }
     }
 }

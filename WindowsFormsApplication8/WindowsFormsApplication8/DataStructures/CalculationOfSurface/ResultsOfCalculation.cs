@@ -5,19 +5,19 @@ using System.Text;
 
 namespace WindowsFormsApplication8.ClassesToCalculate
 {
-    class ResultsOfCalculation
+    public class ResultsOfCalculation
     {
-        private double[] accuracies;
+        private double accuracies;
 
-        private double[] spatialDeviationP;
-        private double[] deviationOfInstallationE;
+        private double spatialDeviationP;
+        private double deviationOfInstallationE;
 
-        private double[] nominalAllowanceZnom;
+        private double nominalAllowanceZnom;
 
-        private double[] sizeOfWorkprieceAfterOperation;
+        private double sizeOfWorkprieceAfterOperation;
         
-        public ResultsOfCalculation(double[] accuracies, double[] spatialDeviationP, double[] deviationOfInstallationE,
-            double[] nominalAllowanceZnom, double[] sizeOfWorkprieceAfterOperation)
+        public ResultsOfCalculation(double accuracies, double spatialDeviationP, double deviationOfInstallationE,
+            double nominalAllowanceZnom, double sizeOfWorkprieceAfterOperation)
         {
             this.accuracies = accuracies;
 
@@ -29,27 +29,27 @@ namespace WindowsFormsApplication8.ClassesToCalculate
             this.sizeOfWorkprieceAfterOperation = sizeOfWorkprieceAfterOperation;
         }
 
-        public double[] getAccuracies()
+        public double getAccuracies()
         {
             return this.accuracies;
         }
 
-        public double[] getSpatialDeviation()
+        public double getSpatialDeviation()
         {
             return this.spatialDeviationP;
         }
 
-        public double[] getdeviationOfInstallation()
+        public double getdeviationOfInstallation()
         {
             return this.deviationOfInstallationE;
         }
 
-        public double[] getNominalAllowance()
+        public double getNominalAllowance()
         {
             return this.nominalAllowanceZnom;
         }
 
-        public double[] getSizeOfWorkprieceAfterOperation()
+        public double getSizeOfWorkprieceAfterOperation()
         {
             return this.sizeOfWorkprieceAfterOperation;
         }

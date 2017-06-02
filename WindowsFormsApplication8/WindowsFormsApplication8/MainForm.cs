@@ -80,12 +80,9 @@ namespace WindowsFormsApplication8
             try
             {
                 EventClickOnButtonOfCalculationPart.buttonOfCalculation(this);
-
-                if (Part.getSurfaceOnIndex(2).getResultsOfCalculation() != null)
-                {
-                    FormResult formResult = new FormResult();
-                    formResult.ShowDialog();
-                }
+            
+                FormResult formResult = new FormResult();
+                formResult.ShowDialog();
             }
             catch { }
         }
@@ -283,11 +280,11 @@ namespace WindowsFormsApplication8
 
         private void SelectTechnologicalProcess_Click(object sender, EventArgs e)
         {
-            //try
-           // {
+            try
+            {
                 EventClickOnButtonOfSelectTechnologicalProcess.buttonSelectProcess(this);
-           // }
-           // catch { MessageBox.Show("SelectTechnologicalProcess_Click", "W"); }
+            }
+            catch {}
         }
     }
 }

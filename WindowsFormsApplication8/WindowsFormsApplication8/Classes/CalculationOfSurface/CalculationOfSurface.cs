@@ -26,7 +26,7 @@ namespace WindowsFormsApplication8
                 this.parametersForCalculation = parametersForCalculation;
         }
 
-        public ClassesToCalculate.ResultsOfCalculation calculation()
+        public ClassesToCalculate.ResultsOfCalculation[] calculation()
         {
             if (this.checkOfIntervalsLenghtAndDiameter())
             {
@@ -126,11 +126,23 @@ namespace WindowsFormsApplication8
             this.sizeOfWorkprieceAfterOperation = sizeOfWorkprieceAfterOperation.calculation();
         }
 
-        private ClassesToCalculate.ResultsOfCalculation getResultsOfCalculation()
+        private ClassesToCalculate.ResultsOfCalculation[] getResultsOfCalculation()
         {
             this.rounding();
-            ClassesToCalculate.ResultsOfCalculation resultsOfCalculation = new ClassesToCalculate.ResultsOfCalculation(this.accuracies, this.spatialDeviationP, this.deviationOfInstallationE, this.nominalAllowanceZnom, this.sizeOfWorkprieceAfterOperation);
+
+            int numberOfOperations = this.parametersForCalculation.getNumberOfOperations();
+
+            ClassesToCalculate.ResultsOfCalculation[] resultsOfCalculation = new ClassesToCalculate.ResultsOfCalculation[numberOfOperations];
+
+            for(int i = 0;i < numberOfOperations; i++)
+            {
+                resultsOfCalculation[i] = new ClassesToCalculate.ResultsOfCalculation(accuracies[i], spatialDeviationP[i], deviationOfInstallationE[i], nominalAllowanceZnom[i], sizeOfWorkprieceAfterOperation[i]);
+            }
+
             return resultsOfCalculation;
+
+            /*ClassesToCalculate.ResultsOfCalculation[] resultsOfCalculation = new ClassesToCalculate.ResultsOfCalculation(this.accuracies, this.spatialDeviationP, this.deviationOfInstallationE, this.nominalAllowanceZnom, this.sizeOfWorkprieceAfterOperation);
+            return resultsOfCalculation;*/
         }
 
         private void rounding()

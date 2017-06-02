@@ -18,6 +18,8 @@ namespace WindowsFormsApplication8
         private double coefficientOfRefinement;
         private string typeOfInstrument;
 
+        private ClassesToCalculate.ResultsOfCalculation resultsOfCalculation;
+
         public ParametersOperation(string typeOfMachining, string precisionOfMachining, double surfaceRoughnessRz,
             Interval recommendedIntervalRz, int idOperation, double kvalitet, double thicknessOfDefectiveCoating, double coefficientOfRefinement, string typeOfInstrument = "не выбрано")
         {
@@ -184,6 +186,20 @@ namespace WindowsFormsApplication8
         public string getTypeOfInstrument()
         {
             return this.typeOfInstrument;
+        }
+
+        public ClassesToCalculate.ResultsOfCalculation getResultsOfCalculation()
+        {
+            try
+            {
+                return resultsOfCalculation;
+            }
+            catch { return null; }
+        }
+
+        public void setResultsOfCalculation(ClassesToCalculate.ResultsOfCalculation resultsOfCalculation)
+        {
+            this.resultsOfCalculation = resultsOfCalculation;
         }
     }
 }

@@ -12,8 +12,7 @@ namespace WindowsFormsApplication8
 
         private List<Operation> operations = new List<Operation>();
         private List<ParametersOperation> parametersOperation = new List<ParametersOperation>();
-
-        private ClassesToCalculate.ResultsOfCalculation resultsOfCalculation = null;
+        
 
         public void setNameSurface(string nameSurface)
         {
@@ -100,8 +99,26 @@ namespace WindowsFormsApplication8
             DataStructures.CalculationOfSurface.ParametersOperationsForCalculation parametersOperations = getParametersOperationsForCalculation();
 
             CalculationOfSurface calculationOfSurface = new CalculationOfSurface(parametersOfPart, parametersOperations);
-            this.resultsOfCalculation = calculationOfSurface.calculation();
+            ClassesToCalculate.ResultsOfCalculation[] resultsOfCalculation = calculationOfSurface.calculation();
+
+            recordOfResultsOfOperations(resultsOfCalculation);
         }
+
+        private void recordOfResultsOfOperations(ClassesToCalculate.ResultsOfCalculation[] resultsOfCalculation)
+        {
+            try
+            {
+                Part.getWorkpiece().setResultsOfCalculation(resultsOfCalculation[0]);
+                int countOperations = getCountLongListOperation();
+
+                for (int i = 0; i < countOperations; i++)
+                {
+                    getParametersOperation()[i].setResultsOfCalculation(resultsOfCalculation[i + 1]);
+                }
+            }
+            catch { }
+        }
+
 
         private DataStructures.CalculationOfSurface.ParametersOperationsForCalculation getParametersOperationsForCalculation()
         {
@@ -164,11 +181,6 @@ namespace WindowsFormsApplication8
 
                 surfaceRoughness = parametersOperation[0].getRecommendedIntervalRz().getIntervalMax();
             }
-        }
-
-        public ClassesToCalculate.ResultsOfCalculation getResultsOfCalculation()
-        {
-            return this.resultsOfCalculation;
         }
 
         public void insertListOfOperationsInTreeView(MainForm form)

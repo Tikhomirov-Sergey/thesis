@@ -79,9 +79,9 @@ namespace WindowsFormsApplication8
         {
             ParametersWorkpiece parametersWorkpiece = Part.getWorkpiece();
             
-            ClassesToCalculate.ResultsOfCalculation resultOfCalculation = Part.getSurfaceOnIndex(0).getResultsOfCalculation();
+           // ClassesToCalculate.ResultsOfCalculation resultOfCalculation = Part.getSurfaceOnIndex(0).getResultsOfCalculation();
 
-            form.переходыTableAdapter.Insert(Convert.ToInt16(form.dataGridView1[0, index - 1].Value.ToString()) + 1, 0, parametersWorkpiece.getNameOfWorkpiece(), "", (float)parametersWorkpiece.getSurfaceRoughnessRz(), (float)parametersWorkpiece.getThicknessOfDefectiveCoating(), (float)resultOfCalculation.getSpatialDeviation()[0], (float)resultOfCalculation.getdeviationOfInstallation()[0], (float)resultOfCalculation.getAccuracies()[0], (float)resultOfCalculation.getNominalAllowance()[0], (float)resultOfCalculation.getSizeOfWorkprieceAfterOperation()[0], parametersWorkpiece.getIdWorkpiece(), null, (float)parametersWorkpiece.getValidOffsetSurface(), (int)parametersWorkpiece.getKvalitet());
+           // form.переходыTableAdapter.Insert(Convert.ToInt16(form.dataGridView1[0, index - 1].Value.ToString()) + 1, 0, parametersWorkpiece.getNameOfWorkpiece(), "", (float)parametersWorkpiece.getSurfaceRoughnessRz(), (float)parametersWorkpiece.getThicknessOfDefectiveCoating(), (float)resultOfCalculation.getSpatialDeviation()[0], (float)resultOfCalculation.getdeviationOfInstallation()[0], (float)resultOfCalculation.getAccuracies()[0], (float)resultOfCalculation.getNominalAllowance()[0], (float)resultOfCalculation.getSizeOfWorkprieceAfterOperation()[0], parametersWorkpiece.getIdWorkpiece(), null, (float)parametersWorkpiece.getValidOffsetSurface(), (int)parametersWorkpiece.getKvalitet());
         }
     }
 }
