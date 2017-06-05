@@ -5,7 +5,6 @@ using System.Text;
 using System.IO;
 using System.Xml.Serialization;
 using System.Collections.Generic;
-using Microsoft.Data.ConnectionUI;
 
 namespace WindowsFormsApplication8
 {
@@ -20,9 +19,7 @@ namespace WindowsFormsApplication8
             TypeOfProcessedSurface.Items.AddRange(new string[] { "цилиндрическая", "плоская" });
             TypeOfAllowance.Items.AddRange(new string[] { "двухсторонний", "односторонний" });
 
-            string nameSurface = "Главный технологический процесс";
-            SurfacesTreeView.Nodes.Add(nameSurface);
-            NameSurface.Text = nameSurface;
+            SurfacesTreeView.Nodes.Add("Главный технологический процесс");
 
             TypeOfPart.SelectedIndex = 0;
             TypeOfProcessedSurface.SelectedIndex = 0;
@@ -288,32 +285,6 @@ namespace WindowsFormsApplication8
                 EventClickOnButtonOfSelectTechnologicalProcess.buttonSelectProcess(this);
             }
             catch {}
-        }
-
-        private void NameSurface_TextChanged(object sender, EventArgs e)
-        {
-            try
-            {
-                int indexSelectedSurface = StorageOfSelectedOperation.getIndexSelectedSurface();
-                string nameSurface = NameSurface.Text;
-
-                SurfacesTreeView.Nodes[indexSelectedSurface].Text = nameSurface;
-                Part.setNameSurfaceOnIndex(indexSelectedSurface, nameSurface);
-
-            }
-            catch { }
-        }
-
-        private void выборПодключенияToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            string connectionString = null;
-            DataConnectionDialog dcd = new DataConnectionDialog();
-            DataConnectionConfiguration dcs = new DataConnectionConfiguration(null);
-            dcs.LoadConfiguration(dcd);
-            if (DataConnectionDialog.Show(dcd) == DialogResult.OK)
-                connectionString = dcd.ConnectionString;
-            dcs.SaveConfiguration(dcd);
-           // return connectionString;
         }
     }
 }

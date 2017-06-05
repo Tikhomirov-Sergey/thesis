@@ -29,7 +29,7 @@ namespace WindowsFormsApplication8
 
         private static void insertParametersOfPart(FormOfWorkWithDatabase form, MainForm parrentForm)
         {
-           /* double lengthOfPart = Convert.ToDouble(form.dataGridView1.CurrentRow.Cells[3].Value.ToString());
+            double lengthOfPart = Convert.ToDouble(form.dataGridView1.CurrentRow.Cells[3].Value.ToString());
             double diameterOfPart = Convert.ToDouble(form.dataGridView1.CurrentRow.Cells[4].Value.ToString());
 
             string typeOfPart = form.dataGridView1.CurrentRow.Cells[8].Value.ToString();
@@ -44,7 +44,7 @@ namespace WindowsFormsApplication8
             double holeDepth = Convert.ToDouble(form.dataGridView1.CurrentRow.Cells[7].Value.ToString());
 
             ParametersOfPart parametersOfPart = new ParametersOfPart(lengthOfPart, diameterOfPart, indexOfTypeOfPart, indexOfTypeOfAllowance, indexOfTypeOfProcessedSurface, allowance, holeDepth);
-            Part.setParametersOfPart(parametersOfPart);*/
+            Part.setParametersOfPart(parametersOfPart);
         }
 
         private static TypeOfPart selectIndexOfTypesFromComboBox(string type, ComboBox comboBox)
@@ -70,7 +70,7 @@ namespace WindowsFormsApplication8
 
         private static void insertParametersOfWorkpriece(FormOfWorkWithDatabase form)
         {
-            /*string nameOfWorkpiece = form.dataGridView1.CurrentRow.Cells[11].Value.ToString();
+            string nameOfWorkpiece = form.dataGridView1.CurrentRow.Cells[11].Value.ToString();
             int idWorkpiece = Convert.ToInt32(form.dataGridView2[11, 0].Value.ToString());
 
             double surfaceRoughnessRz = Convert.ToDouble(form.dataGridView2[4, 0].Value.ToString());
@@ -81,12 +81,12 @@ namespace WindowsFormsApplication8
             double validOffsetSurface = Convert.ToDouble(form.dataGridView2[13, 0].Value.ToString());
 
             ParametersWorkpiece parametersWorkpiece = new ParametersWorkpiece(nameOfWorkpiece, idWorkpiece, surfaceRoughnessRz, recommendedIntervalRz, kvalitet, thicknessOfDefectiveCoating, validOffsetSurface);
-            Part.setWorkpiece(parametersWorkpiece);*/
+            Part.setWorkpiece(parametersWorkpiece);
         }
 
         private static void insertParametersOfOperations(FormOfWorkWithDatabase form)
         {
-           /* int numberOfOperations = form.dataGridView2.Rows.Count - 1;
+            int numberOfOperations = form.dataGridView2.Rows.Count - 1;
             Surface surface = new Surface();
 
             for (int i = 1; i < numberOfOperations; i++)
@@ -95,13 +95,13 @@ namespace WindowsFormsApplication8
                //surface.setOpetation(parametersOperation);
             }
 
-            Part.setOpetations(surface, 0);*/
+            Part.setOpetations(surface, 0);
         }
 
 
-       /* private static ParametersOperation createOperation(FormOfWorkWithDatabase form, int index)
+        private static ParametersOperation createOperation(FormOfWorkWithDatabase form, int index)
         {
-            /*string typeOfMachiningAndPrecisionOfMachining = form.dataGridView2[2, index].Value.ToString();
+            string typeOfMachiningAndPrecisionOfMachining = form.dataGridView2[2, index].Value.ToString();
             string[] splitString = parseString(typeOfMachiningAndPrecisionOfMachining, ',');
 
             string typeOfMachining = splitString[0].Trim();
@@ -118,9 +118,9 @@ namespace WindowsFormsApplication8
             string typeOfInstrument = form.dataGridView2[3, index].Value.ToString();
 
             ParametersOperation parametersOperation = new ParametersOperation(typeOfMachining, precisionOfMachining, surfaceRoughnessRz, recommendedIntervalRz, idOperation, kvalitet, thicknessOfDefectiveCoating, coefficientOfRefinement, typeOfInstrument);
-            
+
             return parametersOperation;
-        }*/
+        }
 
         private static string[] parseString(string str, char symbol)
         {

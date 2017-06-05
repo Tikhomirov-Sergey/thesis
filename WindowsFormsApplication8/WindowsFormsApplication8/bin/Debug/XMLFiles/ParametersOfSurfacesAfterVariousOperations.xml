@@ -395,23 +395,6 @@
         </PrecisionOfMachining>
       </precisionOfMachining>
     </Operations>
-	<Operations>
-      <typeOfMachining>Алм</typeOfMachining>
-      <precisionOfMachining>
-        <PrecisionOfMachining>
-          <name>Алм</name>
-          <kvalitet>5</kvalitet>
-          <surfaceRoughnessRz>0.0005</surfaceRoughnessRz>
-          <recommendedIntervalRz>
-            <min>0.05</min>
-            <max>0.4</max>
-          </recommendedIntervalRz>
-          <thicknessOfDefectiveCoating>0</thicknessOfDefectiveCoating>
-          <coefficientOfRefinement>0</coefficientOfRefinement>
-          <idOperation>5</idOperation>
-        </PrecisionOfMachining>
-      </precisionOfMachining>
-    </Operations>
     <Operations>
       <typeOfMachining>Полирование</typeOfMachining>
       <precisionOfMachining>

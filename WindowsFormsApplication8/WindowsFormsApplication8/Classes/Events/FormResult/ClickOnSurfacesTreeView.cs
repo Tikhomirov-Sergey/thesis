@@ -10,21 +10,21 @@ namespace WindowsFormsApplication8
     {
         public static void getSurfacesTreeView(FormResult form)
         {
-           try
-           {
+            try
+            {
                 TreeNode Surface = new TreeNode();
 
                 List<Surface> surfaces = Part.getSurfaces();
 
                 int count = surfaces.Count;
                 
-                for( int i = 1; i < count; i++ )
+                for( int i = 1; i <= count; i++ )
                 {
                    form.SurfacesTreeView.Nodes.Add(surfaces[i].getNameSurface());
                 }
                 
             }
-            catch { }
+            catch { MessageBox.Show("buttonAddSurface"); }
         }
         public static void clickOnNode(TreeNodeMouseClickEventArgs e, FormResult form)
         {
