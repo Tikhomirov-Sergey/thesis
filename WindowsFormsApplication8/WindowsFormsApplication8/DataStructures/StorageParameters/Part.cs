@@ -75,6 +75,12 @@ namespace WindowsFormsApplication8
             catch { return null; }
         }
 
+        public static void setNameSurfaceOnIndex(int indexOfSurface, string nameSurface)
+        {
+            checkSurface(indexOfSurface);
+            getSurfaceOnIndex(indexOfSurface).setNameSurface(nameSurface);
+        }
+
         public static void calculationOfSurfaces()
         {
             try

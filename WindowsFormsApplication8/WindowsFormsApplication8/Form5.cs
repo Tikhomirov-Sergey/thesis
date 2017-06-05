@@ -21,15 +21,15 @@ namespace WindowsFormsApplication8
 
         private void Form5_Load(object sender, EventArgs e)
         {
-            // TODO: данная строка кода позволяет загрузить данные в таблицу "juliaDataSet.Переходы". При необходимости она может быть перемещена или удалена.
+            /*// TODO: данная строка кода позволяет загрузить данные в таблицу "juliaDataSet.Переходы". При необходимости она может быть перемещена или удалена.
             this.переходыTableAdapter.Fill(this.juliaDataSet.Переходы);
             // TODO: данная строка кода позволяет загрузить данные в таблицу "juliaDataSet.Деталь". При необходимости она может быть перемещена или удалена.
-            this.детальTableAdapter1.Fill(this.juliaDataSet.Деталь);
+            this.детальTableAdapter1.Fill(this.juliaDataSet.Деталь);*/
         }
 
         private void button1_Click(object sender, EventArgs e)
         {
-            EventClickOnButtonOfSaveToDatabase.buttonSaveToDatabase(this);
+            /*EventClickOnButtonOfSaveToDatabase.buttonSaveToDatabase(this);*/
         }
     }
 }
