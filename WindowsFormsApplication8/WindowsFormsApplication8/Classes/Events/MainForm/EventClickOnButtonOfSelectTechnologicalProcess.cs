@@ -9,15 +9,22 @@ namespace WindowsFormsApplication8
     {
         public static void buttonSelectProcess(MainForm form)
         {
+            string nameSurface = "Поверхность 1";
             int countNodes = form.SurfacesTreeView.Nodes.Count;
+            
 
             if (countNodes == 1)
             {
-                form.SurfacesTreeView.Nodes.Add("Поверхность 1");
+                form.SurfacesTreeView.Nodes.Add(nameSurface);
+
+                Part.setNameSurfaceOnIndex(1, nameSurface);
+                
             }
 
             StorageOfSelectedOperation.setIndexSelectedSurface(1);
             form.SurfacesTreeView.SelectedNode = form.SurfacesTreeView.Nodes[1];
+
+            form.NameSurface.Text = nameSurface;
 
             Part.copyTechnologicalProcessInSurface(1);
             Part.insertListOfOperationsInTreeView(form, 1);

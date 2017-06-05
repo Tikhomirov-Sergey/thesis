@@ -12,22 +12,27 @@ namespace WindowsFormsApplication8
         {
             try
             {
-                TreeNode Surface = new TreeNode();
+                TreeNode surface = new TreeNode();
 
                 int count = form.SurfacesTreeView.Nodes.Count;
 
                 Part.copyTechnologicalProcessInSurface(count);
                 Part.insertListOfOperationsInTreeView(form, count);
 
-                Surface.Name = "Surface" + Convert.ToString(count);
-                Surface.Text = "Поверхность " + Convert.ToString(count);
+                surface.Name = "Surface" + Convert.ToString(count);
+                surface.Text = "Поверхность " + Convert.ToString(count);
 
-                form.SurfacesTreeView.Nodes.Add(Surface);
+                
+                form.SurfacesTreeView.Nodes.Add(surface);
 
                 StorageOfSelectedOperation.setIndexSelectedSurface(count);
                 form.SurfacesTreeView.SelectedNode = form.SurfacesTreeView.Nodes[count];
+
+                form.NameSurface.Text = surface.Text;
+                Part.getSurfaceOnIndex(count).setNameSurface(surface.Text);
+
             }
-            catch { MessageBox.Show("buttonAddSurface"); }
+            catch { }
         }
     }
 }
