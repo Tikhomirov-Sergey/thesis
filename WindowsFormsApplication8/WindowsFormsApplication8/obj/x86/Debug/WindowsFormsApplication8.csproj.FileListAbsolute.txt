@@ -620,3 +620,5 @@ g:\Программирование\thesis\WindowsFormsApplication8\WindowsForms
 C:\программирование\thesis\WindowsFormsApplication8\WindowsFormsApplication8\bin\Debug\Microsoft.Data.ConnectionUI.dll
 C:\программирование\thesis\WindowsFormsApplication8\WindowsFormsApplication8\obj\x86\Debug\WindowsFormsApplication8.csprojResolveAssemblyReference.cache
 C:\программирование\thesis\WindowsFormsApplication8\WindowsFormsApplication8\bin\Debug\Microsoft.Data.ConnectionUI.Dialog.dll
+g:\Программирование\thesis\WindowsFormsApplication8\WindowsFormsApplication8\bin\Debug\Microsoft.Data.ConnectionUI.Dialog.dll
+g:\Программирование\thesis\WindowsFormsApplication8\WindowsFormsApplication8\bin\Debug\Microsoft.Data.ConnectionUI.dll
