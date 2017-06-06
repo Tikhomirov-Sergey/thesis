@@ -12,6 +12,7 @@ namespace WindowsFormsApplication8
         {
             int selectedIndex = e.Node.Index;
             StorageOfSelectedOperation.setIndexSelectedSurface(selectedIndex);
+            form.NameSurface.Text = Part.getSurfaceOnIndex(selectedIndex).getNameSurface();
 
             if (selectedIndex == 0)
             {

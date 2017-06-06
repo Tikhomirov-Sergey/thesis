@@ -83,9 +83,6 @@ namespace WindowsFormsApplication8
             try
             {
                 EventClickOnButtonOfCalculationPart.buttonOfCalculation(this);
-            
-                FormResult formResult = new FormResult();
-                formResult.ShowDialog();
             }
             catch { }
         }

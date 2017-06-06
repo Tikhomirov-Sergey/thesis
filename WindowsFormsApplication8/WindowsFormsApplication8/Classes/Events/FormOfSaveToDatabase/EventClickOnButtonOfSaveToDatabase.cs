@@ -1,5 +1,8 @@
 ﻿using System;
 using System.Windows.Forms;
+using System.Data.Linq;
+using System.Linq;
+using System.Collections.Generic;
 
 namespace WindowsFormsApplication8
 {
@@ -39,7 +42,7 @@ namespace WindowsFormsApplication8
         private static void saveToDatabase(Form5 form)
         {
             saveToTableOfPart(form);
-            int index = form.dataGridView1.NewRowIndex;
+            int index = form.detailTableAdapter.GetData().Select();
             saveWorkpieceToTableOfOperations(form, index);
             //saveToTableOfOperations(form, index);
         }
@@ -53,27 +56,31 @@ namespace WindowsFormsApplication8
             ParametersOfPart parametersOfPart = Part.getParametersOfPart();
             ParametersWorkpiece parametersWorkpiece = Part.getWorkpiece();
 
-            form.детальTableAdapter1.Insert(nameOfPart, date, (float)parametersOfPart.getLengthOfPart(), (float)parametersOfPart.getDiameterOfPart(), parametersWorkpiece.getKvalitet(), (float)parametersWorkpiece.getSurfaceRoughnessRz(), (float)parametersWorkpiece.getThicknessOfDefectiveCoating(), parametersOfPart.getTypeOfPart().getName(), parametersOfPart.getTypeOfProcessedSurface().getName(), parametersOfPart.getTypeOfAllowance().getName(), parametersWorkpiece.getNameOfWorkpiece(), nameOfSurface);
+            //form.детальTableAdapter1.Insert(nameOfPart, date, (float)parametersOfPart.getLengthOfPart(), (float)parametersOfPart.getDiameterOfPart(), parametersWorkpiece.getKvalitet(), (float)parametersWorkpiece.getSurfaceRoughnessRz(), (float)parametersWorkpiece.getThicknessOfDefectiveCoating(), parametersOfPart.getTypeOfPart().getName(), parametersOfPart.getTypeOfProcessedSurface().getName(), parametersOfPart.getTypeOfAllowance().getName(), parametersWorkpiece.getNameOfWorkpiece(), nameOfSurface);
+
+            form.detailTableAdapter.Insert(nameOfPart, 34, date, (float)parametersOfPart.getLengthOfPart());
         }
 
-       /* private static void saveToTableOfOperations(Form5 form, int index)
+       
+       private static void saveToTableOfOperations(Form5 form, int index)
         {
             Surface surface = Part.getSurfaceOnIndex(0);
 
-            ParametersOperation[] parametersOperations = surface.getOperations();
-            ClassesToCalculate.ResultsOfCalculation resultsOfCalculation = surface.getResultsOfCalculation();
+            List<ParametersOperation> parametersOperations = surface.getParametersOperation();
 
-            int numberOfOperation = surface.getCountShortListOperation();
+            int numberOfOperation = surface.getCountLongListOperation();
 
             for (int i = 0; i < numberOfOperation; i++)
             {
                 ParametersOperation parametersOperation = parametersOperations[i];
 
+                ClassesToCalculate.ResultsOfCalculation resultsOfCalculation = parametersOperation.getResultsOfCalculation();
+
                 string nameOperation = parametersOperation.getTypeOfMachining() + ',' + parametersOperation.getPrecisionOfMachining();
 
-                form.переходыTableAdapter.Insert(Convert.ToInt16(form.dataGridView1[0, index - 1].Value.ToString()) + 1, i + 1, nameOperation, parametersOperation.getTypeOfInstrument(), (float)parametersOperation.getSurfaceRoughnessRz(), (float)parametersOperation.getThicknessOfDefectiveCoating(), (float)resultsOfCalculation.getSpatialDeviation()[i + 1], (float)resultsOfCalculation.getdeviationOfInstallation()[i + 1], (float)resultsOfCalculation.getAccuracies()[i + 1], (float)resultsOfCalculation.getNominalAllowance()[i + 1], (float)resultsOfCalculation.getSizeOfWorkprieceAfterOperation()[i + 1], parametersOperation.getIdOperation(), null, (float)parametersOperation.getCoefficientOfRefinement(), (int)parametersOperation.getKvalitet());
+                form.переходыTableAdapter.Insert(Convert.ToInt16(form.dataGridView1[0, index - 1].Value.ToString()) + 1, i + 1, nameOperation, parametersOperation.getTypeOfInstrument(), (float)parametersOperation.getSurfaceRoughnessRz(), (float)parametersOperation.getThicknessOfDefectiveCoating(), (float)resultsOfCalculation.getSpatialDeviation(), (float)resultsOfCalculation.getdeviationOfInstallation(), (float)resultsOfCalculation.getAccuracies(), (float)resultsOfCalculation.getNominalAllowance(), (float)resultsOfCalculation.getSizeOfWorkprieceAfterOperation(), parametersOperation.getIdOperation(), null, (float)parametersOperation.getCoefficientOfRefinement(), (int)parametersOperation.getKvalitet());
             }
-        }*/
+        }
 
         private static void saveWorkpieceToTableOfOperations(Form5 form, int index)
         {

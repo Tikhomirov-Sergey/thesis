@@ -19,6 +19,11 @@ namespace WindowsFormsApplication8.DataStructures.ParametersOfSurfacesAfterVario
         {
             int indextPrecisionOfMachining = checkSurfaceRoughness(surfaceRoughness);
 
+            if(indextPrecisionOfMachining == -1)
+            {
+                throw new ErrorMessage("Не входит куда-ото");
+            }
+
             List<ParametersOperation> operations = new List<ParametersOperation>();
 
             for(int i = 0; i <= indextPrecisionOfMachining; i++)
@@ -36,7 +41,7 @@ namespace WindowsFormsApplication8.DataStructures.ParametersOfSurfacesAfterVario
         {
             int countPrecisionOfMachining = precisionOfMachining.Length;
 
-            int indextPrecisionOfMachining = 0;
+            int indextPrecisionOfMachining = -1;
 
             for(int i = 0; i < countPrecisionOfMachining; i++)
             {
