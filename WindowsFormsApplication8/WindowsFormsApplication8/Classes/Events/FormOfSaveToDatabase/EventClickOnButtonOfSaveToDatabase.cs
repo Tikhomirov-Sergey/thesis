@@ -41,30 +41,70 @@ namespace WindowsFormsApplication8
 
         private static void saveToDatabase(Form5 form)
         {
-            saveToTableOfPart(form);
-            int index = form.detailTableAdapter.GetData().Select();
-            saveWorkpieceToTableOfOperations(form, index);
+            DateTime date = DateTime.Now;
+
+            int cipherDetail = saveToTableOfPart(form, date);
+            int idCalculation = saveToCalculation(form, cipherDetail, date);
+            saveToTableOperations(form, cipherDetail, idCalculation);
+
+
+            //saveWorkpieceToTableOfOperations(form, index);
             //saveToTableOfOperations(form, index);
         }
 
-        private static void saveToTableOfPart(Form5 form)
+        private static int saveToTableOfPart(Form5 form, DateTime date)
         {
             string nameOfPart = form.textBox1.Text;
-            string nameOfSurface = form.textBox2.Text;
+            int cipherDetail = Convert.ToInt32(form.textBox2.Text);
 
-            DateTime date = DateTime.Now;
-            ParametersOfPart parametersOfPart = Part.getParametersOfPart();
-            ParametersWorkpiece parametersWorkpiece = Part.getWorkpiece();
+            bool isCipherExist = false;
 
-            //form.детальTableAdapter1.Insert(nameOfPart, date, (float)parametersOfPart.getLengthOfPart(), (float)parametersOfPart.getDiameterOfPart(), parametersWorkpiece.getKvalitet(), (float)parametersWorkpiece.getSurfaceRoughnessRz(), (float)parametersWorkpiece.getThicknessOfDefectiveCoating(), parametersOfPart.getTypeOfPart().getName(), parametersOfPart.getTypeOfProcessedSurface().getName(), parametersOfPart.getTypeOfAllowance().getName(), parametersWorkpiece.getNameOfWorkpiece(), nameOfSurface);
+            try
+            {
+                string index = form.chainsDataSet1.Detail.Select("cipher_detail = " + cipherDetail)[0][0].ToString();
+                isCipherExist = true;
+            }
 
-            form.detailTableAdapter.Insert(nameOfPart, 34, date, (float)parametersOfPart.getLengthOfPart());
+            catch { isCipherExist = false; }
+
+            if (!isCipherExist)
+            {
+                ParametersOfPart parametersOfPart = Part.getParametersOfPart();
+
+                //form.детальTableAdapter1.Insert(nameOfPart, date, (float)parametersOfPart.getLengthOfPart(), (float)parametersOfPart.getDiameterOfPart(), parametersWorkpiece.getKvalitet(), (float)parametersWorkpiece.getSurfaceRoughnessRz(), (float)parametersWorkpiece.getThicknessOfDefectiveCoating(), parametersOfPart.getTypeOfPart().getName(), parametersOfPart.getTypeOfProcessedSurface().getName(), parametersOfPart.getTypeOfAllowance().getName(), parametersWorkpiece.getNameOfWorkpiece(), nameOfSurface);
+
+                form.detailTableAdapter.Insert(nameOfPart, cipherDetail, date, (float)parametersOfPart.getLengthOfPart());
+            }
+
+            return cipherDetail;
         }
+
+        private static int saveToCalculation(Form5 form, int cipherDetail, DateTime date)
+        {
+            int idCalculation = form.calculationTableAdapter.Insert(cipherDetail, date);
+            return idCalculation;
+        }
+
+        private static void saveToTableOperations(Form5 form, int cipherDetail, int idCalculation)
+        {
+            List<Operation> technologicalProcess = Part.getSurfaceOnIndex(0).getOperations();
+
+            int countOperations = Part.getSurfaceOnIndex(0).getCountShortListOperation();
+
+            for(int i = 0; i < countOperations; i++)
+            {
+                Operation operation = technologicalProcess[i];
+
+                form.operationsTableAdapter.Insert(i, operation.getIdOperation(), (float)i, cipherDetail, idCalculation, i+1);
+            }
+        }
+
+
 
        
        private static void saveToTableOfOperations(Form5 form, int index)
         {
-            Surface surface = Part.getSurfaceOnIndex(0);
+           Surface surface = Part.getSurfaceOnIndex(0);
 
             List<ParametersOperation> parametersOperations = surface.getParametersOperation();
 
@@ -78,7 +118,7 @@ namespace WindowsFormsApplication8
 
                 string nameOperation = parametersOperation.getTypeOfMachining() + ',' + parametersOperation.getPrecisionOfMachining();
 
-                form.переходыTableAdapter.Insert(Convert.ToInt16(form.dataGridView1[0, index - 1].Value.ToString()) + 1, i + 1, nameOperation, parametersOperation.getTypeOfInstrument(), (float)parametersOperation.getSurfaceRoughnessRz(), (float)parametersOperation.getThicknessOfDefectiveCoating(), (float)resultsOfCalculation.getSpatialDeviation(), (float)resultsOfCalculation.getdeviationOfInstallation(), (float)resultsOfCalculation.getAccuracies(), (float)resultsOfCalculation.getNominalAllowance(), (float)resultsOfCalculation.getSizeOfWorkprieceAfterOperation(), parametersOperation.getIdOperation(), null, (float)parametersOperation.getCoefficientOfRefinement(), (int)parametersOperation.getKvalitet());
+              //  form.переходыTableAdapter.Insert(Convert.ToInt16(form.dataGridView1[0, index - 1].Value.ToString()) + 1, i + 1, nameOperation, parametersOperation.getTypeOfInstrument(), (float)parametersOperation.getSurfaceRoughnessRz(), (float)parametersOperation.getThicknessOfDefectiveCoating(), (float)resultsOfCalculation.getSpatialDeviation(), (float)resultsOfCalculation.getdeviationOfInstallation(), (float)resultsOfCalculation.getAccuracies(), (float)resultsOfCalculation.getNominalAllowance(), (float)resultsOfCalculation.getSizeOfWorkprieceAfterOperation(), parametersOperation.getIdOperation(), null, (float)parametersOperation.getCoefficientOfRefinement(), (int)parametersOperation.getKvalitet());
             }
         }
 

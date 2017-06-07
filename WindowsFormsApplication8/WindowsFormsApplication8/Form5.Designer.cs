@@ -38,6 +38,9 @@
             this.detailBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.detailTableAdapter = new WindowsFormsApplication8.ChainsDataSet1TableAdapters.DetailTableAdapter();
             this.tableAdapterManager = new WindowsFormsApplication8.ChainsDataSet1TableAdapters.TableAdapterManager();
+            this.calculationTableAdapter = new WindowsFormsApplication8.ChainsDataSet1TableAdapters.CalculationTableAdapter();
+            this.operationsTableAdapter = new WindowsFormsApplication8.ChainsDataSet1TableAdapters.OperationsTableAdapter();
+            this.surfaceTableAdapter = new WindowsFormsApplication8.ChainsDataSet1TableAdapters.SurfaceTableAdapter();
             this.detailDataGridView = new System.Windows.Forms.DataGridView();
             this.dataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -45,16 +48,12 @@
             this.dataGridViewTextBoxColumn4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.bindingSource1 = new System.Windows.Forms.BindingSource(this.components);
             this.calculationBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.calculationTableAdapter = new WindowsFormsApplication8.ChainsDataSet1TableAdapters.CalculationTableAdapter();
             this.calculationDataGridView = new System.Windows.Forms.DataGridView();
             this.dataGridViewTextBoxColumn5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn6 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn7 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.operationsBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.operationsTableAdapter = new WindowsFormsApplication8.ChainsDataSet1TableAdapters.OperationsTableAdapter();
-            this.operationsDataGridView = new System.Windows.Forms.DataGridView();
             this.surfaceBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.surfaceTableAdapter = new WindowsFormsApplication8.ChainsDataSet1TableAdapters.SurfaceTableAdapter();
             this.surfaceDataGridView = new System.Windows.Forms.DataGridView();
             this.dataGridViewTextBoxColumn14 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn15 = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -64,10 +63,13 @@
             this.dataGridViewTextBoxColumn19 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn20 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn21 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.operations_and_ResultsBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.operations_and_ResultsTableAdapter = new WindowsFormsApplication8.ChainsDataSet1TableAdapters.Operations_and_ResultsTableAdapter();
-            this.iDoperationDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.iDsurfaceDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.operationsDataGridView = new System.Windows.Forms.DataGridView();
+            this.dataGridViewTextBoxColumn8 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn9 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn10 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn11 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn12 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn13 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.chainsDataSet1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.detailBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.detailDataGridView)).BeginInit();
@@ -75,16 +77,15 @@
             ((System.ComponentModel.ISupportInitialize)(this.calculationBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.calculationDataGridView)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.operationsBindingSource)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.operationsDataGridView)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.surfaceBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.surfaceDataGridView)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.operations_and_ResultsBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.operationsDataGridView)).BeginInit();
             this.SuspendLayout();
             // 
             // button1
             // 
             this.button1.Location = new System.Drawing.Point(497, 60);
-            this.button1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.button1.Margin = new System.Windows.Forms.Padding(4);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(121, 96);
             this.button1.TabIndex = 3;
@@ -95,7 +96,7 @@
             // textBox1
             // 
             this.textBox1.Location = new System.Drawing.Point(73, 60);
-            this.textBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.textBox1.Margin = new System.Windows.Forms.Padding(4);
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(376, 22);
             this.textBox1.TabIndex = 4;
@@ -125,7 +126,7 @@
             // textBox2
             // 
             this.textBox2.Location = new System.Drawing.Point(79, 160);
-            this.textBox2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.textBox2.Margin = new System.Windows.Forms.Padding(4);
             this.textBox2.Name = "textBox2";
             this.textBox2.Size = new System.Drawing.Size(371, 22);
             this.textBox2.TabIndex = 7;
@@ -150,10 +151,21 @@
             this.tableAdapterManager.CalculationTableAdapter = this.calculationTableAdapter;
             this.tableAdapterManager.ChamferTableAdapter = null;
             this.tableAdapterManager.DetailTableAdapter = this.detailTableAdapter;
-            this.tableAdapterManager.Operations_and_ResultsTableAdapter = this.operations_and_ResultsTableAdapter;
             this.tableAdapterManager.OperationsTableAdapter = this.operationsTableAdapter;
             this.tableAdapterManager.SurfaceTableAdapter = this.surfaceTableAdapter;
             this.tableAdapterManager.UpdateOrder = WindowsFormsApplication8.ChainsDataSet1TableAdapters.TableAdapterManager.UpdateOrderOption.InsertUpdateDelete;
+            // 
+            // calculationTableAdapter
+            // 
+            this.calculationTableAdapter.ClearBeforeFill = true;
+            // 
+            // operationsTableAdapter
+            // 
+            this.operationsTableAdapter.ClearBeforeFill = true;
+            // 
+            // surfaceTableAdapter
+            // 
+            this.surfaceTableAdapter.ClearBeforeFill = true;
             // 
             // detailDataGridView
             // 
@@ -204,10 +216,6 @@
             this.calculationBindingSource.DataMember = "Calculation";
             this.calculationBindingSource.DataSource = this.chainsDataSet1;
             // 
-            // calculationTableAdapter
-            // 
-            this.calculationTableAdapter.ClearBeforeFill = true;
-            // 
             // calculationDataGridView
             // 
             this.calculationDataGridView.AutoGenerateColumns = false;
@@ -247,32 +255,10 @@
             this.operationsBindingSource.DataMember = "Operations";
             this.operationsBindingSource.DataSource = this.chainsDataSet1;
             // 
-            // operationsTableAdapter
-            // 
-            this.operationsTableAdapter.ClearBeforeFill = true;
-            // 
-            // operationsDataGridView
-            // 
-            this.operationsDataGridView.AutoGenerateColumns = false;
-            this.operationsDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.operationsDataGridView.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.iDoperationDataGridViewTextBoxColumn,
-            this.iDsurfaceDataGridViewTextBoxColumn});
-            this.operationsDataGridView.DataSource = this.operations_and_ResultsBindingSource;
-            this.operationsDataGridView.Location = new System.Drawing.Point(824, 233);
-            this.operationsDataGridView.Name = "operationsDataGridView";
-            this.operationsDataGridView.RowTemplate.Height = 24;
-            this.operationsDataGridView.Size = new System.Drawing.Size(300, 220);
-            this.operationsDataGridView.TabIndex = 7;
-            // 
             // surfaceBindingSource
             // 
             this.surfaceBindingSource.DataMember = "Surface";
             this.surfaceBindingSource.DataSource = this.chainsDataSet1;
-            // 
-            // surfaceTableAdapter
-            // 
-            this.surfaceTableAdapter.ClearBeforeFill = true;
             // 
             // surfaceDataGridView
             // 
@@ -342,34 +328,67 @@
             this.dataGridViewTextBoxColumn21.HeaderText = "ID";
             this.dataGridViewTextBoxColumn21.Name = "dataGridViewTextBoxColumn21";
             // 
-            // operations_and_ResultsBindingSource
+            // operationsDataGridView
             // 
-            this.operations_and_ResultsBindingSource.DataMember = "Operations_and_Results";
-            this.operations_and_ResultsBindingSource.DataSource = this.chainsDataSet1;
+            this.operationsDataGridView.AutoGenerateColumns = false;
+            this.operationsDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.operationsDataGridView.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.dataGridViewTextBoxColumn8,
+            this.dataGridViewTextBoxColumn9,
+            this.dataGridViewTextBoxColumn10,
+            this.dataGridViewTextBoxColumn11,
+            this.dataGridViewTextBoxColumn12,
+            this.dataGridViewTextBoxColumn13});
+            this.operationsDataGridView.DataSource = this.operationsBindingSource;
+            this.operationsDataGridView.Location = new System.Drawing.Point(823, 233);
+            this.operationsDataGridView.Name = "operationsDataGridView";
+            this.operationsDataGridView.RowTemplate.Height = 24;
+            this.operationsDataGridView.Size = new System.Drawing.Size(300, 220);
+            this.operationsDataGridView.TabIndex = 8;
             // 
-            // operations_and_ResultsTableAdapter
+            // dataGridViewTextBoxColumn8
             // 
-            this.operations_and_ResultsTableAdapter.ClearBeforeFill = true;
+            this.dataGridViewTextBoxColumn8.DataPropertyName = "№_operation";
+            this.dataGridViewTextBoxColumn8.HeaderText = "№_operation";
+            this.dataGridViewTextBoxColumn8.Name = "dataGridViewTextBoxColumn8";
             // 
-            // iDoperationDataGridViewTextBoxColumn
+            // dataGridViewTextBoxColumn9
             // 
-            this.iDoperationDataGridViewTextBoxColumn.DataPropertyName = "ID_operation";
-            this.iDoperationDataGridViewTextBoxColumn.HeaderText = "ID_operation";
-            this.iDoperationDataGridViewTextBoxColumn.Name = "iDoperationDataGridViewTextBoxColumn";
+            this.dataGridViewTextBoxColumn9.DataPropertyName = "Code_operation";
+            this.dataGridViewTextBoxColumn9.HeaderText = "Code_operation";
+            this.dataGridViewTextBoxColumn9.Name = "dataGridViewTextBoxColumn9";
             // 
-            // iDsurfaceDataGridViewTextBoxColumn
+            // dataGridViewTextBoxColumn10
             // 
-            this.iDsurfaceDataGridViewTextBoxColumn.DataPropertyName = "ID_surface";
-            this.iDsurfaceDataGridViewTextBoxColumn.HeaderText = "ID_surface";
-            this.iDsurfaceDataGridViewTextBoxColumn.Name = "iDsurfaceDataGridViewTextBoxColumn";
+            this.dataGridViewTextBoxColumn10.DataPropertyName = "Name";
+            this.dataGridViewTextBoxColumn10.HeaderText = "Name";
+            this.dataGridViewTextBoxColumn10.Name = "dataGridViewTextBoxColumn10";
+            // 
+            // dataGridViewTextBoxColumn11
+            // 
+            this.dataGridViewTextBoxColumn11.DataPropertyName = "cipher_detail";
+            this.dataGridViewTextBoxColumn11.HeaderText = "cipher_detail";
+            this.dataGridViewTextBoxColumn11.Name = "dataGridViewTextBoxColumn11";
+            // 
+            // dataGridViewTextBoxColumn12
+            // 
+            this.dataGridViewTextBoxColumn12.DataPropertyName = "ID_\r\ncalculation";
+            this.dataGridViewTextBoxColumn12.HeaderText = "ID_\r\ncalculation";
+            this.dataGridViewTextBoxColumn12.Name = "dataGridViewTextBoxColumn12";
+            // 
+            // dataGridViewTextBoxColumn13
+            // 
+            this.dataGridViewTextBoxColumn13.DataPropertyName = "ID";
+            this.dataGridViewTextBoxColumn13.HeaderText = "ID";
+            this.dataGridViewTextBoxColumn13.Name = "dataGridViewTextBoxColumn13";
             // 
             // Form5
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1256, 539);
-            this.Controls.Add(this.surfaceDataGridView);
             this.Controls.Add(this.operationsDataGridView);
+            this.Controls.Add(this.surfaceDataGridView);
             this.Controls.Add(this.calculationDataGridView);
             this.Controls.Add(this.detailDataGridView);
             this.Controls.Add(this.textBox2);
@@ -377,7 +396,7 @@
             this.Controls.Add(this.label1);
             this.Controls.Add(this.textBox1);
             this.Controls.Add(this.button1);
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "Form5";
             this.Text = "Сохранение в БД";
             this.Load += new System.EventHandler(this.Form5_Load);
@@ -388,10 +407,9 @@
             ((System.ComponentModel.ISupportInitialize)(this.calculationBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.calculationDataGridView)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.operationsBindingSource)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.operationsDataGridView)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.surfaceBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.surfaceDataGridView)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.operations_and_ResultsBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.operationsDataGridView)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -406,7 +424,6 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn обозначениеПоверхностиDataGridViewTextBoxColumn;
         protected internal System.Windows.Forms.TextBox textBox1;
         protected internal System.Windows.Forms.TextBox textBox2;
-        private ChainsDataSet1 chainsDataSet1;
         private System.Windows.Forms.BindingSource detailBindingSource;
         protected internal ChainsDataSet1TableAdapters.DetailTableAdapter detailTableAdapter;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn1;
@@ -432,13 +449,16 @@
         protected internal System.Windows.Forms.DataGridView calculationDataGridView;
         protected internal System.Windows.Forms.BindingSource operationsBindingSource;
         protected internal ChainsDataSet1TableAdapters.SurfaceTableAdapter surfaceTableAdapter;
-        protected internal System.Windows.Forms.DataGridView operationsDataGridView;
         protected internal System.Windows.Forms.BindingSource surfaceBindingSource;
-        protected internal ChainsDataSet1TableAdapters.Operations_and_ResultsTableAdapter operations_and_ResultsTableAdapter;
-        protected internal System.Windows.Forms.BindingSource operations_and_ResultsBindingSource;
-        private System.Windows.Forms.DataGridViewTextBoxColumn iDoperationDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn iDsurfaceDataGridViewTextBoxColumn;
         protected internal ChainsDataSet1TableAdapters.TableAdapterManager tableAdapterManager;
         protected internal System.Windows.Forms.DataGridView detailDataGridView;
+        protected internal ChainsDataSet1 chainsDataSet1;
+        private System.Windows.Forms.DataGridView operationsDataGridView;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn8;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn9;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn10;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn11;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn12;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn13;
     }
 }
