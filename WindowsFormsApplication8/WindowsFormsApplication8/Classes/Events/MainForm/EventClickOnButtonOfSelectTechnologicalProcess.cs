@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using System.Drawing;
 
 namespace WindowsFormsApplication8
 {
@@ -31,6 +32,21 @@ namespace WindowsFormsApplication8
 
             Part.insertListOfTechnologicalProcessInTreeView(form);
 
+            form.Surfaces.Visible = true;
+            form.NameSurface.Visible = true;
+            form.SurfacesTreeView.Visible = true;
+            form.addSurfaceButton.Visible = true;
+            form.delSurfaceButton.Visible = true;
+
+            form.TreeOfOperations.Size = new Size(401,168);
+            form.TreeOfOperations.Location = new Point(12,389);
+
+            form.labelOperationsOrTechProcess.Size = new Size(91,13);
+            form.labelOperationsOrTechProcess.Location = new Point(169, 373);
+
+            form.SelectTechnologicalProcess.Size = new Size(313, 35);
+            form.SelectTechnologicalProcess.Location = new Point(438, 522);
+            form.labelOperationsOrTechProcess.Text = "Тех. процесс";
             enabledTextBoxes(form);
         }
 

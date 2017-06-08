@@ -89,11 +89,6 @@ namespace WindowsFormsApplication8
 
         private void textBox5_TextChanged(object sender, EventArgs e)
         {
-            try
-            {
-                SurfaceRoughnessRa.Text = ConversionRoughnessRzAndRa.stringRzToRa(SurfaceRoughnessRz.Text);
-            }
-            catch { SurfaceRoughnessRa.Text = ""; }
         }
 
         private void comboBox1_TextChanged(object sender, EventArgs e)
@@ -107,15 +102,11 @@ namespace WindowsFormsApplication8
             formOfWorkWithDatabase.ShowDialog();
                 TreeOfOperations.Enabled = true;
                 TreeOfSelectedOperations.Enabled = true;
-                SurfaceRoughnessRz.Enabled = true;
-        
-                PrecisionOfMachining.Enabled = true;
                 TypeOfMachining.Enabled = true;
                 ChoiceOfOperation.Enabled = true;
                 Backspace.Enabled = true;
                 CalculationOfSchema.Enabled = true;
                 TypeOfInstrument.Enabled = true;
-                SurfaceRoughnessRa.Enabled = true;
                 addSurfaceButton.Enabled = true;
                 delSurfaceButton.Enabled = true;
                 SurfacesTreeView.Enabled = true;
@@ -191,11 +182,6 @@ namespace WindowsFormsApplication8
 
         private void textRa_TextChanged(object sender, EventArgs e)
         {
-            try
-            {
-                SurfaceRoughnessRz.Text = ConversionRoughnessRzAndRa.stringRaToRz(SurfaceRoughnessRa.Text);
-            }
-            catch { SurfaceRoughnessRz.Text = ""; }
         }
 
         private void comboBox3_TextChanged(object sender, EventArgs e)
@@ -252,14 +238,10 @@ namespace WindowsFormsApplication8
 
         private void editSurfacesButton_Click(object sender, EventArgs e)
         {
-            editProcessButton.Visible = true;
-            editSurfacesButton.Visible = false;
         }
 
         private void editProcessButton_Click(object sender, EventArgs e)
         {
-            editProcessButton.Visible = false;
-            editSurfacesButton.Visible = true;
         }
 
 

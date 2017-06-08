@@ -31,10 +31,7 @@ namespace WindowsFormsApplication8
         public static void enabledTextBoxes(MainForm form)
         {
             form.TreeOfOperations.Enabled = true;
-            form.TreeOfSelectedOperations.Enabled = true;
-            form.SurfaceRoughnessRz.Enabled = true;
-            form.SurfaceRoughnessRa.Enabled = true;
-            form.PrecisionOfMachining.Enabled = true;
+            form.TreeOfSelectedOperations.Enabled = true;            
             form.TypeOfMachining.Enabled = true;
             form.ChoiceOfOperation.Enabled = true;
             form.Backspace.Enabled = true;
