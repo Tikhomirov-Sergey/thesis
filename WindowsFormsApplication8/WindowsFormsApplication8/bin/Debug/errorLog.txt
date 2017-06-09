@@ -1,0 +1,27 @@
+Microsoft.SqlServer.Management.Common.ConnectionFailureException: Не удалось подключиться к серверу MSSQLLocalDB. ---> System.Data.SqlClient.SqlException: При установлении соединения с SQL Server произошла ошибка, связанная с сетью или с определенным экземпляром. Сервер не найден или недоступен. Убедитесь, что имя экземпляра указано правильно и что на SQL Server разрешены удаленные соединения. (provider: Named Pipes Provider, error: 40 - Не удалось открыть подключение к SQL Server) ---> System.ComponentModel.Win32Exception: Не найден сетевой путь
+   --- Конец трассировки внутреннего стека исключений ---
+   в System.Data.SqlClient.SqlInternalConnectionTds..ctor(DbConnectionPoolIdentity identity, SqlConnectionString connectionOptions, SqlCredential credential, Object providerInfo, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance, SqlConnectionString userConnectionOptions, SessionData reconnectSessionData, DbConnectionPool pool, String accessToken, Boolean applyTransientFaultHandling)
+   в System.Data.SqlClient.SqlConnectionFactory.CreateConnection(DbConnectionOptions options, DbConnectionPoolKey poolKey, Object poolGroupProviderInfo, DbConnectionPool pool, DbConnection owningConnection, DbConnectionOptions userOptions)
+   в System.Data.ProviderBase.DbConnectionFactory.CreatePooledConnection(DbConnectionPool pool, DbConnection owningObject, DbConnectionOptions options, DbConnectionPoolKey poolKey, DbConnectionOptions userOptions)
+   в System.Data.ProviderBase.DbConnectionPool.CreateObject(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   в System.Data.ProviderBase.DbConnectionPool.UserCreateRequest(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   в System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   в System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   в System.Data.ProviderBase.DbConnectionFactory.TryGetConnection(DbConnection owningConnection, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal oldConnection, DbConnectionInternal& connection)
+   в System.Data.ProviderBase.DbConnectionInternal.TryOpenConnectionInternal(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   в System.Data.ProviderBase.DbConnectionClosed.TryOpenConnection(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   в System.Data.SqlClient.SqlConnection.TryOpenInner(TaskCompletionSource`1 retry)
+   в System.Data.SqlClient.SqlConnection.TryOpen(TaskCompletionSource`1 retry)
+   в System.Data.SqlClient.SqlConnection.Open()
+   в Microsoft.SqlServer.Management.Common.ConnectionManager.InternalConnect(WindowsIdentity impersonatedIdentity)
+   в Microsoft.SqlServer.Management.Common.ConnectionManager.Connect()
+   --- Конец трассировки внутреннего стека исключений ---
+   в Microsoft.SqlServer.Management.Common.ConnectionManager.Connect()
+   в Microsoft.SqlServer.Management.Common.ConnectionManager.PoolConnect()
+   в Microsoft.SqlServer.Management.Common.ConnectionManager.get_ServerVersion()
+   в Microsoft.SqlServer.Management.Smo.ExecutionManager.GetServerVersion()
+   в Microsoft.SqlServer.Management.Smo.SqlSmoObject.get_ServerVersion()
+   в Microsoft.SqlServer.Management.Smo.Settings.GetPropertyMetadataProvider()
+   в Microsoft.SqlServer.Management.Smo.SqlSmoObject.get_Properties()
+   в Microsoft.SqlServer.Management.Smo.Settings.get_BackupDirectory()
+   в WindowsFormsApplication8.MainForm.резервноеКопированиеБДToolStripMenuItem_Click(Object sender, EventArgs e) в C:\программирование\thesis\WindowsFormsApplication8\WindowsFormsApplication8\MainForm.cs:строка 313

@@ -557,10 +557,6 @@ g:\Программирование\1\NEWthesis--_-_-_0_-_-_-\WindowsFormsApplic
 g:\Программирование\1\NEWthesis--_-_-_0_-_-_-\WindowsFormsApplication8\WindowsFormsApplication8\obj\x86\Debug\WindowsFormsApplication8.exe
 g:\Программирование\1\NEWthesis--_-_-_0_-_-_-\WindowsFormsApplication8\WindowsFormsApplication8\obj\x86\Debug\WindowsFormsApplication8.pdb
 g:\Программирование\thesis\WindowsFormsApplication8\WindowsFormsApplication8\obj\x86\Debug\WindowsFormsApplication8.FormResult.resources
-c:\программирование\thesis\WindowsFormsApplication8\WindowsFormsApplication8\bin\Debug\juliaDataSet.Designer.cs
-c:\программирование\thesis\WindowsFormsApplication8\WindowsFormsApplication8\bin\Debug\juliaDataSet.xsc
-c:\программирование\thesis\WindowsFormsApplication8\WindowsFormsApplication8\bin\Debug\juliaDataSet.xsd
-c:\программирование\thesis\WindowsFormsApplication8\WindowsFormsApplication8\bin\Debug\juliaDataSet.xss
 c:\программирование\thesis\WindowsFormsApplication8\WindowsFormsApplication8\bin\Debug\WindowsFormsApplication8.exe.config
 c:\программирование\thesis\WindowsFormsApplication8\WindowsFormsApplication8\bin\Debug\WindowsFormsApplication8.exe
 c:\программирование\thesis\WindowsFormsApplication8\WindowsFormsApplication8\bin\Debug\WindowsFormsApplication8.pdb
@@ -645,3 +641,10 @@ C:\Users\Sergei\Documents\GitHub\Diplom\WindowsFormsApplication8\WindowsFormsApp
 C:\Users\Sergei\Documents\GitHub\Diplom\WindowsFormsApplication8\WindowsFormsApplication8\bin\Debug\Microsoft.Data.ConnectionUI.dll
 C:\Users\Sergei\Documents\GitHub\Diplom\WindowsFormsApplication8\WindowsFormsApplication8\bin\Debug\Newtonsoft.Json.dll
 C:\Users\Sergei\Documents\GitHub\Diplom\WindowsFormsApplication8\WindowsFormsApplication8\bin\Debug\Newtonsoft.Json.xml
+C:\программирование\thesis\WindowsFormsApplication8\WindowsFormsApplication8\bin\Debug\Microsoft.SqlServer.ConnectionInfo.dll
+C:\программирование\thesis\WindowsFormsApplication8\WindowsFormsApplication8\bin\Debug\Microsoft.SqlServer.ConnectionInfoExtended.dll
+C:\программирование\thesis\WindowsFormsApplication8\WindowsFormsApplication8\bin\Debug\Microsoft.SqlServer.Management.Sdk.Sfc.dll
+C:\программирование\thesis\WindowsFormsApplication8\WindowsFormsApplication8\bin\Debug\Microsoft.SqlServer.Smo.dll
+C:\программирование\thesis\WindowsFormsApplication8\WindowsFormsApplication8\bin\Debug\Microsoft.SqlServer.SmoExtended.dll
+C:\программирование\thesis\WindowsFormsApplication8\WindowsFormsApplication8\bin\Debug\Microsoft.SqlServer.SqlClrProvider.dll
+C:\программирование\thesis\WindowsFormsApplication8\WindowsFormsApplication8\bin\Debug\Microsoft.SqlServer.SqlEnum.dll

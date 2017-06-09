@@ -6,6 +6,8 @@ using System.IO;
 using System.Xml.Serialization;
 using System.Collections.Generic;
 using Microsoft.Data.ConnectionUI;
+using Microsoft.SqlServer.Management.Smo;
+using Microsoft.SqlServer.Server;
 
 namespace WindowsFormsApplication8
 {
@@ -293,6 +295,11 @@ namespace WindowsFormsApplication8
                 connectionString = dcd.ConnectionString;
             dcs.SaveConfiguration(dcd);
            // return connectionString;
+        }
+
+        private void TreeOfOperations_NodeMouseDoubleClick(object sender, TreeNodeMouseClickEventArgs e)
+        {
+
         }
     }
 }

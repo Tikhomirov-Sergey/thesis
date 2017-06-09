@@ -21,28 +21,7 @@ namespace WindowsFormsApplication8.Properties {
             get {
                 return defaultInstance;
             }
-        }
-        
-        [global::System.Configuration.ApplicationScopedSettingAttribute()]
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.SpecialSettingAttribute(global::System.Configuration.SpecialSetting.ConnectionString)]
-        [global::System.Configuration.DefaultSettingValueAttribute("Data Source=JULIA-ПК;Initial Catalog=1;Integrated Security=True")]
-        public string _1ConnectionString {
-            get {
-                return ((string)(this["_1ConnectionString"]));
-            }
-        }
-        
-        [global::System.Configuration.ApplicationScopedSettingAttribute()]
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.SpecialSettingAttribute(global::System.Configuration.SpecialSetting.ConnectionString)]
-        [global::System.Configuration.DefaultSettingValueAttribute("Data Source=(LocalDB)\\MSSQLLocalDB;AttachDbFilename=|DataDirectory|\\1.mdf;Integra" +
-            "ted Security=True")]
-        public string juliaConnectionString {
-            get {
-                return ((string)(this["juliaConnectionString"]));
-            }
-        }
+        }  
         
         [global::System.Configuration.ApplicationScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
