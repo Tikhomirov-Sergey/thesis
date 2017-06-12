@@ -31,22 +31,14 @@ namespace WindowsFormsApplication8
             TypeOfAllowance.SelectedIndex = 0;
             HoleDepth.Text = "0";
         }
+
         private void Form1_Load(object sender, EventArgs e)
         {
             try
             {
-                //string xmlpath = @"XMLFiles/ParametersOfSurfacesAfterVariousOperations.xml";
-                //XMLtoTreeView.formationTreeView(xmlpath, TreeOfOperations);
-                //!!!!!!!!!!!!!!!!!!!!!!!Не забыть для cтоль прекрасной штуки сдеЛать класс!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-                List<string> g = Tables.getParametersOfSurfacesAfterVariousOperations().getListOperations();
-
-                foreach (string h in g)
-                {
-                    TreeOfOperations.Nodes.Add(h);
-                }
+                Tables.getParametersOfSurfacesAfterVariousOperations().insertListOfOperationsInTreeView(this);
             }
             catch { MessageBox.Show("Повреждены XML таблицы", "Ошибка"); }
-            
         }
        
         private void button1_Click(object sender, EventArgs e)
@@ -192,37 +184,6 @@ namespace WindowsFormsApplication8
             if (TypeOfAllowance.Text == "односторонний") { pictureBox1.Visible = false; pictureBox2.Visible = true; };
         }
 
-        private void textBox5_Click(object sender, EventArgs e)
-       {
-            /*try {
-                Interval recommendedIntervalRz = StorageOfSelectedOperation.getOperation().getRecommendedIntervalRz();
-                string minRz = recommendedIntervalRz.getIntervalMinConvertToString();
-                string maxRz = recommendedIntervalRz.getIntervalMaxConvertToString();
-                toolTip1.ToolTipIcon = ToolTipIcon.Warning;
-                toolTip1.IsBalloon = true;
-                toolTip1.ToolTipTitle = "Достигаемая шероховатость, Rz, мм";
-                toolTip1.SetToolTip(SurfaceRoughnessRz, "Интервал для данной операции: " + Convert.ToString(minRz) + "..." + Convert.ToString(maxRz));
-            }
-            catch { }*/
-
-        }
-
-        private void textRa_Click(object sender, EventArgs e)
-        {
-           /* try
-            {
-                Interval recommendedIntervalRz = StorageOfSelectedOperation.getOperation().getRecommendedIntervalRz();
-                Interval recommendedIntervalRa = ConversionRoughnessRzAndRa.intervalRzToIntervalRa(recommendedIntervalRz);
-                string minRa = recommendedIntervalRa.getIntervalMinConvertToString();
-                string maxRa = recommendedIntervalRa.getIntervalMaxConvertToString();
-                toolTip1.ToolTipIcon = ToolTipIcon.Warning;
-                toolTip1.IsBalloon = true;
-                toolTip1.ToolTipTitle = "Достигаемая шероховатость, Ra, мкм";
-                toolTip1.SetToolTip(SurfaceRoughnessRa, "Интервал для данной операции: " + Convert.ToString(minRa) + "..." + Convert.ToString(maxRa));
-            }
-            catch { }*/
-        }
-
         private void TreeOfSelectedOperations_NodeMouseClick(object sender, TreeNodeMouseClickEventArgs e)
         {
             EventClickOfMouseOnTreeViewNodeSelectedOperations.clickOnNode(e, this);
@@ -237,15 +198,6 @@ namespace WindowsFormsApplication8
         {
             EventTreeViewAfterSelectOperations.alferSelect(this, (TreeView)sender, e);
         }
-
-        private void editSurfacesButton_Click(object sender, EventArgs e)
-        {
-        }
-
-        private void editProcessButton_Click(object sender, EventArgs e)
-        {
-        }
-
 
         private void SurfacesTreeView_NodeMouseClick(object sender, TreeNodeMouseClickEventArgs e)
         {
@@ -295,11 +247,6 @@ namespace WindowsFormsApplication8
                 connectionString = dcd.ConnectionString;
             dcs.SaveConfiguration(dcd);
            // return connectionString;
-        }
-
-        private void TreeOfOperations_NodeMouseDoubleClick(object sender, TreeNodeMouseClickEventArgs e)
-        {
-
         }
     }
 }

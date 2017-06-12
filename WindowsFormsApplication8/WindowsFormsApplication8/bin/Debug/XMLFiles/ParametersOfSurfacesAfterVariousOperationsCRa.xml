@@ -1,4 +1,4 @@
-<?xml version="1.0"?>
+<?xml version="1.0" encoding="utf-8"?>
 <ParametersOfSurfacesAfterVariousOperations xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
   <operations>
     <Operations>
@@ -9,8 +9,8 @@
           <kvalitet>14</kvalitet>
           <surfaceRoughnessRz>0.04</surfaceRoughnessRz>
           <recommendedIntervalRz>
-            <min>0.0252</min>
-            <max>0.2</max>
+            <min>6.3</min>
+            <max>50</max>
           </recommendedIntervalRz>
           <thicknessOfDefectiveCoating>0.06</thicknessOfDefectiveCoating>
           <coefficientOfRefinement>0.06</coefficientOfRefinement>
@@ -21,8 +21,8 @@
           <kvalitet>12</kvalitet>
           <surfaceRoughnessRz>0.02</surfaceRoughnessRz>
           <recommendedIntervalRz>
-            <min>0.0064</min>
-            <max>0.0252</max>
+            <min>1.6</min>
+            <max>6.3</max>
           </recommendedIntervalRz>
           <thicknessOfDefectiveCoating>0.04</thicknessOfDefectiveCoating>
           <coefficientOfRefinement>0.05</coefficientOfRefinement>
@@ -33,8 +33,8 @@
           <kvalitet>10</kvalitet>
           <surfaceRoughnessRz>0.01</surfaceRoughnessRz>
           <recommendedIntervalRz>
-            <min>0.0016</min>
-            <max>0.0064</max>
+            <min>0.4</min>
+            <max>1.6</max>
           </recommendedIntervalRz>
           <thicknessOfDefectiveCoating>0.03</thicknessOfDefectiveCoating>
           <coefficientOfRefinement>0.04</coefficientOfRefinement>
@@ -45,8 +45,8 @@
           <kvalitet>7</kvalitet>
           <surfaceRoughnessRz>0.005</surfaceRoughnessRz>
           <recommendedIntervalRz>
-            <min>0.0008</min>
-            <max>0.0016</max>
+            <min>0.2</min>
+            <max>0.4</max>
           </recommendedIntervalRz>
           <thicknessOfDefectiveCoating>0.01</thicknessOfDefectiveCoating>
           <coefficientOfRefinement>0</coefficientOfRefinement>
@@ -62,8 +62,8 @@
           <kvalitet>10</kvalitet>
           <surfaceRoughnessRz>0.024</surfaceRoughnessRz>
           <recommendedIntervalRz>
-            <min>0.0032</min>
-            <max>0.1</max>
+            <min>0.8</min>
+            <max>25</max>
           </recommendedIntervalRz>
           <thicknessOfDefectiveCoating>0.04</thicknessOfDefectiveCoating>
           <coefficientOfRefinement>1</coefficientOfRefinement>
@@ -79,8 +79,8 @@
           <kvalitet>12</kvalitet>
           <surfaceRoughnessRz>0.03</surfaceRoughnessRz>
           <recommendedIntervalRz>
-            <min>0.0252</min>
-            <max>0.1</max>
+            <min>6.3</min>
+            <max>25</max>
           </recommendedIntervalRz>
           <thicknessOfDefectiveCoating>0.04</thicknessOfDefectiveCoating>
           <coefficientOfRefinement>0</coefficientOfRefinement>
@@ -91,8 +91,8 @@
           <kvalitet>8</kvalitet>
           <surfaceRoughnessRz>0.01</surfaceRoughnessRz>
           <recommendedIntervalRz>
-            <min>0.0016</min>
-            <max>0.0252</max>
+            <min>0.4</min>
+            <max>6.3</max>
           </recommendedIntervalRz>
           <thicknessOfDefectiveCoating>0.015</thicknessOfDefectiveCoating>
           <coefficientOfRefinement>0</coefficientOfRefinement>
@@ -108,8 +108,8 @@
           <kvalitet>10</kvalitet>
           <surfaceRoughnessRz>0.01</surfaceRoughnessRz>
           <recommendedIntervalRz>
-            <min>0.0032</min>
-            <max>0.005</max>
+            <min>0.8</min>
+            <max>1.25</max>
           </recommendedIntervalRz>
           <thicknessOfDefectiveCoating>0.015</thicknessOfDefectiveCoating>
           <coefficientOfRefinement>0</coefficientOfRefinement>
@@ -120,8 +120,8 @@
           <kvalitet>7</kvalitet>
           <surfaceRoughnessRz>0.0024</surfaceRoughnessRz>
           <recommendedIntervalRz>
-            <min>0.0016</min>
-            <max>0.0032</max>
+            <min>0.4</min>
+            <max>0.8</max>
           </recommendedIntervalRz>
           <thicknessOfDefectiveCoating>0.01</thicknessOfDefectiveCoating>
           <coefficientOfRefinement>0</coefficientOfRefinement>
@@ -132,8 +132,8 @@
           <kvalitet>5</kvalitet>
           <surfaceRoughnessRz>0.001</surfaceRoughnessRz>
           <recommendedIntervalRz>
-            <min>0.0004</min>
-            <max>0.0016</max>
+            <min>0.1</min>
+            <max>0.4</max>
           </recommendedIntervalRz>
           <thicknessOfDefectiveCoating>0.005</thicknessOfDefectiveCoating>
           <coefficientOfRefinement>0</coefficientOfRefinement>
@@ -149,8 +149,8 @@
           <kvalitet>10</kvalitet>
           <surfaceRoughnessRz>0.005</surfaceRoughnessRz>
           <recommendedIntervalRz>
-            <min>0.0032</min>
-            <max>0.0064</max>
+            <min>0.8</min>
+            <max>1.6</max>
           </recommendedIntervalRz>
           <thicknessOfDefectiveCoating>0.015</thicknessOfDefectiveCoating>
           <coefficientOfRefinement>0</coefficientOfRefinement>
@@ -161,8 +161,8 @@
           <kvalitet>7</kvalitet>
           <surfaceRoughnessRz>0.002</surfaceRoughnessRz>
           <recommendedIntervalRz>
-            <min>0.0008</min>
-            <max>0.0032</max>
+            <min>0.2</min>
+            <max>0.8</max>
           </recommendedIntervalRz>
           <thicknessOfDefectiveCoating>0.01</thicknessOfDefectiveCoating>
           <coefficientOfRefinement>0</coefficientOfRefinement>
@@ -178,8 +178,8 @@
           <kvalitet>8</kvalitet>
           <surfaceRoughnessRz>0.01</surfaceRoughnessRz>
           <recommendedIntervalRz>
-            <min>0.0016</min>
-            <max>0.0252</max>
+            <min>0.4</min>
+            <max>6.3</max>
           </recommendedIntervalRz>
           <thicknessOfDefectiveCoating>0.02</thicknessOfDefectiveCoating>
           <coefficientOfRefinement>0.03</coefficientOfRefinement>
@@ -190,8 +190,8 @@
           <kvalitet>7</kvalitet>
           <surfaceRoughnessRz>0.005</surfaceRoughnessRz>
           <recommendedIntervalRz>
-            <min>0.0008</min>
-            <max>0.0016</max>
+            <min>0.2</min>
+            <max>0.4</max>
           </recommendedIntervalRz>
           <thicknessOfDefectiveCoating>0.01</thicknessOfDefectiveCoating>
           <coefficientOfRefinement>0.02</coefficientOfRefinement>
@@ -202,8 +202,8 @@
           <kvalitet>6</kvalitet>
           <surfaceRoughnessRz>0.001</surfaceRoughnessRz>
           <recommendedIntervalRz>
-            <min>0.00032</min>
-            <max>0.0008</max>
+            <min>0.08</min>
+            <max>0.2</max>
           </recommendedIntervalRz>
           <thicknessOfDefectiveCoating>0.005</thicknessOfDefectiveCoating>
           <coefficientOfRefinement>0</coefficientOfRefinement>
@@ -219,8 +219,8 @@
           <kvalitet>14</kvalitet>
           <surfaceRoughnessRz>0.04</surfaceRoughnessRz>
           <recommendedIntervalRz>
-            <min>0.0128</min>
-            <max>0.05</max>
+            <min>3.2</min>
+            <max>12.5</max>
           </recommendedIntervalRz>
           <thicknessOfDefectiveCoating>0.04</thicknessOfDefectiveCoating>
           <coefficientOfRefinement>0.06</coefficientOfRefinement>
@@ -231,8 +231,8 @@
           <kvalitet>10</kvalitet>
           <surfaceRoughnessRz>0.02</surfaceRoughnessRz>
           <recommendedIntervalRz>
-            <min>0.01</min>
-            <max>0.005</max>
+            <min>2.5</min>
+            <max>1.25</max>
           </recommendedIntervalRz>
           <thicknessOfDefectiveCoating>0.02</thicknessOfDefectiveCoating>
           <coefficientOfRefinement>0.04</coefficientOfRefinement>
@@ -243,8 +243,8 @@
           <kvalitet>6</kvalitet>
           <surfaceRoughnessRz>0.005</surfaceRoughnessRz>
           <recommendedIntervalRz>
-            <min>0.00128</min>
-            <max>0.005</max>
+            <min>0.32</min>
+            <max>1.25</max>
           </recommendedIntervalRz>
           <thicknessOfDefectiveCoating>0.01</thicknessOfDefectiveCoating>
           <coefficientOfRefinement>0</coefficientOfRefinement>
@@ -260,8 +260,8 @@
           <kvalitet>14</kvalitet>
           <surfaceRoughnessRz>0.04</surfaceRoughnessRz>
           <recommendedIntervalRz>
-            <min>0.0252</min>
-            <max>0.2</max>
+            <min>6.3</min>
+            <max>50</max>
           </recommendedIntervalRz>
           <thicknessOfDefectiveCoating>0.05</thicknessOfDefectiveCoating>
           <coefficientOfRefinement>0.06</coefficientOfRefinement>
@@ -272,8 +272,8 @@
           <kvalitet>11</kvalitet>
           <surfaceRoughnessRz>0.02</surfaceRoughnessRz>
           <recommendedIntervalRz>
-            <min>0.004</min>
-            <max>0.0252</max>
+            <min>1</min>
+            <max>6.3</max>
           </recommendedIntervalRz>
           <thicknessOfDefectiveCoating>0.025</thicknessOfDefectiveCoating>
           <coefficientOfRefinement>0.04</coefficientOfRefinement>
@@ -284,8 +284,8 @@
           <kvalitet>8</kvalitet>
           <surfaceRoughnessRz>0.01</surfaceRoughnessRz>
           <recommendedIntervalRz>
-            <min>0.00128</min>
-            <max>0.0064</max>
+            <min>0.32</min>
+            <max>1.6</max>
           </recommendedIntervalRz>
           <thicknessOfDefectiveCoating>0.01</thicknessOfDefectiveCoating>
           <coefficientOfRefinement>0</coefficientOfRefinement>
@@ -301,8 +301,8 @@
           <kvalitet>4</kvalitet>
           <surfaceRoughnessRz>0.0005</surfaceRoughnessRz>
           <recommendedIntervalRz>
-            <min>8E-05</min>
-            <max>0.0004</max>
+            <min>0.02</min>
+            <max>0.1</max>
           </recommendedIntervalRz>
           <thicknessOfDefectiveCoating>0.004</thicknessOfDefectiveCoating>
           <coefficientOfRefinement>0</coefficientOfRefinement>
@@ -318,8 +318,8 @@
           <kvalitet>4</kvalitet>
           <surfaceRoughnessRz>0.0005</surfaceRoughnessRz>
           <recommendedIntervalRz>
-            <min>0.000128</min>
-            <max>0.0008</max>
+            <min>0.032</min>
+            <max>0.2</max>
           </recommendedIntervalRz>
           <thicknessOfDefectiveCoating>0.004</thicknessOfDefectiveCoating>
           <coefficientOfRefinement>0</coefficientOfRefinement>
@@ -335,8 +335,8 @@
           <kvalitet>4</kvalitet>
           <surfaceRoughnessRz>0.0005</surfaceRoughnessRz>
           <recommendedIntervalRz>
-            <min>0.00016</min>
-            <max>0.0008</max>
+            <min>0.04</min>
+            <max>0.2</max>
           </recommendedIntervalRz>
           <thicknessOfDefectiveCoating>0.004</thicknessOfDefectiveCoating>
           <coefficientOfRefinement>0</coefficientOfRefinement>
@@ -352,8 +352,8 @@
           <kvalitet>6</kvalitet>
           <surfaceRoughnessRz>0.0008</surfaceRoughnessRz>
           <recommendedIntervalRz>
-            <min>0.0002</min>
-            <max>0.0016</max>
+            <min>0.05</min>
+            <max>0.4</max>
           </recommendedIntervalRz>
           <thicknessOfDefectiveCoating>0</thicknessOfDefectiveCoating>
           <coefficientOfRefinement>0</coefficientOfRefinement>
@@ -369,8 +369,8 @@
           <kvalitet>5</kvalitet>
           <surfaceRoughnessRz>0.0005</surfaceRoughnessRz>
           <recommendedIntervalRz>
-            <min>0.0002</min>
-            <max>0.0016</max>
+            <min>0.05</min>
+            <max>0.4</max>
           </recommendedIntervalRz>
           <thicknessOfDefectiveCoating>0</thicknessOfDefectiveCoating>
           <coefficientOfRefinement>0</coefficientOfRefinement>
@@ -386,8 +386,8 @@
           <kvalitet>5</kvalitet>
           <surfaceRoughnessRz>0.0005</surfaceRoughnessRz>
           <recommendedIntervalRz>
-            <min>0.0002</min>
-            <max>0.0016</max>
+            <min>0.05</min>
+            <max>0.4</max>
           </recommendedIntervalRz>
           <thicknessOfDefectiveCoating>0</thicknessOfDefectiveCoating>
           <coefficientOfRefinement>0</coefficientOfRefinement>
@@ -395,7 +395,7 @@
         </PrecisionOfMachining>
       </precisionOfMachining>
     </Operations>
-    <Operations>
+	<Operations>
       <typeOfMachining>Алм</typeOfMachining>
       <precisionOfMachining>
         <PrecisionOfMachining>
@@ -403,8 +403,8 @@
           <kvalitet>5</kvalitet>
           <surfaceRoughnessRz>0.0005</surfaceRoughnessRz>
           <recommendedIntervalRz>
-            <min>0.0002</min>
-            <max>0.0016</max>
+            <min>0.05</min>
+            <max>0.4</max>
           </recommendedIntervalRz>
           <thicknessOfDefectiveCoating>0</thicknessOfDefectiveCoating>
           <coefficientOfRefinement>0</coefficientOfRefinement>
@@ -420,8 +420,8 @@
           <kvalitet>0</kvalitet>
           <surfaceRoughnessRz>3.2E-05</surfaceRoughnessRz>
           <recommendedIntervalRz>
-            <min>3.2E-05</min>
-            <max>0.00032</max>
+            <min>0.008</min>
+            <max>0.08</max>
           </recommendedIntervalRz>
           <thicknessOfDefectiveCoating>0</thicknessOfDefectiveCoating>
           <coefficientOfRefinement>0</coefficientOfRefinement>
@@ -437,8 +437,8 @@
           <kvalitet>14</kvalitet>
           <surfaceRoughnessRz>0.04</surfaceRoughnessRz>
           <recommendedIntervalRz>
-            <min>0.04</min>
-            <max>0.08</max>
+            <min>10</min>
+            <max>20</max>
           </recommendedIntervalRz>
           <thicknessOfDefectiveCoating>0.08</thicknessOfDefectiveCoating>
           <coefficientOfRefinement>0</coefficientOfRefinement>
@@ -449,8 +449,8 @@
           <kvalitet>10</kvalitet>
           <surfaceRoughnessRz>0.02</surfaceRoughnessRz>
           <recommendedIntervalRz>
-            <min>0.005</min>
-            <max>0.02</max>
+            <min>1.25</min>
+            <max>5</max>
           </recommendedIntervalRz>
           <thicknessOfDefectiveCoating>0.04</thicknessOfDefectiveCoating>
           <coefficientOfRefinement>0</coefficientOfRefinement>
@@ -462,7 +462,7 @@
           <surfaceRoughnessRz>0.005</surfaceRoughnessRz>
           <recommendedIntervalRz>
             <min>0</min>
-            <max>0.005</max>
+            <max>1.25</max>
           </recommendedIntervalRz>
           <thicknessOfDefectiveCoating>0.02</thicknessOfDefectiveCoating>
           <coefficientOfRefinement>0</coefficientOfRefinement>

@@ -500,10 +500,6 @@ C:\Users\admin\Desktop\для Ольги Витальевны\WindowsFormsApplic
 G:\Программирование\thesis\WindowsFormsApplication8\WindowsFormsApplication8\bin\Debug\WindowsFormsApplication8.exe.config
 G:\Программирование\thesis\WindowsFormsApplication8\WindowsFormsApplication8\obj\x86\Debug\WindowsFormsApplication8.exe
 G:\Программирование\thesis\WindowsFormsApplication8\WindowsFormsApplication8\obj\x86\Debug\WindowsFormsApplication8.pdb
-G:\Программирование\thesis\WindowsFormsApplication8\WindowsFormsApplication8\bin\Debug\juliaDataSet.Designer.cs
-G:\Программирование\thesis\WindowsFormsApplication8\WindowsFormsApplication8\bin\Debug\juliaDataSet.xsc
-G:\Программирование\thesis\WindowsFormsApplication8\WindowsFormsApplication8\bin\Debug\juliaDataSet.xsd
-G:\Программирование\thesis\WindowsFormsApplication8\WindowsFormsApplication8\bin\Debug\juliaDataSet.xss
 G:\Программирование\thesis\WindowsFormsApplication8\WindowsFormsApplication8\bin\Debug\WindowsFormsApplication8.exe
 G:\Программирование\thesis\WindowsFormsApplication8\WindowsFormsApplication8\bin\Debug\WindowsFormsApplication8.pdb
 G:\Программирование\thesis\WindowsFormsApplication8\WindowsFormsApplication8\obj\x86\Debug\WindowsFormsApplication8.csprojResolveAssemblyReference.cache
@@ -648,3 +644,10 @@ C:\программирование\thesis\WindowsFormsApplication8\WindowsForms
 C:\программирование\thesis\WindowsFormsApplication8\WindowsFormsApplication8\bin\Debug\Microsoft.SqlServer.SmoExtended.dll
 C:\программирование\thesis\WindowsFormsApplication8\WindowsFormsApplication8\bin\Debug\Microsoft.SqlServer.SqlClrProvider.dll
 C:\программирование\thesis\WindowsFormsApplication8\WindowsFormsApplication8\bin\Debug\Microsoft.SqlServer.SqlEnum.dll
+g:\Программирование\thesis\WindowsFormsApplication8\WindowsFormsApplication8\bin\Debug\Microsoft.SqlServer.ConnectionInfo.dll
+g:\Программирование\thesis\WindowsFormsApplication8\WindowsFormsApplication8\bin\Debug\Microsoft.SqlServer.ConnectionInfoExtended.dll
+g:\Программирование\thesis\WindowsFormsApplication8\WindowsFormsApplication8\bin\Debug\Microsoft.SqlServer.Management.Sdk.Sfc.dll
+g:\Программирование\thesis\WindowsFormsApplication8\WindowsFormsApplication8\bin\Debug\Microsoft.SqlServer.Smo.dll
+g:\Программирование\thesis\WindowsFormsApplication8\WindowsFormsApplication8\bin\Debug\Microsoft.SqlServer.SmoExtended.dll
+g:\Программирование\thesis\WindowsFormsApplication8\WindowsFormsApplication8\bin\Debug\Microsoft.SqlServer.SqlClrProvider.dll
+g:\Программирование\thesis\WindowsFormsApplication8\WindowsFormsApplication8\bin\Debug\Microsoft.SqlServer.SqlEnum.dll

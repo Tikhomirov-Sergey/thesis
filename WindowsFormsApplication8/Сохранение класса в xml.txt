@@ -1,0 +1,15 @@
+DataStructures.ParametersOfSurfacesAfterVariousOperations.Operations[] operations = Tables.getParametersOfSurfacesAfterVariousOperations().operations;
+            
+            foreach(DataStructures.ParametersOfSurfacesAfterVariousOperations.Operations o in operations)
+            {
+                foreach(DataStructures.ParametersOfSurfacesAfterVariousOperations.PrecisionOfMachining pres in o.precisionOfMachining)
+                {
+                    pres.recommendedIntervalRz.max = ConversionRoughnessRzAndRa.RaToRz(pres.recommendedIntervalRz.max);
+                    pres.recommendedIntervalRz.min = ConversionRoughnessRzAndRa.RaToRz(pres.recommendedIntervalRz.min);
+                }
+            }
+            ParametersOfSurfacesAfterVariousOperations op = Tables.getParametersOfSurfacesAfterVariousOperations();
+
+            FileStream stream = new FileStream(@"XMLFiles/ParametersOfSurfacesAfterVariousOperations.xml", FileMode.);
+            XmlSerializer serializer = new XmlSerializer(typeof(ParametersOfSurfacesAfterVariousOperations));
+            serializer.Serialize(stream, op);

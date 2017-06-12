@@ -21,17 +21,11 @@ namespace WindowsFormsApplication8
         {
             try
             {
-                List<string> g = Tables.getParametersOfWorkpieces().getListWorkprieces();
-
-                foreach (string h in g)
-                {
-                    TreeOfWorkpiece.Nodes.Add(h);
-                }
+                Tables.getParametersOfWorkpieces().insertListOfOperationsInTreeView(this);
 
                 EventClickOfMouseOnTreeViewNode.clickOnTreeWorkpiece(0, this);
             }
-            catch { } /*string xmlpath = @"XMLFiles/ParametersOfWorkpieces.xml";
-            XMLtoTreeView.formationTreeView(xmlpath, TreeOfWorkpiece);*/
+            catch { } 
 
 
             ValidOffsetSurface.Enabled = false; label4.Enabled = false; label5.Enabled = false; ValidOffsetSurface.Text = "0";
