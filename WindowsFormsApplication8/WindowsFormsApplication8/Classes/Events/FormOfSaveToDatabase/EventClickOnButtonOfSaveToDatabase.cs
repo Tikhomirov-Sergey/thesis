@@ -10,16 +10,16 @@ namespace WindowsFormsApplication8
     {
         public static void buttonSaveToDatabase(Form5 form)
         {
-           try
-           {
+         //  try
+          // {
                 if (checkNameOfPartAndNameOfSurface(form))
                 {
                     saveToDatabase(form);
                     MessageBox.Show("Сохранение прошло успешно", "Ошибка");
                     form.Close();
                 }
-            }
-           catch { MessageBox.Show("Ошибка Базы данных", "Ошибка"); }
+           // }
+          // catch { MessageBox.Show("Ошибка Базы данных", "Ошибка"); }
         }
 
         private static bool checkNameOfPartAndNameOfSurface(Form5 form)

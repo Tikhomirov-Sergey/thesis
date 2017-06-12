@@ -8,7 +8,7 @@ namespace WindowsFormsApplication8
 {
     class EventClickOnButtonOfSelectOperationsOrWorkpiece
     {
-        public static void buttonOfSelectOperations(EventArgs e, MainForm form)
+        public static void buttonOfSelectOperations(MainForm form)
         {
             Operation operation = StorageOfSelectedOperation.getOperation();
 

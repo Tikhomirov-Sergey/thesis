@@ -8,7 +8,7 @@ namespace WindowsFormsApplication8
 {
     class EventAddSurfaceButton
     {
-        public static void buttonAddSurface(EventArgs e, MainForm form)
+        public static void buttonAddSurface(MainForm form)
         {
             try
             {

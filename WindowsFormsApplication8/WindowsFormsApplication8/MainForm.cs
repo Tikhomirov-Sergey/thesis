@@ -37,6 +37,43 @@ namespace WindowsFormsApplication8
             try
             {
                 Tables.getParametersOfSurfacesAfterVariousOperations().insertListOfOperationsInTreeView(this);
+
+                /////////////////////////////////надоело вводить ///////////////////////
+                FormOfSelectWorkpiece sel = new FormOfSelectWorkpiece();
+
+                ParametersWorkpiece parameters = Tables.getParametersOfWorkpieces().getParametersWorkprieceOnIndex(1);
+
+                Part.setWorkpiece(parameters);
+
+                parameters.setValidOffsetSurface(0);
+
+                string nameOfWorkpiece = parameters.getNameOfWorkpiece();
+                EventClickOnButtonOfSelectWorkpriece.insertNameOfWorkpieceInTreeViewAndTextBox(this, nameOfWorkpiece);
+                EventClickOnButtonOfSelectWorkpriece.enabledTextBoxes(this);
+
+                Operation operation = new Operation(Tables.getParametersOfSurfacesAfterVariousOperations().getTypeOfMachiningOnIndex(0));
+                StorageOfSelectedOperation.setOperation(operation);
+                StorageOfSelectedOperation.insertParametersOfOperationsInTextboxes(this);
+
+                EventClickOnButtonOfSelectOperationsOrWorkpiece.buttonOfSelectOperations(this);
+
+                operation = new Operation(Tables.getParametersOfSurfacesAfterVariousOperations().getTypeOfMachiningOnIndex(5));
+                StorageOfSelectedOperation.setOperation(operation);
+                StorageOfSelectedOperation.insertParametersOfOperationsInTextboxes(this);
+
+                EventClickOnButtonOfSelectOperationsOrWorkpiece.buttonOfSelectOperations(this);
+
+                EventClickOnButtonOfSelectTechnologicalProcess.buttonSelectProcess(this);
+
+                EventAddSurfaceButton.buttonAddSurface(this);
+
+                EventClickOnButtonOfDeleteOperation.buttonDeleteOperation(this);
+                EventAddSurfaceButton.buttonAddSurface(this);
+
+                EventClickOnButtonOfCalculationPart.buttonOfCalculation(this);
+
+
+
             }
             catch { MessageBox.Show("Повреждены XML таблицы", "Ошибка"); }
         }
@@ -45,7 +82,7 @@ namespace WindowsFormsApplication8
         {
             try
             {
-                EventClickOnButtonOfSelectOperationsOrWorkpiece.buttonOfSelectOperations(e, this);
+                EventClickOnButtonOfSelectOperationsOrWorkpiece.buttonOfSelectOperations(this);
             }
             catch { MessageBox.Show("button1_Click", "W"); }
         }
@@ -211,7 +248,7 @@ namespace WindowsFormsApplication8
 
         private void addSurfaceButton_Click(object sender, EventArgs e)
         {
-            EventAddSurfaceButton.buttonAddSurface(e, this);
+            EventAddSurfaceButton.buttonAddSurface(this);
         }
 
         private void SelectTechnologicalProcess_Click(object sender, EventArgs e)

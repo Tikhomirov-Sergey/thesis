@@ -461,7 +461,7 @@
             this.SurfaceRoughness.Name = "SurfaceRoughness";
             this.SurfaceRoughness.Size = new System.Drawing.Size(85, 20);
             this.SurfaceRoughness.TabIndex = 68;
-            this.SurfaceRoughness.Text = "0.01";
+            this.SurfaceRoughness.Text = "0,01";
             this.SurfaceRoughness.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.KeyPressForTextBoxWithDouble);
             // 
             // NameSurface
