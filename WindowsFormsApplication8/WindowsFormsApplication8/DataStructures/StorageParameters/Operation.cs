@@ -10,20 +10,14 @@ namespace WindowsFormsApplication8
         private string typeOfMachining;
         private int idOperation;
         private string typeOfInstrument;
-
+        
         private int idOnTechnologicalProcess;
 
-        public Operation(string typeOfMachining, int idOperation, int idOnTechnologicalProcess)
+        public Operation(string typeOfMachining, int idOperation, int idOnTechnologicalProcess = -1)
         {
             this.typeOfMachining = typeOfMachining;
             this.idOperation = idOperation;
             this.idOnTechnologicalProcess = idOnTechnologicalProcess;
-        }
-
-        public Operation(string typeOfMachining, int idOperation)
-        {
-            this.typeOfMachining = typeOfMachining;
-            this.idOperation = idOperation;
         }
 
         public Operation(Operation operation)

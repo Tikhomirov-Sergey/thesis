@@ -91,6 +91,7 @@ namespace WindowsFormsApplication8
 
             int countOperations = Part.getSurfaceOnIndex(0).getCountShortListOperation();
 
+
             /* for(int i = 0; i < countOperations; i++)
              {
                  Operation operation = technologicalProcess[i];
@@ -100,11 +101,20 @@ namespace WindowsFormsApplication8
             form.operationsTableAdapter.Insert(1, 1, 2, 43, 1, 1);
             
            // form.surfaceTableAdapter.Insert(1, 43, 4, 4, 4, 4, 1, 1);
+
+          for(int i = 0; i < countOperations; i++)
+          {
+             Operation operation = technologicalProcess[i];
+
+             form.operationsTableAdapter.Insert(i, operation.getIdOperation(), 5, 43, i, i);
+          }
+
         }
 
 
 
-       
+
+
        private static void saveToTableOfOperations(Form5 form, int index)
         {
            Surface surface = Part.getSurfaceOnIndex(0);

@@ -10,12 +10,12 @@ namespace WindowsFormsApplication8
     {
         public static void buttonDeleteOperation(MainForm form)
         {
-            try
-            {
+           try
+           {
                 TreeView treeView = form.TreeOfSelectedOperations;
                 int indexSelectedOperation = StorageOfSelectedOperation.getIndexSelectedOperation();
                 int indexSelectedSurface = StorageOfSelectedOperation.getIndexSelectedSurface();
-
+                
                 if (indexSelectedOperation != 0)
                 {
                     treeView.Nodes.RemoveAt(indexSelectedOperation);
@@ -23,8 +23,8 @@ namespace WindowsFormsApplication8
                     StorageOfSelectedOperation.decrementOfIndex();
                     form.TreeOfSelectedOperations.SelectedNode = form.TreeOfSelectedOperations.Nodes[indexSelectedOperation - 1];
                 }
-            }
-            catch { }
+           }
+           catch { }
         }
     }
 }

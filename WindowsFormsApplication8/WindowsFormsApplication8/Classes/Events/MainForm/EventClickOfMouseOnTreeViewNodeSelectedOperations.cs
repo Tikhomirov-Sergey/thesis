@@ -19,10 +19,14 @@ namespace WindowsFormsApplication8
             }
             else
             {
-                int index = e.Node.Index - 1;
-               Operation operation = Part.getSurfaceOnIndex(0).getOperationOnIndex(index);
+                int index = selectedIndex - 1;
+                int idSelectedSurface = StorageOfSelectedOperation.getIndexSelectedSurface();
+                
+               Operation operation = Part.getSurfaceOnIndex(idSelectedSurface).getOperationOnIndex(index);
                StorageOfSelectedOperation.setOperation(operation);
-                StorageOfSelectedOperation.insertParametersOfOperationsInTextboxes(form);
+
+                MessageBox.Show(operation.getIdOnTechnologicalProcess().ToString());
+               StorageOfSelectedOperation.insertParametersOfOperationsInTextboxes(form);
             }
         }
 

@@ -81,6 +81,11 @@ namespace WindowsFormsApplication8
             getSurfaceOnIndex(indexOfSurface).setNameSurface(nameSurface);
         }
 
+        public static int getCountSurfaces()
+        {
+            return surfaces.Count;
+        }
+
         public static void calculationOfSurfaces()
         {
             try
@@ -172,9 +177,17 @@ namespace WindowsFormsApplication8
             {
                 List<Operation> technologicalProcess = surfaces[0].getOperations();
 
+                List<Operation> operations = new List<Operation>();
+
+                foreach (Operation operationInTechnologicalProcess in technologicalProcess)
+                {
+                    Operation operation = new Operation(operationInTechnologicalProcess);
+                    operations.Add(operation);
+                }
+
                 checkSurface(indexSurface);
 
-                getSurfaceOnIndex(indexSurface).setOpetation(technologicalProcess);
+                getSurfaceOnIndex(indexSurface).setOpetation(operations);
             }
             catch { }
         }

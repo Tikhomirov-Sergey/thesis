@@ -70,10 +70,9 @@ namespace WindowsFormsApplication8
                 EventClickOnButtonOfDeleteOperation.buttonDeleteOperation(this);
                 EventAddSurfaceButton.buttonAddSurface(this);
 
+
               //  EventClickOnButtonOfCalculationPart.buttonOfCalculation(this);
-
-
-
+              
             }
             catch { MessageBox.Show("Повреждены XML таблицы", "Ошибка"); }
         }
@@ -253,11 +252,11 @@ namespace WindowsFormsApplication8
 
         private void SelectTechnologicalProcess_Click(object sender, EventArgs e)
         {
-            try
-            {
+           try
+           {
                 EventClickOnButtonOfSelectTechnologicalProcess.buttonSelectProcess(this);
-            }
-            catch {}
+           }
+           catch {}
         }
 
         private void NameSurface_TextChanged(object sender, EventArgs e)
