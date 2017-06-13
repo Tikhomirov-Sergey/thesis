@@ -20,7 +20,7 @@ namespace WindowsFormsApplication8.ClassesToCalculate
 
         private double[] minimumAllowanceZmin;
 
-        public Allowance(ParametersOfPart parametersOfPart, DataStructures.CalculationOfSurface.ParametersOperationsForCalculation parametersForCalculation,
+        public Allowance(ParametersOfSurface parametersOfPart, DataStructures.CalculationOfSurface.ParametersOperationsForCalculation parametersForCalculation,
             double[] spatialDeviationP, double[] deviationOfInstallationE, double[] accuracies)
         {
             this.numberOfOperations = parametersForCalculation.getNumberOfOperations();

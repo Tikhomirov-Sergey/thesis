@@ -44,8 +44,7 @@ namespace WindowsFormsApplication8
             form.labelOperationsOrTechProcess.Size = new Size(91,13);
             form.labelOperationsOrTechProcess.Location = new Point(169, 373);
 
-            form.SelectTechnologicalProcess.Size = new Size(313, 35);
-            form.SelectTechnologicalProcess.Location = new Point(438, 522);
+            form.SelectTechnologicalProcess.Visible = false;
             form.labelOperationsOrTechProcess.Text = "Тех. процесс";
             enabledTextBoxes(form);
         }

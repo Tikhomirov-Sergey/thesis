@@ -8,18 +8,18 @@ namespace WindowsFormsApplication8
 {
     class Part
     {
-        private static ParametersOfPart parametersOfPart = null;
+        private static ParametersOfSurface parametersOfPart = null;
         private static ParametersWorkpiece workpriece = null;
 
         //surfaces[0] = technologicalProcess;
         private static List<Surface> surfaces = new List<Surface>();
         
-        public static ParametersOfPart getParametersOfPart()
+        public static ParametersOfSurface getParametersOfPart()
         {
             return parametersOfPart;
         }
 
-        public static void setParametersOfPart(ParametersOfPart parametersOfPart)
+        public static void setParametersOfPart(ParametersOfSurface parametersOfPart)
         {
             Part.parametersOfPart = parametersOfPart;
         }

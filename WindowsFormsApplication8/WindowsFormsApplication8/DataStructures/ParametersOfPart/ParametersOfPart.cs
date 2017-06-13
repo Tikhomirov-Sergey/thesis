@@ -5,7 +5,7 @@ using System.Text;
 
 namespace WindowsFormsApplication8
 {
-    class ParametersOfPart
+    class ParametersOfSurface
     {
         private double lengthOfPart;
         private double diameterOfPart;
@@ -18,7 +18,7 @@ namespace WindowsFormsApplication8
         private double allowance;
         private double holeDepth;
 
-        public ParametersOfPart(double lengthOfPart, double diameterOfPart,
+        public ParametersOfSurface(double lengthOfPart, double diameterOfPart,
             TypeOfPart typeOfPart, TypeOfPart typeOfAllowance, TypeOfPart typeOfProcessedSurface,
             double surfaceRoughness, double allowance, double holeDepth = 0)
         {

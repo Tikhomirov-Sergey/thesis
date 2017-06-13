@@ -10,16 +10,16 @@ namespace WindowsFormsApplication8
     {
         public static void buttonSaveToDatabase(Form5 form)
         {
-         //  try
-          // {
+         try
+         {
                 if (checkNameOfPartAndNameOfSurface(form))
                 {
                     saveToDatabase(form);
                     MessageBox.Show("Сохранение прошло успешно", "Ошибка");
                     form.Close();
                 }
-           // }
-          // catch { MessageBox.Show("Ошибка Базы данных", "Ошибка"); }
+         }
+         catch { MessageBox.Show("Ошибка Базы данных", "Ошибка"); }
         }
 
         private static bool checkNameOfPartAndNameOfSurface(Form5 form)
@@ -69,7 +69,7 @@ namespace WindowsFormsApplication8
 
             if (!isCipherExist)
             {
-                ParametersOfPart parametersOfPart = Part.getParametersOfPart();
+                ParametersOfSurface parametersOfPart = Part.getParametersOfPart();
 
                 //form.детальTableAdapter1.Insert(nameOfPart, date, (float)parametersOfPart.getLengthOfPart(), (float)parametersOfPart.getDiameterOfPart(), parametersWorkpiece.getKvalitet(), (float)parametersWorkpiece.getSurfaceRoughnessRz(), (float)parametersWorkpiece.getThicknessOfDefectiveCoating(), parametersOfPart.getTypeOfPart().getName(), parametersOfPart.getTypeOfProcessedSurface().getName(), parametersOfPart.getTypeOfAllowance().getName(), parametersWorkpiece.getNameOfWorkpiece(), nameOfSurface);
 
@@ -91,12 +91,15 @@ namespace WindowsFormsApplication8
 
             int countOperations = Part.getSurfaceOnIndex(0).getCountShortListOperation();
 
-            for(int i = 0; i < countOperations; i++)
-            {
-                Operation operation = technologicalProcess[i];
+            /* for(int i = 0; i < countOperations; i++)
+             {
+                 Operation operation = technologicalProcess[i];
 
-                form.operationsTableAdapter.Insert(i, operation.getIdOperation(), (float)i, cipherDetail, idCalculation, i+1);
-            }
+                 form.operationsTableAdapter.Insert(i, operation.getIdOperation(), (float)i, cipherDetail, idCalculation, i+1);
+             }*/
+            form.operationsTableAdapter.Insert(1, 1, 2, 43, 1, 1);
+            
+           // form.surfaceTableAdapter.Insert(1, 43, 4, 4, 4, 4, 1, 1);
         }
 
 

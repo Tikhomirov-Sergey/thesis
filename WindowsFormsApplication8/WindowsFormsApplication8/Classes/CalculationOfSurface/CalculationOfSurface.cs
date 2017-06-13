@@ -8,7 +8,7 @@ namespace WindowsFormsApplication8
 {
     class CalculationOfSurface
     {
-        private ParametersOfPart parametersOfPart;
+        private ParametersOfSurface parametersOfPart;
         private DataStructures.CalculationOfSurface.ParametersOperationsForCalculation parametersForCalculation;
 
         private double[] accuracies;
@@ -20,7 +20,7 @@ namespace WindowsFormsApplication8
 
         private double[] sizeOfWorkprieceAfterOperation;
 
-        public CalculationOfSurface(ParametersOfPart parametersOfPart, DataStructures.CalculationOfSurface.ParametersOperationsForCalculation parametersForCalculation)
+        public CalculationOfSurface(ParametersOfSurface parametersOfPart, DataStructures.CalculationOfSurface.ParametersOperationsForCalculation parametersForCalculation)
         {
                 this.parametersOfPart = parametersOfPart;
                 this.parametersForCalculation = parametersForCalculation;
@@ -140,9 +140,6 @@ namespace WindowsFormsApplication8
             }
 
             return resultsOfCalculation;
-
-            /*ClassesToCalculate.ResultsOfCalculation[] resultsOfCalculation = new ClassesToCalculate.ResultsOfCalculation(this.accuracies, this.spatialDeviationP, this.deviationOfInstallationE, this.nominalAllowanceZnom, this.sizeOfWorkprieceAfterOperation);
-            return resultsOfCalculation;*/
         }
 
         private void rounding()

@@ -12,7 +12,9 @@ namespace WindowsFormsApplication8
 
         private List<Operation> operations = new List<Operation>();
         private List<ParametersOperation> parametersOperation = new List<ParametersOperation>();
-        
+
+        private static ParametersOfSurface parametersOfPart = null;
+
 
         public void setNameSurface(string nameSurface)
         {
@@ -95,7 +97,7 @@ namespace WindowsFormsApplication8
 
         public void calculationOFSurface()
         {
-            ParametersOfPart parametersOfPart = Part.getParametersOfPart();
+            ParametersOfSurface parametersOfPart = Part.getParametersOfPart();
             DataStructures.CalculationOfSurface.ParametersOperationsForCalculation parametersOperations = getParametersOperationsForCalculation();
 
             CalculationOfSurface calculationOfSurface = new CalculationOfSurface(parametersOfPart, parametersOperations);

@@ -70,7 +70,7 @@ namespace WindowsFormsApplication8
                 EventClickOnButtonOfDeleteOperation.buttonDeleteOperation(this);
                 EventAddSurfaceButton.buttonAddSurface(this);
 
-                EventClickOnButtonOfCalculationPart.buttonOfCalculation(this);
+              //  EventClickOnButtonOfCalculationPart.buttonOfCalculation(this);
 
 
 

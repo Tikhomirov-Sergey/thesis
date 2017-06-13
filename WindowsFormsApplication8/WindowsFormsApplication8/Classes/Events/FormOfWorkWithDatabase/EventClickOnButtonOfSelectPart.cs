@@ -43,7 +43,7 @@ namespace WindowsFormsApplication8
             double allowance = Convert.ToDouble(form.dataGridView1.CurrentRow.Cells[5].Value.ToString());
             double holeDepth = Convert.ToDouble(form.dataGridView1.CurrentRow.Cells[7].Value.ToString());
 
-            ParametersOfPart parametersOfPart = new ParametersOfPart(lengthOfPart, diameterOfPart, indexOfTypeOfPart, indexOfTypeOfAllowance, indexOfTypeOfProcessedSurface, allowance, holeDepth);
+            ParametersOfSurface parametersOfPart = new ParametersOfSurface(lengthOfPart, diameterOfPart, indexOfTypeOfPart, indexOfTypeOfAllowance, indexOfTypeOfProcessedSurface, allowance, holeDepth);
             Part.setParametersOfPart(parametersOfPart);*/
         }
 

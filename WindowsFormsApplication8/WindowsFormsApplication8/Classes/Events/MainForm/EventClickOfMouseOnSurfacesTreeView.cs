@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Windows.Forms;
+using System.Drawing;
 
 namespace WindowsFormsApplication8
 {
@@ -16,7 +17,28 @@ namespace WindowsFormsApplication8
 
             if (selectedIndex == 0)
             {
-                EventClickOnButtonOfEditOfTechnologicalProcess.buttonEditProcess(form);
+                StorageOfSelectedOperation.setIndexSelectedSurface(0);
+                form.SurfacesTreeView.SelectedNode = form.SurfacesTreeView.Nodes[0];
+                Part.insertListOfOperationsInTreeView(form);
+                form.TreeOfOperations.Nodes.Clear();
+                Tables.getParametersOfSurfacesAfterVariousOperations().insertListOfOperationsInTreeView(form);
+
+                form.Surfaces.Visible = false;
+                form.NameSurface.Visible = false;
+                form.SurfacesTreeView.Visible = false;
+                form.addSurfaceButton.Visible = false;
+                form.delSurfaceButton.Visible = false;
+
+                form.TreeOfOperations.Size = new Size(400, 287);
+                form.TreeOfOperations.Location = new Point(16, 270);
+
+                form.labelOperationsOrTechProcess.Size = new Size(91, 13);
+                form.labelOperationsOrTechProcess.Location = new Point(169, 250);
+                form.labelOperationsOrTechProcess.Text = "Выбор операций";  
+                
+
+                form.SelectTechnologicalProcess.Visible = true;
+                form.CalculationOfSchema.Visible = false;
             }
             else
             {

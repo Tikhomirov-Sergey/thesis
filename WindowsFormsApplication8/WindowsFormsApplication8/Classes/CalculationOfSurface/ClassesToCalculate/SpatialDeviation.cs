@@ -15,7 +15,7 @@ namespace WindowsFormsApplication8.ClassesToCalculate
         private double validOffsetSurfacePcm;
         private double holeDepth;
 
-        public SpatialDeviation(ParametersOfPart parametersOfPart, DataStructures.CalculationOfSurface.ParametersOperationsForCalculation parametersForCalculation)
+        public SpatialDeviation(ParametersOfSurface parametersOfPart, DataStructures.CalculationOfSurface.ParametersOperationsForCalculation parametersForCalculation)
         {
             this.numberOfOperations = parametersForCalculation.getNumberOfOperations();
 

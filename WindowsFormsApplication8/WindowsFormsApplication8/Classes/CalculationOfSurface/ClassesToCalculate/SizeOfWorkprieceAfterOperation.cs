@@ -14,7 +14,7 @@ namespace WindowsFormsApplication8.ClassesToCalculate
 
         private double[] nominalAllowanceZnom;
 
-        public SizeOfWorkprieceAfterOperation(ParametersOfPart parametersOfPart, DataStructures.CalculationOfSurface.ParametersOperationsForCalculation parametersForCalculation, double[] nominalAllowanceZnom)
+        public SizeOfWorkprieceAfterOperation(ParametersOfSurface parametersOfPart, DataStructures.CalculationOfSurface.ParametersOperationsForCalculation parametersForCalculation, double[] nominalAllowanceZnom)
         {
             this.numberOfOperations = parametersForCalculation.getNumberOfOperations();
 

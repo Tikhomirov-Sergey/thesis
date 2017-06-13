@@ -14,7 +14,7 @@ namespace WindowsFormsApplication8.ClassesToCalculate
         private InaccuracyOfPositioningPart table;
 
 
-        public DeviationOfInstallation(ParametersOfPart parametersOfPart, DataStructures.CalculationOfSurface.ParametersOperationsForCalculation parametersForCalculation)
+        public DeviationOfInstallation(ParametersOfSurface parametersOfPart, DataStructures.CalculationOfSurface.ParametersOperationsForCalculation parametersForCalculation)
         {
             this.numberOfOperations = parametersForCalculation.getNumberOfOperations();
             this.lengthOfPart = parametersOfPart.getLengthOfPart();
