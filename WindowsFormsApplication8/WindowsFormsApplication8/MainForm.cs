@@ -8,6 +8,7 @@ using System.Collections.Generic;
 using Microsoft.Data.ConnectionUI;
 using Microsoft.SqlServer.Management.Smo;
 using Microsoft.SqlServer.Server;
+using Microsoft.SqlServer.Management.Common;
 
 namespace WindowsFormsApplication8
 {
@@ -282,7 +283,65 @@ namespace WindowsFormsApplication8
             if (DataConnectionDialog.Show(dcd) == DialogResult.OK)
                 connectionString = dcd.ConnectionString;
             dcs.SaveConfiguration(dcd);
-           // return connectionString;
+
+            File.WriteAllText(@"connectionsString.connstr", connectionString);
+            // return connectionString;
+        }
+
+        private void showDBToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            new DBAdminForm().ShowDialog();
+        }
+
+        private void restoreDBToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            DBConnection dbConnection = new DBConnection();
+            OpenFileDialog openFileDialog1 = new OpenFileDialog();
+            if (openFileDialog1.ShowDialog() == DialogResult.OK)
+            {
+                ServerConnection connsql = new ServerConnection(@dbConnection.ServerName);
+                Server server = new Server(connsql);
+                Restore destination = new Restore();
+                destination.Action = RestoreActionType.Database;
+                destination.Database = @dbConnection.DBName;
+                try
+                {
+                    //BackupDeviceItem source = new BackupDeviceItem(@openFileDialog1.FileName, DeviceType.File);
+                    destination.Devices.AddDevice(@openFileDialog1.FileName, DeviceType.File);
+                    destination.ReplaceDatabase = true;
+                    destination.SqlRestore(server);
+                    MessageBox.Show("База успешно восстановлена");
+                }
+                catch (Exception exc)
+                {
+                    MessageBox.Show(exc.Message);
+                }
+            }
+        }
+
+        private void backupDBToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            DBConnection dbConnection = new DBConnection();
+            SaveFileDialog saveFileDialog1 = new SaveFileDialog();
+            if (saveFileDialog1.ShowDialog() == DialogResult.OK)
+            {
+                ServerConnection connsql = new ServerConnection(@dbConnection.ServerName);
+                Server server = new Server(connsql);
+                Backup backupSource = new Backup();
+                backupSource.Action = BackupActionType.Database;
+                backupSource.Database = @dbConnection.DBName;
+                try
+                {
+                    backupSource.Devices.AddDevice(@saveFileDialog1.FileName, DeviceType.File);
+                    backupSource.Incremental = false;
+                    backupSource.SqlBackup(server);
+                    MessageBox.Show("Бэкап успешно создан");
+                }
+                catch (Exception exc)
+                {
+                    MessageBox.Show(exc.Message);
+                }
+            }
         }
     }
 }
