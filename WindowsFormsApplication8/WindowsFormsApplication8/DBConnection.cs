@@ -11,8 +11,9 @@ namespace WindowsFormsApplication8
         public string ConnectionString { get; set; }
         public string DBName { get; set; }
         public string ServerName { get; set; }
+        private static DBConnection DB = null;
 
-        public DBConnection()
+        private DBConnection()
         {
             try
             {
@@ -30,6 +31,16 @@ namespace WindowsFormsApplication8
             {
                 MessageBox.Show(exc.Message);
             }
+        }
+
+        public static DBConnection getDB()
+        {
+            if(DBConnection.DB == null)
+            {
+                DBConnection.DB = new DBConnection();
+            }
+
+            return DBConnection.DB;
         }
 
         private string GetDBNameFromConnectionString(string[] temp)

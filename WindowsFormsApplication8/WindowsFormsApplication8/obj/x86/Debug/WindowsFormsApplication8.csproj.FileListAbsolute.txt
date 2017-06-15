@@ -652,3 +652,4 @@ g:\Программирование\thesis\WindowsFormsApplication8\WindowsForms
 g:\Программирование\thesis\WindowsFormsApplication8\WindowsFormsApplication8\bin\Debug\Microsoft.SqlServer.SqlClrProvider.dll
 g:\Программирование\thesis\WindowsFormsApplication8\WindowsFormsApplication8\bin\Debug\Microsoft.SqlServer.SqlEnum.dll
 C:\программирование\thesis\WindowsFormsApplication8\WindowsFormsApplication8\obj\x86\Debug\WindowsFormsApplication8.DBAdminForm.resources
+g:\Программирование\thesis\WindowsFormsApplication8\WindowsFormsApplication8\obj\x86\Debug\WindowsFormsApplication8.DBAdminForm.resources

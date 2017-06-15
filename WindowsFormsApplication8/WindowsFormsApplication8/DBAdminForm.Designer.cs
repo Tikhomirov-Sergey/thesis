@@ -36,10 +36,9 @@
             // 
             // saveButton
             // 
-            this.saveButton.Location = new System.Drawing.Point(657, 15);
-            this.saveButton.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.saveButton.Location = new System.Drawing.Point(493, 12);
             this.saveButton.Name = "saveButton";
-            this.saveButton.Size = new System.Drawing.Size(115, 28);
+            this.saveButton.Size = new System.Drawing.Size(86, 23);
             this.saveButton.TabIndex = 0;
             this.saveButton.Text = "Сохранить";
             this.saveButton.UseVisualStyleBackColor = true;
@@ -49,10 +48,9 @@
             // 
             this.tablesComboBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.tablesComboBox.FormattingEnabled = true;
-            this.tablesComboBox.Location = new System.Drawing.Point(17, 17);
-            this.tablesComboBox.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tablesComboBox.Location = new System.Drawing.Point(13, 14);
             this.tablesComboBox.Name = "tablesComboBox";
-            this.tablesComboBox.Size = new System.Drawing.Size(631, 24);
+            this.tablesComboBox.Size = new System.Drawing.Size(474, 21);
             this.tablesComboBox.TabIndex = 1;
             this.tablesComboBox.SelectedIndexChanged += new System.EventHandler(this.tablesComboBox_SelectedIndexChanged);
             // 
@@ -63,22 +61,20 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.DBdataGridView.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.DBdataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.DBdataGridView.Location = new System.Drawing.Point(17, 50);
-            this.DBdataGridView.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.DBdataGridView.Location = new System.Drawing.Point(13, 41);
             this.DBdataGridView.Name = "DBdataGridView";
-            this.DBdataGridView.Size = new System.Drawing.Size(755, 256);
+            this.DBdataGridView.Size = new System.Drawing.Size(565, 224);
             this.DBdataGridView.TabIndex = 2;
             this.DBdataGridView.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.DBdataGridView_CellContentClick);
             // 
             // DBAdminForm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(788, 321);
+            this.ClientSize = new System.Drawing.Size(590, 277);
             this.Controls.Add(this.DBdataGridView);
             this.Controls.Add(this.tablesComboBox);
             this.Controls.Add(this.saveButton);
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "DBAdminForm";
             this.Text = "DBAdminForm";
             this.Load += new System.EventHandler(this.DBAdminForm_Load);

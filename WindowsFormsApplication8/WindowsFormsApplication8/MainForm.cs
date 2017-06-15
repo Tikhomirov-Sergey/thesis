@@ -72,7 +72,7 @@ namespace WindowsFormsApplication8
                 EventAddSurfaceButton.buttonAddSurface(this);
 
 
-              //  EventClickOnButtonOfCalculationPart.buttonOfCalculation(this);
+                EventClickOnButtonOfCalculationPart.buttonOfCalculation(this);
               
             }
             catch { MessageBox.Show("Повреждены XML таблицы", "Ошибка"); }
@@ -295,7 +295,7 @@ namespace WindowsFormsApplication8
 
         private void restoreDBToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            DBConnection dbConnection = new DBConnection();
+            DBConnection dbConnection = DBConnection.getDB();
             OpenFileDialog openFileDialog1 = new OpenFileDialog();
             if (openFileDialog1.ShowDialog() == DialogResult.OK)
             {
@@ -321,7 +321,7 @@ namespace WindowsFormsApplication8
 
         private void backupDBToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            DBConnection dbConnection = new DBConnection();
+            DBConnection dbConnection = DBConnection.getDB();
             SaveFileDialog saveFileDialog1 = new SaveFileDialog();
             if (saveFileDialog1.ShowDialog() == DialogResult.OK)
             {

@@ -4,6 +4,7 @@ using Microsoft.SqlServer.Server;
 using Microsoft.Data.ConnectionUI;
 using System.IO;
 using System.Windows.Forms;
+using System.Data.SqlClient;
 
 namespace WindowsFormsApplication8
 {
@@ -19,14 +20,7 @@ namespace WindowsFormsApplication8
 
         private void Form4_Load(object sender, EventArgs e)
         {
-            // TODO: данная строка кода позволяет загрузить данные в таблицу "chainsDataSet1.Surface". При необходимости она может быть перемещена или удалена.
-            this.surfaceTableAdapter.Fill(this.chainsDataSet1.Surface);
-            // TODO: данная строка кода позволяет загрузить данные в таблицу "chainsDataSet1.Operations". При необходимости она может быть перемещена или удалена.
-            this.operationsTableAdapter.Fill(this.chainsDataSet1.Operations);
-            // TODO: данная строка кода позволяет загрузить данные в таблицу "chainsDataSet1.Calculation". При необходимости она может быть перемещена или удалена.
-            this.calculationTableAdapter.Fill(this.chainsDataSet1.Calculation);
-            // TODO: данная строка кода позволяет загрузить данные в таблицу "chainsDataSet1.Detail". При необходимости она может быть перемещена или удалена.
-            this.detailTableAdapter.Fill(this.chainsDataSet1.Detail);
+            EventOutputDataFromDataBase.getListNamesPartsInComboBox(this);
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -102,6 +96,16 @@ namespace WindowsFormsApplication8
             this.detailBindingSource.EndEdit();
             this.tableAdapterManager.UpdateAll(this.chainsDataSet1);
 
+        }
+
+        private void Part_TextChanged(object sender, EventArgs e)
+        {
+            EventOutputDataFromDataBase.TextChangedInComboBoxPart(this);
+        }
+
+        private void Calculation_TextChanged(object sender, EventArgs e)
+        {
+            EventOutputDataFromDataBase.TextChangedInComboBoxCalculation(this);
         }
     }
 }

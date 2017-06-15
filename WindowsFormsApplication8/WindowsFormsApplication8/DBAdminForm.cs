@@ -16,7 +16,7 @@ namespace WindowsFormsApplication8
 {
     public partial class DBAdminForm : Form
     {
-        private DBConnection dbConnection = new DBConnection();
+        private DBConnection dbConnection = DBConnection.getDB();
         SqlDataAdapter tableDataAdapter = new SqlDataAdapter();
 
         public DBAdminForm()
@@ -45,6 +45,7 @@ namespace WindowsFormsApplication8
             try
             {
                 DBdataGridView.DataSource = tempDataTable;
+                
             }
             catch (Exception exc)
             {

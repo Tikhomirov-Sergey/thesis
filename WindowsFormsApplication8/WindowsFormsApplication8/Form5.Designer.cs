@@ -70,6 +70,8 @@
             this.dataGridViewTextBoxColumn11 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn12 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn13 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.comboBox1 = new System.Windows.Forms.ComboBox();
             ((System.ComponentModel.ISupportInitialize)(this.chainsDataSet1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.detailBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.detailDataGridView)).BeginInit();
@@ -80,14 +82,14 @@
             ((System.ComponentModel.ISupportInitialize)(this.surfaceBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.surfaceDataGridView)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.operationsDataGridView)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(497, 60);
-            this.button1.Margin = new System.Windows.Forms.Padding(4);
+            this.button1.Location = new System.Drawing.Point(373, 49);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(121, 96);
+            this.button1.Size = new System.Drawing.Size(91, 78);
             this.button1.TabIndex = 3;
             this.button1.Text = "Сохранить";
             this.button1.UseVisualStyleBackColor = true;
@@ -95,20 +97,18 @@
             // 
             // textBox1
             // 
-            this.textBox1.Location = new System.Drawing.Point(73, 60);
-            this.textBox1.Margin = new System.Windows.Forms.Padding(4);
+            this.textBox1.Location = new System.Drawing.Point(55, 49);
             this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(376, 22);
+            this.textBox1.Size = new System.Drawing.Size(283, 20);
             this.textBox1.TabIndex = 4;
             // 
             // label1
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label1.Location = new System.Drawing.Point(73, 11);
-            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label1.Location = new System.Drawing.Point(55, 9);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(338, 25);
+            this.label1.Size = new System.Drawing.Size(283, 20);
             this.label1.TabIndex = 5;
             this.label1.Text = "Введите наименование детали:";
             // 
@@ -116,19 +116,17 @@
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label2.Location = new System.Drawing.Point(56, 111);
-            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label2.Location = new System.Drawing.Point(42, 90);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(378, 25);
+            this.label2.Size = new System.Drawing.Size(314, 20);
             this.label2.TabIndex = 6;
             this.label2.Text = "Введите обозначение поверхности:";
             // 
             // textBox2
             // 
-            this.textBox2.Location = new System.Drawing.Point(79, 160);
-            this.textBox2.Margin = new System.Windows.Forms.Padding(4);
+            this.textBox2.Location = new System.Drawing.Point(59, 130);
             this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(371, 22);
+            this.textBox2.Size = new System.Drawing.Size(279, 20);
             this.textBox2.TabIndex = 7;
             // 
             // chainsDataSet1
@@ -151,6 +149,7 @@
             this.tableAdapterManager.CalculationTableAdapter = this.calculationTableAdapter;
             this.tableAdapterManager.ChamferTableAdapter = null;
             this.tableAdapterManager.DetailTableAdapter = this.detailTableAdapter;
+            this.tableAdapterManager.Operations_and_ResultsTableAdapter = null;
             this.tableAdapterManager.OperationsTableAdapter = this.operationsTableAdapter;
             this.tableAdapterManager.SurfaceTableAdapter = this.surfaceTableAdapter;
             this.tableAdapterManager.UpdateOrder = WindowsFormsApplication8.ChainsDataSet1TableAdapters.TableAdapterManager.UpdateOrderOption.InsertUpdateDelete;
@@ -177,10 +176,11 @@
             this.dataGridViewTextBoxColumn3,
             this.dataGridViewTextBoxColumn4});
             this.detailDataGridView.DataSource = this.detailBindingSource;
-            this.detailDataGridView.Location = new System.Drawing.Point(550, 7);
+            this.detailDataGridView.Location = new System.Drawing.Point(412, 6);
+            this.detailDataGridView.Margin = new System.Windows.Forms.Padding(2);
             this.detailDataGridView.Name = "detailDataGridView";
             this.detailDataGridView.RowTemplate.Height = 24;
-            this.detailDataGridView.Size = new System.Drawing.Size(460, 175);
+            this.detailDataGridView.Size = new System.Drawing.Size(345, 142);
             this.detailDataGridView.TabIndex = 7;
             // 
             // dataGridViewTextBoxColumn1
@@ -225,10 +225,11 @@
             this.dataGridViewTextBoxColumn6,
             this.dataGridViewTextBoxColumn7});
             this.calculationDataGridView.DataSource = this.calculationBindingSource;
-            this.calculationDataGridView.Location = new System.Drawing.Point(93, 233);
+            this.calculationDataGridView.Location = new System.Drawing.Point(70, 189);
+            this.calculationDataGridView.Margin = new System.Windows.Forms.Padding(2);
             this.calculationDataGridView.Name = "calculationDataGridView";
             this.calculationDataGridView.RowTemplate.Height = 24;
-            this.calculationDataGridView.Size = new System.Drawing.Size(300, 220);
+            this.calculationDataGridView.Size = new System.Drawing.Size(225, 179);
             this.calculationDataGridView.TabIndex = 7;
             // 
             // dataGridViewTextBoxColumn5
@@ -274,10 +275,11 @@
             this.dataGridViewTextBoxColumn20,
             this.dataGridViewTextBoxColumn21});
             this.surfaceDataGridView.DataSource = this.surfaceBindingSource;
-            this.surfaceDataGridView.Location = new System.Drawing.Point(446, 233);
+            this.surfaceDataGridView.Location = new System.Drawing.Point(334, 189);
+            this.surfaceDataGridView.Margin = new System.Windows.Forms.Padding(2);
             this.surfaceDataGridView.Name = "surfaceDataGridView";
             this.surfaceDataGridView.RowTemplate.Height = 24;
-            this.surfaceDataGridView.Size = new System.Drawing.Size(300, 220);
+            this.surfaceDataGridView.Size = new System.Drawing.Size(225, 179);
             this.surfaceDataGridView.TabIndex = 8;
             // 
             // dataGridViewTextBoxColumn14
@@ -340,10 +342,11 @@
             this.dataGridViewTextBoxColumn12,
             this.dataGridViewTextBoxColumn13});
             this.operationsDataGridView.DataSource = this.operationsBindingSource;
-            this.operationsDataGridView.Location = new System.Drawing.Point(823, 233);
+            this.operationsDataGridView.Location = new System.Drawing.Point(695, -5);
+            this.operationsDataGridView.Margin = new System.Windows.Forms.Padding(2);
             this.operationsDataGridView.Name = "operationsDataGridView";
             this.operationsDataGridView.RowTemplate.Height = 24;
-            this.operationsDataGridView.Size = new System.Drawing.Size(300, 220);
+            this.operationsDataGridView.Size = new System.Drawing.Size(225, 179);
             this.operationsDataGridView.TabIndex = 8;
             // 
             // dataGridViewTextBoxColumn8
@@ -382,11 +385,29 @@
             this.dataGridViewTextBoxColumn13.HeaderText = "ID";
             this.dataGridViewTextBoxColumn13.Name = "dataGridViewTextBoxColumn13";
             // 
+            // dataGridView1
+            // 
+            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView1.Location = new System.Drawing.Point(617, 260);
+            this.dataGridView1.Name = "dataGridView1";
+            this.dataGridView1.Size = new System.Drawing.Size(240, 150);
+            this.dataGridView1.TabIndex = 9;
+            // 
+            // comboBox1
+            // 
+            this.comboBox1.FormattingEnabled = true;
+            this.comboBox1.Location = new System.Drawing.Point(617, 214);
+            this.comboBox1.Name = "comboBox1";
+            this.comboBox1.Size = new System.Drawing.Size(121, 21);
+            this.comboBox1.TabIndex = 10;
+            // 
             // Form5
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1256, 539);
+            this.ClientSize = new System.Drawing.Size(942, 438);
+            this.Controls.Add(this.comboBox1);
+            this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.operationsDataGridView);
             this.Controls.Add(this.surfaceDataGridView);
             this.Controls.Add(this.calculationDataGridView);
@@ -396,7 +417,6 @@
             this.Controls.Add(this.label1);
             this.Controls.Add(this.textBox1);
             this.Controls.Add(this.button1);
-            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "Form5";
             this.Text = "Сохранение в БД";
             this.Load += new System.EventHandler(this.Form5_Load);
@@ -410,6 +430,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.surfaceBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.surfaceDataGridView)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.operationsDataGridView)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -460,5 +481,7 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn11;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn12;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn13;
+        private System.Windows.Forms.ComboBox comboBox1;
+        protected internal System.Windows.Forms.DataGridView dataGridView1;
     }
 }

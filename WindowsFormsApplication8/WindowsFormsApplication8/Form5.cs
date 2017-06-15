@@ -14,6 +14,9 @@ namespace WindowsFormsApplication8
 {
     public partial class Form5 : Form
     {
+        private DBConnection dbConnection = DBConnection.getDB();
+        private SqlDataAdapter tableDataAdapter = new SqlDataAdapter();
+
         public Form5()
         {
             InitializeComponent();
@@ -33,9 +36,7 @@ namespace WindowsFormsApplication8
 
         private void button1_Click(object sender, EventArgs e)
         {
-            //EventClickOnButtonOfSaveToDatabase.buttonSaveToDatabase(this);
-            this.operationsTableAdapter.Insert(1, 1, 2, 43, 1, 1);
-
+            EventClickOnButtonOfSaveToDatabase.buttonSaveToDatabase(this);
         }
     }
 }

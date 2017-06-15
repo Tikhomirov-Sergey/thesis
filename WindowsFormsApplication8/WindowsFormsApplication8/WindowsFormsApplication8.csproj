@@ -122,6 +122,7 @@
     <Compile Include="Classes\Events\FormOfWorkWithDatabase\EventClickOnButtonOfSelectPart.cs" />
     <Compile Include="Classes\Events\FormResult\ClickOnSurfacesTreeView.cs" />
     <Compile Include="Classes\Events\FormSelectWorkpriece\EventClickOnButtonOfSelectWorkpriece.cs" />
+    <Compile Include="Classes\Events\FormSelectWorkpriece\EventOutputDataFromDataBase.cs" />
     <Compile Include="Classes\Events\MainForm\EventAddSurfaceButton.cs" />
     <Compile Include="Classes\Events\MainForm\EventClickOfMouseOnSurfacesTreeView.cs" />
     <Compile Include="Classes\Events\MainForm\EventClickOfMouseOnTreeViewNodeSelectedOperations.cs" />
