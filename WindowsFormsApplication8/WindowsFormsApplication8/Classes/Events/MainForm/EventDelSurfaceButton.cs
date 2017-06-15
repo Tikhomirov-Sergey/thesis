@@ -15,13 +15,17 @@ namespace WindowsFormsApplication8
             {
                 form.SurfacesTreeView.Nodes.RemoveAt(selectedIndex);
 
-                for (int i = 1; i< form.SurfacesTreeView.Nodes.Count;i++)
+                for (int i = 1; i < form.SurfacesTreeView.Nodes.Count; i++)
                 {
-
+                    //if (form.SurfacesTreeView.Nodes[i].Text != "Поверхность " + Convert.ToString(i))
+                   // {
+                       // form.SurfacesTreeView.Nodes[i].Text = "Поверхность " + Convert.ToString(i);
+                        
+                    //}
                     form.SurfacesTreeView.Nodes[i].Name= "Surface" + Convert.ToString(i);
-                    form.SurfacesTreeView.Nodes[i].Text= "Поверхность " + Convert.ToString(i);
-
                 }
+               
+                Part.deleteSurface(selectedIndex);
             
             }
             catch { }

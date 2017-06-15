@@ -191,5 +191,14 @@ namespace WindowsFormsApplication8
             }
             catch { }
         }
+
+        public static void deleteSurface(int indexOfSurface)
+        {
+            try
+            {
+                surfaces.RemoveAt(indexOfSurface);
+            }
+            catch { }
+        }
     }
 }

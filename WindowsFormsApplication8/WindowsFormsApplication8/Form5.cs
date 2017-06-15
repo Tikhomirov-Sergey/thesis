@@ -33,7 +33,9 @@ namespace WindowsFormsApplication8
 
         private void button1_Click(object sender, EventArgs e)
         {
-            EventClickOnButtonOfSaveToDatabase.buttonSaveToDatabase(this);
+            //EventClickOnButtonOfSaveToDatabase.buttonSaveToDatabase(this);
+            this.operationsTableAdapter.Insert(1, 1, 2, 43, 1, 1);
+
         }
     }
 }

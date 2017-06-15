@@ -63,6 +63,10 @@ namespace WindowsFormsApplication8
                 MessageBox.Show(exc.Message);
             }
         }
-        
+
+        private void DBdataGridView_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
     }
 }
