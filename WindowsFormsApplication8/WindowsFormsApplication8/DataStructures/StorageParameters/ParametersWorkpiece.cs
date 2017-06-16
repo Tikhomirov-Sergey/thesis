@@ -15,9 +15,11 @@ namespace WindowsFormsApplication8
         private double thicknessOfDefectiveCoating;
         private double validOffsetSurface;
 
+        private int idWorkpieceInTable;
+
         private ClassesToCalculate.ResultsOfCalculation resultsOfCalculation;
 
-        public ParametersWorkpiece(string nameOfWorkpiece, int idWorkpiece, double surfaceRoughnessRz,
+        public ParametersWorkpiece(string nameOfWorkpiece, int idWorkpiece, int idWorkpieceInTable, double surfaceRoughnessRz,
             Interval recommendedIntervalRz, int kvalitet, double thicknessOfDefectiveCoating, double validOffsetSurface = 0)
         {
             this.nameOfWorkpiece = nameOfWorkpiece;
@@ -27,6 +29,7 @@ namespace WindowsFormsApplication8
             this.kvalitet = kvalitet;
             this.thicknessOfDefectiveCoating = thicknessOfDefectiveCoating;
             this.validOffsetSurface = validOffsetSurface;
+            this.idWorkpieceInTable = idWorkpieceInTable;
         }
 
         public void insertParametersOfWorkpieceInTextboxes(FormOfSelectWorkpiece form)
@@ -166,6 +169,15 @@ namespace WindowsFormsApplication8
         public Interval getRecommendedIntervalRz()
         {
             return this.recommendedIntervalRz;
+        }
+
+        public void setIdWorkpieceInTable(int idWorkpieceInTable)
+        {
+            this.idWorkpieceInTable = idWorkpieceInTable;
+        }
+        public int getIdWorkpieceInTable()
+        {
+            return this.idWorkpieceInTable;
         }
 
         public ClassesToCalculate.ResultsOfCalculation getResultsOfCalculation()

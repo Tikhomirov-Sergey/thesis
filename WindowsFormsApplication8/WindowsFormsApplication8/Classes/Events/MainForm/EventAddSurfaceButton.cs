@@ -19,7 +19,7 @@ namespace WindowsFormsApplication8
                 Part.copyTechnologicalProcessInSurface(count);
                 Part.insertListOfOperationsInTreeView(form, count);
 
-                surface.Name = "Surface" + Convert.ToString(count);
+                surface.Name = "notChange";
                 surface.Text = "Поверхность " + Convert.ToString(count);
 
                 

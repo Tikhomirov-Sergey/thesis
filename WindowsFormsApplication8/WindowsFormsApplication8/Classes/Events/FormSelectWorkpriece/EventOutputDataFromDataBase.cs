@@ -15,6 +15,7 @@ namespace WindowsFormsApplication8
 
         private static List<Dependence> parts;
         private static List<Dependence> calculations;
+        private static List<Dependence> surfaces;
 
         public static void getListNamesPartsInComboBox(FormOfWorkWithDatabase form)
         {
@@ -29,6 +30,56 @@ namespace WindowsFormsApplication8
 
             form.Part.SelectedIndex = 0;
         }
+
+        public static void getListNamesSurfacesInComboBox(FormOfWorkWithDatabase form, int selectedIndex)
+        {
+            form.Surfaces.Items.Clear();
+
+            selectSurfaceInDB(selectedIndex);
+
+            foreach (Dependence surface in surfaces)
+            {
+                form.Surfaces.Items.Add(surface.getName());
+            }
+
+            try
+            {
+                form.Surfaces.SelectedIndex = 0;
+            }
+            catch { }
+        }
+
+        private static void selectSurfaceInDB(int index)
+        {
+            DataTable tablesDataTable = new DataTable();
+            DataTable tempDataTable = new DataTable();
+            
+            Dependence calculation = calculations[index];
+
+            dbConnection.GetDataUsingDataAdapter($@"SELECT ID, surface_cipher FROM surface WHERE Cipher_detail = {calculation.getId()}", ref tempDataTable, ref tableDataAdapter);
+
+            List<Dependence> surfaces = new List<Dependence>();
+
+            try
+            {
+                
+                foreach (DataRow row in tempDataTable.Rows)
+                {
+                    int id = Convert.ToInt32(row[0]);
+                    string name = Convert.ToString(row[1]);
+
+                    surfaces.Add(new Dependence(id, name));
+                }
+
+                EventOutputDataFromDataBase.surfaces = surfaces;
+            }
+            catch (Exception e)
+            {
+                MessageBox.Show(e.Message);
+            }
+        }
+
+
 
         private static void selectPartsInDB()
         {
@@ -69,8 +120,11 @@ namespace WindowsFormsApplication8
             {
                 form.Calculation.Items.Add(date.getName());
             }
-
-            form.Calculation.SelectedIndex = 0;
+            try
+            {
+                form.Calculation.SelectedIndex = 0;
+            }
+            catch { }
         }
 
         private static void selectCalculationInDB(int index)
@@ -107,6 +161,8 @@ namespace WindowsFormsApplication8
             int selectedIndex = form.Calculation.SelectedIndex;
 
             selectTechnologicalProcess(selectedIndex, form);
+
+            getListNamesSurfacesInComboBox(form, selectedIndex);
         }
 
         private static void selectTechnologicalProcess(int index, FormOfWorkWithDatabase form)

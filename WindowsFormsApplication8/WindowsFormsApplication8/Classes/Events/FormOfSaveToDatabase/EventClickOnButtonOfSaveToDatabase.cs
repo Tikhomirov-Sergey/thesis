@@ -29,7 +29,7 @@ namespace WindowsFormsApplication8
              if (checkNameOfPartAndNameOfSurface(form))
              {
                     saveToDatabase(form);
-                    MessageBox.Show("Сохранение прошло успешно", "Ошибка");
+                    MessageBox.Show("Сохранение прошло успешно");
                     form.Close();
              }
          }
@@ -115,7 +115,7 @@ namespace WindowsFormsApplication8
 
         private static int saveWorkpiece(int cipherDetail, int idCalculation, ParametersWorkpiece workpiece)
         {
-            int idOperation = workpiece.getIdWorkpiece();
+            int idOperation = workpiece.getIdWorkpieceInTable();
             string nameOperation = workpiece.getNameOfWorkpiece();
 
             dbConnection.SetQuery($@"INSERT INTO {TECHNOLOGICAL_PROCESS} VALUES ({0}, {idOperation}, '{nameOperation}', {cipherDetail}, {idCalculation})");
@@ -153,7 +153,7 @@ namespace WindowsFormsApplication8
 
                 double tolerance = parametersOfSurface.getAllowance();
                 
-                dbConnection.SetQuery($@"INSERT INTO {SURFACE} VALUES ({cipherDetail}, '{nameSurface}', {diameterOfSurface}, {typeOfPart}, {typeOfAllowance}, {typeOfProcessedSurface}, {tolerance})");
+                dbConnection.SetQuery($@"INSERT INTO {SURFACE} VALUES ({idCalculation}, '{nameSurface}', {diameterOfSurface}, {typeOfPart}, {typeOfAllowance}, {typeOfProcessedSurface}, {tolerance})");
 
                 int idSurface = getIdentCurrent(SURFACE);
 

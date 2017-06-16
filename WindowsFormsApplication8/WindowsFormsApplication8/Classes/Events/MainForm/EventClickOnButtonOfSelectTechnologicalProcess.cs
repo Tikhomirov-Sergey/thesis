@@ -17,11 +17,10 @@ namespace WindowsFormsApplication8
 
             if (countNodes == 1)
             {
-                form.SurfacesTreeView.Nodes.Add(nameSurface);
+                form.SurfacesTreeView.Nodes.Add("notChange", nameSurface);
 
                 Part.setNameSurfaceOnIndex(1, nameSurface);
                 Part.copyTechnologicalProcessInSurface(1);
-
             }
 
             StorageOfSelectedOperation.setIndexSelectedSurface(1);

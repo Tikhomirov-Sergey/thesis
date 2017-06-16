@@ -10,22 +10,30 @@ namespace WindowsFormsApplication8
     {
         public static void buttonDelSurface(EventArgs e, MainForm form)
         {
+            
             int selectedIndex = StorageOfSelectedOperation.getIndexSelectedSurface();
             try
             {
-                form.SurfacesTreeView.Nodes.RemoveAt(selectedIndex);
-
-                for (int i = 1; i < form.SurfacesTreeView.Nodes.Count; i++)
+                if (selectedIndex != 0)
                 {
-                    //if (form.SurfacesTreeView.Nodes[i].Text != "Поверхность " + Convert.ToString(i))
-                   // {
-                       // form.SurfacesTreeView.Nodes[i].Text = "Поверхность " + Convert.ToString(i);
-                        
-                    //}
-                    form.SurfacesTreeView.Nodes[i].Name= "Surface" + Convert.ToString(i);
+                    form.SurfacesTreeView.Nodes.RemoveAt(selectedIndex);
+
+                    for (int i = 1; i < form.SurfacesTreeView.Nodes.Count; i++)
+                    {
+
+                        if (form.SurfacesTreeView.Nodes[i].Text == $"Поверхность {i + 1}")
+                        {
+                            string nameSurface = "Поверхность " + Convert.ToString(i);
+
+                            form.SurfacesTreeView.Nodes[i].Text = nameSurface;
+                            Part.getSurfaceOnIndex(i).setNameSurface(nameSurface);
+                        }
+                    }
+
+                    Part.deleteSurface(selectedIndex);
+
+                    StorageOfSelectedOperation.setIndexSelectedSurface(selectedIndex - 1);
                 }
-               
-                Part.deleteSurface(selectedIndex);
             
             }
             catch { }

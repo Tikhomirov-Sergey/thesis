@@ -21,7 +21,7 @@ namespace WindowsFormsApplication8.DataStructures.ParametersOfSurfacesAfterVario
 
             if(indextPrecisionOfMachining == -1)
             {
-                throw new ErrorMessage("Не входит куда-ото");
+                throw new ErrorMessage($"Шероховатость операции {nameOperation.ToLower()} не входит в пределы");
             }
 
             List<ParametersOperation> operations = new List<ParametersOperation>();

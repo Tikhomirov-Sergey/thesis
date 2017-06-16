@@ -11,7 +11,7 @@ namespace WindowsFormsApplication8
 
         public ParametersWorkpiece getParametersWorkprieceOnIndex(int indexWorkpriece)
         {
-                return workpieces[indexWorkpriece].getParametersWorkpiece();
+                return workpieces[indexWorkpriece].getParametersWorkpiece(indexWorkpriece);
         }
 
         public List<string> getListWorkprieces()

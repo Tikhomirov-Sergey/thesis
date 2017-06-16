@@ -72,7 +72,7 @@ namespace WindowsFormsApplication8
                 EventAddSurfaceButton.buttonAddSurface(this);
 
 
-                EventClickOnButtonOfCalculationPart.buttonOfCalculation(this);
+               // EventClickOnButtonOfCalculationPart.buttonOfCalculation(this);
               
             }
             catch { MessageBox.Show("Повреждены XML таблицы", "Ошибка"); }
@@ -113,6 +113,7 @@ namespace WindowsFormsApplication8
         {
             try
             {
+                              
                 EventClickOnButtonOfCalculationPart.buttonOfCalculation(this);
             }
             catch { }
@@ -268,6 +269,7 @@ namespace WindowsFormsApplication8
                 string nameSurface = NameSurface.Text;
 
                 SurfacesTreeView.Nodes[indexSelectedSurface].Text = nameSurface;
+                SurfacesTreeView.Nodes[indexSelectedSurface].Name = "change";
                 Part.setNameSurfaceOnIndex(indexSelectedSurface, nameSurface);
 
             }

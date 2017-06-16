@@ -66,9 +66,10 @@
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(600, 37);
+            this.button1.Location = new System.Drawing.Point(800, 46);
+            this.button1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(88, 41);
+            this.button1.Size = new System.Drawing.Size(117, 50);
             this.button1.TabIndex = 2;
             this.button1.Text = "Выбор записи \r\n       из БД";
             this.button1.UseVisualStyleBackColor = true;
@@ -77,61 +78,68 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(315, 49);
+            this.label1.Location = new System.Drawing.Point(420, 60);
+            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(83, 13);
+            this.label1.Size = new System.Drawing.Size(107, 17);
             this.label1.TabIndex = 4;
             this.label1.Text = "Поиск по дате:";
             // 
             // textBox1
             // 
-            this.textBox1.Location = new System.Drawing.Point(99, 46);
+            this.textBox1.Location = new System.Drawing.Point(132, 57);
+            this.textBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(100, 20);
+            this.textBox1.Size = new System.Drawing.Size(132, 22);
             this.textBox1.TabIndex = 5;
             // 
             // button2
             // 
-            this.button2.Location = new System.Drawing.Point(204, 45);
+            this.button2.Location = new System.Drawing.Point(272, 55);
+            this.button2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(75, 23);
+            this.button2.Size = new System.Drawing.Size(100, 28);
             this.button2.TabIndex = 6;
             this.button2.Text = "Поиск";
             this.button2.UseVisualStyleBackColor = true;
             // 
             // button3
             // 
-            this.button3.Location = new System.Drawing.Point(694, 37);
+            this.button3.Location = new System.Drawing.Point(925, 46);
+            this.button3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(108, 41);
+            this.button3.Size = new System.Drawing.Size(144, 50);
             this.button3.TabIndex = 7;
             this.button3.Text = "Удаление записи \r\n        из БД";
             this.button3.UseVisualStyleBackColor = true;
             // 
             // button4
             // 
-            this.button4.Location = new System.Drawing.Point(506, 44);
+            this.button4.Location = new System.Drawing.Point(675, 54);
+            this.button4.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(75, 23);
+            this.button4.Size = new System.Drawing.Size(100, 28);
             this.button4.TabIndex = 8;
             this.button4.Text = "Поиск";
             this.button4.UseVisualStyleBackColor = true;
             // 
             // textBox2
             // 
-            this.textBox2.Location = new System.Drawing.Point(401, 46);
+            this.textBox2.Location = new System.Drawing.Point(535, 57);
+            this.textBox2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(100, 20);
+            this.textBox2.Size = new System.Drawing.Size(132, 22);
             this.textBox2.TabIndex = 9;
             // 
             // label2
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label2.Location = new System.Drawing.Point(10, 37);
+            this.label2.Location = new System.Drawing.Point(13, 46);
+            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
             this.label2.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.label2.Size = new System.Drawing.Size(83, 39);
+            this.label2.Size = new System.Drawing.Size(106, 51);
             this.label2.TabIndex = 10;
             this.label2.Text = "Поиск по\r\nнаименованию\r\nдетали:";
             // 
@@ -142,15 +150,15 @@
             this.ToolStripMenuItemBackup});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Padding = new System.Windows.Forms.Padding(4, 2, 0, 2);
-            this.menuStrip1.Size = new System.Drawing.Size(1370, 24);
+            this.menuStrip1.Padding = new System.Windows.Forms.Padding(5, 2, 0, 2);
+            this.menuStrip1.Size = new System.Drawing.Size(1827, 28);
             this.menuStrip1.TabIndex = 12;
             this.menuStrip1.Text = "menuStrip1";
             // 
             // ToolStripMenuItemBackup
             // 
             this.ToolStripMenuItemBackup.Name = "ToolStripMenuItemBackup";
-            this.ToolStripMenuItemBackup.Size = new System.Drawing.Size(170, 20);
+            this.ToolStripMenuItemBackup.Size = new System.Drawing.Size(216, 24);
             this.ToolStripMenuItemBackup.Text = "Резервное копирование БД";
             // 
             // chainsDataSet1
@@ -208,50 +216,55 @@
             // Part
             // 
             this.Part.FormattingEnabled = true;
-            this.Part.Location = new System.Drawing.Point(78, 93);
+            this.Part.Location = new System.Drawing.Point(104, 114);
+            this.Part.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Part.Name = "Part";
-            this.Part.Size = new System.Drawing.Size(121, 21);
+            this.Part.Size = new System.Drawing.Size(160, 24);
             this.Part.TabIndex = 13;
             this.Part.TextChanged += new System.EventHandler(this.Part_TextChanged);
             // 
             // Calculation
             // 
             this.Calculation.FormattingEnabled = true;
-            this.Calculation.Location = new System.Drawing.Point(236, 93);
+            this.Calculation.Location = new System.Drawing.Point(315, 114);
+            this.Calculation.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Calculation.Name = "Calculation";
-            this.Calculation.Size = new System.Drawing.Size(121, 21);
+            this.Calculation.Size = new System.Drawing.Size(160, 24);
             this.Calculation.TabIndex = 14;
             this.Calculation.TextChanged += new System.EventHandler(this.Calculation_TextChanged);
             // 
             // TechnologicalProcess
             // 
             this.TechnologicalProcess.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.TechnologicalProcess.Location = new System.Drawing.Point(58, 152);
+            this.TechnologicalProcess.Location = new System.Drawing.Point(77, 146);
+            this.TechnologicalProcess.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.TechnologicalProcess.Name = "TechnologicalProcess";
-            this.TechnologicalProcess.Size = new System.Drawing.Size(340, 310);
+            this.TechnologicalProcess.Size = new System.Drawing.Size(946, 331);
             this.TechnologicalProcess.TabIndex = 15;
             // 
             // Surfaces
             // 
             this.Surfaces.FormattingEnabled = true;
-            this.Surfaces.Location = new System.Drawing.Point(474, 93);
+            this.Surfaces.Location = new System.Drawing.Point(632, 114);
+            this.Surfaces.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Surfaces.Name = "Surfaces";
-            this.Surfaces.Size = new System.Drawing.Size(252, 21);
+            this.Surfaces.Size = new System.Drawing.Size(335, 24);
             this.Surfaces.TabIndex = 16;
             // 
             // Operations
             // 
             this.Operations.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.Operations.Location = new System.Drawing.Point(464, 152);
+            this.Operations.Location = new System.Drawing.Point(77, 503);
+            this.Operations.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Operations.Name = "Operations";
-            this.Operations.Size = new System.Drawing.Size(303, 310);
+            this.Operations.Size = new System.Drawing.Size(946, 320);
             this.Operations.TabIndex = 17;
             // 
             // FormOfWorkWithDatabase
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1370, 593);
+            this.ClientSize = new System.Drawing.Size(1827, 921);
             this.Controls.Add(this.Operations);
             this.Controls.Add(this.Surfaces);
             this.Controls.Add(this.TechnologicalProcess);
@@ -267,6 +280,7 @@
             this.Controls.Add(this.button1);
             this.Controls.Add(this.menuStrip1);
             this.MainMenuStrip = this.menuStrip1;
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "FormOfWorkWithDatabase";
             this.Text = "База данных";
             this.Load += new System.EventHandler(this.Form4_Load);

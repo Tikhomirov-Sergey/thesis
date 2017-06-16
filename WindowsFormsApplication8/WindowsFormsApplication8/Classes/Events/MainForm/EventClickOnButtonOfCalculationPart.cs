@@ -12,11 +12,12 @@ namespace WindowsFormsApplication8
         {
             try
             {
+
                 ParametersOfSurface parameters = extractionOfParametersOfPartFromTextBoxes(form);
                 Part.setParametersOfPart(parameters);
                 Part.calculationOfSurfaces();
 
-                if (Part.getSurfaceOnIndex(1).getParametersOperation()[0] != null)
+                if (Part.getSurfaceOnIndex(1).getParametersOperation()[0] != null && !ErrorMessage.getGlobalError())
                 {
                     FormResult formResult = new FormResult();
                     formResult.ShowDialog();

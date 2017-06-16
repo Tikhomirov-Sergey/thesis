@@ -19,11 +19,11 @@ namespace WindowsFormsApplication8.DataStructures.PaarametersOfWorkpieces
             return nameOfWorkpiece;
         }
 
-        public ParametersWorkpiece getParametersWorkpiece()
+        public ParametersWorkpiece getParametersWorkpiece(int indexWorkpriece)
         {
             WindowsFormsApplication8.Interval interval = new WindowsFormsApplication8.Interval(recommendedIntervalRz);
 
-            ParametersWorkpiece workpiece = new ParametersWorkpiece(nameOfWorkpiece, idWorkpieces, surfaceRoughnessRz, interval, kvalitet, thicknessOfDefectiveCoating);
+            ParametersWorkpiece workpiece = new ParametersWorkpiece(nameOfWorkpiece, idWorkpieces, indexWorkpriece, surfaceRoughnessRz, interval, kvalitet, thicknessOfDefectiveCoating);
 
             return workpiece;
         }
