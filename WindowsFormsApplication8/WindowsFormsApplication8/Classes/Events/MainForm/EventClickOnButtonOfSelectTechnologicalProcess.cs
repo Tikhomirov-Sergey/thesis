@@ -54,6 +54,53 @@ namespace WindowsFormsApplication8
             form.delSurfaceButton.Enabled = true;
             form.SurfacesTreeView.Enabled = true;
             form.CalculationOfSchema.Visible = true;
+
+            form.LabelDiameterOfPart.Visible = true;
+            form.DiameterOfPart.Visible = true;
+            form.LabelTypeOfPart.Visible = true;
+            form.TypeOfPart.Visible = true;
+            form.LabelTypeOfAllowance.Visible = true;
+            form.TypeOfAllowance.Visible = true;
+            form.LabelTypeOfProcessedSurface.Visible = true;
+            form.TypeOfProcessedSurface.Visible = true;
+            form.LabelHoleDepth.Visible = true;
+            form.HoleDepth.Visible = true;
+            form.LabelAllowance.Visible = true;
+            form.Allowance.Visible = true;
+            form.LabelRoughness.Visible = true;
+            form.SurfaceRoughness.Visible = true;
+            form.pictureBox1.Visible = true;
+            form.pictureBox2.Visible = true;
+
+            form.LabelWorkpiece.Size = new Size(60, 13);
+            form.LabelWorkpiece.Location = new Point(588, 37);
+
+            form.NameOfWorkpiece.Size = new Size(424, 20);
+            form.NameOfWorkpiece.Location = new Point(654, 34);
+
+            form.ChoiceOfWorkpiece.Size = new Size(487, 55);
+            form.ChoiceOfWorkpiece.Location = new Point(591, 60);
+
+            form.TypeOfMachining.Size = new Size(234, 20);
+            form.TypeOfMachining.Location = new Point(676,131);
+
+            form.LabelTypeOfMachining.Size = new Size(82, 13);
+            form.LabelTypeOfMachining.Location = new Point(588, 134);
+
+            form.TypeOfInstrument.Size = new Size(203, 21);
+            form.TypeOfInstrument.Location = new Point(707, 169);
+
+            form.LabelTypeOfInstrument.Size = new Size(113, 13);
+            form.LabelTypeOfInstrument.Location = new Point(588, 172);
+
+            form.ChoiceOfOperation.Size = new Size(79, 78);
+            form.ChoiceOfOperation.Location = new Point(916, 121);
+
+            form.Backspace.Size = new Size(77, 35);
+            form.Backspace.Location = new Point(1001, 121);
+
+            form.SaveChanges.Size = new Size(77, 37);
+            form.SaveChanges.Location = new Point(1001, 162);
         }
 
         private static void distributionIdOnTechnologicalProcess(List<Operation> technologicalProcess)

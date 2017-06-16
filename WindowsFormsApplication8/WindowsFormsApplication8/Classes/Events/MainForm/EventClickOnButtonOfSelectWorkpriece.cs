@@ -37,6 +37,20 @@ namespace WindowsFormsApplication8
             form.Backspace.Enabled = true;
             form.CalculationOfSchema.Enabled = true;
             form.TypeOfInstrument.Enabled = true;
+            form.LabelWorkpiece.Visible = true;
+            form.NameOfWorkpiece.Visible = true;
+            form.LabelTypeOfMachining.Visible = true;
+            form.TypeOfMachining.Visible = true;
+            form.LabelTypeOfInstrument.Visible = true;
+            form.TypeOfInstrument.Visible = true;
+            form.ChoiceOfOperation.Visible = true;
+            form.Backspace.Visible = true;
+            form.SaveChanges.Visible = true;
+            form.TreeOfOperations.Visible = true;
+            form.labelOperationsOrTechProcess.Visible = true;
+            form.labelOfSelectedOperations.Visible = true;
+            form.TreeOfSelectedOperations.Visible = true;
+            form.SelectTechnologicalProcess.Visible = true;
         }
 
         public static void insertNameOfWorkpieceInTreeViewAndTextBox(MainForm form, string nameOfWorkpiece)

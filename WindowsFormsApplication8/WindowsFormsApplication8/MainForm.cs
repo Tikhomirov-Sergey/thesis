@@ -40,7 +40,7 @@ namespace WindowsFormsApplication8
                 Tables.getParametersOfSurfacesAfterVariousOperations().insertListOfOperationsInTreeView(this);
 
                 /////////////////////////////////надоело вводить ///////////////////////
-                FormOfSelectWorkpiece sel = new FormOfSelectWorkpiece();
+ /*               FormOfSelectWorkpiece sel = new FormOfSelectWorkpiece();
 
                 ParametersWorkpiece parameters = Tables.getParametersOfWorkpieces().getParametersWorkprieceOnIndex(1);
 
@@ -71,7 +71,7 @@ namespace WindowsFormsApplication8
                 EventClickOnButtonOfDeleteOperation.buttonDeleteOperation(this);
                 EventAddSurfaceButton.buttonAddSurface(this);
 
-
+*/
                // EventClickOnButtonOfCalculationPart.buttonOfCalculation(this);
               
             }
@@ -125,7 +125,7 @@ namespace WindowsFormsApplication8
 
         private void comboBox1_TextChanged(object sender, EventArgs e)
         {
-            if (TypeOfPart.SelectedIndex == 0) { HoleDepth.Visible = false; label17.Visible = false; } else { label17.Visible = true; HoleDepth.Visible = true; }
+            if (TypeOfPart.SelectedIndex == 0) { HoleDepth.Visible = false; LabelHoleDepth.Visible = false; } else { LabelHoleDepth.Visible = true; HoleDepth.Visible = true; }
         }
         
         private void открытьБДToolStripMenuItem_Click(object sender, EventArgs e)
@@ -218,8 +218,8 @@ namespace WindowsFormsApplication8
 
         private void comboBox3_TextChanged(object sender, EventArgs e)
         {
-            if (TypeOfAllowance.Text == "двухсторонний") { pictureBox1.Visible = true; pictureBox2.Visible = false; };
-            if (TypeOfAllowance.Text == "односторонний") { pictureBox1.Visible = false; pictureBox2.Visible = true; };
+            if (TypeOfAllowance.Text == "двухсторонний" && TypeOfAllowance.Visible == true) { pictureBox1.Visible = true; pictureBox2.Visible = false; };
+            if (TypeOfAllowance.Text == "односторонний" && TypeOfAllowance.Visible == true) { pictureBox1.Visible = false; pictureBox2.Visible = true; };
         }
 
         private void TreeOfSelectedOperations_NodeMouseClick(object sender, TreeNodeMouseClickEventArgs e)
