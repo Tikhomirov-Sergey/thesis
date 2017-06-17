@@ -43,7 +43,19 @@ namespace WindowsFormsApplication8
             form.labelOperationsOrTechProcess.Size = new Size(91,13);
             form.labelOperationsOrTechProcess.Location = new Point(169, 373);
 
+            form.TreeOfSelectedOperations.Location = new Point(438, 266);
+            form.TreeOfSelectedOperations.Size = new Size(590, 250);
+
             form.SelectTechnologicalProcess.Visible = false;
+            form.SelectTechnologicalProcess.Size = new Size(590, 35);
+            form.SelectTechnologicalProcess.Location = new Point(438, 522);
+            form.CalculationOfSchema.Size = new Size(590, 35);
+            
+
+            form.Size = new Size(1050, 600);
+
+            form.labelOfSelectedOperations.Location = new Point(683, 247);
+
             form.labelOperationsOrTechProcess.Text = "Тех. процесс";
             enabledTextBoxes(form);
         }
@@ -73,34 +85,34 @@ namespace WindowsFormsApplication8
             form.pictureBox2.Visible = true;
 
             form.LabelWorkpiece.Size = new Size(60, 13);
-            form.LabelWorkpiece.Location = new Point(588, 37);
+            form.LabelWorkpiece.Location = new Point(588, 7);
 
-            form.NameOfWorkpiece.Size = new Size(424, 20);
-            form.NameOfWorkpiece.Location = new Point(654, 34);
+            form.NameOfWorkpiece.Size = new Size(375, 20);
+            form.NameOfWorkpiece.Location = new Point(654, 4);
 
-            form.ChoiceOfWorkpiece.Size = new Size(487, 55);
-            form.ChoiceOfWorkpiece.Location = new Point(591, 60);
+            form.ChoiceOfWorkpiece.Size = new Size(437, 46);
+            form.ChoiceOfWorkpiece.Location = new Point(591, 30);
 
-            form.TypeOfMachining.Size = new Size(234, 20);
-            form.TypeOfMachining.Location = new Point(676,131);
+            form.TypeOfMachining.Size = new Size(175, 20);
+            form.TypeOfMachining.Location = new Point(686,155);
 
             form.LabelTypeOfMachining.Size = new Size(82, 13);
-            form.LabelTypeOfMachining.Location = new Point(588, 134);
+            form.LabelTypeOfMachining.Location = new Point(598, 158);
 
-            form.TypeOfInstrument.Size = new Size(203, 21);
-            form.TypeOfInstrument.Location = new Point(707, 169);
+            form.TypeOfInstrument.Size = new Size(144, 21);
+            form.TypeOfInstrument.Location = new Point(717, 193);
 
             form.LabelTypeOfInstrument.Size = new Size(113, 13);
-            form.LabelTypeOfInstrument.Location = new Point(588, 172);
+            form.LabelTypeOfInstrument.Location = new Point(598, 196);
 
             form.ChoiceOfOperation.Size = new Size(79, 78);
-            form.ChoiceOfOperation.Location = new Point(916, 121);
+            form.ChoiceOfOperation.Location = new Point(866, 147);
 
             form.Backspace.Size = new Size(77, 35);
-            form.Backspace.Location = new Point(1001, 121);
+            form.Backspace.Location = new Point(951, 147);
 
             form.SaveChanges.Size = new Size(77, 37);
-            form.SaveChanges.Location = new Point(1001, 162);
+            form.SaveChanges.Location = new Point(951, 188);
         }
 
         private static void distributionIdOnTechnologicalProcess(List<Operation> technologicalProcess)

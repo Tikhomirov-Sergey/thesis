@@ -40,7 +40,7 @@ namespace WindowsFormsApplication8
                 Tables.getParametersOfSurfacesAfterVariousOperations().insertListOfOperationsInTreeView(this);
 
                 /////////////////////////////////надоело вводить ///////////////////////
- /*               FormOfSelectWorkpiece sel = new FormOfSelectWorkpiece();
+                FormOfSelectWorkpiece sel = new FormOfSelectWorkpiece();
 
                 ParametersWorkpiece parameters = Tables.getParametersOfWorkpieces().getParametersWorkprieceOnIndex(1);
 
@@ -71,7 +71,7 @@ namespace WindowsFormsApplication8
                 EventClickOnButtonOfDeleteOperation.buttonDeleteOperation(this);
                 EventAddSurfaceButton.buttonAddSurface(this);
 
-*/
+
                // EventClickOnButtonOfCalculationPart.buttonOfCalculation(this);
               
             }

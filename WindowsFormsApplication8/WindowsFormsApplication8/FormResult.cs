@@ -30,15 +30,19 @@ namespace WindowsFormsApplication8
 
         private void buttonSaveToDisk_Click(object sender, EventArgs e)
         {
-            SaveFileDialog sfd = new SaveFileDialog();
-            sfd.Filter = "Текстовый документ (*.txt)|*.txt|Все файлы (*.*)|*.*";
 
-            if (sfd.ShowDialog() == System.Windows.Forms.DialogResult.OK)
-            {
-                StreamWriter sw = new StreamWriter(sfd.FileName);
-                sw.WriteLine(richTextBoxResult.Text);
-                sw.Close();
-            }
+             string text = ClickOnSaveToFile.getText();
+             SaveFileDialog sfd = new SaveFileDialog();
+             sfd.Filter = "Текстовый документ (*.txt)|*.txt|Все файлы (*.*)|*.*";
+
+             if (sfd.ShowDialog() == System.Windows.Forms.DialogResult.OK)
+             {
+                 StreamWriter sw = new StreamWriter(sfd.FileName);
+                 sw.WriteLine(richTextBox1.Text);
+                 sw.Close();
+             }
+             
+            
         }
 
         private void buttonSaveToBase_Click(object sender, EventArgs e)

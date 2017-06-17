@@ -120,6 +120,7 @@
     <Compile Include="Classes\AuxiliaryСlasses\CheckString.cs" />
     <Compile Include="Classes\Events\FormOfSaveToDatabase\EventClickOnButtonOfSaveToDatabase.cs" />
     <Compile Include="Classes\Events\FormOfWorkWithDatabase\EventClickOnButtonOfSelectPart.cs" />
+    <Compile Include="Classes\Events\FormResult\ClickOnSaveToFile.cs" />
     <Compile Include="Classes\Events\FormResult\ClickOnSurfacesTreeView.cs" />
     <Compile Include="Classes\Events\FormSelectWorkpriece\EventClickOnButtonOfSelectWorkpriece.cs" />
     <Compile Include="Classes\Events\FormSelectWorkpriece\EventOutputDataFromDataBase.cs" />

@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using System.Drawing;
 
 namespace WindowsFormsApplication8
 {
@@ -51,6 +52,9 @@ namespace WindowsFormsApplication8
             form.labelOfSelectedOperations.Visible = true;
             form.TreeOfSelectedOperations.Visible = true;
             form.SelectTechnologicalProcess.Visible = true;
+            form.Size = new Size(922, 495);
+            form.ChoiceOfWorkpiece.Size = new Size(437, 46);
+            form.ChoiceOfWorkpiece.Location = new Point(465, 28);
         }
 
         public static void insertNameOfWorkpieceInTreeViewAndTextBox(MainForm form, string nameOfWorkpiece)

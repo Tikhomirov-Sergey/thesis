@@ -582,10 +582,6 @@ C:\Users\admin\Documents\GitHub\thesis\WindowsFormsApplication8\WindowsFormsAppl
 C:\Users\admin\Documents\GitHub\thesis\WindowsFormsApplication8\WindowsFormsApplication8\bin\Debug\WindowsFormsApplication8.pdb
 C:\Users\admin\Documents\GitHub\thesis\WindowsFormsApplication8\WindowsFormsApplication8\bin\Debug\Newtonsoft.Json.dll
 C:\Users\admin\Documents\GitHub\thesis\WindowsFormsApplication8\WindowsFormsApplication8\bin\Debug\Newtonsoft.Json.xml
-C:\Users\Sergei\Documents\GitHub\thesis\WindowsFormsApplication8\WindowsFormsApplication8\bin\Debug\juliaDataSet.Designer.cs
-C:\Users\Sergei\Documents\GitHub\thesis\WindowsFormsApplication8\WindowsFormsApplication8\bin\Debug\juliaDataSet.xsc
-C:\Users\Sergei\Documents\GitHub\thesis\WindowsFormsApplication8\WindowsFormsApplication8\bin\Debug\juliaDataSet.xsd
-C:\Users\Sergei\Documents\GitHub\thesis\WindowsFormsApplication8\WindowsFormsApplication8\bin\Debug\juliaDataSet.xss
 C:\Users\Sergei\Documents\GitHub\thesis\WindowsFormsApplication8\WindowsFormsApplication8\bin\Debug\WindowsFormsApplication8.exe.config
 C:\Users\Sergei\Documents\GitHub\thesis\WindowsFormsApplication8\WindowsFormsApplication8\bin\Debug\WindowsFormsApplication8.exe
 C:\Users\Sergei\Documents\GitHub\thesis\WindowsFormsApplication8\WindowsFormsApplication8\bin\Debug\WindowsFormsApplication8.pdb
@@ -661,3 +657,15 @@ C:\Users\admin\Documents\GitHub\thesis\WindowsFormsApplication8\WindowsFormsAppl
 C:\Users\admin\Documents\GitHub\thesis\WindowsFormsApplication8\WindowsFormsApplication8\bin\Debug\Microsoft.SqlServer.SmoExtended.dll
 C:\Users\admin\Documents\GitHub\thesis\WindowsFormsApplication8\WindowsFormsApplication8\bin\Debug\Microsoft.SqlServer.SqlClrProvider.dll
 C:\Users\admin\Documents\GitHub\thesis\WindowsFormsApplication8\WindowsFormsApplication8\bin\Debug\Microsoft.SqlServer.SqlEnum.dll
+C:\Users\Sergei\Documents\GitHub\thesis\WindowsFormsApplication8\WindowsFormsApplication8\bin\Debug\Chains.mdf
+C:\Users\Sergei\Documents\GitHub\thesis\WindowsFormsApplication8\WindowsFormsApplication8\bin\Debug\Chains_log.ldf
+C:\Users\Sergei\Documents\GitHub\thesis\WindowsFormsApplication8\WindowsFormsApplication8\bin\Debug\Microsoft.Data.ConnectionUI.Dialog.dll
+C:\Users\Sergei\Documents\GitHub\thesis\WindowsFormsApplication8\WindowsFormsApplication8\bin\Debug\Microsoft.Data.ConnectionUI.dll
+C:\Users\Sergei\Documents\GitHub\thesis\WindowsFormsApplication8\WindowsFormsApplication8\bin\Debug\Microsoft.SqlServer.ConnectionInfo.dll
+C:\Users\Sergei\Documents\GitHub\thesis\WindowsFormsApplication8\WindowsFormsApplication8\bin\Debug\Microsoft.SqlServer.ConnectionInfoExtended.dll
+C:\Users\Sergei\Documents\GitHub\thesis\WindowsFormsApplication8\WindowsFormsApplication8\bin\Debug\Microsoft.SqlServer.Management.Sdk.Sfc.dll
+C:\Users\Sergei\Documents\GitHub\thesis\WindowsFormsApplication8\WindowsFormsApplication8\bin\Debug\Microsoft.SqlServer.Smo.dll
+C:\Users\Sergei\Documents\GitHub\thesis\WindowsFormsApplication8\WindowsFormsApplication8\bin\Debug\Microsoft.SqlServer.SmoExtended.dll
+C:\Users\Sergei\Documents\GitHub\thesis\WindowsFormsApplication8\WindowsFormsApplication8\bin\Debug\Microsoft.SqlServer.SqlClrProvider.dll
+C:\Users\Sergei\Documents\GitHub\thesis\WindowsFormsApplication8\WindowsFormsApplication8\bin\Debug\Microsoft.SqlServer.SqlEnum.dll
+C:\Users\Sergei\Documents\GitHub\thesis\WindowsFormsApplication8\WindowsFormsApplication8\obj\x86\Debug\WindowsFormsApplication8.DBAdminForm.resources
