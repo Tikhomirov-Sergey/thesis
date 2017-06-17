@@ -71,7 +71,7 @@ namespace WindowsFormsApplication8
                 EventClickOnButtonOfDeleteOperation.buttonDeleteOperation(this);
                 EventAddSurfaceButton.buttonAddSurface(this);
 
-
+    
                // EventClickOnButtonOfCalculationPart.buttonOfCalculation(this);
               
             }
@@ -113,7 +113,6 @@ namespace WindowsFormsApplication8
         {
             try
             {
-                              
                 EventClickOnButtonOfCalculationPart.buttonOfCalculation(this);
             }
             catch { }
@@ -234,6 +233,7 @@ namespace WindowsFormsApplication8
 
         private void TreeOfSelectedOperations_AfterSelect(object sender, TreeViewEventArgs e)
         {
+            EventClickOfMouseOnSurfacesTreeView.storageParametersOfSurface(this, e.Node.Index);
             EventTreeViewAfterSelectOperations.alferSelect(this, (TreeView)sender, e);
         }
 

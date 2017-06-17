@@ -20,14 +20,14 @@ namespace WindowsFormsApplication8
 
         private void Form4_Load(object sender, EventArgs e)
         {
-            EventOutputDataFromDataBase.getListNamesPartsInComboBox(this);
+           EventOutputDataFromDataBase.getListNamesPartsInComboBox(this);
         }
 
         private void button1_Click(object sender, EventArgs e)
         {
             try
             {
-                EventClickOnButtonOfSelectPart.buttonSelectPartInFormOfWorkWithDatabase(this, parrentForm);
+                //EventClickOnButtonOfSelectPart.buttonSelectPartInFormOfWorkWithDatabase(this, parrentForm);
 
             }
             catch { }

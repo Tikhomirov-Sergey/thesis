@@ -54,6 +54,7 @@
             this.TechnologicalProcess = new System.Windows.Forms.DataGridView();
             this.Surfaces = new System.Windows.Forms.ComboBox();
             this.Operations = new System.Windows.Forms.DataGridView();
+            this.LengthPart = new System.Windows.Forms.TextBox();
             this.menuStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.chainsDataSet1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.detailBindingSource)).BeginInit();
@@ -67,7 +68,7 @@
             // button1
             // 
             this.button1.Location = new System.Drawing.Point(800, 46);
-            this.button1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.button1.Margin = new System.Windows.Forms.Padding(4);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(117, 50);
             this.button1.TabIndex = 2;
@@ -88,7 +89,7 @@
             // textBox1
             // 
             this.textBox1.Location = new System.Drawing.Point(132, 57);
-            this.textBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.textBox1.Margin = new System.Windows.Forms.Padding(4);
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(132, 22);
             this.textBox1.TabIndex = 5;
@@ -96,7 +97,7 @@
             // button2
             // 
             this.button2.Location = new System.Drawing.Point(272, 55);
-            this.button2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.button2.Margin = new System.Windows.Forms.Padding(4);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(100, 28);
             this.button2.TabIndex = 6;
@@ -106,7 +107,7 @@
             // button3
             // 
             this.button3.Location = new System.Drawing.Point(925, 46);
-            this.button3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.button3.Margin = new System.Windows.Forms.Padding(4);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(144, 50);
             this.button3.TabIndex = 7;
@@ -116,7 +117,7 @@
             // button4
             // 
             this.button4.Location = new System.Drawing.Point(675, 54);
-            this.button4.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.button4.Margin = new System.Windows.Forms.Padding(4);
             this.button4.Name = "button4";
             this.button4.Size = new System.Drawing.Size(100, 28);
             this.button4.TabIndex = 8;
@@ -126,7 +127,7 @@
             // textBox2
             // 
             this.textBox2.Location = new System.Drawing.Point(535, 57);
-            this.textBox2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.textBox2.Margin = new System.Windows.Forms.Padding(4);
             this.textBox2.Name = "textBox2";
             this.textBox2.Size = new System.Drawing.Size(132, 22);
             this.textBox2.TabIndex = 9;
@@ -217,7 +218,7 @@
             // 
             this.Part.FormattingEnabled = true;
             this.Part.Location = new System.Drawing.Point(104, 114);
-            this.Part.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Part.Margin = new System.Windows.Forms.Padding(4);
             this.Part.Name = "Part";
             this.Part.Size = new System.Drawing.Size(160, 24);
             this.Part.TabIndex = 13;
@@ -227,7 +228,7 @@
             // 
             this.Calculation.FormattingEnabled = true;
             this.Calculation.Location = new System.Drawing.Point(315, 114);
-            this.Calculation.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Calculation.Margin = new System.Windows.Forms.Padding(4);
             this.Calculation.Name = "Calculation";
             this.Calculation.Size = new System.Drawing.Size(160, 24);
             this.Calculation.TabIndex = 14;
@@ -237,7 +238,7 @@
             // 
             this.TechnologicalProcess.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.TechnologicalProcess.Location = new System.Drawing.Point(77, 146);
-            this.TechnologicalProcess.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.TechnologicalProcess.Margin = new System.Windows.Forms.Padding(4);
             this.TechnologicalProcess.Name = "TechnologicalProcess";
             this.TechnologicalProcess.Size = new System.Drawing.Size(946, 331);
             this.TechnologicalProcess.TabIndex = 15;
@@ -246,7 +247,7 @@
             // 
             this.Surfaces.FormattingEnabled = true;
             this.Surfaces.Location = new System.Drawing.Point(632, 114);
-            this.Surfaces.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Surfaces.Margin = new System.Windows.Forms.Padding(4);
             this.Surfaces.Name = "Surfaces";
             this.Surfaces.Size = new System.Drawing.Size(335, 24);
             this.Surfaces.TabIndex = 16;
@@ -255,16 +256,24 @@
             // 
             this.Operations.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.Operations.Location = new System.Drawing.Point(77, 503);
-            this.Operations.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Operations.Margin = new System.Windows.Forms.Padding(4);
             this.Operations.Name = "Operations";
             this.Operations.Size = new System.Drawing.Size(946, 320);
             this.Operations.TabIndex = 17;
+            // 
+            // LengthPart
+            // 
+            this.LengthPart.Location = new System.Drawing.Point(170, 87);
+            this.LengthPart.Name = "LengthPart";
+            this.LengthPart.Size = new System.Drawing.Size(100, 22);
+            this.LengthPart.TabIndex = 18;
             // 
             // FormOfWorkWithDatabase
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1827, 921);
+            this.Controls.Add(this.LengthPart);
             this.Controls.Add(this.Operations);
             this.Controls.Add(this.Surfaces);
             this.Controls.Add(this.TechnologicalProcess);
@@ -280,7 +289,7 @@
             this.Controls.Add(this.button1);
             this.Controls.Add(this.menuStrip1);
             this.MainMenuStrip = this.menuStrip1;
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "FormOfWorkWithDatabase";
             this.Text = "База данных";
             this.Load += new System.EventHandler(this.Form4_Load);
@@ -360,5 +369,6 @@
         protected internal System.Windows.Forms.DataGridView TechnologicalProcess;
         protected internal System.Windows.Forms.ComboBox Surfaces;
         protected internal System.Windows.Forms.DataGridView Operations;
+        protected internal System.Windows.Forms.TextBox LengthPart;
     }
 }

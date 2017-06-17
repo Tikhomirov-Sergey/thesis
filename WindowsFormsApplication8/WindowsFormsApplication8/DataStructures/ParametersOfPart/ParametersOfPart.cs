@@ -18,11 +18,10 @@ namespace WindowsFormsApplication8
         private double allowance;
         private double holeDepth;
 
-        public ParametersOfSurface(double lengthOfPart, double diameterOfPart,
+        public ParametersOfSurface(double diameterOfPart,
             TypeOfPart typeOfPart, TypeOfPart typeOfAllowance, TypeOfPart typeOfProcessedSurface,
             double surfaceRoughness, double allowance, double holeDepth = 0)
         {
-            this.lengthOfPart = lengthOfPart;
             this.diameterOfPart = diameterOfPart;
             this.typeOfPart = typeOfPart;
             this.typeOfAllowance = typeOfAllowance;
@@ -32,9 +31,19 @@ namespace WindowsFormsApplication8
             this.holeDepth = holeDepth;
         }
 
+        public ParametersOfSurface()
+        {
+            this.diameterOfPart = 0;
+            this.typeOfPart = null;
+            this.typeOfAllowance = null;
+            this.typeOfProcessedSurface = null;
+            this.surfaceRoughness = 0;
+            this.allowance = 0;
+            this.holeDepth = 0;
+        }
+
         public void insertParametersOfPartInTextboxes(MainForm form)
         {
-            form.LengthOfPart.Text = this.lengthOfPart.ToString();
             form.DiameterOfPart.Text = this.diameterOfPart.ToString();
 
             form.TypeOfPart.SelectedIndex = this.typeOfPart.getIndex();

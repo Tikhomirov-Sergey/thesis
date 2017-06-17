@@ -31,7 +31,7 @@ namespace WindowsFormsApplication8
         private void buttonSaveToDisk_Click(object sender, EventArgs e)
         {
 
-             string text = ClickOnSaveToFile.getText();
+            // string text = ClickOnSaveToFile.getText();
              SaveFileDialog sfd = new SaveFileDialog();
              sfd.Filter = "Текстовый документ (*.txt)|*.txt|Все файлы (*.*)|*.*";
 

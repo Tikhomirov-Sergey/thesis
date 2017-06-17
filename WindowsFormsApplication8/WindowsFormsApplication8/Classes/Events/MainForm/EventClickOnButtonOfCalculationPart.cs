@@ -14,6 +14,7 @@ namespace WindowsFormsApplication8
             {
 
                 ParametersOfSurface parameters = extractionOfParametersOfPartFromTextBoxes(form);
+                //SUFACE            
                 Part.setParametersOfPart(parameters);
                 Part.calculationOfSurfaces();
 
@@ -40,7 +41,7 @@ namespace WindowsFormsApplication8
             double holeDepth = StringConvertToDoubleOrZero(form.HoleDepth.Text);
 
 
-            ParametersOfSurface parameters = new ParametersOfSurface(lengthOfPart, diameterOfPart,typeOfPart, typeOfAllowance, typeOfProcessedSurface, surfaceRoughness, allowance, holeDepth);
+            ParametersOfSurface parameters = new ParametersOfSurface(diameterOfPart,typeOfPart, typeOfAllowance, typeOfProcessedSurface, surfaceRoughness, allowance, holeDepth);
             return parameters;
         }
 

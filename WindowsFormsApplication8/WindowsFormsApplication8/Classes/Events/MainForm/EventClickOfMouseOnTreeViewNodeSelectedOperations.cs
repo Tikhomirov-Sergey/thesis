@@ -25,7 +25,6 @@ namespace WindowsFormsApplication8
                Operation operation = Part.getSurfaceOnIndex(idSelectedSurface).getOperationOnIndex(index);
                StorageOfSelectedOperation.setOperation(operation);
 
-                MessageBox.Show(operation.getIdOnTechnologicalProcess().ToString());
                StorageOfSelectedOperation.insertParametersOfOperationsInTextboxes(form);
             }
         }

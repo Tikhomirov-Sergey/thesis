@@ -8,20 +8,31 @@ namespace WindowsFormsApplication8
 {
     class Part
     {
-        private static ParametersOfSurface parametersOfPart = null;
+        private static ParametersOfSurface parametersOfSurface = null;
         private static ParametersWorkpiece workpriece = null;
+        private static double lenght;
 
         //surfaces[0] = technologicalProcess;
         private static List<Surface> surfaces = new List<Surface>();
         
         public static ParametersOfSurface getParametersOfPart()
         {
-            return parametersOfPart;
+            return parametersOfSurface;
         }
 
         public static void setParametersOfPart(ParametersOfSurface parametersOfPart)
         {
-            Part.parametersOfPart = parametersOfPart;
+            Part.parametersOfSurface = parametersOfPart;
+        }
+
+        public static double getLenghtOfPart()
+        {
+            return lenght;
+        }
+
+        public static void setLenghtOfPart(double lenght)
+        {
+            Part.lenght = lenght;
         }
 
         public static ParametersWorkpiece getWorkpiece()
@@ -119,7 +130,7 @@ namespace WindowsFormsApplication8
 
         public static void insertParametersOfPartInTextboxes(MainForm form)
         {
-            parametersOfPart.insertParametersOfPartInTextboxes(form);
+            parametersOfSurface.insertParametersOfPartInTextboxes(form);
         }
 
         public static void insertNameOfWorkpieceInTreeViewAndTextBox(MainForm form)
