@@ -120,7 +120,11 @@
     <Compile Include="Classes\AuxiliaryСlasses\CheckString.cs" />
     <Compile Include="Classes\Events\FormOfSaveToDatabase\EventClickOnButtonOfSaveToDatabase.cs" />
     <Compile Include="Classes\Events\FormOfWorkWithDatabase\Dependence\DependenceCalculation.cs" />
+    <Compile Include="Classes\Events\FormOfWorkWithDatabase\Dependence\DependenceOperations.cs" />
     <Compile Include="Classes\Events\FormOfWorkWithDatabase\Dependence\DependencePart.cs" />
+    <Compile Include="Classes\Events\FormOfWorkWithDatabase\Dependence\DependenceSurface.cs" />
+    <Compile Include="Classes\Events\FormOfWorkWithDatabase\Dependence\DependenceTechnologicalProcess.cs" />
+    <Compile Include="Classes\Events\FormOfWorkWithDatabase\Dependence\DependenceWorkpriece.cs" />
     <Compile Include="Classes\Events\FormOfWorkWithDatabase\EventClickOnButtonOfSelectPart.cs" />
     <Compile Include="Classes\Events\FormResult\ClickOnSurfacesTreeView.cs" />
     <Compile Include="Classes\Events\FormSelectWorkpriece\EventClickOnButtonOfSelectWorkpriece.cs" />
@@ -292,15 +296,6 @@
       <ProductName>Windows Installer 4.5</ProductName>
       <Install>true</Install>
     </BootstrapperPackage>
-  </ItemGroup>
-  <ItemGroup>
-    <Content Include="Chains.mdf">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Chains_log.ldf">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-      <DependentUpon>Chains.mdf</DependentUpon>
-    </Content>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

@@ -51,26 +51,30 @@
             this.surfaceBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.Part = new System.Windows.Forms.ComboBox();
             this.Calculation = new System.Windows.Forms.ComboBox();
-            this.TechnologicalProcess = new System.Windows.Forms.DataGridView();
             this.Surfaces = new System.Windows.Forms.ComboBox();
-            this.Operations = new System.Windows.Forms.DataGridView();
             this.LengthPart = new System.Windows.Forms.TextBox();
+            this.TechnologicalProcess = new System.Windows.Forms.TreeView();
+            this.diameterOfSurface = new System.Windows.Forms.TextBox();
+            this.typeOfPart = new System.Windows.Forms.TextBox();
+            this.typeOfAllowance = new System.Windows.Forms.TextBox();
+            this.TypeOfProcessedSurface = new System.Windows.Forms.TextBox();
+            this.SurfaceRoughness = new System.Windows.Forms.TextBox();
+            this.HoleDepth = new System.Windows.Forms.TextBox();
+            this.Tolerance = new System.Windows.Forms.TextBox();
+            this.Operations = new System.Windows.Forms.TreeView();
             this.menuStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.chainsDataSet1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.detailBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.calculationBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.operationsBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.surfaceBindingSource)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.TechnologicalProcess)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.Operations)).BeginInit();
             this.SuspendLayout();
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(800, 46);
-            this.button1.Margin = new System.Windows.Forms.Padding(4);
+            this.button1.Location = new System.Drawing.Point(600, 37);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(117, 50);
+            this.button1.Size = new System.Drawing.Size(88, 41);
             this.button1.TabIndex = 2;
             this.button1.Text = "Выбор записи \r\n       из БД";
             this.button1.UseVisualStyleBackColor = true;
@@ -79,68 +83,61 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(420, 60);
-            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label1.Location = new System.Drawing.Point(315, 49);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(107, 17);
+            this.label1.Size = new System.Drawing.Size(83, 13);
             this.label1.TabIndex = 4;
             this.label1.Text = "Поиск по дате:";
             // 
             // textBox1
             // 
-            this.textBox1.Location = new System.Drawing.Point(132, 57);
-            this.textBox1.Margin = new System.Windows.Forms.Padding(4);
+            this.textBox1.Location = new System.Drawing.Point(99, 46);
             this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(132, 22);
+            this.textBox1.Size = new System.Drawing.Size(100, 20);
             this.textBox1.TabIndex = 5;
             // 
             // button2
             // 
-            this.button2.Location = new System.Drawing.Point(272, 55);
-            this.button2.Margin = new System.Windows.Forms.Padding(4);
+            this.button2.Location = new System.Drawing.Point(204, 45);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(100, 28);
+            this.button2.Size = new System.Drawing.Size(75, 23);
             this.button2.TabIndex = 6;
             this.button2.Text = "Поиск";
             this.button2.UseVisualStyleBackColor = true;
             // 
             // button3
             // 
-            this.button3.Location = new System.Drawing.Point(925, 46);
-            this.button3.Margin = new System.Windows.Forms.Padding(4);
+            this.button3.Location = new System.Drawing.Point(694, 37);
             this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(144, 50);
+            this.button3.Size = new System.Drawing.Size(108, 41);
             this.button3.TabIndex = 7;
             this.button3.Text = "Удаление записи \r\n        из БД";
             this.button3.UseVisualStyleBackColor = true;
             // 
             // button4
             // 
-            this.button4.Location = new System.Drawing.Point(675, 54);
-            this.button4.Margin = new System.Windows.Forms.Padding(4);
+            this.button4.Location = new System.Drawing.Point(506, 44);
             this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(100, 28);
+            this.button4.Size = new System.Drawing.Size(75, 23);
             this.button4.TabIndex = 8;
             this.button4.Text = "Поиск";
             this.button4.UseVisualStyleBackColor = true;
             // 
             // textBox2
             // 
-            this.textBox2.Location = new System.Drawing.Point(535, 57);
-            this.textBox2.Margin = new System.Windows.Forms.Padding(4);
+            this.textBox2.Location = new System.Drawing.Point(401, 46);
             this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(132, 22);
+            this.textBox2.Size = new System.Drawing.Size(100, 20);
             this.textBox2.TabIndex = 9;
             // 
             // label2
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label2.Location = new System.Drawing.Point(13, 46);
-            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label2.Location = new System.Drawing.Point(10, 37);
             this.label2.Name = "label2";
             this.label2.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.label2.Size = new System.Drawing.Size(106, 51);
+            this.label2.Size = new System.Drawing.Size(83, 39);
             this.label2.TabIndex = 10;
             this.label2.Text = "Поиск по\r\nнаименованию\r\nдетали:";
             // 
@@ -151,15 +148,15 @@
             this.ToolStripMenuItemBackup});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Padding = new System.Windows.Forms.Padding(5, 2, 0, 2);
-            this.menuStrip1.Size = new System.Drawing.Size(1827, 28);
+            this.menuStrip1.Padding = new System.Windows.Forms.Padding(4, 2, 0, 2);
+            this.menuStrip1.Size = new System.Drawing.Size(1370, 24);
             this.menuStrip1.TabIndex = 12;
             this.menuStrip1.Text = "menuStrip1";
             // 
             // ToolStripMenuItemBackup
             // 
             this.ToolStripMenuItemBackup.Name = "ToolStripMenuItemBackup";
-            this.ToolStripMenuItemBackup.Size = new System.Drawing.Size(216, 24);
+            this.ToolStripMenuItemBackup.Size = new System.Drawing.Size(170, 20);
             this.ToolStripMenuItemBackup.Text = "Резервное копирование БД";
             // 
             // chainsDataSet1
@@ -217,66 +214,117 @@
             // Part
             // 
             this.Part.FormattingEnabled = true;
-            this.Part.Location = new System.Drawing.Point(104, 114);
-            this.Part.Margin = new System.Windows.Forms.Padding(4);
+            this.Part.Location = new System.Drawing.Point(78, 93);
             this.Part.Name = "Part";
-            this.Part.Size = new System.Drawing.Size(160, 24);
+            this.Part.Size = new System.Drawing.Size(121, 21);
             this.Part.TabIndex = 13;
             this.Part.TextChanged += new System.EventHandler(this.Part_TextChanged);
             // 
             // Calculation
             // 
             this.Calculation.FormattingEnabled = true;
-            this.Calculation.Location = new System.Drawing.Point(315, 114);
-            this.Calculation.Margin = new System.Windows.Forms.Padding(4);
+            this.Calculation.Location = new System.Drawing.Point(236, 93);
             this.Calculation.Name = "Calculation";
-            this.Calculation.Size = new System.Drawing.Size(160, 24);
+            this.Calculation.Size = new System.Drawing.Size(121, 21);
             this.Calculation.TabIndex = 14;
             this.Calculation.TextChanged += new System.EventHandler(this.Calculation_TextChanged);
-            // 
-            // TechnologicalProcess
-            // 
-            this.TechnologicalProcess.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.TechnologicalProcess.Location = new System.Drawing.Point(77, 146);
-            this.TechnologicalProcess.Margin = new System.Windows.Forms.Padding(4);
-            this.TechnologicalProcess.Name = "TechnologicalProcess";
-            this.TechnologicalProcess.Size = new System.Drawing.Size(946, 331);
-            this.TechnologicalProcess.TabIndex = 15;
             // 
             // Surfaces
             // 
             this.Surfaces.FormattingEnabled = true;
-            this.Surfaces.Location = new System.Drawing.Point(632, 114);
-            this.Surfaces.Margin = new System.Windows.Forms.Padding(4);
+            this.Surfaces.Location = new System.Drawing.Point(474, 93);
             this.Surfaces.Name = "Surfaces";
-            this.Surfaces.Size = new System.Drawing.Size(335, 24);
+            this.Surfaces.Size = new System.Drawing.Size(252, 21);
             this.Surfaces.TabIndex = 16;
-            // 
-            // Operations
-            // 
-            this.Operations.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.Operations.Location = new System.Drawing.Point(77, 503);
-            this.Operations.Margin = new System.Windows.Forms.Padding(4);
-            this.Operations.Name = "Operations";
-            this.Operations.Size = new System.Drawing.Size(946, 320);
-            this.Operations.TabIndex = 17;
+            this.Surfaces.TextChanged += new System.EventHandler(this.Surfaces_TextChanged);
             // 
             // LengthPart
             // 
-            this.LengthPart.Location = new System.Drawing.Point(170, 87);
+            this.LengthPart.Location = new System.Drawing.Point(128, 71);
+            this.LengthPart.Margin = new System.Windows.Forms.Padding(2);
             this.LengthPart.Name = "LengthPart";
-            this.LengthPart.Size = new System.Drawing.Size(100, 22);
+            this.LengthPart.Size = new System.Drawing.Size(76, 20);
             this.LengthPart.TabIndex = 18;
+            // 
+            // TechnologicalProcess
+            // 
+            this.TechnologicalProcess.Location = new System.Drawing.Point(78, 141);
+            this.TechnologicalProcess.Name = "TechnologicalProcess";
+            this.TechnologicalProcess.Size = new System.Drawing.Size(486, 119);
+            this.TechnologicalProcess.TabIndex = 19;
+            // 
+            // diameterOfSurface
+            // 
+            this.diameterOfSurface.Location = new System.Drawing.Point(218, 71);
+            this.diameterOfSurface.Name = "diameterOfSurface";
+            this.diameterOfSurface.Size = new System.Drawing.Size(100, 20);
+            this.diameterOfSurface.TabIndex = 20;
+            // 
+            // typeOfPart
+            // 
+            this.typeOfPart.Location = new System.Drawing.Point(844, 49);
+            this.typeOfPart.Name = "typeOfPart";
+            this.typeOfPart.Size = new System.Drawing.Size(100, 20);
+            this.typeOfPart.TabIndex = 21;
+            // 
+            // typeOfAllowance
+            // 
+            this.typeOfAllowance.Location = new System.Drawing.Point(844, 71);
+            this.typeOfAllowance.Name = "typeOfAllowance";
+            this.typeOfAllowance.Size = new System.Drawing.Size(100, 20);
+            this.typeOfAllowance.TabIndex = 22;
+            // 
+            // TypeOfProcessedSurface
+            // 
+            this.TypeOfProcessedSurface.Location = new System.Drawing.Point(844, 97);
+            this.TypeOfProcessedSurface.Name = "TypeOfProcessedSurface";
+            this.TypeOfProcessedSurface.Size = new System.Drawing.Size(100, 20);
+            this.TypeOfProcessedSurface.TabIndex = 23;
+            // 
+            // SurfaceRoughness
+            // 
+            this.SurfaceRoughness.Location = new System.Drawing.Point(358, 71);
+            this.SurfaceRoughness.Name = "SurfaceRoughness";
+            this.SurfaceRoughness.Size = new System.Drawing.Size(40, 20);
+            this.SurfaceRoughness.TabIndex = 24;
+            // 
+            // HoleDepth
+            // 
+            this.HoleDepth.Location = new System.Drawing.Point(401, 71);
+            this.HoleDepth.Name = "HoleDepth";
+            this.HoleDepth.Size = new System.Drawing.Size(50, 20);
+            this.HoleDepth.TabIndex = 25;
+            // 
+            // Tolerance
+            // 
+            this.Tolerance.Location = new System.Drawing.Point(457, 71);
+            this.Tolerance.Name = "Tolerance";
+            this.Tolerance.Size = new System.Drawing.Size(45, 20);
+            this.Tolerance.TabIndex = 26;
+            // 
+            // Operations
+            // 
+            this.Operations.Location = new System.Drawing.Point(78, 289);
+            this.Operations.Name = "Operations";
+            this.Operations.Size = new System.Drawing.Size(486, 147);
+            this.Operations.TabIndex = 27;
             // 
             // FormOfWorkWithDatabase
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1827, 921);
-            this.Controls.Add(this.LengthPart);
+            this.ClientSize = new System.Drawing.Size(1370, 748);
             this.Controls.Add(this.Operations);
-            this.Controls.Add(this.Surfaces);
+            this.Controls.Add(this.Tolerance);
+            this.Controls.Add(this.HoleDepth);
+            this.Controls.Add(this.SurfaceRoughness);
+            this.Controls.Add(this.TypeOfProcessedSurface);
+            this.Controls.Add(this.typeOfAllowance);
+            this.Controls.Add(this.typeOfPart);
+            this.Controls.Add(this.diameterOfSurface);
             this.Controls.Add(this.TechnologicalProcess);
+            this.Controls.Add(this.LengthPart);
+            this.Controls.Add(this.Surfaces);
             this.Controls.Add(this.Calculation);
             this.Controls.Add(this.Part);
             this.Controls.Add(this.label2);
@@ -289,7 +337,6 @@
             this.Controls.Add(this.button1);
             this.Controls.Add(this.menuStrip1);
             this.MainMenuStrip = this.menuStrip1;
-            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "FormOfWorkWithDatabase";
             this.Text = "База данных";
             this.Load += new System.EventHandler(this.Form4_Load);
@@ -300,8 +347,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.calculationBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.operationsBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.surfaceBindingSource)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.TechnologicalProcess)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.Operations)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -366,9 +411,16 @@
         private System.Windows.Forms.BindingSource surfaceBindingSource;
         protected internal System.Windows.Forms.ComboBox Part;
         protected internal System.Windows.Forms.ComboBox Calculation;
-        protected internal System.Windows.Forms.DataGridView TechnologicalProcess;
         protected internal System.Windows.Forms.ComboBox Surfaces;
-        protected internal System.Windows.Forms.DataGridView Operations;
         protected internal System.Windows.Forms.TextBox LengthPart;
+        protected internal System.Windows.Forms.TreeView TechnologicalProcess;
+        protected internal System.Windows.Forms.TextBox diameterOfSurface;
+        protected internal System.Windows.Forms.TextBox typeOfPart;
+        protected internal System.Windows.Forms.TextBox typeOfAllowance;
+        protected internal System.Windows.Forms.TextBox TypeOfProcessedSurface;
+        protected internal System.Windows.Forms.TextBox SurfaceRoughness;
+        protected internal System.Windows.Forms.TextBox HoleDepth;
+        protected internal System.Windows.Forms.TextBox Tolerance;
+        protected internal System.Windows.Forms.TreeView Operations;
     }
 }

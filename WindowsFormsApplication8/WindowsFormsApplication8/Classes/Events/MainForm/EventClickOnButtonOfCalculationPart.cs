@@ -42,6 +42,7 @@ namespace WindowsFormsApplication8
 
 
             ParametersOfSurface parameters = new ParametersOfSurface(diameterOfPart,typeOfPart, typeOfAllowance, typeOfProcessedSurface, surfaceRoughness, allowance, holeDepth);
+            parameters.setLengthOfPart(lengthOfPart);
             return parameters;
         }
 

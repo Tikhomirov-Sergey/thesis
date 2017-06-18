@@ -21,12 +21,18 @@ namespace WindowsFormsApplication8
 
         public static bool getGlobalError()
         {
-            return globalError;
+            if (globalError)
+            {
+                globalError = false;
+                return true;
+            }
+
+            return false;
         }
 
         public static void changeGlobalError()
         {
-            globalError = !(globalError);
+            globalError = true;
         }
 
         public ErrorMessage(string message, Exception inner) : base(message, inner) { }

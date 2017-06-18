@@ -17,8 +17,11 @@ namespace WindowsFormsApplication8
         private static List<DependencePart> parts;
         private static List<DependenceCalculation> calculations;
 
-        Surface technologicalProcess;
-       // private static List<Dependence> surfaces;
+        private static DependenceWorkpriece workpriece;
+        private static List<DependenceOperationInTechnologicalProcess> technologicalProcess;
+        private static List<DependenceSurface> surfaces;
+        private static List<DependenceOperation> operations;
+
 
         public static void getListNamesPartsInComboBox(FormOfWorkWithDatabase form)
         {
@@ -38,15 +41,59 @@ namespace WindowsFormsApplication8
             catch { }
         }
 
-        /*public static void getListNamesSurfacesInComboBox(FormOfWorkWithDatabase form, int selectedIndex)
+        public static void TextChangedInComboBoxPart(FormOfWorkWithDatabase form)
+        {
+            int selectedIndex = form.Part.SelectedIndex;
+
+            form.LengthPart.Text = parts[selectedIndex].getLengthPart().ToString();
+
+            selectCalculationInDB(selectedIndex);
+
+            form.Calculation.Items.Clear();
+
+            foreach (DependenceCalculation date in calculations)
+            {
+                form.Calculation.Items.Add(date.getDate());
+            }
+            try
+            {
+                form.Calculation.SelectedIndex = 0;
+            }
+            catch { }
+        }
+
+        public static void TextChangedInComboBoxCalculation(FormOfWorkWithDatabase form)
+        {
+            int selectedIndex = form.Calculation.SelectedIndex;
+
+            selectTechnologicalProcess(selectedIndex, form);
+            getTechnologicalProcessInTreeView(form);
+
+            getSurfacesInComboBoxAndTextBoxes(form, selectedIndex);
+        }
+
+        public static void TextChangedInComboBoxSurface(FormOfWorkWithDatabase form)
+        {
+            int selectedIndex = form.Surfaces.SelectedIndex;
+            selectOperationInDB(selectedIndex);
+
+            try
+            {
+                insertParametersIntextBox(form, selectedIndex);
+                insertOperationsInTreeView(form);
+            }
+            catch{ }
+        }
+
+        public static void getSurfacesInComboBoxAndTextBoxes(FormOfWorkWithDatabase form, int selectedIndex)
         {
             form.Surfaces.Items.Clear();
 
-            selectSurfaceInDB(selectedIndex);
+            selectSurfaceInDB(form, selectedIndex);
 
-            foreach (Dependence surface in surfaces)
+            foreach (DependenceSurface surface in surfaces)
             {
-                form.Surfaces.Items.Add(surface.getName());
+                form.Surfaces.Items.Add(surface.getNameSurface());
             }
 
             try
@@ -55,38 +102,6 @@ namespace WindowsFormsApplication8
             }
             catch { }
         }
-
-        private static void selectSurfaceInDB(int index)
-        {
-            DataTable tablesDataTable = new DataTable();
-            DataTable tempDataTable = new DataTable();
-            
-            Dependence calculation = calculations[index];
-
-            dbConnection.GetDataUsingDataAdapter($@"SELECT ID, surface_cipher FROM surface WHERE Cipher_detail = {calculation.getId()}", ref tempDataTable, ref tableDataAdapter);
-
-            List<Dependence> surfaces = new List<Dependence>();
-
-            try
-            {
-                
-                foreach (DataRow row in tempDataTable.Rows)
-                {
-                    int id = Convert.ToInt32(row[0]);
-                    string name = Convert.ToString(row[1]);
-
-                    surfaces.Add(new Dependence(id, name));
-                }
-
-                EventOutputDataFromDataBase.surfaces = surfaces;
-            }
-            catch (Exception e)
-            {
-                MessageBox.Show(e.Message);
-            }
-        }*/
-
-
 
         private static void selectPartsInDB()
         {
@@ -114,27 +129,6 @@ namespace WindowsFormsApplication8
             }
 
             EventOutputDataFromDataBase.parts = parts;
-        }
-
-        public static void TextChangedInComboBoxPart(FormOfWorkWithDatabase form)
-        {
-            int selectedIndex = form.Part.SelectedIndex;
-
-            form.LengthPart.Text = parts[selectedIndex].getLengthPart().ToString();
-
-            selectCalculationInDB(selectedIndex);
-
-            form.Calculation.Items.Clear();
-
-            foreach (DependenceCalculation date in calculations)
-            {
-                form.Calculation.Items.Add(date.getDate());
-            }
-            try
-            {
-                form.Calculation.SelectedIndex = 0;
-            }
-            catch { }
         }
 
         private static void selectCalculationInDB(int index)
@@ -166,15 +160,6 @@ namespace WindowsFormsApplication8
             }
         }
 
-        public static void TextChangedInComboBoxCalculation(FormOfWorkWithDatabase form)
-        {
-            int selectedIndex = form.Calculation.SelectedIndex;
-
-            selectTechnologicalProcess(selectedIndex, form);
-
-            //getListNamesSurfacesInComboBox(form, selectedIndex);
-        }
-
         private static void selectTechnologicalProcess(int index, FormOfWorkWithDatabase form)
         {
             DataTable tablesDataTable = new DataTable();
@@ -185,7 +170,17 @@ namespace WindowsFormsApplication8
             dbConnection.GetDataUsingDataAdapter($@"SELECT * FROM Operations WHERE ID_calculation = {calculation.getId()}", ref tempDataTable, ref tableDataAdapter);
             try
             {
-                form.TechnologicalProcess.DataSource = tempDataTable;
+                int countRows = tempDataTable.Rows.Count;
+
+                workpriece = createWorkpriece(tempDataTable.Rows[0]);
+
+                technologicalProcess = new List<DependenceOperationInTechnologicalProcess>();
+
+                for(int i = 1; i < countRows; i++)
+                {
+                    DataRow row = tempDataTable.Rows[i];
+                    technologicalProcess.Add(createOperation(row));
+                }
             }
             catch (Exception exc)
             {
@@ -193,16 +188,182 @@ namespace WindowsFormsApplication8
             }
         }
 
-        /*private static Dependence searchPartInList(string name)
+        private static void getTechnologicalProcessInTreeView(FormOfWorkWithDatabase form)
         {
-            foreach(Dependence part in parts)
+            TreeNodeCollection nodes = form.TechnologicalProcess.Nodes;
+
+            nodes.Clear();
+
+            nodes.Add(workpriece.getNameWorkpriece());
+
+            foreach(DependenceOperationInTechnologicalProcess operation in technologicalProcess)
             {
-                if(part.getName() == name)
+                string nameOperation = operation.getOperation().getTypeOfMachining();
+                nodes.Add(nameOperation);
+            }
+        }
+
+       private static void selectSurfaceInDB(FormOfWorkWithDatabase form, int index)
+       {
+           DataTable tablesDataTable = new DataTable();
+           DataTable tempDataTable = new DataTable();
+
+           DependenceCalculation calculation = calculations[index];
+
+           dbConnection.GetDataUsingDataAdapter($@"SELECT * FROM surface WHERE idCalculation = {calculation.getId()}", ref tempDataTable, ref tableDataAdapter);
+
+           surfaces = new List<DependenceSurface>();
+
+           try
+           {
+               foreach (DataRow row in tempDataTable.Rows)
+               {
+                    surfaces.Add(createSurface(row, form));
+               }
+           }
+           catch (Exception e)
+           {
+               MessageBox.Show(e.Message);
+           }
+       }
+
+        private static void selectOperationInDB(int index)
+        {
+            DataTable tablesDataTable = new DataTable();
+            DataTable tempDataTable = new DataTable();
+
+            DependenceSurface surface = surfaces[index];
+
+            dbConnection.GetDataUsingDataAdapter($@"SELECT * FROM operations_and_Results WHERE ID_surface = {surface.getIdInDb()}", ref tempDataTable, ref tableDataAdapter);
+
+            operations = new List<DependenceOperation>();
+            try
+            {
+                foreach (DataRow row in tempDataTable.Rows)
                 {
-                    return part;
+                    int idOnTechnologicalProcess = Convert.ToInt32(row[0]);
+                    int numberOperation = Convert.ToInt32(row[2]);
+                    string typeOfInstrument = Convert.ToString(row[3]);
+
+                    DependenceOperation operation = new DependenceOperation(idOnTechnologicalProcess, numberOperation, typeOfInstrument);
+                    operations.Add(operation);
                 }
             }
-            return null;
-        }*/}
-    
+            catch (Exception e)
+            {
+                MessageBox.Show(e.Message);
+            }
+        }
+
+        private static void insertParametersIntextBox(FormOfWorkWithDatabase form, int index)
+        {
+            DependenceSurface surface = surfaces[index];
+            ParametersOfSurface parameters = surface.getParametersOfSurface();
+
+            form.diameterOfSurface.Text = parameters.getDiameterOfPart().ToString();
+
+            form.typeOfPart.Text = parameters.getTypeOfPart().getName();
+            form.typeOfAllowance.Text = parameters.getTypeOfAllowance().getName();
+            form.TypeOfProcessedSurface.Text = parameters.getTypeOfProcessedSurface().getName();
+
+            form.SurfaceRoughness.Text = parameters.getSurfaceRoughness().ToString();
+            form.HoleDepth.Text = parameters.getHoleDepth().ToString();
+            form.Tolerance.Text = parameters.getAllowance().ToString();
+        }
+
+        private static void insertOperationsInTreeView(FormOfWorkWithDatabase form)
+        {
+            defineDependenciesOperations();
+
+            form.Operations.Nodes.Clear();
+
+            foreach(DependenceOperation operation in operations)
+            {
+                string typeOfMachining = operation.getOperation().getTypeOfMachining();
+                string typeOfInstrument = operation.getOperation().getTypeOfInstrument();
+
+                form.Operations.Nodes.Add(typeOfMachining + ' ' + typeOfInstrument);
+            }
+        }
+
+        private static DependenceOperationInTechnologicalProcess createOperation(DataRow row)
+        {
+            int idInDb = Convert.ToInt32(row[0]);
+
+            int idOnTechnologicalProcess = Convert.ToInt32(row[1]);
+            int idOperation = Convert.ToInt32(row[2]);
+            string typeOfMachining = Convert.ToString(row[3]);
+
+            DependenceOperationInTechnologicalProcess operation = new DependenceOperationInTechnologicalProcess(idInDb, typeOfMachining, idOperation, idOnTechnologicalProcess);
+
+            return operation;
+        }
+
+        private static DependenceWorkpriece createWorkpriece(DataRow row)
+        {
+            int idInDb = Convert.ToInt32(row[0]);
+
+            int idWorkpriece = Convert.ToInt32(row[2]);
+            string nameWorkpriece = Convert.ToString(row[3]);
+
+            return new DependenceWorkpriece(idInDb, nameWorkpriece, idWorkpriece);
+        }
+
+        private static DependenceSurface createSurface(DataRow row, FormOfWorkWithDatabase form)
+        {
+            int idInDb = Convert.ToInt32(row[0]);
+
+            string nameSurface = Convert.ToString(row[2]);
+            double diameter = Convert.ToDouble(row[3]);
+
+            int typeIndex = Convert.ToInt32(row[4]);
+            ComboBox comboBox = form.parrentForm.TypeOfPart;
+            TypeOfPart typeOfPart = selectIndexOfTypesFromComboBox(typeIndex, comboBox);
+
+            typeIndex = Convert.ToInt32(row[5]);
+            comboBox = form.parrentForm.TypeOfAllowance;
+            TypeOfPart typeOfAllowance = selectIndexOfTypesFromComboBox(typeIndex, comboBox);
+
+            typeIndex = Convert.ToInt32(row[6]);
+            comboBox = form.parrentForm.TypeOfProcessedSurface;
+            TypeOfPart typeOfProcessedSurface = selectIndexOfTypesFromComboBox(typeIndex, comboBox);
+
+            double surfaceRoughness = Convert.ToDouble(row[7]);
+            double holeDepth = Convert.ToDouble(row[8]);
+            double tolerance = Convert.ToDouble(row[9]);
+
+            DependenceSurface surface = new DependenceSurface(idInDb, nameSurface, diameter, typeOfPart, typeOfAllowance, typeOfProcessedSurface, surfaceRoughness, tolerance, holeDepth);
+
+            return surface;
+        }
+
+        private static void defineDependenciesOperations()
+        {
+            foreach (DependenceOperation operation in operations)
+            {
+                foreach (DependenceOperationInTechnologicalProcess dependenceoperationInTechnologicalProcess in technologicalProcess)
+                {
+                    Operation operationInTechnologicalProcess = dependenceoperationInTechnologicalProcess.getOperation();
+
+                    if (operation.getIdOnTechnologicalProcess() == dependenceoperationInTechnologicalProcess.getIdInDb())
+                    {
+                        operation.setOperationInTechnologicalProcess(operationInTechnologicalProcess);
+                    }
+                }
+            }
+        }
+
+        private static TypeOfPart selectIndexOfTypesFromComboBox(int typeIndex, ComboBox comboBox)
+        {
+            string namePart = "Некорректный тип";
+
+            try
+            {
+                namePart = comboBox.Items[typeIndex].ToString();    
+            }
+            catch { }
+
+            return new TypeOfPart(namePart, typeIndex);
+        }
+    }
 }

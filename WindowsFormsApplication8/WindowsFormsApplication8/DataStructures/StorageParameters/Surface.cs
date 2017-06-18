@@ -13,7 +13,7 @@ namespace WindowsFormsApplication8
         private List<Operation> operations = new List<Operation>();
         private List<ParametersOperation> parametersOperation = new List<ParametersOperation>();
 
-        private ParametersOfSurface parametersOfSurface = new ParametersOfSurface();
+        private ParametersOfSurface parametersOfSurface;
 
 
         public void setParametersOfSurface(ParametersOfSurface parametersOfSurface)

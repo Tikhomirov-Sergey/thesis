@@ -25,7 +25,7 @@ namespace WindowsFormsApplication8
                     MessageBox.Show("Имя сервера не было найдено");
                 }
                 DBName = GetDBNameFromConnectionString(temp);
-                ServerName = @"(localdb)\mssqllocaldb";
+                ServerName = GetServerNameFromConnectionString(temp);
             }
             catch (Exception exc)
             {

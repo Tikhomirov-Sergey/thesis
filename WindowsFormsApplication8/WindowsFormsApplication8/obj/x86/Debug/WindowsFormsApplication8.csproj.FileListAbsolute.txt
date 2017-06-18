@@ -599,8 +599,6 @@ C:\Users\Sergei\Documents\GitHub\thesis\WindowsFormsApplication8\WindowsFormsApp
 C:\Users\Sergei\Documents\GitHub\thesis\WindowsFormsApplication8\WindowsFormsApplication8\obj\x86\Debug\WindowsFormsApplication8.pdb
 C:\программирование\thesis\WindowsFormsApplication8\WindowsFormsApplication8\bin\Debug\Chains.mdf
 C:\программирование\thesis\WindowsFormsApplication8\WindowsFormsApplication8\bin\Debug\Chains_log.ldf
-g:\Программирование\thesis\WindowsFormsApplication8\WindowsFormsApplication8\bin\Debug\Chains.mdf
-g:\Программирование\thesis\WindowsFormsApplication8\WindowsFormsApplication8\bin\Debug\Chains_log.ldf
 C:\программирование\thesis\WindowsFormsApplication8\WindowsFormsApplication8\bin\Debug\Microsoft.Data.ConnectionUI.dll
 C:\программирование\thesis\WindowsFormsApplication8\WindowsFormsApplication8\obj\x86\Debug\WindowsFormsApplication8.csprojResolveAssemblyReference.cache
 C:\программирование\thesis\WindowsFormsApplication8\WindowsFormsApplication8\bin\Debug\Microsoft.Data.ConnectionUI.Dialog.dll

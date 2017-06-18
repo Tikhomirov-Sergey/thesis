@@ -33,7 +33,7 @@ namespace WindowsFormsApplication8
                     form.Close();
              }
          }
-         catch { MessageBox.Show("Ошибка Базы данных", "Ошибка"); }
+            catch { MessageBox.Show("Ошибка Базы данных", "Ошибка"); }
         }
 
         private static bool checkNameOfPartAndNameOfSurface(Form5 form)
@@ -82,9 +82,9 @@ namespace WindowsFormsApplication8
             if (!isCipherExist)
             {
                 ParametersOfSurface parametersOfPart = Part.getParametersOfPart();
-                double lengthOfPart = parametersOfPart.getLengthOfPart();
+                double lengthOfPart =  parametersOfPart.getLengthOfPart();
 
-                dbConnection.SetQuery($@"INSERT INTO {DETAIL} VALUES ('{nameOfPart}', {cipherDetail}, '{date}', {lengthOfPart})");
+                dbConnection.SetQuery($@"INSERT INTO {DETAIL} VALUES ('{nameOfPart}', {cipherDetail}, '{date}', {doubleToStringForDb(lengthOfPart)})");
             }
 
             return cipherDetail;
@@ -119,7 +119,8 @@ namespace WindowsFormsApplication8
             string nameOperation = workpiece.getNameOfWorkpiece();
 
             dbConnection.SetQuery($@"INSERT INTO {TECHNOLOGICAL_PROCESS} VALUES ({0}, {idOperation}, '{nameOperation}', {cipherDetail}, {idCalculation})");
-
+            
+           
             return getIdentCurrent(TECHNOLOGICAL_PROCESS);
         }
 
@@ -151,10 +152,13 @@ namespace WindowsFormsApplication8
                 int typeOfAllowance = parametersOfSurface.getTypeOfAllowance().getIndex();
                 int typeOfProcessedSurface = parametersOfSurface.getTypeOfProcessedSurface().getIndex();
 
+                double surfaseRoughness = parametersOfSurface.getSurfaceRoughness();
+               
+                double holeDepth = parametersOfSurface.getHoleDepth();
                 double tolerance = parametersOfSurface.getAllowance();
                 
-                dbConnection.SetQuery($@"INSERT INTO {SURFACE} VALUES ({idCalculation}, '{nameSurface}', {diameterOfSurface}, {typeOfPart}, {typeOfAllowance}, {typeOfProcessedSurface}, {tolerance})");
-
+                dbConnection.SetQuery($@"INSERT INTO {SURFACE} VALUES ({idCalculation}, '{nameSurface}', {doubleToStringForDb(diameterOfSurface)}, {typeOfPart}, {typeOfAllowance}, {typeOfProcessedSurface}, {doubleToStringForDb(surfaseRoughness)}, {doubleToStringForDb(holeDepth)}, {doubleToStringForDb(tolerance)})");
+                   
                 int idSurface = getIdentCurrent(SURFACE);
 
                 saveToTableOperationsAndResults(idSurface, surface, idCalculation);
@@ -183,6 +187,11 @@ namespace WindowsFormsApplication8
         {
             dbConnection.GetDataUsingDataAdapter($@"SELECT IDENT_CURRENT('{nameTable}')", ref tempDataTable, ref tableDataAdapter);
             return Convert.ToInt32(tempDataTable.Rows[0][0]);
+        }
+
+        private static string doubleToStringForDb(double value)
+        {
+            return value.ToString().Replace(',', '.');
         }
 
 

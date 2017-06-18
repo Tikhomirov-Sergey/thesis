@@ -11,7 +11,8 @@ namespace WindowsFormsApplication8
 
     public partial class FormOfWorkWithDatabase : System.Windows.Forms.Form
     {
-        MainForm parrentForm;
+        public MainForm parrentForm;
+
         public FormOfWorkWithDatabase(string data, MainForm parrentForm)
         {
             InitializeComponent();
@@ -27,8 +28,7 @@ namespace WindowsFormsApplication8
         {
             try
             {
-                //EventClickOnButtonOfSelectPart.buttonSelectPartInFormOfWorkWithDatabase(this, parrentForm);
-
+                EventClickOnButtonOfSelectPart.buttonSelectPartInFormOfWorkWithDatabase(this, parrentForm);
             }
             catch { }
         }
@@ -106,6 +106,11 @@ namespace WindowsFormsApplication8
         private void Calculation_TextChanged(object sender, EventArgs e)
         {
             EventOutputDataFromDataBase.TextChangedInComboBoxCalculation(this);
+        }
+
+        private void Surfaces_TextChanged(object sender, EventArgs e)
+        {
+            EventOutputDataFromDataBase.TextChangedInComboBoxSurface(this);
         }
     }
 }

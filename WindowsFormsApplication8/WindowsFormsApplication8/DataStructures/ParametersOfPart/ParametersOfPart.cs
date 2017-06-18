@@ -31,17 +31,6 @@ namespace WindowsFormsApplication8
             this.holeDepth = holeDepth;
         }
 
-        public ParametersOfSurface()
-        {
-            this.diameterOfPart = 0;
-            this.typeOfPart = null;
-            this.typeOfAllowance = null;
-            this.typeOfProcessedSurface = null;
-            this.surfaceRoughness = 0;
-            this.allowance = 0;
-            this.holeDepth = 0;
-        }
-
         public void insertParametersOfPartInTextboxes(MainForm form)
         {
             form.DiameterOfPart.Text = this.diameterOfPart.ToString();
