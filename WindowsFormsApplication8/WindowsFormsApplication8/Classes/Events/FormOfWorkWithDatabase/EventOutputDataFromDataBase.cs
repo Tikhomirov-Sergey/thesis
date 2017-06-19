@@ -103,6 +103,13 @@ namespace WindowsFormsApplication8
             catch { }
         }
 
+        public static void buttonClickSaveToPart(FormOfWorkWithDatabase form)
+        {
+            int selectedCalculation = form.Calculation.SelectedIndex;
+            saveTechnologicalProcessInPart();
+
+        }
+
         private static void selectPartsInDB()
         {
             DataTable tablesDataTable = new DataTable();
@@ -365,5 +372,29 @@ namespace WindowsFormsApplication8
 
             return new TypeOfPart(namePart, typeIndex);
         }
+
+        private static void saveTechnologicalProcessInPart()
+        {
+            Part.getSurfaceOnIndex(0).getOperations().Clear();
+            List<Operation> listOperation = Part.getSurfaceOnIndex(0).getOperations();
+
+            foreach(DependenceOperationInTechnologicalProcess operations in technologicalProcess)
+            {
+                listOperation.Add(operations.getOperation());
+            }
+        }
+
+        private static void saveSurfaceInPart()
+        {
+            int countSurface = surfaces.Count;
+
+            for(int i = 1; i < countSurface; i++)
+            {
+                Part.setParametersOfPart(surfaces[i].getParametersOfSurface());
+            }
+
+
+
+;       }
     }
 }

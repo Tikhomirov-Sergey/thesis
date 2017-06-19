@@ -28,7 +28,7 @@ namespace WindowsFormsApplication8
         {
             try
             {
-                EventClickOnButtonOfSelectPart.buttonSelectPartInFormOfWorkWithDatabase(this, parrentForm);
+                EventOutputDataFromDataBase.buttonClickSaveToPart(this);
             }
             catch { }
         }

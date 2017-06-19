@@ -1,1 +1,1 @@
-Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=G:\Программирование\thesis\WindowsFormsApplication8\WindowsFormsApplication8\bin\Debug\Chains.mdf;Integrated Security=True
+Data Source=(localdb)\MSSQLLocalDB;AttachDbFilename=C:\программирование\thesis\WindowsFormsApplication8\WindowsFormsApplication8\bin\Debug\Chains.mdf;Integrated Security=True

@@ -40,7 +40,7 @@ namespace WindowsFormsApplication8
                 Tables.getParametersOfSurfacesAfterVariousOperations().insertListOfOperationsInTreeView(this);
 
                 /////////////////////////////////надоело вводить ///////////////////////
-                FormOfSelectWorkpiece sel = new FormOfSelectWorkpiece();
+               /* FormOfSelectWorkpiece sel = new FormOfSelectWorkpiece();
 
                 ParametersWorkpiece parameters = Tables.getParametersOfWorkpieces().getParametersWorkprieceOnIndex(1);
 
@@ -72,7 +72,7 @@ namespace WindowsFormsApplication8
                 EventAddSurfaceButton.buttonAddSurface(this);
 
     
-               // EventClickOnButtonOfCalculationPart.buttonOfCalculation(this);
+               // EventClickOnButtonOfCalculationPart.buttonOfCalculation(this);*/
               
             }
             catch { MessageBox.Show("Повреждены XML таблицы", "Ошибка"); }

@@ -96,7 +96,7 @@
             // DiameterOfPart
             // 
             this.DiameterOfPart.Location = new System.Drawing.Point(329, 74);
-            this.DiameterOfPart.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.DiameterOfPart.Margin = new System.Windows.Forms.Padding(4);
             this.DiameterOfPart.Name = "DiameterOfPart";
             this.DiameterOfPart.Size = new System.Drawing.Size(81, 22);
             this.DiameterOfPart.TabIndex = 1;
@@ -109,7 +109,7 @@
             // 
             this.TypeOfPart.FormattingEnabled = true;
             this.TypeOfPart.Location = new System.Drawing.Point(117, 110);
-            this.TypeOfPart.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.TypeOfPart.Margin = new System.Windows.Forms.Padding(4);
             this.TypeOfPart.Name = "TypeOfPart";
             this.TypeOfPart.Size = new System.Drawing.Size(189, 24);
             this.TypeOfPart.TabIndex = 8;
@@ -143,7 +143,7 @@
             // 
             this.TypeOfProcessedSurface.FormattingEnabled = true;
             this.TypeOfProcessedSurface.Location = new System.Drawing.Point(265, 181);
-            this.TypeOfProcessedSurface.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.TypeOfProcessedSurface.Margin = new System.Windows.Forms.Padding(4);
             this.TypeOfProcessedSurface.Name = "TypeOfProcessedSurface";
             this.TypeOfProcessedSurface.Size = new System.Drawing.Size(145, 24);
             this.TypeOfProcessedSurface.TabIndex = 11;
@@ -165,7 +165,7 @@
             // 
             this.TypeOfAllowance.FormattingEnabled = true;
             this.TypeOfAllowance.Location = new System.Drawing.Point(117, 143);
-            this.TypeOfAllowance.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.TypeOfAllowance.Margin = new System.Windows.Forms.Padding(4);
             this.TypeOfAllowance.Name = "TypeOfAllowance";
             this.TypeOfAllowance.Size = new System.Drawing.Size(189, 24);
             this.TypeOfAllowance.TabIndex = 13;
@@ -178,7 +178,7 @@
             this.TreeOfOperations.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.TreeOfOperations.Enabled = false;
             this.TreeOfOperations.Location = new System.Drawing.Point(12, 201);
-            this.TreeOfOperations.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.TreeOfOperations.Margin = new System.Windows.Forms.Padding(4);
             this.TreeOfOperations.Name = "TreeOfOperations";
             this.TreeOfOperations.ShowLines = false;
             this.TreeOfOperations.ShowPlusMinus = false;
@@ -192,7 +192,7 @@
             // 
             this.ChoiceOfOperation.Enabled = false;
             this.ChoiceOfOperation.Location = new System.Drawing.Point(369, 64);
-            this.ChoiceOfOperation.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.ChoiceOfOperation.Margin = new System.Windows.Forms.Padding(4);
             this.ChoiceOfOperation.Name = "ChoiceOfOperation";
             this.ChoiceOfOperation.Size = new System.Drawing.Size(105, 96);
             this.ChoiceOfOperation.TabIndex = 17;
@@ -205,7 +205,7 @@
             // 
             this.ChoiceOfWorkpiece.BackColor = System.Drawing.SystemColors.Control;
             this.ChoiceOfWorkpiece.Location = new System.Drawing.Point(12, 74);
-            this.ChoiceOfWorkpiece.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.ChoiceOfWorkpiece.Margin = new System.Windows.Forms.Padding(4);
             this.ChoiceOfWorkpiece.Name = "ChoiceOfWorkpiece";
             this.ChoiceOfWorkpiece.Size = new System.Drawing.Size(545, 131);
             this.ChoiceOfWorkpiece.TabIndex = 22;
@@ -217,7 +217,7 @@
             // 
             this.TypeOfMachining.Enabled = false;
             this.TypeOfMachining.Location = new System.Drawing.Point(129, 74);
-            this.TypeOfMachining.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.TypeOfMachining.Margin = new System.Windows.Forms.Padding(4);
             this.TypeOfMachining.Name = "TypeOfMachining";
             this.TypeOfMachining.Size = new System.Drawing.Size(232, 22);
             this.TypeOfMachining.TabIndex = 24;
@@ -227,7 +227,7 @@
             // 
             this.NameOfWorkpiece.Enabled = false;
             this.NameOfWorkpiece.Location = new System.Drawing.Point(703, 2);
-            this.NameOfWorkpiece.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.NameOfWorkpiece.Margin = new System.Windows.Forms.Padding(4);
             this.NameOfWorkpiece.Name = "NameOfWorkpiece";
             this.NameOfWorkpiece.Size = new System.Drawing.Size(499, 22);
             this.NameOfWorkpiece.TabIndex = 25;
@@ -248,7 +248,7 @@
             // 
             this.Backspace.Enabled = false;
             this.Backspace.Location = new System.Drawing.Point(483, 64);
-            this.Backspace.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Backspace.Margin = new System.Windows.Forms.Padding(4);
             this.Backspace.Name = "Backspace";
             this.Backspace.Size = new System.Drawing.Size(103, 43);
             this.Backspace.TabIndex = 30;
@@ -270,7 +270,7 @@
             // LengthOfPart
             // 
             this.LengthOfPart.Location = new System.Drawing.Point(160, 46);
-            this.LengthOfPart.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.LengthOfPart.Margin = new System.Windows.Forms.Padding(4);
             this.LengthOfPart.Name = "LengthOfPart";
             this.LengthOfPart.Size = new System.Drawing.Size(77, 22);
             this.LengthOfPart.TabIndex = 37;
@@ -283,7 +283,7 @@
             this.TypeOfInstrument.Enabled = false;
             this.TypeOfInstrument.FormattingEnabled = true;
             this.TypeOfInstrument.Location = new System.Drawing.Point(171, 121);
-            this.TypeOfInstrument.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.TypeOfInstrument.Margin = new System.Windows.Forms.Padding(4);
             this.TypeOfInstrument.Name = "TypeOfInstrument";
             this.TypeOfInstrument.Size = new System.Drawing.Size(191, 24);
             this.TypeOfInstrument.TabIndex = 38;
@@ -294,7 +294,7 @@
             // 
             this.CalculationOfSchema.Enabled = false;
             this.CalculationOfSchema.Location = new System.Drawing.Point(584, 642);
-            this.CalculationOfSchema.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.CalculationOfSchema.Margin = new System.Windows.Forms.Padding(4);
             this.CalculationOfSchema.Name = "CalculationOfSchema";
             this.CalculationOfSchema.Size = new System.Drawing.Size(619, 43);
             this.CalculationOfSchema.TabIndex = 39;
@@ -317,7 +317,7 @@
             // HoleDepth
             // 
             this.HoleDepth.Location = new System.Drawing.Point(201, 214);
-            this.HoleDepth.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.HoleDepth.Margin = new System.Windows.Forms.Padding(4);
             this.HoleDepth.Name = "HoleDepth";
             this.HoleDepth.Size = new System.Drawing.Size(209, 22);
             this.HoleDepth.TabIndex = 44;
@@ -356,7 +356,7 @@
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
             this.menuStrip1.Padding = new System.Windows.Forms.Padding(8, 2, 0, 2);
-            this.menuStrip1.Size = new System.Drawing.Size(1273, 28);
+            this.menuStrip1.Size = new System.Drawing.Size(529, 28);
             this.menuStrip1.TabIndex = 50;
             this.menuStrip1.Text = "Открыть бд";
             // 
@@ -409,7 +409,7 @@
             // 
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
             this.pictureBox1.Location = new System.Drawing.Point(443, 42);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(312, 217);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -421,7 +421,7 @@
             // 
             this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
             this.pictureBox2.Location = new System.Drawing.Point(441, 42);
-            this.pictureBox2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pictureBox2.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(313, 214);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -457,7 +457,7 @@
             this.TreeOfSelectedOperations.Enabled = false;
             this.TreeOfSelectedOperations.ForeColor = System.Drawing.SystemColors.WindowText;
             this.TreeOfSelectedOperations.Location = new System.Drawing.Point(584, 201);
-            this.TreeOfSelectedOperations.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.TreeOfSelectedOperations.Margin = new System.Windows.Forms.Padding(4);
             this.TreeOfSelectedOperations.Name = "TreeOfSelectedOperations";
             this.TreeOfSelectedOperations.Size = new System.Drawing.Size(618, 307);
             this.TreeOfSelectedOperations.TabIndex = 58;
@@ -468,7 +468,7 @@
             // SaveChanges
             // 
             this.SaveChanges.Location = new System.Drawing.Point(483, 114);
-            this.SaveChanges.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.SaveChanges.Margin = new System.Windows.Forms.Padding(4);
             this.SaveChanges.Name = "SaveChanges";
             this.SaveChanges.Size = new System.Drawing.Size(103, 46);
             this.SaveChanges.TabIndex = 59;
@@ -481,7 +481,7 @@
             // 
             this.addSurfaceButton.Enabled = false;
             this.addSurfaceButton.Location = new System.Drawing.Point(375, 364);
-            this.addSurfaceButton.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.addSurfaceButton.Margin = new System.Windows.Forms.Padding(4);
             this.addSurfaceButton.Name = "addSurfaceButton";
             this.addSurfaceButton.Size = new System.Drawing.Size(176, 41);
             this.addSurfaceButton.TabIndex = 61;
@@ -494,7 +494,7 @@
             // 
             this.delSurfaceButton.Enabled = false;
             this.delSurfaceButton.Location = new System.Drawing.Point(375, 407);
-            this.delSurfaceButton.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.delSurfaceButton.Margin = new System.Windows.Forms.Padding(4);
             this.delSurfaceButton.Name = "delSurfaceButton";
             this.delSurfaceButton.Size = new System.Drawing.Size(176, 41);
             this.delSurfaceButton.TabIndex = 62;
@@ -507,7 +507,7 @@
             // 
             this.SurfacesTreeView.Enabled = false;
             this.SurfacesTreeView.Location = new System.Drawing.Point(17, 364);
-            this.SurfacesTreeView.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.SurfacesTreeView.Margin = new System.Windows.Forms.Padding(4);
             this.SurfacesTreeView.Name = "SurfacesTreeView";
             this.SurfacesTreeView.Size = new System.Drawing.Size(348, 83);
             this.SurfacesTreeView.TabIndex = 60;
@@ -529,7 +529,7 @@
             // SelectTechnologicalProcess
             // 
             this.SelectTechnologicalProcess.Location = new System.Drawing.Point(584, 516);
-            this.SelectTechnologicalProcess.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.SelectTechnologicalProcess.Margin = new System.Windows.Forms.Padding(4);
             this.SelectTechnologicalProcess.Name = "SelectTechnologicalProcess";
             this.SelectTechnologicalProcess.Size = new System.Drawing.Size(619, 43);
             this.SelectTechnologicalProcess.TabIndex = 67;
@@ -541,7 +541,7 @@
             // SurfaceRoughness
             // 
             this.SurfaceRoughness.Location = new System.Drawing.Point(129, 276);
-            this.SurfaceRoughness.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.SurfaceRoughness.Margin = new System.Windows.Forms.Padding(4);
             this.SurfaceRoughness.Name = "SurfaceRoughness";
             this.SurfaceRoughness.Size = new System.Drawing.Size(112, 22);
             this.SurfaceRoughness.TabIndex = 68;
@@ -596,7 +596,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1273, 513);
+            this.ClientSize = new System.Drawing.Size(529, 251);
             this.Controls.Add(this.labelOfSelectedOperations);
             this.Controls.Add(this.labelOperationsOrTechProcess);
             this.Controls.Add(this.LabelRoughness);
@@ -638,12 +638,12 @@
             this.Controls.Add(this.LabelDiameterOfPart);
             this.Controls.Add(this.menuStrip1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.MaximumSize = new System.Drawing.Size(1461, 726);
             this.MinimumSize = new System.Drawing.Size(261, 112);
             this.Name = "MainForm";
             this.ShowIcon = false;
-            this.Text = "Расчёт размерной цепи";
+            this.Text = "Расчёт технологической размерной цепи";
             this.Load += new System.EventHandler(this.Form1_Load);
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
