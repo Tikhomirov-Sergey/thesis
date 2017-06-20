@@ -33,6 +33,7 @@ namespace WindowsFormsApplication8
 
         public void insertParametersOfPartInTextboxes(MainForm form)
         {
+            form.LengthOfPart.Text = this.lengthOfPart.ToString();
             form.DiameterOfPart.Text = this.diameterOfPart.ToString();
 
             form.TypeOfPart.SelectedIndex = this.typeOfPart.getIndex();

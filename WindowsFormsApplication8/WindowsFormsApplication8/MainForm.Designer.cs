@@ -177,15 +177,14 @@
             // 
             this.TreeOfOperations.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.TreeOfOperations.Enabled = false;
-            this.TreeOfOperations.Location = new System.Drawing.Point(12, 201);
+            this.TreeOfOperations.Location = new System.Drawing.Point(11, 201);
             this.TreeOfOperations.Margin = new System.Windows.Forms.Padding(4);
             this.TreeOfOperations.Name = "TreeOfOperations";
             this.TreeOfOperations.ShowLines = false;
             this.TreeOfOperations.ShowPlusMinus = false;
             this.TreeOfOperations.ShowRootLines = false;
-            this.TreeOfOperations.Size = new System.Drawing.Size(534, 358);
+            this.TreeOfOperations.Size = new System.Drawing.Size(463, 234);
             this.TreeOfOperations.TabIndex = 16;
-            this.TreeOfOperations.Visible = false;
             this.TreeOfOperations.NodeMouseClick += new System.Windows.Forms.TreeNodeMouseClickEventHandler(this.treeView1_NodeMouseClick);
             // 
             // ChoiceOfOperation
@@ -204,10 +203,10 @@
             // ChoiceOfWorkpiece
             // 
             this.ChoiceOfWorkpiece.BackColor = System.Drawing.SystemColors.Control;
-            this.ChoiceOfWorkpiece.Location = new System.Drawing.Point(12, 74);
+            this.ChoiceOfWorkpiece.Location = new System.Drawing.Point(369, 27);
             this.ChoiceOfWorkpiece.Margin = new System.Windows.Forms.Padding(4);
             this.ChoiceOfWorkpiece.Name = "ChoiceOfWorkpiece";
-            this.ChoiceOfWorkpiece.Size = new System.Drawing.Size(545, 131);
+            this.ChoiceOfWorkpiece.Size = new System.Drawing.Size(535, 138);
             this.ChoiceOfWorkpiece.TabIndex = 22;
             this.ChoiceOfWorkpiece.Text = "Выбор заготовки";
             this.ChoiceOfWorkpiece.UseVisualStyleBackColor = false;
@@ -221,22 +220,21 @@
             this.TypeOfMachining.Name = "TypeOfMachining";
             this.TypeOfMachining.Size = new System.Drawing.Size(232, 22);
             this.TypeOfMachining.TabIndex = 24;
-            this.TypeOfMachining.Visible = false;
             // 
             // NameOfWorkpiece
             // 
             this.NameOfWorkpiece.Enabled = false;
-            this.NameOfWorkpiece.Location = new System.Drawing.Point(703, 2);
+            this.NameOfWorkpiece.Location = new System.Drawing.Point(601, 1);
             this.NameOfWorkpiece.Margin = new System.Windows.Forms.Padding(4);
             this.NameOfWorkpiece.Name = "NameOfWorkpiece";
-            this.NameOfWorkpiece.Size = new System.Drawing.Size(499, 22);
+            this.NameOfWorkpiece.Size = new System.Drawing.Size(303, 22);
             this.NameOfWorkpiece.TabIndex = 25;
             this.NameOfWorkpiece.Visible = false;
             // 
             // LabelWorkpiece
             // 
             this.LabelWorkpiece.AutoSize = true;
-            this.LabelWorkpiece.Location = new System.Drawing.Point(616, 6);
+            this.LabelWorkpiece.Location = new System.Drawing.Point(518, 4);
             this.LabelWorkpiece.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.LabelWorkpiece.Name = "LabelWorkpiece";
             this.LabelWorkpiece.Size = new System.Drawing.Size(75, 17);
@@ -287,7 +285,6 @@
             this.TypeOfInstrument.Name = "TypeOfInstrument";
             this.TypeOfInstrument.Size = new System.Drawing.Size(191, 24);
             this.TypeOfInstrument.TabIndex = 38;
-            this.TypeOfInstrument.Visible = false;
             this.TypeOfInstrument.Click += new System.EventHandler(this.comboBox5_Click);
             // 
             // CalculationOfSchema
@@ -327,24 +324,24 @@
             // LabelTypeOfMachining
             // 
             this.LabelTypeOfMachining.AutoSize = true;
+            this.LabelTypeOfMachining.Enabled = false;
             this.LabelTypeOfMachining.Location = new System.Drawing.Point(12, 78);
             this.LabelTypeOfMachining.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.LabelTypeOfMachining.Name = "LabelTypeOfMachining";
             this.LabelTypeOfMachining.Size = new System.Drawing.Size(107, 17);
             this.LabelTypeOfMachining.TabIndex = 47;
             this.LabelTypeOfMachining.Text = "Вид обработки";
-            this.LabelTypeOfMachining.Visible = false;
             // 
             // LabelTypeOfInstrument
             // 
             this.LabelTypeOfInstrument.AutoSize = true;
+            this.LabelTypeOfInstrument.Enabled = false;
             this.LabelTypeOfInstrument.Location = new System.Drawing.Point(12, 124);
             this.LabelTypeOfInstrument.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.LabelTypeOfInstrument.Name = "LabelTypeOfInstrument";
             this.LabelTypeOfInstrument.Size = new System.Drawing.Size(147, 17);
             this.LabelTypeOfInstrument.TabIndex = 48;
             this.LabelTypeOfInstrument.Text = "Тип приспособления";
-            this.LabelTypeOfInstrument.Visible = false;
             // 
             // menuStrip1
             // 
@@ -356,7 +353,7 @@
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
             this.menuStrip1.Padding = new System.Windows.Forms.Padding(8, 2, 0, 2);
-            this.menuStrip1.Size = new System.Drawing.Size(529, 28);
+            this.menuStrip1.Size = new System.Drawing.Size(904, 28);
             this.menuStrip1.TabIndex = 50;
             this.menuStrip1.Text = "Открыть бд";
             // 
@@ -456,12 +453,11 @@
             this.TreeOfSelectedOperations.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.TreeOfSelectedOperations.Enabled = false;
             this.TreeOfSelectedOperations.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.TreeOfSelectedOperations.Location = new System.Drawing.Point(584, 201);
+            this.TreeOfSelectedOperations.Location = new System.Drawing.Point(495, 201);
             this.TreeOfSelectedOperations.Margin = new System.Windows.Forms.Padding(4);
             this.TreeOfSelectedOperations.Name = "TreeOfSelectedOperations";
-            this.TreeOfSelectedOperations.Size = new System.Drawing.Size(618, 307);
+            this.TreeOfSelectedOperations.Size = new System.Drawing.Size(396, 183);
             this.TreeOfSelectedOperations.TabIndex = 58;
-            this.TreeOfSelectedOperations.Visible = false;
             this.TreeOfSelectedOperations.AfterSelect += new System.Windows.Forms.TreeViewEventHandler(this.TreeOfSelectedOperations_AfterSelect);
             this.TreeOfSelectedOperations.NodeMouseClick += new System.Windows.Forms.TreeNodeMouseClickEventHandler(this.TreeOfSelectedOperations_NodeMouseClick);
             // 
@@ -528,14 +524,14 @@
             // 
             // SelectTechnologicalProcess
             // 
-            this.SelectTechnologicalProcess.Location = new System.Drawing.Point(584, 516);
+            this.SelectTechnologicalProcess.Enabled = false;
+            this.SelectTechnologicalProcess.Location = new System.Drawing.Point(505, 392);
             this.SelectTechnologicalProcess.Margin = new System.Windows.Forms.Padding(4);
             this.SelectTechnologicalProcess.Name = "SelectTechnologicalProcess";
-            this.SelectTechnologicalProcess.Size = new System.Drawing.Size(619, 43);
+            this.SelectTechnologicalProcess.Size = new System.Drawing.Size(386, 43);
             this.SelectTechnologicalProcess.TabIndex = 67;
             this.SelectTechnologicalProcess.Text = "Выбор технологического процесса";
             this.SelectTechnologicalProcess.UseVisualStyleBackColor = true;
-            this.SelectTechnologicalProcess.Visible = false;
             this.SelectTechnologicalProcess.Click += new System.EventHandler(this.SelectTechnologicalProcess_Click);
             // 
             // SurfaceRoughness
@@ -573,30 +569,30 @@
             // labelOperationsOrTechProcess
             // 
             this.labelOperationsOrTechProcess.AutoSize = true;
-            this.labelOperationsOrTechProcess.Location = new System.Drawing.Point(219, 177);
+            this.labelOperationsOrTechProcess.Enabled = false;
+            this.labelOperationsOrTechProcess.Location = new System.Drawing.Point(190, 177);
             this.labelOperationsOrTechProcess.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.labelOperationsOrTechProcess.Name = "labelOperationsOrTechProcess";
             this.labelOperationsOrTechProcess.Size = new System.Drawing.Size(119, 17);
             this.labelOperationsOrTechProcess.TabIndex = 71;
             this.labelOperationsOrTechProcess.Text = "Выбор операций";
-            this.labelOperationsOrTechProcess.Visible = false;
             // 
             // labelOfSelectedOperations
             // 
             this.labelOfSelectedOperations.AutoSize = true;
-            this.labelOfSelectedOperations.Location = new System.Drawing.Point(801, 177);
+            this.labelOfSelectedOperations.Enabled = false;
+            this.labelOfSelectedOperations.Location = new System.Drawing.Point(607, 177);
             this.labelOfSelectedOperations.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.labelOfSelectedOperations.Name = "labelOfSelectedOperations";
             this.labelOfSelectedOperations.Size = new System.Drawing.Size(203, 17);
             this.labelOfSelectedOperations.TabIndex = 72;
             this.labelOfSelectedOperations.Text = "Дерево выбранных операций";
-            this.labelOfSelectedOperations.Visible = false;
             // 
             // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(529, 251);
+            this.ClientSize = new System.Drawing.Size(904, 448);
             this.Controls.Add(this.labelOfSelectedOperations);
             this.Controls.Add(this.labelOperationsOrTechProcess);
             this.Controls.Add(this.LabelRoughness);

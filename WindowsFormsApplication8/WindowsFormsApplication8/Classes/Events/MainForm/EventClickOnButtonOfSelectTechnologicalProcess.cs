@@ -31,32 +31,6 @@ namespace WindowsFormsApplication8
             Part.insertListOfOperationsInTreeView(form, 1);
             Part.insertListOfTechnologicalProcessInTreeView(form);
 
-            form.Surfaces.Visible = true;
-            form.NameSurface.Visible = true;
-            form.SurfacesTreeView.Visible = true;
-            form.addSurfaceButton.Visible = true;
-            form.delSurfaceButton.Visible = true;
-
-            form.TreeOfOperations.Size = new Size(401,168);
-            form.TreeOfOperations.Location = new Point(12,389);
-
-            form.labelOperationsOrTechProcess.Size = new Size(91,13);
-            form.labelOperationsOrTechProcess.Location = new Point(169, 373);
-
-            form.TreeOfSelectedOperations.Location = new Point(438, 266);
-            form.TreeOfSelectedOperations.Size = new Size(590, 250);
-
-            form.SelectTechnologicalProcess.Visible = false;
-            form.SelectTechnologicalProcess.Size = new Size(590, 35);
-            form.SelectTechnologicalProcess.Location = new Point(438, 522);
-            form.CalculationOfSchema.Size = new Size(590, 35);
-            
-
-            form.Size = new Size(1050, 600);
-
-            form.labelOfSelectedOperations.Location = new Point(683, 247);
-
-            form.labelOperationsOrTechProcess.Text = "Тех. процесс";
             enabledTextBoxes(form);
         }
 
@@ -113,6 +87,34 @@ namespace WindowsFormsApplication8
 
             form.SaveChanges.Size = new Size(77, 37);
             form.SaveChanges.Location = new Point(951, 188);
+
+
+            form.Surfaces.Visible = true;
+            form.NameSurface.Visible = true;
+            form.SurfacesTreeView.Visible = true;
+            form.addSurfaceButton.Visible = true;
+            form.delSurfaceButton.Visible = true;
+
+            form.TreeOfOperations.Size = new Size(401, 168);
+            form.TreeOfOperations.Location = new Point(12, 389);
+
+            form.labelOperationsOrTechProcess.Size = new Size(91, 13);
+            form.labelOperationsOrTechProcess.Location = new Point(169, 373);
+
+            form.TreeOfSelectedOperations.Location = new Point(438, 266);
+            form.TreeOfSelectedOperations.Size = new Size(590, 250);
+
+            form.SelectTechnologicalProcess.Visible = false;
+            form.SelectTechnologicalProcess.Size = new Size(590, 35);
+            form.SelectTechnologicalProcess.Location = new Point(438, 522);
+            form.CalculationOfSchema.Size = new Size(590, 35);
+
+
+            form.Size = new Size(1050, 600);
+
+            form.labelOfSelectedOperations.Location = new Point(683, 247);
+
+            form.labelOperationsOrTechProcess.Text = "Тех. процесс";
         }
 
         private static void distributionIdOnTechnologicalProcess(List<Operation> technologicalProcess)

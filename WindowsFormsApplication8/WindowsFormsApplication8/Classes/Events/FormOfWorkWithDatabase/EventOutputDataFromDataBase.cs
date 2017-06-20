@@ -107,7 +107,10 @@ namespace WindowsFormsApplication8
         {
             int selectedCalculation = form.Calculation.SelectedIndex;
             saveTechnologicalProcessInPart();
+            saveSurfaceInPart(form);
 
+            Part.insertParametersOfPartInTextboxes(form.parrentForm);
+            Part.insertListOfTechnologicalProcessInTreeView(form.parrentForm);
         }
 
         private static void selectPartsInDB()
@@ -384,17 +387,34 @@ namespace WindowsFormsApplication8
             }
         }
 
-        private static void saveSurfaceInPart()
+        private static void saveSurfaceInPart(FormOfWorkWithDatabase form)
         {
             int countSurface = surfaces.Count;
+            int selectIndexPart = form.Part.SelectedIndex;
+
+            double lengtPart = parts[selectIndexPart].getLengthPart();
 
             for(int i = 1; i < countSurface; i++)
             {
+                surfaces[i].getParametersOfSurface().setLengthOfPart(lengtPart);
                 Part.setParametersOfPart(surfaces[i].getParametersOfSurface());
+
+                saveOperationsInSurface(i);
             }
-
-
-
 ;       }
+
+        private static void saveOperationsInSurface(int index)
+        {
+            selectOperationInDB(index);
+            defineDependenciesOperations();
+
+            List<Operation> operations = Part.getSurfaceOnIndex(index).getOperations();
+            operations.Clear();
+
+            foreach (DependenceOperation operation in EventOutputDataFromDataBase.operations)
+            {
+                operations.Add(new Operation(operation.getOperation()));
+            }
+        }
     }
 }

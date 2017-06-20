@@ -41,9 +41,9 @@ namespace WindowsFormsApplication8
             form.LabelWorkpiece.Visible = true;
             form.NameOfWorkpiece.Visible = true;
             form.LabelTypeOfMachining.Visible = true;
-            form.TypeOfMachining.Visible = true;
+            form.LabelTypeOfMachining.Enabled = true;
             form.LabelTypeOfInstrument.Visible = true;
-            form.TypeOfInstrument.Visible = true;
+            form.LabelTypeOfInstrument.Enabled = true;
             form.ChoiceOfOperation.Visible = true;
             form.Backspace.Visible = true;
             form.SaveChanges.Visible = true;
@@ -52,9 +52,11 @@ namespace WindowsFormsApplication8
             form.labelOfSelectedOperations.Visible = true;
             form.TreeOfSelectedOperations.Visible = true;
             form.SelectTechnologicalProcess.Visible = true;
-            form.Size = new Size(922, 495);
-            form.ChoiceOfWorkpiece.Size = new Size(437, 46);
-            form.ChoiceOfWorkpiece.Location = new Point(465, 28);
+            form.SelectTechnologicalProcess.Enabled = true;
+            form.labelOperationsOrTechProcess.Enabled = true;
+            form.labelOfSelectedOperations.Enabled = true;
+            form.ChoiceOfWorkpiece.Location = new Point(450, 35);
+            form.ChoiceOfWorkpiece.Size = new Size(220, 100);
         }
 
         public static void insertNameOfWorkpieceInTreeViewAndTextBox(MainForm form, string nameOfWorkpiece)

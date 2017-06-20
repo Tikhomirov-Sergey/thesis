@@ -80,7 +80,8 @@ namespace WindowsFormsApplication8
         public static Surface getSurfaceOnIndex(int indexOfSurface)
         {
             try
-            { 
+            {
+                checkSurface(indexOfSurface);
                 return surfaces[indexOfSurface];
             }
             catch { return null; }
@@ -172,6 +173,19 @@ namespace WindowsFormsApplication8
             catch { }
         }
 
+        public static void insertListOfSurfacess(MainForm form)
+        {
+            try
+            {
+                form.SurfacesTreeView.Nodes.Clear();
+
+                foreach(Surface surface in surfaces)
+                {
+                    form.SurfacesTreeView.Nodes.Add(surface.getNameSurface());
+                }
+            }
+            catch { }
+        }
 
         public static void deleteOperation(int indexOfSurface, int indexOfOperation)
         {
@@ -195,8 +209,6 @@ namespace WindowsFormsApplication8
                     Operation operation = new Operation(operationInTechnologicalProcess);
                     operations.Add(operation);
                 }
-
-                checkSurface(indexSurface);
 
                 getSurfaceOnIndex(indexSurface).setOpetation(operations);
             }

@@ -26,11 +26,11 @@ namespace WindowsFormsApplication8
 
         private void button1_Click(object sender, EventArgs e)
         {
-            try
-            {
+           // try
+           // {
                 EventOutputDataFromDataBase.buttonClickSaveToPart(this);
-            }
-            catch { }
+          //  }
+          //  catch { }
         }
 
         /*private void ToolStripMenuItemBackup_Click(object sender, EventArgs e)

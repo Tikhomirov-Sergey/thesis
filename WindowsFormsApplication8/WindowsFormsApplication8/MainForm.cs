@@ -9,6 +9,7 @@ using Microsoft.Data.ConnectionUI;
 using Microsoft.SqlServer.Management.Smo;
 using Microsoft.SqlServer.Server;
 using Microsoft.SqlServer.Management.Common;
+using System.Drawing;
 
 namespace WindowsFormsApplication8
 {
@@ -38,7 +39,7 @@ namespace WindowsFormsApplication8
             try
             {
                 Tables.getParametersOfSurfacesAfterVariousOperations().insertListOfOperationsInTreeView(this);
-
+               
                 /////////////////////////////////надоело вводить ///////////////////////
                /* FormOfSelectWorkpiece sel = new FormOfSelectWorkpiece();
 
