@@ -62,6 +62,21 @@
             this.HoleDepth = new System.Windows.Forms.TextBox();
             this.Tolerance = new System.Windows.Forms.TextBox();
             this.Operations = new System.Windows.Forms.TreeView();
+            this.labelCipherPart = new System.Windows.Forms.Label();
+            this.LabelOperaions = new System.Windows.Forms.Label();
+            this.LabelTechnologicalProcess = new System.Windows.Forms.Label();
+            this.LabelTypeOfPart = new System.Windows.Forms.Label();
+            this.LabelTypeOfAllowance = new System.Windows.Forms.Label();
+            this.LabelTypeOfProcessedSurface = new System.Windows.Forms.Label();
+            this.label15 = new System.Windows.Forms.Label();
+            this.LabelDiameterOfPart = new System.Windows.Forms.Label();
+            this.labelPart = new System.Windows.Forms.Label();
+            this.CipherPart = new System.Windows.Forms.ComboBox();
+            this.LabelHoleDepth = new System.Windows.Forms.Label();
+            this.LabelAllowance = new System.Windows.Forms.Label();
+            this.LabelRoughness = new System.Windows.Forms.Label();
+            this.labelSurfaces = new System.Windows.Forms.Label();
+            this.labelDate = new System.Windows.Forms.Label();
             this.menuStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.chainsDataSet1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.detailBindingSource)).BeginInit();
@@ -72,9 +87,9 @@
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(600, 37);
+            this.button1.Location = new System.Drawing.Point(416, 214);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(88, 41);
+            this.button1.Size = new System.Drawing.Size(200, 40);
             this.button1.TabIndex = 2;
             this.button1.Text = "Выбор записи \r\n       из БД";
             this.button1.UseVisualStyleBackColor = true;
@@ -83,63 +98,69 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(315, 49);
+            this.label1.Location = new System.Drawing.Point(520, 47);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(83, 13);
             this.label1.TabIndex = 4;
             this.label1.Text = "Поиск по дате:";
+            this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // textBox1
             // 
-            this.textBox1.Location = new System.Drawing.Point(99, 46);
+            this.textBox1.Location = new System.Drawing.Point(609, 21);
             this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(100, 20);
+            this.textBox1.Size = new System.Drawing.Size(123, 20);
             this.textBox1.TabIndex = 5;
+            this.textBox1.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 
             // button2
             // 
-            this.button2.Location = new System.Drawing.Point(204, 45);
+            this.button2.Location = new System.Drawing.Point(734, 19);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(75, 23);
             this.button2.TabIndex = 6;
             this.button2.Text = "Поиск";
             this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click_1);
             // 
             // button3
             // 
-            this.button3.Location = new System.Drawing.Point(694, 37);
+            this.button3.Location = new System.Drawing.Point(616, 214);
             this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(108, 41);
+            this.button3.Size = new System.Drawing.Size(200, 40);
             this.button3.TabIndex = 7;
             this.button3.Text = "Удаление записи \r\n        из БД";
             this.button3.UseVisualStyleBackColor = true;
             // 
             // button4
             // 
-            this.button4.Location = new System.Drawing.Point(506, 44);
+            this.button4.Location = new System.Drawing.Point(734, 44);
             this.button4.Name = "button4";
             this.button4.Size = new System.Drawing.Size(75, 23);
             this.button4.TabIndex = 8;
             this.button4.Text = "Поиск";
             this.button4.UseVisualStyleBackColor = true;
+            this.button4.Click += new System.EventHandler(this.button4_Click_1);
             // 
             // textBox2
             // 
-            this.textBox2.Location = new System.Drawing.Point(401, 46);
+            this.textBox2.Location = new System.Drawing.Point(609, 44);
             this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(100, 20);
+            this.textBox2.Size = new System.Drawing.Size(123, 20);
             this.textBox2.TabIndex = 9;
+            this.textBox2.TextChanged += new System.EventHandler(this.textBox2_TextChanged);
             // 
             // label2
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label2.Location = new System.Drawing.Point(10, 37);
+            this.label2.Location = new System.Drawing.Point(429, 24);
             this.label2.Name = "label2";
             this.label2.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.label2.Size = new System.Drawing.Size(83, 39);
+            this.label2.Size = new System.Drawing.Size(174, 13);
             this.label2.TabIndex = 10;
-            this.label2.Text = "Поиск по\r\nнаименованию\r\nдетали:";
+            this.label2.Text = "Поиск по наименованию детали:";
+            this.label2.Click += new System.EventHandler(this.label2_Click);
             // 
             // menuStrip1
             // 
@@ -149,7 +170,7 @@
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
             this.menuStrip1.Padding = new System.Windows.Forms.Padding(4, 2, 0, 2);
-            this.menuStrip1.Size = new System.Drawing.Size(1370, 24);
+            this.menuStrip1.Size = new System.Drawing.Size(819, 24);
             this.menuStrip1.TabIndex = 12;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -214,7 +235,7 @@
             // Part
             // 
             this.Part.FormattingEnabled = true;
-            this.Part.Location = new System.Drawing.Point(78, 93);
+            this.Part.Location = new System.Drawing.Point(587, 94);
             this.Part.Name = "Part";
             this.Part.Size = new System.Drawing.Size(121, 21);
             this.Part.TabIndex = 13;
@@ -223,7 +244,7 @@
             // Calculation
             // 
             this.Calculation.FormattingEnabled = true;
-            this.Calculation.Location = new System.Drawing.Point(236, 93);
+            this.Calculation.Location = new System.Drawing.Point(587, 170);
             this.Calculation.Name = "Calculation";
             this.Calculation.Size = new System.Drawing.Size(121, 21);
             this.Calculation.TabIndex = 14;
@@ -232,15 +253,15 @@
             // Surfaces
             // 
             this.Surfaces.FormattingEnabled = true;
-            this.Surfaces.Location = new System.Drawing.Point(474, 93);
+            this.Surfaces.Location = new System.Drawing.Point(587, 145);
             this.Surfaces.Name = "Surfaces";
-            this.Surfaces.Size = new System.Drawing.Size(252, 21);
+            this.Surfaces.Size = new System.Drawing.Size(121, 21);
             this.Surfaces.TabIndex = 16;
             this.Surfaces.TextChanged += new System.EventHandler(this.Surfaces_TextChanged);
             // 
             // LengthPart
             // 
-            this.LengthPart.Location = new System.Drawing.Point(128, 71);
+            this.LengthPart.Location = new System.Drawing.Point(123, 34);
             this.LengthPart.Margin = new System.Windows.Forms.Padding(2);
             this.LengthPart.Name = "LengthPart";
             this.LengthPart.Size = new System.Drawing.Size(76, 20);
@@ -248,72 +269,231 @@
             // 
             // TechnologicalProcess
             // 
-            this.TechnologicalProcess.Location = new System.Drawing.Point(78, 141);
+            this.TechnologicalProcess.Location = new System.Drawing.Point(5, 276);
             this.TechnologicalProcess.Name = "TechnologicalProcess";
-            this.TechnologicalProcess.Size = new System.Drawing.Size(486, 119);
+            this.TechnologicalProcess.Size = new System.Drawing.Size(400, 200);
             this.TechnologicalProcess.TabIndex = 19;
             // 
             // diameterOfSurface
             // 
-            this.diameterOfSurface.Location = new System.Drawing.Point(218, 71);
+            this.diameterOfSurface.Location = new System.Drawing.Point(252, 53);
             this.diameterOfSurface.Name = "diameterOfSurface";
             this.diameterOfSurface.Size = new System.Drawing.Size(100, 20);
             this.diameterOfSurface.TabIndex = 20;
             // 
             // typeOfPart
             // 
-            this.typeOfPart.Location = new System.Drawing.Point(844, 49);
+            this.typeOfPart.Location = new System.Drawing.Point(94, 76);
             this.typeOfPart.Name = "typeOfPart";
-            this.typeOfPart.Size = new System.Drawing.Size(100, 20);
+            this.typeOfPart.Size = new System.Drawing.Size(69, 20);
             this.typeOfPart.TabIndex = 21;
             // 
             // typeOfAllowance
             // 
-            this.typeOfAllowance.Location = new System.Drawing.Point(844, 71);
+            this.typeOfAllowance.Location = new System.Drawing.Point(94, 98);
             this.typeOfAllowance.Name = "typeOfAllowance";
-            this.typeOfAllowance.Size = new System.Drawing.Size(100, 20);
+            this.typeOfAllowance.Size = new System.Drawing.Size(69, 20);
             this.typeOfAllowance.TabIndex = 22;
             // 
             // TypeOfProcessedSurface
             // 
-            this.TypeOfProcessedSurface.Location = new System.Drawing.Point(844, 97);
+            this.TypeOfProcessedSurface.Location = new System.Drawing.Point(207, 123);
             this.TypeOfProcessedSurface.Name = "TypeOfProcessedSurface";
             this.TypeOfProcessedSurface.Size = new System.Drawing.Size(100, 20);
             this.TypeOfProcessedSurface.TabIndex = 23;
             // 
             // SurfaceRoughness
             // 
-            this.SurfaceRoughness.Location = new System.Drawing.Point(358, 71);
+            this.SurfaceRoughness.Location = new System.Drawing.Point(143, 190);
             this.SurfaceRoughness.Name = "SurfaceRoughness";
-            this.SurfaceRoughness.Size = new System.Drawing.Size(40, 20);
+            this.SurfaceRoughness.Size = new System.Drawing.Size(72, 20);
             this.SurfaceRoughness.TabIndex = 24;
             // 
             // HoleDepth
             // 
-            this.HoleDepth.Location = new System.Drawing.Point(401, 71);
+            this.HoleDepth.Location = new System.Drawing.Point(160, 145);
             this.HoleDepth.Name = "HoleDepth";
-            this.HoleDepth.Size = new System.Drawing.Size(50, 20);
+            this.HoleDepth.Size = new System.Drawing.Size(55, 20);
             this.HoleDepth.TabIndex = 25;
+            this.HoleDepth.TextChanged += new System.EventHandler(this.HoleDepth_TextChanged);
             // 
             // Tolerance
             // 
-            this.Tolerance.Location = new System.Drawing.Point(457, 71);
+            this.Tolerance.Location = new System.Drawing.Point(151, 167);
             this.Tolerance.Name = "Tolerance";
-            this.Tolerance.Size = new System.Drawing.Size(45, 20);
+            this.Tolerance.Size = new System.Drawing.Size(64, 20);
             this.Tolerance.TabIndex = 26;
             // 
             // Operations
             // 
-            this.Operations.Location = new System.Drawing.Point(78, 289);
+            this.Operations.Location = new System.Drawing.Point(416, 276);
             this.Operations.Name = "Operations";
-            this.Operations.Size = new System.Drawing.Size(486, 147);
+            this.Operations.Size = new System.Drawing.Size(400, 200);
             this.Operations.TabIndex = 27;
+            // 
+            // labelCipherPart
+            // 
+            this.labelCipherPart.AutoSize = true;
+            this.labelCipherPart.Location = new System.Drawing.Point(507, 123);
+            this.labelCipherPart.Name = "labelCipherPart";
+            this.labelCipherPart.Size = new System.Drawing.Size(74, 13);
+            this.labelCipherPart.TabIndex = 28;
+            this.labelCipherPart.Text = "Шифр детали";
+            // 
+            // LabelOperaions
+            // 
+            this.LabelOperaions.AutoSize = true;
+            this.LabelOperaions.Location = new System.Drawing.Point(597, 260);
+            this.LabelOperaions.Name = "LabelOperaions";
+            this.LabelOperaions.Size = new System.Drawing.Size(57, 13);
+            this.LabelOperaions.TabIndex = 29;
+            this.LabelOperaions.Text = "Операции";
+            // 
+            // LabelTechnologicalProcess
+            // 
+            this.LabelTechnologicalProcess.AutoSize = true;
+            this.LabelTechnologicalProcess.Location = new System.Drawing.Point(140, 260);
+            this.LabelTechnologicalProcess.Name = "LabelTechnologicalProcess";
+            this.LabelTechnologicalProcess.Size = new System.Drawing.Size(140, 13);
+            this.LabelTechnologicalProcess.TabIndex = 30;
+            this.LabelTechnologicalProcess.Text = "Технологический процесс";
+            // 
+            // LabelTypeOfPart
+            // 
+            this.LabelTypeOfPart.AutoSize = true;
+            this.LabelTypeOfPart.Location = new System.Drawing.Point(12, 78);
+            this.LabelTypeOfPart.Name = "LabelTypeOfPart";
+            this.LabelTypeOfPart.Size = new System.Drawing.Size(76, 13);
+            this.LabelTypeOfPart.TabIndex = 31;
+            this.LabelTypeOfPart.Text = "Тип размера:";
+            this.LabelTypeOfPart.Visible = false;
+            // 
+            // LabelTypeOfAllowance
+            // 
+            this.LabelTypeOfAllowance.AutoSize = true;
+            this.LabelTypeOfAllowance.Location = new System.Drawing.Point(12, 101);
+            this.LabelTypeOfAllowance.Name = "LabelTypeOfAllowance";
+            this.LabelTypeOfAllowance.Size = new System.Drawing.Size(79, 13);
+            this.LabelTypeOfAllowance.TabIndex = 32;
+            this.LabelTypeOfAllowance.Text = "Тип припуска:";
+            this.LabelTypeOfAllowance.Visible = false;
+            // 
+            // LabelTypeOfProcessedSurface
+            // 
+            this.LabelTypeOfProcessedSurface.AutoSize = true;
+            this.LabelTypeOfProcessedSurface.Location = new System.Drawing.Point(12, 126);
+            this.LabelTypeOfProcessedSurface.Name = "LabelTypeOfProcessedSurface";
+            this.LabelTypeOfProcessedSurface.Size = new System.Drawing.Size(189, 13);
+            this.LabelTypeOfProcessedSurface.TabIndex = 33;
+            this.LabelTypeOfProcessedSurface.Text = "Тип обрабатываемой  поверхности:";
+            this.LabelTypeOfProcessedSurface.Visible = false;
+            // 
+            // label15
+            // 
+            this.label15.AutoSize = true;
+            this.label15.Location = new System.Drawing.Point(12, 37);
+            this.label15.Name = "label15";
+            this.label15.Size = new System.Drawing.Size(111, 13);
+            this.label15.TabIndex = 37;
+            this.label15.Text = "Длина детали (l,мм):";
+            // 
+            // LabelDiameterOfPart
+            // 
+            this.LabelDiameterOfPart.AutoSize = true;
+            this.LabelDiameterOfPart.Location = new System.Drawing.Point(12, 56);
+            this.LabelDiameterOfPart.Name = "LabelDiameterOfPart";
+            this.LabelDiameterOfPart.Size = new System.Drawing.Size(238, 13);
+            this.LabelDiameterOfPart.TabIndex = 38;
+            this.LabelDiameterOfPart.Text = "Обрабатываемый размер/Диаметр (L/d,мм):";
+            this.LabelDiameterOfPart.Visible = false;
+            // 
+            // labelPart
+            // 
+            this.labelPart.AutoSize = true;
+            this.labelPart.Location = new System.Drawing.Point(536, 97);
+            this.labelPart.Name = "labelPart";
+            this.labelPart.Size = new System.Drawing.Size(45, 13);
+            this.labelPart.TabIndex = 39;
+            this.labelPart.Text = "Деталь";
+            // 
+            // CipherPart
+            // 
+            this.CipherPart.FormattingEnabled = true;
+            this.CipherPart.Location = new System.Drawing.Point(587, 120);
+            this.CipherPart.Name = "CipherPart";
+            this.CipherPart.Size = new System.Drawing.Size(121, 21);
+            this.CipherPart.TabIndex = 40;
+            this.CipherPart.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
+            // 
+            // LabelHoleDepth
+            // 
+            this.LabelHoleDepth.AutoSize = true;
+            this.LabelHoleDepth.Location = new System.Drawing.Point(12, 148);
+            this.LabelHoleDepth.Name = "LabelHoleDepth";
+            this.LabelHoleDepth.Size = new System.Drawing.Size(142, 13);
+            this.LabelHoleDepth.TabIndex = 44;
+            this.LabelHoleDepth.Text = "Глубина отверстия (lo,мм):";
+            this.LabelHoleDepth.Visible = false;
+            // 
+            // LabelAllowance
+            // 
+            this.LabelAllowance.AutoSize = true;
+            this.LabelAllowance.Location = new System.Drawing.Point(12, 170);
+            this.LabelAllowance.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.LabelAllowance.Name = "LabelAllowance";
+            this.LabelAllowance.Size = new System.Drawing.Size(133, 13);
+            this.LabelAllowance.TabIndex = 57;
+            this.LabelAllowance.Text = "Допуск, мкм (без знака)";
+            this.LabelAllowance.Visible = false;
+            // 
+            // LabelRoughness
+            // 
+            this.LabelRoughness.AutoSize = true;
+            this.LabelRoughness.Location = new System.Drawing.Point(12, 193);
+            this.LabelRoughness.Name = "LabelRoughness";
+            this.LabelRoughness.Size = new System.Drawing.Size(127, 13);
+            this.LabelRoughness.TabIndex = 71;
+            this.LabelRoughness.Text = "Шероховатость Ra,мкм";
+            this.LabelRoughness.Visible = false;
+            // 
+            // labelSurfaces
+            // 
+            this.labelSurfaces.AutoSize = true;
+            this.labelSurfaces.Location = new System.Drawing.Point(511, 148);
+            this.labelSurfaces.Name = "labelSurfaces";
+            this.labelSurfaces.Size = new System.Drawing.Size(73, 13);
+            this.labelSurfaces.TabIndex = 72;
+            this.labelSurfaces.Text = "Поверхность";
+            // 
+            // labelDate
+            // 
+            this.labelDate.AutoSize = true;
+            this.labelDate.Location = new System.Drawing.Point(548, 173);
+            this.labelDate.Name = "labelDate";
+            this.labelDate.Size = new System.Drawing.Size(33, 13);
+            this.labelDate.TabIndex = 73;
+            this.labelDate.Text = "Дата";
             // 
             // FormOfWorkWithDatabase
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1370, 748);
+            this.ClientSize = new System.Drawing.Size(819, 481);
+            this.Controls.Add(this.labelDate);
+            this.Controls.Add(this.labelSurfaces);
+            this.Controls.Add(this.LabelRoughness);
+            this.Controls.Add(this.LabelAllowance);
+            this.Controls.Add(this.LabelHoleDepth);
+            this.Controls.Add(this.CipherPart);
+            this.Controls.Add(this.labelPart);
+            this.Controls.Add(this.LabelDiameterOfPart);
+            this.Controls.Add(this.label15);
+            this.Controls.Add(this.LabelTypeOfProcessedSurface);
+            this.Controls.Add(this.LabelTypeOfAllowance);
+            this.Controls.Add(this.LabelTypeOfPart);
+            this.Controls.Add(this.LabelTechnologicalProcess);
+            this.Controls.Add(this.LabelOperaions);
+            this.Controls.Add(this.labelCipherPart);
             this.Controls.Add(this.Operations);
             this.Controls.Add(this.Tolerance);
             this.Controls.Add(this.HoleDepth);
@@ -422,5 +602,20 @@
         protected internal System.Windows.Forms.TextBox HoleDepth;
         protected internal System.Windows.Forms.TextBox Tolerance;
         protected internal System.Windows.Forms.TreeView Operations;
+        private System.Windows.Forms.Label labelCipherPart;
+        private System.Windows.Forms.Label LabelOperaions;
+        private System.Windows.Forms.Label LabelTechnologicalProcess;
+        protected internal System.Windows.Forms.Label LabelTypeOfPart;
+        protected internal System.Windows.Forms.Label LabelTypeOfAllowance;
+        protected internal System.Windows.Forms.Label LabelTypeOfProcessedSurface;
+        private System.Windows.Forms.Label label15;
+        protected internal System.Windows.Forms.Label LabelDiameterOfPart;
+        private System.Windows.Forms.Label labelPart;
+        protected internal System.Windows.Forms.ComboBox CipherPart;
+        protected internal System.Windows.Forms.Label LabelHoleDepth;
+        protected internal System.Windows.Forms.Label LabelAllowance;
+        protected internal System.Windows.Forms.Label LabelRoughness;
+        private System.Windows.Forms.Label labelSurfaces;
+        private System.Windows.Forms.Label labelDate;
     }
 }

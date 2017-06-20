@@ -642,8 +642,6 @@ g:\Программирование\thesis\WindowsFormsApplication8\WindowsForms
 C:\программирование\thesis\WindowsFormsApplication8\WindowsFormsApplication8\obj\x86\Debug\WindowsFormsApplication8.DBAdminForm.resources
 g:\Программирование\thesis\WindowsFormsApplication8\WindowsFormsApplication8\obj\x86\Debug\WindowsFormsApplication8.DBAdminForm.resources
 C:\Users\admin\Documents\GitHub\thesis\WindowsFormsApplication8\WindowsFormsApplication8\obj\x86\Debug\WindowsFormsApplication8.DBAdminForm.resources
-C:\Users\admin\Documents\GitHub\thesis\WindowsFormsApplication8\WindowsFormsApplication8\bin\Debug\Chains.mdf
-C:\Users\admin\Documents\GitHub\thesis\WindowsFormsApplication8\WindowsFormsApplication8\bin\Debug\Chains_log.ldf
 C:\Users\admin\Documents\GitHub\thesis\WindowsFormsApplication8\WindowsFormsApplication8\bin\Debug\Microsoft.Data.ConnectionUI.Dialog.dll
 C:\Users\admin\Documents\GitHub\thesis\WindowsFormsApplication8\WindowsFormsApplication8\bin\Debug\Microsoft.Data.ConnectionUI.dll
 C:\Users\admin\Documents\GitHub\thesis\WindowsFormsApplication8\WindowsFormsApplication8\bin\Debug\Microsoft.SqlServer.ConnectionInfo.dll
