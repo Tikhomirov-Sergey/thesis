@@ -49,7 +49,7 @@
             this.calculationBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.operationsBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.surfaceBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.Part = new System.Windows.Forms.ComboBox();
+            this.NamePart = new System.Windows.Forms.ComboBox();
             this.Calculation = new System.Windows.Forms.ComboBox();
             this.Surfaces = new System.Windows.Forms.ComboBox();
             this.LengthPart = new System.Windows.Forms.TextBox();
@@ -232,14 +232,14 @@
             this.surfaceBindingSource.DataMember = "Surface";
             this.surfaceBindingSource.DataSource = this.chainsDataSet1;
             // 
-            // Part
+            // NamePart
             // 
-            this.Part.FormattingEnabled = true;
-            this.Part.Location = new System.Drawing.Point(587, 94);
-            this.Part.Name = "Part";
-            this.Part.Size = new System.Drawing.Size(121, 21);
-            this.Part.TabIndex = 13;
-            this.Part.TextChanged += new System.EventHandler(this.Part_TextChanged);
+            this.NamePart.FormattingEnabled = true;
+            this.NamePart.Location = new System.Drawing.Point(587, 94);
+            this.NamePart.Name = "NamePart";
+            this.NamePart.Size = new System.Drawing.Size(121, 21);
+            this.NamePart.TabIndex = 13;
+            this.NamePart.SelectedIndexChanged += new System.EventHandler(this.NamePart_SelectedIndexChanged);
             // 
             // Calculation
             // 
@@ -248,7 +248,7 @@
             this.Calculation.Name = "Calculation";
             this.Calculation.Size = new System.Drawing.Size(121, 21);
             this.Calculation.TabIndex = 14;
-            this.Calculation.TextChanged += new System.EventHandler(this.Calculation_TextChanged);
+            this.Calculation.SelectedIndexChanged += new System.EventHandler(this.Calculation_SelectedIndexChanged);
             // 
             // Surfaces
             // 
@@ -257,7 +257,7 @@
             this.Surfaces.Name = "Surfaces";
             this.Surfaces.Size = new System.Drawing.Size(121, 21);
             this.Surfaces.TabIndex = 16;
-            this.Surfaces.TextChanged += new System.EventHandler(this.Surfaces_TextChanged);
+            this.Surfaces.SelectedIndexChanged += new System.EventHandler(this.Surfaces_SelectedIndexChanged);
             // 
             // LengthPart
             // 
@@ -423,7 +423,7 @@
             this.CipherPart.Name = "CipherPart";
             this.CipherPart.Size = new System.Drawing.Size(121, 21);
             this.CipherPart.TabIndex = 40;
-            this.CipherPart.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
+            this.CipherPart.SelectedIndexChanged += new System.EventHandler(this.CipherPart_SelectedIndexChanged);
             // 
             // LabelHoleDepth
             // 
@@ -506,7 +506,7 @@
             this.Controls.Add(this.LengthPart);
             this.Controls.Add(this.Surfaces);
             this.Controls.Add(this.Calculation);
-            this.Controls.Add(this.Part);
+            this.Controls.Add(this.NamePart);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.textBox2);
             this.Controls.Add(this.button4);
@@ -589,7 +589,7 @@
         private System.Windows.Forms.BindingSource operationsBindingSource;
         private ChainsDataSet1TableAdapters.SurfaceTableAdapter surfaceTableAdapter;
         private System.Windows.Forms.BindingSource surfaceBindingSource;
-        protected internal System.Windows.Forms.ComboBox Part;
+        protected internal System.Windows.Forms.ComboBox NamePart;
         protected internal System.Windows.Forms.ComboBox Calculation;
         protected internal System.Windows.Forms.ComboBox Surfaces;
         protected internal System.Windows.Forms.TextBox LengthPart;

@@ -21,16 +21,16 @@ namespace WindowsFormsApplication8
 
         private void Form4_Load(object sender, EventArgs e)
         {
-           EventOutputDataFromDataBase.getListNamesPartsInComboBox(this);
+           EventOutputDataFromDataBase.getListNamesAndCipherPartsInComboBox(this);
         }
 
         private void button1_Click(object sender, EventArgs e)
         {
-           // try
-           // {
+           try
+           {
                 EventOutputDataFromDataBase.buttonClickSaveToPart(this);
-          //  }
-          //  catch { }
+           }
+           catch { }
         }
 
         /*private void ToolStripMenuItemBackup_Click(object sender, EventArgs e)
@@ -98,27 +98,7 @@ namespace WindowsFormsApplication8
 
         }
 
-        private void Part_TextChanged(object sender, EventArgs e)
-        {
-            EventOutputDataFromDataBase.TextChangedInComboBoxPart(this);
-        }
-
-        private void Calculation_TextChanged(object sender, EventArgs e)
-        {
-            EventOutputDataFromDataBase.TextChangedInComboBoxCalculation(this);
-        }
-
-        private void Surfaces_TextChanged(object sender, EventArgs e)
-        {
-            EventOutputDataFromDataBase.TextChangedInComboBoxSurface(this);
-        }
-
         private void label1_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
         {
 
         }
@@ -151,6 +131,26 @@ namespace WindowsFormsApplication8
         private void textBox1_TextChanged(object sender, EventArgs e)
         {
 
+        }
+
+        private void NamePart_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            EventOutputDataFromDataBase.selectedIndexNamePartChanged(this);
+        }
+
+        private void CipherPart_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            EventOutputDataFromDataBase.selectedIndexCipherPartChange(this);
+        }
+
+        private void Surfaces_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            EventOutputDataFromDataBase.selectedIndexComboBoxSurfaceChange(this);
+        }
+
+        private void Calculation_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            EventOutputDataFromDataBase.selectedIndexComboBoxCalculationChange(this);
         }
     }
 }

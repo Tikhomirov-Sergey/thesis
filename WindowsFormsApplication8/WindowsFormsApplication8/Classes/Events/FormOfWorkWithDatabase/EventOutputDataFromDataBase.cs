@@ -6,6 +6,7 @@ using System.Data.SqlClient;
 using System.Data;
 using System.Windows.Forms;
 using WindowsFormsApplication8;
+using System.Drawing;
 
 namespace WindowsFormsApplication8
 {
@@ -23,31 +24,39 @@ namespace WindowsFormsApplication8
         private static List<DependenceOperation> operations;
 
 
-        public static void getListNamesPartsInComboBox(FormOfWorkWithDatabase form)
+        public static void getListNamesAndCipherPartsInComboBox(FormOfWorkWithDatabase form)
         {
             selectPartsInDB();
 
-            form.Part.Items.Clear();
+            form.NamePart.Items.Clear();
+            form.CipherPart.Items.Clear();
 
             foreach (DependencePart part in parts)
             {
-                form.Part.Items.Add(part.getName());
+                form.NamePart.Items.Add(part.getName());
+                form.CipherPart.Items.Add(part.getId());
             }
 
             try
             {
-                form.Part.SelectedIndex = 0;
+                form.NamePart.SelectedIndex = 0;
             }
             catch { }
         }
 
-        public static void TextChangedInComboBoxPart(FormOfWorkWithDatabase form)
+        public static void selectedIndexNamePartChanged(FormOfWorkWithDatabase form)
         {
-            int selectedIndex = form.Part.SelectedIndex;
+            int selectIndexNamePart = form.NamePart.SelectedIndex;
+            int selectIndexCipherPart = form.CipherPart.SelectedIndex;
 
-            form.LengthPart.Text = parts[selectedIndex].getLengthPart().ToString();
+            if (selectIndexNamePart != selectIndexCipherPart)
+            {
+                form.CipherPart.SelectedIndex = selectIndexNamePart;
+            }
 
-            selectCalculationInDB(selectedIndex);
+            form.LengthPart.Text = parts[selectIndexNamePart].getLengthPart().ToString();
+
+            selectCalculationInDB(selectIndexNamePart);
 
             form.Calculation.Items.Clear();
 
@@ -62,7 +71,46 @@ namespace WindowsFormsApplication8
             catch { }
         }
 
-        public static void TextChangedInComboBoxCalculation(FormOfWorkWithDatabase form)
+        public static void selectedIndexCipherPartChange(FormOfWorkWithDatabase form)
+        {
+            int selectIndexCipherPart = form.CipherPart.SelectedIndex;
+            int selectIndexNamePart = form.NamePart.SelectedIndex;
+            
+            if (selectIndexCipherPart != selectIndexNamePart)
+            {
+                form.NamePart.SelectedIndex = selectIndexCipherPart;
+            }
+        }
+
+        public static void TextChangedInComboBoxNamePart(FormOfWorkWithDatabase form)
+        {
+            try
+            {
+                /*List<DependencePart> serchInPart = new List<DependencePart>();
+                string serchString = form.NamePart.Text;
+
+                foreach (DependencePart part in parts)
+                {
+                    if (part.getName().StartsWith(serchString))
+                    {
+                        serchInPart.Add(part);
+                    }
+                }
+
+                form.NamePart.Items.Clear();
+
+                foreach (DependencePart part in serchInPart)
+                {
+                    form.NamePart.Items.Add(part.getName());
+                }
+
+                form.NamePart.SelectedIndex = 0;
+                form.NamePart.DroppedDown = true;*/
+            }
+            catch { }
+        }
+
+        public static void selectedIndexComboBoxCalculationChange(FormOfWorkWithDatabase form)
         {
             int selectedIndex = form.Calculation.SelectedIndex;
 
@@ -72,7 +120,7 @@ namespace WindowsFormsApplication8
             getSurfacesInComboBoxAndTextBoxes(form, selectedIndex);
         }
 
-        public static void TextChangedInComboBoxSurface(FormOfWorkWithDatabase form)
+        public static void selectedIndexComboBoxSurfaceChange(FormOfWorkWithDatabase form)
         {
             int selectedIndex = form.Surfaces.SelectedIndex;
             selectOperationInDB(selectedIndex);
@@ -105,12 +153,11 @@ namespace WindowsFormsApplication8
 
         public static void buttonClickSaveToPart(FormOfWorkWithDatabase form)
         {
-            int selectedCalculation = form.Calculation.SelectedIndex;
+            saveWorkpriece();
             saveTechnologicalProcessInPart();
             saveSurfaceInPart(form);
 
-            Part.insertParametersOfPartInTextboxes(form.parrentForm);
-            Part.insertListOfTechnologicalProcessInTreeView(form.parrentForm);
+            insertPartInMainForm(form);
         }
 
         private static void selectPartsInDB()
@@ -353,7 +400,7 @@ namespace WindowsFormsApplication8
             {
                 foreach (DependenceOperationInTechnologicalProcess dependenceoperationInTechnologicalProcess in technologicalProcess)
                 {
-                    Operation operationInTechnologicalProcess = dependenceoperationInTechnologicalProcess.getOperation();
+                    Operation operationInTechnologicalProcess = new Operation(dependenceoperationInTechnologicalProcess.getOperation());
 
                     if (operation.getIdOnTechnologicalProcess() == dependenceoperationInTechnologicalProcess.getIdInDb())
                     {
@@ -390,13 +437,18 @@ namespace WindowsFormsApplication8
         private static void saveSurfaceInPart(FormOfWorkWithDatabase form)
         {
             int countSurface = surfaces.Count;
-            int selectIndexPart = form.Part.SelectedIndex;
+            int selectIndexPart = form.NamePart.SelectedIndex;
 
             double lengtPart = parts[selectIndexPart].getLengthPart();
 
-            for(int i = 1; i < countSurface; i++)
+            for(int i = 0; i < countSurface; i++)
             {
-                surfaces[i].getParametersOfSurface().setLengthOfPart(lengtPart);
+                int numberSurfaceInPart = i + 1;
+                DependenceSurface surface = surfaces[i];
+
+                surface.getParametersOfSurface().setLengthOfPart(lengtPart);
+
+                Part.getSurfaceOnIndex(numberSurfaceInPart).setNameSurface(surface.getNameSurface());
                 Part.setParametersOfPart(surfaces[i].getParametersOfSurface());
 
                 saveOperationsInSurface(i);
@@ -405,16 +457,35 @@ namespace WindowsFormsApplication8
 
         private static void saveOperationsInSurface(int index)
         {
+            int numberOperationInPart = index + 1;
+
             selectOperationInDB(index);
             defineDependenciesOperations();
 
-            List<Operation> operations = Part.getSurfaceOnIndex(index).getOperations();
+            List<Operation> operations = Part.getSurfaceOnIndex(numberOperationInPart).getOperations();
             operations.Clear();
 
             foreach (DependenceOperation operation in EventOutputDataFromDataBase.operations)
             {
-                operations.Add(new Operation(operation.getOperation()));
+                Part.getSurfaceOnIndex(numberOperationInPart).setOpetation(new Operation(operation.getOperation()));
             }
+        }
+
+        private static void saveWorkpriece()
+        {
+            ParametersWorkpiece workpriece = Tables.getParametersOfWorkpieces().getParametersWorkprieceOnIndex(EventOutputDataFromDataBase.workpriece.getIdWorkpriece());
+            Part.setWorkpiece(workpriece);
+        }
+
+        private static void insertPartInMainForm(FormOfWorkWithDatabase form)
+        {
+            Part.insertListOfSurfacess(form.parrentForm);
+            Part.insertParametersOfPartInTextboxes(form.parrentForm);
+            Part.insertListOfOperationsInTreeView(form.parrentForm);
+
+            EventClickOnButtonOfSelectWorkpriece.enabledTextBoxes(form.parrentForm);
+
+            form.parrentForm.SurfacesTreeView.SelectedNode = form.parrentForm.SurfacesTreeView.Nodes[0];
         }
     }
 }
