@@ -55,9 +55,9 @@
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(373, 49);
+            this.button1.Location = new System.Drawing.Point(354, 32);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(91, 78);
+            this.button1.Size = new System.Drawing.Size(132, 118);
             this.button1.TabIndex = 3;
             this.button1.Text = "Сохранить";
             this.button1.UseVisualStyleBackColor = true;
