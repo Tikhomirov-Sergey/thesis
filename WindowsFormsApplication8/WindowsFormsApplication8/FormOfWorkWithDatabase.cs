@@ -69,14 +69,14 @@ namespace WindowsFormsApplication8
 
         private void button2_Click(object sender, EventArgs e)
         {
-            if (String.IsNullOrEmpty(textBox1.Text)) detailBindingSource.Filter = "";
-            else detailBindingSource.Filter = "Name LIKE'" + textBox1.Text + "%'";
+            if (String.IsNullOrEmpty(SearchByCipher.Text)) detailBindingSource.Filter = "";
+            else detailBindingSource.Filter = "Name LIKE'" + SearchByCipher.Text + "%'";
         }
 
         private void button4_Click(object sender, EventArgs e)
         {
-            if (String.IsNullOrEmpty(textBox2.Text)) detailBindingSource.Filter = "";
-            else detailBindingSource.Filter = "Date = \'" + textBox2.Text + "\'";
+            if (String.IsNullOrEmpty(SearchByCipher.Text)) detailBindingSource.Filter = "";
+            else detailBindingSource.Filter = "Date = \'" + SearchByCipher.Text + "\'";
         }
 
         private void button3_Click_1(object sender, EventArgs e)
@@ -128,11 +128,6 @@ namespace WindowsFormsApplication8
 
         }
 
-        private void textBox1_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
         private void NamePart_SelectedIndexChanged(object sender, EventArgs e)
         {
             EventOutputDataFromDataBase.selectedIndexNamePartChanged(this);
@@ -151,6 +146,11 @@ namespace WindowsFormsApplication8
         private void Calculation_SelectedIndexChanged(object sender, EventArgs e)
         {
             EventOutputDataFromDataBase.selectedIndexComboBoxCalculationChange(this);
+        }
+
+        private void SearchByName_TextChanged(object sender, EventArgs e)
+        {
+            EventOutputDataFromDataBase.searchByName(this);
         }
     }
 }

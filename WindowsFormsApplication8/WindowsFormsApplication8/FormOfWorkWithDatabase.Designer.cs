@@ -31,14 +31,12 @@
             this.components = new System.ComponentModel.Container();
             this.button1 = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.SearchByName = new System.Windows.Forms.TextBox();
             this.button2 = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
             this.button4 = new System.Windows.Forms.Button();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.SearchByCipher = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
-            this.menuStrip1 = new System.Windows.Forms.MenuStrip();
-            this.ToolStripMenuItemBackup = new System.Windows.Forms.ToolStripMenuItem();
             this.chainsDataSet1 = new WindowsFormsApplication8.ChainsDataSet1();
             this.detailBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.detailTableAdapter = new WindowsFormsApplication8.ChainsDataSet1TableAdapters.DetailTableAdapter();
@@ -77,7 +75,6 @@
             this.LabelRoughness = new System.Windows.Forms.Label();
             this.labelSurfaces = new System.Windows.Forms.Label();
             this.labelDate = new System.Windows.Forms.Label();
-            this.menuStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.chainsDataSet1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.detailBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.calculationBindingSource)).BeginInit();
@@ -87,9 +84,10 @@
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(416, 214);
+            this.button1.Location = new System.Drawing.Point(555, 263);
+            this.button1.Margin = new System.Windows.Forms.Padding(4);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(200, 40);
+            this.button1.Size = new System.Drawing.Size(267, 49);
             this.button1.TabIndex = 2;
             this.button1.Text = "Выбор записи \r\n       из БД";
             this.button1.UseVisualStyleBackColor = true;
@@ -98,26 +96,29 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(520, 47);
+            this.label1.Location = new System.Drawing.Point(693, 58);
+            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(83, 13);
+            this.label1.Size = new System.Drawing.Size(107, 17);
             this.label1.TabIndex = 4;
             this.label1.Text = "Поиск по дате:";
             this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
-            // textBox1
+            // SearchByName
             // 
-            this.textBox1.Location = new System.Drawing.Point(609, 21);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(123, 20);
-            this.textBox1.TabIndex = 5;
-            this.textBox1.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
+            this.SearchByName.Location = new System.Drawing.Point(812, 26);
+            this.SearchByName.Margin = new System.Windows.Forms.Padding(4);
+            this.SearchByName.Name = "SearchByName";
+            this.SearchByName.Size = new System.Drawing.Size(163, 22);
+            this.SearchByName.TabIndex = 5;
+            this.SearchByName.TextChanged += new System.EventHandler(this.SearchByName_TextChanged);
             // 
             // button2
             // 
-            this.button2.Location = new System.Drawing.Point(734, 19);
+            this.button2.Location = new System.Drawing.Point(979, 23);
+            this.button2.Margin = new System.Windows.Forms.Padding(4);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(75, 23);
+            this.button2.Size = new System.Drawing.Size(100, 28);
             this.button2.TabIndex = 6;
             this.button2.Text = "Поиск";
             this.button2.UseVisualStyleBackColor = true;
@@ -125,60 +126,46 @@
             // 
             // button3
             // 
-            this.button3.Location = new System.Drawing.Point(616, 214);
+            this.button3.Location = new System.Drawing.Point(821, 263);
+            this.button3.Margin = new System.Windows.Forms.Padding(4);
             this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(200, 40);
+            this.button3.Size = new System.Drawing.Size(267, 49);
             this.button3.TabIndex = 7;
             this.button3.Text = "Удаление записи \r\n        из БД";
             this.button3.UseVisualStyleBackColor = true;
             // 
             // button4
             // 
-            this.button4.Location = new System.Drawing.Point(734, 44);
+            this.button4.Location = new System.Drawing.Point(979, 54);
+            this.button4.Margin = new System.Windows.Forms.Padding(4);
             this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(75, 23);
+            this.button4.Size = new System.Drawing.Size(100, 28);
             this.button4.TabIndex = 8;
             this.button4.Text = "Поиск";
             this.button4.UseVisualStyleBackColor = true;
             this.button4.Click += new System.EventHandler(this.button4_Click_1);
             // 
-            // textBox2
+            // SearchByCipher
             // 
-            this.textBox2.Location = new System.Drawing.Point(609, 44);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(123, 20);
-            this.textBox2.TabIndex = 9;
-            this.textBox2.TextChanged += new System.EventHandler(this.textBox2_TextChanged);
+            this.SearchByCipher.Location = new System.Drawing.Point(812, 54);
+            this.SearchByCipher.Margin = new System.Windows.Forms.Padding(4);
+            this.SearchByCipher.Name = "SearchByCipher";
+            this.SearchByCipher.Size = new System.Drawing.Size(163, 22);
+            this.SearchByCipher.TabIndex = 9;
+            this.SearchByCipher.TextChanged += new System.EventHandler(this.textBox2_TextChanged);
             // 
             // label2
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label2.Location = new System.Drawing.Point(429, 24);
+            this.label2.Location = new System.Drawing.Point(572, 30);
+            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
             this.label2.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.label2.Size = new System.Drawing.Size(174, 13);
+            this.label2.Size = new System.Drawing.Size(225, 17);
             this.label2.TabIndex = 10;
             this.label2.Text = "Поиск по наименованию детали:";
             this.label2.Click += new System.EventHandler(this.label2_Click);
-            // 
-            // menuStrip1
-            // 
-            this.menuStrip1.ImageScalingSize = new System.Drawing.Size(20, 20);
-            this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.ToolStripMenuItemBackup});
-            this.menuStrip1.Location = new System.Drawing.Point(0, 0);
-            this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Padding = new System.Windows.Forms.Padding(4, 2, 0, 2);
-            this.menuStrip1.Size = new System.Drawing.Size(819, 24);
-            this.menuStrip1.TabIndex = 12;
-            this.menuStrip1.Text = "menuStrip1";
-            // 
-            // ToolStripMenuItemBackup
-            // 
-            this.ToolStripMenuItemBackup.Name = "ToolStripMenuItemBackup";
-            this.ToolStripMenuItemBackup.Size = new System.Drawing.Size(170, 20);
-            this.ToolStripMenuItemBackup.Text = "Резервное копирование БД";
             // 
             // chainsDataSet1
             // 
@@ -235,250 +222,268 @@
             // NamePart
             // 
             this.NamePart.FormattingEnabled = true;
-            this.NamePart.Location = new System.Drawing.Point(587, 94);
+            this.NamePart.Location = new System.Drawing.Point(783, 116);
+            this.NamePart.Margin = new System.Windows.Forms.Padding(4);
             this.NamePart.Name = "NamePart";
-            this.NamePart.Size = new System.Drawing.Size(121, 21);
+            this.NamePart.Size = new System.Drawing.Size(160, 24);
             this.NamePart.TabIndex = 13;
             this.NamePart.SelectedIndexChanged += new System.EventHandler(this.NamePart_SelectedIndexChanged);
             // 
             // Calculation
             // 
             this.Calculation.FormattingEnabled = true;
-            this.Calculation.Location = new System.Drawing.Point(587, 170);
+            this.Calculation.Location = new System.Drawing.Point(783, 180);
+            this.Calculation.Margin = new System.Windows.Forms.Padding(4);
             this.Calculation.Name = "Calculation";
-            this.Calculation.Size = new System.Drawing.Size(121, 21);
+            this.Calculation.Size = new System.Drawing.Size(160, 24);
             this.Calculation.TabIndex = 14;
             this.Calculation.SelectedIndexChanged += new System.EventHandler(this.Calculation_SelectedIndexChanged);
             // 
             // Surfaces
             // 
             this.Surfaces.FormattingEnabled = true;
-            this.Surfaces.Location = new System.Drawing.Point(587, 145);
+            this.Surfaces.Location = new System.Drawing.Point(783, 212);
+            this.Surfaces.Margin = new System.Windows.Forms.Padding(4);
             this.Surfaces.Name = "Surfaces";
-            this.Surfaces.Size = new System.Drawing.Size(121, 21);
+            this.Surfaces.Size = new System.Drawing.Size(160, 24);
             this.Surfaces.TabIndex = 16;
             this.Surfaces.SelectedIndexChanged += new System.EventHandler(this.Surfaces_SelectedIndexChanged);
             // 
             // LengthPart
             // 
-            this.LengthPart.Location = new System.Drawing.Point(123, 34);
-            this.LengthPart.Margin = new System.Windows.Forms.Padding(2);
+            this.LengthPart.Location = new System.Drawing.Point(161, 27);
+            this.LengthPart.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.LengthPart.Name = "LengthPart";
-            this.LengthPart.Size = new System.Drawing.Size(76, 20);
+            this.LengthPart.Size = new System.Drawing.Size(100, 22);
             this.LengthPart.TabIndex = 18;
             // 
             // TechnologicalProcess
             // 
-            this.TechnologicalProcess.Location = new System.Drawing.Point(5, 276);
+            this.TechnologicalProcess.Location = new System.Drawing.Point(7, 340);
+            this.TechnologicalProcess.Margin = new System.Windows.Forms.Padding(4);
             this.TechnologicalProcess.Name = "TechnologicalProcess";
-            this.TechnologicalProcess.Size = new System.Drawing.Size(400, 200);
+            this.TechnologicalProcess.Size = new System.Drawing.Size(532, 245);
             this.TechnologicalProcess.TabIndex = 19;
             // 
             // diameterOfSurface
             // 
-            this.diameterOfSurface.Location = new System.Drawing.Point(252, 53);
+            this.diameterOfSurface.Location = new System.Drawing.Point(333, 50);
+            this.diameterOfSurface.Margin = new System.Windows.Forms.Padding(4);
             this.diameterOfSurface.Name = "diameterOfSurface";
-            this.diameterOfSurface.Size = new System.Drawing.Size(100, 20);
+            this.diameterOfSurface.Size = new System.Drawing.Size(132, 22);
             this.diameterOfSurface.TabIndex = 20;
             // 
             // typeOfPart
             // 
-            this.typeOfPart.Location = new System.Drawing.Point(94, 76);
+            this.typeOfPart.Location = new System.Drawing.Point(122, 79);
+            this.typeOfPart.Margin = new System.Windows.Forms.Padding(4);
             this.typeOfPart.Name = "typeOfPart";
-            this.typeOfPart.Size = new System.Drawing.Size(69, 20);
+            this.typeOfPart.Size = new System.Drawing.Size(91, 22);
             this.typeOfPart.TabIndex = 21;
             // 
             // typeOfAllowance
             // 
-            this.typeOfAllowance.Location = new System.Drawing.Point(94, 98);
+            this.typeOfAllowance.Location = new System.Drawing.Point(122, 106);
+            this.typeOfAllowance.Margin = new System.Windows.Forms.Padding(4);
             this.typeOfAllowance.Name = "typeOfAllowance";
-            this.typeOfAllowance.Size = new System.Drawing.Size(69, 20);
+            this.typeOfAllowance.Size = new System.Drawing.Size(91, 22);
             this.typeOfAllowance.TabIndex = 22;
             // 
             // TypeOfProcessedSurface
             // 
-            this.TypeOfProcessedSurface.Location = new System.Drawing.Point(207, 123);
+            this.TypeOfProcessedSurface.Location = new System.Drawing.Point(273, 136);
+            this.TypeOfProcessedSurface.Margin = new System.Windows.Forms.Padding(4);
             this.TypeOfProcessedSurface.Name = "TypeOfProcessedSurface";
-            this.TypeOfProcessedSurface.Size = new System.Drawing.Size(100, 20);
+            this.TypeOfProcessedSurface.Size = new System.Drawing.Size(132, 22);
             this.TypeOfProcessedSurface.TabIndex = 23;
             // 
             // SurfaceRoughness
             // 
-            this.SurfaceRoughness.Location = new System.Drawing.Point(143, 190);
+            this.SurfaceRoughness.Location = new System.Drawing.Point(188, 219);
+            this.SurfaceRoughness.Margin = new System.Windows.Forms.Padding(4);
             this.SurfaceRoughness.Name = "SurfaceRoughness";
-            this.SurfaceRoughness.Size = new System.Drawing.Size(72, 20);
+            this.SurfaceRoughness.Size = new System.Drawing.Size(95, 22);
             this.SurfaceRoughness.TabIndex = 24;
             // 
             // HoleDepth
             // 
-            this.HoleDepth.Location = new System.Drawing.Point(160, 145);
+            this.HoleDepth.Location = new System.Drawing.Point(210, 163);
+            this.HoleDepth.Margin = new System.Windows.Forms.Padding(4);
             this.HoleDepth.Name = "HoleDepth";
-            this.HoleDepth.Size = new System.Drawing.Size(55, 20);
+            this.HoleDepth.Size = new System.Drawing.Size(72, 22);
             this.HoleDepth.TabIndex = 25;
             this.HoleDepth.TextChanged += new System.EventHandler(this.HoleDepth_TextChanged);
             // 
             // Tolerance
             // 
-            this.Tolerance.Location = new System.Drawing.Point(151, 167);
+            this.Tolerance.Location = new System.Drawing.Point(198, 191);
+            this.Tolerance.Margin = new System.Windows.Forms.Padding(4);
             this.Tolerance.Name = "Tolerance";
-            this.Tolerance.Size = new System.Drawing.Size(64, 20);
+            this.Tolerance.Size = new System.Drawing.Size(84, 22);
             this.Tolerance.TabIndex = 26;
             // 
             // Operations
             // 
-            this.Operations.Location = new System.Drawing.Point(416, 276);
+            this.Operations.Location = new System.Drawing.Point(555, 340);
+            this.Operations.Margin = new System.Windows.Forms.Padding(4);
             this.Operations.Name = "Operations";
-            this.Operations.Size = new System.Drawing.Size(400, 200);
+            this.Operations.Size = new System.Drawing.Size(532, 245);
             this.Operations.TabIndex = 27;
             // 
             // labelCipherPart
             // 
             this.labelCipherPart.AutoSize = true;
-            this.labelCipherPart.Location = new System.Drawing.Point(507, 123);
+            this.labelCipherPart.Location = new System.Drawing.Point(676, 151);
+            this.labelCipherPart.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.labelCipherPart.Name = "labelCipherPart";
-            this.labelCipherPart.Size = new System.Drawing.Size(74, 13);
+            this.labelCipherPart.Size = new System.Drawing.Size(97, 17);
             this.labelCipherPart.TabIndex = 28;
             this.labelCipherPart.Text = "Шифр детали";
             // 
             // LabelOperaions
             // 
             this.LabelOperaions.AutoSize = true;
-            this.LabelOperaions.Location = new System.Drawing.Point(597, 260);
+            this.LabelOperaions.Location = new System.Drawing.Point(796, 320);
+            this.LabelOperaions.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.LabelOperaions.Name = "LabelOperaions";
-            this.LabelOperaions.Size = new System.Drawing.Size(57, 13);
+            this.LabelOperaions.Size = new System.Drawing.Size(75, 17);
             this.LabelOperaions.TabIndex = 29;
             this.LabelOperaions.Text = "Операции";
             // 
             // LabelTechnologicalProcess
             // 
             this.LabelTechnologicalProcess.AutoSize = true;
-            this.LabelTechnologicalProcess.Location = new System.Drawing.Point(140, 260);
+            this.LabelTechnologicalProcess.Location = new System.Drawing.Point(187, 320);
+            this.LabelTechnologicalProcess.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.LabelTechnologicalProcess.Name = "LabelTechnologicalProcess";
-            this.LabelTechnologicalProcess.Size = new System.Drawing.Size(140, 13);
+            this.LabelTechnologicalProcess.Size = new System.Drawing.Size(180, 17);
             this.LabelTechnologicalProcess.TabIndex = 30;
             this.LabelTechnologicalProcess.Text = "Технологический процесс";
             // 
             // LabelTypeOfPart
             // 
             this.LabelTypeOfPart.AutoSize = true;
-            this.LabelTypeOfPart.Location = new System.Drawing.Point(12, 78);
+            this.LabelTypeOfPart.Location = new System.Drawing.Point(13, 81);
+            this.LabelTypeOfPart.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.LabelTypeOfPart.Name = "LabelTypeOfPart";
-            this.LabelTypeOfPart.Size = new System.Drawing.Size(76, 13);
+            this.LabelTypeOfPart.Size = new System.Drawing.Size(97, 17);
             this.LabelTypeOfPart.TabIndex = 31;
             this.LabelTypeOfPart.Text = "Тип размера:";
-            this.LabelTypeOfPart.Visible = false;
             // 
             // LabelTypeOfAllowance
             // 
             this.LabelTypeOfAllowance.AutoSize = true;
-            this.LabelTypeOfAllowance.Location = new System.Drawing.Point(12, 101);
+            this.LabelTypeOfAllowance.Location = new System.Drawing.Point(13, 109);
+            this.LabelTypeOfAllowance.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.LabelTypeOfAllowance.Name = "LabelTypeOfAllowance";
-            this.LabelTypeOfAllowance.Size = new System.Drawing.Size(79, 13);
+            this.LabelTypeOfAllowance.Size = new System.Drawing.Size(102, 17);
             this.LabelTypeOfAllowance.TabIndex = 32;
             this.LabelTypeOfAllowance.Text = "Тип припуска:";
-            this.LabelTypeOfAllowance.Visible = false;
             // 
             // LabelTypeOfProcessedSurface
             // 
             this.LabelTypeOfProcessedSurface.AutoSize = true;
-            this.LabelTypeOfProcessedSurface.Location = new System.Drawing.Point(12, 126);
+            this.LabelTypeOfProcessedSurface.Location = new System.Drawing.Point(13, 140);
+            this.LabelTypeOfProcessedSurface.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.LabelTypeOfProcessedSurface.Name = "LabelTypeOfProcessedSurface";
-            this.LabelTypeOfProcessedSurface.Size = new System.Drawing.Size(189, 13);
+            this.LabelTypeOfProcessedSurface.Size = new System.Drawing.Size(245, 17);
             this.LabelTypeOfProcessedSurface.TabIndex = 33;
             this.LabelTypeOfProcessedSurface.Text = "Тип обрабатываемой  поверхности:";
-            this.LabelTypeOfProcessedSurface.Visible = false;
             // 
             // label15
             // 
             this.label15.AutoSize = true;
-            this.label15.Location = new System.Drawing.Point(12, 37);
+            this.label15.Location = new System.Drawing.Point(13, 31);
+            this.label15.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label15.Name = "label15";
-            this.label15.Size = new System.Drawing.Size(111, 13);
+            this.label15.Size = new System.Drawing.Size(145, 17);
             this.label15.TabIndex = 37;
             this.label15.Text = "Длина детали (l,мм):";
             // 
             // LabelDiameterOfPart
             // 
             this.LabelDiameterOfPart.AutoSize = true;
-            this.LabelDiameterOfPart.Location = new System.Drawing.Point(12, 56);
+            this.LabelDiameterOfPart.Location = new System.Drawing.Point(13, 54);
+            this.LabelDiameterOfPart.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.LabelDiameterOfPart.Name = "LabelDiameterOfPart";
-            this.LabelDiameterOfPart.Size = new System.Drawing.Size(238, 13);
+            this.LabelDiameterOfPart.Size = new System.Drawing.Size(301, 17);
             this.LabelDiameterOfPart.TabIndex = 38;
             this.LabelDiameterOfPart.Text = "Обрабатываемый размер/Диаметр (L/d,мм):";
-            this.LabelDiameterOfPart.Visible = false;
             // 
             // labelPart
             // 
             this.labelPart.AutoSize = true;
-            this.labelPart.Location = new System.Drawing.Point(536, 97);
+            this.labelPart.Location = new System.Drawing.Point(715, 119);
+            this.labelPart.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.labelPart.Name = "labelPart";
-            this.labelPart.Size = new System.Drawing.Size(45, 13);
+            this.labelPart.Size = new System.Drawing.Size(57, 17);
             this.labelPart.TabIndex = 39;
             this.labelPart.Text = "Деталь";
             // 
             // CipherPart
             // 
             this.CipherPart.FormattingEnabled = true;
-            this.CipherPart.Location = new System.Drawing.Point(587, 120);
+            this.CipherPart.Location = new System.Drawing.Point(783, 148);
+            this.CipherPart.Margin = new System.Windows.Forms.Padding(4);
             this.CipherPart.Name = "CipherPart";
-            this.CipherPart.Size = new System.Drawing.Size(121, 21);
+            this.CipherPart.Size = new System.Drawing.Size(160, 24);
             this.CipherPart.TabIndex = 40;
             this.CipherPart.SelectedIndexChanged += new System.EventHandler(this.CipherPart_SelectedIndexChanged);
             // 
             // LabelHoleDepth
             // 
             this.LabelHoleDepth.AutoSize = true;
-            this.LabelHoleDepth.Location = new System.Drawing.Point(12, 148);
+            this.LabelHoleDepth.Location = new System.Drawing.Point(13, 167);
+            this.LabelHoleDepth.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.LabelHoleDepth.Name = "LabelHoleDepth";
-            this.LabelHoleDepth.Size = new System.Drawing.Size(142, 13);
+            this.LabelHoleDepth.Size = new System.Drawing.Size(186, 17);
             this.LabelHoleDepth.TabIndex = 44;
             this.LabelHoleDepth.Text = "Глубина отверстия (lo,мм):";
-            this.LabelHoleDepth.Visible = false;
             // 
             // LabelAllowance
             // 
             this.LabelAllowance.AutoSize = true;
-            this.LabelAllowance.Location = new System.Drawing.Point(12, 170);
-            this.LabelAllowance.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.LabelAllowance.Location = new System.Drawing.Point(13, 194);
             this.LabelAllowance.Name = "LabelAllowance";
-            this.LabelAllowance.Size = new System.Drawing.Size(133, 13);
+            this.LabelAllowance.Size = new System.Drawing.Size(168, 17);
             this.LabelAllowance.TabIndex = 57;
             this.LabelAllowance.Text = "Допуск, мкм (без знака)";
-            this.LabelAllowance.Visible = false;
             // 
             // LabelRoughness
             // 
             this.LabelRoughness.AutoSize = true;
-            this.LabelRoughness.Location = new System.Drawing.Point(12, 193);
+            this.LabelRoughness.Location = new System.Drawing.Point(13, 223);
+            this.LabelRoughness.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.LabelRoughness.Name = "LabelRoughness";
-            this.LabelRoughness.Size = new System.Drawing.Size(127, 13);
+            this.LabelRoughness.Size = new System.Drawing.Size(159, 17);
             this.LabelRoughness.TabIndex = 71;
             this.LabelRoughness.Text = "Шероховатость Ra,мкм";
-            this.LabelRoughness.Visible = false;
             // 
             // labelSurfaces
             // 
             this.labelSurfaces.AutoSize = true;
-            this.labelSurfaces.Location = new System.Drawing.Point(511, 148);
+            this.labelSurfaces.Location = new System.Drawing.Point(681, 216);
+            this.labelSurfaces.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.labelSurfaces.Name = "labelSurfaces";
-            this.labelSurfaces.Size = new System.Drawing.Size(73, 13);
+            this.labelSurfaces.Size = new System.Drawing.Size(92, 17);
             this.labelSurfaces.TabIndex = 72;
             this.labelSurfaces.Text = "Поверхность";
             // 
             // labelDate
             // 
             this.labelDate.AutoSize = true;
-            this.labelDate.Location = new System.Drawing.Point(548, 173);
+            this.labelDate.Location = new System.Drawing.Point(731, 184);
+            this.labelDate.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.labelDate.Name = "labelDate";
-            this.labelDate.Size = new System.Drawing.Size(33, 13);
+            this.labelDate.Size = new System.Drawing.Size(42, 17);
             this.labelDate.TabIndex = 73;
             this.labelDate.Text = "Дата";
             // 
             // FormOfWorkWithDatabase
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(819, 481);
+            this.ClientSize = new System.Drawing.Size(1092, 592);
             this.Controls.Add(this.labelDate);
             this.Controls.Add(this.labelSurfaces);
             this.Controls.Add(this.LabelRoughness);
@@ -508,20 +513,17 @@
             this.Controls.Add(this.Calculation);
             this.Controls.Add(this.NamePart);
             this.Controls.Add(this.label2);
-            this.Controls.Add(this.textBox2);
+            this.Controls.Add(this.SearchByCipher);
             this.Controls.Add(this.button4);
             this.Controls.Add(this.button3);
             this.Controls.Add(this.button2);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.SearchByName);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.button1);
-            this.Controls.Add(this.menuStrip1);
-            this.MainMenuStrip = this.menuStrip1;
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "FormOfWorkWithDatabase";
             this.Text = "База данных";
             this.Load += new System.EventHandler(this.Form4_Load);
-            this.menuStrip1.ResumeLayout(false);
-            this.menuStrip1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.chainsDataSet1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.detailBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.calculationBindingSource)).EndInit();
@@ -549,12 +551,10 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn expr13DataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn expr14DataGridViewTextBoxColumn;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.DataGridViewTextBoxColumn dlinadetaliLмDataGridViewTextBoxColumn;
         private System.Windows.Forms.Button button3;
         private System.Windows.Forms.Button button4;
-        private System.Windows.Forms.TextBox textBox2;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn1;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn2;
@@ -577,8 +577,6 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn19;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn20;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn21;
-        private System.Windows.Forms.MenuStrip menuStrip1;
-        private System.Windows.Forms.ToolStripMenuItem ToolStripMenuItemBackup;
         private ChainsDataSet1 chainsDataSet1;
         private System.Windows.Forms.BindingSource detailBindingSource;
         private ChainsDataSet1TableAdapters.DetailTableAdapter detailTableAdapter;
@@ -617,5 +615,7 @@
         protected internal System.Windows.Forms.Label LabelRoughness;
         private System.Windows.Forms.Label labelSurfaces;
         private System.Windows.Forms.Label labelDate;
+        protected internal System.Windows.Forms.TextBox SearchByName;
+        protected internal System.Windows.Forms.TextBox SearchByCipher;
     }
 }

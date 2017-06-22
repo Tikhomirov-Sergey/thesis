@@ -16,6 +16,8 @@ namespace WindowsFormsApplication8
         private static SqlDataAdapter tableDataAdapter = new SqlDataAdapter();
 
         private static List<DependencePart> parts;
+        private static List<DependencePart> searchPart;
+
         private static List<DependenceCalculation> calculations;
 
         private static DependenceWorkpriece workpriece;
@@ -86,8 +88,8 @@ namespace WindowsFormsApplication8
         {
             try
             {
-                /*List<DependencePart> serchInPart = new List<DependencePart>();
-                string serchString = form.NamePart.Text;
+                List<DependencePart> serchInPart = new List<DependencePart>();
+                string serchString = form.NamePart.SelectedText;
 
                 foreach (DependencePart part in parts)
                 {
@@ -105,7 +107,7 @@ namespace WindowsFormsApplication8
                 }
 
                 form.NamePart.SelectedIndex = 0;
-                form.NamePart.DroppedDown = true;*/
+                form.NamePart.DroppedDown = true;
             }
             catch { }
         }
@@ -158,6 +160,48 @@ namespace WindowsFormsApplication8
             saveSurfaceInPart(form);
 
             insertPartInMainForm(form);
+
+            form.Close();
+        }
+
+        public static void searchByName(FormOfWorkWithDatabase form)
+        {
+           string searchString = form.SearchByName.Text;
+
+           form.SearchByCipher.Text = "";
+
+           searchPart = new List<DependencePart>();
+
+           foreach(DependencePart part in parts)
+           {
+                if(part.getName().ToLower().StartsWith(searchString.ToLower()))
+                {
+                   searchPart.Add(part);
+                }
+           }
+
+           form.NamePart.Items.Clear();
+           form.CipherPart.Items.Clear();
+
+           foreach (DependencePart part in searchPart)
+           {
+                form.NamePart.Items.Add(part.getName());
+                form.CipherPart.Items.Add(part.getId());
+           }
+
+           try
+           {
+               if(form.NamePart.Items.Count != 0)
+               {
+                   form.NamePart.SelectedIndex = 0;
+               }
+               else
+               {
+                    clearForm(form);
+               }    
+           }
+           catch { }
+            
         }
 
         private static void selectPartsInDB()
@@ -486,6 +530,30 @@ namespace WindowsFormsApplication8
             EventClickOnButtonOfSelectWorkpriece.enabledTextBoxes(form.parrentForm);
 
             form.parrentForm.SurfacesTreeView.SelectedNode = form.parrentForm.SurfacesTreeView.Nodes[0];
+        }
+
+        private static void clearForm(FormOfWorkWithDatabase form)
+        {
+            form.NamePart.Text = "";
+            form.CipherPart.Text = "";
+
+            form.Calculation.Items.Clear();
+            form.Calculation.Text = "";
+
+            form.Surfaces.Text = "";
+            form.Surfaces.Items.Clear();
+
+            form.TechnologicalProcess.Nodes.Clear();
+            form.Operations.Nodes.Clear();
+
+            form.LengthPart.Text = "";
+            form.diameterOfSurface.Text = "";
+            form.typeOfPart.Text = "";
+            form.typeOfAllowance.Text = "";
+            form.TypeOfProcessedSurface.Text = "";
+            form.HoleDepth.Text = "";
+            form.SurfaceRoughness.Text = "";
+            form.Tolerance.Text = "";
         }
     }
 }
