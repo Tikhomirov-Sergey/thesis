@@ -98,7 +98,6 @@
             this.DiameterOfPart.Name = "DiameterOfPart";
             this.DiameterOfPart.Size = new System.Drawing.Size(62, 20);
             this.DiameterOfPart.TabIndex = 1;
-            this.DiameterOfPart.Text = "65";
             this.DiameterOfPart.Visible = false;
             this.DiameterOfPart.Click += new System.EventHandler(this.textBox1_Click);
             this.DiameterOfPart.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.KeyPressForTextBoxWithDouble);
@@ -204,7 +203,7 @@
             // TypeOfMachining
             // 
             this.TypeOfMachining.Enabled = false;
-            this.TypeOfMachining.Location = new System.Drawing.Point(97, 60);
+            this.TypeOfMachining.Location = new System.Drawing.Point(96, 60);
             this.TypeOfMachining.Name = "TypeOfMachining";
             this.TypeOfMachining.Size = new System.Drawing.Size(175, 20);
             this.TypeOfMachining.TabIndex = 24;
@@ -255,7 +254,6 @@
             this.LengthOfPart.Name = "LengthOfPart";
             this.LengthOfPart.Size = new System.Drawing.Size(59, 20);
             this.LengthOfPart.TabIndex = 37;
-            this.LengthOfPart.Text = "53";
             this.LengthOfPart.Click += new System.EventHandler(this.textBox12_Click);
             this.LengthOfPart.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.KeyPressForTextBoxWithDouble);
             // 
@@ -510,7 +508,6 @@
             this.SurfaceRoughness.Name = "SurfaceRoughness";
             this.SurfaceRoughness.Size = new System.Drawing.Size(85, 20);
             this.SurfaceRoughness.TabIndex = 68;
-            this.SurfaceRoughness.Text = "0,01";
             this.SurfaceRoughness.Visible = false;
             this.SurfaceRoughness.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.KeyPressForTextBoxWithDouble);
             // 

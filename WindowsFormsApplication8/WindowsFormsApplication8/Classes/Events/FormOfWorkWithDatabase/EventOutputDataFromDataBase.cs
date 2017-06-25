@@ -368,7 +368,7 @@ namespace WindowsFormsApplication8
             form.typeOfAllowance.Text = parameters.getTypeOfAllowance().getName();
             form.TypeOfProcessedSurface.Text = parameters.getTypeOfProcessedSurface().getName();
 
-            form.SurfaceRoughness.Text = parameters.getSurfaceRoughnessRz().ToString();
+            form.SurfaceRoughness.Text = ConversionRoughnessRzAndRa.RzToRa(parameters.getSurfaceRoughnessRz()).ToString();
             form.HoleDepth.Text = parameters.getHoleDepth().ToString();
             form.Tolerance.Text = parameters.getAllowance().ToString();
         }
@@ -494,7 +494,7 @@ namespace WindowsFormsApplication8
                 surface.getParametersOfSurface().setLengthOfPart(lengtPart);
 
                 Part.getSurfaceOnIndex(numberSurfaceInPart).setNameSurface(surface.getNameSurface());
-                Part.setParametersOfPart(surfaces[i].getParametersOfSurface());
+                Part.getSurfaceOnIndex(numberSurfaceInPart).setParametersOfSurface(surfaces[i].getParametersOfSurface());
 
                 saveOperationsInSurface(i);
             }

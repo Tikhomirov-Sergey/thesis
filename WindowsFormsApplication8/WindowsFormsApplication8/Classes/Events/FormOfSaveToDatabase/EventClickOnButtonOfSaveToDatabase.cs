@@ -33,7 +33,7 @@ namespace WindowsFormsApplication8
                     form.Close();
              }
          }
-            catch { MessageBox.Show("Ошибка Базы данных", "Ошибка"); }
+            catch(Exception e) { MessageBox.Show("Ошибка Базы данных" + e.TargetSite, "Ошибка"); }
         }
 
         private static bool checkNameOfPartAndNameOfSurface(FormSaveToDataBase form)
@@ -81,8 +81,7 @@ namespace WindowsFormsApplication8
 
             if (!isCipherExist)
             {
-                ParametersOfSurface parametersOfPart = Part.getParametersOfPart();
-                double lengthOfPart =  parametersOfPart.getLengthOfPart();
+                double lengthOfPart =  Part.getLenghtOfPart();
 
                 dbConnection.SetQuery($@"INSERT INTO {DETAIL} VALUES ('{nameOfPart}', {cipherDetail}, '{date}', {doubleToStringForDb(lengthOfPart)})");
             }
@@ -142,7 +141,7 @@ namespace WindowsFormsApplication8
             for (int i = 1; i < countSufaces; i++)
             {
                 Surface surface = surfaces[i];
-                ParametersOfSurface parametersOfSurface = Part.getParametersOfPart();
+                ParametersOfSurface parametersOfSurface = surface.getParametersOfSurface();
 
                 string nameSurface = surface.getNameSurface();
 
