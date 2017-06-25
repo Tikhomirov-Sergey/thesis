@@ -33,40 +33,7 @@ namespace WindowsFormsApplication8
            catch { }
         }
 
-        /*private void ToolStripMenuItemBackup_Click(object sender, EventArgs e)
-        {
-            const string sqlServerInstanceName = "LAPTOP-OFSP8DM4"; // args[0];
-            const string databaseName = "Chains"; // args[1];
-            const string databaseBackupName = "Chains.bak";  // args[2];
-            
-            try
-            {
-
-                var server = ;
-                string databaseBackupFilePath = Path.Combine(server.Settings.BackupDirectory, databaseBackupName);
-
-                var backup = new Backup
-                {
-                    Action = BackupActionType.Database,
-                    Database = databaseName,
-                    Initialize = true, // Все наборы данных бэкапа будут перезаписаны.
-                    Incremental = false // Показываем, что это полный бэкап.
-                };
-                // Устанавливаем файл бэкапа бд.
-                var deviceItem = new BackupDeviceItem(databaseBackupFilePath, DeviceType.File);
-                backup.Devices.Add(deviceItem);
-                backup.SqlBackup(server);
-                MessageBox.Show("Резервное копирование базы данных «{0}» выполнено успешно в «{1}». Для продолжения нажмите Enter..." + databaseName + databaseBackupFilePath);
-            }
-            catch (Exception exception)
-            {
-                const string fileName = "errorLog.txt";
-                File.WriteAllText(fileName, exception.ToString());
-                MessageBox.Show("Резервное копирование базы данных «{0}» завершилось неудачно. Смотри лог ошибки в «{1}». Для продолжения нажмите Enter..." + databaseName + fileName);
-            }
-        }*/
-
-
+        
         private void button2_Click(object sender, EventArgs e)
         {
             if (String.IsNullOrEmpty(SearchByCipher.Text)) detailBindingSource.Filter = "";
@@ -77,17 +44,6 @@ namespace WindowsFormsApplication8
         {
             if (String.IsNullOrEmpty(SearchByCipher.Text)) detailBindingSource.Filter = "";
             else detailBindingSource.Filter = "Date = \'" + SearchByCipher.Text + "\'";
-        }
-
-        private void button3_Click_1(object sender, EventArgs e)
-        {
-            /* if (dataGridView1.CurrentRow != null)
-             {
-                 dataGridView1.Rows.Remove(dataGridView1.CurrentRow);
-                 this.детальTableAdapter.Update(this.juliaDataSet.Деталь);
-                 this.переходыTableAdapter.Update(this.juliaDataSet.Переходы);
-             }
-         }*/
         }
 
         private void detailBindingNavigatorSaveItem_Click(object sender, EventArgs e)

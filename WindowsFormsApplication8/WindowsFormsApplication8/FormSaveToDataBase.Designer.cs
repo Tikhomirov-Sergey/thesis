@@ -1,6 +1,6 @@
 ﻿namespace WindowsFormsApplication8
 {
-    partial class Form5
+    partial class FormSaveToDataBase
     {
         /// <summary>
         /// Required designer variable.

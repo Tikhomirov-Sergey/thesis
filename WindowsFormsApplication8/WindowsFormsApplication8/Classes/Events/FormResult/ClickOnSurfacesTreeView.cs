@@ -40,7 +40,7 @@ namespace WindowsFormsApplication8
 
         private static void insertOperationsOnReachBox(FormResult form, int index)
         {
-            int typeOfPart = Part.getParametersOfPart().getTypeOfPart().getIndex();
+            int typeOfPart = Part.getSurfaceOnIndex(index).getParametersOfSurface().getTypeOfPart().getIndex();
             char type;
 
             if (typeOfPart == 0)

@@ -10,26 +10,31 @@ namespace WindowsFormsApplication8
     {
         public static void buttonOfCalculation(MainForm form)
         {
-            try
-            {
+          try
+          {
+              int indexSelectedSurface = StorageOfSelectedOperation.getIndexSelectedSurface();
+              ParametersOfSurface parameters = extractionOfParametersOfPartFromTextBoxes(form);
+                   
+              Part.getSurfaceOnIndex(indexSelectedSurface).setParametersOfSurface(parameters);
+                
+              Part.calculationOfSurfaces();
 
-                ParametersOfSurface parameters = extractionOfParametersOfPartFromTextBoxes(form);
-                //SUFACE            
-                Part.setParametersOfPart(parameters);
-                Part.calculationOfSurfaces();
-
-                if (Part.getSurfaceOnIndex(1).getParametersOperation()[0] != null && !ErrorMessage.getGlobalError())
-                {
-                    FormResult formResult = new FormResult();
-                    formResult.ShowDialog();
-                }
-            }
-            catch { }
+              if (Part.getSurfaceOnIndex(1).getParametersOperation()[0] != null && !ErrorMessage.getGlobalError())
+              {
+                 FormResult formResult = new FormResult();
+                 formResult.ShowDialog();
+              }
+          }
+          catch { }
         }
 
         public static ParametersOfSurface extractionOfParametersOfPartFromTextBoxes(MainForm form)
         {
+            
+
             double lengthOfPart = StringConvertToDoubleOrZero(form.LengthOfPart.Text);
+            Part.setLenghtOfPart(lengthOfPart);
+
             double diameterOfPart = StringConvertToDoubleOrZero(form.DiameterOfPart.Text);
 
             TypeOfPart typeOfPart = createType(form.TypeOfPart);
@@ -37,6 +42,7 @@ namespace WindowsFormsApplication8
             TypeOfPart typeOfProcessedSurface = createType(form.TypeOfProcessedSurface);
 
             double surfaceRoughness = StringConvertToDoubleOrZero(form.SurfaceRoughness.Text);
+
             double allowance = StringConvertToDoubleOrZero(form.Allowance.Text);
             double holeDepth = StringConvertToDoubleOrZero(form.HoleDepth.Text);
 
@@ -71,8 +77,5 @@ namespace WindowsFormsApplication8
 
             return typeOfPart;
         }
-
-
-
     }
 }

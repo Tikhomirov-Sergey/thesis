@@ -100,16 +100,16 @@ namespace WindowsFormsApplication8
 
         public static void calculationOfSurfaces()
         {
-            try
-            {
+          try
+          {
                 int count = surfaces.Count;
 
                 for(int i = 1; i < count; i++)
                 {
                     surfaces[i].calculationOFSurface();
                 }
-            }
-            catch { }
+          }
+         catch(Exception e) { }
         }
 
         private static void checkSurface(int indexSurface)

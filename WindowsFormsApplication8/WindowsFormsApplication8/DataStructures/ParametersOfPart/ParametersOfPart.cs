@@ -14,32 +14,43 @@ namespace WindowsFormsApplication8
         private TypeOfPart typeOfAllowance;
         private TypeOfPart typeOfProcessedSurface;
 
-        private double surfaceRoughness;
+        private double surfaceRoughnessRz;
         private double allowance;
         private double holeDepth;
 
         public ParametersOfSurface(double diameterOfPart,
             TypeOfPart typeOfPart, TypeOfPart typeOfAllowance, TypeOfPart typeOfProcessedSurface,
-            double surfaceRoughness, double allowance, double holeDepth = 0)
+            double surfaceRoughnessRa, double allowance, double holeDepth = 0)
         {
             this.diameterOfPart = diameterOfPart;
             this.typeOfPart = typeOfPart;
             this.typeOfAllowance = typeOfAllowance;
             this.typeOfProcessedSurface = typeOfProcessedSurface;
-            this.surfaceRoughness = surfaceRoughness;
+            this.surfaceRoughnessRz = ConversionRoughnessRzAndRa.RaToRz(surfaceRoughnessRa);
             this.allowance = allowance;
             this.holeDepth = holeDepth;
         }
 
+        public ParametersOfSurface()
+        {
+            this.diameterOfPart = 0;
+            this.typeOfPart = new TypeOfPart("", 0);
+            this.typeOfAllowance = new TypeOfPart("", 0); 
+            this.typeOfProcessedSurface = new TypeOfPart("", 0); 
+            this.surfaceRoughnessRz = 0;
+            this.allowance = 0;
+            this.holeDepth = 0;
+        }
+
         public void insertParametersOfPartInTextboxes(MainForm form)
         {
-            form.LengthOfPart.Text = this.lengthOfPart.ToString();
             form.DiameterOfPart.Text = this.diameterOfPart.ToString();
 
             form.TypeOfPart.SelectedIndex = this.typeOfPart.getIndex();
             form.TypeOfAllowance.SelectedIndex = this.typeOfAllowance.getIndex();
             form.TypeOfProcessedSurface.SelectedIndex = this.typeOfProcessedSurface.getIndex();
 
+            form.SurfaceRoughness.Text = ConversionRoughnessRzAndRa.RzToRa(this.surfaceRoughnessRz).ToString();
             form.Allowance.Text = this.allowance.ToString();
             form.HoleDepth.Text = this.holeDepth.ToString();
         }
@@ -133,14 +144,14 @@ namespace WindowsFormsApplication8
             this.allowance = allowance;
         }
 
-        public double getSurfaceRoughness()
+        public double getSurfaceRoughnessRz()
         {
-            return surfaceRoughness;
+            return surfaceRoughnessRz;
         }
 
-        public void setSurfaceRoughness(double surfaceRoughness)
+        public void setSurfaceRoughnessRa(double surfaceRoughness)
         {
-            this.surfaceRoughness = surfaceRoughness;
+            this.surfaceRoughnessRz = ConversionRoughnessRzAndRa.RaToRz(surfaceRoughness);
         }
     }
 }

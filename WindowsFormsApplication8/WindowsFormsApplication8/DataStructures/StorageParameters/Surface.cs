@@ -13,7 +13,7 @@ namespace WindowsFormsApplication8
         private List<Operation> operations = new List<Operation>();
         private List<ParametersOperation> parametersOperation = new List<ParametersOperation>();
 
-        private ParametersOfSurface parametersOfSurface;
+        private ParametersOfSurface parametersOfSurface = new ParametersOfSurface();
 
 
         public void setParametersOfSurface(ParametersOfSurface parametersOfSurface)
@@ -23,6 +23,10 @@ namespace WindowsFormsApplication8
 
         public ParametersOfSurface getParametersOfSurface()
         {
+            if(parametersOfSurface == null)
+            {
+                parametersOfSurface = new ParametersOfSurface();
+            }
             return parametersOfSurface;
         }
 
@@ -107,12 +111,12 @@ namespace WindowsFormsApplication8
 
         public void calculationOFSurface()
         {
-            //Suface this.getParametersOfSurface();
-            ParametersOfSurface parametersOfPart = Part.getParametersOfPart();
+            ParametersOfSurface parametersOfSurface = this.getParametersOfSurface();
+            parametersOfSurface.setLengthOfPart(Part.getLenghtOfPart());
+
             DataStructures.CalculationOfSurface.ParametersOperationsForCalculation parametersOperations = getParametersOperationsForCalculation();
 
-            //SUFACE  new CalculationOfSurface(parametersOfSurface, parametersOperations);
-            CalculationOfSurface calculationOfSurface = new CalculationOfSurface(parametersOfPart, parametersOperations);
+            CalculationOfSurface calculationOfSurface = new CalculationOfSurface(parametersOfSurface, parametersOperations);
             ClassesToCalculate.ResultsOfCalculation[] resultsOfCalculation = calculationOfSurface.calculation();
 
             recordOfResultsOfOperations(resultsOfCalculation);
@@ -130,7 +134,7 @@ namespace WindowsFormsApplication8
                     getParametersOperation()[i].setResultsOfCalculation(resultsOfCalculation[i + 1]);
                 }
             }
-            catch { }
+            catch { MessageBox.Show("1"); }
         }
 
 
@@ -182,7 +186,7 @@ namespace WindowsFormsApplication8
         {
             this.parametersOperation.Clear();
 
-            double surfaceRoughness = Part.getParametersOfPart().getSurfaceRoughness();
+            double surfaceRoughness = this.getParametersOfSurface().getSurfaceRoughnessRz();
 
             int numberOfOperations = this.getCountShortListOperation();
 

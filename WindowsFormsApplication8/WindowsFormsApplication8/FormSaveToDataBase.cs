@@ -12,12 +12,12 @@ using System.Data.SqlClient;
 
 namespace WindowsFormsApplication8
 {
-    public partial class Form5 : Form
+    public partial class FormSaveToDataBase : Form
     {
         private DBConnection dbConnection = DBConnection.getDB();
         private SqlDataAdapter tableDataAdapter = new SqlDataAdapter();
 
-        public Form5()
+        public FormSaveToDataBase()
         {
             InitializeComponent();
         }

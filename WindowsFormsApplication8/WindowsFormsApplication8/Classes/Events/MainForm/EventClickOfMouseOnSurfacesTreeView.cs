@@ -13,6 +13,8 @@ namespace WindowsFormsApplication8
         {
             int selectedIndex = e.Node.Index;
 
+            //storageParametersOfSurface(form, selectedIndex);
+
             StorageOfSelectedOperation.setIndexSelectedSurface(selectedIndex);
             form.NameSurface.Text = Part.getSurfaceOnIndex(selectedIndex).getNameSurface();
 
@@ -54,10 +56,13 @@ namespace WindowsFormsApplication8
 
         public static void storageParametersOfSurface(MainForm form, int selectedIndex)
         {
-            int lastSelectedIndex = StorageOfSelectedOperation.getIndexSelectedSurface();
+            if (selectedIndex != 0)
+            {
+                int lastSelectedIndex = StorageOfSelectedOperation.getLastIndexSelectedSurface();
 
-            Part.getSurfaceOnIndex(lastSelectedIndex).setParametersOfSurface(extractionOfParametersOfPartFromTextBoxes(form));
-            //Part.getSurfaceOnIndex(selectedIndex).getParametersOfSurface().insertParametersOfPartInTextboxes(form);
+                Part.getSurfaceOnIndex(lastSelectedIndex).setParametersOfSurface(extractionOfParametersOfPartFromTextBoxes(form));
+                Part.getSurfaceOnIndex(selectedIndex).getParametersOfSurface().insertParametersOfPartInTextboxes(form);
+            }
         }
 
         public static ParametersOfSurface extractionOfParametersOfPartFromTextBoxes(MainForm form)

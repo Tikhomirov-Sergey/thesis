@@ -128,9 +128,19 @@ namespace WindowsFormsApplication8
 
         private ClassesToCalculate.ResultsOfCalculation[] getResultsOfCalculation()
         {
-            this.rounding();
-
             int numberOfOperations = this.parametersForCalculation.getNumberOfOperations();
+
+            double tolerance = parametersOfPart.getAllowance();
+            if(tolerance == 0)
+            {
+                tolerance = accuracies[numberOfOperations - 1];
+            }
+            else
+            {
+                accuracies[numberOfOperations - 1] = parametersOfPart.getAllowance();
+            }
+
+            this.rounding(tolerance);
 
             ClassesToCalculate.ResultsOfCalculation[] resultsOfCalculation = new ClassesToCalculate.ResultsOfCalculation[numberOfOperations];
 
@@ -142,19 +152,20 @@ namespace WindowsFormsApplication8
             return resultsOfCalculation;
         }
 
-        private void rounding()
+        private void rounding(double tolerance)
         {
+
             for(int i = 0; i < this.parametersForCalculation.getNumberOfOperations(); i++)
             {
                 try
                 {
-                    this.accuracies[i] = Rounding.rounding(this.accuracies[i]);
-                    this.spatialDeviationP[i] = Rounding.rounding(this.spatialDeviationP[i]);
-                    this.deviationOfInstallationE[i] = Rounding.rounding(this.deviationOfInstallationE[i]);
-                    this.nominalAllowanceZnom[i] = Rounding.rounding(this.nominalAllowanceZnom[i]);
-                    this.sizeOfWorkprieceAfterOperation[i] = Rounding.rounding(this.sizeOfWorkprieceAfterOperation[i]);
+                    this.accuracies[i] = Rounding.rounding(this.accuracies[i], tolerance);
+                    this.spatialDeviationP[i] = Rounding.rounding(this.spatialDeviationP[i], tolerance);
+                    this.deviationOfInstallationE[i] = Rounding.rounding(this.deviationOfInstallationE[i], tolerance);
+                    this.nominalAllowanceZnom[i] = Rounding.rounding(this.nominalAllowanceZnom[i], tolerance);
+                    this.sizeOfWorkprieceAfterOperation[i] = Rounding.rounding(this.sizeOfWorkprieceAfterOperation[i], tolerance);
                 }
-                catch { }
+                catch { MessageBox.Show("2"); }
             }
         }
     }

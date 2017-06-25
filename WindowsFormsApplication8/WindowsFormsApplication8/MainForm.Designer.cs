@@ -479,7 +479,8 @@
             this.SurfacesTreeView.Size = new System.Drawing.Size(262, 68);
             this.SurfacesTreeView.TabIndex = 60;
             this.SurfacesTreeView.Visible = false;
-            this.SurfacesTreeView.AfterSelect += new System.Windows.Forms.TreeViewEventHandler(this.TreeOfSelectedOperations_AfterSelect);
+            this.SurfacesTreeView.BeforeSelect += new System.Windows.Forms.TreeViewCancelEventHandler(this.SurfacesTreeView_BeforeSelect);
+            this.SurfacesTreeView.AfterSelect += new System.Windows.Forms.TreeViewEventHandler(this.SurfacesTreeView_AfterSelect);
             this.SurfacesTreeView.NodeMouseClick += new System.Windows.Forms.TreeNodeMouseClickEventHandler(this.SurfacesTreeView_NodeMouseClick);
             // 
             // Surfaces

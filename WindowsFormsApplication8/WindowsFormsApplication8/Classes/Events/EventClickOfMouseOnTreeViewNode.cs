@@ -21,13 +21,8 @@ namespace WindowsFormsApplication8
                 operation = extractionOfParametersOfOperationsFromTechnologicalProcess(idOperation);
             }
 
-
             StorageOfSelectedOperation.setOperation(operation);
             StorageOfSelectedOperation.insertParametersOfOperationsInTextboxes(form);
-
-            /* ParametersOperation parameters = extractionOfParametersOfOperations(e);
-             StorageOfSelectedOperation.setParameters(parameters);
-             StorageOfSelectedOperation.insertParametersOfOperationsInTextboxes(form);*/
         }
 
         public static void clickOnTreeWorkpiece(TreeNodeMouseClickEventArgs e, FormOfSelectWorkpiece form)

@@ -6,7 +6,8 @@ namespace WindowsFormsApplication8
     {
         private static Operation operation = null;
         private static int indexSelectOperation;
-        private static int indexSelectSurface;
+        private static int indexSelectSurface = 0;
+        private static int lastIndexSelectSurface;
 
         public static void setOperation(Operation operation)
         {
@@ -30,12 +31,18 @@ namespace WindowsFormsApplication8
 
         public static void setIndexSelectedSurface(int indexSurface)
         {
+            lastIndexSelectSurface = indexSelectSurface;
             indexSelectSurface = indexSurface;
         }
 
         public static int getIndexSelectedSurface()
         {
             return indexSelectSurface;
+        }
+
+        public static int getLastIndexSelectedSurface()
+        {
+            return lastIndexSelectSurface;
         }
 
         public static void incrementOfIndex()

@@ -30,11 +30,8 @@ namespace WindowsFormsApplication8
 
         private void buttonSaveToDisk_Click(object sender, EventArgs e)
         {
-
-            // string text = ClickOnSaveToFile.getText();
              SaveFileDialog sfd = new SaveFileDialog();
              sfd.Filter = "Текстовый документ (*.txt)|*.txt|Все файлы (*.*)|*.*";
-           // int count = Convert.ToInt32(Part.getCountSurfaces);
             List<Surface> surfaces = Part.getSurfaces();
 
             int count = surfaces.Count;
@@ -42,9 +39,6 @@ namespace WindowsFormsApplication8
             if (sfd.ShowDialog() == System.Windows.Forms.DialogResult.OK)
              {
                  StreamWriter sw = new StreamWriter(sfd.FileName);
-                // sw.WriteLine(richTextBox1.Text);
-           
-
             
                 int typeOfPart = Part.getParametersOfPart().getTypeOfPart().getIndex();
                 char type;
@@ -83,7 +77,7 @@ namespace WindowsFormsApplication8
 
         private void buttonSaveToBase_Click(object sender, EventArgs e)
         {
-            Form5 form = new Form5();
+            FormSaveToDataBase form = new FormSaveToDataBase();
             form.ShowDialog();
         }
 

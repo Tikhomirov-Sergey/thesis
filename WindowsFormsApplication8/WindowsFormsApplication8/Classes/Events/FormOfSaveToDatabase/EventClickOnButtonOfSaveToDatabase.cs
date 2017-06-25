@@ -22,7 +22,7 @@ namespace WindowsFormsApplication8
             SURFACE = "surface",
             OPERATIONS_AND_RESULTS = "operations_and_results";
 
-        public static void buttonSaveToDatabase(Form5 form)
+        public static void buttonSaveToDatabase(FormSaveToDataBase form)
         {
          try
          {
@@ -36,7 +36,7 @@ namespace WindowsFormsApplication8
             catch { MessageBox.Show("Ошибка Базы данных", "Ошибка"); }
         }
 
-        private static bool checkNameOfPartAndNameOfSurface(Form5 form)
+        private static bool checkNameOfPartAndNameOfSurface(FormSaveToDataBase form)
         {
             if (form.textBox1.Text.Equals(""))
             {
@@ -53,7 +53,7 @@ namespace WindowsFormsApplication8
             return true;
         }
 
-        private static void saveToDatabase(Form5 form)
+        private static void saveToDatabase(FormSaveToDataBase form)
         {
             DateTime date = DateTime.Now;
             string dateToString = date.ToString("MM.dd.yyyy");
@@ -63,7 +63,7 @@ namespace WindowsFormsApplication8
             saveToTableTechnologicalProcessAndSurfaces(form, cipherDetail, idCalculation);
         }
 
-        private static int saveToTableOfPart(Form5 form, string date)
+        private static int saveToTableOfPart(FormSaveToDataBase form, string date)
         {
             string nameOfPart = form.textBox1.Text;
             int cipherDetail = Convert.ToInt32(form.textBox2.Text);
@@ -90,14 +90,14 @@ namespace WindowsFormsApplication8
             return cipherDetail;
         }
 
-       private static int saveToCalculation(Form5 form, int cipherDetail, string date)
+       private static int saveToCalculation(FormSaveToDataBase form, int cipherDetail, string date)
         {
            dbConnection.SetQuery($@"INSERT INTO {CALCULATION} VALUES ({cipherDetail}, '{date}')");
 
            return getIdentCurrent(CALCULATION); 
         }
 
-        private static void saveToTableTechnologicalProcessAndSurfaces(Form5 form, int cipherDetail, int idCalculation)
+        private static void saveToTableTechnologicalProcessAndSurfaces(FormSaveToDataBase form, int cipherDetail, int idCalculation)
         {
             ParametersWorkpiece workpiece = Part.getWorkpiece();
             int idWorkpieceInDB = saveWorkpiece(cipherDetail, idCalculation, workpiece);
@@ -152,7 +152,7 @@ namespace WindowsFormsApplication8
                 int typeOfAllowance = parametersOfSurface.getTypeOfAllowance().getIndex();
                 int typeOfProcessedSurface = parametersOfSurface.getTypeOfProcessedSurface().getIndex();
 
-                double surfaseRoughness = parametersOfSurface.getSurfaceRoughness();
+                double surfaseRoughness = parametersOfSurface.getSurfaceRoughnessRz();
                
                 double holeDepth = parametersOfSurface.getHoleDepth();
                 double tolerance = parametersOfSurface.getAllowance();
@@ -201,7 +201,7 @@ namespace WindowsFormsApplication8
 
 
 
-       private static void saveToTableOfOperations(Form5 form, int index)
+       private static void saveToTableOfOperations(FormSaveToDataBase form, int index)
         {
            Surface surface = Part.getSurfaceOnIndex(0);
 
@@ -221,7 +221,7 @@ namespace WindowsFormsApplication8
             }
         }
 
-        private static void saveWorkpieceToTableOfOperations(Form5 form, int index)
+        private static void saveWorkpieceToTableOfOperations(FormSaveToDataBase form, int index)
         {
             ParametersWorkpiece parametersWorkpiece = Part.getWorkpiece();
             

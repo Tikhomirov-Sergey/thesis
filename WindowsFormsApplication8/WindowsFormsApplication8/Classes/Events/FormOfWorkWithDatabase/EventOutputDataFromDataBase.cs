@@ -29,11 +29,12 @@ namespace WindowsFormsApplication8
         public static void getListNamesAndCipherPartsInComboBox(FormOfWorkWithDatabase form)
         {
             selectPartsInDB();
+            searchPart = parts;
 
             form.NamePart.Items.Clear();
             form.CipherPart.Items.Clear();
 
-            foreach (DependencePart part in parts)
+            foreach (DependencePart part in searchPart)
             {
                 form.NamePart.Items.Add(part.getName());
                 form.CipherPart.Items.Add(part.getId());
@@ -56,7 +57,7 @@ namespace WindowsFormsApplication8
                 form.CipherPart.SelectedIndex = selectIndexNamePart;
             }
 
-            form.LengthPart.Text = parts[selectIndexNamePart].getLengthPart().ToString();
+            form.LengthPart.Text = searchPart[selectIndexNamePart].getLengthPart().ToString();
 
             selectCalculationInDB(selectIndexNamePart);
 
@@ -237,7 +238,7 @@ namespace WindowsFormsApplication8
             DataTable tablesDataTable = new DataTable();
             DataTable tempDataTable = new DataTable();
 
-            DependencePart part = parts[index];
+            DependencePart part = searchPart[index];
 
             dbConnection.GetDataUsingDataAdapter($@"SELECT ID, Date FROM calculation WHERE Cipher_detail = {part.getId()}", ref tempDataTable, ref tableDataAdapter);
 
@@ -367,7 +368,7 @@ namespace WindowsFormsApplication8
             form.typeOfAllowance.Text = parameters.getTypeOfAllowance().getName();
             form.TypeOfProcessedSurface.Text = parameters.getTypeOfProcessedSurface().getName();
 
-            form.SurfaceRoughness.Text = parameters.getSurfaceRoughness().ToString();
+            form.SurfaceRoughness.Text = parameters.getSurfaceRoughnessRz().ToString();
             form.HoleDepth.Text = parameters.getHoleDepth().ToString();
             form.Tolerance.Text = parameters.getAllowance().ToString();
         }

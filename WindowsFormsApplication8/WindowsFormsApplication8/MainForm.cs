@@ -39,42 +39,6 @@ namespace WindowsFormsApplication8
             try
             {
                 Tables.getParametersOfSurfacesAfterVariousOperations().insertListOfOperationsInTreeView(this);
-               
-                /////////////////////////////////надоело вводить ///////////////////////
-               /* FormOfSelectWorkpiece sel = new FormOfSelectWorkpiece();
-
-                ParametersWorkpiece parameters = Tables.getParametersOfWorkpieces().getParametersWorkprieceOnIndex(1);
-
-                Part.setWorkpiece(parameters);
-
-                parameters.setValidOffsetSurface(0);
-
-                string nameOfWorkpiece = parameters.getNameOfWorkpiece();
-                EventClickOnButtonOfSelectWorkpriece.insertNameOfWorkpieceInTreeViewAndTextBox(this, nameOfWorkpiece);
-                EventClickOnButtonOfSelectWorkpriece.enabledTextBoxes(this);
-
-                Operation operation = new Operation(Tables.getParametersOfSurfacesAfterVariousOperations().getTypeOfMachiningOnIndex(0));
-                StorageOfSelectedOperation.setOperation(operation);
-                StorageOfSelectedOperation.insertParametersOfOperationsInTextboxes(this);
-
-                EventClickOnButtonOfSelectOperationsOrWorkpiece.buttonOfSelectOperations(this);
-
-                operation = new Operation(Tables.getParametersOfSurfacesAfterVariousOperations().getTypeOfMachiningOnIndex(5));
-                StorageOfSelectedOperation.setOperation(operation);
-                StorageOfSelectedOperation.insertParametersOfOperationsInTextboxes(this);
-
-                EventClickOnButtonOfSelectOperationsOrWorkpiece.buttonOfSelectOperations(this);
-
-                EventClickOnButtonOfSelectTechnologicalProcess.buttonSelectProcess(this);
-
-                EventAddSurfaceButton.buttonAddSurface(this);
-
-                EventClickOnButtonOfDeleteOperation.buttonDeleteOperation(this);
-                EventAddSurfaceButton.buttonAddSurface(this);
-
-    
-               // EventClickOnButtonOfCalculationPart.buttonOfCalculation(this);*/
-              
             }
             catch { MessageBox.Show("Повреждены XML таблицы", "Ошибка"); }
         }
@@ -212,10 +176,6 @@ namespace WindowsFormsApplication8
             catch { }
         }
 
-        private void textRa_TextChanged(object sender, EventArgs e)
-        {
-        }
-
         private void comboBox3_TextChanged(object sender, EventArgs e)
         {
             if (TypeOfAllowance.Text == "двухсторонний" && TypeOfAllowance.Visible == true) { pictureBox1.Visible = true; pictureBox2.Visible = false; };
@@ -234,7 +194,11 @@ namespace WindowsFormsApplication8
 
         private void TreeOfSelectedOperations_AfterSelect(object sender, TreeViewEventArgs e)
         {
-            EventClickOfMouseOnSurfacesTreeView.storageParametersOfSurface(this, e.Node.Index);
+            EventTreeViewAfterSelectOperations.alferSelect(this, (TreeView)sender, e);
+        }
+
+        private void SurfacesTreeView_AfterSelect(object sender, TreeViewEventArgs e)
+        {
             EventTreeViewAfterSelectOperations.alferSelect(this, (TreeView)sender, e);
         }
 
@@ -288,7 +252,6 @@ namespace WindowsFormsApplication8
             dcs.SaveConfiguration(dcd);
 
             File.WriteAllText(@"connectionsString.connstr", connectionString);
-            // return connectionString;
         }
 
         private void showDBToolStripMenuItem_Click(object sender, EventArgs e)
@@ -309,7 +272,6 @@ namespace WindowsFormsApplication8
                 destination.Database = @dbConnection.DBName;
                 try
                 {
-                    //BackupDeviceItem source = new BackupDeviceItem(@openFileDialog1.FileName, DeviceType.File);
                     destination.Devices.AddDevice(@openFileDialog1.FileName, DeviceType.File);
                     destination.ReplaceDatabase = true;
                     destination.SqlRestore(server);
@@ -346,12 +308,10 @@ namespace WindowsFormsApplication8
                 }
             }
         }
+
+        private void SurfacesTreeView_BeforeSelect(object sender, TreeViewCancelEventArgs e)
+        {
+            EventClickOfMouseOnSurfacesTreeView.storageParametersOfSurface(this, e.Node.Index);
+        }
     }
 }
-        
-
-        
-
-        
-    
-

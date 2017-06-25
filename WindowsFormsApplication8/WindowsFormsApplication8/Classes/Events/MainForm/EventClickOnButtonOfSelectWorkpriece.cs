@@ -19,8 +19,6 @@ namespace WindowsFormsApplication8
                 insertNameOfWorkpieceInTreeViewAndTextBox(form, nameOfWorkpiece);
                 enabledTextBoxes(form);
             }
-
-
         }
 
         private static void openingOfFormOfSelectWorkpriece()
